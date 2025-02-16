@@ -1,0 +1,34 @@
+{
+    "tool_name": "随机壁纸图片API",
+    "tool_description": "随机返回一张壁纸图片的API",
+    "home_url": "https://api.aa1.cn/doc/wallpaper.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机壁纸图片接口",
+            "url": "https://v2.api-m.com/api/wallpaper",
+            "description": "提供随机壁纸图片下载的服务",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "return",
+                    "type": "int",
+                    "description": "可选参数，用于指定返回图片的数量",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "response_example": {
+                "images": [
+                    {
+                        "url": "https://example.com/wallpaper1.jpg",
+                        "title": "Random Wallpaper 1",
+                        "description": "A random wallpaper image"
+                    }
+                ]
+            },
+            "schema": {}
+        }
+    ]
+}

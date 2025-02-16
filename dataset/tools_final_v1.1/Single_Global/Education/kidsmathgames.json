@@ -1,0 +1,25 @@
+{
+    "tool_name": "kidsmathgames",
+    "tool_description": "An interactive platform offering fun math games designed to help children learn math skills in an engaging way.",
+    "home_url": "https://rapidapi.com/achitydavid7457457/api/kidsmathgames/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Fun math games for kids",
+            "url": "https://kidsmathgames.p.rapidapi.com/",
+            "description": "Math games are a great opportunity to teach kids math skills at an early age. The acquaintance of kids with mathematics should take place in an exciting and colorful atmosphere that can interest anyone, even the most restless child.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "LigiaOzimek",
+                    "type": "STRING",
+                    "description": "An optional parameter that can be used to customize the game experience.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

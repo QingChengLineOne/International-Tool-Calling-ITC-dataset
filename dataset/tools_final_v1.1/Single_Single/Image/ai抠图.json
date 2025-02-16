@@ -1,0 +1,38 @@
+{
+    "tool_name": "AI抠图API",
+    "tool_description": "提供一键AI抠图服务",
+    "home_url": "https://api.aa1.cn/doc/aikoutu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI抠图接口",
+            "url": "https://api.oioweb.cn/api/ai/matting",
+            "description": "执行AI抠图操作",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "file",
+                    "type": "file",
+                    "description": "待处理的图片文件，支持常见图片格式",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "output_format",
+                    "type": "string",
+                    "description": "输出图片格式，可选值：jpg, png",
+                    "default": "png"
+                },
+                {
+                    "name": "background_color",
+                    "type": "string",
+                    "description": "背景颜色，以十六进制表示，例如：#FFFFFF",
+                    "default": "#000000"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

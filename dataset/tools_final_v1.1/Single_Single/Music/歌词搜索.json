@@ -1,0 +1,33 @@
+{
+    "tool_name": "歌词搜索API",
+    "tool_description": "音乐歌词搜索服务API",
+    "home_url": "https://api.aa1.cn/doc/geci.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "歌词搜索接口",
+            "url": "https://api.52vmy.cn/api/music/lrc",
+            "description": "根据关键词搜索音乐歌词",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "搜索关键词，如'少年中国说'",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "返回结果数量，默认为1",
+                    "required": false,
+                    "default": 1
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

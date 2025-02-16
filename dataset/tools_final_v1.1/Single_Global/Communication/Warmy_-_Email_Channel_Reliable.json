@@ -1,0 +1,108 @@
+{
+    "tool_name": "Warmy - Email Channel Reliable",
+    "tool_description": "Auto all-in-one tool for email deliverability to make your Email Channel Reliable",
+    "home_url": "https://rapidapi.com/Warmy/api/warmy-email-channel-reliable/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Mailbox reputation",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/reputation",
+            "description": "Check mailbox reputation",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Health check",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/health_check",
+            "description": "Run test for check mailbox health score",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Check connection",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/check_connection",
+            "description": "Check mailbox connection",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Disconnect mailbox",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/disconnect",
+            "description": "Disconnect mailbox",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Change state",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/change_state",
+            "description": "Change mailbox state. Available states: active|blocked",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Send email",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/send_email",
+            "description": "Send an email. send_type can be: simple | maintenance. By default - simple.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Create mailbox",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials",
+            "description": "Create new mailbox. Available providers: gmail|outlook|yahoo|zoho|aol|smtp",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Update mailbox",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/user_credentials/update",
+            "description": "Update user mailbox. Available providers: gmail|outlook|yahoo|zoho|aol|smtp",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Create user",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/users",
+            "description": "Create new user",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Delete user",
+            "url": "https://warmy-email-channel-reliable.p.rapidapi.com/email_warmup/v1/users/destroy",
+            "description": "Delete user with all related mailboxes",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "tool_name": "suivi-colis",
+    "tool_description": "L'API de suivi des colis en Nouvelle-Calédonie permet aux utilisateurs de suivre l'état de leurs colis en temps réel.",
+    "home_url": "https://rapidapi.com/opt-nc-opt-nc-default/api/suivi-colis/",
+    "country": "Nouvelle-Calédonie",
+    "api_list": [
+        {
+            "name": "Health",
+            "url": "https://suivi-colis.p.rapidapi.com/q/health",
+            "description": "Get the API's health status.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest",
+            "url": "https://suivi-colis.p.rapidapi.com/colis/{colisid}/latest/",
+            "description": "Retrieve the current status of the parcel (i.e., the latest status).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "colisId",
+                    "type": "string",
+                    "description": "The unique identifier for the parcel.",
+                    "default": "CA107308006SI"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Count",
+            "url": "https://suivi-colis.p.rapidapi.com/colis/{colisid}/count",
+            "description": "Count the number of steps in the parcel's history, useful for optimizing network consumption or resources on IoT.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "colisId",
+                    "type": "string",
+                    "description": "The unique identifier for the parcel.",
+                    "default": "CA107308006SI"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All",
+            "url": "https://suivi-colis.p.rapidapi.com/colis/{colisid}/",
+            "description": "Retrieve the entire history of the parcel from its dispatch to the latest status.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "colisid",
+                    "type": "string",
+                    "description": "The unique identifier for the parcel.",
+                    "default": "CA107308006SI"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

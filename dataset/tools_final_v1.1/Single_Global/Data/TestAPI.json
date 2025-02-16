@@ -1,0 +1,36 @@
+{
+    "tool_name": "TestAPI",
+    "tool_description": "OliAPI",
+    "home_url": "https://rapidapi.com/codelabwebinfo-wjaJpirQ90/api/testapi829/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "FetchProject",
+            "url": "https://testapi829.p.rapidapi.com/",
+            "description": "Fetches project data from the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "Welcome": {
+                    "HeaderMessage": "Welcome To OLI API Server",
+                    "BodyMessage": "This is the API Server for OLI, Oli is a powerful AI platform that helps you build your applications faster.",
+                    "age": 24,
+                    "hobbies": [
+                        "🎯",
+                        "🎮",
+                        "👩‍💻"
+                    ],
+                    "gender": "Robot",
+                    "contribution": [
+                        "https://github.com"
+                    ]
+                },
+                "TodoApp": {
+                    "GitHubRepoLink": "https://github.com/creative-tutorials/Task-Managemnt-App"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "tool_name": "光遇每日任务位置图片接口",
+    "tool_description": "生成光遇每日任务图片",
+    "home_url": "https://api.aa1.cn/doc/ytgyrw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "光遇每日任务位置图片接口",
+            "url": "https://api.t1qq.com/api/sky/sc/scrw",
+            "description": "提供生成光遇每日任务位置的图片服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "9uryZiknzUtTFkaYUQxcOeMwq4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "task_id",
+                    "type": "int",
+                    "description": "每日任务ID，用于指定生成图片的任务",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

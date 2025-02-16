@@ -1,0 +1,98 @@
+{
+    "tool_name": "Places in radius",
+    "tool_description": "API for retrieving places & facilities data for given origin, distance and list of facility types.",
+    "home_url": "https://rapidapi.com/mateuszpoland6/api/places-in-radius/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "places_in_radius",
+            "url": "https://places-in-radius.p.rapidapi.com/places_in_radius",
+            "description": "This endpoint returns list of locations that meet certain criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location_types",
+                    "type": "STRING",
+                    "description": "List of location types.",
+                    "default": "supermarket,restaurant"
+                },
+                {
+                    "name": "distance",
+                    "type": "STRING",
+                    "description": "Distance from origin in meters.",
+                    "default": "1000"
+                },
+                {
+                    "name": "starting_point",
+                    "type": "STRING",
+                    "description": "Starting point coordinates (latitude,longitude).",
+                    "default": "54.373639725729085,18.61484334290751"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "place_id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "location": {
+                            "type": "object",
+                            "properties": {
+                                "lat": {
+                                    "type": "number"
+                                },
+                                "lng": {
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "distance_data": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "mode": {
+                                        "type": "string"
+                                    },
+                                    "distance": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "details": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "phone": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

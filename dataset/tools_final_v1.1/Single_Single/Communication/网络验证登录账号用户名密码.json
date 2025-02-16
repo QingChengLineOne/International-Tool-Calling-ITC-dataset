@@ -1,0 +1,43 @@
+{
+    "tool_name": "网络验证-登录账号[用户名+密码]",
+    "tool_description": "使用用户名加密码的方式登录账号。该接口只能配合接口盒子网络验证注册的用户登录。更多用户管理，卡密管理等请访问接口盒子官网。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/login.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "登录接口",
+            "url": "https://cn.apihz.cn/api/user/login.php",
+            "description": "用户登录接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "description": "接口盒子提供的ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的KEY",
+                    "default": "88888888"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "用户名",
+                    "default": ""
+                },
+                {
+                    "name": "pwd",
+                    "type": "string",
+                    "description": "密码",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "tool_name": "test pg prod",
+    "tool_description": "A testing tool for PostgreSQL production environments.",
+    "home_url": "https://rapidapi.com/eran2811/api/test-pg-prod/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "endpoint 1",
+            "url": "https://test-pg-prod.p.rapidapi.com/",
+            "description": "Updates a resource using the PATCH method.",
+            "method": "PATCH",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "endpoint 2",
+            "url": "https://test-pg-prod.p.rapidapi.com/",
+            "description": "Creates a new resource using the POST method.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "endpoint 3",
+            "url": "https://test-pg-prod.p.rapidapi.com/",
+            "description": "Deletes a resource using the DELETE method.",
+            "method": "DELETE",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "ENDPOINT 4",
+            "url": "https://test-pg-prod.p.rapidapi.com/",
+            "description": "Updates a resource using the PUT method.",
+            "method": "PUT",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "endpoint E",
+            "url": "https://test-pg-prod.p.rapidapi.com/",
+            "description": "Creates a new resource with optional form data using the POST method.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "formdata_example",
+                    "type": "BOOLEAN",
+                    "description": "An example of form data to be sent with the request.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get",
+            "url": "https://test-pg-prod.p.rapidapi.com/",
+            "description": "Retrieves a resource using the GET method.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,500 @@
+{
+    "tool_name": "Consulta CNPJ Grátis",
+    "tool_description": "API Gratuita de Consultas a Receita Federal, Simples Nacional e Cadastro de Contribuintes (SINTEGRA). Esta API permite que os usuários consultem informações detalhadas sobre empresas registradas no Brasil utilizando o CNPJ.",
+    "home_url": "https://rapidapi.com/cnpja/api/consulta-cnpj-gratis/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "Consulta Unificada",
+            "url": "https://consulta-cnpj-gratis.p.rapidapi.com/companies/{cnpj}",
+            "description": "Retorna todos os dados presentes no Comprovante de Inscrição do Cadastro Nacional da Pessoa Jurídica junto a Receita Federal.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "CNPJ",
+                    "type": "string",
+                    "description": "CNPJ da Empresa que se deseja consultar.",
+                    "default": "00000000000191"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "last_update": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "alias": {
+                        "type": "string"
+                    },
+                    "tax_id": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "founded": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "string"
+                    },
+                    "capital": {
+                        "type": "integer"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    },
+                    "phone_alt": {
+                        "type": "null"
+                    },
+                    "federal_entity": {
+                        "type": "string"
+                    },
+                    "registration": {
+                        "type": "object",
+                        "properties": {
+                            "status": {
+                                "type": "string"
+                            },
+                            "status_date": {
+                                "type": "string"
+                            },
+                            "status_reason": {
+                                "type": "null"
+                            },
+                            "special_status": {
+                                "type": "null"
+                            },
+                            "special_status_date": {
+                                "type": "null"
+                            }
+                        }
+                    },
+                    "address": {
+                        "type": "object",
+                        "properties": {
+                            "street": {
+                                "type": "string"
+                            },
+                            "number": {
+                                "type": "string"
+                            },
+                            "details": {
+                                "type": "string"
+                            },
+                            "zip": {
+                                "type": "string"
+                            },
+                            "neighborhood": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "city_ibge": {
+                                "type": "string"
+                            },
+                            "state_ibge": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "legal_nature": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "primary_activity": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "secondary_activities": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "membership": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "partnership": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "simples_nacional": {
+                        "type": "object",
+                        "properties": {
+                            "last_update": {
+                                "type": "string"
+                            },
+                            "simples_optant": {
+                                "type": "boolean"
+                            },
+                            "simples_included": {
+                                "type": "null"
+                            },
+                            "simples_excluded": {
+                                "type": "null"
+                            },
+                            "simei_optant": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "sintegra": {
+                        "type": "object",
+                        "properties": {
+                            "last_update": {
+                                "type": "string"
+                            },
+                            "home_state_registration": {
+                                "type": "null"
+                            },
+                            "registrations": {
+                                "type": "array"
+                            }
+                        }
+                    },
+                    "files": {
+                        "type": "object",
+                        "properties": {
+                            "registration": {
+                                "type": "string"
+                            },
+                            "membership": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "maps": {
+                        "type": "object",
+                        "properties": {
+                            "roads": {
+                                "type": "string"
+                            },
+                            "satellite": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Consulta Estabelecimento",
+            "url": "https://consulta-cnpj-gratis.p.rapidapi.com/office/{cnpj}",
+            "description": "Consulta Receita Federal, Simples Nacional e Cadastro de Contribuintes através do CNPJ.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "CNPJ",
+                    "type": "string",
+                    "description": "CNPJ da empresa que se deseja consultar.",
+                    "default": "37335118000180"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "simples",
+                    "type": "BOOLEAN",
+                    "description": "Adiciona informações do Simples Nacional.",
+                    "default": "false"
+                },
+                {
+                    "name": "registrations",
+                    "type": "STRING",
+                    "description": "UFs separadas por vírgula para adicionar informações do Cadastro de Contribuintes, utilize 'BR' para considerar todas.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "updated": {
+                        "type": "string"
+                    },
+                    "taxId": {
+                        "type": "string"
+                    },
+                    "alias": {
+                        "type": "null"
+                    },
+                    "founded": {
+                        "type": "string"
+                    },
+                    "head": {
+                        "type": "boolean"
+                    },
+                    "company": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "equity": {
+                                "type": "integer"
+                            },
+                            "nature": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "text": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "size": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "acronym": {
+                                        "type": "string"
+                                    },
+                                    "text": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "simples": {
+                                "type": "object",
+                                "properties": {
+                                    "optant": {
+                                        "type": "boolean"
+                                    },
+                                    "since": {
+                                        "type": "null"
+                                    }
+                                }
+                            },
+                            "simei": {
+                                "type": "object",
+                                "properties": {
+                                    "optant": {
+                                        "type": "boolean"
+                                    },
+                                    "since": {
+                                        "type": "null"
+                                    }
+                                }
+                            },
+                            "members": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "since": {
+                                            "type": "string"
+                                        },
+                                        "person": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "taxId": {
+                                                    "type": "string"
+                                                },
+                                                "age": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "role": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "text": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "statusDate": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "text": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "address": {
+                        "type": "object",
+                        "properties": {
+                            "municipality": {
+                                "type": "integer"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "number": {
+                                "type": "string"
+                            },
+                            "details": {
+                                "type": "null"
+                            },
+                            "district": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "zip": {
+                                "type": "string"
+                            },
+                            "country": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "phones": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "area": {
+                                    "type": "string"
+                                },
+                                "number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "emails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "address": {
+                                    "type": "string"
+                                },
+                                "domain": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "mainActivity": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "text": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "sideActivities": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "text": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "registrations": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "state": {
+                                    "type": "string"
+                                },
+                                "number": {
+                                    "type": "string"
+                                },
+                                "enabled": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

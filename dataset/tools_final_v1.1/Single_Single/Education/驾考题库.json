@@ -1,0 +1,44 @@
+{
+    "tool_name": "驾考题库",
+    "tool_description": "驾照考试题库，提供科目一和科目四的题目查询服务",
+    "home_url": "https://api.aa1.cn/doc/jiakao.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "驾考题库查询接口",
+            "url": "https://api.52vmy.cn/api/query/jiakao",
+            "description": "用于查询驾照考试题库中的题目",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "subject",
+                    "type": "int",
+                    "description": "科目编号，1表示科目一，4表示科目四",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "question_type",
+                    "type": "int",
+                    "description": "题目类型，0表示单选题，1表示判断题，默认为0",
+                    "default": "0"
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "分页页码，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "page_size",
+                    "type": "int",
+                    "description": "每页题目数量，默认为10",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

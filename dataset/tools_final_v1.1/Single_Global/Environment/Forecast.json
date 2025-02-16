@@ -1,0 +1,2116 @@
+{
+    "tool_name": "Forecast",
+    "tool_description": "Get 16 days weather forecast data worldwide based on geographical coordinates.",
+    "home_url": "https://rapidapi.com/wettercom-wettercom-default/api/forecast9/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Index",
+            "url": "https://forecast9.p.rapidapi.com/",
+            "description": "See the current API version. Here is the link to the documentation.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "documentation": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "version": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "RapidApiGetForecastHourlyByCoordinates",
+            "url": "https://forecast9.p.rapidapi.com/rapidapi/forecast/{latitude}/{longitude}/hourly/",
+            "description": "Get forecast hourly information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "latitude",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "46.95828"
+                },
+                {
+                    "name": "longitude",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "10.87152"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "description": "Weather Information Hourly Entity",
+                "properties": {
+                    "forecastDate": {
+                        "description": "Date of last update format YYYY-mm-ddTHH:MM:SS",
+                        "format": "datetime",
+                        "type": "string"
+                    },
+                    "items": {
+                        "description": "Forecast details",
+                        "items": {
+                            "description": "Forecast Detail Entity",
+                            "properties": {
+                                "clouds": {
+                                    "description": "Cloudage in % (high clouds, low clouds, middle clouds)",
+                                    "properties": {
+                                        "high": {
+                                            "description": "high clouds (%)",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "low": {
+                                            "description": "low clouds (%)",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "middle": {
+                                            "description": "middle clouds (%)",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "date": {
+                                    "description": "Date, beginning of timespan, format YYYY-mm-ddTHH:MM:SSZ",
+                                    "format": "datetime",
+                                    "type": "string"
+                                },
+                                "freshSnow": {
+                                    "description": "Fresh snow (m)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "isNight": {
+                                    "description": "Is night ?",
+                                    "type": "boolean"
+                                },
+                                "period": {
+                                    "description": "Period (h)",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "prec": {
+                                    "description": "Precipitation",
+                                    "properties": {
+                                        "class": {
+                                            "description": "Precipitation class (0: no, 1: light, 2: mid, 3: heavy)",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "probability": {
+                                            "description": "Propability of precipitation (%)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "sum": {
+                                            "description": "Total precipitation (l/m^2)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "sumAsRain": {
+                                            "description": "Total precipitation (l/m^2)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "pressure": {
+                                    "description": "Air Pressure in NN (hPa)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "rainHours": {
+                                    "description": "Rain duratiom (h)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "relativeHumidity": {
+                                    "description": "Relative Humidity",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "snowLine": {
+                                    "description": "Snowfall line",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Snowfall line average (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "max": {
+                                            "description": "Snowfall line maximum (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Snowfall line minimum (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "unit": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "sunHours": {
+                                    "description": "Sun duration (h)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "temperature": {
+                                    "description": "Temperature",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Temperature average  (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "max": {
+                                            "description": "Temperature maximum  (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Temperature minimum  (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "weather": {
+                                    "description": "Weather information (state, text, icon)",
+                                    "properties": {
+                                        "icon": {
+                                            "description": "Weather icon for calculated interpretation",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "state": {
+                                            "description": "Calculated weather interpretation",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "text": {
+                                            "description": "Short weather text for calculated interpretation",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "wind": {
+                                    "description": "Wind",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Wind average (km/h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "direction": {
+                                            "description": "Wind direction",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "gusts": {
+                                            "description": "Gust Information",
+                                            "properties": {
+                                                "text": {
+                                                    "type": "string"
+                                                },
+                                                "value": {
+                                                    "description": "Wind gust (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": "number"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "max": {
+                                            "description": "Wind maximum (km/h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Wind minimum (km/h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "significationWind": {
+                                            "default": false,
+                                            "description": "Is signification ?",
+                                            "type": "boolean"
+                                        },
+                                        "text": {
+                                            "description": "Wind text",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "unit": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "windchill": {
+                                    "description": "Wind chill",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Wind chill average (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "max": {
+                                            "description": "Wind chill maximum (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Wind chill minimum (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            },
+                            "title": "Forecast Detail Entity",
+                            "type": "object"
+                        },
+                        "type": [
+                            "array",
+                            "null"
+                        ]
+                    },
+                    "nextUpdate": {
+                        "description": "Date of next update format YYYY-mm-ddTHH:MM:SS",
+                        "format": "datetime",
+                        "type": "string"
+                    },
+                    "point": {
+                        "default": "global",
+                        "description": "Named elevation point",
+                        "enum": [
+                            "global",
+                            "lowestPoint",
+                            "highestPoint",
+                            null
+                        ],
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "source": {
+                        "description": "Weather data provider",
+                        "type": "string"
+                    }
+                },
+                "title": "Weather Information Hourly Entity",
+                "type": "object"
+            }
+        },
+        {
+            "name": "RapidApiGetForecastSummaryByCoordinates",
+            "url": "https://forecast9.p.rapidapi.com/rapidapi/forecast/{latitude}/{longitude}/summary/",
+            "description": "Get forecast summary information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "latitude",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "46.95828"
+                },
+                {
+                    "name": "longitude",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "10.87152"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "description": "Weather Information Summary Entity",
+                "properties": {
+                    "forecastDate": {
+                        "description": "Date of last update format YYYY-mm-ddTHH:MM:SS",
+                        "format": "datetime",
+                        "type": "string"
+                    },
+                    "items": {
+                        "description": "Forecast summary per day",
+                        "items": {
+                            "description": "Forecast Summary Entity",
+                            "properties": {
+                                "astronomy": {
+                                    "description": "Astronomy",
+                                    "properties": {
+                                        "dawn": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "dusk": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "moonphase": {
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "moonrise": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "moonset": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "moontransit": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "moonzodiac": {
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "sunrise": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "sunset": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "suntransit": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "date": {
+                                    "description": "Forecast date format YYYY-mm-dd",
+                                    "format": "date",
+                                    "type": "string"
+                                },
+                                "dateWithTimezone": {
+                                    "description": "Date with timezone information",
+                                    "format": "datetime",
+                                    "type": "string"
+                                },
+                                "freshSnow": {
+                                    "description": "Fresh snow (m)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "prec": {
+                                    "description": "Precipitation",
+                                    "properties": {
+                                        "class": {
+                                            "description": "Precipitation class (0: no, 1: light, 2: mid, 3: heavy)",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "probability": {
+                                            "description": "Propability of precipitation (%)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "sum": {
+                                            "description": "Total precipitation (l/m^2)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "sumAsRain": {
+                                            "description": "Total precipitation (l/m^2)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "rainHours": {
+                                    "description": "Rain duratiom (h)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "snowHeight": {
+                                    "description": "Snow height (m)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ]
+                                },
+                                "snowLine": {
+                                    "description": "Snowfall line",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Snowfall line average (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "max": {
+                                            "description": "Snowfall line maximum (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Snowfall line minimum (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "unit": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "sunHours": {
+                                    "description": "Sun duration (h)",
+                                    "format": "float",
+                                    "maximum": 3.402823669209385e+38,
+                                    "minimum": -3.402823669209385e+38,
+                                    "type": "number"
+                                },
+                                "temperature": {
+                                    "description": "Temperature",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Temperature average  (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "max": {
+                                            "description": "Temperature maximum  (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Temperature minimum  (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "weather": {
+                                    "description": "Weather information (state, text, icon)",
+                                    "properties": {
+                                        "icon": {
+                                            "description": "Weather icon for calculated interpretation",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "state": {
+                                            "description": "Calculated weather interpretation",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "text": {
+                                            "description": "Short weather text for calculated interpretation",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "wind": {
+                                    "description": "Wind",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Wind average (km/h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "direction": {
+                                            "description": "Wind direction",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "gusts": {
+                                            "description": "Gust Information",
+                                            "properties": {
+                                                "text": {
+                                                    "type": "string"
+                                                },
+                                                "value": {
+                                                    "description": "Wind gust (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": "number"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "max": {
+                                            "description": "Wind maximum (km/h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Wind minimum (km/h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "significationWind": {
+                                            "default": false,
+                                            "description": "Is signification ?",
+                                            "type": "boolean"
+                                        },
+                                        "text": {
+                                            "description": "Wind text",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "unit": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "windchill": {
+                                    "description": "Wind chill",
+                                    "properties": {
+                                        "avg": {
+                                            "description": "Wind chill average (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "max": {
+                                            "description": "Wind chill maximum (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "min": {
+                                            "description": "Wind chill minimum (°C)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            },
+                            "title": "Forecast Summary Entity",
+                            "type": "object"
+                        },
+                        "type": [
+                            "array",
+                            "null"
+                        ]
+                    },
+                    "nextUpdate": {
+                        "description": "Date of next update format YYYY-mm-ddTHH:MM:SS",
+                        "format": "datetime",
+                        "type": "string"
+                    },
+                    "point": {
+                        "default": "global",
+                        "description": "Named elevation point",
+                        "enum": [
+                            "global",
+                            "lowestPoint",
+                            "highestPoint",
+                            null
+                        ],
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "source": {
+                        "description": "Weather data provider",
+                        "type": "string"
+                    }
+                },
+                "title": "Weather Information summary Entity",
+                "type": "object"
+            }
+        },
+        {
+            "name": "RapidApiGetObservationHistoryByStationId",
+            "url": "https://forecast9.p.rapidapi.com/rapidapi/station/{id}/history/",
+            "description": "Get historical weather information for a specific station.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Station ID.",
+                    "default": "07197"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Show historical data from a specific date.",
+                    "default": "2020-05-27"
+                },
+                {
+                    "name": "range",
+                    "type": "STRING",
+                    "description": "Range of historical data.",
+                    "default": "48hours"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "description": "Observation history Entity schema",
+                "properties": {
+                    "coordinates": {
+                        "description": "Coordinates",
+                        "properties": {
+                            "latitude": {
+                                "description": "Value between -90 and 90. Latitude as decimal degrees (up to 5 decimals)",
+                                "format": "float",
+                                "maximum": 3.402823669209385e+38,
+                                "minimum": -3.402823669209385e+38,
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
+                            },
+                            "longitude": {
+                                "description": "Value between -180 and 180. Longitude as decimal degrees (up to 5 decimals)",
+                                "format": "float",
+                                "maximum": 3.402823669209385e+38,
+                                "minimum": -3.402823669209385e+38,
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "distance": {
+                        "description": "Distance from given coordinates",
+                        "format": "float",
+                        "maximum": 3.402823669209385e+38,
+                        "minimum": -3.402823669209385e+38,
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "history": {
+                        "items": {
+                            "description": "History",
+                            "properties": {
+                                "details": {
+                                    "items": {
+                                        "description": "Observation history Entity schema",
+                                        "properties": {
+                                            "date": {
+                                                "description": "Date, format YYYY-mm-ddTHH:MM:SSZ",
+                                                "format": "datetime",
+                                                "type": "string"
+                                            },
+                                            "pressure": {
+                                                "description": "Air Pressure in NN (hPa)",
+                                                "format": "float",
+                                                "maximum": 3.402823669209385e+38,
+                                                "minimum": -3.402823669209385e+38,
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ]
+                                            },
+                                            "temperature": {
+                                                "description": "Temperature information",
+                                                "properties": {
+                                                    "avg": {
+                                                        "format": "float",
+                                                        "maximum": 3.402823669209385e+38,
+                                                        "minimum": -3.402823669209385e+38,
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "unit": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "wind": {
+                                                "description": "Wind information",
+                                                "properties": {
+                                                    "avg": {
+                                                        "format": "float",
+                                                        "maximum": 3.402823669209385e+38,
+                                                        "minimum": -3.402823669209385e+38,
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "direction": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "unit": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "title": "History",
+                                        "type": "object"
+                                    },
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ]
+                                },
+                                "summary": {
+                                    "items": {
+                                        "description": "Observation history Entity schema",
+                                        "properties": {
+                                            "date": {
+                                                "description": "Date, format YYYY-mm-ddTHH:MM:SSZ",
+                                                "format": "datetime",
+                                                "type": "string"
+                                            },
+                                            "temperature": {
+                                                "description": "Temperature",
+                                                "properties": {
+                                                    "avg": {
+                                                        "description": "Temperature average  (°C)",
+                                                        "format": "float",
+                                                        "maximum": 3.402823669209385e+38,
+                                                        "minimum": -3.402823669209385e+38,
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max": {
+                                                        "description": "Temperature maximum  (°C)",
+                                                        "format": "float",
+                                                        "maximum": 3.402823669209385e+38,
+                                                        "minimum": -3.402823669209385e+38,
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min": {
+                                                        "description": "Temperature minimum  (°C)",
+                                                        "format": "float",
+                                                        "maximum": 3.402823669209385e+38,
+                                                        "minimum": -3.402823669209385e+38,
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "unit": {
+                                                        "description": "Temperature unit (°C)",
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "wind": {
+                                                "description": "Wind information",
+                                                "properties": {
+                                                    "avg": {
+                                                        "format": "float",
+                                                        "maximum": 3.402823669209385e+38,
+                                                        "minimum": -3.402823669209385e+38,
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "direction": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "unit": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "title": "History summary",
+                                        "type": "object"
+                                    },
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "id": {
+                        "description": "Station ID",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Station name",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Station type",
+                        "type": "string"
+                    }
+                },
+                "title": "History",
+                "type": "object"
+            }
+        },
+        {
+            "name": "GetStatus",
+            "url": "https://forecast9.p.rapidapi.com/status/",
+            "description": "Check if the API is running.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "date": {
+                        "description": "datetime in format like `2017-06-19T11:31:23Z`",
+                        "format": "datetime",
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "RapidApiGetForecastSummaryByLocationName",
+            "url": "https://forecast9.p.rapidapi.com/rapidapi/forecast/{locationname}/summary/",
+            "description": "Get forecast summary for a specific location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "locationName",
+                    "type": "STRING",
+                    "description": "Name of the location.",
+                    "default": "Berlin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "forecast": {
+                        "description": "Weather Information Summary Entity",
+                        "properties": {
+                            "forecastDate": {
+                                "description": "Date of last update format YYYY-mm-ddTHH:MM:SS",
+                                "format": "datetime",
+                                "type": "string"
+                            },
+                            "items": {
+                                "description": "Forecast summary per day",
+                                "items": {
+                                    "description": "Forecast Summary Entity",
+                                    "properties": {
+                                        "astronomy": {
+                                            "description": "Astronomy",
+                                            "properties": {
+                                                "dawn": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "dusk": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "moonphase": {
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "moonrise": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "moonset": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "moontransit": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "moonzodiac": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "sunrise": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "sunset": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "suntransit": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "date": {
+                                            "description": "Forecast date format YYYY-mm-dd",
+                                            "format": "date",
+                                            "type": "string"
+                                        },
+                                        "dateWithTimezone": {
+                                            "description": "Date with timezone information",
+                                            "format": "datetime",
+                                            "type": "string"
+                                        },
+                                        "freshSnow": {
+                                            "description": "Fresh snow (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "prec": {
+                                            "description": "Precipitation",
+                                            "properties": {
+                                                "class": {
+                                                    "description": "Precipitation class (0: no, 1: light, 2: mid, 3: heavy)",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "probability": {
+                                                    "description": "Propability of precipitation (%)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "sum": {
+                                                    "description": "Total precipitation (l/m^2)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "sumAsRain": {
+                                                    "description": "Total precipitation (l/m^2)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "rainHours": {
+                                            "description": "Rain duratiom (h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "snowHeight": {
+                                            "description": "Snow height (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "snowLine": {
+                                            "description": "Snowfall line",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Snowfall line average (m)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "max": {
+                                                    "description": "Snowfall line maximum (m)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Snowfall line minimum (m)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "unit": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "sunHours": {
+                                            "description": "Sun duration (h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": "number"
+                                        },
+                                        "temperature": {
+                                            "description": "Temperature",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Temperature average  (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "max": {
+                                                    "description": "Temperature maximum  (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Temperature minimum  (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "weather": {
+                                            "description": "Weather information (state, text, icon)",
+                                            "properties": {
+                                                "icon": {
+                                                    "description": "Weather icon for calculated interpretation",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "state": {
+                                                    "description": "Calculated weather interpretation",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "description": "Short weather text for calculated interpretation",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "wind": {
+                                            "description": "Wind",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Wind average (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "direction": {
+                                                    "description": "Wind direction",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "gusts": {
+                                                    "description": "Gust Information",
+                                                    "properties": {
+                                                        "text": {
+                                                            "type": "string"
+                                                        },
+                                                        "value": {
+                                                            "description": "Wind gust (km/h)",
+                                                            "format": "float",
+                                                            "maximum": 3.402823669209385e+38,
+                                                            "minimum": -3.402823669209385e+38,
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "max": {
+                                                    "description": "Wind maximum (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Wind minimum (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "significationWind": {
+                                                    "default": false,
+                                                    "description": "Is signification ?",
+                                                    "type": "boolean"
+                                                },
+                                                "text": {
+                                                    "description": "Wind text",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "unit": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "windchill": {
+                                            "description": "Wind chill",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Wind chill average (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "max": {
+                                                    "description": "Wind chill maximum (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Wind chill minimum (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "title": "Forecast Summary Entity",
+                                    "type": "object"
+                                },
+                                "type": [
+                                    "array",
+                                    "null"
+                                ]
+                            },
+                            "nextUpdate": {
+                                "description": "Date of next update format YYYY-mm-ddTHH:MM:SS",
+                                "format": "datetime",
+                                "type": "string"
+                            },
+                            "point": {
+                                "default": "global",
+                                "description": "Named elevation point",
+                                "enum": [
+                                    "global",
+                                    "lowestPoint",
+                                    "highestPoint",
+                                    null
+                                ],
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "source": {
+                                "description": "Weather data provider",
+                                "type": "string"
+                            }
+                        },
+                        "title": "Weather Information summary Entity",
+                        "type": "object"
+                    },
+                    "location": {
+                        "description": "Location Informantion",
+                        "properties": {
+                            "code": {
+                                "description": "Location code",
+                                "type": "string"
+                            },
+                            "coordinates": {
+                                "description": "Coordinates",
+                                "properties": {
+                                    "latitude": {
+                                        "description": "Value between -90 and 90. Latitude as decimal degrees (up to 5 decimals)",
+                                        "format": "float",
+                                        "maximum": 3.402823669209385e+38,
+                                        "minimum": -3.402823669209385e+38,
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
+                                    },
+                                    "longitude": {
+                                        "description": "Value between -180 and 180. Longitude as decimal degrees (up to 5 decimals)",
+                                        "format": "float",
+                                        "maximum": 3.402823669209385e+38,
+                                        "minimum": -3.402823669209385e+38,
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "name": {
+                                "description": "Name of the Location",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "timezone": {
+                                "description": "Time Zone",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "title": "Base Location",
+                        "type": "object"
+                    }
+                },
+                "title": "Forecast Summaty",
+                "type": "object"
+            }
+        },
+        {
+            "name": "RapidApiGetHourlyForecastByLocationName",
+            "url": "https://forecast9.p.rapidapi.com/rapidapi/forecast/{locationname}/hourly/",
+            "description": "Get hourly forecast for a specific location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "locationName",
+                    "type": "STRING",
+                    "description": "Name of the location.",
+                    "default": "Berlin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "forecast": {
+                        "description": "Weather Information Hourly Entity",
+                        "properties": {
+                            "forecastDate": {
+                                "description": "Date of last update format YYYY-mm-ddTHH:MM:SS",
+                                "format": "datetime",
+                                "type": "string"
+                            },
+                            "items": {
+                                "description": "Forecast details",
+                                "items": {
+                                    "description": "Forecast Detail Entity",
+                                    "properties": {
+                                        "clouds": {
+                                            "description": "Cloudage in % (high clouds, low clouds, middle clouds)",
+                                            "properties": {
+                                                "high": {
+                                                    "description": "high clouds (%)",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "low": {
+                                                    "description": "low clouds (%)",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "middle": {
+                                                    "description": "middle clouds (%)",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "date": {
+                                            "description": "Date, beginning of timespan, format YYYY-mm-ddTHH:MM:SSZ",
+                                            "format": "datetime",
+                                            "type": "string"
+                                        },
+                                        "freshSnow": {
+                                            "description": "Fresh snow (m)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "isNight": {
+                                            "description": "Is night ?",
+                                            "type": "boolean"
+                                        },
+                                        "period": {
+                                            "description": "Period (h)",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "prec": {
+                                            "description": "Precipitation",
+                                            "properties": {
+                                                "class": {
+                                                    "description": "Precipitation class (0: no, 1: light, 2: mid, 3: heavy)",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "probability": {
+                                                    "description": "Propability of precipitation (%)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "sum": {
+                                                    "description": "Total precipitation (l/m^2)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "sumAsRain": {
+                                                    "description": "Total precipitation (l/m^2)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "pressure": {
+                                            "description": "Air Pressure in NN (hPa)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "rainHours": {
+                                            "description": "Rain duratiom (h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "relativeHumidity": {
+                                            "description": "Relative Humidity",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ]
+                                        },
+                                        "snowLine": {
+                                            "description": "Snowfall line",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Snowfall line average (m)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "max": {
+                                                    "description": "Snowfall line maximum (m)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Snowfall line minimum (m)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "unit": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "sunHours": {
+                                            "description": "Sun duration (h)",
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": [
+                                                "number",
+                                                "null"
+                                            ]
+                                        },
+                                        "temperature": {
+                                            "description": "Temperature",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Temperature average  (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "max": {
+                                                    "description": "Temperature maximum  (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Temperature minimum  (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "weather": {
+                                            "description": "Weather information (state, text, icon)",
+                                            "properties": {
+                                                "icon": {
+                                                    "description": "Weather icon for calculated interpretation",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "state": {
+                                                    "description": "Calculated weather interpretation",
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "description": "Short weather text for calculated interpretation",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "wind": {
+                                            "description": "Wind",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Wind average (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "direction": {
+                                                    "description": "Wind direction",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "gusts": {
+                                                    "description": "Gust Information",
+                                                    "properties": {
+                                                        "text": {
+                                                            "type": "string"
+                                                        },
+                                                        "value": {
+                                                            "description": "Wind gust (km/h)",
+                                                            "format": "float",
+                                                            "maximum": 3.402823669209385e+38,
+                                                            "minimum": -3.402823669209385e+38,
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "max": {
+                                                    "description": "Wind maximum (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Wind minimum (km/h)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "significationWind": {
+                                                    "default": false,
+                                                    "description": "Is signification ?",
+                                                    "type": "boolean"
+                                                },
+                                                "text": {
+                                                    "description": "Wind text",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "unit": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "windchill": {
+                                            "description": "Wind chill",
+                                            "properties": {
+                                                "avg": {
+                                                    "description": "Wind chill average (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "max": {
+                                                    "description": "Wind chill maximum (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "min": {
+                                                    "description": "Wind chill minimum (°C)",
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": [
+                                                        "number",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "title": "Forecast Detail Entity",
+                                    "type": "object"
+                                },
+                                "type": [
+                                    "array",
+                                    "null"
+                                ]
+                            },
+                            "nextUpdate": {
+                                "description": "Date of next update format YYYY-mm-ddTHH:MM:SS",
+                                "format": "datetime",
+                                "type": "string"
+                            },
+                            "point": {
+                                "default": "global",
+                                "description": "Named elevation point",
+                                "enum": [
+                                    "global",
+                                    "lowestPoint",
+                                    "highestPoint",
+                                    null
+                                ],
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "source": {
+                                "description": "Weather data provider",
+                                "type": "string"
+                            }
+                        },
+                        "title": "Weather Information Hourly Entity",
+                        "type": "object"
+                    },
+                    "location": {
+                        "description": "Location Informantion",
+                        "properties": {
+                            "code": {
+                                "description": "Location code",
+                                "type": "string"
+                            },
+                            "coordinates": {
+                                "description": "Coordinates",
+                                "properties": {
+                                    "latitude": {
+                                        "description": "Value between -90 and 90. Latitude as decimal degrees (up to 5 decimals)",
+                                        "format": "float",
+                                        "maximum": 3.402823669209385e+38,
+                                        "minimum": -3.402823669209385e+38,
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
+                                    },
+                                    "longitude": {
+                                        "description": "Value between -180 and 180. Longitude as decimal degrees (up to 5 decimals)",
+                                        "format": "float",
+                                        "maximum": 3.402823669209385e+38,
+                                        "minimum": -3.402823669209385e+38,
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "name": {
+                                "description": "Name of the Location",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "timezone": {
+                                "description": "Time Zone",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "title": "Base Location",
+                        "type": "object"
+                    }
+                },
+                "title": "Forecast Hourly",
+                "type": "object"
+            }
+        }
+    ]
+}

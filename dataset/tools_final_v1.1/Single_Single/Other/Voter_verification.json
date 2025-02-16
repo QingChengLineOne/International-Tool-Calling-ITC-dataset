@@ -1,0 +1,18 @@
+{
+    "tool_name": "Voter verification",
+    "tool_description": "With the Voter Verification API, you can now onboard with confidence knowing that the individuals you onboard are holding a valid Voter Card issued by the Government of India, are eligible to vote, and have provided you with reliable identity and address proofs.",
+    "home_url": "https://rapidapi.com/way2risetech/api/voter-verification1/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Voter",
+            "url": "https://voter-verification1.p.rapidapi.com/Getvoterfulldetails",
+            "description": "This API function retrieves full details of a voter, ensuring that the individual holds a valid Voter Card and is eligible to vote.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

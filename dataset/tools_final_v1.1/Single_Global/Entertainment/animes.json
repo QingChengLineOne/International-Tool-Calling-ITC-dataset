@@ -1,0 +1,139 @@
+{
+    "tool_name": "animes",
+    "tool_description": "Get all data from your favorite anime, including the chapter or tomo of the manga or the light novel that the anime adapted.",
+    "home_url": "https://rapidapi.com/lautaroPH/api/animes5/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get anime detail",
+            "url": "https://animes5.p.rapidapi.com/anime/{id}",
+            "description": "This endpoint allows a user to retrieve detailed data of a specific anime using its mal_id. The response includes the anime's title, aired episodes, genre, and a brief synopsis.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "Insert the anime's mal_id to get its details.",
+                    "default": "5114"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "fields",
+                    "type": "STRING",
+                    "description": "Specify which fields to return. Available fields include id, title, main_picture, start_date, end_date, synopsis, mean, rank, popularity, num_list_users, num_scoring_users, status, genres, num_episodes, source, studios, volume, chapter, light_novel, media_type, mal_id, broadcast, statistics, related_manga, related_anime, season, year, title_english, title_japanese, synonyms.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get animes",
+            "url": "https://animes5.p.rapidapi.com/",
+            "description": "This endpoint allows for the retrieval of data about multiple anime. It supports various query parameters for filtering results based on title, year, media type, studio, source, status, genre, and more.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "year_greater",
+                    "type": "NUMBER",
+                    "description": "Find animes released after the specified year.",
+                    "default": ""
+                },
+                {
+                    "name": "media_type",
+                    "type": "STRING",
+                    "description": "Filter by media type (e.g., music, tv, ova, movie, special).",
+                    "default": ""
+                },
+                {
+                    "name": "studio",
+                    "type": "STRING",
+                    "description": "Filter animes by the studio name.",
+                    "default": ""
+                },
+                {
+                    "name": "year_less",
+                    "type": "NUMBER",
+                    "description": "Find animes released before the specified year.",
+                    "default": ""
+                },
+                {
+                    "name": "nsfw",
+                    "type": "STRING",
+                    "description": "Include not safe for work content if desired.",
+                    "default": ""
+                },
+                {
+                    "name": "status",
+                    "type": "STRING",
+                    "description": "Filter animes by their current airing status (e.g., currently_airing, finished_airing).",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limit the number of results returned.",
+                    "default": ""
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search for an anime by title in English or Japanese.",
+                    "default": ""
+                },
+                {
+                    "name": "genre",
+                    "type": "STRING",
+                    "description": "Filter animes by genre.",
+                    "default": ""
+                },
+                {
+                    "name": "sort",
+                    "type": "BOOLEAN",
+                    "description": "Specify the sort order (ascending or descending).",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Skip a specified number of results.",
+                    "default": ""
+                },
+                {
+                    "name": "season",
+                    "type": "STRING",
+                    "description": "Filter animes by their season.",
+                    "default": ""
+                },
+                {
+                    "name": "fields",
+                    "type": "STRING",
+                    "description": "Specify which fields to return. Available fields include id, title, main_picture, start_date, end_date, synopsis, mean, rank, popularity, num_list_users, num_scoring_users, status, genres, num_episodes, source, studios, volume, chapter, light_novel, media_type, mal_id, broadcast, statistics, related_manga, related_anime, season, year, title_english, title_japanese, synonyms.",
+                    "default": ""
+                },
+                {
+                    "name": "year_equal",
+                    "type": "NUMBER",
+                    "description": "Filter animes released in the specified year.",
+                    "default": ""
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "Filter animes by their source material (e.g., manga, novel, original).",
+                    "default": ""
+                },
+                {
+                    "name": "order",
+                    "type": "STRING",
+                    "description": "Specify the field to order the results by.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "今日头条API",
+    "tool_description": "今日头条提供的数据接口，可以获取新闻信息等。",
+    "home_url": "http://is.snssdk.com/api/news/feed/v51/",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "新闻信息获取",
+            "url": "http://is.snssdk.com/api/news/feed/v51/",
+            "description": "获取新闻信息",
+            "method": "GET/POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

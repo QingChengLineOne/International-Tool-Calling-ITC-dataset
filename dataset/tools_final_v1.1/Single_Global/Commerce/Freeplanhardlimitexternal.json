@@ -1,0 +1,268 @@
+{
+    "tool_name": "Freeplanhardlimitexternal",
+    "tool_description": "An API service providing various functionalities related to user management and order processing.",
+    "home_url": "https://rapidapi.com/LakshUChicago/api/freeplanhardlimitexternal/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "loginUser",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/user/login",
+            "description": "Logs in a user with the provided username and password.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The user name for login.",
+                    "default": ""
+                },
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "The password for login in clear text.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "type": "string"
+            }
+        },
+        {
+            "name": "getOrderById",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/store/order/{orderId}",
+            "description": "Fetches the order details by order ID. Valid IDs are integers between 1 and 10.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "orderId",
+                    "type": "NUMBER",
+                    "description": "ID of the order to be fetched.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "properties": {
+                    "complete": {
+                        "default": false,
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "format": "int64",
+                        "maximum": 9223372036854776000,
+                        "minimum": -9223372036854776000,
+                        "type": "integer"
+                    },
+                    "petId": {
+                        "format": "int64",
+                        "maximum": 9223372036854776000,
+                        "minimum": -9223372036854776000,
+                        "type": "integer"
+                    },
+                    "quantity": {
+                        "format": "int32",
+                        "maximum": 2147483647,
+                        "minimum": -2147483648,
+                        "type": "integer"
+                    },
+                    "shipDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Order Status",
+                        "enum": [
+                            "placed",
+                            "approved",
+                            "delivered"
+                        ],
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "getInventory",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/store/inventory",
+            "description": "Returns a map of status codes to quantities of items in inventory.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "additionalProperties": {
+                    "format": "int32",
+                    "maximum": 2147483647,
+                    "minimum": -2147483648,
+                    "type": "integer"
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "logoutUser",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/user/logout",
+            "description": "Logs out the currently logged-in user.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "getUserByName",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/user/{username}",
+            "description": "Fetches user details by username.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The name of the user to be fetched. Use user1 for testing.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "getPetById",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/pet/{petId}",
+            "description": "Returns details of a single pet by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "petId",
+                    "type": "NUMBER",
+                    "description": "ID of the pet to return.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "placeOrder",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/store/order",
+            "description": "Places a new order.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "updatePetWithForm",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/pet/{petId}",
+            "description": "Updates a pet’s details using form data.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "petId",
+                    "type": "NUMBER",
+                    "description": "ID of the pet that needs to be updated.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "status",
+                    "type": "STRING",
+                    "description": "Updated status of the pet.",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Updated name of the pet.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "uploadFile",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/pet/{petId}/uploadImage",
+            "description": "Uploads an image for a specific pet.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "petId",
+                    "type": "NUMBER",
+                    "description": "ID of the pet to update with an image.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "properties": {
+                    "code": {
+                        "format": "int32",
+                        "maximum": 2147483647,
+                        "minimum": -2147483648,
+                        "type": "integer"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "createUsersWithListInput",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/user/createWithList",
+            "description": "Creates multiple users with a list input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "createUser",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/user",
+            "description": "Creates a new user. This can only be done by the logged-in user.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "createUsersWithArrayInput",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/user/createWithArray",
+            "description": "Creates multiple users with an array input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "addPet",
+            "url": "https://freeplanhardlimitexternal.p.rapidapi.com/pet",
+            "description": "Adds a new pet to the store.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        }
+    ]
+}

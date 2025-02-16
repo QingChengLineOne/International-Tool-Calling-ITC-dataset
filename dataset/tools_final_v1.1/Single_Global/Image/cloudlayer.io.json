@@ -1,0 +1,62 @@
+{
+    "tool_name": "cloudlayer.io",
+    "tool_description": "Generate PDFs, Images, and more from HTML and URLs",
+    "home_url": "https://rapidapi.com/cloudlayerio-cloudlayerio-default/api/cloudlayer-io/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Convert URL to Image",
+            "url": "https://cloudlayer-io.p.rapidapi.com/v1/url/image",
+            "description": "This endpoint allows you to convert any publicly accessible URL into an image.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the webpage to convert to an image.",
+                    "default": "https://google.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timeout",
+                    "type": "NUMBER",
+                    "description": "The maximum time to wait for the request in milliseconds.",
+                    "default": "30000"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Convert HTML to Image",
+            "url": "https://cloudlayer-io.p.rapidapi.com/v1/html/image",
+            "description": "This endpoint allows you to convert HTML content into an image.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Convert HTML to PDF",
+            "url": "https://cloudlayer-io.p.rapidapi.com/v1/html/pdf",
+            "description": "This endpoint allows you to convert HTML content into a PDF document.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Convert URL to PDF",
+            "url": "https://cloudlayer-io.p.rapidapi.com/v1/url/pdf",
+            "description": "This endpoint allows you to convert any publicly accessible URL into a PDF document.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

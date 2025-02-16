@@ -1,0 +1,37 @@
+{
+    "tool_name": "AcroSuite OAuther",
+    "tool_description": "Get OAuth/OpenID Connect authentication information. This service provides OpenID Connect authentication information retrieval.",
+    "home_url": "https://rapidapi.com/AcroChannel/api/acrosuite-oauther/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "OpenID Connecter",
+            "url": "https://acrosuite-oauther.p.rapidapi.com/v0_1/CstService/tools/oauth/oidclist",
+            "description": "This API retrieves OAuth/OpenID Connect (OIDC) authentication information from third-party providers such as Google, LINE, YahooJP, and Azure. You can obtain an OIDC list without an OAuthCode or OIDC authentication information with an OAuthCode. If you receive an OIDC list, you can select an OAuthURL to call and obtain the corresponding authentication information. The parameters redirectHost and redirectPort are not required for this call.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "oAuthCode",
+                    "type": "STRING",
+                    "description": "OIDC Provider Code (e.g., GoogleOIDC, LineOIDC, YahooJPOIDC)",
+                    "default": ""
+                },
+                {
+                    "name": "redirectHost",
+                    "type": "STRING",
+                    "description": "Host to redirect to after authentication (not required)",
+                    "default": ""
+                },
+                {
+                    "name": "redirectPort",
+                    "type": "STRING",
+                    "description": "Port to redirect to after authentication (not required)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

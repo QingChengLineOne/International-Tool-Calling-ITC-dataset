@@ -1,0 +1,88 @@
+{
+    "tool_name": "Plagiarism Checker and Auto Citation Generator Multi-Lingual",
+    "tool_description": "A Plagiarism Checker and Auto Citation Machine powered by Smodin (https://smodin.io) which works in 50 languages including Arabic, English, Spanish, French, and more.",
+    "home_url": "https://rapidapi.com/smodin/api/plagiarism-checker-and-auto-citation-generator-multi-lingual/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Plagiarism and Citation Endpoint",
+            "url": "https://plagiarism-checker-and-auto-citation-generator-multi-lingual.p.rapidapi.com/plagiarism",
+            "description": "This endpoint checks for plagiarism and generates citations. Note: This is a RAPID API test endpoint that only returns a mock response. For real data testing, please use Postman.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "percentPlagiarism": {
+                        "type": "integer"
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "url": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "matches": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "inputStart": {
+                                                "type": "integer"
+                                            },
+                                            "inputEnd": {
+                                                "type": "integer"
+                                            },
+                                            "matchText": {
+                                                "type": "string"
+                                            },
+                                            "context": {
+                                                "type": "object"
+                                            },
+                                            "score": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "citations": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                },
+                                "sentenceEndIndex": {
+                                    "type": "integer"
+                                },
+                                "score": {
+                                    "type": "integer"
+                                },
+                                "matchedContentStartIndex": {
+                                    "type": "integer"
+                                },
+                                "matchedContentEndIndex": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

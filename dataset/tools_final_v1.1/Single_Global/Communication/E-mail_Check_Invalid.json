@@ -1,0 +1,32 @@
+{
+    "tool_name": "E-mail Check Invalid",
+    "tool_description": "The Email Check Invalid API is used to verify the validity of an email address, ensuring it meets specific formatting criteria.",
+    "home_url": "https://rapidapi.com/tvhaudev/api/e-mail-check-invalid/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "mailCheck",
+            "url": "https://e-mail-check-invalid.p.rapidapi.com/WebAPIs/mail/emailValidator",
+            "description": "This API function checks the validity of an email address by filtering the domain and ensuring it adheres to standard email formatting rules.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to be validated.",
+                    "default": "tvh81.dev@gmail.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "Filter for specific domains. Multiple domains can be entered, separated by commas (e.g., gmail.com, example.com, yahoo.com).",
+                    "default": "gmail.com, gmail.com, outlook.com"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

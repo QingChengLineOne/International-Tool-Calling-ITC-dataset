@@ -1,0 +1,90 @@
+{
+    "tool_name": "Stock Sentiment API",
+    "tool_description": "Real-time social sentiment API to track news activity related to a certain stock.",
+    "home_url": "https://rapidapi.com/kinduvarma/api/stock-sentiment-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "News Sentiment Data",
+            "url": "https://stock-sentiment-api.p.rapidapi.com/stock_news_sentiment/",
+            "description": "Returns a list of articles related to the input stock and their associated sentiment score, known as the compound score.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol for which to retrieve news sentiment.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Most Negative News",
+            "url": "https://stock-sentiment-api.p.rapidapi.com/top_negative_news/",
+            "description": "Returns a list of the most negative articles related to the given stock. The sentiment scores can be viewed in the compound field. You can change the number of articles returned with the count parameter. Note: The API parses for 100 articles, so any count given over 100 will return all 100 articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol for which to retrieve negative news.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "The number of articles to return, up to a maximum of 100.",
+                    "default": "3"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Most Positive News",
+            "url": "https://stock-sentiment-api.p.rapidapi.com/top_positive_news/",
+            "description": "Returns a list of the most positive articles related to the given stock. The sentiment scores can be viewed in the compound field. You can change the number of articles returned with the count parameter. Note: The API parses for 100 articles, so any count given over 100 will return all 100 articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol for which to retrieve positive news.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "The number of articles to return, up to a maximum of 100.",
+                    "default": "3"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Market Data",
+            "url": "https://stock-sentiment-api.p.rapidapi.com/market_data/",
+            "description": "Returns a list of daily stock metrics such as opening, closing, highest, and lowest prices.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol for which to retrieve market data.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

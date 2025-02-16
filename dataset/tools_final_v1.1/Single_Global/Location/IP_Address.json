@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP Address",
+    "tool_description": "Low latency API to retrieve User IP Address. Use to integrate on web-based client apps to determine the IP address of the user.",
+    "home_url": "https://rapidapi.com/codearchitect/api/ip-address3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get User IP",
+            "url": "https://ip-address3.p.rapidapi.com/",
+            "description": "Retrieve the user's IP address.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "ip": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

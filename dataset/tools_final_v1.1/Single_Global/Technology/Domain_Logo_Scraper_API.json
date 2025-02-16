@@ -1,0 +1,25 @@
+{
+    "tool_name": "Domain Logo Scraper API",
+    "tool_description": "The Domain Logo Scraper API is a tool that automatically extracts a website's logo from its domain. This API allows users to retrieve a website's logo without the need for manual searching, making it a valuable resource for web developers, marketers, and designers.",
+    "home_url": "https://rapidapi.com/zyla-labs-zyla-labs-default/api/domain-logo-scraper-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Logo Extractor",
+            "url": "https://domain-logo-scraper-api.p.rapidapi.com/domain_logo",
+            "description": "This endpoint allows you to extract the logo from any domain of your preference.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the website from which to extract the logo.",
+                    "default": "https://www.cbsnews.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

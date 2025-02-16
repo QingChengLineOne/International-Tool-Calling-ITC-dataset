@@ -1,0 +1,18 @@
+{
+    "tool_name": "Clean NYC test",
+    "tool_description": "A testing tool designed to interact with the Clean NYC API for data retrieval.",
+    "home_url": "https://rapidapi.com/printingdigital/api/clean-nyc-test/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Test",
+            "url": "https://clean-nyc-test.p.rapidapi.com/",
+            "description": "This API endpoint allows users to perform a test request to the Clean NYC service.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

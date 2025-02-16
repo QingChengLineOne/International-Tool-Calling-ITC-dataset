@@ -1,0 +1,25 @@
+{
+    "tool_name": "Prayer times",
+    "tool_description": "Get prayer times for various locations based on city or country.",
+    "home_url": "https://rapidapi.com/Kareemhesham2005/api/prayer-times4/",
+    "country": "Egypt",
+    "api_list": [
+        {
+            "name": "Kareem Hesham",
+            "url": "https://prayer-times4.p.rapidapi.com/",
+            "description": "This API allows users to search for prayer times using a city name or country.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Egypt",
+                    "type": "STRING",
+                    "description": "Specify the city in Egypt for which to retrieve prayer times.",
+                    "default": "Assiut"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "AI endpoint",
+    "tool_description": "This endpoint provides answers to any question you may have, utilizing advanced AI capabilities.",
+    "home_url": "https://rapidapi.com/erel95/api/ai-endpoint/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Question endpoint",
+            "url": "https://ai-endpoint.p.rapidapi.com/",
+            "description": "This API allows you to ask any question and receive a response from the AI.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "prompt",
+                    "type": "STRING",
+                    "description": "The question you want to ask the AI.",
+                    "default": "How is the weather today?"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

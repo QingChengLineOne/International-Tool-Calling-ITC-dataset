@@ -1,0 +1,31 @@
+{
+    "tool_name": "IP/域名&运营商&地区&经纬度查询",
+    "tool_description": "可查询指定IP的地理位置和运营商与经纬度，还可以查询网址的服务器IP地址位置和运营商信息。",
+    "home_url": "https://api.aa1.cn/doc/ip_query.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP/域名查询接口",
+            "url": "https://api.tjit.net/api/ip/query",
+            "description": "查询指定IP或域名的地理位置、运营商和经纬度信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API密钥，用于验证请求的合法性。",
+                    "default": "你的key"
+                },
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IP地址或域名。",
+                    "default": "8.8.8.8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

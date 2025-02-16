@@ -1,0 +1,31 @@
+{
+    "tool_name": "新闻热搜-微博热榜",
+    "tool_description": "获取新浪微博热搜榜数据。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/weibo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "新浪微博热搜榜数据获取API",
+            "url": "https://cn.apihz.cn/api/xinwen/weibo.php",
+            "description": "用于获取新浪微博热搜榜数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子的用户ID，用于识别请求者",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子的密钥，用于验证请求者的身份",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

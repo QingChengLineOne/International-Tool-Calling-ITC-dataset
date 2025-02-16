@@ -1,0 +1,62 @@
+{
+    "tool_name": "SMS_v3",
+    "tool_description": "Send SMS using your own android phone as the gateway.",
+    "home_url": "https://rapidapi.com/hashamaly/api/sms151/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "send",
+            "url": "https://sms151.p.rapidapi.com/send/index.php",
+            "description": "Use this API to send SMS messages.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username for authentication.",
+                    "default": "username"
+                },
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "The password for authentication.",
+                    "default": "password"
+                },
+                {
+                    "name": "message",
+                    "type": "STRING",
+                    "description": "The content of the SMS to be sent.",
+                    "default": "this is the sms to send to the end user."
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "group",
+                    "type": "STRING",
+                    "description": "The group to which the SMS will be sent, if applicable.",
+                    "default": ""
+                },
+                {
+                    "name": "number",
+                    "type": "STRING",
+                    "description": "The recipient's phone number.",
+                    "default": "(xxx)yyy-zzzz"
+                },
+                {
+                    "name": "send_at",
+                    "type": "STRING",
+                    "description": "The scheduled time to send the SMS.",
+                    "default": "2021-12-31 11:59:59"
+                },
+                {
+                    "name": "contact",
+                    "type": "STRING",
+                    "description": "Additional contact information, if needed.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

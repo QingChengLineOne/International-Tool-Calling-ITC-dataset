@@ -1,0 +1,18 @@
+{
+    "tool_name": "testGetApi",
+    "tool_description": "A test API designed for the Batman project, providing access to specific functionalities related to the project.",
+    "home_url": "https://rapidapi.com/achmaddayat/api/testgetapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "testBatmanApi",
+            "url": "https://testgetapi.p.rapidapi.com/testBatmanApi",
+            "description": "This API retrieves test data related to the Batman project.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

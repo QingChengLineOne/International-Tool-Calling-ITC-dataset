@@ -1,0 +1,32 @@
+{
+    "tool_name": "万年历/农历/日历",
+    "tool_description": "万年历查询_阴历查询_详细版",
+    "home_url": "https://api.aa1.cn/doc/perpetual-calendar.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "万年历/农历/日历查询接口",
+            "url": "https://api.songzixian.com/api/perpetual-calendar",
+            "description": "查询指定日期的万年历、农历及详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "需要查询的日期，格式为YYYY-MM-DD",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源，可选值为'local_perpetual_calendar'（本地数据源）",
+                    "default": "local_perpetual_calendar"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

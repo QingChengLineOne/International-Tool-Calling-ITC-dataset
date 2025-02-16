@@ -1,0 +1,25 @@
+{
+    "tool_name": "网页资源一键提取",
+    "tool_description": "将指定网址的所有链接资源提取出来并分类",
+    "home_url": "https://api.aa1.cn/doc/bazhan_url.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "提取网页资源API",
+            "url": "https://www.hhlqilongzhu.cn/api/bazhan_url.php",
+            "description": "提取指定网址的所有链接资源并分类",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要提取资源的网址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

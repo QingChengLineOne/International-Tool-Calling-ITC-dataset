@@ -1,0 +1,18 @@
+{
+    "tool_name": "每日沙雕新闻API",
+    "tool_description": "获取每日的沙雕新闻，不定时更新",
+    "home_url": "https://api.aa1.cn/doc/todaynewpaper.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取每日沙雕新闻",
+            "url": "https://api.pearktrue.cn/api/shadiao/",
+            "description": "该接口提供每日沙雕新闻的获取服务",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

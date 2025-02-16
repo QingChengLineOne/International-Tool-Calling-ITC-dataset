@@ -1,0 +1,105 @@
+{
+    "tool_name": "Hull ID Boat HIN Decoder",
+    "tool_description": "This tool decodes the 12-digit Hull Identification Number (HIN) and verifies its validity. It is widely used by various State DMV's and has been operational for over 7 years.",
+    "home_url": "https://rapidapi.com/nadkabbani/api/hull-id-boat-hin-decoder/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "HIN Decoder - Return Json",
+            "url": "https://hull-id-boat-hin-decoder.p.rapidapi.com/api-decoder.php",
+            "description": "Returns JSON decoded data for the provided HIN.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "HIN",
+                    "type": "STRING",
+                    "description": "The Hull Identification Number to decode.",
+                    "default": "MVIPK003G607"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Year & Make Lookup (returns json)",
+            "url": "https://hull-id-boat-hin-decoder.p.rapidapi.com/API-year-make-MIC-lookup.php",
+            "description": "Looks up boat manufacturers (makes) for a specified year, useful for creating selection dropdowns.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "NUMBER",
+                    "description": "The year to look for boat builders, formatted as YYYY. Valid from 1970 to the current year.",
+                    "default": "1970"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "MIC Lookup",
+            "url": "https://hull-id-boat-hin-decoder.p.rapidapi.com/mic-api-lookup.php",
+            "description": "Enter a boat manufacturer code (3-letter MIC) to retrieve information about the company.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "MIC",
+                    "type": "STRING",
+                    "description": "The manufacturer identification code to look up.",
+                    "default": "YAM"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "HIN Decoder - Return html",
+            "url": "https://hull-id-boat-hin-decoder.p.rapidapi.com/api-decoder.php",
+            "description": "Returns an HTML table instead of JSON when usertable is set to 1.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "HIN",
+                    "type": "STRING",
+                    "description": "The Hull Identification Number to decode.",
+                    "default": "MVIPK003G607"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "usertable",
+                    "type": "STRING",
+                    "description": "Set to 1 to receive an HTML output instead of JSON.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

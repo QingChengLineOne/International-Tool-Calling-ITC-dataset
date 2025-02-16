@@ -1,0 +1,37 @@
+{
+    "tool_name": "QQ 开通业务查询",
+    "tool_description": "获取账号开通的业务信息(如过期时间)",
+    "home_url": "https://api.aa1.cn/doc/QQ/get_uin_business_info.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ 开通业务查询接口",
+            "url": "http://www.Dreamling.top/API/QQ/get_uin_business_info/index.php",
+            "description": "查询指定QQ账号开通的业务信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "uin",
+                    "type": "string",
+                    "description": "需要查询的QQ账号",
+                    "default": ""
+                },
+                {
+                    "name": "skey",
+                    "type": "string",
+                    "description": "QQ账号的安全密钥，用于验证请求的合法性",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，可选值为json或xml",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "tool_name": "天气预报-10厘米土壤相对湿度",
+    "tool_description": "获取10厘米土壤相对湿度，来源于中国气象局。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/trsd.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取10厘米土壤相对湿度",
+            "url": "https://cn.apihz.cn/api/tianqi/trsd.php",
+            "description": "获取指定地点的10厘米土壤相对湿度数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子ID，用于标识用户",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子密钥，用于安全验证",
+                    "default": "88888888"
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "城市名称，用于指定查询的城市",
+                    "default": "None"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "日期，用于指定查询的日期（格式：YYYY-MM-DD），如果不填写，则默认查询当天数据",
+                    "default": "None"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，支持json和xml，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

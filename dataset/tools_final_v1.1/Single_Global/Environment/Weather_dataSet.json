@@ -1,0 +1,25 @@
+{
+    "tool_name": "Weather_dataSet",
+    "tool_description": "A comprehensive weather data API designed for integration into Django projects, providing real-time weather information.",
+    "home_url": "https://rapidapi.com/weatherapi.me/api/weather_dataset/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Weather_dataSet",
+            "url": "https://weather_dataset.p.rapidapi.com/data",
+            "description": "Fetches current weather data based on specified parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "data",
+                    "type": "STRING",
+                    "description": "Specifies the type of weather data to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

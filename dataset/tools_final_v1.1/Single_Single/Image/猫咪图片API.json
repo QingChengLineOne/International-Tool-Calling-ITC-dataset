@@ -1,0 +1,37 @@
+{
+    "tool_name": "猫咪图片API",
+    "tool_description": "提供各种猫咪图片的API，支持自定义参数获取指定数量的猫咪图片。",
+    "home_url": "https://www.free-api.com/doc/609",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取猫咪图片",
+            "url": "https://api.thecatapi.com/v1/images/search",
+            "description": "获取随机猫咪图片，可以指定图片数量和其他过滤条件。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "要返回的图片数量",
+                    "default": "1"
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "页码",
+                    "default": "1"
+                },
+                {
+                    "name": "order",
+                    "type": "string",
+                    "description": "按上传日期排序",
+                    "default": "ASC"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

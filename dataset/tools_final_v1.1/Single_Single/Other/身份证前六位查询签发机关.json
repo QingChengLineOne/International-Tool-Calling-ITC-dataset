@@ -1,0 +1,25 @@
+{
+    "tool_name": "身份证前六位查询签发机关",
+    "tool_description": "通过身份证前六位查询对应的签发机关",
+    "home_url": "https://api.aa1.cn/doc/jg.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "身份证前六位查询签发机关",
+            "url": "https://cqapi.site/API/qf.php",
+            "description": "根据身份证前六位查询签发机关的详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "身份证前六位",
+                    "default": "请输入身份证前六位"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

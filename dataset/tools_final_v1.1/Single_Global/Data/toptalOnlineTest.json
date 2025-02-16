@@ -1,0 +1,25 @@
+{
+    "tool_name": "toptalOnlineTest",
+    "tool_description": "A small API similar to the one used in the Toptal test, which returns an array of strings with the option to filter results using query parameters.",
+    "home_url": "https://rapidapi.com/AimeurAmin/api/toptalonlinetest/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "items",
+            "url": "https://toptalonlinetest.p.rapidapi.com/items",
+            "description": "Retrieves an array of strings based on the provided query parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "A query string to filter the results.",
+                    "default": "a"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

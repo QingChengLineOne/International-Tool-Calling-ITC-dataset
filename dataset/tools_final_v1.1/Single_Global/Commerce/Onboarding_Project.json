@@ -1,0 +1,82 @@
+{
+    "tool_name": "Onboarding Project",
+    "tool_description": "This Project is created by the demo process.",
+    "home_url": "https://rapidapi.com/akshays-XTw1jQjPD/api/onboarding-project8855/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Add to Order",
+            "url": "https://onboarding-project8855.p.rapidapi.com/order/{id}/product",
+            "description": "Adds a product to an existing order based on the provided order ID.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the order to which the product will be added.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Place Order",
+            "url": "https://onboarding-project8855.p.rapidapi.com/order/{id}/place",
+            "description": "Places an order based on the provided order ID.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the order to be placed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Login",
+            "url": "https://onboarding-project8855.p.rapidapi.com/auth/login",
+            "description": "Authenticates a user and initiates a session.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Create User (Sign Up)",
+            "url": "https://onboarding-project8855.p.rapidapi.com/auth/user",
+            "description": "Creates a new user account.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Create Order",
+            "url": "https://onboarding-project8855.p.rapidapi.com/order/new",
+            "description": "Creates a new order.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Create Product",
+            "url": "https://onboarding-project8855.p.rapidapi.com/catalog/product",
+            "description": "Creates a new product in the catalog.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

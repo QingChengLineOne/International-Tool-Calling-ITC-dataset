@@ -1,0 +1,50 @@
+{
+    "tool_name": "Front Page search engine",
+    "tool_description": "A tool that allows users to search the front pages of websites on the internet, retrieving the title, description, and screenshot of the front page, along with additional information such as IAB category, size, language, and domain rank percentile.",
+    "home_url": "https://rapidapi.com/ibmbpmtips/api/front-page-search-engine/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://front-page-search-engine.p.rapidapi.com/search.php",
+            "description": "This API function takes any search string in any language and returns relevant front page information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pageno",
+                    "type": "NUMBER",
+                    "description": "The page number of the search results to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country code to filter the search results.",
+                    "default": "US"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language code for the search query.",
+                    "default": "en"
+                },
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The search string to query the front pages.",
+                    "default": "Hello"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "The number of results to return per page.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

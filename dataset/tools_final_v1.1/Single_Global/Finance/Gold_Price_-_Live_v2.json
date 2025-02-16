@@ -1,0 +1,18 @@
+{
+    "tool_name": "Gold Price - Live_v2",
+    "tool_description": "Get the current latest price of gold and silver in US dollars per ounce.",
+    "home_url": "https://rapidapi.com/ai-box-ai-box-default/api/gold-price-live/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Metal Prices",
+            "url": "https://gold-price-live.p.rapidapi.com/get_metal_prices",
+            "description": "Retrieve the current latest prices for metals, including gold and silver.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

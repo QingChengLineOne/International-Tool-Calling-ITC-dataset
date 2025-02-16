@@ -1,0 +1,28 @@
+{
+    "tool_name": "Neuro High-quality Translation",
+    "tool_description": "High-quality text translation based on neural networks and our own multi-model.",
+    "home_url": "https://rapidapi.com/kiev3381917/api/neuro-high-quality-translation/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Translation",
+            "url": "https://neuro-high-quality-translation.p.rapidapi.com/Translation",
+            "description": "Sets a translation task and returns the result in a JSON format.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "List of available languages",
+            "url": "https://neuro-high-quality-translation.p.rapidapi.com/GetLangs",
+            "description": "Retrieves a list of languages available for translation in both directions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

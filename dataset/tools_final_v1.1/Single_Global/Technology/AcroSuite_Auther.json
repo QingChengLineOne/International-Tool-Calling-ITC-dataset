@@ -1,0 +1,28 @@
+{
+    "tool_name": "AcroSuite Auther",
+    "tool_description": "Provide one-time or multi-time authentication service. ワンタイム又は複数回の認証・検証サービスを提供います。",
+    "home_url": "https://rapidapi.com/AcroChannel/api/acrosuite-auther/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Verify Authentication",
+            "url": "https://acrosuite-auther.p.rapidapi.com/v0_1/CstService/tools/issue/auth",
+            "description": "Verify one-time or multi-time authentication access by AccessKey, Password, Access times, and validate period. 発行したAccessKeyとPassword、アクセス回数と有効期間によってワンタイム又は複数回アクセス有効性を検証します。",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Issue Authentication",
+            "url": "https://acrosuite-auther.p.rapidapi.com/v0_1/CstService/tools/issue/access",
+            "description": "Issue one-time or multi-time authentication access with notice mail including AccessKey and Password. Access times and validate period are defined in advance. After calling the API, you may verify by Verify Authentication API.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

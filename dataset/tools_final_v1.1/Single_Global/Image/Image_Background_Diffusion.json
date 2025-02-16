@@ -1,0 +1,18 @@
+{
+    "tool_name": "Image Background Diffusion",
+    "tool_description": "Repaint high-quality image background with prompt.",
+    "home_url": "https://rapidapi.com/logerzhu/api/image-background-diffusion1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Submit task",
+            "url": "https://image-background-diffusion1.p.rapidapi.com/predictions",
+            "description": "Start an image background diffusion task.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

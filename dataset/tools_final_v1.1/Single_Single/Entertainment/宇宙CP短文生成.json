@@ -1,0 +1,31 @@
+{
+    "tool_name": "宇宙CP短文生成",
+    "tool_description": "对接Lofter的宇宙CP测试,很有趣~",
+    "home_url": "https://api.aa1.cn/doc/cp.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "宇宙CP短文生成API",
+            "url": "https://www.hhlqilongzhu.cn/api/tu_lofter_cp.php",
+            "description": "生成宇宙CP风格的短文",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n1",
+                    "type": "string",
+                    "description": "第一个角色的名字",
+                    "default": "角色一"
+                },
+                {
+                    "name": "n2",
+                    "type": "string",
+                    "description": "第二个角色的名字",
+                    "default": "角色二"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

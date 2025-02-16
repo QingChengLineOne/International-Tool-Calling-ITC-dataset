@@ -1,0 +1,35 @@
+{
+    "tool_name": "Transitaires",
+    "tool_description": "Transitaires de dédouanement en Nouvelle-Calédonie",
+    "home_url": "https://rapidapi.com/opt-nc-opt-nc-default/api/transitaires/",
+    "country": "Nouvelle-Calédonie",
+    "api_list": [
+        {
+            "name": "Transitaire",
+            "url": "https://transitaires.p.rapidapi.com/transitaires/{id}",
+            "description": "Récupère un transitaire donné en utilisant son identifiant unique.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "L'identifiant unique du transitaire à récupérer.",
+                    "default": "DOUANE_AGENCE_GONDRAND"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Transitaires",
+            "url": "https://transitaires.p.rapidapi.com/transitaires",
+            "description": "Renvoie tous les transitaires disponibles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

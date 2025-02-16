@@ -1,0 +1,260 @@
+{
+    "tool_name": "data-extractor",
+    "tool_description": "Extract and clean data from text, including phone numbers, emails, and URLs.",
+    "home_url": "https://rapidapi.com/sidfeiner-7tDZ3MBZ_Ta/api/data-extractor/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "extract-emails",
+            "url": "https://data-extractor.p.rapidapi.com/extract/emails",
+            "description": "Extracts email addresses from the provided text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "post-format-phone",
+            "url": "https://data-extractor.p.rapidapi.com/format/phone",
+            "description": "Formats phone numbers extracted from the text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "extract-all",
+            "url": "https://data-extractor.p.rapidapi.com/extract",
+            "description": "Extracts all types of entities (emails, phone numbers, URLs) from the provided text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "title": "ExtractedEntity",
+                            "properties": {
+                                "originalText": {
+                                    "type": "string"
+                                },
+                                "extractedEntity": {
+                                    "anyOf": [
+                                        {
+                                            "type": "string",
+                                            "description": "If this was a phone or email match, extractedEntity will be the normalized value"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "description": "If this was an email match",
+                                            "properties": {
+                                                "protocol": {
+                                                    "type": "string"
+                                                },
+                                                "domain": {
+                                                    "type": "string"
+                                                },
+                                                "path": {
+                                                    "type": "string"
+                                                },
+                                                "params": {
+                                                    "type": "string"
+                                                },
+                                                "query": {
+                                                    "type": "object",
+                                                    "description": "If not null, maps key to list of values"
+                                                },
+                                                "fragment": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "type": {
+                                    "enum": [
+                                        "url",
+                                        "email",
+                                        "phone number"
+                                    ]
+                                },
+                                "country": {
+                                    "type": "string",
+                                    "description": "If extracted entity is related to a country, this will be set"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "extract-urls",
+            "url": "https://data-extractor.p.rapidapi.com/extract/urls",
+            "description": "Extracts URLs from the provided text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "title": "ExtractedEntity",
+                            "properties": {
+                                "originalText": {
+                                    "type": "string"
+                                },
+                                "extractedEntity": {
+                                    "anyOf": [
+                                        {
+                                            "type": "string",
+                                            "description": "If this was a phone or email match, extractedEntity will be the normalized value"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "description": "If this was an email match",
+                                            "properties": {
+                                                "protocol": {
+                                                    "type": "string"
+                                                },
+                                                "domain": {
+                                                    "type": "string"
+                                                },
+                                                "path": {
+                                                    "type": "string"
+                                                },
+                                                "params": {
+                                                    "type": "string"
+                                                },
+                                                "query": {
+                                                    "type": "object",
+                                                    "description": "If not null, maps key to list of values"
+                                                },
+                                                "fragment": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "type": {
+                                    "enum": [
+                                        "url",
+                                        "email",
+                                        "phone number"
+                                    ]
+                                },
+                                "country": {
+                                    "type": "string",
+                                    "description": "If extracted entity is related to a country, this will be set"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "extract-phones",
+            "url": "https://data-extractor.p.rapidapi.com/extract/phones",
+            "description": "Extracts phone numbers from the provided text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "title": "ExtractedEntity",
+                            "properties": {
+                                "originalText": {
+                                    "type": "string"
+                                },
+                                "extractedEntity": {
+                                    "anyOf": [
+                                        {
+                                            "type": "string",
+                                            "description": "If this was a phone or email match, extractedEntity will be the normalized value"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "description": "If this was an email match",
+                                            "properties": {
+                                                "protocol": {
+                                                    "type": "string"
+                                                },
+                                                "domain": {
+                                                    "type": "string"
+                                                },
+                                                "path": {
+                                                    "type": "string"
+                                                },
+                                                "params": {
+                                                    "type": "string"
+                                                },
+                                                "query": {
+                                                    "type": "object",
+                                                    "description": "If not null, maps key to list of values"
+                                                },
+                                                "fragment": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "type": {
+                                    "enum": [
+                                        "url",
+                                        "email",
+                                        "phone number"
+                                    ]
+                                },
+                                "country": {
+                                    "type": "string",
+                                    "description": "If extracted entity is related to a country, this will be set"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

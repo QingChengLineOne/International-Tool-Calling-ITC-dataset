@@ -1,0 +1,44 @@
+{
+    "tool_name": "端口tcping",
+    "tool_description": "该接口可以发起TCPing测试，测试协议为TCP，针对端口，禁Ping的依然可以测试",
+    "home_url": "https://api.aa1.cn/doc/tcping-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "TCPing测试接口",
+            "url": "https://v2.api-m.com/api/tcping",
+            "description": "用于发起TCPing测试的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "address",
+                    "type": "string",
+                    "description": "要测试的IP地址或域名",
+                    "default": ""
+                },
+                {
+                    "name": "port",
+                    "type": "int",
+                    "description": "要测试的端口号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timeout",
+                    "type": "int",
+                    "description": "连接超时时间（秒），默认为3秒",
+                    "default": 3
+                },
+                {
+                    "name": "count",
+                    "type": "int",
+                    "description": "发送的探测包数量，默认为4",
+                    "default": 4
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

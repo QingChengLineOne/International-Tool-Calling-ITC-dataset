@@ -1,0 +1,83 @@
+{
+    "tool_name": "Routing Number Bank Lookup",
+    "tool_description": "Lookup a bank's information based on a routing number input. Choose either ACH or wire transfer bank information. Supports XML and JSON responses.",
+    "home_url": "https://rapidapi.com/mikescogan-xbWFolmaQx/api/routing-number-bank-lookup/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get Bank Info",
+            "url": "https://routing-number-bank-lookup.p.rapidapi.com/api/v1/{routingnumber}",
+            "description": "This endpoint returns information about a bank by passing in the routing number. You can specify whether to retrieve ACH or Wire Transfer information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "routingNumber",
+                    "type": "string",
+                    "description": "The routing number that you want to lookup.",
+                    "default": "121000248"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Defines the format of the response. Possible inputs are 'xml' and 'json'. Default value is json.",
+                    "default": "json"
+                },
+                {
+                    "name": "paymentType",
+                    "type": "STRING",
+                    "description": "Choose to retrieve either the ACH or Wire Transfer information from the bank. Possible values are 'ach' and 'wire'. Default value is ACH.",
+                    "default": "ach"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "routingNumber": {
+                                "type": "string"
+                            },
+                            "paymentType": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "addressFull": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "zip": {
+                                "type": "string"
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "active": {
+                                "type": "string"
+                            },
+                            "lastUpdated": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

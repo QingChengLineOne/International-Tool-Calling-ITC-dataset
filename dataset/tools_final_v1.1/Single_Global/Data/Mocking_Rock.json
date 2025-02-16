@@ -1,0 +1,491 @@
+{
+    "tool_name": "Mocking Rock",
+    "tool_description": "An APIs collection for getting sample profiles and city data for testing purposes, suitable for frontend or mock testing.",
+    "home_url": "https://rapidapi.com/pcprashant99/api/mocking-rock/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Geo location Of IP address",
+            "url": "https://mocking-rock.p.rapidapi.com/country/getipgeodata",
+            "description": "Pass an IP address to retrieve its geo location and other related details.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "Provide a valid IPV4 address. If the IP is valid, the result will be returned.",
+                    "default": "34.89.89.28"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "request": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "integer"
+                    },
+                    "delay": {
+                        "type": "string"
+                    },
+                    "areaCode": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "continentCode": {
+                        "type": "string"
+                    },
+                    "continentName": {
+                        "type": "string"
+                    },
+                    "countryCode": {
+                        "type": "string"
+                    },
+                    "countryName": {
+                        "type": "string"
+                    },
+                    "currencyCode": {
+                        "type": "string"
+                    },
+                    "currencyConverter": {
+                        "type": "number"
+                    },
+                    "currencySymbol": {
+                        "type": "string"
+                    },
+                    "currencySymbol_UTF8": {
+                        "type": "string"
+                    },
+                    "dmaCode": {
+                        "type": "string"
+                    },
+                    "euVATRate": {
+                        "type": "boolean"
+                    },
+                    "inEU": {
+                        "type": "boolean"
+                    },
+                    "locationAccuracyRadius": {
+                        "type": "string"
+                    },
+                    "latLong": {
+                        "type": "object",
+                        "properties": {
+                            "latitude": {
+                                "type": "string"
+                            },
+                            "longitude": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "region": {
+                        "type": "string"
+                    },
+                    "regionCode": {
+                        "type": "string"
+                    },
+                    "regionName": {
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Locales List",
+            "url": "https://mocking-rock.p.rapidapi.com/profile/known_locales",
+            "description": "Retrieve a list of available locales that can be used to generate profile API responses.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Sample BusinessProfile",
+            "url": "https://mocking-rock.p.rapidapi.com/profile/business_profile",
+            "description": "Generate fake business profile sample data. By default, it generates a profile in the 'en' locale. If the count is greater than 1, it randomizes the generated profiles to different locales.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Specify the locale to set language and regional details of the generated profile. Default is 'en'.",
+                    "default": "en"
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Specify the number of profiles to generate. Maximum count is 1000.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "locale": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "address": {
+                            "type": "object",
+                            "properties": {
+                                "street": {
+                                    "type": "string"
+                                },
+                                "city": {
+                                    "type": "string"
+                                },
+                                "state": {
+                                    "type": "string"
+                                },
+                                "zipCode": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "phone": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "website": {
+                            "type": "string"
+                        },
+                        "industry": {
+                            "type": "string"
+                        },
+                        "openingHours": {
+                            "type": "string"
+                        },
+                        "socialMedia": {
+                            "type": "object",
+                            "properties": {
+                                "facebook": {
+                                    "type": "string"
+                                },
+                                "twitter": {
+                                    "type": "string"
+                                },
+                                "instagram": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "creditCard": {
+                            "type": "object",
+                            "properties": {
+                                "cardNumber": {
+                                    "type": "string"
+                                },
+                                "issuer": {
+                                    "type": "string"
+                                },
+                                "expiryDate": {
+                                    "type": "string"
+                                },
+                                "cvv": {
+                                    "type": "string"
+                                },
+                                "cardHolderName": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Sample UserProfile",
+            "url": "https://mocking-rock.p.rapidapi.com/profile/user_profile",
+            "description": "Generate fake user profile sample data. By default, it generates a profile in the 'en' locale. If the count is greater than 1, it randomizes the generated profiles to different locales.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Specify the number of profiles to generate. Maximum count is 1000.",
+                    "default": "2"
+                },
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Specify the locale to set language and regional details of the generated profile. Default is 'en'.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "locale": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "object",
+                            "properties": {
+                                "prefix": {
+                                    "type": "string"
+                                },
+                                "first": {
+                                    "type": "string"
+                                },
+                                "middle": {
+                                    "type": "string"
+                                },
+                                "last": {
+                                    "type": "string"
+                                },
+                                "suffix": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "address": {
+                            "type": "object",
+                            "properties": {
+                                "street": {
+                                    "type": "string"
+                                },
+                                "city": {
+                                    "type": "string"
+                                },
+                                "state": {
+                                    "type": "string"
+                                },
+                                "zipCode": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "phone": {
+                            "type": "string"
+                        },
+                        "dob": {
+                            "type": "string"
+                        },
+                        "sex": {
+                            "type": "string"
+                        },
+                        "company": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "catchPhrase": {
+                                    "type": "string"
+                                },
+                                "bs": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "jobTitle": {
+                            "type": "string"
+                        },
+                        "avatar": {
+                            "type": "string"
+                        },
+                        "bio": {
+                            "type": "string"
+                        },
+                        "createdAt": {
+                            "type": "string"
+                        },
+                        "paymentCard": {
+                            "type": "object",
+                            "properties": {
+                                "cardNumber": {
+                                    "type": "string"
+                                },
+                                "issuer": {
+                                    "type": "string"
+                                },
+                                "expiryDate": {
+                                    "type": "string"
+                                },
+                                "cvv": {
+                                    "type": "string"
+                                },
+                                "cardHolderName": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Country Codes",
+            "url": "https://mocking-rock.p.rapidapi.com/country/countrycode",
+            "description": "Retrieve a list of countries along with their ISO2 and ISO3 codes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Countrywise city data",
+            "url": "https://mocking-rock.p.rapidapi.com/country/countrywise",
+            "description": "Get a list of cities in a specified country. You need to provide the country name or its ISO2/ISO3 code as a query parameter.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "iso3",
+                    "type": "STRING",
+                    "description": "Provide a 3-character ISO3 code for the country.",
+                    "default": "IND"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Provide the name of the country.",
+                    "default": "IND"
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Specify the maximum number of results to return.",
+                    "default": "2"
+                },
+                {
+                    "name": "iso2",
+                    "type": "STRING",
+                    "description": "Provide a 2-character ISO2 code for the country.",
+                    "default": "IN"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "iso2": {
+                            "type": "string"
+                        },
+                        "iso3": {
+                            "type": "string"
+                        },
+                        "capital": {
+                            "type": "string"
+                        },
+                        "admin_name": {
+                            "type": "string"
+                        },
+                        "population": {
+                            "type": "integer"
+                        },
+                        "lat": {
+                            "type": "number"
+                        },
+                        "lng": {
+                            "type": "number"
+                        },
+                        "city_ascii": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "City Data",
+            "url": "https://mocking-rock.p.rapidapi.com/country/city",
+            "description": "Retrieve a list of cities. The count limit should be less than 1000.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "If not specified, a default of 10 will be used. Maximum can be 1000.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "iso2": {
+                            "type": "string"
+                        },
+                        "iso3": {
+                            "type": "string"
+                        },
+                        "capital": {
+                            "type": "string"
+                        },
+                        "admin_name": {
+                            "type": "string"
+                        },
+                        "population": {
+                            "type": "integer"
+                        },
+                        "lat": {
+                            "type": "number"
+                        },
+                        "lng": {
+                            "type": "number"
+                        },
+                        "city_ascii": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

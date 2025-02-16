@@ -1,0 +1,42 @@
+{
+    "tool_name": "WalnutTradingDash",
+    "tool_description": "Algo trading dashboard to backtest strategies with over 170 digital assets (crypto, forex, stocks) and 30 technical analysis strategies. Performance metrics, charts, and interactive visualizations available in real-time.",
+    "home_url": "https://rapidapi.com/WRT/api/walnuttradingdash/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "free_access",
+            "url": "https://walnuttradingdash.p.rapidapi.com/free_access",
+            "description": "Grants access to a unique URL for the dashboard. The FREE version allows access to half of the assets and technical indicators/strategies for the time period from June 2021 to January 2022.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "get_dash_url",
+                    "type": "STRING",
+                    "description": "Indicates whether to retrieve the dashboard URL.",
+                    "default": "True"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "full_access",
+            "url": "https://walnuttradingdash.p.rapidapi.com/full_access",
+            "description": "Grants access to a unique URL for the dashboard. The PRO version allows 60 minutes of use per request, unlimited access to all assets and technical indicators, and any time period up to the previous date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "get_dash_url",
+                    "type": "STRING",
+                    "description": "Indicates whether to retrieve the dashboard URL.",
+                    "default": "True"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

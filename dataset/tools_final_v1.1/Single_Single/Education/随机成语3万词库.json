@@ -1,0 +1,54 @@
+{
+    "tool_name": "随机成语[3万词库]",
+    "tool_description": "随机获取一个成语及相关信息。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/sjcy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机成语API",
+            "url": "https://cn.apihz.cn/api/zici/sjcy.php",
+            "description": "通过API获取随机成语及相关信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的公共ID，用于标识请求",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥，用于验证请求",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "response_format": {
+                "code": {
+                    "type": "integer",
+                    "description": "返回状态码，200表示成功"
+                },
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "chengyu": {
+                            "type": "string",
+                            "description": "随机成语"
+                        },
+                        "pinyin": {
+                            "type": "string",
+                            "description": "成语的拼音"
+                        },
+                        "means": {
+                            "type": "string",
+                            "description": "成语的含义"
+                        }
+                    }
+                }
+            },
+            "schema": {}
+        }
+    ]
+}

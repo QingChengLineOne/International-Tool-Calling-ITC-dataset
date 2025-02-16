@@ -1,0 +1,18 @@
+{
+    "tool_name": "Unique Username Generator By Pizza API",
+    "tool_description": "The Unique Username API Service provided by PIZZA API is a simple tool that generates unique usernames for users during the registration process of any app or website. Developers can integrate this API with their registration forms to ensure that each user is assigned a unique username that is not already in use.",
+    "home_url": "https://rapidapi.com/raajreact/api/unique-username-generator-by-pizza-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Random Username Generator",
+            "url": "https://unique-username-generator-by-pizza-api.p.rapidapi.com/",
+            "description": "Returns a random and unique username every time.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "tool_name": "Fortune Cookie",
+    "tool_description": "This RESTful API returns a json object with aphorisms, almost like what you get in a fortune cookie.",
+    "home_url": "https://rapidapi.com/wh-iterabb-it-wh-iterabb-it-default/api/fortune-cookie4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "slack",
+            "url": "https://fortune-cookie4.p.rapidapi.com/slack",
+            "description": "This endpoint's response shape is designed to match the requirements for slack messages. You can easily use this API to have a POST or GET for this /slack endpoint to get the same functionality as the defaultRoot endpoint, but in a slack style response.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "response_type": {
+                        "type": "string"
+                    },
+                    "text": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "defaultRoot",
+            "url": "https://fortune-cookie4.p.rapidapi.com/",
+            "description": "Default GET request to the random fortune endpoint returning a standard response.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "data": {
+                            "type": "object",
+                            "properties": {
+                                "message": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "meta": {
+                            "type": "object",
+                            "properties": {
+                                "status": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "minimum": -2147483648,
+                                    "maximum": 2147483647
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "healthcheck",
+            "url": "https://fortune-cookie4.p.rapidapi.com/health",
+            "description": "The health check endpoint will return a status of 200 if the API is up and ready to receive connections. It will provide uptime and total requests served since the last restart, along with the version from the GitHub repository.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "message": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "meta": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string"
+                            },
+                            "uptime": {
+                                "type": "string"
+                            },
+                            "version": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

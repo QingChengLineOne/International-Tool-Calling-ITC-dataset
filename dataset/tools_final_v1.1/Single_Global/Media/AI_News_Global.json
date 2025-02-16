@@ -1,0 +1,209 @@
+{
+    "tool_name": "AI News - Global",
+    "tool_description": "Global News produced by AI",
+    "home_url": "https://rapidapi.com/ai-box-ai-box-default/api/ai-news-global/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Available Regions",
+            "url": "https://ai-news-global.p.rapidapi.com/get_regions",
+            "description": "Retrieve a list of all available regions for news.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "au": {
+                        "type": "string"
+                    },
+                    "ca": {
+                        "type": "string"
+                    },
+                    "cn": {
+                        "type": "string"
+                    },
+                    "de": {
+                        "type": "string"
+                    },
+                    "fr": {
+                        "type": "string"
+                    },
+                    "gb": {
+                        "type": "string"
+                    },
+                    "hk": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "in": {
+                        "type": "string"
+                    },
+                    "it": {
+                        "type": "string"
+                    },
+                    "jp": {
+                        "type": "string"
+                    },
+                    "kr": {
+                        "type": "string"
+                    },
+                    "my": {
+                        "type": "string"
+                    },
+                    "nz": {
+                        "type": "string"
+                    },
+                    "ru": {
+                        "type": "string"
+                    },
+                    "th": {
+                        "type": "string"
+                    },
+                    "tw": {
+                        "type": "string"
+                    },
+                    "us": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "Get News",
+            "url": "https://ai-news-global.p.rapidapi.com/get_news/v1/us",
+            "description": "Fetch news articles based on the specified region.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "The key code of the region from the Available Regions method.",
+                    "default": "us"
+                },
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "API version to use.",
+                    "default": "v1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Extract Full Content",
+            "url": "https://ai-news-global.p.rapidapi.com/extract_content/v1",
+            "description": "Extract full content from a news article using its URL.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the news article to extract content from.",
+                    "default": "https://www.cnn.com/2020/05/02/politics/trump-kim-jong-un-response/index.html"
+                },
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "API version to use.",
+                    "default": "v1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get News Images",
+            "url": "https://ai-news-global.p.rapidapi.com/get_news_images/v1",
+            "description": "Retrieve images related to a specific news article.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "title",
+                    "type": "STRING",
+                    "description": "The title of the news article.",
+                    "default": "Trump says he's 'glad to see' Kim Jong Un 'is back, and well!'"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region for which to fetch images.",
+                    "default": "us"
+                },
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "API version to use.",
+                    "default": "v1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get News Videos",
+            "url": "https://ai-news-global.p.rapidapi.com/get_news_videos/v1",
+            "description": "Retrieve videos related to a specific news article.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "title",
+                    "type": "STRING",
+                    "description": "The title of the news article.",
+                    "default": "Trump says he's 'glad to see' Kim Jong Un 'is back, and well!'"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region for which to fetch videos.",
+                    "default": "us"
+                },
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "API version to use.",
+                    "default": "v1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Related News",
+            "url": "https://ai-news-global.p.rapidapi.com/get_news_related/v1",
+            "description": "Retrieve related news articles linked to a specific news article.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region for which to fetch related news.",
+                    "default": "us"
+                },
+                {
+                    "name": "title",
+                    "type": "STRING",
+                    "description": "The title of the news article.",
+                    "default": "Trump says he's 'glad to see' Kim Jong Un 'is back, and well!'"
+                },
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "API version to use.",
+                    "default": "v1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

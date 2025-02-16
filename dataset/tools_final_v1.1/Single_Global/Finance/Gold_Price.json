@@ -1,0 +1,25 @@
+{
+    "tool_name": "Gold Price",
+    "tool_description": "Live gold and silver price in specific currency.",
+    "home_url": "https://rapidapi.com/ashutosh05/api/gold-price6/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Gold and Silver Prices",
+            "url": "https://gold-price6.p.rapidapi.com/GetGold",
+            "description": "Returns both real-time price of gold and silver for a specified currency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "CUR",
+                    "type": "STRING",
+                    "description": "Currency code for the price. Supported currencies include USD, EUR, GBP, INR, and many others.",
+                    "default": "INR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

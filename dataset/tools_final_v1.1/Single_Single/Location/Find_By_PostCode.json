@@ -1,0 +1,25 @@
+{
+    "tool_name": "Find By PostCode",
+    "tool_description": "The 'Find By PostCode' API retrieves addresses for a specified UK postcode. It utilizes the latest PAF and Multiple Residence data from Royal Mail to provide accurate address information.",
+    "home_url": "https://rapidapi.com/api-tier1-apitier-team/api/find-by-postcode/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "Find By PostCode",
+            "url": "https://find-by-postcode.p.rapidapi.com/v1/postcodes/{postcode}",
+            "description": "This API allows users to search for UK addresses based on a given postcode.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postcode",
+                    "type": "string",
+                    "description": "The UK postcode for which addresses are to be retrieved.",
+                    "default": "PL11DN"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

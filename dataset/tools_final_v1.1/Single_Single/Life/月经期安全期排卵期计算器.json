@@ -1,0 +1,31 @@
+{
+    "tool_name": "月经期安全期排卵期计算器",
+    "tool_description": "排卵期一般在下次月经来潮前的14天左右，安全期又分为排卵前安全期和排卵后安全期，本计算器可以准确计算出女性的排卵期、安全期和月经期分别为什么时候、过后几天的状态和怎么算的计算方法。",
+    "home_url": "https://api.aa1.cn/doc/api-yj-aq-pl.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "月经期安全期排卵期计算API",
+            "url": "https://www.apii.cn/api/huaiyun/yj/",
+            "description": "提供月经期、安全期和排卵期的计算服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "string",
+                    "description": "开始日期，格式为YYYY-MM-DD",
+                    "default": "当前日期"
+                },
+                {
+                    "name": "cycle_length",
+                    "type": "int",
+                    "description": "平均月经周期长度，单位为天",
+                    "default": "28"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

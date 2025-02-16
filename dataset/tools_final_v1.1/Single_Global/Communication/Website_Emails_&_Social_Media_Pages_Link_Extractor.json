@@ -1,0 +1,25 @@
+{
+    "tool_name": "Website Emails & Social Media Pages Link Extractor",
+    "tool_description": "This API provides a list of contact emails and links to social media pages (Facebook, YouTube, Twitter, LinkedIn, Pinterest, and Instagram) for a specified website.",
+    "home_url": "https://rapidapi.com/alreadycoded/api/website-emails-social-media-pages-link-extractor/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "domain",
+            "url": "https://website-emails-social-media-pages-link-extractor.p.rapidapi.com/data",
+            "description": "This endpoint accepts any website domain name to extract emails and social media links.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name of the website you want to extract information from.",
+                    "default": "alreadycoded.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "身份证二要素效验API",
+    "tool_description": "身份证二要素效验接口，用于验证身份证号码与姓名的匹配性",
+    "home_url": "https://api.aa1.cn/doc/sfzeys.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "身份证二要素效验",
+            "url": "http://api.wuxixindong.cn/api/eryaosu.php",
+            "description": "该接口用于验证身份证号码与姓名的匹配性",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "身份证号码",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "姓名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

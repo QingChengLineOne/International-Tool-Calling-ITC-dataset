@@ -1,0 +1,25 @@
+{
+    "tool_name": "摸鱼日历",
+    "tool_description": "每日更新假期倒计时日历",
+    "home_url": "https://api.aa1.cn/doc/moyurili.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "摸鱼日历API",
+            "url": "https://dayu.qqsuu.cn/moyurili/apis.php",
+            "description": "获取摸鱼日历的假期倒计时信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "请求格式，指定为json获取JSON格式数据",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

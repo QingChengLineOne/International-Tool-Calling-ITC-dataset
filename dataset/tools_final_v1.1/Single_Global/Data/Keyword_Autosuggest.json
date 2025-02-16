@@ -1,0 +1,25 @@
+{
+    "tool_name": "Keyword Autosuggest",
+    "tool_description": "autosuggest and find related keywords for a given keyword. SEO-friendly",
+    "home_url": "https://rapidapi.com/apinov/api/keyword-autosuggest/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "autosuggest",
+            "url": "https://keyword-autosuggest.p.rapidapi.com/autosuggest",
+            "description": "autosuggest and find related keywords for a given keyword. SEO-friendly",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Keyword for autosuggestion",
+                    "default": "rabbit"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

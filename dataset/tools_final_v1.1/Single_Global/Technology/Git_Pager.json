@@ -1,0 +1,37 @@
+{
+    "tool_name": "Git Pager",
+    "tool_description": "Easily perform CRUD (Create, Read, Update and Delete) operations on any GitHub repository.",
+    "home_url": "https://rapidapi.com/napiergina/api/git-pager/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "List folder contents",
+            "url": "https://git-pager.p.rapidapi.com/",
+            "description": "Lists all of the contents of a specific GitHub repository.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "repo",
+                    "type": "STRING",
+                    "description": "The GitHub repository in the format 'owner/repo'.",
+                    "default": "gina305/switch-code"
+                },
+                {
+                    "name": "path",
+                    "type": "STRING",
+                    "description": "The path within the repository to list contents from.",
+                    "default": "/"
+                },
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "The GitHub API key for authentication.",
+                    "default": "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"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "tool_name": "Email Validator",
+    "tool_description": "The Email Validator API checks if an email address is valid and reliable by verifying its format, domain reachability, and whether it's from a disposable/temporary email service.",
+    "home_url": "https://rapidapi.com/MASNathan/api/email-validator8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check Email Details",
+            "url": "https://email-validator8.p.rapidapi.com/api/v2.0/email",
+            "description": "Validates against RFC standards, checks if the email is from a disposable/temporary email service, checks for MX records (if false, it's probably a fake email), and connects to SMTP to check if the account exists (null means SMTP wasn't reached).",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email address to check",
+                    "default": "masnathan@mail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

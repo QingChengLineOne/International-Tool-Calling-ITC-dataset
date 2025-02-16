@@ -1,0 +1,32 @@
+{
+    "tool_name": "Recipe by API-Ninjas",
+    "tool_description": "Search over 200,000 creative recipes. This API allows users to find recipes based on specific search queries, making it easy to discover new dishes.",
+    "home_url": "https://rapidapi.com/apininjas/api/recipe-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/recipe",
+            "url": "https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe",
+            "description": "Get a list of recipes for a given search query. Returns at most 10 results. To access more than the first 10 results, use the offset parameter to paginate through results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The text to search for recipes.",
+                    "default": "italian wedding soup"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "STRING",
+                    "description": "The number of results to skip for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

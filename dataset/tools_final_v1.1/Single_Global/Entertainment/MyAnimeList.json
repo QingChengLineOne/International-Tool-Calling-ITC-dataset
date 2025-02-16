@@ -1,0 +1,480 @@
+{
+    "tool_name": "MyAnimeList",
+    "tool_description": "Get Animes and Mangas from MyAnimeList (Unofficial)",
+    "home_url": "https://rapidapi.com/felixeschmittfes/api/myanimelist/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search for Mangas with Amount of Results",
+            "url": "https://myanimelist.p.rapidapi.com/manga/search/{search_query}/{amount}",
+            "description": "Search for Mangas and retrieve a specified number of results, with a maximum limit of 10.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "Limit the number of results returned. The maximum and default value is 10.",
+                    "default": "10"
+                },
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The query string used to search for Mangas on MyAnimeList.",
+                    "default": "Berserk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "picture_url": {
+                            "type": "string"
+                        },
+                        "myanimelist_url": {
+                            "type": "string"
+                        },
+                        "myanimelist_id": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Manga",
+            "url": "https://myanimelist.p.rapidapi.com/manga/{manga_id}",
+            "description": "Retrieve detailed information about a specific Manga using its ID from MyAnimeList.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "manga_id",
+                    "type": "NUMBER",
+                    "description": "The ID of the Manga, which can be obtained from the search endpoint or directly from MyAnimeList.",
+                    "default": "21"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "title_ov": {
+                        "type": "string"
+                    },
+                    "title_en": {
+                        "type": "string"
+                    },
+                    "synopsis": {
+                        "type": "string"
+                    },
+                    "alternative_titles": {
+                        "type": "object",
+                        "properties": {
+                            "japanese": {
+                                "type": "string"
+                            },
+                            "english": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "information": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "volumes": {
+                                "type": "string"
+                            },
+                            "chapters": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "published": {
+                                "type": "string"
+                            },
+                            "genres": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "theme": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "demographic": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "serialization": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "authors": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "statistics": {
+                        "type": "object",
+                        "properties": {
+                            "score": {
+                                "type": "string"
+                            },
+                            "ranked": {
+                                "type": "string"
+                            },
+                            "popularity": {
+                                "type": "string"
+                            },
+                            "members": {
+                                "type": "string"
+                            },
+                            "favorites": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "characters": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "picture_url": {
+                                    "type": "string"
+                                },
+                                "myanimelist_url": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "picture_url": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Manga Recommendations",
+            "url": "https://myanimelist.p.rapidapi.com/manga/recommendations/{page}",
+            "description": "Get pairs of Manga recommendations based on previous selections. Each request returns 100 recommendations.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for the desired results. Default is 1.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "recommendations": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "liked": {
+                                    "type": "object",
+                                    "properties": {
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "picture_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_id": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "recommendation": {
+                                    "type": "object",
+                                    "properties": {
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "picture_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_id": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "recommendation_age": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "amount_recommendations": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Anime Recommendations",
+            "url": "https://myanimelist.p.rapidapi.com/anime/recommendations/{page}",
+            "description": "Get pairs of Anime recommendations based on previous selections. Each request returns 100 recommendations.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for the desired results. Default is 1.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "recommendations": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "liked": {
+                                    "type": "object",
+                                    "properties": {
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "picture_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_id": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "recommendation": {
+                                    "type": "object",
+                                    "properties": {
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "picture_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_url": {
+                                            "type": "string"
+                                        },
+                                        "myanimelist_id": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "recommendation_age": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "amount_recommendations": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search for Animes with Amount of Results",
+            "url": "https://myanimelist.p.rapidapi.com/anime/search/{search_query}/{amount}",
+            "description": "Search for Animes and retrieve a specified number of results, with a maximum limit of 10.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "Limit the number of results returned. The maximum and default value is 10.",
+                    "default": "10"
+                },
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The query string used to search for Animes on MyAnimeList.",
+                    "default": "Death Note"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Anime",
+            "url": "https://myanimelist.p.rapidapi.com/anime/{anime_id}",
+            "description": "Retrieve detailed information about a specific Anime using its ID from MyAnimeList.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "anime_id",
+                    "type": "NUMBER",
+                    "description": "The ID of the Anime, which can be obtained from the search endpoint or directly from MyAnimeList.",
+                    "default": "1535"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "Search for a manga",
+            "url": "https://myanimelist.p.rapidapi.com/manga/search/{search_query}",
+            "description": "Search for a manga using the specified search query. This utilizes the search functionality from MyAnimeList.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The query string used to search for Mangas on MyAnimeList.",
+                    "default": "Berserk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "picture_url": {
+                            "type": "string"
+                        },
+                        "myanimelist_url": {
+                            "type": "string"
+                        },
+                        "myanimelist_id": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

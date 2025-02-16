@@ -1,0 +1,67 @@
+{
+    "tool_name": "Crops",
+    "tool_description": "This tool provides information about plants grown for agricultural purposes in Spain, including details on taxonomy, growing periods, fruit types, and categorization. It encompasses a total of 293 species and allows filtering based on various characteristics.",
+    "home_url": "https://rapidapi.com/parracj/api/crops/",
+    "country": "Spain",
+    "api_list": [
+        {
+            "name": "Crops list",
+            "url": "https://crops.p.rapidapi.com/",
+            "description": "This endpoint returns a list of all crops that are grown in Spain, with the ability to filter results through optional query parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "subcategory",
+                    "type": "STRING",
+                    "description": "The subcategory of the crop.",
+                    "default": "De invierno"
+                },
+                {
+                    "name": "family",
+                    "type": "STRING",
+                    "description": "The family classification of the crop.",
+                    "default": "Poaceae"
+                },
+                {
+                    "name": "commonName",
+                    "type": "STRING",
+                    "description": "The common name of the crop.",
+                    "default": "Trigo"
+                },
+                {
+                    "name": "specieName",
+                    "type": "STRING",
+                    "description": "The scientific name of the species.",
+                    "default": "Triticum"
+                },
+                {
+                    "name": "consistency",
+                    "type": "STRING",
+                    "description": "The consistency of the crop (e.g., herbaceous).",
+                    "default": "herbácea"
+                },
+                {
+                    "name": "cropCycle",
+                    "type": "STRING",
+                    "description": "The growth cycle of the crop (e.g., annual).",
+                    "default": "anual"
+                },
+                {
+                    "name": "fruitType",
+                    "type": "STRING",
+                    "description": "The type of fruit produced by the crop.",
+                    "default": "cariopsis"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category of the crop.",
+                    "default": "Cereales de grano"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

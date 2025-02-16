@@ -1,0 +1,33 @@
+{
+    "tool_name": "URL Shortener Service",
+    "tool_description": "Just paste the link to cut it!",
+    "home_url": "https://rapidapi.com/BigLobster/api/url-shortener-service/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "shorten",
+            "url": "https://url-shortener-service.p.rapidapi.com/shorten",
+            "description": "Create new short URL from a long URL",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "Long URL to be shortened",
+                    "default": "https://google.com/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "result_url": {
+                        "format": "uri",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "tool_name": "MCA Corporate Verifications",
+    "tool_description": "Make your onboarding process safer, faster, and smarter by verifying if your merchants are registered with the Registrar of Companies, and are registered with the same details that you expect. With the MCA Verification API, you can now confidently onboard merchants knowing that they are authorized and registered with the RoC.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/mca-corporate-verifications/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://mca-corporate-verifications.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch API result using the request ID received in responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request made to the API.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "MCA Corporate Verifications",
+            "url": "https://mca-corporate-verifications1.p.rapidapi.com/MCA/Detailed_search",
+            "description": "Make your onboarding process safer, faster, and smarter by verifying if your merchants are registered with the Registrar of Companies, and are registered with the same details that you expect.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "抖音1080P视频地址解析",
+    "tool_description": "获取抖音1080P视频地址，无水印，并且自动获取画质最高的视频地址",
+    "home_url": "https://api.aa1.cn/doc/dy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "抖音视频解析接口",
+            "url": "http://api.suxun.site/api/douyin",
+            "description": "提供抖音视频解析服务，返回1080P无水印视频地址",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "抖音视频链接，用于解析视频信息",
+                    "example": "https://www.douyin.com/video/7312415251897584946"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

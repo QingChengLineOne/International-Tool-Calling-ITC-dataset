@@ -1,0 +1,106 @@
+{
+    "tool_name": "50K Radio Stations",
+    "tool_description": "More than 60,000 radio stations from different countries and various genres",
+    "home_url": "https://rapidapi.com/herihermwn/api/50k-radio-stations/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Cities",
+            "url": "https://50k-radio-stations.p.rapidapi.com/get/cities",
+            "description": "Retrieve a list of cities where radio stations are located.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country_id",
+                    "type": "NUMBER",
+                    "description": "Filter cities by country ID. Leave empty to include all.",
+                    "default": "63"
+                },
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Filter cities by keyword. Leave empty to include all.",
+                    "default": "Jakarta"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Countries",
+            "url": "https://50k-radio-stations.p.rapidapi.com/get/countries",
+            "description": "Retrieve a list of countries with available radio stations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Filter countries by keyword. Leave empty to include all.",
+                    "default": "Indonesia"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Channels",
+            "url": "https://50k-radio-stations.p.rapidapi.com/get/channels",
+            "description": "Retrieve a list of radio channels.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Filter channels by keyword. Leave empty to include all.",
+                    "default": "a"
+                },
+                {
+                    "name": "genre_id",
+                    "type": "NUMBER",
+                    "description": "Filter channels by genre ID. Leave empty to include all.",
+                    "default": ""
+                },
+                {
+                    "name": "city_id",
+                    "type": "NUMBER",
+                    "description": "Filter channels by city ID. Leave empty to include all.",
+                    "default": ""
+                },
+                {
+                    "name": "country_id",
+                    "type": "NUMBER",
+                    "description": "Filter channels by country ID. Leave empty to include all.",
+                    "default": "50"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Specify the page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Genres",
+            "url": "https://50k-radio-stations.p.rapidapi.com/get/genres",
+            "description": "Retrieve a list of music genres available in the radio stations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Filter genres by keyword. Leave empty to include all.",
+                    "default": "music"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "prueba",
+    "tool_description": "Prueba de API para realizar pruebas de servicios.",
+    "home_url": "https://rapidapi.com/pabloalmeidagalvez-2Br8yjIHNt/api/prueba177/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "products",
+            "url": "https://prueba177.p.rapidapi.com/products",
+            "description": "Este endpoint permite obtener una lista de productos disponibles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

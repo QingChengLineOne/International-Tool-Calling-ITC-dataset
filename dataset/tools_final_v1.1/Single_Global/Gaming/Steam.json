@@ -1,0 +1,126 @@
+{
+    "tool_name": "Steam",
+    "tool_description": "Search, and get app/reviews/news data from store.steampowered.com",
+    "home_url": "https://rapidapi.com/psimavel/api/steam2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Global Achievement Percentages For App",
+            "url": "https://steam2.p.rapidapi.com/globalAchievementPercentagesForApp/{appid}",
+            "description": "Retrieve the list of all achievements for a specific app along with their success rate percentages.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "appId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the app.",
+                    "default": "730"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "App News",
+            "url": "https://steam2.p.rapidapi.com/newsForApp/{appid}/limit/{limit}/{contentlength}",
+            "description": "Fetch the latest news articles for a specific app.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of news articles to retrieve.",
+                    "default": "10"
+                },
+                {
+                    "name": "appId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the app.",
+                    "default": "730"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "contentLength",
+                    "type": "NUMBER",
+                    "description": "The maximum length of the news content to retrieve.",
+                    "default": "300"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "App Reviews",
+            "url": "https://steam2.p.rapidapi.com/appReviews/{appid}/limit/{limit}/{cursor}",
+            "description": "Get the most recent reviews for a specific app.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "appId",
+                    "type": "string",
+                    "description": "The unique identifier for the app.",
+                    "default": "730"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of reviews to retrieve (up to 200).",
+                    "default": "40"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "string",
+                    "description": "Used for pagination; pass '*' for the first set of reviews.",
+                    "default": "*"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "App Detail",
+            "url": "https://steam2.p.rapidapi.com/appDetail/{appid}",
+            "description": "Get detailed information about a specific app.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "appId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the app.",
+                    "default": "730"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://steam2.p.rapidapi.com/search/{term}/page/{page}",
+            "description": "Search for apps in the Steam store using a search term.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "term",
+                    "type": "string",
+                    "description": "The search term to look for in the Steam store.",
+                    "default": "Counter"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number of the search results.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

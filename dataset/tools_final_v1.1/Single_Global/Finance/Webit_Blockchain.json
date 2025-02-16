@@ -1,0 +1,240 @@
+{
+    "tool_name": "Webit Blockchain",
+    "tool_description": "Get blockchain data from Ethereum, Polygon, Binance, Solana mainnets, including Ropsten, Rinkeby, Goerli, Kovan, Mumbai testnets.",
+    "home_url": "https://rapidapi.com/webit/api/webit-blockchain/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Balance",
+            "url": "https://webit-blockchain.p.rapidapi.com/wallet/balance",
+            "description": "Retrieve the balance from any wallet across various blockchains, including Ethereum, Polygon, Binance, and Solana mainnets, as well as their respective testnets.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "The crypto wallet address for which to retrieve the balance. Example: Vitalik Buterin's wallet address. Note that Solana addresses differ from Ethereum fork blockchains.",
+                    "default": "0xab5801a7d398351b8be11c439e05c5b3259aec9b"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "Specify the blockchain to get the balance from. A single address can have different balances across different blockchains. Supported values include: ethereum, binance, polygon, solana, ethereum-ropsten, ethereum-rinkeby, ethereum-goerli, ethereum-kovan, binance-testnet, polygon-mumbai.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "balance": {
+                                "type": "integer"
+                            },
+                            "formatted": {
+                                "type": "number"
+                            },
+                            "prettified": {
+                                "type": "string"
+                            },
+                            "symbol": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "message": {
+                        "type": "null"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Call Method (Read-only)",
+            "url": "https://webit-blockchain.p.rapidapi.com/contract/method",
+            "description": "Invoke read-only methods of smart contracts deployed on various blockchains, including Ethereum, Polygon, and Binance mainnets, as well as their testnets.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "method",
+                    "type": "STRING",
+                    "description": "The name of the smart contract method to be called.",
+                    "default": "getTierPrice"
+                },
+                {
+                    "name": "parameters",
+                    "type": "STRING",
+                    "description": "A JSON array of parameters in the order defined in the ABI mappings. Use commas to separate parameters and quotes for string parameters.",
+                    "default": "[12]"
+                },
+                {
+                    "name": "contract",
+                    "type": "STRING",
+                    "description": "The address of the smart contract.",
+                    "default": "0xe09b2d3394843E40b837224E22D7C0f4765fA78b"
+                },
+                {
+                    "name": "abi",
+                    "type": "STRING",
+                    "description": "The ABI JSON array object containing the mappings of the methods and variables accepted by the contract. This allows for calling specific methods conveniently.",
+                    "default": "[{\"inputs\": [{\"internalType\": \"uint256\",\"name\": \"tier\",\"type\": \"uint256\"}],\"name\": \"getTierPrice\",\"outputs\": [{\"internalType\": \"uint256\",\"name\": \"\",\"type\": \"uint256\"}],\"stateMutability\": \"view\",\"type\":\"function\"}]"
+                },
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "The blockchain on which the contract is deployed. Supported values include: ethereum, binance, polygon, ethereum-ropsten, ethereum-rinkeby, ethereum-goerli, ethereum-kovan, binance-testnet, polygon-mumbai.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The wallet address from which the call request originates. This can be ignored for publicly accessible methods.",
+                    "default": "0xab5801a7d398351b8be11c439e05c5b3259aec9b"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Converter",
+            "url": "https://webit-blockchain.p.rapidapi.com/utilities/converter",
+            "description": "Convert ETH, BSC, MATIC, and SOL currencies to larger or smaller units easily.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "ENUM",
+                    "description": "Specify the unit to convert to.",
+                    "default": ""
+                },
+                {
+                    "name": "value",
+                    "type": "NUMBER",
+                    "description": "The amount to convert.",
+                    "default": ""
+                },
+                {
+                    "name": "from",
+                    "type": "ENUM",
+                    "description": "Specify the unit to convert from.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Estimate gas",
+            "url": "https://webit-blockchain.p.rapidapi.com/gas/estimate",
+            "description": "Estimate the gas required for sending transactions and calling smart contract methods across multiple blockchains.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The target address for the action being performed.",
+                    "default": "0xab5801a7d398351b8be11c439e05c5b3259aec9b"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "Specify the blockchain for which to estimate gas price. Supported values include: ethereum, binance, polygon, ethereum-ropsten, ethereum-rinkeby, ethereum-goerli, ethereum-kovan, binance-testnet, polygon-mumbai.",
+                    "default": ""
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The source wallet address for the operation.",
+                    "default": "0xab5801a7d398351b8be11c439e05c5b3259aec9b"
+                },
+                {
+                    "name": "amount",
+                    "type": "STRING",
+                    "description": "The amount of currency involved in the transaction.",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Chain ID",
+            "url": "https://webit-blockchain.p.rapidapi.com/chain/id",
+            "description": "Retrieve the Chain ID for the selected blockchain.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "Specify the blockchain to get the Chain ID for. Supported values include: ethereum, binance, polygon, solana, ethereum-ropsten, ethereum-rinkeby, ethereum-goerli, ethereum-kovan, binance-testnet, polygon-mumbai.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Gas price",
+            "url": "https://webit-blockchain.p.rapidapi.com/gas/price",
+            "description": "Get the current gas price with a single API call across multiple chains.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "Specify the blockchain to get the current gas price for. Supported values include: ethereum, binance, polygon, ethereum-ropsten, ethereum-rinkeby, ethereum-goerli, ethereum-kovan, binance-testnet, polygon-mumbai.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get latest (current) block",
+            "url": "https://webit-blockchain.p.rapidapi.com/block/latest",
+            "description": "Retrieve the latest block currently being mined on the specified blockchain.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "Specify the blockchain to get the latest block for. Supported values include: ethereum, binance, polygon, solana, polygon-mumbai.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Generate Wallet",
+            "url": "https://webit-blockchain.p.rapidapi.com/wallet/generate",
+            "description": "Generate a new crypto wallet for various blockchains including Ethereum, Polygon, and Binance mainnets, as well as their testnets.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "chain",
+                    "type": "ENUM",
+                    "description": "Specify the blockchain for which to generate the wallet. If no parameter is provided, Ethereum is set as the default.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

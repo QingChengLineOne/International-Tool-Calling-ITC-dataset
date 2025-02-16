@@ -1,0 +1,18 @@
+{
+    "tool_name": "789club New",
+    "tool_description": "789CLUB – Nhà cái game bài đổi thưởng mới nhất. Đa dạng trò chơi: game bài, bắn cá, nổ hũ. Thiết kế đẹp, hệ thống bảo mật tốt, nạp rút tiền nhanh. Hỗ trợ nhanh gọn 24/7.",
+    "home_url": "https://rapidapi.com/buithanhphong81070/api/789club-new/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "789club New",
+            "url": "https://789club-new.p.rapidapi.com/",
+            "description": "API for accessing the 789CLUB gaming platform, which offers various games including card games, fish shooting, and jackpot games.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

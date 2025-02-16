@@ -1,0 +1,37 @@
+{
+    "tool_name": "文字转语音API",
+    "tool_description": "通过输入文字，将文字转换成语音文件，不支持直接转换为调用接口，后期会开发相关接口。",
+    "home_url": "https://api.aa1.cn/doc/yuyin.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文字转语音接口",
+            "url": "https://api.shwgij.com/api/yuyin/yuyin",
+            "description": "将输入的文字转换成语音文件",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "U5IkU9EPBJc7wNWJseJAZNvkX8"
+                },
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要转换成语音的文字内容",
+                    "default": ""
+                },
+                {
+                    "name": "speed",
+                    "type": "int",
+                    "description": "语音语速，取值范围0-10，默认值为6",
+                    "default": 6
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

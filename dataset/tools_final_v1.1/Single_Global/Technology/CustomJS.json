@@ -1,0 +1,18 @@
+{
+    "tool_name": "CustomJS",
+    "tool_description": "Write and run your custom JavaScript code in Integromat.",
+    "home_url": "https://rapidapi.com/technologycircle-gmbh-technologycircle-gmbh-default/api/customjs/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Execution",
+            "url": "https://customjs.p.rapidapi.com/",
+            "description": "Offers you the possibility to run your custom JavaScript code.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

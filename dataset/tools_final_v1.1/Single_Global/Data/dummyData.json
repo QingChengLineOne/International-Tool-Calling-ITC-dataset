@@ -1,0 +1,41 @@
+{
+    "tool_name": "dummyData",
+    "tool_description": "Provides various types of dummy data for testing and development purposes.",
+    "home_url": "https://rapidapi.com/SaracenRhue/api/dummydata1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "provider",
+            "url": "https://dummydata1.p.rapidapi.com/name/3",
+            "description": "Fetches a specified number of dummy names from the provider entry point.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "provider",
+                    "type": "string",
+                    "description": "The type of data to retrieve, default is 'name'.",
+                    "default": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The number of dummy names to generate.",
+                    "default": "3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "overview",
+            "url": "https://dummydata1.p.rapidapi.com/",
+            "description": "Provides an overview of all available entry points and their usage.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

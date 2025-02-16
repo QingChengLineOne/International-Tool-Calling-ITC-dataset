@@ -1,0 +1,18 @@
+{
+    "tool_name": "Max-FTGO-Refund",
+    "tool_description": "Max - Test API Refund",
+    "home_url": "https://rapidapi.com/bielmax19/api/max-ftgo-refund/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Refund",
+            "url": "https://max-ftgo-refund.p.rapidapi.com/refund",
+            "description": "This API endpoint allows users to initiate a refund process.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

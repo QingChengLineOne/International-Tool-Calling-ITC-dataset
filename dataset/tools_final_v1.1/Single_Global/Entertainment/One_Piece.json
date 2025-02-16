@@ -1,0 +1,95 @@
+{
+    "tool_name": "One Piece",
+    "tool_description": "One Piece - Api provides access to various data related to the One Piece universe, including characters, episodes, and their attributes.",
+    "home_url": "https://rapidapi.com/selcukguler0/api/one-piece2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Character by Name",
+            "url": "https://one-piece2.p.rapidapi.com/v2/getCharacter/{name}",
+            "description": "Fetches details of a character based on their name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "STRING",
+                    "description": "Authentication token for API access.",
+                    "default": "ab84ad27eb9fe47b625069a7f0a4833fb92439639d9a57f7a56ca60bc4a8fbc6"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name of the character to retrieve.",
+                    "default": "Shanks"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Character by Devil Fruit Type",
+            "url": "https://one-piece2.p.rapidapi.com/v2/getCharacterbyDF/{dftype}",
+            "description": "Retrieves characters based on their Devil Fruit type, such as Paramecia, Logia, or Zoan.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dftype",
+                    "type": "string",
+                    "description": "The type of Devil Fruit to filter characters.",
+                    "default": "Paramecia"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "token",
+                    "type": "STRING",
+                    "description": "Authentication token for API access.",
+                    "default": "ab84ad27eb9fe47b625069a7f0a4833fb92439639d9a57f7a56ca60bc4a8fbc6"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Episode Info",
+            "url": "https://one-piece2.p.rapidapi.com/getEpisode/{episode}",
+            "description": "Fetches information about a specific episode using its episode number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "STRING",
+                    "description": "Authentication token for API access.",
+                    "default": "ab84ad27eb9fe47b625069a7f0a4833fb92439639d9a57f7a56ca60bc4a8fbc6"
+                },
+                {
+                    "name": "episode",
+                    "type": "string",
+                    "description": "The episode number to retrieve information for.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Characters",
+            "url": "https://one-piece2.p.rapidapi.com/v2/getAllCharacters",
+            "description": "Retrieves a list of all characters in the One Piece universe.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "STRING",
+                    "description": "Authentication token for API access.",
+                    "default": "ab84ad27eb9fe47b625069a7f0a4833fb92439639d9a57f7a56ca60bc4a8fbc6"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

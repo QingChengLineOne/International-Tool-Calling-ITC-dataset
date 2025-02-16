@@ -1,0 +1,83 @@
+{
+    "tool_name": "Voice Gender Recognition",
+    "tool_description": "PresentID Voice gender recognition API can recognize the gender of the speaker based on audio input.",
+    "home_url": "https://rapidapi.com/PresentID/api/voice-gender-recognition/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send voice with voice URL",
+            "url": "https://voice-gender-recognition.p.rapidapi.com/api/gender",
+            "description": "This API endpoint allows you to send a voice file via a URL to recognize the gender of the speaker. The voice file size must not exceed 5 MB, and the voice length must be between 3 seconds and 1 minute.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "linkFile",
+                    "type": "STRING",
+                    "description": "The URL of the voice file to be analyzed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Send voice with Base64",
+            "url": "https://voice-gender-recognition.p.rapidapi.com/api/gender",
+            "description": "This API endpoint allows you to send a voice file encoded in Base64 to recognize the gender of the speaker. The voice file size must not exceed 5 MB, and the voice length must be between 3 seconds and 1 minute.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "soundBase64",
+                    "type": "STRING",
+                    "description": "The Base64 encoded string of the voice file to be analyzed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Send voice with voice file",
+            "url": "https://voice-gender-recognition.p.rapidapi.com/api/gender",
+            "description": "This API endpoint allows you to send a voice file directly to recognize the gender of the speaker. The voice file size must not exceed 5 MB, and the voice length must be between 3 seconds and 1 minute.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "sound",
+                    "type": "BINARY",
+                    "description": "The binary data of the voice file to be analyzed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "data": {
+                        "properties": {
+                            "genderIndex": {
+                                "type": "integer"
+                            },
+                            "genderTitle": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

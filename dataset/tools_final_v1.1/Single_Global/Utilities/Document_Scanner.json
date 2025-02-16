@@ -1,0 +1,52 @@
+{
+    "tool_name": "Document Scanner",
+    "tool_description": "The PresentID Document Scanner API localizes document images with various distortion types from a single input image, providing accurate document detection and processing.",
+    "home_url": "https://rapidapi.com/PresentID/api/document-scanner/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Document scanner",
+            "url": "https://document-scanner.p.rapidapi.com/DetectDocument",
+            "description": "This API function detects and localizes documents within an image, accommodating various distortion types.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "linkFile",
+                    "type": "STRING",
+                    "description": "A URL link to the document image to be processed.",
+                    "default": "https://thumbs.dreamstime.com/z/partnership-agreement-business-document-signed-person-table-office-125453544.jpg"
+                },
+                {
+                    "name": "image",
+                    "type": "BINARY",
+                    "description": "The binary data of the document image to be processed.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "base64Image": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

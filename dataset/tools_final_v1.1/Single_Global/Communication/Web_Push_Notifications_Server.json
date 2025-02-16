@@ -1,0 +1,171 @@
+{
+    "tool_name": "Web Push Notifications Server",
+    "tool_description": "A simple server that provides Web Push Notifications service to frontend applications, allowing developers to send notifications to users' browsers.",
+    "home_url": "https://rapidapi.com/dhyeythumar/api/web-push-notifications-server/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Subscribe to push notifications",
+            "url": "https://web-push-notifications-server.p.rapidapi.com/subscribe",
+            "description": "This endpoint allows users to subscribe to push notifications. Note that this endpoint won't work using the RapidAPI URL. Refer to the tutorials for setup instructions.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Owner Info",
+            "url": "https://web-push-notifications-server.p.rapidapi.com/owner/{owner_id}",
+            "description": "Fetches details about the owner of the push notifications.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "X-WPN-Secret",
+                    "type": "STRING",
+                    "description": "Enter the owner's secret key.",
+                    "default": "-your-secret-here-"
+                },
+                {
+                    "name": "owner-id",
+                    "type": "string",
+                    "description": "The unique identifier for the owner.",
+                    "default": "-your-owner-id-here-"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Owner",
+            "url": "https://web-push-notifications-server.p.rapidapi.com/owner/{owner_id}",
+            "description": "Removes the owner and deletes all associated subscribers.",
+            "method": "DELETE",
+            "required_parameters": [
+                {
+                    "name": "X-WPN-Secret",
+                    "type": "STRING",
+                    "description": "Enter the owner's secret key.",
+                    "default": "-your-secret-here-"
+                },
+                {
+                    "name": "owner-id",
+                    "type": "string",
+                    "description": "The unique identifier for the owner.",
+                    "default": "-your-owner-id-here-"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    },
+                    "owner": {
+                        "type": "object",
+                        "properties": {
+                            "ownerId": {
+                                "type": "string"
+                            },
+                            "origin": {
+                                "type": "string"
+                            },
+                            "secret": {
+                                "type": "string"
+                            },
+                            "subscriberCount": {
+                                "type": "integer"
+                            },
+                            "uptime": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Create Owner",
+            "url": "https://web-push-notifications-server.p.rapidapi.com/owner/",
+            "description": "Registers a new owner for the specified origin.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    },
+                    "owner": {
+                        "type": "object",
+                        "properties": {
+                            "ownerId": {
+                                "type": "string"
+                            },
+                            "secret": {
+                                "type": "string"
+                            },
+                            "origin": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "uptime": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Send push notifications",
+            "url": "https://web-push-notifications-server.p.rapidapi.com/owner/sendNotification/{owner_id}",
+            "description": "Sends push notifications to website visitors.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "X-WPN-Secret",
+                    "type": "STRING",
+                    "description": "Enter the owner's secret key.",
+                    "default": "-your-secret-here-"
+                },
+                {
+                    "name": "owner-id",
+                    "type": "string",
+                    "description": "The unique identifier for the owner.",
+                    "default": "-your-owner-id-here-"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Index",
+            "url": "https://web-push-notifications-server.p.rapidapi.com/",
+            "description": "Fetches server information and status.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "apiDocumentation": {
+                        "type": "string"
+                    },
+                    "uptime": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

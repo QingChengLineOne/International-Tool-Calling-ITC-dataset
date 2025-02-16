@@ -1,0 +1,18 @@
+{
+    "tool_name": "EAPI",
+    "tool_description": "E-commerce API",
+    "home_url": "https://rapidapi.com/gutrfknc/api/eapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "home-page",
+            "url": "https://eapi.p.rapidapi.com/",
+            "description": "Retrieves the home page of the EAPI, providing an overview of available services.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

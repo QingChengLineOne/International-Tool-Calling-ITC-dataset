@@ -1,0 +1,128 @@
+{
+    "tool_name": "Cloudlabs Text To Speech",
+    "tool_description": "Convert text to audio quickly, supports over 100 languages and 300+ speakers.",
+    "home_url": "https://rapidapi.com/cloudlabs-dev/api/cloudlabs-text-to-speech/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "voices",
+            "url": "https://cloudlabs-text-to-speech.p.rapidapi.com/voices",
+            "description": "This endpoint retrieves a list of available speakers for text-to-speech conversion.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "language_code",
+                    "type": "STRING",
+                    "description": "Filter the results by language code. Leave blank to retrieve all available speakers.",
+                    "default": "en-US"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "voices": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "language_code": {
+                                    "type": "string"
+                                },
+                                "language_name": {
+                                    "type": "string"
+                                },
+                                "voice_type": {
+                                    "type": "string"
+                                },
+                                "voice_code": {
+                                    "type": "string"
+                                },
+                                "voice_gender": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "languages",
+            "url": "https://cloudlabs-text-to-speech.p.rapidapi.com/languages",
+            "description": "This endpoint retrieves a list of available languages for text-to-speech conversion.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "languages": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "language_code": {
+                                    "type": "string"
+                                },
+                                "language_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "synthesize",
+            "url": "https://cloudlabs-text-to-speech.p.rapidapi.com/synthesize",
+            "description": "This endpoint performs the text-to-audio conversion process.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text to be converted into audio.",
+                    "default": "hello, what is your name?"
+                },
+                {
+                    "name": "voice_code",
+                    "type": "STRING",
+                    "description": "Select the speaker from the list of available voice codes.",
+                    "default": "en-US-1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "speed",
+                    "type": "STRING",
+                    "description": "The speaking speed, ranging from 0.00 to 3.00.",
+                    "default": "1.00"
+                },
+                {
+                    "name": "output_type",
+                    "type": "STRING",
+                    "description": "The format of the audio results: audio_url or base64.",
+                    "default": "audio_url"
+                },
+                {
+                    "name": "pitch",
+                    "type": "STRING",
+                    "description": "The audio pitch, ranging from 0.00 to 2.00.",
+                    "default": "1.00"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

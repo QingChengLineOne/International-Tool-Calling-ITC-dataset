@@ -1,0 +1,52 @@
+{
+    "tool_name": "Harley the Chatbot",
+    "tool_description": "A friendly chatbot for your amusement, designed to engage users in conversation and provide assistance.",
+    "home_url": "https://rapidapi.com/lemur-engine-lemur-engine-default/api/harley-the-chatbot/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/meta/harley",
+            "url": "https://harley-the-chatbot.p.rapidapi.com/meta/harley",
+            "description": "Use this endpoint to request the meta data about the bot, including its capabilities and features.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Accept",
+                    "type": "STRING",
+                    "description": "Specifies the response format.",
+                    "default": "application/json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/talk/bot",
+            "url": "https://harley-the-chatbot.p.rapidapi.com/talk/bot",
+            "description": "Use this endpoint to interact with the bot by sending messages and receiving responses.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "Accept",
+                    "type": "STRING",
+                    "description": "Specifies the response format.",
+                    "default": "application/json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/talk/bot",
+            "url": "https://harley-the-chatbot.p.rapidapi.com/talk/bot",
+            "description": "Use this endpoint to interact with the bot by sending messages and receiving responses.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

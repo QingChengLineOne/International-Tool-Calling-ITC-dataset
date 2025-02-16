@@ -1,0 +1,237 @@
+{
+    "tool_name": "Youtube Music API (Detailed)",
+    "tool_description": "A comprehensive API for accessing various features of YouTube Music, including lyrics, trends, albums, artists, songs, users, and playlists.",
+    "home_url": "https://rapidapi.com/cavsn/api/youtube-music-api-detailed/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Watch Playlist",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_watch_playlist",
+            "description": "Retrieves a watch list of tracks that appear when you press play on a track in YouTube Music.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "video_id",
+                    "type": "STRING",
+                    "description": "The ID of the video for which to get the watch playlist.",
+                    "default": "1A7Qw88As64"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Lyrics",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_lyrics",
+            "description": "Returns the lyrics of a specified song or video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "browse_id",
+                    "type": "STRING",
+                    "description": "The browse ID of the song or video.",
+                    "default": "MPLYt_ZXONnvFeQpN"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Song Related",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_song_related",
+            "description": "Fetches related content for a specific song, similar to the 'Related' tab in the watch panel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "browse_id",
+                    "type": "STRING",
+                    "description": "The browse ID of the song.",
+                    "default": "MPTRt_ZXONnvFeQpN"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Song",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_song",
+            "description": "Returns metadata and streaming information about a specific song or video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "video_id",
+                    "type": "STRING",
+                    "description": "The ID of the video for which to get song information.",
+                    "default": "RS0FhoKAHvA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Playlists",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_user_playlists",
+            "description": "Retrieves a list of playlists for a specified user. Call this function again with the returned parameters to get the full list.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "params",
+                    "type": "STRING",
+                    "description": "Parameters for pagination and retrieval of playlists.",
+                    "default": "6gPgAUdxVUJXcFlCQ3BNQkNpUjVkRjl3WVdkbFgzTnVZWEJ6YUc5MFgyMTFjMmxqWDNCaFoyVmZjbVZuYVc5dVlXd1NIMDEzUzBGTWVWcENhM2h2WVhkRFJFbFBZM2h6Vms1M0xWY3paM05wVW1jYVNnQUFaVzRBQVVaU0FBRkdVZ0FCQUVaRmJYVnphV05mWkdWMFlXbHNYMkZ5ZEdsemRBQUJBVU1BQUFFQUFBRUJBRlZETkRSb1ltVlNiME5hVmxaTlZtYzFlakJHWmtsM2R3QUI4dHF6cWdvR1FBRklBRkFx"
+                },
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The ID of the user whose playlists are to be retrieved.",
+                    "default": "UC44hbeRoCZVVMVg5z0FfIww"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_user",
+            "description": "Retrieves the page of a specified user, which may include their videos or playlists.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The channel ID of the user.",
+                    "default": "UC44hbeRoCZVVMVg5z0FfIww"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Album",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_album",
+            "description": "Retrieves information and tracks of a specified album.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "browse_id",
+                    "type": "STRING",
+                    "description": "The browse ID of the album, typically obtained from a search.",
+                    "default": "MPREb_TXkYGyz3iEg"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Artist Albums",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_artist_albums",
+            "description": "Retrieves information about an artist and their top releases, including songs, albums, singles, videos, and related artists.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel_id",
+                    "type": "STRING",
+                    "description": "The channel ID of the artist.",
+                    "default": "UCedvOgsKFzcK3hA5taf3KoQ"
+                },
+                {
+                    "name": "params",
+                    "type": "STRING",
+                    "description": "Parameters obtained from the get_artist() function for pagination.",
+                    "default": "6gPgAUdxVUJXcFlCQ3BNQkNpUjVkRjl3WVdkbFgzTnVZWEJ6YUc5MFgyMTFjMmxqWDNCaFoyVmZjbVZuYVc5dVlXd1NIMDEzUzBGTWVWcENhM2h2WVhkRFJFbFBZM2h6Vms1NlR6QlNVWE5wVW1jYVNnQUFaVzRBQVVaU0FBRkdVZ0FCQUVaRmJYVnphV05mWkdWMFlXbHNYMkZ5ZEdsemRBQUJBVU1BQUFFQUFBRUJBRlZETUhZMlJuTlJTRTVmUVRGR09EWmlSbkpZWDNwb2R3QUI4dHF6cWdvR1FBRklBRkFV"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Artist",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/get_artist",
+            "description": "Retrieves information about a specific artist and their top releases.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "channel_id",
+                    "type": "STRING",
+                    "description": "The channel ID of the artist.",
+                    "default": "UCedvOgsKFzcK3hA5taf3KoQ"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Trends",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/popular/trends",
+            "description": "Retrieves the latest charts data from YouTube Music, including top songs, top videos, top artists, and trending videos.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "ISO 3166-1 Alpha-2 country code. Default is ZZ for Global.",
+                    "default": "de"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Mood Categories",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/popular/categories",
+            "description": "Returns various mood categories available in YouTube Music.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language code for the response.",
+                    "default": "de"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://youtube-music-api-detailed.p.rapidapi.com/popular/search",
+            "description": "Searches YouTube Music and returns results based on the provided query and category.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language code for the search results.",
+                    "default": "en"
+                },
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search term to query YouTube Music.",
+                    "default": "Eko Fresh"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": "40"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

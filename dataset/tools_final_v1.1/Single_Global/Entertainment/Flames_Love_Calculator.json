@@ -1,0 +1,44 @@
+{
+    "tool_name": "Flames Love Calculator",
+    "tool_description": "A simple API to calculate the Flames score based on two names.",
+    "home_url": "https://rapidapi.com/goforamit16/api/flames-love-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/flame",
+            "url": "https://flames-love-calculator.p.rapidapi.com/flame/{fname}/{sname}",
+            "description": "Calculates the Flames score by passing both names as path parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "fname",
+                    "type": "string",
+                    "description": "The first name to be evaluated.",
+                    "default": "Rahul"
+                },
+                {
+                    "name": "sname",
+                    "type": "string",
+                    "description": "The second name to be evaluated.",
+                    "default": "Shefali"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "fname": {
+                        "type": "string"
+                    },
+                    "sname": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "tool_name": "网页快照 · 双UI",
+    "tool_description": "截图网页的整体，可选PC端与Android端进行截图",
+    "home_url": "https://api.aa1.cn/doc/pearno-webscreen.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网页快照接口",
+            "url": "https://api.pearktrue.cn/api/screenweb/",
+            "description": "获取网页快照截图",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要截图的网页URL",
+                    "default": ""
+                },
+                {
+                    "name": "mode",
+                    "type": "string",
+                    "description": "截图模式，'pc'表示PC端，'android'表示Android端",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "响应数据格式，'json'表示JSON格式，'png'表示PNG图片",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

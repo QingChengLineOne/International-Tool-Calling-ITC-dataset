@@ -1,0 +1,78 @@
+{
+    "tool_name": "PTL",
+    "tool_description": "An API designed to receive user information and manage client data.",
+    "home_url": "https://rapidapi.com/gssteam/api/ptl/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "update",
+            "url": "https://ptl.p.rapidapi.com/update",
+            "description": "Updates existing user information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "info3",
+                    "type": "STRING",
+                    "description": "Additional information for the update.",
+                    "default": "333"
+                },
+                {
+                    "name": "info1",
+                    "type": "STRING",
+                    "description": "Primary information for the update.",
+                    "default": "200"
+                },
+                {
+                    "name": "info2",
+                    "type": "STRING",
+                    "description": "Secondary information for the update.",
+                    "default": "222"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "create_client",
+            "url": "https://ptl.p.rapidapi.com/create_client",
+            "description": "Receives new user information to create a client.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "client_email",
+                    "type": "STRING",
+                    "description": "Email address of the new client.",
+                    "default": "jh@rtt.vv"
+                },
+                {
+                    "name": "client_lastname",
+                    "type": "STRING",
+                    "description": "Last name of the new client.",
+                    "default": "fgfgdf"
+                },
+                {
+                    "name": "client_firstname",
+                    "type": "STRING",
+                    "description": "First name of the new client.",
+                    "default": "fggfdgfd"
+                },
+                {
+                    "name": "client_pass",
+                    "type": "STRING",
+                    "description": "Password for the new client account.",
+                    "default": "fdfd"
+                },
+                {
+                    "name": "client_login",
+                    "type": "STRING",
+                    "description": "Login username for the new client.",
+                    "default": "dfdf"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

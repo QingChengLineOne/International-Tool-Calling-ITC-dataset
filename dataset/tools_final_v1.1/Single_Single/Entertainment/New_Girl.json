@@ -1,0 +1,82 @@
+{
+    "tool_name": "New Girl",
+    "tool_description": "This API provides data for the TV show called New Girl, including details for each character.",
+    "home_url": "https://rapidapi.com/jlong4223/api/new-girl/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get extra character details",
+            "url": "https://new-girl.p.rapidapi.com/characters/{id}/details",
+            "description": "Get extra details about a character. (Currently being updated with more data)",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the character.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get show facts & rotten tomato scores",
+            "url": "https://new-girl.p.rapidapi.com/",
+            "description": "You can find show data including season by season rotten tomato scores by hitting the home route.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get character by id",
+            "url": "https://new-girl.p.rapidapi.com/characters/{id}",
+            "description": "Providing the character id, you will get that specific character in the response. You can find a character id by hitting `/characters` and grabbing an id from there.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the character.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get recurring characters",
+            "url": "https://new-girl.p.rapidapi.com/characters/recurring",
+            "description": "This endpoint gets the recurring characters within the show.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get main characters",
+            "url": "https://new-girl.p.rapidapi.com/characters/main",
+            "description": "This route will provide you with the show's main characters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get all characters",
+            "url": "https://new-girl.p.rapidapi.com/characters",
+            "description": "This will provide the show's characters with a tiny bit of data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

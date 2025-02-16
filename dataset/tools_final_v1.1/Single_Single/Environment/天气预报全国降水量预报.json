@@ -1,0 +1,37 @@
+{
+    "tool_name": "天气预报-全国降水量预报",
+    "tool_description": "获取1-7天内全国降水量预报，来源于中国气象局。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/jslyb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全国降水量预报",
+            "url": "https://cn.apihz.cn/api/tianqi/jslyb.php",
+            "description": "提供全国范围内未来1-7天的降水量预报",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "用户在接口盒子注册后获得的ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "用户在接口盒子注册后获得的KEY",
+                    "default": "88888888"
+                },
+                {
+                    "name": "time",
+                    "type": "int",
+                    "description": "预报时间范围，1-7",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

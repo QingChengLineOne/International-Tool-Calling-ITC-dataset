@@ -1,0 +1,164 @@
+{
+    "tool_name": "Mapilion - Vector and Raster Map Tiles",
+    "tool_description": "Mapilion provides you with vector and raster map tiles at scale, based on OpenStreetMap and OpenMapTiles.",
+    "home_url": "https://rapidapi.com/boldtrn/api/mapilion-vector-and-raster-map-tiles/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Vector Tile",
+            "url": "https://mapilion-vector-and-raster-map-tiles.p.rapidapi.com/rapid-api/vector/{z}/{x}/{y}",
+            "description": "Returns Vector tiles following the OpenMapTiles schema.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "x",
+                    "type": "NUMBER",
+                    "description": "The x coordinate of the tile.",
+                    "default": "0"
+                },
+                {
+                    "name": "y",
+                    "type": "NUMBER",
+                    "description": "The y coordinate of the tile.",
+                    "default": "0"
+                },
+                {
+                    "name": "z",
+                    "type": "NUMBER",
+                    "description": "The zoom level of the tile.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Hillshading Tile",
+            "url": "https://mapilion-vector-and-raster-map-tiles.p.rapidapi.com/rapid-api/hillshades/{version}/{z}/{x}/{y}",
+            "description": "Returns special hillshading Raster tiles as PNG, which can be used as an overlay to create the look and feel of mountains. The version can be either v1 or v2.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "x",
+                    "type": "NUMBER",
+                    "description": "The x coordinate of the tile.",
+                    "default": "756"
+                },
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "The version of the hillshading tile.",
+                    "default": "v2"
+                },
+                {
+                    "name": "z",
+                    "type": "NUMBER",
+                    "description": "The zoom level of the tile.",
+                    "default": "11"
+                },
+                {
+                    "name": "y",
+                    "type": "NUMBER",
+                    "description": "The y coordinate of the tile.",
+                    "default": "805"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Tile Json",
+            "url": "https://mapilion-vector-and-raster-map-tiles.p.rapidapi.com/rapid-api/tilejson/{type}",
+            "description": "Returns the tile json for the given style. Currently, there are three different types: v3 (OpenMapTiles compatible vector tiles), hillshading-v1, and hillshading-v2.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "The type of tile JSON to retrieve.",
+                    "default": "v3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Fonts",
+            "url": "https://mapilion-vector-and-raster-map-tiles.p.rapidapi.com/rapid-api/fonts/{fontstack}/{range}",
+            "description": "Returns Fonts for vector tiles, typically used in your style.json.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "range",
+                    "type": "string",
+                    "description": "The range of font characters to retrieve.",
+                    "default": "0-255"
+                },
+                {
+                    "name": "fontstack",
+                    "type": "string",
+                    "description": "The font stack to use.",
+                    "default": "Roboto Regular"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Style Json",
+            "url": "https://mapilion-vector-and-raster-map-tiles.p.rapidapi.com/rapid-api/stylejson/{style}",
+            "description": "Returns the style json for the given style. Available styles include osm-bright, osm-bright-hillshading-v1, osm-bright-hillshading-v2, and dark-matter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "style",
+                    "type": "string",
+                    "description": "The style to retrieve.",
+                    "default": "osm-bright"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Raster Tile",
+            "url": "https://mapilion-vector-and-raster-map-tiles.p.rapidapi.com/rapid-api/raster/{style_name}/{z}/{x}/{y}",
+            "description": "Returns Raster tiles as PNG, which can be used in mapping libraries like Leaflet. The style-name can be kurviger-liberty or osm-bright.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "x",
+                    "type": "NUMBER",
+                    "description": "The x coordinate of the tile.",
+                    "default": "0"
+                },
+                {
+                    "name": "y",
+                    "type": "NUMBER",
+                    "description": "The y coordinate of the tile.",
+                    "default": "0"
+                },
+                {
+                    "name": "style-name",
+                    "type": "string",
+                    "description": "The name of the style to use.",
+                    "default": "kurviger-liberty"
+                },
+                {
+                    "name": "z",
+                    "type": "NUMBER",
+                    "description": "The zoom level of the tile.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

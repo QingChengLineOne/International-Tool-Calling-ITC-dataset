@@ -1,0 +1,25 @@
+{
+    "tool_name": "Bing每日一图",
+    "tool_description": "返回必应每日一图的最近7张图",
+    "home_url": "https://api.aa1.cn/doc/Bingdayimages.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Bing每日一图接口",
+            "url": "https://api.oioweb.cn/api/bing",
+            "description": "获取必应每日一图的最近7张图",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "int",
+                    "description": "可选，获取图片的数量，默认为7",
+                    "default": "7"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

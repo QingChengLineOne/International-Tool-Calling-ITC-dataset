@@ -1,0 +1,18 @@
+{
+    "tool_name": "Trader Calendar",
+    "tool_description": "Trader Calendar API provides its users with an economic calendar that is based on official sources. The API is RESTful and features a simple request method, returning an easy-to-consume response. New data is added every day.",
+    "home_url": "https://rapidapi.com/mpeng/api/trader-calendar/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "calendar",
+            "url": "https://trader-calendar.p.rapidapi.com/api/calendar",
+            "description": "Returns the trader calendar in an array of JSON format.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

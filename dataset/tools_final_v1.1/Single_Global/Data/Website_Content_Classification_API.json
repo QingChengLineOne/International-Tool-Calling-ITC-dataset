@@ -1,0 +1,25 @@
+{
+    "tool_name": "Website Content Classification API",
+    "tool_description": "The Website Content Classification API leverages machine learning techniques to classify and categorize text and multimedia content found on websites. It aids in content moderation, filtering, and search functions, providing insights into popular and relevant content for specific audiences, thereby improving the efficiency of managing web content and enhancing user experience.",
+    "home_url": "https://rapidapi.com/zyla-labs-zyla-labs-default/api/website-content-classification-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Classification",
+            "url": "https://website-content-classification-api.p.rapidapi.com/real_time_categorization",
+            "description": "The 'Classification' endpoint is responsible for automatically classifying and categorizing text and multimedia content found on the web. It analyzes website content to assign relevant categories and tags, facilitating content management for website owners and improving information retrieval for users.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The domain that you want to classify. (e.g., https://google.com)",
+                    "default": "http://cnn.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

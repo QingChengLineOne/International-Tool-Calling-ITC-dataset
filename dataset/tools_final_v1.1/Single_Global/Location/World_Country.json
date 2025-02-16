@@ -1,0 +1,548 @@
+{
+    "tool_name": "World Country",
+    "tool_description": "More than 200+ countries, 5K states and 150K cities with various information.",
+    "home_url": "https://rapidapi.com/herihermwn/api/world-country/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Regions",
+            "url": "https://world-country.p.rapidapi.com/get/regions",
+            "description": "Retrieve a list of regions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Search for a region by keyword.",
+                    "default": "asia"
+                },
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "50"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "ID of the region.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total_items": {
+                        "type": "integer"
+                    },
+                    "total_pages": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "subregions": {
+                                    "type": "array"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Sub Regions",
+            "url": "https://world-country.p.rapidapi.com/get/subregions",
+            "description": "Retrieve a list of subregions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Search for a subregion by keyword.",
+                    "default": "asia"
+                },
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "50"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "ID of the subregion.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total_items": {
+                        "type": "integer"
+                    },
+                    "total_pages": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Time Zones",
+            "url": "https://world-country.p.rapidapi.com/get/timezones",
+            "description": "Retrieve a list of time zones.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "ID of the time zone.",
+                    "default": ""
+                },
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Search for a time zone by keyword.",
+                    "default": "asia"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "50"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total_items": {
+                        "type": "integer"
+                    },
+                    "total_pages": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "zone_name": {
+                                    "type": "string"
+                                },
+                                "tz_name": {
+                                    "type": "string"
+                                },
+                                "gmt_offset_name": {
+                                    "type": "string"
+                                },
+                                "gmt_offset": {
+                                    "type": "integer"
+                                },
+                                "abbreviation": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Cities",
+            "url": "https://world-country.p.rapidapi.com/get/cities",
+            "description": "Retrieve a list of cities.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Search for a city by keyword.",
+                    "default": "asia"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "ID of the city.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "50"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total_items": {
+                        "type": "integer"
+                    },
+                    "total_pages": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "latitude": {
+                                    "type": "string"
+                                },
+                                "longitude": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get States",
+            "url": "https://world-country.p.rapidapi.com/get/states",
+            "description": "Retrieve a list of states.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Search for a state by keyword.",
+                    "default": "asia"
+                },
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "50"
+                },
+                {
+                    "name": "city_id",
+                    "type": "STRING",
+                    "description": "Find states by city ID.",
+                    "default": ""
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "ID of the state.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total_items": {
+                        "type": "integer"
+                    },
+                    "total_pages": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "state_code": {
+                                    "type": "string"
+                                },
+                                "latitude": {
+                                    "type": "string"
+                                },
+                                "longitude": {
+                                    "type": "string"
+                                },
+                                "cities": {
+                                    "type": "array"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Countries",
+            "url": "https://world-country.p.rapidapi.com/get/countries",
+            "description": "Retrieve a list of countries.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "Search for a country by keyword.",
+                    "default": "ind"
+                },
+                {
+                    "name": "subregion_id",
+                    "type": "STRING",
+                    "description": "Find countries by subregion ID.",
+                    "default": ""
+                },
+                {
+                    "name": "state_id",
+                    "type": "STRING",
+                    "description": "Find countries by state ID.",
+                    "default": ""
+                },
+                {
+                    "name": "timezone_id",
+                    "type": "STRING",
+                    "description": "Find countries by timezone ID.",
+                    "default": ""
+                },
+                {
+                    "name": "region_id",
+                    "type": "STRING",
+                    "description": "Find countries by region ID.",
+                    "default": ""
+                },
+                {
+                    "name": "perpage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "50"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "ID of the country.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total_items": {
+                        "type": "integer"
+                    },
+                    "total_pages": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "iso3": {
+                                    "type": "string"
+                                },
+                                "iso2": {
+                                    "type": "string"
+                                },
+                                "numeric_code": {
+                                    "type": "string"
+                                },
+                                "phone_code": {
+                                    "type": "string"
+                                },
+                                "capital": {
+                                    "type": "string"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "currency_name": {
+                                    "type": "string"
+                                },
+                                "currency_symbol": {
+                                    "type": "string"
+                                },
+                                "tld": {
+                                    "type": "string"
+                                },
+                                "native": {
+                                    "type": "string"
+                                },
+                                "latitude": {
+                                    "type": "string"
+                                },
+                                "longitude": {
+                                    "type": "string"
+                                },
+                                "region": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "subregion": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "states": {
+                                    "type": "array"
+                                },
+                                "timezones": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "zone_name": {
+                                                "type": "string"
+                                            },
+                                            "tz_name": {
+                                                "type": "string"
+                                            },
+                                            "gmt_offset_name": {
+                                                "type": "string"
+                                            },
+                                            "gmt_offset": {
+                                                "type": "integer"
+                                            },
+                                            "abbreviation": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

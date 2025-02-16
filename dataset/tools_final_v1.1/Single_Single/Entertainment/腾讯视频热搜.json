@@ -1,0 +1,31 @@
+{
+    "tool_name": "腾讯视频热搜",
+    "tool_description": "返回腾讯视频热搜榜信息",
+    "home_url": "https://api.aa1.cn/doc/txvideo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "腾讯视频热搜API",
+            "url": "https://free.wqwlkj.cn/wqwlapi/tx_hot.php",
+            "description": "获取腾讯视频热搜榜",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据的格式，此处为json格式",
+                    "default": "json"
+                },
+                {
+                    "name": "hh",
+                    "type": "string",
+                    "description": "用于获取热搜的参数，通常为空或无特定要求",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

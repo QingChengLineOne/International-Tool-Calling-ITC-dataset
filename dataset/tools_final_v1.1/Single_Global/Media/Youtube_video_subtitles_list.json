@@ -1,0 +1,62 @@
+{
+    "tool_name": "Youtube video subtitles list",
+    "tool_description": "An API that retrieves a list of subtitles available for a specified YouTube video.",
+    "home_url": "https://rapidapi.com/evikza/api/youtube-video-subtitles-list/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SubtitleList",
+            "url": "https://youtube-video-subtitles-list.p.rapidapi.com/",
+            "description": "Fetches the list of subtitles for a given YouTube video based on its video ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "videoId",
+                    "type": "STRING",
+                    "description": "The unique identifier for the YouTube video.",
+                    "default": "JY-_GRi56KQ"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "The language code for the subtitles, defaults to English.",
+                    "default": "EN"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "baseUrl": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "object",
+                            "properties": {
+                                "simpleText": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "vssId": {
+                            "type": "string"
+                        },
+                        "languageCode": {
+                            "type": "string"
+                        },
+                        "kind": {
+                            "type": "string"
+                        },
+                        "isTranslatable": {
+                            "type": "boolean"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

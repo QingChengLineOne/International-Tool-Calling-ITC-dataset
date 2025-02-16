@@ -1,0 +1,55 @@
+{
+    "tool_name": "Realtor.ca Scraper API",
+    "tool_description": "An API for scraping data from Realtor.ca",
+    "home_url": "https://rapidapi.com/baqo271/api/realtor-ca-scraper-api/",
+    "country": "Canada",
+    "api_list": [
+        {
+            "name": "/parseUrl",
+            "url": "https://realtor-ca-scraper-api.p.rapidapi.com/parseUrl",
+            "description": "Parse a Realtor.ca search URL to extract search query and filters.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "searchQuery": {
+                        "type": "string",
+                        "description": "The extracted search query."
+                    }
+                }
+            }
+        },
+        {
+            "name": "/properties/search",
+            "url": "https://realtor-ca-scraper-api.p.rapidapi.com/properties/search",
+            "description": "Search for properties based on the provided query and filters.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "Property details"
+                }
+            }
+        },
+        {
+            "name": "/properties/details",
+            "url": "https://realtor-ca-scraper-api.p.rapidapi.com/properties/details",
+            "description": "Get details of a property by providing its MLS number.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "description": "Property details"
+            }
+        }
+    ]
+}

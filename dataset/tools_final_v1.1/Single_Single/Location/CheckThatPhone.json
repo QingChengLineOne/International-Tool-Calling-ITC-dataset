@@ -1,0 +1,123 @@
+{
+    "tool_name": "CheckThatPhone",
+    "tool_description": "Real-time phone validation and data lookup for U.S. numbers. This tool provides an all-in-one solution for carrier look-up, line type identification, portability status, geoIP information, timezone, and routing details.",
+    "home_url": "https://rapidapi.com/checkthatphone/api/checkthatphone/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "/checkthatphone",
+            "url": "https://checkthatphone.p.rapidapi.com/checkthatphone",
+            "description": "This API validates a U.S. phone number and provides carrier look-up, line type, portability status, geoIP, timezone, and routing information. Simply provide a United States phone number and an optional IP address to receive the results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phone",
+                    "type": "STRING",
+                    "description": "The U.S. phone number to validate.",
+                    "default": "8182925409"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "An optional IP address to enhance geo-location results.",
+                    "default": "172.95.90.55"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "input": {
+                        "type": "object",
+                        "properties": {
+                            "phone_number": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "string"
+                            },
+                            "ip": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "validation_result": {
+                        "type": "object",
+                        "properties": {
+                            "valid_mobile": {
+                                "type": "boolean"
+                            },
+                            "valid_landline": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "nanp": {
+                        "type": "object",
+                        "properties": {
+                            "line_type": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "carrier_data": {
+                        "type": "object",
+                        "properties": {
+                            "lookup_result": {
+                                "type": "string"
+                            },
+                            "carrier": {
+                                "type": "string"
+                            },
+                            "line_type": {
+                                "type": "string"
+                            },
+                            "line_sub_type": {
+                                "type": "string"
+                            },
+                            "ported": {
+                                "type": "boolean"
+                            },
+                            "lrn": {
+                                "type": "string"
+                            },
+                            "ocn": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "geo": {
+                        "type": "object",
+                        "properties": {
+                            "source": {
+                                "type": "string"
+                            },
+                            "country": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "timezone": {
+                        "type": "object",
+                        "properties": {
+                            "tz": {
+                                "type": "string"
+                            },
+                            "offset": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

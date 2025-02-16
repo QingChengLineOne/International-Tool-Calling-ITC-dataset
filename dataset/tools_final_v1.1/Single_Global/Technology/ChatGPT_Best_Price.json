@@ -1,0 +1,18 @@
+{
+    "tool_name": "ChatGPT Best Price",
+    "tool_description": "A proxy API that allows you to access OpenAI's ChatGPT official chat completions API at a good price!",
+    "home_url": "https://rapidapi.com/truongvuhung102/api/chatgpt-best-price/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Chat Completions",
+            "url": "https://chatgpt-best-price.p.rapidapi.com/v1/chat/completions",
+            "description": "Identical to OPEN AI's Chat Completions API, allowing users to generate text completions based on prompts.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

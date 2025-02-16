@@ -1,0 +1,18 @@
+{
+    "tool_name": "Whipcode",
+    "tool_description": "A low cost API for running untrusted code securely on remote servers.",
+    "home_url": "https://rapidapi.com/Whipcode/api/whipcode/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "V1 Endpoint",
+            "url": "https://whipcode.p.rapidapi.com/",
+            "description": "Perform POST requests to this endpoint to access the Whipcode API.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

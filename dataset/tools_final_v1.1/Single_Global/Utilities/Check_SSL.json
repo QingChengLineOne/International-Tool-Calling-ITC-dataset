@@ -1,0 +1,25 @@
+{
+    "tool_name": "Check SSL",
+    "tool_description": "Get information about SSL Certificate validity, issuer, and remaining time.",
+    "home_url": "https://rapidapi.com/digicatech/api/check-ssl/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SSLCheck",
+            "url": "https://check-ssl.p.rapidapi.com/sslcheck",
+            "description": "Shows the remaining days and certificate details of the SSL Certificate.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which to check the SSL certificate.",
+                    "default": "google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

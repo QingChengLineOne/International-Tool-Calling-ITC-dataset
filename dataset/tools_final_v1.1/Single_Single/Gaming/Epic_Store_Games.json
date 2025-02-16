@@ -1,0 +1,80 @@
+{
+    "tool_name": "Epic Store Games",
+    "tool_description": "Search Games, Editions, Demos on Epic Store",
+    "home_url": "https://rapidapi.com/1yesari1/api/epic-store-games/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Search Coming Soon Games",
+            "url": "https://epic-store-games.p.rapidapi.com/comingSoon",
+            "description": "Retrieve a list of games that are coming soon to the Epic Store based on search criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "searchWords",
+                    "type": "STRING",
+                    "description": "Keywords to search for upcoming games.",
+                    "default": "Assasin"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "categories",
+                    "type": "ENUM",
+                    "description": "Filter results by game categories. Default is 'Games'.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Specify the country for pricing information. Default is 'us'.",
+                    "default": "us"
+                },
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Specify the language for the response. Default is 'us'.",
+                    "default": "us"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search On Sale Games",
+            "url": "https://epic-store-games.p.rapidapi.com/onSale",
+            "description": "Retrieve a list of games currently on sale based on search criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "searchWords",
+                    "type": "STRING",
+                    "description": "Keywords to search for games on sale.",
+                    "default": "Mount"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Specify the language for the response. Default is 'us'.",
+                    "default": "us"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Specify the country for pricing information. Default is 'us'.",
+                    "default": "us"
+                },
+                {
+                    "name": "categories",
+                    "type": "ENUM",
+                    "description": "Filter results by game categories. Default is 'Games'.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

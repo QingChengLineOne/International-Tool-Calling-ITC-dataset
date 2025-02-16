@@ -1,0 +1,18 @@
+{
+    "tool_name": "Text to Speech API",
+    "tool_description": "Text to Speech API is a cloud-based service that enables developers to generate human-like speech output from text input.",
+    "home_url": "https://rapidapi.com/bloggingwithjavedsaeed/api/text-to-speech-api5/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Text-to-Speech API",
+            "url": "https://text-to-speech-api5.p.rapidapi.com/tts",
+            "description": "This API converts text input into spoken words, allowing for the generation of audio files from text.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

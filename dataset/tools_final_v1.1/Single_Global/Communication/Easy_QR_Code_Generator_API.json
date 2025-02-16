@@ -1,0 +1,208 @@
+{
+    "tool_name": "Easy QR Code Generator API",
+    "tool_description": "Generate QR codes dynamically for a wide range of applications. With this API, you can easily integrate QR code generation capabilities into your applications, websites, or services, enabling you to provide users with quick access to information, links, or interactive experiences.",
+    "home_url": "https://rapidapi.com/evlar-evlar-default/api/easy-qr-code-generator-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Generate SMS QR Code",
+            "url": "https://easy-qr-code-generator-api1.p.rapidapi.com/sms",
+            "description": "Generate a QR code that encodes an SMS message.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "null"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "correction": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            },
+                            "margin": {
+                                "type": "integer"
+                            },
+                            "imageData": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Generate Phone QR Code",
+            "url": "https://easy-qr-code-generator-api1.p.rapidapi.com/phone",
+            "description": "Generate a QR code that encodes a phone number.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "null"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "correction": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            },
+                            "margin": {
+                                "type": "integer"
+                            },
+                            "imageData": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Generate Email QR Code",
+            "url": "https://easy-qr-code-generator-api1.p.rapidapi.com/email",
+            "description": "Generate a QR code that encodes an email address.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "null"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "correction": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            },
+                            "margin": {
+                                "type": "integer"
+                            },
+                            "imageData": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Generate URL QR Code",
+            "url": "https://easy-qr-code-generator-api1.p.rapidapi.com/url",
+            "description": "Generate a QR code that encodes a URL.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "null"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "correction": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            },
+                            "margin": {
+                                "type": "integer"
+                            },
+                            "imageData": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Generate Text QR Code",
+            "url": "https://easy-qr-code-generator-api1.p.rapidapi.com/text",
+            "description": "Generate a QR code that encodes plain text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "null"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "correction": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            },
+                            "margin": {
+                                "type": "integer"
+                            },
+                            "imageData": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

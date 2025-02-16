@@ -1,0 +1,420 @@
+{
+    "tool_name": "Bulk Whois",
+    "tool_description": "Bulk WHOIS API delivers WHOIS records for large lists of domains and IPs via a single REST API query and is powered by a WHOIS Database containing over 11.5 billion WHOIS records spanning 2,864+ TLDs for over 582 million domains tracked. Users can upload a CSV file containing the domain list and download the results in CSV format.",
+    "home_url": "https://rapidapi.com/whoisapi/api/bulk-whois/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Submit a bulk WHOIS query",
+            "url": "https://whoisapi-bulk-whois-v1.p.rapidapi.com/BulkWhoisLookup/bulkServices/bulkWhois",
+            "description": "This endpoint allows users to submit a bulk WHOIS query for multiple domains.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "noDataAvailable": {
+                        "type": "boolean"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "messageCode": {
+                        "type": "integer"
+                    },
+                    "requestId": {
+                        "type": "string"
+                    },
+                    "whoisRecords": {
+                        "type": "array"
+                    },
+                    "domains": {
+                        "type": "array"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get bulk WHOIS result",
+            "url": "https://whoisapi-bulk-whois-v1.p.rapidapi.com/BulkWhoisLookup/bulkServices/getRecords",
+            "description": "This endpoint retrieves the results of a previously submitted bulk WHOIS query.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "noDataAvailable": {
+                        "type": "boolean"
+                    },
+                    "domainList": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "requestId": {
+                        "type": "string"
+                    },
+                    "whoisRecords": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "domainName": {
+                                    "type": "string"
+                                },
+                                "domainStatus": {
+                                    "type": "string"
+                                },
+                                "whoisRecordStatus": {
+                                    "type": "integer"
+                                },
+                                "domainFetchedTime": {
+                                    "type": "string"
+                                },
+                                "whoisRecord": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer"
+                                        },
+                                        "registrant": {
+                                            "type": "object",
+                                            "properties": {
+                                                "rawText": {
+                                                    "type": "string"
+                                                },
+                                                "contactId": {
+                                                    "type": "integer"
+                                                },
+                                                "organization": {
+                                                    "type": "string"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "country": {
+                                                    "type": "string"
+                                                },
+                                                "parseCode": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        },
+                                        "administrativeContact": {
+                                            "type": "object",
+                                            "properties": {
+                                                "rawText": {
+                                                    "type": "string"
+                                                },
+                                                "contactId": {
+                                                    "type": "integer"
+                                                },
+                                                "organization": {
+                                                    "type": "string"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "country": {
+                                                    "type": "string"
+                                                },
+                                                "parseCode": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        },
+                                        "technicalContact": {
+                                            "type": "object",
+                                            "properties": {
+                                                "rawText": {
+                                                    "type": "string"
+                                                },
+                                                "contactId": {
+                                                    "type": "integer"
+                                                },
+                                                "organization": {
+                                                    "type": "string"
+                                                },
+                                                "state": {
+                                                    "type": "string"
+                                                },
+                                                "country": {
+                                                    "type": "string"
+                                                },
+                                                "parseCode": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        },
+                                        "audit": {
+                                            "type": "object"
+                                        },
+                                        "nameServers": {
+                                            "type": "object",
+                                            "properties": {
+                                                "rawText": {
+                                                    "type": "string"
+                                                },
+                                                "hostNames": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "numeric": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "str": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "createdDate": {
+                                            "type": "string"
+                                        },
+                                        "updatedDate": {
+                                            "type": "string"
+                                        },
+                                        "expiresDate": {
+                                            "type": "string"
+                                        },
+                                        "domainName": {
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "type": "string"
+                                        },
+                                        "rawText": {
+                                            "type": "string"
+                                        },
+                                        "header": {
+                                            "type": "string"
+                                        },
+                                        "strippedText": {
+                                            "type": "string"
+                                        },
+                                        "footer": {
+                                            "type": "string"
+                                        },
+                                        "customField1Name": {
+                                            "type": "string"
+                                        },
+                                        "customField1Value": {
+                                            "type": "string"
+                                        },
+                                        "customField2Name": {
+                                            "type": "string"
+                                        },
+                                        "customField2Value": {
+                                            "type": "string"
+                                        },
+                                        "customField3Name": {
+                                            "type": "string"
+                                        },
+                                        "customField3Value": {
+                                            "type": "string"
+                                        },
+                                        "registrarName": {
+                                            "type": "string"
+                                        },
+                                        "registrarIANAID": {
+                                            "type": "string"
+                                        },
+                                        "whoisServer": {
+                                            "type": "string"
+                                        },
+                                        "dataErrorFlag": {
+                                            "type": "integer"
+                                        },
+                                        "parseCode": {
+                                            "type": "integer"
+                                        },
+                                        "registryData": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "integer"
+                                                },
+                                                "audit": {
+                                                    "type": "object"
+                                                },
+                                                "nameServers": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "rawText": {
+                                                            "type": "string"
+                                                        },
+                                                        "hostNames": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "numeric": {
+                                                                        "type": "boolean"
+                                                                    },
+                                                                    "str": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "createdDate": {
+                                                    "type": "string"
+                                                },
+                                                "updatedDate": {
+                                                    "type": "string"
+                                                },
+                                                "expiresDate": {
+                                                    "type": "string"
+                                                },
+                                                "domainName": {
+                                                    "type": "string"
+                                                },
+                                                "status": {
+                                                    "type": "string"
+                                                },
+                                                "rawText": {
+                                                    "type": "string"
+                                                },
+                                                "header": {
+                                                    "type": "string"
+                                                },
+                                                "strippedText": {
+                                                    "type": "string"
+                                                },
+                                                "footer": {
+                                                    "type": "string"
+                                                },
+                                                "customField1Name": {
+                                                    "type": "string"
+                                                },
+                                                "customField1Value": {
+                                                    "type": "string"
+                                                },
+                                                "customField2Name": {
+                                                    "type": "string"
+                                                },
+                                                "customField2Value": {
+                                                    "type": "string"
+                                                },
+                                                "customField3Name": {
+                                                    "type": "string"
+                                                },
+                                                "customField3Value": {
+                                                    "type": "string"
+                                                },
+                                                "registrarName": {
+                                                    "type": "string"
+                                                },
+                                                "registrarIANAID": {
+                                                    "type": "string"
+                                                },
+                                                "whoisServer": {
+                                                    "type": "string"
+                                                },
+                                                "createdDateNormalized": {
+                                                    "type": "string"
+                                                },
+                                                "updatedDateNormalized": {
+                                                    "type": "string"
+                                                },
+                                                "expiresDateNormalized": {
+                                                    "type": "string"
+                                                },
+                                                "dataErrorFlag": {
+                                                    "type": "integer"
+                                                },
+                                                "parseCode": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        },
+                                        "contactEmail": {
+                                            "type": "string"
+                                        },
+                                        "domainNameExt": {
+                                            "type": "string"
+                                        },
+                                        "estimatedDomainAge": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "index": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "domains": {
+                        "type": "array"
+                    },
+                    "totalRecords": {
+                        "type": "integer"
+                    },
+                    "recordsLeft": {
+                        "type": "integer"
+                    },
+                    "recordsProcessed": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Retrieve the list of your requests",
+            "url": "https://whoisapi-bulk-whois-v1.p.rapidapi.com/BulkWhoisLookup/bulkServices/getUserRequests",
+            "description": "This endpoint lists the requests submitted by the user along with their details.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "noDataAvailable": {
+                        "type": "boolean"
+                    },
+                    "whoisRecords": {
+                        "type": "array"
+                    },
+                    "domains": {
+                        "type": "array"
+                    },
+                    "userRequests": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "requestId": {
+                                    "type": "string"
+                                },
+                                "time": {
+                                    "type": "integer"
+                                },
+                                "status": {
+                                    "type": "string"
+                                },
+                                "totalRecords": {
+                                    "type": "integer"
+                                },
+                                "fetchedRecords": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

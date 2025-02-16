@@ -1,0 +1,31 @@
+{
+    "tool_name": "Greet Generator",
+    "tool_description": "A tool that generates personalized greetings based on user input.",
+    "home_url": "https://rapidapi.com/rapidapi-cs123-rapidapi-cs-default/api/greet-generator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Greet",
+            "url": "https://greet-generator.p.rapidapi.com/greet/{name}/{cringelevel}",
+            "description": "Fetch a personalized greeting for a specified name and cringe level.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name for which the greeting is generated.",
+                    "default": "Amir"
+                },
+                {
+                    "name": "cringeLevel",
+                    "type": "string",
+                    "description": "The level of cringe for the greeting, ranging from 1 to 10.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

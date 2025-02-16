@@ -1,0 +1,31 @@
+{
+    "tool_name": "(新版)IP地址信息",
+    "tool_description": "使用spring boot开发的新版IP地址信息(支持定位到区)",
+    "home_url": "https://api.aa1.cn/doc/ip-songzixian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP地址信息API",
+            "url": "https://api.songzixian.com/api/ip",
+            "description": "提供IP地址的详细信息，包括地理位置、运营商信息等",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源标识，目前支持GLOBAL_IP",
+                    "default": "GLOBAL_IP"
+                },
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

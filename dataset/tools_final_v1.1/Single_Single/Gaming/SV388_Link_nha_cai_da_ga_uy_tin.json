@@ -1,0 +1,18 @@
+{
+    "tool_name": "SV388 Link nha cai da ga uy tin",
+    "tool_description": "SV388 – Nhà Cái chuyên về đá gà online nổi tiếng hàng đầu châu Á với hàng nghìn trận đấu mỗi ngày từ nhiều loại gà Đá Gà Cựa Sắt, Đá Gà Cựa dao, đá gà thomo. Ngoài ra, SV388 còn có rất nhiều trò chơi casino trực tuyến, slot game, bóng đá, lô đề. Tại Việt Nam, SV388 có nhiều trường gà để nuôi và huấn luyện như trường gà Thomo Cambodia. Về điểm vượt trội, SV388 mạnh về truyền hình trực tiếp và cho phép người chơi đặt cược lớn. Dù số lượng chơi đông nhưng chất lượng hình ảnh tốt, đường truyền ổn định là điểm cộng rất lớn cho SV388.",
+    "home_url": "https://rapidapi.com/sv388sv288net/api/sv388-link-nha-cai-da-ga-uy-tin/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "SV388 Link nha cai da ga uy tin",
+            "url": "https://sv388-link-nha-cai-da-ga-uy-tin.p.rapidapi.com/",
+            "description": "SV388 - Link nhà cái đá gà uy tín với hàng nghìn trận đấu mỗi ngày và nhiều trò chơi casino trực tuyến.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "tool_name": "Realtor API for Real Estate Data",
+    "tool_description": "This API provides access to Realtor property data, agent data, and school data specifically for the USA. It allows users to retrieve comprehensive real estate information, including listings, agent details, and school ratings.",
+    "home_url": "https://rapidapi.com/vuesdata/api/realtor-api-for-real-estate-data/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "RealtorSchoolList",
+            "url": "https://realtor-api-for-real-estate-data.p.rapidapi.com/realtor_data/schools/",
+            "description": "Retrieves a list of schools based on the specified city, state code, and school level.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The city for which to retrieve school data.",
+                    "default": "San Jose"
+                },
+                {
+                    "name": "school_level",
+                    "type": "STRING",
+                    "description": "The level of school to filter by (elementary, middle, high, private, charter).",
+                    "default": "elementary"
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The state code for the specified city.",
+                    "default": "CA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "RealtorAgentList",
+            "url": "https://realtor-api-for-real-estate-data.p.rapidapi.com/realtor_data/agents/",
+            "description": "Retrieves a list of real estate agents based on the specified city and state code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The state code for the specified city.",
+                    "default": "CA"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The city for which to retrieve agent data.",
+                    "default": "San Jose"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "RealtorPropertyList",
+            "url": "https://realtor-api-for-real-estate-data.p.rapidapi.com/realtor_data/property/",
+            "description": "Retrieves a list of properties based on the specified city and state code, with pagination support.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "offset",
+                    "type": "STRING",
+                    "description": "The offset for pagination, starting from 0 and increasing by 42 for each subsequent request.",
+                    "default": "0"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The city for which to retrieve property data.",
+                    "default": "San Jose"
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The state code for the specified city.",
+                    "default": "CA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

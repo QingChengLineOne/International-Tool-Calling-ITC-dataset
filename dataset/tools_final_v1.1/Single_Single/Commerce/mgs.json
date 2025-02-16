@@ -1,0 +1,163 @@
+{
+    "tool_name": "mgs",
+    "tool_description": "My local gun shop",
+    "home_url": "https://rapidapi.com/kaynat1234/api/mgs2/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "mgs_products",
+            "url": "https://mgs2.p.rapidapi.com/api/product/search",
+            "description": "Retrieve a list of products available at MGS.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "blogs_copy",
+            "url": "https://mgs2.p.rapidapi.com/api/blogs",
+            "description": "Fetch the latest blogs related to MGS.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "blogs",
+            "url": "https://mgs2.p.rapidapi.com/blogs",
+            "description": "Access MGS blogs for updates and information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Sell your Gun",
+            "url": "https://mgs2.p.rapidapi.com/api/gunforsale",
+            "description": "Submit a listing to sell your gun.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "entireImage",
+                    "type": "STRING",
+                    "description": "Binary encoded image string of the entire gun.",
+                    "default": "binary encode image string"
+                },
+                {
+                    "name": "signatureCanvas",
+                    "type": "STRING",
+                    "description": "Binary encoded image string of the signature.",
+                    "default": "binary encode image string"
+                },
+                {
+                    "name": "isWorkingCondition",
+                    "type": "NUMBER",
+                    "description": "Indicates if the gun is in working condition (1 for Yes, 2 for No).",
+                    "default": "1"
+                },
+                {
+                    "name": "isOriginalPackaging",
+                    "type": "NUMBER",
+                    "description": "Indicates if the gun has original packaging (1 for Yes, 2 for No).",
+                    "default": "1"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "City where the gun is located.",
+                    "default": "city"
+                },
+                {
+                    "name": "description",
+                    "type": "STRING",
+                    "description": "Description of the gun.",
+                    "default": "description"
+                },
+                {
+                    "name": "leftImage",
+                    "type": "STRING",
+                    "description": "Binary encoded image string of the left side of the gun.",
+                    "default": "binary encode image string"
+                },
+                {
+                    "name": "zipCode",
+                    "type": "STRING",
+                    "description": "Zip code of the location.",
+                    "default": "12345"
+                },
+                {
+                    "name": "rightImage",
+                    "type": "STRING",
+                    "description": "Binary encoded image string of the right side of the gun.",
+                    "default": "binary encode image string"
+                },
+                {
+                    "name": "phone",
+                    "type": "STRING",
+                    "description": "Contact phone number.",
+                    "default": "564657876"
+                },
+                {
+                    "name": "category",
+                    "type": "NUMBER",
+                    "description": "Category of the gun (1-Rifles, 2-Shotguns, 3-Handguns, 4-NFA/Class III, 5-Ammunition, 6-Lower Receivers, 7-Reloading Supplies, 8-Accessories & Optics).",
+                    "default": "1"
+                },
+                {
+                    "name": "caliber",
+                    "type": "STRING",
+                    "description": "Caliber of the gun.",
+                    "default": "caliber"
+                },
+                {
+                    "name": "serialnumber",
+                    "type": "STRING",
+                    "description": "Serial number of the gun.",
+                    "default": "serialnumber"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the seller.",
+                    "default": "abc"
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email address of the seller.",
+                    "default": "abc@gmail.com"
+                },
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "Address of the seller.",
+                    "default": "address"
+                },
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "Model of the gun.",
+                    "default": "model"
+                },
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "State where the gun is located.",
+                    "default": "state"
+                },
+                {
+                    "name": "manufacturer",
+                    "type": "STRING",
+                    "description": "Manufacturer of the gun.",
+                    "default": "manufacturer"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

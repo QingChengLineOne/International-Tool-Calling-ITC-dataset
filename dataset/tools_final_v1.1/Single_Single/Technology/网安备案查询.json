@@ -1,0 +1,25 @@
+{
+    "tool_name": "网安备案查询API",
+    "tool_description": "快速查询网安备案信息",
+    "home_url": "https://api.aa1.cn/doc/leaf_wangan.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网安备案查询",
+            "url": "https://api.leafone.cn/api/wangan",
+            "description": "用于查询网安备案信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "备案网站名称或域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

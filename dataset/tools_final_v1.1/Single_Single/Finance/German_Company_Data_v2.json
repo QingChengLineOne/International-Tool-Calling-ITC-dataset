@@ -1,0 +1,142 @@
+{
+    "tool_name": "German Company Data_v2",
+    "tool_description": "Enrich your CRM / MAS / ERP system with credible data about all incorporated companies from Germany.",
+    "home_url": "https://rapidapi.com/Implisense/api/german-company-data/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "/companies/{id}/events",
+            "url": "https://german-company-data.p.rapidapi.com/companies/DEVFCLQFW054/events",
+            "description": "This endpoint returns the latest events about the company with the given identifier since the specified timestamp. Events include types such as companies' register events, blog articles, and press releases.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the company.",
+                    "default": "DEVFCLQFW054"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Filter events by category such as management changes or financial news.",
+                    "default": "MANAGEMENT_AND_TEAM,FINANCES_AND_CAPITAL,NEWS_AND_EVENTS"
+                },
+                {
+                    "name": "since",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Fetch events that occurred after this date.",
+                    "default": "2017-01-01"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "Number of events to return.",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/companies/{id}/financials",
+            "url": "https://german-company-data.p.rapidapi.com/companies/DEVFCLQFW054/financials",
+            "description": "This endpoint returns the financial key figures for the company, including balance sheet total, revenue, profit, and number of employees, along with their values for each year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the company.",
+                    "default": "DEVFCLQFW054"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/companies/{id}/financials/exists",
+            "url": "https://german-company-data.p.rapidapi.com/companies/DEVFCLQFW054/financials/exists",
+            "description": "This endpoint returns the list of years for which financial key figures are available for the company, helping to avoid unnecessary calls to the financials endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the company.",
+                    "default": "DEVFCLQFW054"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/companies/{id}/jobs",
+            "url": "https://german-company-data.p.rapidapi.com/companies/DEVFCLQFW054/jobs",
+            "description": "This endpoint returns the latest job postings for the company since the specified timestamp.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the company.",
+                    "default": "DEVFCLQFW054"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "since",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Fetch job postings that occurred after this date.",
+                    "default": "2017-01-01"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "Number of job postings to return.",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/companies/{id}/data",
+            "url": "https://german-company-data.p.rapidapi.com/companies/DEVFCLQFW054/data",
+            "description": "This endpoint returns the basic information of the company, including core data, web data, legal information, and industry classifications.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the company.",
+                    "default": "DEVFCLQFW054"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/companies/{id}/people",
+            "url": "https://german-company-data.p.rapidapi.com/companies/DEVFCLQFW054/people",
+            "description": "This endpoint returns information about people associated with the company, including names, roles, email addresses, and phone numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the company.",
+                    "default": "DEVFCLQFW054"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

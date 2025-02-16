@@ -1,0 +1,25 @@
+{
+    "tool_name": "米游社随机头像",
+    "tool_description": "随机输出米游社头像",
+    "home_url": "https://api.aa1.cn/doc/lemonso-MiYouShe.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "米游社随机头像API",
+            "url": "https://api.qjqq.cn/api/MiYouShe",
+            "description": "随机输出米游社头像",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "stor",
+                    "type": "string",
+                    "description": "米游社角色或游戏名称，用于生成头像",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

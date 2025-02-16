@@ -1,0 +1,333 @@
+{
+    "tool_name": "City and State Search API",
+    "tool_description": "An easy-to-use API for searching cities, states, and countries from around the world.",
+    "home_url": "https://rapidapi.com/devXprite/api/city-and-state-search-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Cities Search",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/cities/search",
+            "description": "This endpoint allows you to search for specific cities by name. It returns a list of cities that match the specified search query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The name of the city to search for.",
+                    "default": "kan"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO code of the country to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortOrder",
+                    "type": "STRING",
+                    "description": "The order in which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortBy",
+                    "type": "STRING",
+                    "description": "The field by which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "country_id",
+                    "type": "NUMBER",
+                    "description": "The ID of the country to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": ""
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The ISO code of the state to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "state_id",
+                    "type": "NUMBER",
+                    "description": "The ID of the state to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "state_name",
+                    "type": "STRING",
+                    "description": "The name of the state to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "City Details",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/cities/{id}",
+            "description": "This endpoint allows you to retrieve detailed information about a specific city by ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the city to retrieve details for.",
+                    "default": "132782"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "States Details",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/states/{id}",
+            "description": "This endpoint allows you to retrieve detailed information about a specific state by ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the state to retrieve details for.",
+                    "default": "4022"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "States Search",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/states/search",
+            "description": "This endpoint allows you to search for specific states by name. It returns a list of states that match the specified search query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The name of the state to search for.",
+                    "default": "ut"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The maximum number of results to return.",
+                    "default": "50"
+                },
+                {
+                    "name": "sortOrder",
+                    "type": "STRING",
+                    "description": "The order in which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortBy",
+                    "type": "STRING",
+                    "description": "The field by which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "country_id",
+                    "type": "STRING",
+                    "description": "The ID of the country to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO code of the country to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "States List",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/states",
+            "description": "This endpoint returns a list of states with basic information such as name, code, and country.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country_id",
+                    "type": "STRING",
+                    "description": "The ID of the country to filter results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortOrder",
+                    "type": "STRING",
+                    "description": "The order in which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortBy",
+                    "type": "STRING",
+                    "description": "The field by which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": ""
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO code of the country to filter results.",
+                    "default": "IN"
+                },
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Country Details",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/countries/{country}",
+            "description": "This endpoint allows you to retrieve detailed information about a specific country by ID or name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "It can be country name, ISO2 code, or ID.",
+                    "default": "IN"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Countries Search",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/countries/search",
+            "description": "This endpoint allows you to search for specific countries by name. It returns a list of countries that match the specified search query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The name of the country to search for.",
+                    "default": "ind"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sortOrder",
+                    "type": "STRING",
+                    "description": "The order in which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortBy",
+                    "type": "STRING",
+                    "description": "The field by which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Countries List",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/countries",
+            "description": "This endpoint returns a list of countries with basic information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sortOrder",
+                    "type": "STRING",
+                    "description": "The order in which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "sortBy",
+                    "type": "STRING",
+                    "description": "The field by which to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://city-and-state-search-api.p.rapidapi.com/search",
+            "description": "This endpoint allows you to search for locations (cities, states, or countries) by name. It returns a list of locations that match the specified search query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The name of the location to search for.",
+                    "default": "kanp"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

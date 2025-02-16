@@ -1,0 +1,18 @@
+{
+    "tool_name": "http2smtp",
+    "tool_description": "Send emails to SMTP server over HTTP, allowing users to bypass restrictions imposed by hosting providers, data centers, networks, or servers.",
+    "home_url": "https://rapidapi.com/lkyzmanov-1rYfRuWv8CS/api/http2smtp/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send",
+            "url": "https://http2smtp.p.rapidapi.com/send",
+            "description": "Send an email using the HTTP to SMTP service.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

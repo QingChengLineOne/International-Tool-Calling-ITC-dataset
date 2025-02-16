@@ -1,0 +1,25 @@
+{
+    "tool_name": "MX - Email server UP or DOWN",
+    "tool_description": "This API allows you to check the availability of an email server for a specified domain, determining whether it is operational or not.",
+    "home_url": "https://rapidapi.com/petarraznatovic7/api/mx-email-server-up-or-down/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check EMAIL server",
+            "url": "https://mx-email-server-up-or-down.p.rapidapi.com/",
+            "description": "This API endpoint returns the status of the email server, indicating whether it is up or down for the specified domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which the email server status is being checked.",
+                    "default": "microsoft.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

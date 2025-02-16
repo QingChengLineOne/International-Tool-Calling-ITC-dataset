@@ -1,0 +1,37 @@
+{
+    "tool_name": "随机音乐",
+    "tool_description": "提供随机音乐信息获取服务",
+    "home_url": "https://api.qqsuu.cn/doc/dm-randmusic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机音乐",
+            "url": "https://api.qqsuu.cn/api/dm-randmusic",
+            "description": "获取随机音乐信息，包括歌曲名称、播放链接和封面图片",
+            "method": "GET/POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sort",
+                    "type": "String",
+                    "description": "选择输出分类，如热歌榜、新歌榜等，默认为热歌榜",
+                    "default": "热歌榜"
+                },
+                {
+                    "name": "mid",
+                    "type": "int",
+                    "description": "网易云歌单ID",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "String",
+                    "description": "选择输出格式，支持json或mp3",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

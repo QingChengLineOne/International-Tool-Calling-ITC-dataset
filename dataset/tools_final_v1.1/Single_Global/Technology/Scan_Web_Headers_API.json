@@ -1,0 +1,25 @@
+{
+    "tool_name": "Scan Web Headers API",
+    "tool_description": "This API takes a domain name as a parameter and returns the status of the headers for the specified web page.",
+    "home_url": "https://rapidapi.com/rahul4real/api/scan-web-heades-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Scan Headers",
+            "url": "https://scan-web-heades-api.p.rapidapi.com/ScanHeaders",
+            "description": "This endpoint takes a 'GET' request with the domain as a query string parameter and returns the status of the headers of the web page.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name of the web page to scan.",
+                    "default": "www.google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

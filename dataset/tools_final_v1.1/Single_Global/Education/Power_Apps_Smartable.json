@@ -1,0 +1,169 @@
+{
+    "tool_name": "Power Apps Smartable",
+    "tool_description": "The Power Apps API offers access to Microsoft Power Apps news, learning resources, events, samples, and other related information.",
+    "home_url": "https://rapidapi.com/SmartableAI/api/power-apps-smartable/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetLearningResources",
+            "url": "https://power-apps-smartable.p.rapidapi.com/learning/page/{page}/",
+            "description": "Retrieve Power Apps learning resources.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNews",
+            "url": "https://power-apps-smartable.p.rapidapi.com/news/page/{page}/",
+            "description": "Retrieve the latest Power Apps news.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsByTopic",
+            "url": "https://power-apps-smartable.p.rapidapi.com/news/{topic}/page/{page}/",
+            "description": "Retrieve Power Apps news filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter news by.",
+                    "default": "canvas-apps"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResourcesByTopic",
+            "url": "https://power-apps-smartable.p.rapidapi.com/learning/{topic}/page/{page}/",
+            "description": "Retrieve Power Apps learning resources filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter resources by.",
+                    "default": "canvas-apps"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeople",
+            "url": "https://power-apps-smartable.p.rapidapi.com/people/page/{page}/",
+            "description": "Retrieve a list of influencers in the Power Apps community.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSamples",
+            "url": "https://power-apps-smartable.p.rapidapi.com/samples/page/{page}/",
+            "description": "Retrieve sample applications for Power Apps.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetCommunities",
+            "url": "https://power-apps-smartable.p.rapidapi.com/communities/page/{page}/",
+            "description": "Retrieve information about Power Apps communities.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsletters",
+            "url": "https://power-apps-smartable.p.rapidapi.com/newsletters/",
+            "description": "Retrieve newsletters related to Power Apps.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSponsorships",
+            "url": "https://power-apps-smartable.p.rapidapi.com/sponsorships/today/",
+            "description": "Retrieve today's sponsorship opportunities in Power Apps.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetTopics",
+            "url": "https://power-apps-smartable.p.rapidapi.com/topics/",
+            "description": "Retrieve a list of topics related to Power Apps.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

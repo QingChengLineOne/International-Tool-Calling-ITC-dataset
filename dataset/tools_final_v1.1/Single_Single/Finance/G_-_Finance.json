@@ -1,0 +1,98 @@
+{
+    "tool_name": "G - Finance",
+    "tool_description": "This API helps to query financial summaries, stocks, quotes, movers, news, and more.",
+    "home_url": "https://rapidapi.com/herosAPI/api/g-finance/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "market-trends",
+            "url": "https://g-finance.p.rapidapi.com/market-trends/",
+            "description": "Fetches market trends including indexes, most active stocks, gainers, losers, and cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "STRING",
+                    "description": "Tab name. One of these: indexes, most-active, gainers, losers, climate-leaders, cryptocurrencies, currencies.",
+                    "default": "losers"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Geolocation. Specify the country code.",
+                    "default": "US"
+                },
+                {
+                    "name": "s",
+                    "type": "STRING",
+                    "description": "Subtab name. If you selected the indexes tab, you can choose one of the following: americas, europe-middle-east-africa, asia-pacific. Leave empty to get all.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "ticker",
+            "url": "https://g-finance.p.rapidapi.com/ticker/",
+            "description": "Retrieves detailed information about a specific stock ticker.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "STRING",
+                    "description": "Ticker symbol. For example: ABNB:NASDAQ, .DJI:INDEXDJX, EUR-USD, BTC-USD.",
+                    "default": "ABNB:NASDAQ"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Geolocation. Specify the country code.",
+                    "default": "US"
+                },
+                {
+                    "name": "hl",
+                    "type": "STRING",
+                    "description": "Language code for the response.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "search",
+            "url": "https://g-finance.p.rapidapi.com/search/",
+            "description": "Searches for stocks based on a query string.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query.",
+                    "default": "Airbnb"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Geolocation. Specify the country code.",
+                    "default": "US"
+                },
+                {
+                    "name": "hl",
+                    "type": "STRING",
+                    "description": "Language code for the response.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

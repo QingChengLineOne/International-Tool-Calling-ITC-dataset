@@ -1,0 +1,25 @@
+{
+    "tool_name": "SSD guna",
+    "tool_description": "SSdguna is an entertainment website that provides access to South Sudan music videos.",
+    "home_url": "https://rapidapi.com/emmanueltaban4/api/ssd-guna/",
+    "country": "South Sudan",
+    "api_list": [
+        {
+            "name": "SSD",
+            "url": "https://ssd-guna.p.rapidapi.com/",
+            "description": "Fetches South Sudan music videos.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Emmanel",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Optional date parameter to filter results by a specific date.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

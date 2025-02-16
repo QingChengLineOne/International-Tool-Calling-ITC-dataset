@@ -1,0 +1,109 @@
+{
+    "tool_name": "Gym calculations",
+    "tool_description": "A number of useful calculations for gym goers",
+    "home_url": "https://rapidapi.com/noahschneider-Ze_fpMSDn5o/api/gym-calculations/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/1rm",
+            "url": "https://gym-calculations.p.rapidapi.com/1rm",
+            "description": "Calculates the one-repetition maximum (1RM) for weightlifting.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "number",
+                        "description": "Calculated 1RM value"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/bmr",
+            "url": "https://gym-calculations.p.rapidapi.com/bmr",
+            "description": "Calculates the Basal Metabolic Rate (BMR) based on user input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "number",
+                        "description": "Calculated BMR value"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/heart-rate-zones",
+            "url": "https://gym-calculations.p.rapidapi.com/heart-rate-zones",
+            "description": "Determines heart rate zones for training intensity.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "object"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/bmi",
+            "url": "https://gym-calculations.p.rapidapi.com/bmi",
+            "description": "Calculates the Body Mass Index (BMI) based on height and weight.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "number",
+                        "description": "Calculated BMI value"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/calculate-macronutrient-ratios",
+            "url": "https://gym-calculations.p.rapidapi.com/calculate-macronutrient-ratios",
+            "description": "Calculates macronutrient ratios for diet planning.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "protein": {
+                        "type": "number",
+                        "description": "Calculated protein amount in grams"
+                    },
+                    "carbohydrates": {
+                        "type": "number",
+                        "description": "Calculated carbohydrates amount in grams"
+                    },
+                    "fat": {
+                        "type": "number",
+                        "description": "Calculated fat amount in grams"
+                    },
+                    "calories": {
+                        "type": "number",
+                        "description": "Calculated calories amount in kcal"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "全国城市列表(三级)",
+    "tool_description": "获取中国的城市列表，包括省、市、区的详细信息，并附带城市首字母索引。",
+    "home_url": "https://api.aa1.cn/doc/address.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全国城市列表(三级) API",
+            "url": "https://api.roxmotor.top/pb/address",
+            "description": "提供中国城市列表的接口，包括省、市、区的名称和首字母索引。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

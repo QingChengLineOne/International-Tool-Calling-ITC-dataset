@@ -1,0 +1,38 @@
+{
+    "tool_name": "MP4转GIFAPI",
+    "tool_description": "使用该接口你可以将mp4格式的文件转为gif，默认只转换前15秒内容、600分辨率，如有其他需求请联系管理员admin@xxhzm.cn定制",
+    "home_url": "https://api.aa1.cn/doc/gif-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "MP4转GIF接口",
+            "url": "https://v2.api-m.com/api/gif",
+            "description": "将mp4文件转换为gif格式的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要转换的mp4文件的URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "duration",
+                    "type": "int",
+                    "description": "转换的时长，单位秒，默认为15秒",
+                    "default": 15
+                },
+                {
+                    "name": "resolution",
+                    "type": "string",
+                    "description": "转换的分辨率，例如'600'，默认为'600'分辨率",
+                    "default": "600"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

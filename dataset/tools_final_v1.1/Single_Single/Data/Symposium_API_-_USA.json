@@ -1,0 +1,53 @@
+{
+    "tool_name": "Symposium API - USA",
+    "tool_description": "An API based on the Symposium platform that provides access to various functionalities related to the Symposium service.",
+    "home_url": "https://rapidapi.com/galardo/api/symposium-api-usa/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "get",
+            "url": "https://symposium-api-usa.p.rapidapi.com/api/rapi.aspx",
+            "description": "Retrieves data based on specified parameters such as region and ID.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The geographical region for the data retrieval.",
+                    "default": "NY"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "An identifier for the specific data request.",
+                    "default": "NOPANTS"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

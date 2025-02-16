@@ -1,0 +1,43 @@
+{
+    "tool_name": "Daily Horoscope",
+    "tool_description": "The Daily Horoscope API provides the daily horoscope for all 12 zodiac signs, including fun trivia. It covers 6 categories: Personal Life, Professional Life, Health, Emotions, Travel, and Luck. You can view the horoscope for Yesterday, Today, and Tomorrow. The fun trivia includes Daily Cosmic Tips, Zodiac Couple's Compatibility, Lucky Number, Lucky Color, and a Description of the Sun Sign for the day. Sign up for a 7-day trial on the Divine API website to access the API with your unique API key.",
+    "home_url": "https://rapidapi.com/divineapi/api/daily-horoscope3/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "DailyHoroscope",
+            "url": "https://daily-horoscope3.p.rapidapi.com/api/1.0/get_daily_horoscope.php",
+            "description": "Provides daily horoscope for all 12 zodiac signs with fun trivia. Allows access to horoscope for Yesterday, Today, and Tomorrow along with Daily Cosmic Tips, Zodiac Couple's Compatibility, Lucky Number, Lucky Color, and Description of the Sun Sign.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "sign",
+                    "type": "STRING",
+                    "description": "Zodiac sign for which to retrieve the horoscope",
+                    "default": "ARIES"
+                },
+                {
+                    "name": "timezone",
+                    "type": "STRING",
+                    "description": "Timezone for which to retrieve the horoscope",
+                    "default": "5.5"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Date for which to retrieve the horoscope in format YYYY-MM-DD",
+                    "default": "YYYY-MM-DD"
+                },
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "Unique API key for authentication",
+                    "default": "Your Api Key"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+{
+    "tool_name": "Cargo2ZERO",
+    "tool_description": "Introducing Advanced APIs for CO2 Emissions & Efficiency Metrics, based on our air cargo tracking data. This tool allows users to analyze their air cargo data to identify potential CO2 savings and fulfill sustainability reporting requirements. The CO2 calculations provide detailed insights into each shipment leg, considering more than just departure and arrival airports.",
+    "home_url": "https://rapidapi.com/cargoai-cargoai-default/api/cargo2zero/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "CO2 data from an AWB",
+            "url": "https://cargo2zero.p.rapidapi.com/co2calculation",
+            "description": "Get CO2 calculation and benchmark data per AWB number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "awb",
+                    "type": "STRING",
+                    "description": "Air Waybill number for the shipment.",
+                    "default": "000-99999970"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "CO2 data from a Flight",
+            "url": "https://cargo2zero.p.rapidapi.com/co2calculation",
+            "description": "Get CO2 calculation and benchmark data from a Flight number and date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "weight",
+                    "type": "STRING",
+                    "description": "Weight of the cargo in kilograms.",
+                    "default": "100"
+                },
+                {
+                    "name": "flightnumber",
+                    "type": "STRING",
+                    "description": "Flight number for the shipment.",
+                    "default": "QR8268"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Date of the flight in YYYY-MM-DD format.",
+                    "default": "2023-04-03"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "origin": {
+                        "type": "string"
+                    },
+                    "destination": {
+                        "type": "string"
+                    },
+                    "aircraft": {
+                        "type": "string"
+                    },
+                    "distance": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "integer"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "weight": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "integer"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2TTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2WTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2eTTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2eWTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2EfficiencyScore": {
+                        "type": "integer"
+                    },
+                    "co2EfficiencyIndustry": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "CO2 data per Origin/Destination and Flight",
+            "url": "https://cargo2zero.p.rapidapi.com/co2calculation",
+            "description": "Get CO2 calculation and benchmark on route based on origin, destination, and aircraft type.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "destination",
+                    "type": "STRING",
+                    "description": "Destination airport code.",
+                    "default": "CDG"
+                },
+                {
+                    "name": "aircraft",
+                    "type": "STRING",
+                    "description": "Type of aircraft used for the flight.",
+                    "default": "77L"
+                },
+                {
+                    "name": "origin",
+                    "type": "STRING",
+                    "description": "Origin airport code.",
+                    "default": "JFK"
+                },
+                {
+                    "name": "weight",
+                    "type": "STRING",
+                    "description": "Weight of the cargo in kilograms.",
+                    "default": "100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "origin": {
+                        "type": "string"
+                    },
+                    "destination": {
+                        "type": "string"
+                    },
+                    "aircraft": {
+                        "type": "string"
+                    },
+                    "distance": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "weight": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "integer"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2TTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2WTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2eTTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2eWTW": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "co2EfficiencyScore": {
+                        "type": "integer"
+                    },
+                    "co2EfficiencyIndustry": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

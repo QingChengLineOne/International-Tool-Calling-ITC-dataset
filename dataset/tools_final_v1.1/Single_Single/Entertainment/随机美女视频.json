@@ -1,0 +1,25 @@
+{
+    "tool_name": "随机美女视频API",
+    "tool_description": "提供随机美女视频播放的API服务",
+    "home_url": "https://api.aa1.cn/doc/meinv.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机美女视频接口",
+            "url": "https://v2.api-m.com/api/meinv",
+            "description": "获取随机美女视频",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "return",
+                    "type": "int",
+                    "description": "指定返回视频的数量，默认值为302",
+                    "default": "302"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

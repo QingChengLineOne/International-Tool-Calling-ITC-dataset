@@ -1,0 +1,37 @@
+{
+    "tool_name": "菜谱做菜方法API",
+    "tool_description": "提供最全菜谱做菜方法的API接口",
+    "home_url": "https://api.aa1.cn/doc/cp-avdgw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "菜谱做菜方法查询API",
+            "url": "https://api.avdgw.com/api/cai",
+            "description": "查询菜谱做菜方法的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API密钥，用于验证请求来源",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "菜谱类型，可选值包括：1-家常菜，2-特色菜，3-外国菜等",
+                    "default": 1
+                },
+                {
+                    "name": "keyword",
+                    "type": "string",
+                    "description": "搜索关键词，用于过滤菜谱",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

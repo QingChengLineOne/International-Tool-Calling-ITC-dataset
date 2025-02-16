@@ -1,0 +1,18 @@
+{
+    "tool_name": "Printing New York Test",
+    "tool_description": "A test API designed for printing services in New York.",
+    "home_url": "https://rapidapi.com/printingdigital/api/printing-new-york-test/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Test",
+            "url": "https://printing-new-york-test.p.rapidapi.com/",
+            "description": "This API endpoint allows users to perform a test request to the Printing New York service.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

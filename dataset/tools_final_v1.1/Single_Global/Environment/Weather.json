@@ -1,0 +1,211 @@
+{
+    "tool_name": "Weather",
+    "tool_description": "Current weather data API, and Weather forecast API - Basic access to the Weatherbit.io Weather API.",
+    "home_url": "https://rapidapi.com/weatherbit/api/weather/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "5 day Forecast",
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly",
+            "description": "3 hour interval - 5 day forecast for a given latitude and longitude.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude (Degrees)",
+                    "default": "35.5"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude (Degrees)",
+                    "default": "-78.5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "units",
+                    "type": "ENUM",
+                    "description": "Measurement units: I = Imperial, S = Scientific, M = Metric (Default)",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "Language for weather condition descriptions.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Current Weather Data of a location",
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/current",
+            "description": "Returns the current (most recent) weather observation of a given location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude",
+                    "default": "-78.5"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude",
+                    "default": "38.5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "Language for weather description.",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "ENUM",
+                    "description": "Measurement units: I = Imperial, S = Scientific, M = Metric (Default)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "1 Hour / Minutely Forecast (Nowcast)",
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/minutely",
+            "description": "Retrieve a 60 minute 'Nowcast' for precipitation and snowfall.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude",
+                    "default": "35.5"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude",
+                    "default": "-78.5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "units",
+                    "type": "ENUM",
+                    "description": "Measurement units: metric (Default), imperial.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "16 Day Forecast",
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/daily",
+            "description": "Returns a 16 day (daily) forecast.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude",
+                    "default": "-78.5"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude",
+                    "default": "38.5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "Language for weather description.",
+                    "default": ""
+                },
+                {
+                    "name": "units",
+                    "type": "ENUM",
+                    "description": "Measurement units: metric (Default), imperial.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "120 Hour Forecast",
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/hourly",
+            "description": "Returns a forecast for up to 120 hours in the future (default 48 hours).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude",
+                    "default": "38.5"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude",
+                    "default": "-78.5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "Language for weather description.",
+                    "default": ""
+                },
+                {
+                    "name": "hours",
+                    "type": "STRING",
+                    "description": "Limit number of forecast hours.",
+                    "default": "48"
+                },
+                {
+                    "name": "units",
+                    "type": "ENUM",
+                    "description": "Measurement units: I = Imperial, S = Scientific, M = Metric (Default)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Severe Weather Alerts",
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/alerts",
+            "description": "Get severe weather alerts from local meteorological agencies (US, EU, and Israel supported).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude",
+                    "default": "38.5"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude",
+                    "default": "-78.5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

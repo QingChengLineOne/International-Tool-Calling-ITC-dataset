@@ -1,0 +1,31 @@
+{
+    "tool_name": "街机游戏API",
+    "tool_description": "提供FC/SFC/街机等游戏合计信息的API接口",
+    "home_url": "https://api.aa1.cn/doc/jj-khkj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "街机游戏信息查询",
+            "url": "https://service-m9yegcn9-1311248022.sh.apigw.tencentcs.com/release/games",
+            "description": "获取街机游戏的相关信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "string",
+                    "description": "游戏类型，如'FC', 'SFC', 'Arcade'等",
+                    "default": "FC"
+                },
+                {
+                    "name": "p",
+                    "type": "int",
+                    "description": "分页参数，默认为1",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

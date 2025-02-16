@@ -1,0 +1,18 @@
+{
+    "tool_name": "External Credit Bureau",
+    "tool_description": "Sample Data for Credit Bureau Score",
+    "home_url": "https://rapidapi.com/lyndontuala/api/external-credit-bureau/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getBureauData",
+            "url": "https://external-credit-bureau.p.rapidapi.com/",
+            "description": "Fetch sample external bureau data",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

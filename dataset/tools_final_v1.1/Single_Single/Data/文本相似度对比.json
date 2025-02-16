@@ -1,0 +1,31 @@
+{
+    "tool_name": "文本相似度对比API",
+    "tool_description": "检测文本1与文本2的相似度，并且输出文本1丢失的部分与文本2添加的部分",
+    "home_url": "https://api.aa1.cn/doc/pearno-textdifference.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文本相似度对比接口",
+            "url": "https://api.pearktrue.cn/api/textdifference/",
+            "description": "提供文本相似度检测功能",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text1",
+                    "type": "string",
+                    "description": "需要检测的文本1",
+                    "default": ""
+                },
+                {
+                    "name": "text2",
+                    "type": "string",
+                    "description": "需要检测的文本2",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

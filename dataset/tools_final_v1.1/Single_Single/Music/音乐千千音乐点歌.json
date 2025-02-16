@@ -1,0 +1,31 @@
+{
+    "tool_name": "【音乐】千千音乐点歌",
+    "tool_description": "通过千千音乐API实现点歌服务",
+    "home_url": "https://api.aa1.cn/doc/qianqian_music.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "点歌接口",
+            "url": "https://api.cenguigui.cn/api/music/qianqian_music.php",
+            "description": "用于向千千音乐发送点歌请求",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要点的歌曲名称或歌手名称",
+                    "default": ""
+                },
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "返回结果的数量，通常为1",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

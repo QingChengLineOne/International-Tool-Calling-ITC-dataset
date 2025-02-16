@@ -1,0 +1,35 @@
+{
+    "tool_name": "Card Validator",
+    "tool_description": "Credit card number validator or generator",
+    "home_url": "https://rapidapi.com/mustafaalp43-9FY37nhKrC/api/card-validator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Validate Credit Card Number",
+            "url": "https://card-validator.p.rapidapi.com/validate",
+            "description": "This endpoint validates whether a credit card number is valid or not.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Generate Fake Credit Card Number",
+            "url": "https://card-validator.p.rapidapi.com/generate",
+            "description": "This endpoint generates a fake and valid credit card number with the desired length.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cardLength",
+                    "type": "STRING",
+                    "description": "The length of the generated credit card number.",
+                    "default": "4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

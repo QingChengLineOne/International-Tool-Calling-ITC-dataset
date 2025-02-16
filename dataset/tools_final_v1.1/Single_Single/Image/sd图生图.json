@@ -1,0 +1,37 @@
+{
+    "tool_name": "sd图生图",
+    "tool_description": "sd绘画图生图",
+    "home_url": "https://api.aa1.cn/doc/sdtst.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "sd图生图API",
+            "url": "https://api.lolimi.cn/API/AI/isd.php",
+            "description": "通过输入文字和图片生成sd风格的图像",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要生成的图像描述文字",
+                    "default": "sd图生成示例"
+                },
+                {
+                    "name": "img",
+                    "type": "string",
+                    "description": "用于生成图像的原始图片链接",
+                    "default": "https://example.com/original-image.jpg"
+                },
+                {
+                    "name": "mode",
+                    "type": "string",
+                    "description": "图像生成模式，例如写实、动漫等",
+                    "default": "写实"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

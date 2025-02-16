@@ -1,0 +1,71 @@
+{
+    "tool_name": "Maintenanceman.nl asset management API",
+    "tool_description": "Maintenanceman.nl API allows you to dynamically simulate a complex, usage and/or calendar based maintenance schedule, based on a predefined schedule and historic values. It enables you to quickly and accurately predict when your asset will require maintenance, based on how intensively it is used.",
+    "home_url": "https://rapidapi.com/bheijkoop/api/maintenanceman-nl-asset-management-api/",
+    "country": "Netherlands",
+    "api_list": [
+        {
+            "name": "getSchedule",
+            "url": "https://maintenanceman-nl-asset-management-api.p.rapidapi.com/schedule",
+            "description": "Retrieves the maintenance schedule based on usage and historical data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "error": {
+                        "type": "boolean"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "object",
+                        "properties": {
+                            "errors": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "result": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "number"
+                                        },
+                                        "date": {
+                                            "type": "string"
+                                        },
+                                        "rawDate": {
+                                            "type": "number"
+                                        },
+                                        "year": {
+                                            "type": "number"
+                                        },
+                                        "dueAt": {
+                                            "type": "number"
+                                        },
+                                        "dueDate": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

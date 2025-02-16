@@ -1,0 +1,18 @@
+{
+    "tool_name": "moneysaverhelp.co.uk zapier",
+    "tool_description": "A tool that integrates with Zapier to help users save money through automated workflows.",
+    "home_url": "https://rapidapi.com/sourbean42/api/moneysaverhelp-co-uk-zapier/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "payload",
+            "url": "https://moneysaverhelp-co-uk-zapier.p.rapidapi.com/12536380/bnmuls7",
+            "description": "This API endpoint allows users to send a payload for processing.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

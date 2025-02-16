@@ -1,0 +1,42 @@
+{
+    "tool_name": "DNS Lookup",
+    "tool_description": "NsLookup queries the specified DNS server and retrieves records associated with the domain name you provided.",
+    "home_url": "https://rapidapi.com/Zozor54/api/dns-lookup11/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Reverse",
+            "url": "https://dns-lookup11.p.rapidapi.com/reverse",
+            "description": "Get name servers from an IP address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "The IP address for which to retrieve name servers.",
+                    "default": "8.8.8.8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Nslookup",
+            "url": "https://dns-lookup11.p.rapidapi.com/nslookup",
+            "description": "Queries the specified DNS server and retrieves various DNS records associated with the provided domain name, including A, AAAA, CNAME, MX, NS, and TXT records.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which to retrieve DNS records.",
+                    "default": "google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

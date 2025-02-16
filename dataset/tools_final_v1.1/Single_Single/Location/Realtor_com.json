@@ -1,0 +1,47 @@
+{
+    "tool_name": "Realtor com",
+    "tool_description": "This API reproduces PUBLIC data from Realtor - realtor.com, providing access to real estate listings.",
+    "home_url": "https://rapidapi.com/Champlion/api/realtor-com4/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "properties/list",
+            "url": "https://realtor-com4.p.rapidapi.com/properties/list",
+            "description": "List properties for sale, rent, or sold with various options and filters.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "home_search": {
+                                "type": "object",
+                                "properties": {
+                                    "count": {
+                                        "type": "integer"
+                                    },
+                                    "properties": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object"
+                                        }
+                                    },
+                                    "search_promotion": {
+                                        "type": "null"
+                                    },
+                                    "total": {
+                                        "type": "integer"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

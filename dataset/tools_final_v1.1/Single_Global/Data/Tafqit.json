@@ -1,0 +1,38 @@
+{
+    "tool_name": "Tafqit",
+    "tool_description": "Convert numbers to their Arabic text representation",
+    "home_url": "https://rapidapi.com/postscripter/api/tafqit/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "convert",
+            "url": "https://tafqit.p.rapidapi.com/convert",
+            "description": "Convert the number into its Arabic text representation. This API allows users to input a number and receive its equivalent in Arabic text.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "the_number",
+                    "type": "STRING",
+                    "description": "Put the number here. Decimal is supported by most units.",
+                    "default": "2519.50"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "hundreds_form",
+                    "type": "STRING",
+                    "description": "Some use مائة others use مئة, both work in Arabic. If left empty, the default is مائة.",
+                    "default": "مائة"
+                },
+                {
+                    "name": "unit",
+                    "type": "STRING",
+                    "description": "The counted subject, be it a currency like درهم إماراتي or a size unit like متر مربع. If the unit does not appear in the text result, it may not be supported. Please contact us to add it.",
+                    "default": " ريال سعودي"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

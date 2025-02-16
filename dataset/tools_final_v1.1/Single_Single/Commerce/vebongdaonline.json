@@ -1,0 +1,18 @@
+{
+    "tool_name": "vebongdaonline",
+    "tool_description": "Vé bóng đá online là trang cung cấp dịch vụ mua vé bóng đá trực tuyến, giao dịch thuận tiện, hỗ trợ nhiều nền tảng thanh toán. Truy cập vebongdaonline.vn để chọn mua những trận đấu bóng đá hấp dẫn từ Việt Nam cho tới Thế Giới. Đặc biệt còn hỗ trợ qua các ví điện tử và tài khoản ngân hàng trực tuyến.",
+    "home_url": "https://rapidapi.com/vebongdaonline/api/vebongdaonline/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Vé bóng đá online",
+            "url": "https://vebongdaonline.p.rapidapi.com/",
+            "description": "API cung cấp dịch vụ mua vé bóng đá trực tuyến, cho phép người dùng thực hiện giao dịch một cách thuận tiện và nhanh chóng.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

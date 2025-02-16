@@ -1,0 +1,18 @@
+{
+    "tool_name": "3D Bin Packing Problem",
+    "tool_description": "The 3D Bin Packing Problem (3D-BPP) is one of the most frequent problems in warehousing and logistics. Its solution involves filling a container (a box or pallet) with items as closely to each other as possible to minimize the number of required containers.",
+    "home_url": "https://rapidapi.com/zilinskivan/api/3d-bin-packing-problem/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "go",
+            "url": "https://3d-bin-packing-problem.p.rapidapi.com/",
+            "description": "This API implementation is used to solve 3D container packing problems for shipping carton calculation.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

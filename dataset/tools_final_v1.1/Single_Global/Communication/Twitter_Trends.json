@@ -1,0 +1,25 @@
+{
+    "tool_name": "Twitter Trends",
+    "tool_description": "Get Twitter trends with rich outcomes. The results are updated every half an hour. If you have any country/city you would like to be added, please contact us. (For Pro subscription users)",
+    "home_url": "https://rapidapi.com/brkygt88/api/twitter-trends5/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "trends",
+            "url": "https://twitter-trends5.p.rapidapi.com/twitter/request.php",
+            "description": "Returns the top 50 trending topics for a specified woeid.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "woeid",
+                    "type": "NUMBER",
+                    "description": "The Where On Earth IDentifier for the location you want trends for.",
+                    "default": "23424977"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

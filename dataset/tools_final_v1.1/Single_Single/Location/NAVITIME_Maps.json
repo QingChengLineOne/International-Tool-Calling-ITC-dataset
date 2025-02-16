@@ -1,0 +1,83 @@
+{
+    "tool_name": "NAVITIME Maps",
+    "tool_description": "Get a JavaScript file or map as an image on web pages.",
+    "home_url": "https://rapidapi.com/navitimejapan-navitimejapan/api/navitime-maps/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "map_script",
+            "url": "https://navitime-maps.p.rapidapi.com/map_script",
+            "description": "Get a JavaScript file to control the tile map that runs on the browser.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "host",
+                    "type": "STRING",
+                    "description": "A domain name of your website.",
+                    "default": "localhost"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "map_image(GET)",
+            "url": "https://navitime-maps.p.rapidapi.com/map_image",
+            "description": "Get a static map image of the location, range, and zoom value specified in the parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "width",
+                    "type": "NUMBER",
+                    "description": "Width of the map. (Minimum value: 1, Maximum value: 999)",
+                    "default": "500"
+                },
+                {
+                    "name": "center",
+                    "type": "STRING",
+                    "description": "Center of the map, specified as latitude and longitude.",
+                    "default": "35.681236,139.767125"
+                },
+                {
+                    "name": "zoom",
+                    "type": "NUMBER",
+                    "description": "Zoom level. (Minimum value: 6, Maximum value: 19)",
+                    "default": "15"
+                },
+                {
+                    "name": "height",
+                    "type": "NUMBER",
+                    "description": "Height of the map. (Minimum value: 1, Maximum value: 999)",
+                    "default": "500"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude. (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System)",
+                    "default": "wgs84"
+                },
+                {
+                    "name": "coord_unit",
+                    "type": "STRING",
+                    "description": "The unit of latitude and longitude included in the output data. (degree: decimal system of degrees (default), millisec: milliseconds)",
+                    "default": "degree"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "map_image(POST)",
+            "url": "https://navitime-maps.p.rapidapi.com/map_image",
+            "description": "Get a static map image based on the specified parameters for location, range, and zoom level.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

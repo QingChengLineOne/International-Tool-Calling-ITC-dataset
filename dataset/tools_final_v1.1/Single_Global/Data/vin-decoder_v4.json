@@ -1,0 +1,410 @@
+{
+    "tool_name": "vin-decoder_v4",
+    "tool_description": "Get the most accurate data from your VIN globally or specific locale. Our VIN decoder API is used by various automotive businesses: online stores, forums, portals, blogs, and VIN decoding services all around the globe.",
+    "home_url": "https://rapidapi.com/pi16-pi16-default/api/vin-decoder26/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Vin Decode",
+            "url": "https://vin-decoder26.p.rapidapi.com/b2b/precheck",
+            "description": "Decodes a VIN to provide detailed vehicle information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The Vehicle Identification Number to decode.",
+                    "default": "WBAWY32040L678750"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "vin": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "clue": {
+                        "type": "string"
+                    },
+                    "fuel": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": [
+                            "integer",
+                            "string"
+                        ]
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "engine": {
+                        "type": "string"
+                    },
+                    "power": {
+                        "type": "string"
+                    },
+                    "wheels": {
+                        "type": "string"
+                    },
+                    "steering": {
+                        "type": "string"
+                    },
+                    "transmission": {
+                        "type": "string"
+                    },
+                    "engineNumber": {
+                        "type": "string"
+                    },
+                    "originalMake": {
+                        "type": "string"
+                    },
+                    "originalModel": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "AU Decode",
+            "url": "https://vin-decoder26.p.rapidapi.com/b2b/precheck/AU",
+            "description": "Decodes a VIN specifically for Australian vehicles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The Vehicle Identification Number for Australian vehicles.",
+                    "default": "WVWZZZAUZGW001953"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "vin": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "clue": {
+                        "type": "string"
+                    },
+                    "fuel": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": [
+                            "integer",
+                            "string"
+                        ]
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "engine": {
+                        "type": "string"
+                    },
+                    "power": {
+                        "type": "string"
+                    },
+                    "wheels": {
+                        "type": "string"
+                    },
+                    "steering": {
+                        "type": "string"
+                    },
+                    "transmission": {
+                        "type": "string"
+                    },
+                    "engineNumber": {
+                        "type": "string"
+                    },
+                    "originalMake": {
+                        "type": "string"
+                    },
+                    "originalModel": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "US Decode",
+            "url": "https://vin-decoder26.p.rapidapi.com/b2b/precheck/US",
+            "description": "Decodes a VIN specifically for US vehicles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The Vehicle Identification Number for US vehicles.",
+                    "default": "WBAPE12060WJ88925"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "vin": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "fuel": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": [
+                            "integer",
+                            "string"
+                        ]
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "engine": {
+                        "type": "string"
+                    },
+                    "power": {
+                        "type": "string"
+                    },
+                    "wheels": {
+                        "type": "string"
+                    },
+                    "steering": {
+                        "type": "string"
+                    },
+                    "transmission": {
+                        "type": "string"
+                    },
+                    "engineNumber": {
+                        "type": "string"
+                    },
+                    "originalMake": {
+                        "type": "string"
+                    },
+                    "originalModel": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "PL Decode",
+            "url": "https://vin-decoder26.p.rapidapi.com/b2b/precheck/PL",
+            "description": "Decodes a VIN specifically for Polish vehicles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The Vehicle Identification Number for Polish vehicles.",
+                    "default": "WBAPE12060WJ88925"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "vin": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "fuel": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": [
+                            "integer",
+                            "string"
+                        ]
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "engine": {
+                        "type": "string"
+                    },
+                    "power": {
+                        "type": "string"
+                    },
+                    "wheels": {
+                        "type": "string"
+                    },
+                    "steering": {
+                        "type": "string"
+                    },
+                    "transmission": {
+                        "type": "string"
+                    },
+                    "engineNumber": {
+                        "type": "string"
+                    },
+                    "originalMake": {
+                        "type": "string"
+                    },
+                    "originalModel": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "NZ Decode",
+            "url": "https://vin-decoder26.p.rapidapi.com/b2b/precheck/NZ",
+            "description": "Decodes a VIN specifically for New Zealand vehicles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The Vehicle Identification Number for New Zealand vehicles.",
+                    "default": "JMFXDGL3WNZ002145"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "vin": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "fuel": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": [
+                            "integer",
+                            "string"
+                        ]
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "engine": {
+                        "type": "string"
+                    },
+                    "power": {
+                        "type": "string"
+                    },
+                    "wheels": {
+                        "type": "string"
+                    },
+                    "steering": {
+                        "type": "string"
+                    },
+                    "transmission": {
+                        "type": "string"
+                    },
+                    "engineNumber": {
+                        "type": "string"
+                    },
+                    "originalMake": {
+                        "type": "string"
+                    },
+                    "originalModel": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "ZA Decode",
+            "url": "https://vin-decoder26.p.rapidapi.com/b2b/precheck/ZA",
+            "description": "Decodes a VIN specifically for South African vehicles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The Vehicle Identification Number for South African vehicles.",
+                    "default": "WBAVA71050PR98497"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "vin": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    },
+                    "fuel": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": [
+                            "integer",
+                            "string"
+                        ]
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "engine": {
+                        "type": "string"
+                    },
+                    "power": {
+                        "type": "string"
+                    },
+                    "wheels": {
+                        "type": "string"
+                    },
+                    "steering": {
+                        "type": "string"
+                    },
+                    "transmission": {
+                        "type": "string"
+                    },
+                    "engineNumber": {
+                        "type": "string"
+                    },
+                    "originalMake": {
+                        "type": "string"
+                    },
+                    "originalModel": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

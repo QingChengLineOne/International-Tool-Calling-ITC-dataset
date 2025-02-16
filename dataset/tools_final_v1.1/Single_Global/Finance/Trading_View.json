@@ -1,0 +1,177 @@
+{
+    "tool_name": "Trading View",
+    "tool_description": "This API helps you to query for data obtained by professional providers who have direct and extensive access to stock quotes, futures, popular indices, Forex, Bitcoin, and CFDs to create a financial community site/application, such as tradingview.com.",
+    "home_url": "https://rapidapi.com/apidojo/api/trading-view/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "auto-complete (Deprecated)",
+            "url": "https://trading-view.p.rapidapi.com/auto-complete",
+            "description": "Get suggestion by term or phrase.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "Any term or phrase that you are familiar with.",
+                    "default": "tesla"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "One of the following: stock|futures|forex|index|bond|economic|bitcoin|crypto. Separated by comma for multiple options.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language code.",
+                    "default": "en"
+                },
+                {
+                    "name": "exchange",
+                    "type": "STRING",
+                    "description": "The value of 'value' field returned in .../exchanges/list endpoint.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news/list",
+            "url": "https://trading-view.p.rapidapi.com/news/list",
+            "description": "List latest news with options and filters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "The language code.",
+                    "default": "en"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "List ideas posts related to specified symbol. Ex: NASDAQ:AAPL.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country code, only functional if the market parameter is stock.",
+                    "default": "us"
+                },
+                {
+                    "name": "per_page",
+                    "type": "NUMBER",
+                    "description": "The number of items per response, for paging purpose.",
+                    "default": "20"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Leave empty or one of the following: base|stock|crypto|forex|index|futures|bond|economic.",
+                    "default": "base"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page index, for paging purpose.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-movers",
+            "url": "https://trading-view.p.rapidapi.com/market/get-movers",
+            "description": "Get movers in different exchanges and different categories.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "exchange",
+                    "type": "STRING",
+                    "description": "One of the following: US|ADX|AMEX|ATHEX|EURONEXT_BRU|ASX|BAHRAIN|BCBA|BCS|BELEX|BET|BER|BIST|BME|BMFBOVESPA|BMV|BSE|BSSE|BVC|BVL|BVB|BVCV|BX|CSE|DFM|DUS|OMXCOP|OMXTSE|OMXHEX|EGX|EURONEXT|EURONEXT_PAR|EURONEXT_AMS|EURONEXT_LIS|FWB|GPW|HAN|HKEX|HNX|HOSE|IDX|JSE|LSE|LSIN|MIL|MOEX|MYX|MUN|NAG|NASDAQ|NEO|NEWCONNECT|NGM|NSE|NSENG|NYSE|NZX|KRX|OTC|OMXICE|OMXRSE|OMXSTO|OMXVSE|LUXSE|OSL|PSE|QSE|SGX|SIX|SWB|SZSE|SSE|SET|TADAWUL|TASE|TPEX|TSE|TSX|TSXV|TWSE|UPCOM|XETR.",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "One of the following: volume_gainers|percent_change_gainers|percent_change_loosers|percent_range_gainers|percent_range_loosers|gap_gainers|gap_loosers|percent_gap_gainers|percent_gap_loosers.",
+                    "default": "volume_gainers"
+                },
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "The language code.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "stocks/get-financials",
+            "url": "https://trading-view.p.rapidapi.com/stocks/get-financials",
+            "description": "Get financials information related to a ticker or symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The format is 'exchange:symbol'. Ex: NASDAQ:TSLA.",
+                    "default": "NASDAQ:TSLA"
+                },
+                {
+                    "name": "columns",
+                    "type": "STRING",
+                    "description": "One of the following (Separated by comma for multiple options): name, average_volume, close, open, change.",
+                    "default": "name,average_volume,close,open,change"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "screenerName",
+                    "type": "STRING",
+                    "description": "The value of screenerName field returned in .../countries/list endpoint.",
+                    "default": "america"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language code.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "exchanges/list",
+            "url": "https://trading-view.p.rapidapi.com/exchanges/list",
+            "description": "List all available and supported exchanges.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "countries/list",
+            "url": "https://trading-view.p.rapidapi.com/countries/list",
+            "description": "List all available supported countries.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

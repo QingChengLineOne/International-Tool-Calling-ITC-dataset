@@ -1,0 +1,38 @@
+{
+    "tool_name": "(新版)佛历/农历API",
+    "tool_description": "佛教日历API,同时支持农历",
+    "home_url": "https://api.aa1.cn/doc/buddhist-calendar-songzixian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "佛历/农历查询接口",
+            "url": "https://api.songzixian.com/api/buddhist-calendar",
+            "description": "查询特定日期的佛历和农历信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据来源，可选LOCAL_BUDDHIST_CALENDAR（本地佛历）或REMOTE_BUDDHIST_CALENDAR（远程佛历）",
+                    "default": "LOCAL_BUDDHIST_CALENDAR"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "查询的日期，格式为YYYY-MM-DD",
+                    "default": "当前日期"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "输出格式，可选JSON或XML",
+                    "default": "JSON"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

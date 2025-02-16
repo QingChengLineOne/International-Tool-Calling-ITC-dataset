@@ -1,0 +1,32 @@
+{
+    "tool_name": "电商标题词根拆分",
+    "tool_description": "提供电商标题词根拆分服务，支持签名验证。",
+    "home_url": "https://api.shwgij.com/doc/13",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "电商标题词根拆分API",
+            "url": "https://api.shwgij.com/api/taobao/cigen",
+            "description": "提供电商标题词根拆分服务，支持签名验证。",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "U5IkU9EPBJc7wNWJseJAZNvkX8"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "q",
+                    "type": "string",
+                    "description": "输入要拆分的产品标题",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

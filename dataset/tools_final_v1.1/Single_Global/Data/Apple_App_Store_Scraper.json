@@ -1,0 +1,160 @@
+{
+    "tool_name": "Apple App Store Scraper",
+    "tool_description": "[Unofficial] Extract and retrieve information about iOS applications listed on the Apple App Store. This API allows users to access valuable metadata, ratings, reviews, pricing, and other details for apps available on the App Store, enabling insights gathering, market research, and enhancement of app-related services.",
+    "home_url": "https://rapidapi.com/evlar-evlar-default/api/apple-app-store-scraper/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get App Details",
+            "url": "https://apple-app-store-scraper.p.rapidapi.com/v1/appstore",
+            "description": "Retrieve details of an App Store listing.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Enter the two-letter country code to search in. Default is 'us'.",
+                    "default": "us"
+                },
+                {
+                    "name": "appid",
+                    "type": "STRING",
+                    "description": "Enter the app ID that you want to retrieve, for example '544007664'. This ID can be found in the app store listing URL.",
+                    "default": "544007664"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "null"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "appId": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "genres": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "genreIds": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "primaryGenre": {
+                                "type": "string"
+                            },
+                            "primaryGenreId": {
+                                "type": "integer"
+                            },
+                            "contentRating": {
+                                "type": "string"
+                            },
+                            "languages": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "size": {
+                                "type": "string"
+                            },
+                            "requiredOsVersion": {
+                                "type": "string"
+                            },
+                            "released": {
+                                "type": "string"
+                            },
+                            "updated": {
+                                "type": "string"
+                            },
+                            "releaseNotes": {
+                                "type": "string"
+                            },
+                            "version": {
+                                "type": "string"
+                            },
+                            "price": {
+                                "type": "integer"
+                            },
+                            "currency": {
+                                "type": "string"
+                            },
+                            "free": {
+                                "type": "boolean"
+                            },
+                            "developerId": {
+                                "type": "integer"
+                            },
+                            "developer": {
+                                "type": "string"
+                            },
+                            "developerUrl": {
+                                "type": "string"
+                            },
+                            "developerWebsite": {
+                                "type": "string"
+                            },
+                            "score": {
+                                "type": "number"
+                            },
+                            "reviews": {
+                                "type": "integer"
+                            },
+                            "currentVersionScore": {
+                                "type": "number"
+                            },
+                            "currentVersionReviews": {
+                                "type": "integer"
+                            },
+                            "screenshots": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "ipadScreenshots": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "appletvScreenshots": {
+                                "type": "array"
+                            },
+                            "supportedDevices": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

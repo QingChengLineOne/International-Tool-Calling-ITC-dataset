@@ -1,0 +1,232 @@
+{
+    "tool_name": "Azure",
+    "tool_description": "The Azure Every Day API offers the latest Microsoft Azure news, learning resources, events, influencers, and other related information.",
+    "home_url": "https://rapidapi.com/everyday/api/azure3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetNews",
+            "url": "https://azure3.p.rapidapi.com/news/page/{page}/",
+            "description": "Retrieve the latest Azure news articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsByTopic",
+            "url": "https://azure3.p.rapidapi.com/news/{topic}/page/{page}/",
+            "description": "Retrieve Azure news articles filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter news articles.",
+                    "default": "compute"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResources",
+            "url": "https://azure3.p.rapidapi.com/learning/page/{page}/",
+            "description": "Retrieve Azure learning resources.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResourcesByTopic",
+            "url": "https://azure3.p.rapidapi.com/learning/{topic}/page/{page}/",
+            "description": "Retrieve Azure learning resources filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter learning resources.",
+                    "default": "compute"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPastEvents",
+            "url": "https://azure3.p.rapidapi.com/events/past/page/{page}/",
+            "description": "Retrieve past Azure events.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetFutureEvents",
+            "url": "https://azure3.p.rapidapi.com/events/future/page/{page}/",
+            "description": "Retrieve upcoming Azure events.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetEvents",
+            "url": "https://azure3.p.rapidapi.com/events/page/{page}/",
+            "description": "Retrieve all Azure events.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetFutureEventsByTopic",
+            "url": "https://azure3.p.rapidapi.com/events/future/{topic}/page/{page}/",
+            "description": "Retrieve upcoming Azure events filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter future events.",
+                    "default": "compute"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeople",
+            "url": "https://azure3.p.rapidapi.com/people/page/{page}/",
+            "description": "Retrieve Azure influencers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeopleByTopic",
+            "url": "https://azure3.p.rapidapi.com/people/{topic}/page/{page}/",
+            "description": "Retrieve Azure influencers filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter influencers.",
+                    "default": "compute"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSponsorships",
+            "url": "https://azure3.p.rapidapi.com/sponsorships/today/",
+            "description": "Retrieve today's Azure sponsorships.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsletters",
+            "url": "https://azure3.p.rapidapi.com/newsletters/",
+            "description": "Retrieve Azure newsletters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetTopics",
+            "url": "https://azure3.p.rapidapi.com/topics/",
+            "description": "Retrieve a list of Azure topics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

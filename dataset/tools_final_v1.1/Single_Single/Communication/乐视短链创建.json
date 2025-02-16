@@ -1,0 +1,31 @@
+{
+    "tool_name": "乐视短链创建",
+    "tool_description": "全网独家乐视短链生成服务，需要申请key才能使用。",
+    "home_url": "https://api.aa1.cn/doc/le-suapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "乐视短链创建接口",
+            "url": "https://suapi.net/api/dwz/le",
+            "description": "创建乐视短链，将长链接转换为短链接。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要转换的长链接地址。",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "申请的API密钥。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

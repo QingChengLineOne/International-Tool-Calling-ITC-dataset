@@ -1,0 +1,38 @@
+{
+    "tool_name": "Proxy",
+    "tool_description": "A simple rotating proxy service that allows users to route their requests through different IP addresses.",
+    "home_url": "https://rapidapi.com/yuananf/api/proxy12/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "proxy",
+            "url": "https://proxy12.p.rapidapi.com/proxy",
+            "description": "Proxy your request anywhere by specifying the target URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL you want to visit.",
+                    "default": "http://api.ipify.org/"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "headers",
+                    "type": "STRING",
+                    "description": "The headers you want to set. Ensure they are in JSON format.",
+                    "default": ""
+                },
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The query parameters you want to set. Ensure they are in JSON format.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

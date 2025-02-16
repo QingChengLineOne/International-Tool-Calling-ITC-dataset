@@ -1,0 +1,18 @@
+{
+    "tool_name": "NPC API",
+    "tool_description": "This API provides various functionalities related to NPCs (non-player characters) in game development.",
+    "home_url": "https://rapidapi.com/npc-npc-default/api/npc/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get NPC Image",
+            "url": "https://npc.p.rapidapi.com/mv2FVg0.png",
+            "description": "Retrieve an image of a NPC character",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

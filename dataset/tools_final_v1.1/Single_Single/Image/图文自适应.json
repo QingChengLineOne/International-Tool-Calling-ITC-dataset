@@ -1,0 +1,25 @@
+{
+    "tool_name": "图文自适应API",
+    "tool_description": "极简自适应图文，优化有换行符时也遵循预设宽度。",
+    "home_url": "https://api.aa1.cn/doc/tw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图文自适应API",
+            "url": "https://api.52vmy.cn/api/img/tw/auto",
+            "description": "将文字内容转化为自适应图文格式。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要转换的自适应图文文字内容。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

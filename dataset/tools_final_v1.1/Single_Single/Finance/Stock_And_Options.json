@@ -1,0 +1,42 @@
+{
+    "tool_name": "Stock And Options",
+    "tool_description": "No. 1 rated U.S listed stock and options data provider with the lowest cost. The cloud-based API has a simple interface and returns easy-to-consume data in JSON format for options prices.",
+    "home_url": "https://rapidapi.com/mpeng/api/stock-and-options/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Options",
+            "url": "https://stock-and-options.p.rapidapi.com/options/{ticker}",
+            "description": "Return Stock and Options Data for the given ticker symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "string",
+                    "description": "The stock ticker symbol for which to retrieve options data.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Straddle",
+            "url": "https://stock-and-options.p.rapidapi.com/straddle/{ticker}",
+            "description": "Return options data in straddle format for the specified ticker symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "string",
+                    "description": "The stock ticker symbol for which to retrieve straddle options data.",
+                    "default": "msft"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

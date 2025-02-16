@@ -1,0 +1,78 @@
+{
+    "tool_name": "Zenserp",
+    "tool_description": "Our SERP API allows you to scrape search results from search engines and obtain valuable SEO data insights.",
+    "home_url": "https://rapidapi.com/christophleitner/api/zenserp/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://zenserp.p.rapidapi.com/search",
+            "description": "Get a SERP (Search Engine Results Page) for a specified query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query String (keyword) to search for.",
+                    "default": "Pied Piper"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "device",
+                    "type": "STRING",
+                    "description": "Specify which device to use for the search: ['desktop', 'mobile'].",
+                    "default": ""
+                },
+                {
+                    "name": "tbm",
+                    "type": "STRING",
+                    "description": "Set to 'isch' for image results.",
+                    "default": ""
+                },
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "Location for the search engine results.",
+                    "default": "United States"
+                },
+                {
+                    "name": "search_engine",
+                    "type": "STRING",
+                    "description": "The URL of the search engine to query.",
+                    "default": "google.com"
+                },
+                {
+                    "name": "num",
+                    "type": "STRING",
+                    "description": "Number of results to return.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

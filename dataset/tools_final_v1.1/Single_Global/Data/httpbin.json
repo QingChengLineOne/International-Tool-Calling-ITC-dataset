@@ -1,0 +1,18 @@
+{
+    "tool_name": "httpbin",
+    "tool_description": "httpbin is a simple HTTP request and response service that allows users to test and debug HTTP requests.",
+    "home_url": "https://rapidapi.com/eagleorg-eagleorg-default/api/httpbin32/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GET /anything",
+            "url": "https://httpbin32.p.rapidapi.com/anything",
+            "description": "This API forwards requests to the httpbin GET /anything endpoint, returning the request data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

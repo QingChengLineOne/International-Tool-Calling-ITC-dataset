@@ -1,0 +1,62 @@
+{
+    "tool_name": "高质发送邮件API",
+    "tool_description": "用于发送邮件，支持HTML格式和附件，并允许用户填写自己的邮箱授权码。",
+    "home_url": "https://api.aa1.cn/doc/youjian_QQ.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "发送邮件接口",
+            "url": "https://www.hhlqilongzhu.cn/api/email.php",
+            "description": "通过此接口发送邮件，支持HTML内容和附件。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email_fa",
+                    "type": "string",
+                    "description": "发件人邮箱地址",
+                    "default": ""
+                },
+                {
+                    "name": "email_shou",
+                    "type": "string",
+                    "description": "收件人邮箱地址",
+                    "default": ""
+                },
+                {
+                    "name": "email_bt",
+                    "type": "string",
+                    "description": "邮件标题",
+                    "default": ""
+                },
+                {
+                    "name": "email_nr",
+                    "type": "string",
+                    "description": "邮件内容，支持HTML格式",
+                    "default": ""
+                },
+                {
+                    "name": "email_fa_mm",
+                    "type": "string",
+                    "description": "邮箱授权码，用于验证发件人身份",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "email_file_url",
+                    "type": "string",
+                    "description": "附件URL，可多次添加",
+                    "default": ""
+                },
+                {
+                    "name": "email_file_name",
+                    "type": "string",
+                    "description": "附件文件名，与email_file_url一一对应",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

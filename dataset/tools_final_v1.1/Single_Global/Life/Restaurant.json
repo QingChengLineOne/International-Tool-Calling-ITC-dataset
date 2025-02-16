@@ -1,0 +1,18 @@
+{
+    "tool_name": "Restaurant",
+    "tool_description": "A tool that provides a list of restaurants.",
+    "home_url": "https://rapidapi.com/jitusonawane/api/restaurant70/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "restaurant",
+            "url": "https://restaurant70.p.rapidapi.com/rest",
+            "description": "Fetches a list of restaurants available in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

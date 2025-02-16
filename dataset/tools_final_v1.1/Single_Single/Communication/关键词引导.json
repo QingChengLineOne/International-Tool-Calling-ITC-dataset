@@ -1,0 +1,25 @@
+{
+    "tool_name": "关键词引导API",
+    "tool_description": "通过关键词举例出引导词",
+    "home_url": "https://api.aa1.cn/doc/keywordsearch.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "关键词引导API",
+            "url": "https://api.pearktrue.cn/api/guide/",
+            "description": "提供关键词引导功能，用于生成相关的引导词",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "string",
+                    "description": "需要生成引导词的关键词",
+                    "default": "示例"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

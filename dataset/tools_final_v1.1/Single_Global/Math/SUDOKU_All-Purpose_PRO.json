@@ -1,0 +1,107 @@
+{
+    "tool_name": "SUDOKU All-Purpose PRO",
+    "tool_description": "Create, solve, and verify Sudoku puzzles. Output options include HTML, image, and SVG formats suitable for newspapers and magazines. Full documentation available at: https://myv.at/api/sudoku/",
+    "home_url": "https://rapidapi.com/myvatAPI/api/sudoku-all-purpose-pro/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "CREATE",
+            "url": "https://sudoku-all-purpose-pro.p.rapidapi.com/sudoku",
+            "description": "Generates a new Sudoku puzzle. The image output is base64 encoded. Refer to the documentation for decoding instructions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "create",
+                    "type": "STRING",
+                    "description": "Specifies the difficulty level of the Sudoku puzzle.",
+                    "default": "32"
+                },
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Defines the output format. Options include RAW for numbers, HTML for websites, or SVG, JPG, PNG, GIF, WEBP for images.",
+                    "default": "raw"
+                },
+                {
+                    "name": "width",
+                    "type": "STRING",
+                    "description": "Sets the width of the output image.",
+                    "default": ""
+                },
+                {
+                    "name": "quality",
+                    "type": "STRING",
+                    "description": "Specifies the quality of the output image.",
+                    "default": ""
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Defines the color scheme for the Sudoku output.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "SOLVE",
+            "url": "https://sudoku-all-purpose-pro.p.rapidapi.com/sudoku",
+            "description": "Solves a given Sudoku puzzle. Provide the missing digits and receive the completed puzzle in your chosen format.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "quality",
+                    "type": "STRING",
+                    "description": "Specifies the quality of the output image.",
+                    "default": ""
+                },
+                {
+                    "name": "solve",
+                    "type": "STRING",
+                    "description": "The Sudoku puzzle represented as a string of digits, where '0' indicates a missing digit.",
+                    "default": "000000001000060020901000000710000005000000403000000700000000089000478000060000070"
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Defines the color scheme for the Sudoku output.",
+                    "default": ""
+                },
+                {
+                    "name": "width",
+                    "type": "STRING",
+                    "description": "Sets the width of the output image.",
+                    "default": ""
+                },
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Defines the output format.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "VERIFY",
+            "url": "https://sudoku-all-purpose-pro.p.rapidapi.com/sudoku",
+            "description": "Verifies the authenticity and integrity of a solved or unsolved Sudoku puzzle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "verify",
+                    "type": "STRING",
+                    "description": "The Sudoku puzzle to verify, represented as a string of digits.",
+                    "default": "900200700000075080000000000000000000040701000509060134300020800001000206000007000"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

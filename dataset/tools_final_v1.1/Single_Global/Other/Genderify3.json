@@ -1,0 +1,25 @@
+{
+    "tool_name": "Genderify3",
+    "tool_description": "Detect gender API, predict Male or Female by Name or Email Address with high accuracy. Determine the gender of a name. New Update Version 3.",
+    "home_url": "https://rapidapi.com/webglyapi-gender-prediction/api/genderify3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Genderify v3",
+            "url": "https://genderify3.p.rapidapi.com/genderify",
+            "description": "Predict and detect male or female based on their name or email address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The name or email address to analyze for gender prediction.",
+                    "default": "ayumihamasaki@gmail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

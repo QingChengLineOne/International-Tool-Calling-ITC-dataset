@@ -1,0 +1,57 @@
+{
+    "tool_name": "Pages hosted on domain",
+    "tool_description": "Find web pages hosted on a domain, including historic pages.",
+    "home_url": "https://rapidapi.com/infiniteloop/api/pages-hosted-on-domain/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "searchDomain",
+            "url": "https://pages-hosted-on-domain.p.rapidapi.com/web/timemap/json",
+            "description": "Retrieves a list of web pages hosted on a specified domain.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "matchType",
+                    "type": "STRING",
+                    "description": "Specifies the type of match for the domain search.",
+                    "default": "prefix"
+                },
+                {
+                    "name": "collapse",
+                    "type": "STRING",
+                    "description": "Determines how results are grouped.",
+                    "default": "urlkey"
+                },
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The domain URL to search for hosted pages.",
+                    "default": "httpsimage.com"
+                },
+                {
+                    "name": "fl",
+                    "type": "STRING",
+                    "description": "Fields to return in the response.",
+                    "default": "timestamp:4,original,urlkey"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": "100000"
+                },
+                {
+                    "name": "filter",
+                    "type": "STRING",
+                    "description": "Filters the results based on specific criteria.",
+                    "default": "statuscode:200"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "tylekeoprocom",
+    "tool_description": "Tỷ lệ kèo nhà cái trực tuyến, tỷ lệ kèo bóng đá hôm nay: kèo cược chấp châu á, châu âu, kèo tỷ số, tài xỉu… các giải đấu uy tín được cập nhật nhanh chóng và đầy đủ nhất.",
+    "home_url": "https://rapidapi.com/tylekeoprocom/api/tylekeoprocom/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "tylekeoprocom",
+            "url": "https://tylekeoprocom.p.rapidapi.com/",
+            "description": "Cung cấp thông tin về tỷ lệ kèo nhà cái trực tuyến cho các giải đấu bóng đá, bao gồm kèo cược chấp châu á, châu âu, kèo tỷ số và tài xỉu.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

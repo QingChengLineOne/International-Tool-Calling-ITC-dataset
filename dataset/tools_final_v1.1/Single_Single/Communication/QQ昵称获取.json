@@ -1,0 +1,25 @@
+{
+    "tool_name": "QQ昵称获取API",
+    "tool_description": "提供获取QQ昵称、头像、邮箱的服务",
+    "home_url": "https://api.aa1.cn/doc/lemonso-qqinfo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ昵称获取",
+            "url": "https://api.qjqq.cn/api/qqinfo",
+            "description": "通过QQ号获取QQ昵称、头像、邮箱信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "需要查询的QQ号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "tool_name": "Vehicle Make and Model Recognition",
+    "tool_description": "This API enables users to detect the make, model, generation, color, and angle of a car from its image using advanced computer vision and deep learning techniques. It is capable of identifying over 3,000 different car models, with ongoing updates to expand its database.",
+    "home_url": "https://rapidapi.com/dominonet-lTpEE6zONeS/api/vehicle-make-and-model-recognition/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Vehicle Make and Model Recognition",
+            "url": "https://vehicle-make-and-model-recognition.p.rapidapi.com/v1",
+            "description": "This API supports image formats such as JPEG, PNG, BMP, GIF, and TIFF for vehicle recognition.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "inputimage",
+                    "type": "BINARY",
+                    "description": "A binary representation of the image to be analyzed.",
+                    "default": ""
+                },
+                {
+                    "name": "inputurl",
+                    "type": "STRING",
+                    "description": "A valid URL or base64 string of the image. Choose either 'inputurl' or 'inputimage'.",
+                    "default": "https://lmcpro.oss-cn-hangzhou.aliyuncs.com/sample/vmmr2.jpeg?x-oss-process=image/resize,p_50"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "service": {
+                        "type": "string"
+                    },
+                    "version": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "vehicle": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "make": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "generation": {
+                                    "type": "string"
+                                },
+                                "body_style": {
+                                    "type": "string"
+                                },
+                                "doors": {
+                                    "type": "string"
+                                },
+                                "confidence": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    },
+                    "left": {
+                        "type": "integer"
+                    },
+                    "top": {
+                        "type": "integer"
+                    },
+                    "width": {
+                        "type": "integer"
+                    },
+                    "height": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

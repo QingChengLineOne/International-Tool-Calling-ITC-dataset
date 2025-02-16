@@ -1,0 +1,42 @@
+{
+    "tool_name": "test rate",
+    "tool_description": "A tool for testing various rates and retrieving related data.",
+    "home_url": "https://rapidapi.com/antonyrapid/api/test-rate/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getPhotos",
+            "url": "https://test-rate.p.rapidapi.com/photos/{id}",
+            "description": "Retrieves a photo based on the provided photo ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the photo.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "posts",
+            "url": "https://test-rate.p.rapidapi.com/posts",
+            "description": "Fetches posts, optionally filtered by ID.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the post, if filtering is desired.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

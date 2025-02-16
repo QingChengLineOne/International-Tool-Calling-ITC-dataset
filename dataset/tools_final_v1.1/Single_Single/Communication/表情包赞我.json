@@ -1,0 +1,38 @@
+{
+    "tool_name": "表情包：赞我",
+    "tool_description": "表情包：赞我API，用于获取赞表情包",
+    "home_url": "https://api.aa1.cn/doc/zanwo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "表情包：赞我API",
+            "url": "https://api.mhimg.cn/api/biaoqiingbao_zanwo/",
+            "description": "提供赞表情包的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "QQ号，用于识别用户",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "string",
+                    "description": "表情包大小，可选值：'small', 'medium', 'large'",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，可选值：'json', 'xml', 'html'",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

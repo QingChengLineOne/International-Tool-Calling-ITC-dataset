@@ -1,0 +1,25 @@
+{
+    "tool_name": "Name Using Domain",
+    "tool_description": "Retrieve the name of a domain or organization based on the provided domain name.",
+    "home_url": "https://rapidapi.com/iamnikhil/api/name-using-domain/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "NameByDomain",
+            "url": "https://name-using-domain.p.rapidapi.com/imnikgoyal/org-name",
+            "description": "Get the Domain or Organization Name using a specified domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which the organization name is to be retrieved.",
+                    "default": "tftus.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

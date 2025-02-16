@@ -1,0 +1,25 @@
+{
+    "tool_name": "摩斯电码转换",
+    "tool_description": "摩斯电码转换API，可以将输入的文本转换为摩斯电码，每秒最多处理10次请求。",
+    "home_url": "https://api.aa1.cn/doc/morse.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "摩斯电码转换API",
+            "url": "https://api.mg-tool.cn/v1/morse_api.php",
+            "description": "提供摩斯电码转换服务，将输入的文本转换为摩斯电码。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要转换的文本，可以是字母、数字或特殊字符。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

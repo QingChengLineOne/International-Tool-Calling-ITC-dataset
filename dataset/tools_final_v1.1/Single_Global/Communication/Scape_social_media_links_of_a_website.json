@@ -1,0 +1,25 @@
+{
+    "tool_name": "Scape social media links of a website",
+    "tool_description": "This tool allows users to scrape social media links from any specified website, retrieving links for platforms such as Facebook, Instagram, Twitter, Pinterest, and YouTube.",
+    "home_url": "https://rapidapi.com/nicholasbudiharsa/api/scape-social-media-links-of-a-website/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Scrape Social Links",
+            "url": "https://scape-social-media-links-of-a-website.p.rapidapi.com/social_links",
+            "description": "This API endpoint scrapes and returns social media links found on the specified website.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "link",
+                    "type": "STRING",
+                    "description": "The URL of the website from which to scrape social media links.",
+                    "default": "rapidapi.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

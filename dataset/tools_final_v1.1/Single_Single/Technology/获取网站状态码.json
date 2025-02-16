@@ -1,0 +1,25 @@
+{
+    "tool_name": "获取网站状态码API",
+    "tool_description": "该API用于获取目标网站返回的http状态码",
+    "home_url": "https://api.aa1.cn/doc/status-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取网站状态码",
+            "url": "https://v2.api-m.com/api/status",
+            "description": "通过该接口你可以获取目标网站返回的http状态码",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "目标网站的URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

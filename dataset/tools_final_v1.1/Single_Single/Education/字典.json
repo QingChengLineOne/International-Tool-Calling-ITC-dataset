@@ -1,0 +1,38 @@
+{
+    "tool_name": "字典API",
+    "tool_description": "字典词义查询API",
+    "home_url": "https://api.aa1.cn/doc/dictionary.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "字典查询接口",
+            "url": "https://api.oioweb.cn/api/txt/dict",
+            "description": "用于查询字典中指定词语的词义",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要查询的词语",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "语言类型，可选值有'zh'（默认）和'en'（英文）",
+                    "default": "zh"
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "输出格式，可选值有'json'（默认）和'xml'",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

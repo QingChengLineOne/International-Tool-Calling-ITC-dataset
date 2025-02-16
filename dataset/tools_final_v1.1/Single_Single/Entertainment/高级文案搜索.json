@@ -1,0 +1,25 @@
+{
+    "tool_name": "高级文案搜索",
+    "tool_description": "数据来源句子控,可搜索各种小说动漫的文案等",
+    "home_url": "https://api.aa1.cn/doc/wenan_sou.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "高级文案搜索API",
+            "url": "https://www.hhlqilongzhu.cn/api/wenan_sou.php",
+            "description": "用于搜索各种小说动漫文案的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "搜索关键词",
+                    "default": "咒术回战"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

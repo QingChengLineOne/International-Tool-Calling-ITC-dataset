@@ -1,0 +1,96 @@
+{
+    "tool_name": "PageantDB",
+    "tool_description": "Metadata on publicly available information on various pageant contests.",
+    "home_url": "https://rapidapi.com/encurate/api/pageantdb/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Single Country",
+            "url": "https://pageantdb.p.rapidapi.com/countries/",
+            "description": "Get all details of a country by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the country.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search Country",
+            "url": "https://pageantdb.p.rapidapi.com/countries/",
+            "description": "Search for a country if they had an active pageant contest.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The name of the country to search for.",
+                    "default": "philippines"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Countries",
+            "url": "https://pageantdb.p.rapidapi.com/countries/",
+            "description": "Get a list of all countries involved in a pageant contest.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://pageantdb.p.rapidapi.com/",
+            "description": "Search for pageant contests by keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The keyword to search for pageant contests.",
+                    "default": "1987"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Single contest",
+            "url": "https://pageantdb.p.rapidapi.com/",
+            "description": "Get details of a single pageant contest by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the pageant contest.",
+                    "default": "35"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All pageant contests",
+            "url": "https://pageantdb.p.rapidapi.com/",
+            "description": "Get a list of all pageant contests.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

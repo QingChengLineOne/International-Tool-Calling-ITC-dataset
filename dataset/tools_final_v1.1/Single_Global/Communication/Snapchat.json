@@ -1,0 +1,258 @@
+{
+    "tool_name": "Snapchat",
+    "tool_description": "Snapchat API allows developers to interact with Snapchat's features, enabling functionalities such as retrieving user stories, lenses, and profiles.",
+    "home_url": "https://rapidapi.com/socialminer/api/snapchat3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getUserStory",
+            "url": "https://snapchat3.p.rapidapi.com/getUserStory",
+            "description": "Fetches the story of a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the Snapchat user whose story is to be retrieved.",
+                    "default": "snoopdogg"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getStoryEpisodes",
+            "url": "https://snapchat3.p.rapidapi.com/getStoryEpisodes",
+            "description": "Retrieves episodes of a specific story based on the season ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "season_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the season of the story.",
+                    "default": "c16dba8a-4f36-4b7a-992c-78cde96932de"
+                },
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "The story ID to continue fetching episodes.",
+                    "default": "1866132373506048"
+                },
+                {
+                    "name": "business_profile_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the business profile associated with the story.",
+                    "default": "ca4af9b0-1ec5-42b3-acd1-9775f0b0f8fd"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getStoryById",
+            "url": "https://snapchat3.p.rapidapi.com/getStoryById",
+            "description": "Fetches a story using its unique identifier.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "story_id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the story to be retrieved.",
+                    "default": "1092088458455040"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getUserLenses",
+            "url": "https://snapchat3.p.rapidapi.com/getUserLenses",
+            "description": "Retrieves lenses used by a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the Snapchat user whose lenses are to be retrieved.",
+                    "default": "jsprinz"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getLensItem",
+            "url": "https://snapchat3.p.rapidapi.com/getLensItem",
+            "description": "Fetches details of a specific lens using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lens_id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the lens to be retrieved.",
+                    "default": "41a72e9ae9a44f8891327ce6cf1c344d"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getProfile",
+            "url": "https://snapchat3.p.rapidapi.com/getProfile",
+            "description": "Retrieves the profile information of a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the Snapchat user whose profile is to be retrieved.",
+                    "default": "brentrivera"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getStoryByLink",
+            "url": "https://snapchat3.p.rapidapi.com/getStoryByLink",
+            "description": "Fetches a story using its link.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "story_link",
+                    "type": "STRING",
+                    "description": "The link to the story in the format: https://story.snapchat.com/p/{businessProfileId}/{storyId}.",
+                    "default": "https://story.snapchat.com/p/22b53018-973f-4efb-b1c1-c1acfd937ca9/2407084049637376"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getDeeplinkToLensId",
+            "url": "https://snapchat3.p.rapidapi.com/getDeeplinkToLensId",
+            "description": "Retrieves the lens ID from a given deep link.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "deeplink",
+                    "type": "STRING",
+                    "description": "The deep link to the lens.",
+                    "default": "https://snapchat.com/unlock/?type=SNAPCODE&uuid=41a72e9ae9a44f8891327ce6cf1c344d&metadata=01"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getLensesByHashtag",
+            "url": "https://snapchat3.p.rapidapi.com/getLensesByHashtag",
+            "description": "Fetches lenses associated with a specific hashtag.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "hashtag",
+                    "type": "STRING",
+                    "description": "The hashtag to search for lenses.",
+                    "default": "music"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getLensCreators",
+            "url": "https://snapchat3.p.rapidapi.com/getLensCreators",
+            "description": "Retrieves a list of lens creators.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination to fetch the next set of lens creators.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getMusicLenses",
+            "url": "https://snapchat3.p.rapidapi.com/getMusicLenses",
+            "description": "Fetches lenses related to music.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination to fetch the next set of music lenses.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getWorldLenses",
+            "url": "https://snapchat3.p.rapidapi.com/getWorldLenses",
+            "description": "Retrieves lenses designed for world interactions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination to fetch the next set of world lenses.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getFaceLenses",
+            "url": "https://snapchat3.p.rapidapi.com/getFaceLenses",
+            "description": "Fetches lenses designed for face interactions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination to fetch the next set of face lenses.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getTrendingLenses",
+            "url": "https://snapchat3.p.rapidapi.com/getTrendingLenses",
+            "description": "Retrieves lenses that are currently trending.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination to fetch the next set of trending lenses.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

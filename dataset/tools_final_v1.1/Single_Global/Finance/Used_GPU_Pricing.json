@@ -1,0 +1,18 @@
+{
+    "tool_name": "Used GPU Pricing",
+    "tool_description": "The API provides a simple endpoint that allows you to retrieve used prices of GPUs on eBay. These prices are refreshed weekly automatically, ensuring they are up to date.",
+    "home_url": "https://rapidapi.com/snopan/api/used-gpu-pricing1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Prices",
+            "url": "https://used-gpu-pricing1.p.rapidapi.com/",
+            "description": "Retrieves used prices of all GPUs, with prices displayed in USD.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

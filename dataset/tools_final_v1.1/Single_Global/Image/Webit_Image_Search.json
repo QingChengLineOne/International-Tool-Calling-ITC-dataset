@@ -1,0 +1,115 @@
+{
+    "tool_name": "Webit Image Search",
+    "tool_description": "Powerful web image search with rating, reverse search by image and multi-lingual capabilities.",
+    "home_url": "https://rapidapi.com/webit/api/webit-image-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Reverse (Search by Image - POST)",
+            "url": "https://webit-image-search.p.rapidapi.com/reverse",
+            "description": "Reverse search by Image among billions of images. This endpoint allows for both URL and image file upload.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the image to search.",
+                    "default": "Reverse search by Image. This endpoint supports 'URL' parameter only. For 'image' file upload, use POST endpoint."
+                },
+                {
+                    "name": "image",
+                    "type": "BINARY",
+                    "description": "The image file to upload for reverse search.",
+                    "default": ""
+                },
+                {
+                    "name": "number",
+                    "type": "NUMBER",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Reverse (Search by Image)",
+            "url": "https://webit-image-search.p.rapidapi.com/reverse",
+            "description": "Reverse search by Image among billions of images. This endpoint supports URL parameter only.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL to search images by.",
+                    "default": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/260px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "number",
+                    "type": "NUMBER",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Similar",
+            "url": "https://webit-image-search.p.rapidapi.com/similar",
+            "description": "Search for visually similar images to an image from previous search results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "image_id",
+                    "type": "STRING",
+                    "description": "The 'image_id' of an image from search results to find similar images.",
+                    "default": "7TJ6HT2DAUMDFITP4LSIJLWICKWRCQOE"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "number",
+                    "type": "NUMBER",
+                    "description": "The number of similar images to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://webit-image-search.p.rapidapi.com/search",
+            "description": "Search billions of images from the web featuring rating, reverse search by image, and multi-lingual capabilities.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query for images.",
+                    "default": "pizza"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "number",
+                    "type": "NUMBER",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                },
+                {
+                    "name": "search_filter",
+                    "type": "ENUM",
+                    "description": "Optional filter for search results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

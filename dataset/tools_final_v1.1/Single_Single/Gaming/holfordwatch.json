@@ -1,0 +1,18 @@
+{
+    "tool_name": "holfordwatch",
+    "tool_description": "Holfordwatch.info 是一个分享与热门游戏相关的所有内容的网站，包括游戏玩法、评论、技巧等，涵盖了如LMHT、PUBG、射击游戏、MOBA、格斗游戏和纸牌游戏等多种类型，以及电子竞技的经验和投注技巧。",
+    "home_url": "https://holfordwatch.info/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Holfordwatch",
+            "url": "https://holfordwatch.p.rapidapi.com/",
+            "description": "提供与热门游戏相关的信息和技巧，包括游戏玩法、评论和电子竞技投注建议。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

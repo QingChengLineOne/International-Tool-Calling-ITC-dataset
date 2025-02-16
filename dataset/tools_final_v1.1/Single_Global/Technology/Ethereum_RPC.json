@@ -1,0 +1,18 @@
+{
+    "tool_name": "Ethereum RPC",
+    "tool_description": "A stateless, light-weight remote procedure call (RPC) API that uses JSON (RFC 4627) as data format, designed for interacting with the Ethereum blockchain.",
+    "home_url": "https://rapidapi.com/mohamednagme472000/api/ethereum-rpc2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Ethereum Mainnet RPC",
+            "url": "https://ethereum-rpc2.p.rapidapi.com/9aa3d95b3bc440fa88ea12eaa4456161",
+            "description": "Ethereum Mainnet is the largest Ethereum Virtual Machine (EVM) network to date, allowing users to interact with the Ethereum blockchain.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

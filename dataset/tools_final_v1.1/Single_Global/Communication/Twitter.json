@@ -1,0 +1,217 @@
+{
+    "tool_name": "Twitter",
+    "tool_description": "Twitter API provides access to various functionalities related to Twitter, including retrieving user media, tweets, trends, and more.",
+    "home_url": "https://rapidapi.com/omarmhaimdat/api/twitter154/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Continuation User's Media",
+            "url": "https://twitter154.p.rapidapi.com/user/medias/continuation",
+            "description": "This endpoint returns the list of a user's media items based on the provided user ID and continuation token.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The ID of the user whose media is being requested.",
+                    "default": "96479162"
+                },
+                {
+                    "name": "continuation_token",
+                    "type": "STRING",
+                    "description": "Token for pagination to retrieve the next set of media.",
+                    "default": "DAABCgABFu-OJkw___gKAAIVmAq8iZYgAggAAwAAAAIAAA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of media items to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "User's Media",
+            "url": "https://twitter154.p.rapidapi.com/user/medias",
+            "description": "This endpoint returns a list of media items for a specified user ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The ID of the user whose media is being requested.",
+                    "default": "96479162"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of media items to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "User's Tweets",
+            "url": "https://twitter154.p.rapidapi.com/user/tweets",
+            "description": "This endpoint returns a list of tweets for a specified username.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "include_replies",
+                    "type": "BOOLEAN",
+                    "description": "Whether to include replies to the tweets.",
+                    "default": "false"
+                },
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The ID of the user whose tweets are being requested.",
+                    "default": "96479162"
+                },
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the user whose tweets are being requested.",
+                    "default": "omarmhaimdat"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of tweets to return.",
+                    "default": "40"
+                },
+                {
+                    "name": "include_pinned",
+                    "type": "BOOLEAN",
+                    "description": "Whether to include pinned tweets.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "Available Locations (Beta)",
+            "url": "https://twitter154.p.rapidapi.com/trends/available",
+            "description": "Get the list of available locations for trending topics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "Get trends near a location (Beta)",
+            "url": "https://twitter154.p.rapidapi.com/trends/",
+            "description": "Returns the top 50 trending topics for a specific location ID (woeid), if trending information is available.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "woeid",
+                    "type": "STRING",
+                    "description": "The WOEID of the location to get trends for.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "trends": {
+                            "type": "array",
+                            "items": {
+                                "type": "object"
+                            }
+                        },
+                        "as_of": {
+                            "type": "string"
+                        },
+                        "created_at": {
+                            "type": "string"
+                        },
+                        "locations": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "woeid": {
+                                        "type": "integer"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Geo Search (Beta)",
+            "url": "https://twitter154.p.rapidapi.com/search/geo",
+            "description": "Perform a geo search for tweets based on location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The location query to search for.",
+                    "default": "paris"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "latitude",
+                    "type": "STRING",
+                    "description": "The latitude of the location.",
+                    "default": "48.858093"
+                },
+                {
+                    "name": "longitude",
+                    "type": "STRING",
+                    "description": "The longitude of the location.",
+                    "default": "2.294694"
+                },
+                {
+                    "name": "range",
+                    "type": "STRING",
+                    "description": "The range in kilometers to search within.",
+                    "default": "2"
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The maximum number of results to return.",
+                    "default": "50"
+                },
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "The language of the tweets to return.",
+                    "default": "en"
+                },
+                {
+                    "name": "section",
+                    "type": "STRING",
+                    "description": "The section of tweets to return.",
+                    "default": "top"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

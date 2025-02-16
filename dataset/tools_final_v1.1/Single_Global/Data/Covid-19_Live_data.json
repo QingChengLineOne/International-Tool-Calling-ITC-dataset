@@ -1,0 +1,18 @@
+{
+    "tool_name": "Covid-19 Live data",
+    "tool_description": "Global COVID-19 Tracker providing real-time statistics on COVID-19 cases worldwide.",
+    "home_url": "https://rapidapi.com/dongcz2/api/covid-19-live-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Global statistics",
+            "url": "https://covid-19-live-data.p.rapidapi.com/coronavirus/v1/current",
+            "description": "Fetches the current global live data statistics for COVID-19.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "tool_name": "Order Tracking",
+    "tool_description": "Track packages from over 600 couriers worldwide. Get shipment info easily from official site.",
+    "home_url": "https://rapidapi.com/colinnn/api/order-tracking/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Realtime tracking",
+            "url": "https://order-tracking.p.rapidapi.com/trackings/realtime",
+            "description": "Get realtime tracking results of a single tracking.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

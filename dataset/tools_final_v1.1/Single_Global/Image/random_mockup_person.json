@@ -1,0 +1,40 @@
+{
+    "tool_name": "random mockup person",
+    "tool_description": "An API that provides random mockup person images for design and presentation purposes.",
+    "home_url": "https://rapidapi.com/jamebornn/api/random-mockup-person/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getListPerson",
+            "url": "https://random-mockup-person.p.rapidapi.com/api/v1/get-list",
+            "description": "Fetches a list of random mockup persons.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

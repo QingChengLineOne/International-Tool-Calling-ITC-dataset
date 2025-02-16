@@ -1,0 +1,18 @@
+{
+    "tool_name": "网易云热评",
+    "tool_description": "网易云音乐热搜榜的随机音乐的随机热评",
+    "home_url": "https://api.aa1.cn/doc/wyy_rp.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网易云音乐热搜热评API",
+            "url": "https://free.wqwlkj.cn/wqwlapi/wyy_rp.php",
+            "description": "提供网易云音乐热搜榜中随机音乐的随机热评",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

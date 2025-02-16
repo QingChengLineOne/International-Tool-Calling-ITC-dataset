@@ -1,0 +1,45 @@
+{
+    "tool_name": "Urban Dictionary",
+    "tool_description": "Access all of the Urban Dictionary, the one-stop shop for slang definitions.",
+    "home_url": "https://rapidapi.com/archergardinersheridan/api/urban-dictionary7/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Define a Word / Search",
+            "url": "https://urban-dictionary7.p.rapidapi.com/v0/define",
+            "description": "Can be used to define a specific word or search for word definitions.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "term",
+                    "type": "STRING",
+                    "description": "The word you want to define.",
+                    "default": "yeet"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Random Word",
+            "url": "https://urban-dictionary7.p.rapidapi.com/v0/random",
+            "description": "Returns a list of random words and definitions from the Urban Dictionary database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Word of the Day",
+            "url": "https://urban-dictionary7.p.rapidapi.com/v0/words_of_the_day",
+            "description": "Gets the Word of the Day for the past 10 days, including today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "tool_name": "Bing Search APIs",
+    "tool_description": "An AI service from Microsoft Azure that enables secure, ad-free location search for your users, displaying relevant information from web results, images, local businesses, news, and photos.",
+    "home_url": "https://rapidapi.com/quangphatc3/api/bing-search-apis/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Web Search API",
+            "url": "https://bing-search-apis.p.rapidapi.com/api/rapid/web_search",
+            "description": "Search data and suggested keywords from the Bing search engine.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "STRING",
+                    "description": "The number of results to return.",
+                    "default": "30"
+                },
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The search term to query.",
+                    "default": "how-to-use-excel-for-free"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number of the results to return.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Images Search",
+            "url": "https://bing-search-apis.p.rapidapi.com/api/rapid/image_search",
+            "description": "Search images from the search engine for the most relevant keywords and images related to keywords.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The keyword to search for images.",
+                    "default": "wallpapers"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "STRING",
+                    "description": "The number of results to return.",
+                    "default": "30"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number of the results to return.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Emails Search",
+            "url": "https://bing-search-apis.p.rapidapi.com/api/rapid/email_search",
+            "description": "Search emails from search engines for related keywords.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The keyword to search for emails.",
+                    "default": "sun"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

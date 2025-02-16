@@ -1,0 +1,37 @@
+{
+    "tool_name": "PlayingCardsBrands",
+    "tool_description": "An API that provides information about various playing card brands.",
+    "home_url": "https://rapidapi.com/ronald.chonillo/api/playingcardsbrands/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getlist",
+            "url": "https://playingcardsbrands.p.rapidapi.com/",
+            "description": "Retrieve a complete list of playing card brands available in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for a specific brand.",
+                    "default": ""
+                },
+                {
+                    "name": "logo_img",
+                    "type": "STRING",
+                    "description": "URL of the brand's logo image.",
+                    "default": ""
+                },
+                {
+                    "name": "brand",
+                    "type": "STRING",
+                    "description": "The name of the brand to filter the results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

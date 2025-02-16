@@ -1,0 +1,25 @@
+{
+    "tool_name": "Instagram Downloader - Download Instagram Videos - Stories",
+    "tool_description": "Download Reels, IGTV, Videos, Photos, Stories, Carousel & Profile Pictures from Instagram. This tool supports all types of Instagram media and is capable of handling over 10 million requests per week, with more than 250 million API calls last year. It features a smart endpoint that recognizes the type of media, allowing users to use one URL for all requests instead of connecting to multiple endpoints. The service is powered by strong servers, ensuring the lowest latency time in the market, and offers affordable plans with high value.",
+    "home_url": "https://rapidapi.com/uzapishop/api/instagram-downloader-download-instagram-videos-stories1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Instagram Media Downloader",
+            "url": "https://instagram-downloader-download-instagram-videos-stories1.p.rapidapi.com/",
+            "description": "This API allows users to download various types of media from Instagram using a single endpoint.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the Instagram media to be downloaded.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

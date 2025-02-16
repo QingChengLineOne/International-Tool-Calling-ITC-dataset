@@ -1,0 +1,18 @@
+{
+    "tool_name": "api-telecom",
+    "tool_description": "Servicio de prueba API para acceder a información sobre productos de telecomunicaciones.",
+    "home_url": "https://rapidapi.com/pabloalmeidagalvez-2Br8yjIHNt/api/api-telecom/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/products",
+            "url": "https://api-telecom.p.rapidapi.com/products",
+            "description": "Obtiene detalles sobre los productos disponibles en la plataforma.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

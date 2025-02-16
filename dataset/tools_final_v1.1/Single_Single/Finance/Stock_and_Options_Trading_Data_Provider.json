@@ -1,0 +1,49 @@
+{
+    "tool_name": "Stock and Options Trading Data Provider",
+    "tool_description": "No. 1 rated U.S listed stock and options data provider with the lowest cost. The cloud-based API has a simple interface and returns easy to consume data in JSON format for options prices.",
+    "home_url": "https://rapidapi.com/mpeng/api/stock-and-options-trading-data-provider/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Options",
+            "url": "https://stock-and-options-trading-data-provider.p.rapidapi.com/options/{ticker}",
+            "description": "Fetches stock and options data for a specified ticker.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "A ticker symbol for U.S. Trading Stocks and ETFs.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "X-RapidAPI-Proxy-Secret",
+                    "type": "STRING",
+                    "description": "RapidAPI Secret for authentication.",
+                    "default": "a755b180-f5a9-11e9-9f69-7bf51e845926"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Straddle",
+            "url": "https://stock-and-options-trading-data-provider.p.rapidapi.com/straddle/{ticker}",
+            "description": "Retrieves straddle format data for a specified ticker.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "Ticker symbol for Intel Stock.",
+                    "default": "intc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

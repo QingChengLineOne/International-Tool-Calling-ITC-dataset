@@ -1,0 +1,35 @@
+{
+    "tool_name": "Temp Mail",
+    "tool_description": "Create a temporary email address for receiving messages without revealing your personal email.",
+    "home_url": "https://rapidapi.com/calvinloveland335703-0p6BxLYIH8f/api/temp-mail44/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Create an email",
+            "url": "https://temp-mail44.p.rapidapi.com/api/v3/email/new",
+            "description": "Make a request to create a new temporary email address.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Read Inbox",
+            "url": "https://temp-mail44.p.rapidapi.com/api/v3/email/{email}/messages",
+            "description": "Retrieve messages from the inbox of a specified temporary email address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "The temporary email address to read messages from.",
+                    "default": "p1amvpvxfh@bestparadize.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "域名跳转v2",
+    "tool_description": "利用本站跳转文件跳转其他三方网站，并提示跳转声明",
+    "home_url": "https://api.aa1.cn/doc/tz-v2.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "域名跳转接口",
+            "url": "https://api.aa1.cn/go.php",
+            "description": "进行域名跳转的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要跳转的目标URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "AI rewriter to avoid AI content detector",
+    "tool_description": "This tool helps you evaluate your text to ensure it does not get penalized by search engines for appearing to be entirely produced by AI. It is particularly useful for content creators who want to maintain their page ranking.",
+    "home_url": "https://rapidapi.com/AIresearch/api/ai-rewriter-to-avoid-ai-content-detector/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "rewrite",
+            "url": "https://ai-rewriter-to-avoid-ai-content-detector.p.rapidapi.com/",
+            "description": "This API allows you to submit your GPT-generated or human-written text for evaluation and rewriting.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

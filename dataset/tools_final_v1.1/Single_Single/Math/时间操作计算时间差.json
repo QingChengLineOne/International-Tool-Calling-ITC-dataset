@@ -1,0 +1,43 @@
+{
+    "tool_name": "时间操作[计算时间差]",
+    "tool_description": "取两个时间戳的时间差。",
+    "home_url": "https://api.aa1.cn/doc/zjgapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "时间差计算API",
+            "url": "https://cn.apihz.cn/api/time/zjgapi.php",
+            "description": "计算两个时间戳之间的时间差",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子ID，用于标识API调用者",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子密钥，用于验证API调用者身份",
+                    "default": "88888888"
+                },
+                {
+                    "name": "time1",
+                    "type": "string",
+                    "description": "第一个时间戳，格式为Unix时间戳（秒）",
+                    "default": ""
+                },
+                {
+                    "name": "time2",
+                    "type": "string",
+                    "description": "第二个时间戳，格式为Unix时间戳（秒）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

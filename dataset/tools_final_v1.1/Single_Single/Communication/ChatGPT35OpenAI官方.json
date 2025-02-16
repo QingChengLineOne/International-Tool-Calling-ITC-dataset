@@ -1,0 +1,49 @@
+{
+    "tool_name": "ChatGPT3.5(OpenAI官方)",
+    "tool_description": "ChatGPT3.5，支持记忆对话，支持获取KEY使用量，自动根据Token限制清空对话记录，直接接入OpenAI官方，无任何第三方中转",
+    "home_url": "https://api.aa1.cn/doc/chatai.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "ChatGPT3.5聊天接口",
+            "url": "http://api.haiai.xyz/api/ChatGPT/chat.php",
+            "description": "使用ChatGPT3.5进行自然语言交互的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "description": "用户输入的对话内容",
+                    "default": ""
+                },
+                {
+                    "name": "conversation_id",
+                    "type": "string",
+                    "description": "用于记忆对话的ID",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API密钥，用于认证请求",
+                    "default": ""
+                },
+                {
+                    "name": "role",
+                    "type": "string",
+                    "description": "用户角色扮演，例如'你正在扮演哆啦A梦'",
+                    "default": ""
+                },
+                {
+                    "name": "clear",
+                    "type": "int",
+                    "description": "对话记录清空的时间间隔（毫秒）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

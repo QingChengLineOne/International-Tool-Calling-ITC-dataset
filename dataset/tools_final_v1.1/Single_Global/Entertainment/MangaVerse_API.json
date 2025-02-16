@@ -1,0 +1,182 @@
+{
+    "tool_name": "MangaVerse API",
+    "tool_description": "Unleash the World of Manga with MangaVerse API! Discover a captivating universe of manga from Japan, Korea, and China, all conveniently translated into English.",
+    "home_url": "https://rapidapi.com/sagararofie/api/mangaverse-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Fetch Images",
+            "url": "https://mangaverse-api.p.rapidapi.com/manga/image",
+            "description": "Retrieve images from manga chapters. Images are sorted based on the index, so ensure to sort based on the index if you manipulate it. The 'id' should be the chapter id.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the chapter to fetch images from.",
+                    "default": "6486b7937ae7cb74845df888"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Fetch Chapters",
+            "url": "https://mangaverse-api.p.rapidapi.com/manga/chapter",
+            "description": "Get a list of all chapters from the specified manga. The 'id' should be the manga id.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the manga to fetch chapters from.",
+                    "default": "6486b7547ae7cb74845df856"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Manga",
+            "url": "https://mangaverse-api.p.rapidapi.com/manga",
+            "description": "Retrieve details about a specific manga. The 'id' should be the manga id.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the manga to retrieve details for.",
+                    "default": "647fed35c71c2c9122b318f8"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Fetch Latest",
+            "url": "https://mangaverse-api.p.rapidapi.com/manga/latest",
+            "description": "Get the latest updated manga from the server. 'page' should be 1 or more, and 'genres' should be a string with genres separated by commas (e.g., Harem, Fantasy).",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "genres",
+                    "type": "STRING",
+                    "description": "Comma-separated list of genres to filter the latest manga.",
+                    "default": "Harem,Fantasy"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search Manga",
+            "url": "https://mangaverse-api.p.rapidapi.com/manga/search",
+            "description": "Fetch manga based on a search text that includes title and subtitle.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The search text to find manga.",
+                    "default": "isekai"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Fetch Manga",
+            "url": "https://mangaverse-api.p.rapidapi.com/manga/fetch",
+            "description": "Get a list of manga available on the server. 'page' should be 1 or more, and 'genres' should be a string with genres separated by commas (e.g., Harem, Fantasy).",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "genres",
+                    "type": "STRING",
+                    "description": "Comma-separated list of genres to filter the manga.",
+                    "default": "Harem,Fantasy"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

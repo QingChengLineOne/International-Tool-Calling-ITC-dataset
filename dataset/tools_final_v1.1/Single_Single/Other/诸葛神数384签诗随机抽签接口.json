@@ -1,0 +1,25 @@
+{
+    "tool_name": "诸葛神数384签诗随机抽签接口",
+    "tool_description": "随机抽签接口，用于获取诸葛神数中的签诗内容。",
+    "home_url": "https://api.aa1.cn/doc/ytcq.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "诸葛神数384签诗随机抽签API",
+            "url": "https://api.t1qq.com/api/tool/cq",
+            "description": "提供诸葛神数中的随机签诗服务。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "9uryZiknzUtTFkaYUQxcOeMwq4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

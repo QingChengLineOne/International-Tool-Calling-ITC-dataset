@@ -1,0 +1,38 @@
+{
+    "tool_name": "Location_v2",
+    "tool_description": "We provide location search results based on your search query.",
+    "home_url": "https://rapidapi.com/location-search-location-search-default/api/location52/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "search result",
+            "url": "https://location52.p.rapidapi.com/index.php",
+            "description": "This API returns location search results according to the specified query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query for the location.",
+                    "default": "pizza"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "latitude",
+                    "type": "STRING",
+                    "description": "The latitude for the location search.",
+                    "default": "24.562394"
+                },
+                {
+                    "name": "longitude",
+                    "type": "STRING",
+                    "description": "The longitude for the location search.",
+                    "default": "73.7124675"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

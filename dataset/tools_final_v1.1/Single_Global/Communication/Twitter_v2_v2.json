@@ -1,0 +1,382 @@
+{
+    "tool_name": "Twitter v2_v2",
+    "tool_description": "Twitter public and private data API for search, Tweets, users, followers, images, media and more.",
+    "home_url": "https://rapidapi.com/UnlimitedAPI/api/twitter-v23/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "User Followers",
+            "url": "https://twitter-v23.p.rapidapi.com/Followers/",
+            "description": "Retrieve the followers of a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID. Use the `User By Screen Name` endpoint to find the ID from a username.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User Following",
+            "url": "https://twitter-v23.p.rapidapi.com/Following/",
+            "description": "Retrieve the users that a specified user is following.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID. Use the `User By Screen Name` endpoint to find the ID from a username.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User Likes",
+            "url": "https://twitter-v23.p.rapidapi.com/Likes/",
+            "description": "Retrieve the likes of a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID. Use the `User By Screen Name` endpoint to find the ID from a username.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User Media",
+            "url": "https://twitter-v23.p.rapidapi.com/UserMedia/",
+            "description": "Retrieve media posted by a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID. Use the `User By Screen Name` endpoint to find the ID from a username.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User Tweets & Replies",
+            "url": "https://twitter-v23.p.rapidapi.com/UserTweetsAndReplies/",
+            "description": "Retrieve tweets and replies from a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID. Use the `User By Screen Name` endpoint to find the ID from a username.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "40"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User Tweets",
+            "url": "https://twitter-v23.p.rapidapi.com/UserTweets/",
+            "description": "Retrieve tweets from a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID. Use the `User By Screen Name` endpoint to find the ID from a username.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "40"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Users By Rest IDs",
+            "url": "https://twitter-v23.p.rapidapi.com/UsersByRestIds/",
+            "description": "Retrieve user information by their REST IDs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ids",
+                    "type": "STRING",
+                    "description": "User IDs, separated by commas.",
+                    "default": "44196397,155659213"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User By Rest ID",
+            "url": "https://twitter-v23.p.rapidapi.com/UserByRestId/",
+            "description": "Retrieve user information by a specific REST ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "User ID.",
+                    "default": "44196397"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User By Screen Name",
+            "url": "https://twitter-v23.p.rapidapi.com/UserByScreenName/",
+            "description": "Retrieve user information by their screen name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "Username of the user.",
+                    "default": "elonmusk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Tweet Retweeters",
+            "url": "https://twitter-v23.p.rapidapi.com/Retweeters/",
+            "description": "Retrieve users who retweeted a specific tweet.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Tweet ID.",
+                    "default": "1485953263040188416"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "20"
+                },
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Tweet Favoriters",
+            "url": "https://twitter-v23.p.rapidapi.com/Favoriters/",
+            "description": "Retrieve users who favorited a specific tweet.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Tweet ID.",
+                    "default": "1485953263040188416"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of results to return.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Tweet Detail & Conversation",
+            "url": "https://twitter-v23.p.rapidapi.com/TweetDetail/",
+            "description": "Retrieve detailed information and conversation threads for a specific tweet.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Tweet ID.",
+                    "default": "1485953263040188416"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://twitter-v23.p.rapidapi.com/Search/",
+            "description": "Search for tweets based on a query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query. You can use advanced search queries. E.g. `dogecoin (from:elonmusk)`.",
+                    "default": "Dogecoin"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "tweet_search_mode",
+                    "type": "ENUM",
+                    "description": "Choose between popular (default) or latest (live) tweets.",
+                    "default": ""
+                },
+                {
+                    "name": "result_filter",
+                    "type": "ENUM",
+                    "description": "Filter the results based on specific criteria.",
+                    "default": ""
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of Tweet results to return.",
+                    "default": "20"
+                },
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for pagination of results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "",
+            "schema": {}
+        },
+        {
+            "name": "Auto Complete",
+            "url": "https://twitter-v23.p.rapidapi.com/AutoComplete/",
+            "description": "Auto-complete search queries based on user input.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query to auto-complete.",
+                    "default": "Elon"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

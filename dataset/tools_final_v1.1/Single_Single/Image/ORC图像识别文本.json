@@ -1,0 +1,25 @@
+{
+    "tool_name": "ORC图像识别文本API",
+    "tool_description": "ORC图像识别文本API用于将图像中的文字内容识别并提取出来。",
+    "home_url": "https://api.aa1.cn/doc/orc/orc.html.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "ORC图像识别文本接口",
+            "url": "https://api.songzixian.com/api/orc",
+            "description": "通过POST请求上传图片文件，API将返回图片中的文本内容。",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "imageFile",
+                    "type": "file",
+                    "description": "上传您的图片文件，支持常见的图片格式。",
+                    "required": true
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

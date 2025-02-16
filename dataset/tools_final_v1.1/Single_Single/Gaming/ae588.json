@@ -1,0 +1,18 @@
+{
+    "tool_name": "ae588",
+    "tool_description": "AE888 - AE3888 是目前的顶级在线博彩平台，提供多种游戏，包括斗鸡、体育赛事、在线彩票和骰子游戏。Ae588 作为 Ae888 的授权代理，提供访问链接。",
+    "home_url": "https://rapidapi.com/ae588/api/ae588/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "AE888",
+            "url": "https://ae588.p.rapidapi.com/",
+            "description": "AE888 - AE3888 是目前的顶级在线博彩平台，提供多种游戏，包括斗鸡、体育赛事、在线彩票和骰子游戏。Ae588 作为 Ae888 的授权代理，提供访问链接。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

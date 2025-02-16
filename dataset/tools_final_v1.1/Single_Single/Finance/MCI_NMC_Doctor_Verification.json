@@ -1,0 +1,35 @@
+{
+    "tool_name": "MCI NMC Doctor Verification",
+    "tool_description": "This API allows clients to verify the integrity and validity of a medical certificate issued by doctors registered with the Medical Council of India (MCI) and the National Medical Commission (NMC).",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/mci-nmc-doctor-verification/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://mci-nmc-doctor-verification.p.rapidapi.com/v3/tasks",
+            "description": "Fetches the API result using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request made to verify a medical certificate.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "MCI / NMC Doctor Verification",
+            "url": "https://mci-nmc-doctor-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/nmc_doctor",
+            "description": "Verifies the integrity and validity of a medical certificate. Use the GET Call API to fetch results using the request ID obtained in the response.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

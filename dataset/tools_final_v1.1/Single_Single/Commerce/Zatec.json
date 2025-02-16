@@ -1,0 +1,18 @@
+{
+    "tool_name": "Zatec",
+    "tool_description": "Zatec là một doanh nghiệp ra đời với mong muốn trở thành một giải pháp toàn diện cho người tiêu dùng về các sản phẩm kệ để hàng bao gồm: Kệ sắt, kệ siêu thị, Kệ sắt V lỗ, Kệ trung tải, kệ sắt, kệ để hàng, kệ đa năng, kệ đa năng mặt lưới, kệ sắt lắp ráp, kệ sắt 3 tầng. Zatec đã và đang là nhà thầu phụ uy tín, cung cấp các giải pháp về kho hàng cho các nhà máy, nhà xưởng trong các khu công nghiệp, cũng như hệ thống siêu thị, cửa hàng tạp hóa lớn và nhỏ trên khắp địa bàn Hà Nội, Hồ Chí Minh và 63 tỉnh thành.",
+    "home_url": "https://rapidapi.com/seozatec/api/zatec/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Zatec",
+            "url": "https://zatec.p.rapidapi.com/",
+            "description": "API cung cấp thông tin về các sản phẩm kệ để hàng của Zatec, bao gồm các loại kệ khác nhau và dịch vụ liên quan.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

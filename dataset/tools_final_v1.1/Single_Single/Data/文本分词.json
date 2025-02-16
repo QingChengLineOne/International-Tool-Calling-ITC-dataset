@@ -1,0 +1,25 @@
+{
+    "tool_name": "文本分词API",
+    "tool_description": "提供文本分词服务，将输入文本分割为单词或短语，结果以“/”分割",
+    "home_url": "https://api.aa1.cn/doc/text_jieba.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文本分词接口",
+            "url": "https://api.liangmlk.cn/a20safe/aapi.php?id=50",
+            "description": "执行文本分词操作",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要分词的文本内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

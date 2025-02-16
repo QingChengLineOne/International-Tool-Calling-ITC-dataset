@@ -1,0 +1,25 @@
+{
+    "tool_name": "Targeted Keyword trend",
+    "tool_description": "This API provides insights into the popularity of specific keywords over time by leveraging Google Trends and search count data. It helps users understand what the world is searching for from the past to the present.",
+    "home_url": "https://rapidapi.com/ramcharangoodboy-rd27go0ww30/api/targeted-keyword-trend/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Keyword Data",
+            "url": "https://targeted-keyword-trend.p.rapidapi.com/{keyword}",
+            "description": "Returns monthly search count data for a specified keyword, allowing users to track the popularity of that keyword over time.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "string",
+                    "description": "The keyword for which search count data is requested.",
+                    "default": "digital marketing"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

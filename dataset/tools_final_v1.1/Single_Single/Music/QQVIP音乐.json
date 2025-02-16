@@ -1,0 +1,31 @@
+{
+    "tool_name": "QQVIP音乐",
+    "tool_description": "可点QQ付费歌曲，返回无损音频",
+    "home_url": "https://api.aa1.cn/doc/qqmusic_music.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQVIP音乐API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_qqmusic.php",
+            "description": "提供点歌服务，返回QQ音乐付费歌曲的无损音频",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "gm",
+                    "type": "string",
+                    "description": "要点的歌曲名称",
+                    "default": ""
+                },
+                {
+                    "name": "n",
+                    "type": "string",
+                    "description": "歌曲索引，用于选择特定歌曲",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "tool_name": "NIV Bible",
+    "tool_description": "A simple and quick web tool that allows you to retrieve data from both the Old and New Testament based on a book, chapter, or verse. The API provides access to the New International Version (NIV) of the Holy Bible, which is one of the most widely-used translations in the English language.",
+    "home_url": "https://rapidapi.com/sambruce23/api/niv-bible/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetSingleVerse",
+            "url": "https://niv-bible.p.rapidapi.com/row",
+            "description": "Retrieve a single verse based on the specified book, chapter, and verse number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Verse",
+                    "type": "NUMBER",
+                    "description": "The verse number to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "Chapter",
+                    "type": "NUMBER",
+                    "description": "The chapter number to retrieve the verse from.",
+                    "default": "1"
+                },
+                {
+                    "name": "Book",
+                    "type": "STRING",
+                    "description": "The name of the book in the Bible.",
+                    "default": "Genesis"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

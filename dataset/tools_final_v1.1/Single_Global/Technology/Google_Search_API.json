@@ -1,0 +1,68 @@
+{
+    "tool_name": "Google Search API",
+    "tool_description": "Get Google Search results in JSON format. This API allows users to customize their search results based on various parameters such as country, language, and the number of results.",
+    "home_url": "https://rapidapi.com/justserp/api/google-search-api7/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://google-search-api7.p.rapidapi.com/search",
+            "description": "Retrieve search results for a specified Google search keyword query. Users can customize their results using various parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The search keyword for the query.",
+                    "default": "Chatgpt"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "num",
+                    "type": "NUMBER",
+                    "description": "Number of results to return. If not specified, defaults to 10.",
+                    "default": ""
+                },
+                {
+                    "name": "start",
+                    "type": "NUMBER",
+                    "description": "Defines how many results to skip. For example, to get the second page of results, use start=10. If not specified, defaults to 0.",
+                    "default": ""
+                },
+                {
+                    "name": "html",
+                    "type": "STRING",
+                    "description": "Option to retrieve the full HTML of the Google search results page.",
+                    "default": ""
+                },
+                {
+                    "name": "uule",
+                    "type": "STRING",
+                    "description": "Specifies the location for the search results using Google's UULE parameter. Users must calculate UULE themselves.",
+                    "default": ""
+                },
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "Full name of the language for the search results (e.g., English, Spanish).",
+                    "default": ""
+                },
+                {
+                    "name": "device",
+                    "type": "STRING",
+                    "description": "Specifies the device type for the search results, either 'desktop' or 'mobile'. Defaults to 'desktop'.",
+                    "default": "Desktop"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Full name of the country for localized search results (e.g., United States, Canada).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

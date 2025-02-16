@@ -1,0 +1,25 @@
+{
+    "tool_name": "垃圾分类API",
+    "tool_description": "垃圾分类API，用于查询特定垃圾的类别",
+    "home_url": "https://api.aa1.cn/doc/trashfenlei.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "垃圾分类查询接口",
+            "url": "https://api.oioweb.cn/api/common/rubbish",
+            "description": "查询特定垃圾的类别",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "垃圾名称，用于查询该垃圾的分类",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "SurveyStance",
+    "tool_description": "Feedback Survey API that allows users to gather and analyze feedback through surveys.",
+    "home_url": "https://rapidapi.com/surveystance-surveystance-default/api/surveystance1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "users-test",
+            "url": "https://surveystance1.p.rapidapi.com/",
+            "description": "Retrieves user information related to the feedback surveys.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "users",
+                    "type": "STRING",
+                    "description": "Optional parameter to specify user details.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

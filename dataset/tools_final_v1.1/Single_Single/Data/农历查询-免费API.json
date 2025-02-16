@@ -1,0 +1,37 @@
+{
+    "tool_name": "农历查询-免费API",
+    "tool_description": "提供农历日期查询服务",
+    "home_url": "https://www.free-api.com/doc/547",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "农历查询API",
+            "url": "https://v2.alapi.cn/api/lunar",
+            "description": "提供农历日期查询服务",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "LwExDtUWhF"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "查询的日期，默认为当天",
+                    "default": ""
+                },
+                {
+                    "name": "unix_time",
+                    "type": "int",
+                    "description": "10位时间戳的格式",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200: success, 其他: 错误信息",
+            "schema": {}
+        }
+    ]
+}

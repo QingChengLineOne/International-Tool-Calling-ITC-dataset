@@ -1,0 +1,38 @@
+{
+    "tool_name": "Siphon AI",
+    "tool_description": "SiphonAI Search Result API allows users to retrieve Google search results in milliseconds, making it suitable for various applications such as marketing and SEO software.",
+    "home_url": "https://rapidapi.com/siphon-ai-siphon-ai-default/api/siphon-ai/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://siphon-ai.p.rapidapi.com/search",
+            "description": "Search and Get Results from Major Search Engines",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "terms",
+                    "type": "STRING",
+                    "description": "The search terms to query.",
+                    "default": "best EV manufacturers"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date_range",
+                    "type": "STRING",
+                    "description": "Specify a date period for the results. For more details, visit: https://searchengineland.com/search-google-by-date-with-new-before-and-after-search-commands-315184",
+                    "default": "before:2008-01-01"
+                },
+                {
+                    "name": "google_domain",
+                    "type": "STRING",
+                    "description": "Specify which Google domain to use. Available domains can be found here: https://www.google.com/supported_domains. By default, it uses google.com.",
+                    "default": "google.fr"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

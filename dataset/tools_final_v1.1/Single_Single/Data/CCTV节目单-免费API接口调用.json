@@ -1,0 +1,37 @@
+{
+    "tool_name": "CCTV节目单-免费API接口调用",
+    "tool_description": "提供CCTV各频道节目单的免费API接口调用服务。",
+    "home_url": "https://api.shwgij.com/doc/21",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "CCTV节目单查询",
+            "url": "https://api.shwgij.com/api/cctv/cctv",
+            "description": "查询CCTV各频道的节目单",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "U5IkU9EPBJc7wNWJseJAZNvkX8"
+                },
+                {
+                    "name": "c",
+                    "type": "string",
+                    "description": "频道代号，如cctv1",
+                    "default": ""
+                },
+                {
+                    "name": "d",
+                    "type": "date",
+                    "description": "日期，格式为YYYYMMDD,例如20240801",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "天气预报-降水距百分率图",
+    "tool_description": "近10天降水距平百分率图，来源于中国气象局。",
+    "home_url": "https://api.aa1.cn/doc/jsl.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "天气预报-降水距百分率图",
+            "url": "https://cn.apihz.cn/api/tianqi/jsl.php",
+            "description": "获取近10天降水距平百分率图",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的ID，用于唯一标识你的API接入",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥，用于验证你的身份",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

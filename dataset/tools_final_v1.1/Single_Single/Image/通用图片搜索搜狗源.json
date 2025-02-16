@@ -1,0 +1,43 @@
+{
+    "tool_name": "通用图片搜索-搜狗源",
+    "tool_description": "搜索指定关键词返回搜狗图片搜索结果。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/apihzimgsougou.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "通用图片搜索-搜狗源API",
+            "url": "https://cn.apihz.cn/api/img/apihzimgsougou.php",
+            "description": "通过关键词进行图片搜索的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子分配的ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子分配的KEY",
+                    "default": "88888888"
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "分页参数，用于分页显示搜索结果",
+                    "default": "1"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "搜索关键词",
+                    "default": "张含韵"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

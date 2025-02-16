@@ -1,0 +1,18 @@
+{
+    "tool_name": "Merge Two PST File",
+    "tool_description": "This tool allows users to merge multiple PST files into a single file using the MailsDaddy PST Merge and Join tool.",
+    "home_url": "https://rapidapi.com/devin12driss/api/merge-two-pst-file/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Merge two PST file",
+            "url": "https://merge-two-pst-file.p.rapidapi.com/",
+            "description": "This API enables users to merge multiple PST files into one. It supports both ANSI and Unicode PST files and is compatible with all versions of MS Outlook.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

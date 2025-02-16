@@ -1,0 +1,31 @@
+{
+    "tool_name": "LokingAI-Document-QA",
+    "tool_description": "Document (pdf and image) Question Answering endpoint",
+    "home_url": "https://rapidapi.com/josuebrunel/api/lokingai-document-qa/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "answer_questions_answer_questions_post",
+            "url": "https://lokingai-document-qa.p.rapidapi.com/answer-questions",
+            "description": "Answer questions based on an uploaded document.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "questions",
+                    "type": "STRING",
+                    "description": "A comma-separated list of questions.",
+                    "default": ""
+                },
+                {
+                    "name": "payload",
+                    "type": "BINARY",
+                    "description": "The uploaded document file.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        }
+    ]
+}

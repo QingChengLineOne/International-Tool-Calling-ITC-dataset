@@ -1,0 +1,50 @@
+{
+    "tool_name": "图文转换API",
+    "tool_description": "将文字随机以图片格式输出",
+    "home_url": "https://api.aa1.cn/doc/texttoimage.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图文转换API",
+            "url": "https://api.pearktrue.cn/api/image/cov.php",
+            "description": "将用户提供的文字内容转换为图片格式输出",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要转换为图片的文字内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "font_size",
+                    "type": "int",
+                    "description": "字体大小，可选值：12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60",
+                    "default": "20"
+                },
+                {
+                    "name": "font_color",
+                    "type": "string",
+                    "description": "字体颜色，格式为RGB值（例如：#FFFFFF）",
+                    "default": "#000000"
+                },
+                {
+                    "name": "background_color",
+                    "type": "string",
+                    "description": "背景颜色，格式为RGB值（例如：#FFFFFF）",
+                    "default": "#FFFFFF"
+                },
+                {
+                    "name": "image_type",
+                    "type": "string",
+                    "description": "输出图片格式，可选值：png, jpg",
+                    "default": "png"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

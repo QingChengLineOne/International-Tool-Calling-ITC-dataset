@@ -1,0 +1,25 @@
+{
+    "tool_name": "Bing联想词",
+    "tool_description": "输入关键字，自动补全内容，可以用于搜索内容、对话的补全",
+    "home_url": "https://api.aa1.cn/doc/bing-word.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Bing联想词API",
+            "url": "https://api.52vmy.cn/api/wl/word/bing",
+            "description": "根据关键字获取Bing联想词",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "输入的关键字，用于获取联想词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "tool_name": "Technology Stack",
+    "tool_description": "Search websites by technology. Find email addresses of websites that use Shopify, Hello Bar, and other technologies.",
+    "home_url": "https://rapidapi.com/findmassleadsapi/api/technology-stack3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Technology Information",
+            "url": "https://technology-stack3.p.rapidapi.com/RAPItif9m11S3g5f/",
+            "description": "Retrieve the full technology information object at the beginning of your program. Use a technology numerical ID to get the technology category and name.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Lead Search",
+            "url": "https://technology-stack3.p.rapidapi.com/RAPIleA121fSpzA8/",
+            "description": "Find a new lead (a domain name + all the contact information detected) by technology, language, rank, and tech spend. Specify the domain names you already have.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Domain Lookup",
+            "url": "https://technology-stack3.p.rapidapi.com/RAPIdnR9519Saggh/",
+            "description": "From a domain name, retrieve URLs along with language, technologies used, ranking, estimated tech spend, email addresses, favicon URL, phone numbers, and social links.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

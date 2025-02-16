@@ -1,0 +1,28 @@
+{
+    "tool_name": "Convert HTML to PDF",
+    "tool_description": "Convert HTML or URL to PDF",
+    "home_url": "https://rapidapi.com/devw-devw-default/api/convert-html-to-pdf2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Convert HTML Content to PDF",
+            "url": "https://convert-html-to-pdf2.p.rapidapi.com/convert/content",
+            "description": "Converts HTML content provided in the request body to a PDF document.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Convert URL to PDF",
+            "url": "https://convert-html-to-pdf2.p.rapidapi.com/convert/url",
+            "description": "Converts the content of a specified URL to a PDF document.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

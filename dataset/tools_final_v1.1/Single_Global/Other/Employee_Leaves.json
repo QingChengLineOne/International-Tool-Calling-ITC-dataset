@@ -1,0 +1,31 @@
+{
+    "tool_name": "Employee Leaves",
+    "tool_description": "This is a mock API for monitoring employee leaves.",
+    "home_url": "https://rapidapi.com/naya5star/api/employee-leaves1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Create Employee",
+            "url": "https://employee-leaves1.p.rapidapi.com/employees",
+            "description": "This API endpoint allows you to add a new employee to the system.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "key1": {
+                        "type": "string"
+                    },
+                    "key2": {
+                        "type": "string"
+                    },
+                    "key3": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

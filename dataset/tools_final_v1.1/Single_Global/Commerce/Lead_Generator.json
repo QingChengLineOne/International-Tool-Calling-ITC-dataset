@@ -1,0 +1,18 @@
+{
+    "tool_name": "Lead Generator",
+    "tool_description": "Advanced lead generation with customizable filters and real-time updates to collect and contact leads.",
+    "home_url": "https://rapidapi.com/verievi-verievi-default/api/lead-generator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Create Copywriting Prompt",
+            "url": "https://lead-generator.p.rapidapi.com/business/copywriting-prompt",
+            "description": "Generates clever prompts for copywriting via ChatGPT.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

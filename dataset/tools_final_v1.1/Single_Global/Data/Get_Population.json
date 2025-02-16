@@ -1,0 +1,35 @@
+{
+    "tool_name": "Get Population",
+    "tool_description": "Get world population in realtime. 🌍",
+    "home_url": "https://rapidapi.com/evikza/api/get-population/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Country Population",
+            "url": "https://get-population.p.rapidapi.com/population/country",
+            "description": "Retrieve the population of a specific country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which to retrieve the population.",
+                    "default": "Egypt"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Population",
+            "url": "https://get-population.p.rapidapi.com/population",
+            "description": "Retrieve the current world population.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

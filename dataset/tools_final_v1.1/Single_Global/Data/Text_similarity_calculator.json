@@ -1,0 +1,31 @@
+{
+    "tool_name": "Text similarity calculator",
+    "tool_description": "This tool calculates the similarity between two texts in percentage. It is based on an algorithm described in 'Programming Classics: Implementing the World's Best Algorithms' by Ian Oliver. The implementation uses recursive calls instead of a stack, which may affect performance. The algorithm has a complexity of O(N**3), where N is the length of the longest string.",
+    "home_url": "https://rapidapi.com/medel/api/text-similarity-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getPercentage",
+            "url": "https://text-similarity-calculator.p.rapidapi.com/stringcalculator.php",
+            "description": "Calculate the percentage of match between two texts.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ftext",
+                    "type": "STRING",
+                    "description": "Enter text number one.",
+                    "default": "This is text numer one."
+                },
+                {
+                    "name": "stext",
+                    "type": "STRING",
+                    "description": "Enter text number two.",
+                    "default": "This is text number two."
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

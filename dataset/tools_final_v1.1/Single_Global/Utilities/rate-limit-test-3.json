@@ -1,0 +1,25 @@
+{
+    "tool_name": "rate-limit-test-3",
+    "tool_description": "A tool designed to test the rate limits of APIs by simulating requests and measuring responses.",
+    "home_url": "https://rapidapi.com/dorshtaifprovider1/api/rate-limit-test-3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/users/{id}",
+            "url": "https://rate-limit-test-3.p.rapidapi.com/users/{id}",
+            "description": "Endpoint for fetching user details based on the provided user ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the user whose details are to be fetched.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "手写图文API",
+    "tool_description": "图文手写自适应API",
+    "home_url": "https://api.aa1.cn/doc/52tw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图文手写自适应接口",
+            "url": "https://api.52vmy.cn/api/img/tw",
+            "description": "接收用户输入的文字，并输出对应的图文手写自适应结果",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要转化的文字内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

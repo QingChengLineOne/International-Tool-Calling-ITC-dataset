@@ -1,0 +1,18 @@
+{
+    "tool_name": "推荐图片",
+    "tool_description": "数据来源于图虫，中国优质的摄影师分享交流社区和成长平台",
+    "home_url": "https://www.free-api.com/doc/523",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "推荐图片API",
+            "url": "https://api.tuchong.com/feed-app",
+            "description": "获取推荐图片，包括图片链接、发表日期、喜爱和评论数量等信息",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

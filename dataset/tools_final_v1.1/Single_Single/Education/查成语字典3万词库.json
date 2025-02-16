@@ -1,0 +1,37 @@
+{
+    "tool_name": "查成语字典[3万词库]",
+    "tool_description": "查询指定成语的解释，同义词，反义词等信息。",
+    "home_url": "https://api.aa1.cn/doc/chacy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "成语查询API",
+            "url": "https://cn.apihz.cn/api/zici/chacy.php",
+            "description": "通过成语查询其详细解释、同义词、反义词等",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子的密钥，用于验证请求者身份",
+                    "default": "88888888"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "需要查询的成语",
+                    "default": "天马行空"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

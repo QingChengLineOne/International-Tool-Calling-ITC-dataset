@@ -1,0 +1,35 @@
+{
+    "tool_name": "Sign Hexagram",
+    "tool_description": "提供灵签在线抽签解签、灵签神卦占卜。",
+    "home_url": "https://rapidapi.com/ai-box-ai-box-default/api/sign-hexagram/",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Get Sign Hexagram",
+            "url": "https://sign-hexagram.p.rapidapi.com/get_sign/{category}",
+            "description": "根据给定的类别返回一个签文及其详细信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "ENUM",
+                    "description": "类别ID，用于指定所需的签文类别。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Categories",
+            "url": "https://sign-hexagram.p.rapidapi.com/get_category",
+            "description": "返回签文类别的列表，包括描述和图片链接。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "tool_name": "OOPSpam Spam Filter",
+    "tool_description": "A privacy-friendly, new generation, highly accurate anti-spam filter for contact forms, comment systems, blogs, live chat - the limit is your creativity!",
+    "home_url": "https://rapidapi.com/oopspam/api/oopspam-spam-filter/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Spam detection",
+            "url": "https://oopspam.p.rapidapi.com/v1/spamdetection",
+            "description": "The main endpoint that returns detailed information about a given content.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Details": {
+                        "type": "object",
+                        "properties": {
+                            "isContentSpam": {
+                                "type": "string"
+                            },
+                            "isIPBlocked": {
+                                "type": "boolean"
+                            },
+                            "isEmailBlocked": {
+                                "type": "boolean"
+                            },
+                            "numberOfSpamWords": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "Score": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "Cocktail by API-Ninjas",
+    "tool_description": "Search thousands of cocktail recipes. This API allows users to find cocktail recipes based on the name or ingredients provided.",
+    "home_url": "https://rapidapi.com/apininjas/api/cocktail-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/cocktail",
+            "url": "https://cocktail-by-api-ninjas.p.rapidapi.com/v1/cocktail",
+            "description": "API Ninjas Cocktail API endpoint. Either 'name' or 'ingredients' parameter must be set to retrieve cocktail recipes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the cocktail. This parameter supports partial matches (e.g., 'bloody' will match 'bloody mary' and 'bloody margarita').",
+                    "default": "bloody mary"
+                },
+                {
+                    "name": "ingredients",
+                    "type": "STRING",
+                    "description": "Comma-separated string of ingredients to search. Only cocktails containing all listed ingredients will be returned. For example, to search cocktails containing Vodka and lemon juice, use 'vodka,lemon juice'.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

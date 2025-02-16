@@ -1,0 +1,38 @@
+{
+    "tool_name": "BC Real Time Otter.ai",
+    "tool_description": "Set your webhook url via the Keepalive endpoint, and you will receive a webhook on that url each time your Otter.ai account transcribes a conversation. The webhook payload contains the full conversation transcription. All data is securely encrypted.",
+    "home_url": "https://rapidapi.com/bourgarel-conseil-bourgarel-conseil-default/api/bc-real-time-otter-ai/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "bcOtteraiApi",
+            "url": "https://bc-real-time-otter-ai.p.rapidapi.com/bcOtteraiApi",
+            "description": "Calls internal Otter.ai API, returns its raw result.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Keepalive",
+            "url": "https://bc-real-time-otter-ai.p.rapidapi.com/otterKeepAlive",
+            "description": "This endpoint must be called once every 7 days, so that the webhook service continues to operate.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "(Internal) Push webhook",
+            "url": "https://bc-real-time-otter-ai.p.rapidapi.com/bcForwardWebhookToClient",
+            "description": "This is an 'internal webhook'. It should not be directly called. It exists only for internal purposes, to push the right webhook at the right moment.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

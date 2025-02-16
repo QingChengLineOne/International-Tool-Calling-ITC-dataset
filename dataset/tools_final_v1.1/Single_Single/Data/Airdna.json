@@ -1,0 +1,293 @@
+{
+    "tool_name": "Airdna",
+    "tool_description": "API for Short-Term Rental Data Analytics, providing insights and analytics for Vrbo and Airbnb properties through the Rentalizer tool.",
+    "home_url": "https://rapidapi.com/s.mahmoud97/api/airdna1/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Rentalizer",
+            "url": "https://airdna1.p.rapidapi.com/rentalizer",
+            "description": "Calculates rental property potential based on the provided address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "The address of the rental property to analyze.",
+                    "default": "458 19th St, Santa Monica, CA 90402"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "bathrooms",
+                    "type": "NUMBER",
+                    "description": "Number of bathrooms in the property.",
+                    "default": "2"
+                },
+                {
+                    "name": "accommodates",
+                    "type": "STRING",
+                    "description": "Maximum number of guests the property can accommodate.",
+                    "default": "2"
+                },
+                {
+                    "name": "bedrooms",
+                    "type": "NUMBER",
+                    "description": "Number of bedrooms in the property.",
+                    "default": "2"
+                },
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the rental calculations.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Property listings",
+            "url": "https://airdna1.p.rapidapi.com/properties",
+            "description": "Retrieves rental properties from Airbnb and Vrbo based on location and date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to search for rental properties.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "room_types",
+                    "type": "STRING",
+                    "description": "Specify room types (entire_home, private_room, shared_room) by separating with commas.",
+                    "default": ""
+                },
+                {
+                    "name": "number_of_months",
+                    "type": "NUMBER",
+                    "description": "Number of months to retrieve listings for.",
+                    "default": ""
+                },
+                {
+                    "name": "bedrooms_max",
+                    "type": "NUMBER",
+                    "description": "Maximum number of bedrooms.",
+                    "default": ""
+                },
+                {
+                    "name": "accommodates_max",
+                    "type": "NUMBER",
+                    "description": "Maximum number of guests.",
+                    "default": ""
+                },
+                {
+                    "name": "start_month",
+                    "type": "NUMBER",
+                    "description": "Starting month for the listings.",
+                    "default": ""
+                },
+                {
+                    "name": "bedrooms_min",
+                    "type": "NUMBER",
+                    "description": "Minimum number of bedrooms.",
+                    "default": ""
+                },
+                {
+                    "name": "show_regions",
+                    "type": "BOOLEAN",
+                    "description": "Whether to show regions in the response.",
+                    "default": ""
+                },
+                {
+                    "name": "accommodates_min",
+                    "type": "NUMBER",
+                    "description": "Minimum number of guests.",
+                    "default": ""
+                },
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the rental listings.",
+                    "default": "native"
+                },
+                {
+                    "name": "start_year",
+                    "type": "NUMBER",
+                    "description": "Starting year for the listings.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Rental ratings",
+            "url": "https://airdna1.p.rapidapi.com/rentalratings",
+            "description": "Returns rental ratings for properties in a specified location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to retrieve rental ratings for.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the rental ratings.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Suggest region",
+            "url": "https://airdna1.p.rapidapi.com/suggestion",
+            "description": "Returns suggested regions based on a keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The keyword for which to suggest regions.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Active listings",
+            "url": "https://airdna1.p.rapidapi.com/activelistings",
+            "description": "Returns active rental listings based on location and date range.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to retrieve active listings from.",
+                    "default": "santa monica"
+                },
+                {
+                    "name": "start_year",
+                    "type": "NUMBER",
+                    "description": "The starting year for the listings.",
+                    "default": "2019"
+                },
+                {
+                    "name": "start_month",
+                    "type": "NUMBER",
+                    "description": "The starting month for the listings.",
+                    "default": "5"
+                },
+                {
+                    "name": "number_of_months",
+                    "type": "NUMBER",
+                    "description": "The number of months to retrieve listings for.",
+                    "default": "36"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Top property managers",
+            "url": "https://airdna1.p.rapidapi.com/top_managers",
+            "description": "Returns the largest property managers in a specified location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to retrieve top property managers from.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Rental amenities",
+            "url": "https://airdna1.p.rapidapi.com/rentalamenities",
+            "description": "Returns a list of rental amenities available in a specified location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to retrieve rental amenities from.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the rental amenities.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Rental settings",
+            "url": "https://airdna1.p.rapidapi.com/rentalsettings",
+            "description": "Returns rental settings for a specified location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to retrieve rental settings for.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the rental settings.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Overview",
+            "url": "https://airdna1.p.rapidapi.com/overview",
+            "description": "Returns overview statistics (ADR, occupancy, revenue, etc.) for rental data in a specified location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to retrieve overview statistics for.",
+                    "default": "santa monica"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the overview statistics.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "图片转线稿API",
+    "tool_description": "将图片还原为黑白线条的线稿效果，支持图片大小不超过2048kb",
+    "home_url": "https://api.aa1.cn/doc/xian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图片转线稿接口",
+            "url": "https://api.52vmy.cn/api/img/xian",
+            "description": "接收图片URL并转换为线稿效果的图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "图片的URL链接，必须是有效的图片链接",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "精品IP归属地信息获取（IPv4/IPv6）",
+    "tool_description": "根据IPv4/IPv6地址获取地理位置信息",
+    "home_url": "https://api.aa1.cn/doc/lemonso-district.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "精品IP归属地信息获取",
+            "url": "https://api.qjqq.cn/api/district",
+            "description": "查询指定IPv4或IPv6地址的地理位置信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IPv4或IPv6地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

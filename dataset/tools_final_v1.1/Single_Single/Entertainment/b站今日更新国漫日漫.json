@@ -1,0 +1,25 @@
+{
+    "tool_name": "B站今日更新（国漫/日漫）",
+    "tool_description": "提供番剧今日更新的信息",
+    "home_url": "https://api.aa1.cn/doc/bzgx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "B站今日更新API",
+            "url": "https://api.lolimi.cn/API/B_Update_Days/",
+            "description": "获取B站今日更新的番剧信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "指定返回番剧数量的参数",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

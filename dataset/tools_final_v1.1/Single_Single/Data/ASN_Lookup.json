@@ -1,0 +1,43 @@
+{
+    "tool_name": "ASN Lookup",
+    "tool_description": "An Autonomous System Numbers (ASN) internet search engine that allows users to quickly look up updated information about specific ASN, Organization, CIDR, or registered IP addresses (IPv4 and IPv6), along with other relevant data.",
+    "home_url": "https://rapidapi.com/yaaboukir/api/asn-lookup/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Fetch information",
+            "url": "https://asn-lookup.p.rapidapi.com/api",
+            "description": "Retrieve information based on AS number, CIDR (IPv4 & IPv6), or organization name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "The IP address to look up.",
+                    "default": ""
+                },
+                {
+                    "name": "asn",
+                    "type": "STRING",
+                    "description": "The Autonomous System Number to look up.",
+                    "default": "AS32934"
+                },
+                {
+                    "name": "cidr",
+                    "type": "STRING",
+                    "description": "The CIDR notation for the IP address range.",
+                    "default": ""
+                },
+                {
+                    "name": "orgname",
+                    "type": "STRING",
+                    "description": "The name of the organization associated with the ASN.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

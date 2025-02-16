@@ -1,0 +1,38 @@
+{
+    "tool_name": "QQ获取好友线索",
+    "tool_description": "腾讯官方接口，提供获取QQ好友线索的功能",
+    "home_url": "https://api.aa1.cn/doc/api-qq.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ获取好友线索接口",
+            "url": "https://ti.qq.com/friends/recall",
+            "description": "该接口用于获取QQ好友的线索信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "uin",
+                    "type": "int",
+                    "description": "QQ号，用于标识要获取线索的好友",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "页码，默认为1，用于分页获取线索信息",
+                    "default": "1"
+                },
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "每页显示的线索数量，默认为10",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

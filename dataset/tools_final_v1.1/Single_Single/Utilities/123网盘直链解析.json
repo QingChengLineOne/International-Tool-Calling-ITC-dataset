@@ -1,0 +1,31 @@
+{
+    "tool_name": "123网盘直链解析",
+    "tool_description": "获取123网盘的文件直链下载地址",
+    "home_url": "https://api.aa1.cn/doc/pearno-parse123pan.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "123网盘直链解析API",
+            "url": "https://api.pearktrue.cn/api/123panparse/",
+            "description": "提供123网盘文件直链解析服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要解析的123网盘文件分享链接",
+                    "default": "https://www.123pan.com/s/R6kKVv-DKv5H.html"
+                },
+                {
+                    "name": "pwd",
+                    "type": "string",
+                    "description": "123网盘文件的密码（如果有）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

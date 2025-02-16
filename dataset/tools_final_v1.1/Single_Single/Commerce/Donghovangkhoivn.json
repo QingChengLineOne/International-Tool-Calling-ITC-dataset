@@ -1,0 +1,18 @@
+{
+    "tool_name": "Donghovangkhoivn",
+    "tool_description": "Donghovangkhoi.vn 是一家在钟表和珠宝制造领域具有多年经验的公司。所有产品，包括假冒的劳力士、宇舶、百达翡丽、理查德·米勒、欧米茄和爱彼等手表，均采用18K黄金和天然钻石制作。我们承诺所有产品均经过权威检测机构的认证，确保质量可靠。",
+    "home_url": "https://rapidapi.com/donghovangkhoivn/api/donghovangkhoivn/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "donghovangkhoivn",
+            "url": "https://donghovangkhoivn.p.rapidapi.com/",
+            "description": "该API提供有关Donghovangkhoi.vn的产品信息，包括手表和珠宝的详细描述。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

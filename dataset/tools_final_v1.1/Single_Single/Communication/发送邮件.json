@@ -1,0 +1,49 @@
+{
+    "tool_name": "邮件发送服务API",
+    "tool_description": "使用PHPMailer库发送电子邮件的API",
+    "home_url": "https://api.aa1.cn/doc/sc_mail.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "发送邮件",
+            "url": "https://api.uuni.cn/api/mail",
+            "description": "通过此API可以使用PHPMailer库发送电子邮件",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "adress",
+                    "type": "string",
+                    "description": "接收邮件的邮箱地址",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "邮件的主题",
+                    "default": ""
+                },
+                {
+                    "name": "content",
+                    "type": "string",
+                    "description": "邮件的内容",
+                    "default": ""
+                },
+                {
+                    "name": "isHTML",
+                    "type": "boolean",
+                    "description": "邮件内容是否为HTML格式",
+                    "default": ""
+                },
+                {
+                    "name": "Name",
+                    "type": "string",
+                    "description": "发件人的名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

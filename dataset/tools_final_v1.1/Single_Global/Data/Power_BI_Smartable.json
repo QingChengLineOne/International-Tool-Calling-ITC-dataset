@@ -1,0 +1,186 @@
+{
+    "tool_name": "Power BI Smartable",
+    "tool_description": "The Power BI API offers access to Microsoft Power BI news, learning resources, events, samples, and other related information.",
+    "home_url": "https://rapidapi.com/SmartableAI/api/power-bi-smartable/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetNews",
+            "url": "https://power-bi-smartable.p.rapidapi.com/news/page/{page}/",
+            "description": "Retrieve the latest Power BI news articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetCommunities",
+            "url": "https://power-bi-smartable.p.rapidapi.com/communities/page/{page}/",
+            "description": "Fetch Power BI community information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSamples",
+            "url": "https://power-bi-smartable.p.rapidapi.com/samples/page/{page}/",
+            "description": "Access various Power BI sample reports.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetFunctions",
+            "url": "https://power-bi-smartable.p.rapidapi.com/functions/page/{page}/",
+            "description": "Retrieve DAX functions used in Power BI.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResources",
+            "url": "https://power-bi-smartable.p.rapidapi.com/learning/page/{page}/",
+            "description": "Get educational resources related to Power BI.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeople",
+            "url": "https://power-bi-smartable.p.rapidapi.com/people/page/{page}/",
+            "description": "Discover influential figures in the Power BI community.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResources (topic)",
+            "url": "https://power-bi-smartable.p.rapidapi.com/learning/{topic}/page/{page}/",
+            "description": "Fetch learning resources based on a specific topic in Power BI.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic for which to retrieve learning resources.",
+                    "default": "dax"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetFunctions (topic)",
+            "url": "https://power-bi-smartable.p.rapidapi.com/functions/{topic}/page/{page}/",
+            "description": "Retrieve DAX functions related to a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic for which to retrieve DAX functions.",
+                    "default": "dax"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetTopics",
+            "url": "https://power-bi-smartable.p.rapidapi.com/topics/",
+            "description": "List all available topics related to Power BI.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsletters",
+            "url": "https://power-bi-smartable.p.rapidapi.com/newsletters/",
+            "description": "Access the latest Power BI newsletters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSponsorships",
+            "url": "https://power-bi-smartable.p.rapidapi.com/sponsorships/today/",
+            "description": "Retrieve current Power BI sponsorship opportunities.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

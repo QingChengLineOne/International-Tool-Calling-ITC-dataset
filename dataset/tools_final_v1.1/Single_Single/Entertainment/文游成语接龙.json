@@ -1,0 +1,25 @@
+{
+    "tool_name": "文游·成语接龙",
+    "tool_description": "程序自动对上成语接龙，适用于QQbot",
+    "home_url": "https://api.aa1.cn/doc/wycyjl.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "成语接龙API",
+            "url": "https://papi.oxoll.cn/API/cyjl.php",
+            "description": "通过成语首字进行成语接龙",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "idiom",
+                    "type": "string",
+                    "description": "成语首字",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

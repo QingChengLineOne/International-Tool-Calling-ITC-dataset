@@ -1,0 +1,64 @@
+{
+    "tool_name": "PPP Calculator",
+    "tool_description": "Purchasing Power Parity (PPP) Calculator that helps users compare the relative value of currencies based on the cost of living and inflation rates.",
+    "home_url": "https://rapidapi.com/aimoda-aimoda/api/ppp-calculator2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "get_Countries",
+            "url": "https://ppp-calculator2.p.rapidapi.com/countries.json",
+            "description": "Retrieves a list of countries available for PPP calculations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Filter for a specific country to retrieve data.",
+                    "default": "IND"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "name": "get_BlendedRates",
+            "url": "https://ppp-calculator2.p.rapidapi.com/blendedrates.json",
+            "description": "Fetches the blended PPP rates for a specified country.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Filter for a specific country to retrieve blended rates.",
+                    "default": "IND"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "country": {
+                            "type": "string"
+                        },
+                        "blended_rate": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "country",
+                        "blended_rate"
+                    ]
+                }
+            }
+        }
+    ]
+}

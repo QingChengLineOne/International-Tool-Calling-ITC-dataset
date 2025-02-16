@@ -1,0 +1,37 @@
+{
+    "tool_name": "百科-百度",
+    "tool_description": "获取指定名词，词条基础解释，来源百度。多词条只返回默认词条解释。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/baikebaidu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "百科-百度API",
+            "url": "https://cn.apihz.cn/api/zici/baikebaidu.php",
+            "description": "通过指定ID和KEY，调用百度API获取词条基础解释",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API的ID，用于唯一标识接口",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API的密钥，用于验证请求者身份",
+                    "default": "88888888"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "需要查询的词条名称",
+                    "default": "汽车"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

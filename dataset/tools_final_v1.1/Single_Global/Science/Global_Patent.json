@@ -1,0 +1,31 @@
+{
+    "tool_name": "Global Patent",
+    "tool_description": "Search global patents from countries around the world using your keywords for free.",
+    "home_url": "https://rapidapi.com/timequark/api/global-patent1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "search patent",
+            "url": "https://global-patent1.p.rapidapi.com/s",
+            "description": "Search for patents using a keyword and return a list of relevant patents.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The keyword to search for patents.",
+                    "default": "kettle"
+                },
+                {
+                    "name": "ds",
+                    "type": "STRING",
+                    "description": "The data source to search in.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

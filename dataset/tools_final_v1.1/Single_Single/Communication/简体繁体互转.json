@@ -1,0 +1,43 @@
+{
+    "tool_name": "简体繁体互转API",
+    "tool_description": "将指定内容进行简体或繁体互相转换。",
+    "home_url": "https://api.aa1.cn/doc/jfzh.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "简体繁体互转API",
+            "url": "https://cn.apihz.cn/api/zici/jfzh.php",
+            "description": "提供简体和繁体之间的转换服务。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的ID，用于身份验证。",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的KEY，用于身份验证。",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "转换类型，1为简体转繁体，2为繁体转简体。",
+                    "default": "1"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "需要转换的内容，可以是文本。",
+                    "default": "两个黄鹂鸣翠柳，一行白鹭上西天。"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

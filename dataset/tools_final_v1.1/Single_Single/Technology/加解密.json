@@ -1,0 +1,31 @@
+{
+    "tool_name": "加解密API",
+    "tool_description": "基于AES-256-CBC算法的数据加密和解密功能",
+    "home_url": "https://api.aa1.cn/doc/crype.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "加解密接口",
+            "url": "https://api.uuni.cn/api/crype",
+            "description": "提供数据加密和解密服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "data",
+                    "type": "string",
+                    "description": "待加密或解密的字符串",
+                    "default": ""
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "description": "操作类型，'encrypt'表示加密，'decrypt'表示解密",
+                    "default": "encrypt"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

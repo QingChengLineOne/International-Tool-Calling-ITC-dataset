@@ -1,0 +1,134 @@
+{
+    "tool_name": "百度地图驾车路线规划",
+    "tool_description": "根据起终点坐标检索符合条件的驾车路线规划方案，支持多条路线、途径点、车牌规避限行等功能",
+    "home_url": "http://api.map.baidu.com/direction/v2/driving",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "驾车路线规划",
+            "url": "http://api.map.baidu.com/direction/v2/driving",
+            "description": "提供驾车路线规划服务，支持多种参数配置",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "origin",
+                    "type": "string",
+                    "description": "起点经纬度",
+                    "default": ""
+                },
+                {
+                    "name": "destination",
+                    "type": "string",
+                    "description": "终点经纬度",
+                    "default": ""
+                },
+                {
+                    "name": "ak",
+                    "type": "string",
+                    "description": "用户的访问权限",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "origin_uid",
+                    "type": "string",
+                    "description": "起点POI的uid",
+                    "default": ""
+                },
+                {
+                    "name": "destination_uid",
+                    "type": "string",
+                    "description": "终点POI的uid",
+                    "default": ""
+                },
+                {
+                    "name": "waypoints",
+                    "type": "string",
+                    "description": "途径点坐标串",
+                    "default": ""
+                },
+                {
+                    "name": "coord_type",
+                    "type": "string",
+                    "description": "坐标类型",
+                    "default": "bd09ll"
+                },
+                {
+                    "name": "ret_coordtype",
+                    "type": "string",
+                    "description": "返回结果坐标类型",
+                    "default": "bd09ll"
+                },
+                {
+                    "name": "tactics",
+                    "type": "string",
+                    "description": "路线规划策略",
+                    "default": ""
+                },
+                {
+                    "name": "alternatives",
+                    "type": "string",
+                    "description": "是否返回备选路线",
+                    "default": ""
+                },
+                {
+                    "name": "plate_number",
+                    "type": "string",
+                    "description": "车牌号",
+                    "default": ""
+                },
+                {
+                    "name": "departure_time",
+                    "type": "string",
+                    "description": "设置出发时间",
+                    "default": ""
+                },
+                {
+                    "name": "ext_departure_time",
+                    "type": "string",
+                    "description": "更多出发时间",
+                    "default": ""
+                },
+                {
+                    "name": "gps_direction",
+                    "type": "int",
+                    "description": "起点的车头方向",
+                    "default": ""
+                },
+                {
+                    "name": "radius",
+                    "type": "float",
+                    "description": "起点的定位精度",
+                    "default": ""
+                },
+                {
+                    "name": "speed",
+                    "type": "float",
+                    "description": "起点车辆的行驶速度",
+                    "default": ""
+                },
+                {
+                    "name": "sn",
+                    "type": "string",
+                    "description": "若用户所用ak的校验方式为sn校验时该参数必须",
+                    "default": ""
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "输出格式",
+                    "default": "json"
+                },
+                {
+                    "name": "callback",
+                    "type": "string",
+                    "description": "将json格式的返回值通过callback函数返回以实现jsonp功能",
+                    "default": ""
+                }
+            ],
+            "statuscode": "0:成功, 1:服务器内部错误, 2:请求参数非法, 3:权限校验失败, 4:配额校验失败, 5:ak不存在或者非法",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "User",
+    "tool_description": "Instagram users",
+    "home_url": "https://rapidapi.com/Rahul1108/api/user121/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Instagram User",
+            "url": "https://user121.p.rapidapi.com/",
+            "description": "This API allows you to retrieve details of Instagram users, providing a default value for user information and enabling successful API testing.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

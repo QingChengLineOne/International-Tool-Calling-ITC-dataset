@@ -1,0 +1,18 @@
+{
+    "tool_name": "获取北京时间",
+    "tool_description": "提供当年北京时间的查询服务",
+    "home_url": "https://api.aa1.cn/doc/bj_today.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "北京当年时间查询API",
+            "url": "https://api.liangmlk.cn/a20safe/aapi.php?id=2",
+            "description": "查询当前年份的北京时间",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

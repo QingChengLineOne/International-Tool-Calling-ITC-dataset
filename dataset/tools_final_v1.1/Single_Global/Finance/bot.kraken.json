@@ -1,0 +1,18 @@
+{
+    "tool_name": "bot.kraken",
+    "tool_description": "A chatbot tool designed to interact with the Kraken API for cryptocurrency data.",
+    "home_url": "https://rapidapi.com/NightTheo/api/bot-kraken/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Ticker",
+            "url": "https://bot-kraken.p.rapidapi.com/Ticker",
+            "description": "Fetches the current ticker information for cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "绕口令API",
+    "tool_description": "提供绕口令生成接口，供用户获取有趣的绕口令。",
+    "home_url": "https://api.aa1.cn/doc/rao.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取绕口令",
+            "url": "https://api.52vmy.cn/api/wl/rao",
+            "description": "生成并返回一个随机绕口令",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "绕口令长度，可选参数，默认为0，表示返回任意长度的绕口令",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

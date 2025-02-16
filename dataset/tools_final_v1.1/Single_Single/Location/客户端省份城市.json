@@ -1,0 +1,25 @@
+{
+    "tool_name": "客户端省份城市API",
+    "tool_description": "获取客户端IP所在地信息",
+    "home_url": "https://api.aa1.cn/doc/ipregion.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "客户端省份城市API",
+            "url": "https://yuym.cn/ipregion",
+            "description": "通过客户端IP获取其所在的省份和城市信息",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "客户端IP地址，如果不提供，则默认使用请求者的IP地址",
+                    "default": "不提供"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

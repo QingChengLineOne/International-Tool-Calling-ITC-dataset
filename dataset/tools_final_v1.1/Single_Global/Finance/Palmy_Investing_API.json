@@ -1,0 +1,516 @@
+{
+    "tool_name": "Palmy Investing API",
+    "tool_description": "The best fit for quantitative stock research. It's free and without data restrictions. 35+ endpoints.",
+    "home_url": "https://rapidapi.com/palmyinvesting/api/palmy-investing-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "economical_events_list",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/economical/events/",
+            "description": "Retrieve a list of all Economical Events which have a high prioritization and therefore could affect markets.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "A page number within the paginated result set.",
+                    "default": ""
+                },
+                {
+                    "name": "page_size",
+                    "type": "NUMBER",
+                    "description": "Number of results to return per page.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "type": "integer"
+                    },
+                    "next": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri"
+                    },
+                    "previous": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri"
+                    },
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "event": {
+                                    "type": "string",
+                                    "maxLength": 350
+                                },
+                                "event_time": {
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "title": "Start at"
+                                },
+                                "country": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "maxLength": 10
+                                },
+                                "importance": {
+                                    "type": "string",
+                                    "maxLength": 12
+                                }
+                            },
+                            "required": [
+                                "event",
+                                "event_time",
+                                "id"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "earning_events_retrieve",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/earning/events/{identifier}/",
+            "description": "Search for a specific earning event, e.g., research for AAPL's earnings or the event ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "The stock ticker or event ID to search for.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "stock": {
+                        "type": "string"
+                    },
+                    "estimated_eps": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "format": "double",
+                        "maximum": 10000,
+                        "minimum": -10000,
+                        "exclusiveMaximum": true,
+                        "exclusiveMinimum": true,
+                        "title": "Est. EPS"
+                    },
+                    "estimated_revenue": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ],
+                        "maximum": 9223372036854776000,
+                        "minimum": -9223372036854776000,
+                        "format": "int64",
+                        "title": "Est. Revenue"
+                    },
+                    "fiscal_end": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Ending of the fiscal year"
+                    },
+                    "event_time": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Start at"
+                    }
+                },
+                "required": [
+                    "event_time",
+                    "fiscal_end",
+                    "id",
+                    "stock"
+                ]
+            }
+        },
+        {
+            "name": "dividends_retrieve",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/dividends/{identifier}/",
+            "description": "Retrieve a specific dividend event by its identifier.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "The stock ticker or dividend ID to search for.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "stock": {
+                        "type": "string"
+                    },
+                    "dividend": {
+                        "type": "number",
+                        "format": "double",
+                        "maximum": 100000,
+                        "minimum": -100000,
+                        "exclusiveMaximum": true,
+                        "exclusiveMinimum": true,
+                        "title": "Adjusted dividend",
+                        "description": "This dividend is adjusted"
+                    },
+                    "payment_date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Date of payment"
+                    }
+                },
+                "required": [
+                    "dividend",
+                    "id",
+                    "payment_date",
+                    "stock"
+                ]
+            }
+        },
+        {
+            "name": "dividends",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/dividends/",
+            "description": "A list of all dividends that are upcoming or have occurred recently.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "A page number within the paginated result set.",
+                    "default": ""
+                },
+                {
+                    "name": "page_size",
+                    "type": "NUMBER",
+                    "description": "Number of results to return per page.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "type": "integer"
+                    },
+                    "next": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri"
+                    },
+                    "previous": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri"
+                    },
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "stock": {
+                                    "type": "string"
+                                },
+                                "dividend": {
+                                    "type": "number",
+                                    "format": "double",
+                                    "maximum": 100000,
+                                    "minimum": -100000,
+                                    "exclusiveMaximum": true,
+                                    "exclusiveMinimum": true,
+                                    "title": "Adjusted dividend",
+                                    "description": "This dividend is adjusted"
+                                },
+                                "payment_date": {
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "title": "Date of payment"
+                                }
+                            },
+                            "required": [
+                                "dividend",
+                                "id",
+                                "payment_date",
+                                "stock"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "earning_events_list",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/earning/events/",
+            "description": "A list of all current earnings. We use data in an interval of the last month to the next year.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page_size",
+                    "type": "NUMBER",
+                    "description": "Number of results to return per page.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "A page number within the paginated result set.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "type": "integer"
+                    },
+                    "next": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri"
+                    },
+                    "previous": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uri"
+                    },
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "stock": {
+                                    "type": "string"
+                                },
+                                "estimated_eps": {
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
+                                    "format": "double",
+                                    "maximum": 10000,
+                                    "minimum": -10000,
+                                    "exclusiveMaximum": true,
+                                    "exclusiveMinimum": true,
+                                    "title": "Est. EPS"
+                                },
+                                "estimated_revenue": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ],
+                                    "maximum": 9223372036854776000,
+                                    "minimum": -9223372036854776000,
+                                    "format": "int64",
+                                    "title": "Est. Revenue"
+                                },
+                                "fiscal_end": {
+                                    "type": "string",
+                                    "format": "date",
+                                    "title": "Ending of the fiscal year"
+                                },
+                                "event_time": {
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "title": "Start at"
+                                }
+                            },
+                            "required": [
+                                "event_time",
+                                "fiscal_end",
+                                "id",
+                                "stock"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "economical_events_retrieve",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/economical/events/{identifier}/",
+            "description": "Retrieve an Economical Event by its name or Event ID to inspect it in more detail.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "The name or ID of the economical event.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "event": {
+                        "type": "string",
+                        "maxLength": 350
+                    },
+                    "event_time": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Start at"
+                    },
+                    "country": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "maxLength": 10
+                    },
+                    "importance": {
+                        "type": "string",
+                        "maxLength": 12
+                    }
+                },
+                "required": [
+                    "event",
+                    "event_time",
+                    "id"
+                ]
+            }
+        },
+        {
+            "name": "datatables_retrieve",
+            "url": "https://palmy-investing-api.p.rapidapi.com/api/datatables/{id}/",
+            "description": "Interact with your table by querying it with its unique ID. You can list, retrieve, delete, update, create and replace tables on the go.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "A unique integer value identifying this table.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "watchlist": {
+                        "type": "string"
+                    },
+                    "stocks": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "pattern": "^[a-zA-Z0-9\\s.,]*$",
+                        "maxLength": 200
+                    },
+                    "slug": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "maxLength": 100,
+                        "pattern": "^[-a-zA-Z0-9_]+$"
+                    },
+                    "uuid": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "uuid"
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "short_description": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "maxLength": 250
+                    },
+                    "public": {
+                        "type": "boolean",
+                        "title": "Public accessible?"
+                    },
+                    "fields": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "additionalProperties": {},
+                        "title": "Fields to use"
+                    }
+                },
+                "required": [
+                    "id",
+                    "stocks",
+                    "watchlist"
+                ]
+            }
+        }
+    ]
+}

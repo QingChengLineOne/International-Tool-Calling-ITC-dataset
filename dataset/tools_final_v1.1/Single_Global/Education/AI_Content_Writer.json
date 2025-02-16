@@ -1,0 +1,25 @@
+{
+    "tool_name": "AI Content Writer",
+    "tool_description": "This AI-based content writing API can write a blog or article on any provided topic, utilizing advanced natural language processing techniques.",
+    "home_url": "https://rapidapi.com/alreadycoded/api/ai-content-writer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "topic",
+            "url": "https://ai-content-writer.p.rapidapi.com/data",
+            "description": "This API endpoint accepts any topic and generates content based on it.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "The subject or theme for which content is to be generated.",
+                    "default": "online money earning"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

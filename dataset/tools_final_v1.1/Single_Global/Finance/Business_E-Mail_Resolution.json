@@ -1,0 +1,18 @@
+{
+    "tool_name": "Business E-Mail Resolution",
+    "tool_description": "Unlock valuable data and make informed business decisions with just an email address.",
+    "home_url": "https://rapidapi.com/Implisense/api/business-e-mail-resolution/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/email/info",
+            "url": "https://business-e-mail-resolution.p.rapidapi.com/email/info",
+            "description": "Returns basic information for the company behind the given email address. IMPORTANT: This endpoint invokes real-time crawlings and calculations and the response time can be up to 10 seconds per call.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

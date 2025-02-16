@@ -1,0 +1,18 @@
+{
+    "tool_name": "danienguyen",
+    "tool_description": "Danie Nguyễn is an expert in live cockfighting betting with extensive experience and knowledge in raising high-quality fighting chickens.",
+    "home_url": "https://rapidapi.com/danienguyen/api/danienguyen/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "danienguyen",
+            "url": "https://danienguyen.p.rapidapi.com/",
+            "description": "This API provides insights and information related to live cockfighting betting and chicken raising expertise.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

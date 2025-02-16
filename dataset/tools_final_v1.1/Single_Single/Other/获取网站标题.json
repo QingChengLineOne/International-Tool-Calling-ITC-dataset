@@ -1,0 +1,25 @@
+{
+    "tool_name": "网站标题获取API",
+    "tool_description": "用于获取指定URL的网站标题信息",
+    "home_url": "https://api.aa1.cn/doc/title-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取网站标题",
+            "url": "https://v2.api-m.com/api/title",
+            "description": "根据提供的URL获取网站标题",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要获取标题的网站的URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

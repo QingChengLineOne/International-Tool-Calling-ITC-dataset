@@ -1,0 +1,18 @@
+{
+    "tool_name": "Verify PAN Aadhaar link",
+    "tool_description": "This tool helps reduce the risk of fraud on your platform by ensuring that only individuals whose PAN is linked with their Aadhaar are onboarded, in compliance with Indian laws. It minimizes manual efforts by providing a single API call to verify the existence of a PAN-Aadhaar link.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/verify-pan-aadhaar-link/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Verify PAN Aadhaar link",
+            "url": "https://verify-pan-aadhaar-link.p.rapidapi.com/v3/tasks/async/verify_with_source/pan_aadhaar_link",
+            "description": "This API checks if an individual's PAN is linked with their Aadhaar, helping to mitigate fraud risk.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

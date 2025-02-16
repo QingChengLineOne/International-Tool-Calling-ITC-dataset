@@ -1,0 +1,32 @@
+{
+    "tool_name": "成语查询API",
+    "tool_description": "查询成语信息",
+    "home_url": "https://api.aa1.cn/doc/cycx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "成语查询接口",
+            "url": "https://papi.oxoll.cn/API/cycx.php",
+            "description": "通过成语查询成语详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "idiom",
+                    "type": "string",
+                    "description": "要查询的成语",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，可选值：json, xml",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

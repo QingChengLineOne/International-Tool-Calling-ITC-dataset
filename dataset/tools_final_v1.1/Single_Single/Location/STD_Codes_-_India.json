@@ -1,0 +1,18 @@
+{
+    "tool_name": "STD Codes - India",
+    "tool_description": "Find an STD Code of any City or State of India OR find the location of any STD Code.",
+    "home_url": "https://rapidapi.com/navii/api/std-codes-india/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "SEARCH",
+            "url": "https://std.p.rapidapi.com/",
+            "description": "Retrieve the STD Code or Place Name based on user input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

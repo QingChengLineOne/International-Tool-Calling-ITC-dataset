@@ -1,0 +1,18 @@
+{
+    "tool_name": "nhadepluxcom",
+    "tool_description": "Nhà Đẹp Lux specializes in comprehensive consulting and construction design for villas, tube houses, apartment interiors, and turnkey house construction. With many years of experience in the construction field, Nhà Đẹp Lux is committed to providing customers with the best quality products at reasonable prices.",
+    "home_url": "https://rapidapi.com/nhadepluxcom/api/nhadepluxcom/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Nhà Đẹp Lux",
+            "url": "https://nhadepluxcom.p.rapidapi.com/",
+            "description": "This API provides access to the services offered by Nhà Đẹp Lux, including design and construction consulting for various types of buildings.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

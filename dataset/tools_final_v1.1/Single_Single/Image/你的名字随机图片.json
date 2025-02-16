@@ -1,0 +1,25 @@
+{
+    "tool_name": "你的名字随机图片",
+    "tool_description": "随机获取你的名字图片",
+    "home_url": "https://api.aa1.cn/doc/hywltd-img.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "你的名字随机图片API",
+            "url": "https://api.52hyjs.com/api/nidemingzi",
+            "description": "随机获取指定名字的图片",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "需要生成图片的名字",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,255 @@
+{
+    "tool_name": "Crypto Markets",
+    "tool_description": "Get all crypto markets data live, including price, trading volume, and market trends.",
+    "home_url": "https://rapidapi.com/herosAPI/api/crypto-markets/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Current Average Price",
+            "url": "https://crypto-markets.p.rapidapi.com/avgPrice",
+            "description": "Fetch the current average price of a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Kline/Candlestick Data",
+            "url": "https://crypto-markets.p.rapidapi.com/klines",
+            "description": "Retrieve historical candlestick data for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "interval",
+                    "type": "ENUM",
+                    "description": "The time interval for the candlestick data.",
+                    "default": ""
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "startTime",
+                    "type": "STRING",
+                    "description": "Start time for the data retrieval.",
+                    "default": ""
+                },
+                {
+                    "name": "endTime",
+                    "type": "STRING",
+                    "description": "End time for the data retrieval.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of data points to return. Default is 500; max is 1000.",
+                    "default": "500"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Compressed/Aggregate Trades List",
+            "url": "https://crypto-markets.p.rapidapi.com/aggTrades",
+            "description": "Get a list of compressed aggregate trades for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of trades to return. Default is 500; max is 1000.",
+                    "default": "500"
+                },
+                {
+                    "name": "fromId",
+                    "type": "STRING",
+                    "description": "Trade ID to fetch from, inclusive.",
+                    "default": ""
+                },
+                {
+                    "name": "endTime",
+                    "type": "STRING",
+                    "description": "Timestamp in milliseconds to get trades until, inclusive.",
+                    "default": ""
+                },
+                {
+                    "name": "startTime",
+                    "type": "STRING",
+                    "description": "Timestamp in milliseconds to get trades from, inclusive.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Exchange Information",
+            "url": "https://crypto-markets.p.rapidapi.com/exchangeInfo",
+            "description": "Retrieve current exchange trading rules and symbol information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Order Book",
+            "url": "https://crypto-markets.p.rapidapi.com/depth",
+            "description": "Get the current order book for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of order book entries to return. Default is 100; max is 5000. If limit exceeds 5000, response will truncate to 5000.",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Recent Trades List",
+            "url": "https://crypto-markets.p.rapidapi.com/trades",
+            "description": "Fetch a list of recent trades for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of trades to return. Default is 500; max is 1000.",
+                    "default": "500"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Old Trade Lookup",
+            "url": "https://crypto-markets.p.rapidapi.com/historicalTrades",
+            "description": "Retrieve older market trades for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The trading pair symbol for the cryptocurrency.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "fromId",
+                    "type": "STRING",
+                    "description": "Trade ID to fetch from. Default gets the most recent trades.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of trades to return. Default is 500; max is 1000.",
+                    "default": "500"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Symbol Order Book Ticker",
+            "url": "https://crypto-markets.p.rapidapi.com/ticker/bookTicker",
+            "description": "Get the order book ticker for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "If not specified, bookTickers for all symbols will be returned in an array.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Symbol Price Ticker",
+            "url": "https://crypto-markets.p.rapidapi.com/ticker/price",
+            "description": "Fetch the current price ticker for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "If not specified, prices for all symbols will be returned in an array.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "24hr Ticker Price Change Statistics",
+            "url": "https://crypto-markets.p.rapidapi.com/ticker/24hr",
+            "description": "Get 24-hour price change statistics for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "If not specified, tickers for all symbols will be returned in an array.",
+                    "default": "BTCUSDT"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

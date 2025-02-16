@@ -1,0 +1,130 @@
+{
+    "tool_name": "BlogsAPI",
+    "tool_description": "Get evergreen blogs for your mobile apps.",
+    "home_url": "https://rapidapi.com/encurate/api/blogsapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Latest Posts",
+            "url": "https://blogsapi.p.rapidapi.com/",
+            "description": "Retrieve all blogs ordered by the latest publication date first.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ordering",
+                    "type": "STRING",
+                    "description": "Specify the order of the blogs based on publication date.",
+                    "default": "-date_published"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Blogs by category",
+            "url": "https://blogsapi.p.rapidapi.com/",
+            "description": "Fetch all blogs from a specific category using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "NUMBER",
+                    "description": "The ID of the category to retrieve blogs from.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search Tags",
+            "url": "https://blogsapi.p.rapidapi.com/",
+            "description": "Get all blogs that include a specific tag.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tags__icontains",
+                    "type": "STRING",
+                    "description": "The tag to search for in the blogs.",
+                    "default": "luxury"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Single Category",
+            "url": "https://blogsapi.p.rapidapi.com/categories/",
+            "description": "Retrieve details of a single category, including its thumbnail and description.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the category to retrieve.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Categories",
+            "url": "https://blogsapi.p.rapidapi.com/categories/",
+            "description": "List all available categories from the BlogsAPI.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://blogsapi.p.rapidapi.com/",
+            "description": "Search for blogs using a specific keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The keyword to search for in the blogs.",
+                    "default": "luxurious"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Single blog",
+            "url": "https://blogsapi.p.rapidapi.com/",
+            "description": "Retrieve details of a single blog post using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the blog post to retrieve.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All blogs",
+            "url": "https://blogsapi.p.rapidapi.com/",
+            "description": "Retrieve all blogs, paginated in sets of 20.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

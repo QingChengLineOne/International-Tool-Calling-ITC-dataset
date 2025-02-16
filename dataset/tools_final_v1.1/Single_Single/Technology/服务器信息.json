@@ -1,0 +1,25 @@
+{
+    "tool_name": "服务器信息",
+    "tool_description": "提供服务器的基本信息，包括服务器名称、IP地址、操作系统等。",
+    "home_url": "https://api.aa1.cn/doc/777nxserve.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "服务器信息查询",
+            "url": "https://api.777nx.cn/api/serverinfo/?url=",
+            "description": "查询指定URL的服务器信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要查询的服务器URL",
+                    "default": "请输入服务器URL"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

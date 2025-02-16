@@ -1,0 +1,25 @@
+{
+    "tool_name": "汉字查询",
+    "tool_description": "输入汉字查询汉字信息",
+    "home_url": "https://api.aa1.cn/doc/hzcx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "汉字查询API",
+            "url": "https://papi.oxoll.cn/API/hzcx.php?word=",
+            "description": "通过汉字查询汉字的相关信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "要查询的汉字",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

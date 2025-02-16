@@ -1,0 +1,18 @@
+{
+    "tool_name": "Realistic Text to Speech",
+    "tool_description": "Experience the future of speech technology with our Realistic Text to Speech service! Transform written content into lifelike audio with unparalleled accuracy and naturalness. Our advanced AI-driven system ensures flawless pronunciation, intonation, and emotion, making every word come alive. Whether for e-learning, audiobooks, customer support, or accessibility needs, our Realistic Text to Speech service delivers a seamless and engaging audio experience like never before.",
+    "home_url": "https://rapidapi.com/ptwebsolution/api/realistic-text-to-speech/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Generate Text-to-Speech",
+            "url": "https://realistic-text-to-speech.p.rapidapi.com/v3/generate_voice_over_v2",
+            "description": "This API endpoint generates lifelike audio from the provided text input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

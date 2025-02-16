@@ -1,0 +1,25 @@
+{
+    "tool_name": "Atmosphere nitrous oxide levels",
+    "tool_description": "This API provides on a monthly basis, the amount of nitrous oxide in the atmosphere from 2001 to the present. Expressed as a mole fraction in dry air, parts per million (ppm).",
+    "home_url": "https://rapidapi.com/rene-mdd/api/atmosphere-nitrous-oxide-levels/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Nitrous endpoint",
+            "url": "https://atmosphere-nitrous-oxide-levels.p.rapidapi.com/api/nitrous-oxide-api",
+            "description": "This endpoint retrieves the current levels of nitrous oxide in the atmosphere.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "nitrous",
+                    "type": "OBJECT",
+                    "description": "An optional object to specify additional filters or parameters for the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

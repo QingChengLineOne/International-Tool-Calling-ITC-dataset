@@ -1,0 +1,69 @@
+{
+    "tool_name": "phonenumber-validator",
+    "tool_description": "Une API pour valider, corriger et donner des informations sur les numéros de téléphone en Nouvelle-Calédonie.",
+    "home_url": "https://rapidapi.com/opt-nc-opt-nc-default/api/phonenumber-validator/",
+    "country": "Nouvelle-Calédonie",
+    "api_list": [
+        {
+            "name": "Health",
+            "url": "https://phonenumber-validator.p.rapidapi.com/q/health",
+            "description": "Vérifie l'état de l'API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Type",
+            "url": "https://phonenumber-validator.p.rapidapi.com/validator/type/{phonenumber}",
+            "description": "Détermine le type d'un numéro de téléphone.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phoneNumber",
+                    "type": "string",
+                    "description": "Le numéro de téléphone à valider.",
+                    "default": "+687833421"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Info",
+            "url": "https://phonenumber-validator.p.rapidapi.com/validator/type/{phonenumber}",
+            "description": "Fournit toutes les informations sur le type de numéro de téléphone.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phoneNumber",
+                    "type": "string",
+                    "description": "Le numéro de téléphone à analyser.",
+                    "default": "+687833421"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Validator",
+            "url": "https://phonenumber-validator.p.rapidapi.com/validator/format/{phonenumber}",
+            "description": "Valide le format des numéros de téléphone.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phoneNumber",
+                    "type": "string",
+                    "description": "Le numéro de téléphone à valider.",
+                    "default": "+687833421"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

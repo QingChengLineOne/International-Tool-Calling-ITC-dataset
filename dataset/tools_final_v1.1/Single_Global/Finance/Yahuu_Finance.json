@@ -1,0 +1,218 @@
+{
+    "tool_name": "Yahuu Finance",
+    "tool_description": "Yahu Finance is an API project available on Rapid API that provides real-time stock quotes, historical prices, financial statements, news articles, and more for thousands of companies worldwide. With multiple endpoints and query parameters, developers can easily integrate this user-friendly and well-documented API into their projects for trading applications, financial analytics tools, or to keep track of favorite companies.",
+    "home_url": "https://rapidapi.com/asepscareer/api/yahuu-finance/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "stock split",
+            "url": "https://yahuu-finance.p.rapidapi.com/splits",
+            "description": "This endpoint provides information about the stock split of a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "dividends",
+            "url": "https://yahuu-finance.p.rapidapi.com/dividends",
+            "description": "This endpoint provides information about the dividend of a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get price custom date",
+            "url": "https://yahuu-finance.p.rapidapi.com/price-custom-date",
+            "description": "This endpoint provides stock price information within a specified timeframe.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get price period",
+            "url": "https://yahuu-finance.p.rapidapi.com/price",
+            "description": "This endpoint provides stock price information in a period.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get shares",
+            "url": "https://yahuu-finance.p.rapidapi.com/shares",
+            "description": "This endpoint provides the shares information about a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get news",
+            "url": "https://yahuu-finance.p.rapidapi.com/news",
+            "description": "This endpoint provides news information about a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get isin",
+            "url": "https://yahuu-finance.p.rapidapi.com/isin",
+            "description": "This endpoint provides the ISIN information of a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get summary",
+            "url": "https://yahuu-finance.p.rapidapi.com/summary",
+            "description": "The 'summary' endpoint provides key information about recent market prices.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get detail info",
+            "url": "https://yahuu-finance.p.rapidapi.com/detail-info",
+            "description": "This endpoint provides detailed information about a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get info",
+            "url": "https://yahuu-finance.p.rapidapi.com/info",
+            "description": "This endpoint provides up-to-date data for a stock.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get insider transactions",
+            "url": "https://yahuu-finance.p.rapidapi.com/insider-transactions",
+            "description": "This endpoint provides data on transactions made by insiders.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get statistics",
+            "url": "https://yahuu-finance.p.rapidapi.com/statistics",
+            "description": "This endpoint provides statistics data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get key executives",
+            "url": "https://yahuu-finance.p.rapidapi.com/key-executives",
+            "description": "This endpoint provides key executives data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get product involvement areas",
+            "url": "https://yahuu-finance.p.rapidapi.com/product-involvement-areas",
+            "description": "This endpoint provides product involvement areas data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get analysis",
+            "url": "https://yahuu-finance.p.rapidapi.com/analysis",
+            "description": "This endpoint provides analysis data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get historical data",
+            "url": "https://yahuu-finance.p.rapidapi.com/price-history",
+            "description": "This endpoint contains stock information for the last 100 days.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get insider roster",
+            "url": "https://yahuu-finance.p.rapidapi.com/insider-roster",
+            "description": "This endpoint provides insider roster data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get esg data",
+            "url": "https://yahuu-finance.p.rapidapi.com/esg-data",
+            "description": "This endpoint provides ESG data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get holders",
+            "url": "https://yahuu-finance.p.rapidapi.com/holders",
+            "description": "This endpoint contains shareholder information per category.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get options",
+            "url": "https://yahuu-finance.p.rapidapi.com/options",
+            "description": "This endpoint provides options data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get financials",
+            "url": "https://yahuu-finance.p.rapidapi.com/financials",
+            "description": "This endpoint provides data information about balance sheet, income statement, and cash flow.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

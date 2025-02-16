@@ -1,0 +1,25 @@
+{
+    "tool_name": "语录 · 动漫一言",
+    "tool_description": "随机输出一条动漫一言",
+    "home_url": "https://api.aa1.cn/doc/dm.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "动漫一言API",
+            "url": "https://api.52vmy.cn/api/wl/yan/dm",
+            "description": "随机获取动漫一言",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "输出类型，可选参数，默认为text",
+                    "default": "text"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

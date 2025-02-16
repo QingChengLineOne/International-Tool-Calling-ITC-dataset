@@ -1,0 +1,44 @@
+{
+    "tool_name": "垃圾分类",
+    "tool_description": "根据废弃物名称查询其垃圾分类信息",
+    "home_url": "https://api.qqsuu.cn/doc/dm-lajifenlei.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "垃圾分类",
+            "url": "https://api.qqsuu.cn/api/dm-lajifenlei",
+            "description": "根据废弃物名称查询其垃圾分类信息",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "废弃物名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "mode",
+                    "type": "int",
+                    "description": "查询模式，0模糊查询[默认]、1精确查询",
+                    "default": "0"
+                },
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "返回数量",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "翻页",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

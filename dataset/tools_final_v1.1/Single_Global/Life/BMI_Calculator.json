@@ -1,0 +1,18 @@
+{
+    "tool_name": "BMI Calculator",
+    "tool_description": "The most descriptive and accurate BMI Calculator API available on the internet!",
+    "home_url": "https://rapidapi.com/navii/api/bmi-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "BMI",
+            "url": "https://bmi.p.rapidapi.com/",
+            "description": "Calculates the Body Mass Index (BMI) based on user input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

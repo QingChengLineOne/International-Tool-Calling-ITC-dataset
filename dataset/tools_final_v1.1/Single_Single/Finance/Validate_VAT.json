@@ -1,0 +1,25 @@
+{
+    "tool_name": "Validate VAT",
+    "tool_description": "Verifies EU & GB VAT Numbers and retrieves company information, including address details.",
+    "home_url": "https://rapidapi.com/api-tier1-apitier-team/api/validate-vat/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "Validate VAT",
+            "url": "https://validate-vat.p.rapidapi.com/v1/validate",
+            "description": "Validates VAT numbers and retrieves associated company information, including address details for each VAT number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vat_number",
+                    "type": "STRING",
+                    "description": "The VAT number to be validated.",
+                    "default": "IE6388047V"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

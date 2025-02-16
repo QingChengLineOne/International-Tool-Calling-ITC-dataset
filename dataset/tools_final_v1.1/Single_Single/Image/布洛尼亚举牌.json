@@ -1,0 +1,25 @@
+{
+    "tool_name": "布洛尼亚举牌API",
+    "tool_description": "输入文字，生成一张布洛尼亚举牌的图片",
+    "home_url": "https://api.aa1.cn/doc/blnyjp-s1f.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "布洛尼亚举牌生成API",
+            "url": "https://api.s1f.top/meme/bronyajupai",
+            "description": "使用GET请求，通过指定文本生成布洛尼亚举牌图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要生成布洛尼亚举牌的文本内容",
+                    "default": "默认文本"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

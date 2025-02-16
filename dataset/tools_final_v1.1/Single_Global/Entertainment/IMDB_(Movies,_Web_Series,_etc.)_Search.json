@@ -1,0 +1,25 @@
+{
+    "tool_name": "IMDB (Movies, Web Series, etc.) Search",
+    "tool_description": "An online database providing information related to films, television series, home videos, video games, and streaming content. It includes details such as cast, production crew, personal biographies, plot summaries, trivia, ratings, and both fan and critical reviews.",
+    "home_url": "https://rapidapi.com/rahilkhan224/api/imdb-movies-web-series-etc-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search anything on imdb api",
+            "url": "https://imdb-movies-web-series-etc-search.p.rapidapi.com/{search_query}",
+            "description": "Allows users to search for any movie, web series, or related title on IMDB by entering the title.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The title of the movie or web series to search for. It is **very important** to add **.json** as a suffix to every search_query to avoid errors. For example, if searching for 'salman', the query should be 'salman.json'.",
+                    "default": "thegodfather.json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

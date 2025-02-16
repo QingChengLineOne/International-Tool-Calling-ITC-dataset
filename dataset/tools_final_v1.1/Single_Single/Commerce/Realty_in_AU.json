@@ -1,0 +1,225 @@
+{
+    "tool_name": "Realty in AU",
+    "tool_description": "This API helps to query properties for sale, rent, sold, etc. in Australia, enabling the creation of real estate applications similar to realestate.com.au.",
+    "home_url": "https://rapidapi.com/apidojo/api/realty-in-au/",
+    "country": "Australia",
+    "api_list": [
+        {
+            "name": "schools/list",
+            "url": "https://realty-in-au.p.rapidapi.com/schools/list",
+            "description": "List schools around a specified geographical location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "The latitude of the geographical location.",
+                    "default": "-37.79870933"
+                },
+                {
+                    "name": "lon",
+                    "type": "STRING",
+                    "description": "The longitude of the geographical location.",
+                    "default": "144.95324086"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "properties/list",
+            "url": "https://realty-in-au.p.rapidapi.com/properties/list",
+            "description": "List properties with various options and filters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "searchLocation",
+                    "type": "STRING",
+                    "description": "The value of the text field returned in the auto-complete endpoint.",
+                    "default": "Melbourne City - Greater Region, VIC"
+                },
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "Specify one of the following: buy, rent, or sold.",
+                    "default": "buy"
+                },
+                {
+                    "name": "searchLocationSubtext",
+                    "type": "STRING",
+                    "description": "The value of the subtext field returned in the auto-complete endpoint.",
+                    "default": "Region"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The value of the region field returned in the auto-complete endpoint.",
+                    "default": "region"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "keywords",
+                    "type": "STRING",
+                    "description": "Facilities you are looking for, separated by commas for multiple options (e.g., pool, garage).",
+                    "default": ""
+                },
+                {
+                    "name": "minimumBedrooms",
+                    "type": "NUMBER",
+                    "description": "Minimum number of bedrooms required.",
+                    "default": ""
+                },
+                {
+                    "name": "minimumCars",
+                    "type": "NUMBER",
+                    "description": "Minimum number of car spaces required.",
+                    "default": ""
+                },
+                {
+                    "name": "maximumBedrooms",
+                    "type": "NUMBER",
+                    "description": "Maximum number of bedrooms allowed.",
+                    "default": ""
+                },
+                {
+                    "name": "maximumPrice",
+                    "type": "NUMBER",
+                    "description": "Maximum price limit for the property.",
+                    "default": ""
+                },
+                {
+                    "name": "surroundingSuburbs",
+                    "type": "BOOLEAN",
+                    "description": "Include surrounding suburbs in the search.",
+                    "default": "true"
+                },
+                {
+                    "name": "minimumPrice",
+                    "type": "NUMBER",
+                    "description": "Minimum price limit for the property.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "propertyTypes",
+                    "type": "STRING",
+                    "description": "Specify property types to include (e.g., townhouse, house).",
+                    "default": ""
+                },
+                {
+                    "name": "constructionStatus",
+                    "type": "STRING",
+                    "description": "Specify construction status (e.g., established, new).",
+                    "default": ""
+                },
+                {
+                    "name": "minimumBathroom",
+                    "type": "NUMBER",
+                    "description": "Minimum number of bathrooms required.",
+                    "default": ""
+                },
+                {
+                    "name": "sortType",
+                    "type": "STRING",
+                    "description": "Specify sorting type (e.g., relevance, price-asc).",
+                    "default": "relevance"
+                },
+                {
+                    "name": "ex-under-contract",
+                    "type": "BOOLEAN",
+                    "description": "Include properties that are under contract.",
+                    "default": "false"
+                },
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "Number of items returned per response (max is 30).",
+                    "default": "30"
+                },
+                {
+                    "name": "minimumLandSize",
+                    "type": "NUMBER",
+                    "description": "Minimum land size in square meters.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "properties/detail",
+            "url": "https://realty-in-au.p.rapidapi.com/properties/detail",
+            "description": "Get detailed information of a specific property.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The value of 'listingId' from the properties/list endpoint or 'id' from the auto-complete endpoint.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "properties/lookup (Deprecating)",
+            "url": "https://realty-in-au.p.rapidapi.com/properties/lookup",
+            "description": "Look for off-market property by ID. Use properties/v2/lookup endpoint instead for more data.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The value of 'id' from the auto-complete endpoint with display as 'Property history'.",
+                    "default": "8270909"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "properties/v2/lookup",
+            "url": "https://realty-in-au.p.rapidapi.com/properties/v2/lookup",
+            "description": "Look for off-market property by ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The value of 'id' from the auto-complete endpoint with display as 'Property history'.",
+                    "default": "6041048"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "auto-complete",
+            "url": "https://realty-in-au.p.rapidapi.com/auto-complete",
+            "description": "Get suggestions based on a term or phrase, which can be used with the properties/list endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Any term or phrase, such as an address, to get the property ID for use with the properties/detail endpoint.",
+                    "default": "sydney"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

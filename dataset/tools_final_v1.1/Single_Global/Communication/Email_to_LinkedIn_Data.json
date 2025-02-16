@@ -1,0 +1,25 @@
+{
+    "tool_name": "Email to LinkedIn Data",
+    "tool_description": "Retrieve LinkedIn data associated with a given email address. If the email corresponds to a LinkedIn user, the API returns information such as the user's name, profile photo, occupation, educational background, and work history.",
+    "home_url": "https://rapidapi.com/appaio/api/email-to-linkedin-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search by Email",
+            "url": "https://email-to-linkedin-data.p.rapidapi.com/",
+            "description": "Submit an email address to obtain LinkedIn data if the user is found on the platform.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to search for on LinkedIn.",
+                    "default": "p_kat@casema.nl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Linkedin Profile Data",
+    "tool_description": "Returns a JSON Profile data from a Linkedin ID, allowing users to retrieve detailed information about LinkedIn profiles.",
+    "home_url": "https://rapidapi.com/apis-world-apis-world-default/api/linkedin-profile-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Profile Data",
+            "url": "https://linkedin-profile-data.p.rapidapi.com/linkedin-data",
+            "description": "Fetches a JSON representation of a LinkedIn profile based on the provided LinkedIn URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The LinkedIn profile URL to retrieve data from.",
+                    "default": "https://www.linkedin.com/in/williamhgates"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

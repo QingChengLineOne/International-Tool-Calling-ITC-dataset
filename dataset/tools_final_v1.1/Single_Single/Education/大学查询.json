@@ -1,0 +1,25 @@
+{
+    "tool_name": "大学查询API",
+    "tool_description": "查询大学学校信息",
+    "home_url": "https://api.aa1.cn/doc/daxue.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查询大学学校信息",
+            "url": "https://api.52vmy.cn/api/query/daxue",
+            "description": "通过大学名称查询学校详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "daxue",
+                    "type": "string",
+                    "description": "需要查询的大学名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

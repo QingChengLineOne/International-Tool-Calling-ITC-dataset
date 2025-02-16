@@ -1,0 +1,25 @@
+{
+    "tool_name": "头像框生成API",
+    "tool_description": "为用户提供多种炫酷的头像框样式生成服务",
+    "home_url": "https://api.aa1.cn/doc/Avatarframegeneration.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "头像框生成接口",
+            "url": "http://api.wxsszs.cn/api/tksc.php",
+            "description": "通过该接口可以生成不同样式的头像框",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "QQ号码，用于生成头像框",
+                    "default": "用户指定的QQ号码"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

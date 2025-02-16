@@ -1,0 +1,110 @@
+{
+    "tool_name": "ProxyCrawl Crawling",
+    "tool_description": "The Crawling API allows for fast and efficient web crawling and scraping while staying anonymous. This API can be easily integrated with your favorite language or framework.",
+    "home_url": "https://rapidapi.com/proxycrawl/api/proxycrawl-crawling/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/",
+            "url": "https://proxycrawl-crawling.p.rapidapi.com/",
+            "description": "Crawls and Scrapes the Web with a given URL.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "A url to crawl. Make sure it starts with http or https and that is fully encoded.",
+                    "default": "https://httpbin.org/post"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Indicates the response format, either json or html. Defaults to html. If format html is used, ProxyCrawl will send you back the response parameters in the headers.",
+                    "default": ""
+                },
+                {
+                    "name": "cookies",
+                    "type": "STRING",
+                    "description": "If you need to send cookies to the original website, you can use the &cookies=EncodedCookies parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "scraper",
+                    "type": "STRING",
+                    "description": "Returns back the information parsed according to the specified scraper. Check the list of all the available data scrapers to see which one to choose.",
+                    "default": ""
+                },
+                {
+                    "name": "autoparse",
+                    "type": "BOOLEAN",
+                    "description": "If you need to get the scraped data of the page that you requested, you can pass &autoparse=true parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "request_headers",
+                    "type": "STRING",
+                    "description": "If you need to send request headers to the original website, you can use the &request_headers=EncodedRequestHeaders parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "cookies_session",
+                    "type": "STRING",
+                    "description": "If you need to send the cookies that come back on every request to all subsequent calls, you can use the &cookies_session= parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "get_cookies",
+                    "type": "BOOLEAN",
+                    "description": "If you need to get the cookies that the original website sets on the response, you can use the &get_cookies=true parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "tor_network",
+                    "type": "BOOLEAN",
+                    "description": "If you want to crawl onion websites over the Tor network, you can pass the &tor_network=true parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "user_agent",
+                    "type": "STRING",
+                    "description": "Make the request with a custom user agent.",
+                    "default": ""
+                },
+                {
+                    "name": "proxy_session",
+                    "type": "STRING",
+                    "description": "If you need to use the same proxy for subsequent requests, you can use the &proxy_session= parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "get_headers",
+                    "type": "BOOLEAN",
+                    "description": "If you need to get the headers that the original website sets on the response, you can use the &get_headers=true parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "store",
+                    "type": "STRING",
+                    "description": "Stores a copy of the API response in the ProxyCrawl Cloud Storage.",
+                    "default": ""
+                },
+                {
+                    "name": "device",
+                    "type": "STRING",
+                    "description": "If you don't want to specify a user_agent but you want to have the requests from a specific device, you can use this parameter.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "If you want your requests to be geolocated from a specific country, you can use the &country= parameter.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

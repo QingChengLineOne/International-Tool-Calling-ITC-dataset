@@ -1,0 +1,58 @@
+{
+    "tool_name": "Exchange Rate API",
+    "tool_description": "A simple REST API that provides access to most of the world’s exchange rates and currency conversion. It updates every few minutes and is easy to use.",
+    "home_url": "https://rapidapi.com/juhestudio-juhestudio-default/api/exchange-rate-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Latest rates",
+            "url": "https://exchange-rate-api1.p.rapidapi.com/latest",
+            "description": "Fetch the latest foreign exchange reference rates. This endpoint returns exchange rate data that updates every minute.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "The currency code to use as the base currency for conversion.",
+                    "default": "USD"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Supported Codes",
+            "url": "https://exchange-rate-api1.p.rapidapi.com/codes",
+            "description": "Retrieve a list of currencies that are supported by the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Convert currency",
+            "url": "https://exchange-rate-api1.p.rapidapi.com/convert",
+            "description": "Convert between two specific currencies using their three-letter currency codes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "target",
+                    "type": "STRING",
+                    "description": "The three-letter currency code of the currency you would like to convert to.",
+                    "default": "JPY"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "The three-letter currency code of the currency you would like to convert from.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

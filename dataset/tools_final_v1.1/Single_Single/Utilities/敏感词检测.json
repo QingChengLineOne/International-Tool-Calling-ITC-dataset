@@ -1,0 +1,25 @@
+{
+    "tool_name": "敏感词检测",
+    "tool_description": "检测文本中是否存在敏感词的API",
+    "home_url": "https://www.free-api.com/doc/605",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "敏感词检测API",
+            "url": "https://v.api.aa1.cn/api/api-mgc/index.php",
+            "description": "输入文本，返回是否包含敏感词的信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "要检测的文本",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

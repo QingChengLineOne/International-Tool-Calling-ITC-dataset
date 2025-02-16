@@ -1,0 +1,97 @@
+{
+    "tool_name": "Tradingview TA API (Technical Analysis)",
+    "tool_description": "Tradingview API for technical analysis, providing access to various indicators, oscillators, and summaries for market analysis.",
+    "home_url": "https://rapidapi.com/cavsn/api/tradingview-ta-api-technical-analysis/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Symbols From Exchange",
+            "url": "https://tradingview-ta-api-technical-analysis.p.rapidapi.com/get_symbols_from_exchange",
+            "description": "Retrieve a list of symbols available on a specified exchange.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "exchange",
+                    "type": "STRING",
+                    "description": "The stock exchange from which to retrieve symbols.",
+                    "default": "NASDAQ"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Analysis From Symbol",
+            "url": "https://tradingview-ta-api-technical-analysis.p.rapidapi.com/get_analysis_from_symbol",
+            "description": "Obtain technical analysis data for a specific symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "screener",
+                    "type": "STRING",
+                    "description": "The screener to use for analysis.",
+                    "default": "america"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol to analyze.",
+                    "default": "TSLA"
+                },
+                {
+                    "name": "interval",
+                    "type": "STRING",
+                    "description": "The time interval for the analysis.",
+                    "default": "1W"
+                },
+                {
+                    "name": "exchange",
+                    "type": "STRING",
+                    "description": "The exchange where the symbol is listed.",
+                    "default": "NASDAQ"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Exchanges From Screener",
+            "url": "https://tradingview-ta-api-technical-analysis.p.rapidapi.com/get_exchanges_from_screener",
+            "description": "Fetch a list of exchanges available for a specified screener.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "screener",
+                    "type": "STRING",
+                    "description": "The screener to retrieve exchanges from.",
+                    "default": "america"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Screeners",
+            "url": "https://tradingview-ta-api-technical-analysis.p.rapidapi.com/get_screeners",
+            "description": "Get a list of available screeners for market analysis.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Intervals",
+            "url": "https://tradingview-ta-api-technical-analysis.p.rapidapi.com/get_intervals",
+            "description": "Retrieve valid time intervals for analysis.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

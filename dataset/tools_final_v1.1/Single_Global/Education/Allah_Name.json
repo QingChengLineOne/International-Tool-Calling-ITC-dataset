@@ -1,0 +1,18 @@
+{
+    "tool_name": "Allah Name",
+    "tool_description": "99 names of Allah presented in both Arabic and English, along with explanations and benefits for each name.",
+    "home_url": "https://rapidapi.com/clock7666/api/allah-name/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get",
+            "url": "https://allah-name.p.rapidapi.com/name",
+            "description": "Retrieve all names of Allah along with their explanations and benefits.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

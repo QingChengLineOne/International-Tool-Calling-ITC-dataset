@@ -1,0 +1,18 @@
+{
+    "tool_name": "DaddyJokes",
+    "tool_description": "The Dad Joke API with over 700+ Dad jokes! Get random endless dad jokes!",
+    "home_url": "https://rapidapi.com/Bmbus/api/daddyjokes/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Random",
+            "url": "https://daddyjokes.p.rapidapi.com/random",
+            "description": "Get a random dad joke.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

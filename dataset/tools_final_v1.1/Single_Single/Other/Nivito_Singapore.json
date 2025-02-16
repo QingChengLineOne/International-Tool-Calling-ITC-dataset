@@ -1,0 +1,18 @@
+{
+    "tool_name": "Nivito Singapore",
+    "tool_description": "Your kitchen is the heart of your home, so why not make it as beautiful as it can be? With a Nivito kitchen faucet, you can have the perfect balance of form and function. This stunning kitchen faucet has a sleek, modern design that will complement any kitchen décor. It is built to last, with durable construction and a finish that resists tarnishing and corrosion. The faucet also features a convenient pull-down sprayer for all your cleaning and cooking needs.",
+    "home_url": "https://rapidapi.com/nivito-singapore-nivito-singapore-default/api/nivito-singapore/",
+    "country": "Singapore",
+    "api_list": [
+        {
+            "name": "Your kitchen is the heart of your home",
+            "url": "https://nivito-singapore.p.rapidapi.com/",
+            "description": "This API provides information about the Nivito kitchen faucet, highlighting its design, durability, and functionality.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

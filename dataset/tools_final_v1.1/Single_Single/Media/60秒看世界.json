@@ -1,0 +1,18 @@
+{
+    "tool_name": "60秒看世界",
+    "tool_description": "每天60秒读懂世界",
+    "home_url": "https://api.aa1.cn/doc/60s.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "60秒看世界API",
+            "url": "https://api.52vmy.cn/api/wl/60s",
+            "description": "获取每日60秒看世界的内容",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

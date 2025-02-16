@@ -1,0 +1,25 @@
+{
+    "tool_name": "Text Sentiment Analysis",
+    "tool_description": "Introducing the Sentiment Analysis API by Pizza API - a cutting-edge tool that provides instant sentiment analysis of any given text. With this API, you can easily determine whether a piece of text is positive, negative, or neutral in tone. The API uses advanced natural language processing techniques to analyze text and provide accurate results in real-time.",
+    "home_url": "https://rapidapi.com/raajreact/api/text-sentiment-analysis4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Text Sentiment Analysis",
+            "url": "https://text-sentiment-analysis4.p.rapidapi.com/sentiment",
+            "description": "Analyse the Sentiment of the given text context",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text you want to analyze for sentiment.",
+                    "default": "have a good day"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

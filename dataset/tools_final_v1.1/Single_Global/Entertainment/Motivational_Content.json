@@ -1,0 +1,88 @@
+{
+    "tool_name": "Motivational Content",
+    "tool_description": "Get motivational quotes and motivational pictures.",
+    "home_url": "https://rapidapi.com/shahmir049/api/motivational-content/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get a Specific Quote",
+            "url": "https://motivational-content.p.rapidapi.com/quotes/{id}",
+            "description": "This endpoint fetches a specific quote using the provided 'id'.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the quote.",
+                    "default": "4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Motivational Quotes",
+            "url": "https://motivational-content.p.rapidapi.com/quotes",
+            "description": "This endpoint fetches all the motivational quotes. Pagination can be done using the 'skip' and 'limit' parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "skip",
+                    "type": "NUMBER",
+                    "description": "The number of quotes to skip for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of quotes to return.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a Specific Picture",
+            "url": "https://motivational-content.p.rapidapi.com/pics/{id}",
+            "description": "This endpoint fetches a specific motivational picture according to the given id.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the motivational picture.",
+                    "default": "2710271472860038475"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Motivational Pictures",
+            "url": "https://motivational-content.p.rapidapi.com/pics",
+            "description": "This endpoint fetches all the motivational pictures. Pagination can be done using 'skip' and 'limit' parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of pictures to return.",
+                    "default": ""
+                },
+                {
+                    "name": "skip",
+                    "type": "NUMBER",
+                    "description": "The number of pictures to skip for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "[新]QQ最高音质音乐",
+    "tool_description": "可点选QQ付费歌曲，返回最高品质的歌曲地址",
+    "home_url": "https://api.aa1.cn/doc/QQmusic_SQ.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ最高音质音乐API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_qqmusic_SQ.php",
+            "description": "提供QQ付费歌曲的最高音质音乐地址查询服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要查询的歌曲名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "可选参数，用于控制查询结果的数量",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "可选参数，用于指定返回结果的格式，例如：text或json",
+                    "default": "text"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

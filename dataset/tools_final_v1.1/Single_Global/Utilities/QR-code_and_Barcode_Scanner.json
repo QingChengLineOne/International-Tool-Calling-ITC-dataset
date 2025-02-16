@@ -1,0 +1,278 @@
+{
+    "tool_name": "QR-code and Barcode Scanner",
+    "tool_description": "PresentID QR-Code & Barcode scanner API can scan both QR code and barcode.",
+    "home_url": "https://rapidapi.com/PresentID/api/qr-code-and-barcode-scanner/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "FileUpload",
+            "url": "https://qr-code-and-barcode-scanner.p.rapidapi.com/ScanCode",
+            "description": "This API allows you to send data via Base64, an image URL, or an image file to scan QR codes and barcodes. The image size should not exceed 8 MB, and dimensions must be between 50 and 5000 pixels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "image",
+                    "type": "BINARY",
+                    "description": "The image file to be scanned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "codeType": {
+                                    "type": "string"
+                                },
+                                "allFields": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "fieldName": {
+                                                "type": "string"
+                                            },
+                                            "fieldType": {
+                                                "type": "string"
+                                            },
+                                            "fieldValue": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "codeArea": {
+                                    "type": "object",
+                                    "properties": {
+                                        "x0": {
+                                            "type": "integer"
+                                        },
+                                        "y0": {
+                                            "type": "integer"
+                                        },
+                                        "x1": {
+                                            "type": "integer"
+                                        },
+                                        "y1": {
+                                            "type": "integer"
+                                        },
+                                        "x2": {
+                                            "type": "integer"
+                                        },
+                                        "y2": {
+                                            "type": "integer"
+                                        },
+                                        "x3": {
+                                            "type": "integer"
+                                        },
+                                        "y3": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "LinkFile",
+            "url": "https://qr-code-and-barcode-scanner.p.rapidapi.com/ScanCode",
+            "description": "This API allows you to send a link to an image file for scanning QR codes and barcodes. The image size should not exceed 8 MB, and dimensions must be between 50 and 5000 pixels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "linkFile",
+                    "type": "STRING",
+                    "description": "The URL of the image file to be scanned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "codeType": {
+                                    "type": "string"
+                                },
+                                "allFields": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "fieldName": {
+                                                "type": "string"
+                                            },
+                                            "fieldType": {
+                                                "type": "string"
+                                            },
+                                            "fieldValue": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "codeArea": {
+                                    "type": "object",
+                                    "properties": {
+                                        "x0": {
+                                            "type": "integer"
+                                        },
+                                        "y0": {
+                                            "type": "integer"
+                                        },
+                                        "x1": {
+                                            "type": "integer"
+                                        },
+                                        "y1": {
+                                            "type": "integer"
+                                        },
+                                        "x2": {
+                                            "type": "integer"
+                                        },
+                                        "y2": {
+                                            "type": "integer"
+                                        },
+                                        "x3": {
+                                            "type": "integer"
+                                        },
+                                        "y3": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Base64",
+            "url": "https://qr-code-and-barcode-scanner.p.rapidapi.com/ScanCode",
+            "description": "This API allows you to send a Base64 encoded image for scanning QR codes and barcodes. The image size should not exceed 8 MB, and dimensions must be between 50 and 5000 pixels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "imageBase64",
+                    "type": "STRING",
+                    "description": "The Base64 encoded image to be scanned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "codeType": {
+                                    "type": "string"
+                                },
+                                "allFields": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "fieldName": {
+                                                "type": "string"
+                                            },
+                                            "fieldType": {
+                                                "type": "string"
+                                            },
+                                            "fieldValue": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "codeArea": {
+                                    "type": "object",
+                                    "properties": {
+                                        "x0": {
+                                            "type": "integer"
+                                        },
+                                        "y0": {
+                                            "type": "integer"
+                                        },
+                                        "x1": {
+                                            "type": "integer"
+                                        },
+                                        "y1": {
+                                            "type": "integer"
+                                        },
+                                        "x2": {
+                                            "type": "integer"
+                                        },
+                                        "y2": {
+                                            "type": "integer"
+                                        },
+                                        "x3": {
+                                            "type": "integer"
+                                        },
+                                        "y3": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "tool_name": "VinHub",
+    "tool_description": "Provide popular vehicle history reports for cars from USA & Canada",
+    "home_url": "https://rapidapi.com/VinHub/api/vinhub/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Balance",
+            "url": "https://vinhub.p.rapidapi.com/account/",
+            "description": "Check your balance",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Check",
+            "url": "https://vinhub.p.rapidapi.com/{report}/WBAYA6C58DD143543",
+            "description": "Check if report exists",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "string",
+                    "description": "The Vehicle Identification Number to check",
+                    "default": "WBAYA6C58DD143543"
+                },
+                {
+                    "name": "report",
+                    "type": "ENUM",
+                    "description": "Type of report to check",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Orders",
+            "url": "https://vinhub.p.rapidapi.com/account/orders",
+            "description": "Get run orders",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Run",
+            "url": "https://vinhub.p.rapidapi.com/{report}/WBAYA6C58DD143543/run",
+            "description": "Run Checked Report",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "string",
+                    "description": "The Vehicle Identification Number for the report",
+                    "default": "WBAYA6C58DD143543"
+                },
+                {
+                    "name": "report",
+                    "type": "ENUM",
+                    "description": "Type of report to run",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Signup",
+            "url": "https://vinhub.p.rapidapi.com/account/create",
+            "description": "Create X-AUTH-TOKEN",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email address for account creation",
+                    "default": "email@example.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Student",
+    "tool_description": "An API to retrieve information about students.",
+    "home_url": "https://rapidapi.com/ronaldhector32/api/student22/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "students",
+            "url": "https://student22.p.rapidapi.com/students",
+            "description": "Fetches a list of all students.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

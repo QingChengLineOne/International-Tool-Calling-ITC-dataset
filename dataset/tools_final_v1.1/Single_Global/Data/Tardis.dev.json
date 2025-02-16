@@ -1,0 +1,25 @@
+{
+    "tool_name": "Tardis.dev",
+    "tool_description": "The most granular data for cryptocurrency markets — tick-level L2 & L3 order book updates, tick-by-tick trades, quotes, open interest, funding rates, liquidations, options chains and more.",
+    "home_url": "https://rapidapi.com/Tardis-Thad/api/tardis-dev/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Exchanges",
+            "url": "https://tardis-dev.p.rapidapi.com/exchanges/{exchange}",
+            "description": "Gets the exchanges details: available symbols, availability dates, available channels, CSV datasets info, incidents etc.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "exchange",
+                    "type": "ENUM",
+                    "description": "The specific exchange to retrieve details for.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

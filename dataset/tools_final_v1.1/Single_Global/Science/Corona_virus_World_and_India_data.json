@@ -1,0 +1,104 @@
+{
+    "tool_name": "Corona virus World and India data",
+    "tool_description": "This API provides COVID-19 data for countries worldwide and India, including statistics on cases, deaths, and recoveries. Note that this API has been deprecated since August 13, 2021.",
+    "home_url": "https://rapidapi.com/spamakashrajtech/api/corona-virus-world-and-india-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "COVID-19 World data country wise",
+            "url": "https://corona-virus-world-and-india-data.p.rapidapi.com/api",
+            "description": "Fetches COVID-19 statistics for countries worldwide.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "India Timeline data starting from 30th Jan 2020",
+            "url": "https://corona-virus-world-and-india-data.p.rapidapi.com/api_india_timeline",
+            "description": "Provides a timeline of COVID-19 data in India starting from January 30, 2020.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "COVID-19 India data state and district wise",
+            "url": "https://corona-virus-world-and-india-data.p.rapidapi.com/api_india",
+            "description": "Retrieves COVID-19 statistics for India, broken down by state and district.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

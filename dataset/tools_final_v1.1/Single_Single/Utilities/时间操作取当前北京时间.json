@@ -1,0 +1,37 @@
+{
+    "tool_name": "时间操作[取当前北京时间]",
+    "tool_description": "获取当前北京时间，时间戳等格式。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/getapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "时间操作[取当前北京时间] API",
+            "url": "https://cn.apihz.cn/api/time/getapi.php",
+            "description": "提供当前北京时间的接口，包括标准时间、时间戳等格式",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口唯一标识符，由接口盒子提供",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口密钥，由接口盒子提供",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "时间格式类型，1为标准时间，2为时间戳",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

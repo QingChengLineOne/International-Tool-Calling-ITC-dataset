@@ -1,0 +1,18 @@
+{
+    "tool_name": "Age Detector",
+    "tool_description": "Age detection can be a challenging problem due to the variations in the aging of every individual depending on one’s health, lifestyle, etc. Analyzing the face of humans using computer vision can help estimate the age of humans as the face holds most of the important attributes showing the age of a person. The model estimates a person’s age from a picture.",
+    "home_url": "https://rapidapi.com/smartclick-smartclick-default/api/age-detector/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Age detection from image",
+            "url": "https://age-detector.p.rapidapi.com/age-detection",
+            "description": "This API endpoint allows users to submit an image and receive an estimated age based on facial analysis.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

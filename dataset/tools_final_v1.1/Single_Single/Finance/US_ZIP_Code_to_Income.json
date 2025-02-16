@@ -1,0 +1,25 @@
+{
+    "tool_name": "US ZIP Code to Income",
+    "tool_description": "Get ZIP code level individual per-capita USD/yr income data in the US. Useful in LTV & user valuation modeling.",
+    "home_url": "https://rapidapi.com/businessdatasets-businessdatasets-default/api/us-zip-code-to-income/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "ZIP code",
+            "url": "https://us-zip-code-to-income.p.rapidapi.com/",
+            "description": "Retrieve income data based on a specific ZIP code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "zip",
+                    "type": "NUMBER",
+                    "description": "The ZIP code for which to retrieve income data.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

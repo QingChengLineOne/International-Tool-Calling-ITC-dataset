@@ -1,0 +1,69 @@
+{
+    "tool_name": "Islam & AI API",
+    "tool_description": "Islam & AI API for Islamic ChatBot. The Best AI for Islam!",
+    "home_url": "https://rapidapi.com/alizahidrajaa/api/islam-ai-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Have a Chat with our Bot",
+            "url": "https://islam-ai-api.p.rapidapi.com/api/chat",
+            "description": "Engage in a conversation with our Islam&AI Bot, which retains your previous conversation history (up to 30 texts).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "question",
+                    "type": "STRING",
+                    "description": "The question you want to ask the bot.",
+                    "default": "What is Islam?"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "chatHistory",
+                    "type": "STRING",
+                    "description": "Previous chat history to provide context for the conversation.",
+                    "default": "What is Dua to recite when you see a miraculous thing like Islam & AI? | There is no specific dua (supplication) mentioned in the Quran or Hadith that is to be recited when witnessing a miracle. However, Muslims are encouraged to constantly remember Allah and express their gratitude to Him for the blessings and miracles they witness in their lives. In general, it is recommended to say 'Subhan Allah' (Glory be to Allah) when witnessing something amazing or miraculous."
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get an Answer to your Question",
+            "url": "https://islam-ai-api.p.rapidapi.com/api/bot",
+            "description": "Receive an answer to an Islamic question from our Islam&AI bot.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "question",
+                    "type": "STRING",
+                    "description": "The Islamic question you want to ask.",
+                    "default": "What is Islam?"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

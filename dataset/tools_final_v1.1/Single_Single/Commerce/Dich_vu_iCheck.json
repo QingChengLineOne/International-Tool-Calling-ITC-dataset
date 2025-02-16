@@ -1,0 +1,18 @@
+{
+    "tool_name": "Dich vu iCheck",
+    "tool_description": "Công ty cổ phần ICheck được thành lập vào năm 2015 với sứ mệnh bảo vệ lợi ích người tiêu dùng và uy tín thương hiệu. ICheck định hướng trở thành Tập đoàn công nghệ mang tầm khu vực cung cấp giải pháp số hoá sản phẩm và dịch vụ, nhằm giúp Doanh nghiệp chuyển đổi số hiệu quả. Cho đến hiện tại, iCheck đã có hơn 500 triệu lượt scan hàng tháng, hơn 20 triệu lượt tải, 2 triệu người dùng thường xuyên trong tháng và hơn 20.000 nhãn hàng hợp tác.",
+    "home_url": "https://rapidapi.com/dichvuicheck/api/dich-vu-icheck/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "iCheck",
+            "url": "https://dich-vu-icheck.p.rapidapi.com/",
+            "description": "API cung cấp thông tin và dịch vụ liên quan đến bảo vệ lợi ích người tiêu dùng và uy tín thương hiệu.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

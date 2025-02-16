@@ -1,0 +1,50 @@
+{
+    "tool_name": "地址转坐标API",
+    "tool_description": "提供由地址描述到所述位置坐标的转换服务，与逆地址解析的过程正好相反",
+    "home_url": "https://www.free-api.com/doc/344",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "地址转坐标",
+            "url": "https://apis.map.qq.com/ws/geocoder/v1",
+            "description": "将地址转换为坐标",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "6LDBZ-BF4HK-G2ZJA-ABCNH-3A44S-7OFZI"
+                },
+                {
+                    "name": "address",
+                    "type": "string",
+                    "description": "地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "指定地址所属城市",
+                    "default": ""
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "返回格式：支持JSON/JSONP，默认JSON",
+                    "default": ""
+                },
+                {
+                    "name": "callback",
+                    "type": "string",
+                    "description": "JSONP方式回调函数",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

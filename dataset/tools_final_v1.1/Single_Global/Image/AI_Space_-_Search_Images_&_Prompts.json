@@ -1,0 +1,31 @@
+{
+    "tool_name": "AI Space - Search Images & Prompts",
+    "tool_description": "Explore AI-Generated Images Unleashed and Creative Prompts",
+    "home_url": "https://rapidapi.com/serhaterfidan/api/ai-space-search-images-prompts/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search AI Images",
+            "url": "https://ai-space-search-images-prompts.p.rapidapi.com/search",
+            "description": "Explore AI generated images and prompts based on user-defined parameters.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The maximum number of results to return.",
+                    "default": "150"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number of the results to retrieve.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

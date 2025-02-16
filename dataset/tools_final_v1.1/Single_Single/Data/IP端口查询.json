@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP端口查询API",
+    "tool_description": "通过Censys插件进行IP端口的查询",
+    "home_url": "https://api.aa1.cn/doc/pear-ipquery.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP端口查询API",
+            "url": "https://api.pearktrue.cn/api/ipport/",
+            "description": "查询指定IP的端口信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

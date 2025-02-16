@@ -1,0 +1,48 @@
+{
+    "tool_name": "TinyWebDB",
+    "tool_description": "A tool designed for App Inventor to store and retrieve values using a simple API.",
+    "home_url": "https://rapidapi.com/roadlabs/api/tinywebdb1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getvalue",
+            "url": "https://tinywebdb1.p.rapidapi.com/getvalue",
+            "description": "Retrieves a value associated with a specific tag.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "tag",
+                    "type": "STRING",
+                    "description": "The identifier for the value you want to retrieve.",
+                    "default": "aaa"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "storeavalue",
+            "url": "https://tinywebdb1.p.rapidapi.com/storeavalue",
+            "description": "Stores a value with a specific tag for later retrieval.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "value",
+                    "type": "STRING",
+                    "description": "The value to be stored.",
+                    "default": "bbb"
+                },
+                {
+                    "name": "tag",
+                    "type": "STRING",
+                    "description": "The identifier under which the value will be stored.",
+                    "default": "aaa"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

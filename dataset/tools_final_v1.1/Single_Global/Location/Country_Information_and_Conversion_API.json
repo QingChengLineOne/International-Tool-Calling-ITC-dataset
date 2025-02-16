@@ -1,0 +1,42 @@
+{
+    "tool_name": "Country Information and Conversion API",
+    "tool_description": "The Country Information and Conversion API provides developers with a wide range of country-related data and conversion capabilities, allowing access to detailed information about countries worldwide and seamless conversion between country names and country codes.",
+    "home_url": "https://rapidapi.com/Morax/api/country-information-and-conversion-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Country Code by Name",
+            "url": "https://country-information-and-conversion-api1.p.rapidapi.com/api/v1/country/code/:name",
+            "description": "Retrieve the country code based on the country name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name of the country.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Country Name by Code",
+            "url": "https://country-information-and-conversion-api1.p.rapidapi.com/api/v1/country/name/:code",
+            "description": "Retrieve the country name based on the country code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "The country code.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "Industry NAICS Search",
+    "tool_description": "Find the NAICS code based on free search or find all descriptions of industry for a given NAICS code.",
+    "home_url": "https://rapidapi.com/kaioho/api/industry-naics-search/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Filter and Query NAICS & Description",
+            "url": "https://industry-naics-search.p.rapidapi.com/industry/v1/naics",
+            "description": "This endpoint allows you to search by freeform text (e.g., 'Hotel') and retrieve a list of NAICS codes, hashes, and descriptions. You can also filter the search using a specific NAICS code to get the corresponding description and hash of the industry.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "naics",
+                    "type": "NUMBER",
+                    "description": "This parameter accepts a full 6-digit NAICS code. It is optional if the 'q' parameter is present.",
+                    "default": "722000"
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "When performing a freeform search without the NAICS parameter, a minimum of 3 characters is required to search. It is optional if the NAICS parameter is present.",
+                    "default": "Hotel"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

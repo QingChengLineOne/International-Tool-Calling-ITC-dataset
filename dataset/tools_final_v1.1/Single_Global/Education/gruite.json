@@ -1,0 +1,54 @@
+{
+    "tool_name": "gruite",
+    "tool_description": "Get meanings and synonyms for words in vernacular language",
+    "home_url": "https://rapidapi.com/sunny.nitie14/api/gruite/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Synonym",
+            "url": "https://gruite.p.rapidapi.com/synonyms",
+            "description": "Retrieve synonyms of a specified word in a given language.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "The language of the word for which synonyms are requested.",
+                    "default": "hindi"
+                },
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "The word for which synonyms are to be found.",
+                    "default": "बाजार"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Meanings",
+            "url": "https://gruite.p.rapidapi.com/meaning",
+            "description": "Retrieve the meaning of a specified word in a given language.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "The language of the word for which the meaning is requested.",
+                    "default": "hindi"
+                },
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "The word for which the meaning is to be found.",
+                    "default": "बाजार"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

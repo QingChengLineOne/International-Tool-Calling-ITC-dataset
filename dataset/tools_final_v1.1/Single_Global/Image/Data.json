@@ -1,0 +1,25 @@
+{
+    "tool_name": "Data",
+    "tool_description": "Collection of Images",
+    "home_url": "https://rapidapi.com/shwetha382001/api/data95/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Data",
+            "url": "https://data95.p.rapidapi.com/",
+            "description": "This API allows users to access a collection of images by sending a POST request.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "image",
+                    "type": "STRING",
+                    "description": "A string parameter to specify the image to be retrieved.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

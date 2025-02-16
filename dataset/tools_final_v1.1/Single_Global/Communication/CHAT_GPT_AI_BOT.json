@@ -1,0 +1,25 @@
+{
+    "tool_name": "CHAT GPT AI BOT",
+    "tool_description": "Simply ask for whatever you require, and our API will provide the solutions. Let us know your needs, and our AI BOT will effortlessly generate the marketing copy for you. With this convenient tool, you'll have more time to dedicate to your passions.",
+    "home_url": "https://rapidapi.com/ashutosh05/api/chat-gpt-ai-bot/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AI BOT",
+            "url": "https://chat-gpt-ai-bot.p.rapidapi.com/GenerateAIWritter",
+            "description": "This API allows users to generate marketing copy based on a provided prompt, making it easier to create content quickly.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "prompt",
+                    "type": "STRING",
+                    "description": "The input text that specifies what type of content to generate.",
+                    "default": "write an email template for Employee Anniversary with emojis"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

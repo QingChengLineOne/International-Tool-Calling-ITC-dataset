@@ -1,0 +1,37 @@
+{
+    "tool_name": "AI Content Detection Remover",
+    "tool_description": "AI content detection remover and recreate method by Smodin. Our recreate method is the most powerful rewriter on the market. Our AI content detection removal is also one of the most powerful on the market, working in over 100 languages.",
+    "home_url": "https://rapidapi.com/smodin/api/ai-content-detection-remover/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AI Detection Removal and Recreate Endpoint",
+            "url": "https://ai-content-detection-remover.p.rapidapi.com/recreate",
+            "description": "This endpoint accepts text up to 12,000 characters and allows for language specification using a two-character encoding. It can also auto-detect the language. The recreateType parameter includes options for 'aiDetection' (default) and 'unique', with an experimental option available upon request.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "The text to be processed for AI detection removal.",
+                    "default": ""
+                },
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "The language of the text, specified as a two-character code or 'auto' for auto-detection.",
+                    "default": "auto"
+                },
+                {
+                    "name": "recreateType",
+                    "type": "string",
+                    "description": "The type of recreation to perform, options include 'aiDetection' and 'unique'.",
+                    "default": "aiDetection"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

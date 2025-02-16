@@ -1,0 +1,31 @@
+{
+    "tool_name": "号码归属地API",
+    "tool_description": "获取手机号码归属地及所属运营商",
+    "home_url": "https://api.aa1.cn/doc/gsd-liangmlk.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "手机号码归属地查询接口",
+            "url": "https://api.liangmlk.cn/a20safe/aapi.php",
+            "description": "查询指定手机号码的归属地和运营商信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "api",
+                    "type": "string",
+                    "description": "API标识符，固定为3",
+                    "default": "3"
+                },
+                {
+                    "name": "☎",
+                    "type": "string",
+                    "description": "需要查询的手机号码",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

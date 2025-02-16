@@ -1,0 +1,82 @@
+{
+    "tool_name": "Advanced Movie Search",
+    "tool_description": "Search for movies via advanced queries like genre, name, etc. and get all their details.",
+    "home_url": "https://rapidapi.com/jakash1997/api/advanced-movie-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Genre List",
+            "url": "https://advanced-movie-search.p.rapidapi.com/genre/movie/list",
+            "description": "Get list of all available genres.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search by Genre",
+            "url": "https://advanced-movie-search.p.rapidapi.com/discover/movie",
+            "description": "Discover movies by Genre.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "with_genres",
+                    "type": "STRING",
+                    "description": "Comma-separated list of genre IDs to filter the results.",
+                    "default": "80"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Specify the page number of results to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search by Name",
+            "url": "https://advanced-movie-search.p.rapidapi.com/search/movie",
+            "description": "Search a movie by query string.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The name of the movie to search for.",
+                    "default": "kong"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Specify the page number of results to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Detailed Response",
+            "url": "https://advanced-movie-search.p.rapidapi.com/movies/getdetails",
+            "description": "Get detailed response for a movie ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "movie_id",
+                    "type": "NUMBER",
+                    "description": "The ID of the movie to retrieve details for.",
+                    "default": "399566"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Tomato Media Vietnam",
+    "tool_description": "Tomato Media là công ty dịch thuật hàng đầu Châu Á về dịch vụ ngôn ngữ, cung cấp các giải pháp dịch thuật chất lượng cao cho khách hàng.",
+    "home_url": "https://rapidapi.com/tomato-media-vietnam-tomato-media-vietnam-default/api/tomato-media-vietnam/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "292 Tây Sơn",
+            "url": "https://tomato-media-vietnam.p.rapidapi.com/",
+            "description": "API để lấy thông tin về địa điểm làm việc tại 292 Tây Sơn, Đống Đa, Hà Nội.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Tomato",
+                    "type": "STRING",
+                    "description": "Tên dịch vụ dịch thuật.",
+                    "default": "Dich thuat Tomato"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

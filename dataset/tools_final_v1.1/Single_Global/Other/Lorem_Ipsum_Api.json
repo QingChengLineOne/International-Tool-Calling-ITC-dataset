@@ -1,0 +1,80 @@
+{
+    "tool_name": "Lorem Ipsum Api",
+    "tool_description": "Generate Lorem Ipsum placeholder text for your applications.",
+    "home_url": "https://rapidapi.com/hefesto-technologies-hefesto-technologies-default/api/lorem-ipsum-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Sentence",
+            "url": "https://lorem-ipsum-api.p.rapidapi.com/sentence",
+            "description": "Create lorem ipsum by defining the number of sentences.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The number of sentences to generate.",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Paragraph",
+            "url": "https://lorem-ipsum-api.p.rapidapi.com/paragraph",
+            "description": "Create lorem ipsum by defining the number of paragraphs.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The number of paragraphs to generate.",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Word",
+            "url": "https://lorem-ipsum-api.p.rapidapi.com/word",
+            "description": "Create lorem ipsum by defining the number of words.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The number of words to generate.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

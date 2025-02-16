@@ -1,0 +1,58 @@
+{
+    "tool_name": "NewsNow",
+    "tool_description": "NewsNow is a real-time news aggregation and delivery service that provides developers and businesses with global news articles and headlines, offering extensive coverage, flexible querying, and easy integration.",
+    "home_url": "https://rapidapi.com/rphrp1985/api/newsnow/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "News API V2 (Powered By Google)",
+            "url": "https://newsnow.p.rapidapi.com/newsv2",
+            "description": "Fetch news articles between specified dates or get the latest news. Supports various categories and location filters.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top News (Powered By Duck Duck Go)",
+            "url": "https://newsnow.p.rapidapi.com/",
+            "description": "Retrieve the top news articles.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Headlines -Query (Powered By Google)",
+            "url": "https://newsnow.p.rapidapi.com/headline",
+            "description": "Get the latest headlines.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top World Headline (Powered By Google)",
+            "url": "https://newsnow.p.rapidapi.com/topheadline",
+            "description": "Fetch the top world headlines.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "News (Powered By Duck Duck Go)",
+            "url": "https://newsnow.p.rapidapi.com/",
+            "description": "Access real-time news aggregation and delivery service.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

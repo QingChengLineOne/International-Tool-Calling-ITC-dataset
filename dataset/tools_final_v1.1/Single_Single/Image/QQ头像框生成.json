@@ -1,0 +1,37 @@
+{
+    "tool_name": "QQ头像框生成",
+    "tool_description": "提供000-469个大量头像框的生成服务",
+    "home_url": "https://api.aa1.cn/doc/txksc-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ头像框生成API",
+            "url": "https://api.ahfi.cn/doc/txksc.html",
+            "description": "用于生成QQ头像框的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "int",
+                    "description": "用户QQ号",
+                    "default": "请输入您的QQ号"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "头像框类型，可选值如：001, 002, 003等",
+                    "default": "001"
+                },
+                {
+                    "name": "imgSize",
+                    "type": "int",
+                    "description": "头像框图片大小，例如：640, 1080等",
+                    "default": "640"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

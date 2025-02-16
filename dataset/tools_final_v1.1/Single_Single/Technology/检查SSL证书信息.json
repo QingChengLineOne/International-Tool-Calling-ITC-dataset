@@ -1,0 +1,31 @@
+{
+    "tool_name": "SSL证书信息检查API",
+    "tool_description": "提供SSL证书信息的查询服务",
+    "home_url": "https://api.aa1.cn/doc/ssl-certificate.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "SSL证书信息查询",
+            "url": "https://api.songzixian.com/api/ssl-certificate",
+            "description": "查询指定URL的SSL证书信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源类型，如SSL_CERTIFICATE_LOCAL",
+                    "default": "SSL_CERTIFICATE_LOCAL"
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要查询SSL证书的URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

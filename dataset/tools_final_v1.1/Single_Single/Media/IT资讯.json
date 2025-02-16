@@ -1,0 +1,44 @@
+{
+    "tool_name": "IT资讯",
+    "tool_description": "获取IT领域的最新资讯和文章",
+    "home_url": "https://api.qqsuu.cn/doc/dm-it.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IT资讯",
+            "url": "https://api.qqsuu.cn/api/dm-it",
+            "description": "获取IT领域的最新资讯和文章",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "返回数量1-50，默认10",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "翻页",
+                    "default": ""
+                },
+                {
+                    "name": "rand",
+                    "type": "int",
+                    "description": "随机获取",
+                    "default": ""
+                },
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "检索关键词",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

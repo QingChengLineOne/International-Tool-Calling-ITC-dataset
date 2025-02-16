@@ -1,0 +1,50 @@
+{
+    "tool_name": "时间偏移查询API",
+    "tool_description": "查询坐标所在地与协调世界时的时间偏移信息",
+    "home_url": "https://www.free-api.com/doc/286",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "时间偏移查询",
+            "url": "http://api.map.baidu.com/timezone/v1",
+            "description": "查询坐标所在地与协调世界时的时间偏移信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ak",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "hy8VOY8ik4LPjgHHfPFdbA9pE5rzWUwV"
+                },
+                {
+                    "name": "location",
+                    "type": "string",
+                    "description": "需查询时区的位置坐标",
+                    "default": ""
+                },
+                {
+                    "name": "timestamp",
+                    "type": "int",
+                    "description": "所需时间（用于判断夏令时）。以协调世界时 1970 年 1 月 1 日午夜以来的秒数表示（即Unix时间戳）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sn",
+                    "type": "string",
+                    "description": "若用户所用ak的校验方式为sn校验时该参数必须",
+                    "default": ""
+                },
+                {
+                    "name": "coord_type",
+                    "type": "string",
+                    "description": "请求参数中坐标的类型",
+                    "default": "wgs84ll"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

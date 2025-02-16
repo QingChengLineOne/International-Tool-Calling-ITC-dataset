@@ -1,0 +1,397 @@
+{
+    "tool_name": "CarbonFootprint",
+    "tool_description": "Calculate the carbon footprint in various situations, such as travel and hydro usage.",
+    "home_url": "https://rapidapi.com/carbonandmore-carbonandmore-default/api/carbonfootprint1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AirQualityHealthIndex",
+            "url": "https://carbonfootprint1.p.rapidapi.com/AirQualityHealthIndex",
+            "description": "Return the official air quality health index (1 to 10) bases on key parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "O3",
+                    "type": "STRING",
+                    "description": "The ground-level ozone (O3) in parts per billion (ppb).",
+                    "default": "10"
+                },
+                {
+                    "name": "NO2",
+                    "type": "STRING",
+                    "description": "The nitrogen dioxide (NO2), in parts per billion (ppb).",
+                    "default": "10"
+                },
+                {
+                    "name": "PM",
+                    "type": "STRING",
+                    "description": "The fine particulate matter (PM2.5), measured in micrograms per cubic metre (ug/m3).",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "TreeEquivalent",
+            "url": "https://carbonfootprint1.p.rapidapi.com/TreeEquivalent",
+            "description": "Calculate how many trees it took to create paper.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "weight",
+                    "type": "STRING",
+                    "description": "The weight of the paper.",
+                    "default": "200"
+                },
+                {
+                    "name": "unit",
+                    "type": "STRING",
+                    "description": "The unit (kg or lb) used for the weight.",
+                    "default": "kg"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "TraditionalHydroToCarbonFootprint",
+            "url": "https://carbonfootprint1.p.rapidapi.com/TraditionalHydroToCarbonFootprint",
+            "description": "Calculate CO2e from the use of traditional hydro provider.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "consumption",
+                    "type": "STRING",
+                    "description": "The KWH usage of hydro.",
+                    "default": "500"
+                },
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The country or continent providing the hydro.",
+                    "default": "UK"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "CleanHydroToCarbonFootprint",
+            "url": "https://carbonfootprint1.p.rapidapi.com/CleanHydroToCarbonFootprint",
+            "description": "Return the CO2e in Kg from the consumption of clean hydro energy.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "energy",
+                    "type": "STRING",
+                    "description": "The source of the clean energy.",
+                    "default": "Solar"
+                },
+                {
+                    "name": "consumption",
+                    "type": "STRING",
+                    "description": "The amount of energy consumed in KWH.",
+                    "default": "500"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "FuelToCO2e",
+            "url": "https://carbonfootprint1.p.rapidapi.com/FuelToCO2e",
+            "description": "Transform liters of Diesel, Petrol or LPG into CO2 Equivalent in Kg.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type can be Petrol, Diesel, LPG.",
+                    "default": "Petrol"
+                },
+                {
+                    "name": "litres",
+                    "type": "STRING",
+                    "description": "The number of litres to calculate from.",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "CarbonFootprintFromCarTravel",
+            "url": "https://carbonfootprint1.p.rapidapi.com/CarbonFootprintFromCarTravel",
+            "description": "Returns the CO2e in Kg from a travel by car.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "distance",
+                    "type": "STRING",
+                    "description": "The distance in KM.",
+                    "default": "100"
+                },
+                {
+                    "name": "vehicle",
+                    "type": "STRING",
+                    "description": "The type of car.",
+                    "default": "SmallDieselCar"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "CarbonFootprintFromFlight",
+            "url": "https://carbonfootprint1.p.rapidapi.com/CarbonFootprintFromFlight",
+            "description": "Calculate CO2e in Kg from a travel by air.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "distance",
+                    "type": "STRING",
+                    "description": "The flight distance in KM.",
+                    "default": "2000"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of flight.",
+                    "default": "DomesticFlight"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "CarbonFootprintFromMotorBike",
+            "url": "https://carbonfootprint1.p.rapidapi.com/CarbonFootprintFromMotorBike",
+            "description": "Returns the CO2e in Kg from a motorbike travel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of motorbike.",
+                    "default": "SmallMotorBike"
+                },
+                {
+                    "name": "distance",
+                    "type": "STRING",
+                    "description": "The distance in KM.",
+                    "default": "400"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "CarbonFootprintFromPublicTransit",
+            "url": "https://carbonfootprint1.p.rapidapi.com/CarbonFootprintFromPublicTransit",
+            "description": "Return CO2e in Kg from the use of public transportation.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "distance",
+                    "type": "STRING",
+                    "description": "The distance in KM.",
+                    "default": "1000"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of transportation.",
+                    "default": "Taxi"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

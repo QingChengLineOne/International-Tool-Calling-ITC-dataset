@@ -1,0 +1,18 @@
+{
+    "tool_name": "CONTUS MirrorFly",
+    "tool_description": "CONTUS MirrorFly integrates highly secured voice calling APIs and SDKs for any device and platform, enabling seamless communication.",
+    "home_url": "https://rapidapi.com/professional-blogger-professional-blogger-default/api/contus-mirrorfly/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Sample",
+            "url": "https://contus-mirrorfly.p.rapidapi.com/",
+            "description": "This API serves as a sample endpoint to demonstrate the functionality of the CONTUS MirrorFly service.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "API名称：获取验证码",
+    "tool_description": "生成随机验证码，可以传递长度和字符集参数以自定义生成的验证码",
+    "home_url": "https://api.aa1.cn/doc/yzm.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "API接口",
+            "url": "https://api.uuni.cn/api/yzm",
+            "description": "通过此接口可以获取到随机生成的验证码",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "验证码长度，默认为6位",
+                    "default": 6
+                },
+                {
+                    "name": "charset",
+                    "type": "string",
+                    "description": "验证码字符集，可选值包括数字、大写字母、小写字母等，默认为数字+大写字母",
+                    "default": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

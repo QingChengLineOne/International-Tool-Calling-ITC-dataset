@@ -1,0 +1,43 @@
+{
+    "tool_name": "货币汇率转换API",
+    "tool_description": "转换两种货币的汇率并返回价格",
+    "home_url": "https://api.aa1.cn/doc/exchangerate.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "货币汇率转换接口",
+            "url": "https://api.pearktrue.cn/api/exchangerate/",
+            "description": "执行货币汇率转换操作",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "请求类型，固定为'get'",
+                    "default": "get"
+                },
+                {
+                    "name": "before",
+                    "type": "string",
+                    "description": "货币代码，表示原货币，如'CNY'代表人民币",
+                    "default": ""
+                },
+                {
+                    "name": "after",
+                    "type": "string",
+                    "description": "货币代码，表示目标货币，如'USD'代表美元",
+                    "default": ""
+                },
+                {
+                    "name": "price",
+                    "type": "float",
+                    "description": "原货币的价格",
+                    "default": 0.0
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

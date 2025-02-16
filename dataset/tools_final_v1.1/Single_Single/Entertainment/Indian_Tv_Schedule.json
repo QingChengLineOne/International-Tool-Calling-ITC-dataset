@@ -1,0 +1,99 @@
+{
+    "tool_name": "Indian Tv Schedule",
+    "tool_description": "Get Daily TV Schedules for more than 660 channels covering over 10 Languages.",
+    "home_url": "https://rapidapi.com/Garuda07/api/indian-tv-schedule/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "searchChannel",
+            "url": "https://indian-tv-schedule.p.rapidapi.com/searchChannel",
+            "description": "Filter channels based on their languages and categories. Supports multiple languages and categories.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cate",
+                    "type": "STRING",
+                    "description": "Category of the channel (e.g., Entertainment, Sports, News).",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language of the channel (e.g., Hindi, English, Tamil).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getCategories",
+            "url": "https://indian-tv-schedule.p.rapidapi.com/getCategories",
+            "description": "Returns a JSON response of available languages and channel categories.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Schedule",
+            "url": "https://indian-tv-schedule.p.rapidapi.com/Schedule",
+            "description": "Get today's schedule for a specific channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The name of the channel for which the schedule is requested.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "STRING",
+                    "description": "Offset for pagination, if applicable.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "TodaySchedule",
+            "url": "https://indian-tv-schedule.p.rapidapi.com/TodaySchedule",
+            "description": "Get today's schedule for a specific channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The name of the channel for which the schedule is requested.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetTodaysMovies",
+            "url": "https://indian-tv-schedule.p.rapidapi.com/GetTodaysMovies",
+            "description": "List of movies available on all channels in a specified language.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language for which the movies are requested (e.g., Hindi, Tamil).",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

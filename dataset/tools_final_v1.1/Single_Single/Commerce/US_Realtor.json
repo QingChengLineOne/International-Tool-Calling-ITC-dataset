@@ -1,0 +1,40 @@
+{
+    "tool_name": "US Realtor",
+    "tool_description": "Get real-time information on US real estate properties and agents.",
+    "home_url": "https://rapidapi.com/DataCrawler/api/us-realtor/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "agentProfileListings",
+            "url": "https://us-realtor.p.rapidapi.com/api/v1/agents/profile/listings",
+            "description": "Fetches the listings associated with a specific real estate agent's profile.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

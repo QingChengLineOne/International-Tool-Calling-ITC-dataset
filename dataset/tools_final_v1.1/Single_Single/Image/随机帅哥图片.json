@@ -1,0 +1,25 @@
+{
+    "tool_name": "随机帅哥图片API",
+    "tool_description": "提供随机高清帅哥图片的API接口",
+    "home_url": "https://api.aa1.cn/doc/boy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机高清帅哥图片接口",
+            "url": "https://api.52vmy.cn/api/img/tu/boy",
+            "description": "获取一张随机的高清帅哥图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "none",
+                    "type": "none",
+                    "description": "该接口无需参数",
+                    "default": "无"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

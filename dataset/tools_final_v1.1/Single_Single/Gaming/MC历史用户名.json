@@ -1,0 +1,25 @@
+{
+    "tool_name": "MC历史用户名",
+    "tool_description": "mc历史用户名查询，不限调用",
+    "home_url": "https://api.aa1.cn/doc/mchistoryid.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "MC历史用户名查询接口",
+            "url": "https://uapis.cn/api/mchistoryid",
+            "description": "查询MC（Minecraft）历史用户名",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "uuid",
+                    "type": "string",
+                    "description": "玩家的UUID，用于查询历史用户名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

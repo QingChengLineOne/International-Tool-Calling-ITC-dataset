@@ -1,0 +1,18 @@
+{
+    "tool_name": "Top brand names & valuation api",
+    "tool_description": "With data from over 100 companies, you can find company data and valuation in seconds. Whether it's just company data or an evaluation of the company's performance, this is the ultimate resource for rich information.",
+    "home_url": "https://rapidapi.com/rowsanonline/api/top-brand-names-valuation-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "get brands",
+            "url": "https://top-brand-names-valuation-api.p.rapidapi.com/brands",
+            "description": "Retrieve detailed brand data from the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

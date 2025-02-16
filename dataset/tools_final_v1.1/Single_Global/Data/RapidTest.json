@@ -1,0 +1,25 @@
+{
+    "tool_name": "RapidTest",
+    "tool_description": "A tool designed for testing APIs with ease and efficiency.",
+    "home_url": "https://rapidapi.com/dhbeckbessinger-nPureuw0-k7/api/rapidtest3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "RedTest",
+            "url": "https://rapidtest3.p.rapidapi.com/",
+            "description": "This API endpoint allows users to test a specific URI and retrieve data based on the provided query.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "A query parameter to specify the search term.",
+                    "default": "bob"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

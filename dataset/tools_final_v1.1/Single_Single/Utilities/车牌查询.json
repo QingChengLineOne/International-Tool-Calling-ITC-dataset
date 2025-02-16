@@ -1,0 +1,25 @@
+{
+    "tool_name": "车牌查询",
+    "tool_description": "免费API数据接口调用服务平台",
+    "home_url": "https://api.qqsuu.cn/doc/dm-chepai.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "车牌查询",
+            "url": "https://api.qqsuu.cn/api/dm-chepai",
+            "description": "根据车牌代码查询所属城市和省份信息",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "车牌代码、城市、省份,例如豫A，北京，武汉",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

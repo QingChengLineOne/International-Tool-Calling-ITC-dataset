@@ -1,0 +1,18 @@
+{
+    "tool_name": "Networking",
+    "tool_description": "This API will help you with several networking-related utilities.",
+    "home_url": "https://rapidapi.com/cognitivecamp-cognitivecamp-default/api/networking/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "WhatsMyIP",
+            "url": "https://networking.p.rapidapi.com/api",
+            "description": "This will fetch your public IP.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

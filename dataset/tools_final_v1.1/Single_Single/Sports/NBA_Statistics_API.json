@@ -1,0 +1,80 @@
+{
+    "tool_name": "NBA Statistics API",
+    "tool_description": "The NBA Statistics API provides access to various statistics related to NBA players, teams, and games. Users can retrieve data such as player scoring, assists, rebounds, and shot charts for specific seasons and playoffs.",
+    "home_url": "https://rapidapi.com/nprasad2077/api/nba-statistics-api/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "topScorersBySeasonTotalPoints",
+            "url": "https://nba-statistics-api.p.rapidapi.com/api/playerdata/topscorers/total/season/2011/",
+            "description": "Returns the top players by total points in descending order for a specified season.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "topAssistsInThePlayoffsBySeasonTotalAssists",
+            "url": "https://nba-statistics-api.p.rapidapi.com/api/top_assists/playoffs/2022/",
+            "description": "Returns the top 20 players by assists during the playoffs for a specified season.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "topAssistsBySeasonTotalAssists",
+            "url": "https://nba-statistics-api.p.rapidapi.com/api/top_assists/totals/2023/",
+            "description": "Returns the top 20 players by assists in descending order for a specified season.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "playerSeasonStatsByName",
+            "url": "https://nba-statistics-api.p.rapidapi.com/api/playerdata/name/Jayson Tatum",
+            "description": "Retrieves season statistics for a specified player by name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "allPlayersBySeason",
+            "url": "https://nba-statistics-api.p.rapidapi.com/api/playerdata/season/2023",
+            "description": "Returns statistics for all players in a specified season.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "playerShotChartDataSeasonPlayoffs",
+            "url": "https://nba-statistics-api.p.rapidapi.com/api/shot_chart_data/Lebron James/2023/",
+            "description": "Returns shot chart data for a specified player during the season and playoffs.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

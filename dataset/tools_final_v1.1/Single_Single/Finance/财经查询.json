@@ -1,0 +1,31 @@
+{
+    "tool_name": "财经查询",
+    "tool_description": "查询指定股票代码的财经信息，包括股票名称、当前价、最高价等",
+    "home_url": "https://api.qqsuu.cn/doc/dm-finance.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "财经查询",
+            "url": "https://api.qqsuu.cn/api/dm-finance",
+            "description": "查询指定股票代码的财经信息，包括股票名称、当前价、最高价等",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "String",
+                    "description": "股票代码，多个以半角逗号分隔，最多10个",
+                    "default": ""
+                },
+                {
+                    "name": "list",
+                    "type": "int",
+                    "description": "单个查询为0、批量查询为1",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

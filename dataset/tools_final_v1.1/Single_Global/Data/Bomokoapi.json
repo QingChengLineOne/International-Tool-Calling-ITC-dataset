@@ -1,0 +1,42 @@
+{
+    "tool_name": "Bomokoapi",
+    "tool_description": "Testing Bomoko app API",
+    "home_url": "https://rapidapi.com/guillainbisimwa/api/bomokoapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "bomokoEndpoint_copy",
+            "url": "https://bomokoapi.p.rapidapi.com/users",
+            "description": "This endpoint allows users to test the Bomoko API by sending a POST request to create or manage user data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "An optional key for authentication or identification purposes.",
+                    "default": "12345"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "bomokoEndpoint",
+            "url": "https://bomokoapi.p.rapidapi.com/users",
+            "description": "This endpoint allows users to test the Bomoko API by sending a POST request to create or manage user data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "An optional key for authentication or identification purposes.",
+                    "default": "12345"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

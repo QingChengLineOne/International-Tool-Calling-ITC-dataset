@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机唱鸭音频",
+    "tool_description": "随机输出一个唱鸭音频",
+    "home_url": "https://api.aa1.cn/doc/singduck.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机唱鸭音频API",
+            "url": "https://free.wqwlkj.cn/wqwlapi/singduck.php",
+            "description": "随机输出一个唱鸭音频",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

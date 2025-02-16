@@ -1,0 +1,149 @@
+{
+    "tool_name": "GamerPower",
+    "tool_description": "Find all free games, loot and giveaways with this giveaway tracker API powered by GamerPower.com! Access programmatically the best giveaways in gaming!",
+    "home_url": "https://rapidapi.com/digiwalls/api/gamerpower/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Filter & Group Giveaways",
+            "url": "https://gamerpower.p.rapidapi.com/api/filter",
+            "description": "Filter and group platforms and giveaway types to get personalized results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The gaming platform to filter giveaways.",
+                    "default": "epic-games-store.steam.android"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of giveaway to filter (e.g., game, loot).",
+                    "default": "game.loot"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Specific giveaway details",
+            "url": "https://gamerpower.p.rapidapi.com/api/giveaway",
+            "description": "Get details from a specific giveaway by providing the giveaway ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the giveaway.",
+                    "default": "525"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Live giveaways by platform",
+            "url": "https://gamerpower.p.rapidapi.com/api/giveaways?",
+            "description": "Retrieve live giveaways for a specified platform (e.g., PC, Steam).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The platform for which to retrieve live giveaways.",
+                    "default": "pc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Live giveaways by type",
+            "url": "https://gamerpower.p.rapidapi.com/api/giveaways?",
+            "description": "Get live giveaways filtered by type (e.g., game, loot, beta).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of giveaway to filter.",
+                    "default": "game"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Sort live giveaways",
+            "url": "https://gamerpower.p.rapidapi.com/api/giveaways?",
+            "description": "Sort live giveaways based on specified criteria (e.g., date, value, popularity).",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sort-by",
+                    "type": "STRING",
+                    "description": "The criteria by which to sort the giveaways.",
+                    "default": "value"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Live giveaways by platform & type & sorted",
+            "url": "https://gamerpower.p.rapidapi.com/api/giveaways?",
+            "description": "Retrieve all live giveaways filtered by platform and type, sorted by specified criteria.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The platform for which to retrieve live giveaways.",
+                    "default": "steam"
+                },
+                {
+                    "name": "sort-by",
+                    "type": "STRING",
+                    "description": "The criteria by which to sort the giveaways.",
+                    "default": "popularity"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of giveaway to filter.",
+                    "default": "loot"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Total live giveaways & worth estimation in dollars",
+            "url": "https://gamerpower.p.rapidapi.com/api/worth",
+            "description": "Get the total number of live giveaways and their estimated worth in dollars. Can filter by platform and type.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All live giveaways",
+            "url": "https://gamerpower.p.rapidapi.com/api/giveaways",
+            "description": "Retrieve all currently active giveaways.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

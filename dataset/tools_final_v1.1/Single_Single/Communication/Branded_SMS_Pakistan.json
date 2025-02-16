@@ -1,0 +1,204 @@
+{
+    "tool_name": "Branded SMS Pakistan",
+    "tool_description": "Branded SMS Pakistan provides a Mask or Short Code Messaging Gateway in Pakistan, allowing users to send branded SMS messages efficiently.",
+    "home_url": "https://rapidapi.com/BrandedSMSPakistan/api/branded-sms-pakistan/",
+    "country": "Pakistan",
+    "api_list": [
+        {
+            "name": "Send Message to Multiple Numbers",
+            "url": "https://branded-sms-pakistan.p.rapidapi.com/send",
+            "description": "This API is useful to send a branded SMS to multiple numbers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "Destination Number in the default format (e.g., 923151231016).",
+                    "default": "923151231015, 923151231016"
+                },
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Account API Key for authentication.",
+                    "default": "6014c421fd3dc1185d2b0603b41"
+                },
+                {
+                    "name": "mask",
+                    "type": "STRING",
+                    "description": "Masking (Branded Name) for the SMS.",
+                    "default": "H3 TEST SMS"
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Account Email Address for notifications.",
+                    "default": "hello@brandedsmspakistan.com"
+                },
+                {
+                    "name": "message",
+                    "type": "STRING",
+                    "description": "Message content limited to 640 characters.",
+                    "default": "Hello I am sending test message"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "status",
+                    "type": "BOOLEAN",
+                    "description": "Return Message ID for tracking.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Short Code Sender Message API",
+            "url": "https://branded-sms-pakistan.p.rapidapi.com/send",
+            "description": "Use this API to integrate SMS system with your API. Send Message by a Short Code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Account API Key for authentication.",
+                    "default": "6014c421fd3dc1185d2b0603b41"
+                },
+                {
+                    "name": "message",
+                    "type": "STRING",
+                    "description": "Message content limited to 640 characters.",
+                    "default": ""
+                },
+                {
+                    "name": "mask",
+                    "type": "STRING",
+                    "description": "Masking (Branded Name) for the SMS.",
+                    "default": "9876"
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Account Email Address for notifications.",
+                    "default": "hello@brandedsmspakistan.com"
+                },
+                {
+                    "name": "to",
+                    "type": "NUMBER",
+                    "description": "Destination Number in the default format (e.g., 923151231016).",
+                    "default": "923151231015"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "status",
+                    "type": "BOOLEAN",
+                    "description": "Return Message ID for tracking.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Send Single Message",
+            "url": "https://branded-sms-pakistan.p.rapidapi.com/send",
+            "description": "This API is useful to send a branded SMS to a single number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "message",
+                    "type": "STRING",
+                    "description": "Message content limited to 640 characters.",
+                    "default": "Hello I am sending test message"
+                },
+                {
+                    "name": "mask",
+                    "type": "STRING",
+                    "description": "Masking (Branded Name) for the SMS.",
+                    "default": "H3 TEST SMS"
+                },
+                {
+                    "name": "to",
+                    "type": "NUMBER",
+                    "description": "Destination Number in the default format (e.g., 923151231016).",
+                    "default": "923151231015"
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Account Email Address for notifications.",
+                    "default": "hello@brandedsmspakistan.com"
+                },
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Account API Key for authentication.",
+                    "default": "6014c421fd3dc1185d2b0603b41"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "status",
+                    "type": "BOOLEAN",
+                    "description": "Return Message ID for tracking.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Account Balance",
+            "url": "https://branded-sms-pakistan.p.rapidapi.com/balance",
+            "description": "Get SMS Credit and Expiry Date for your account.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "API Key for authentication.",
+                    "default": ""
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Account Email Address for notifications.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Message Delivery Status",
+            "url": "https://branded-sms-pakistan.p.rapidapi.com/report",
+            "description": "Request Message Delivery Status using the SMS Response ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "API Key for authentication.",
+                    "default": ""
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email Address for notifications.",
+                    "default": ""
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "SMS Response ID to check the delivery status.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

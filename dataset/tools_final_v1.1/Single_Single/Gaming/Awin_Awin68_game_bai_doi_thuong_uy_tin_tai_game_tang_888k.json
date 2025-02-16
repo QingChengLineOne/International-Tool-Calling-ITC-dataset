@@ -1,0 +1,18 @@
+{
+    "tool_name": "Awin Awin68 game bai doi thuong uy tin tai game tang 888k",
+    "tool_description": "AWIN68 - Awin68comco - trang chủ trực tuyến chơi game đổi thưởng hàng đầu mới nhất trong năm 2022. Với tỉ lệ thưởng hấp dẫn, nạp rút không tốn phí, Iwin cung cấp cho khách hàng những trò chơi: tài nguyên, xóc đĩa, nổ hũ, game bài, ba cây ba cào, slot bóng đá, tiến lên miền nam. Bên cạnh những phần thưởng có giá trị khủng đang chờ đợi người chơi chinh phục thành công tại AWIN. Hãy tham gia awin68.fun ngay bây giờ để trở thành hội viên chính thức của AWIN68.",
+    "home_url": "https://rapidapi.com/Awin68comco/api/awin-awin68-game-bai-doi-thuong-uy-tin-tai-game-tang-888k/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Awin Awin68 game bai doi thuong uy tin tai game tang 888k",
+            "url": "https://awin-awin68-game-bai-doi-thuong-uy-tin-tai-game-tang-888k.p.rapidapi.com/",
+            "description": "API cho phép người dùng truy cập vào các trò chơi đổi thưởng tại AWIN68, bao gồm nhiều loại trò chơi khác nhau với tỉ lệ thưởng hấp dẫn.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

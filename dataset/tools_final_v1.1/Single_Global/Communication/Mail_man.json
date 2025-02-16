@@ -1,0 +1,18 @@
+{
+    "tool_name": "Mail man",
+    "tool_description": "This API sends instant mail from web applications directly to clients. It is designed to function effectively in both development and production environments, regardless of the hosting service used.",
+    "home_url": "https://rapidapi.com/tobidaramola77/api/mail-man/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send Mail",
+            "url": "https://mail-man.p.rapidapi.com/mail",
+            "description": "Send instant email to clients from web applications.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

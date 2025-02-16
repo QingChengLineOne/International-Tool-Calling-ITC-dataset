@@ -1,0 +1,18 @@
+{
+    "tool_name": "Sholltna Android",
+    "tool_description": "API for Sholltna Social, providing access to social features and functionalities.",
+    "home_url": "https://rapidapi.com/sholltna-android-sholltna-android-default/api/sholltna-android/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Sholltna",
+            "url": "https://sholltna-android.p.rapidapi.com/",
+            "description": "This API allows users to interact with the Sholltna social platform, enabling various social functionalities.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

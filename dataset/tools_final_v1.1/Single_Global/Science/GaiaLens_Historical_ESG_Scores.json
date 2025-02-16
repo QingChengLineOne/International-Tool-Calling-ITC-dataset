@@ -1,0 +1,50 @@
+{
+    "tool_name": "GaiaLens Historical ESG Scores",
+    "tool_description": "Data-driven and transparent historical ESG scores for over 17,000 companies.",
+    "home_url": "https://rapidapi.com/gaialens-gaialens-default/api/gaialens-historical-esg-scores/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getHistoricalScoresByYear",
+            "url": "https://gaialens-historical-esg-scores.p.rapidapi.com/scores/historical/{year}",
+            "description": "This API returns historical Environmental, Social, Governance and Overall scores for companies on a scale of 0 to 100 based on the year provided in the request. It also provides other relevant metrics like Global Rank, Industry Rank, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "string",
+                    "description": "The year for which historical scores are requested. Must be less than or equal to 2020.",
+                    "default": "2020"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "Content-Type",
+                    "type": "string",
+                    "description": "Specifies the media type of the resource.",
+                    "default": ""
+                },
+                {
+                    "name": "sedol",
+                    "type": "string",
+                    "description": "The SEDOL code for the company.",
+                    "default": ""
+                },
+                {
+                    "name": "isin",
+                    "type": "string",
+                    "description": "The ISIN code for the company.",
+                    "default": ""
+                },
+                {
+                    "name": "companyname",
+                    "type": "string",
+                    "description": "The name of the company for which scores are requested.",
+                    "default": "Apple Inc."
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

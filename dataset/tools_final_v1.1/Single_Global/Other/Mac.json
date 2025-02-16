@@ -1,0 +1,18 @@
+{
+    "tool_name": "Mac",
+    "tool_description": "Macss is a tool designed for testing Reservety services.",
+    "home_url": "https://rapidapi.com/FunnyMaze700/api/mac/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Macss",
+            "url": "https://mac.p.rapidapi.com/",
+            "description": "This API allows users to test the Reservety service.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

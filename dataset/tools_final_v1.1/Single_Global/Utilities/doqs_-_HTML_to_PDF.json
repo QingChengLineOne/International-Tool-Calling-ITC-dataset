@@ -1,0 +1,18 @@
+{
+    "tool_name": "doqs - HTML to PDF",
+    "tool_description": "Generate PDF documents with HTML input. This tool allows users to create PDF files from HTML strings or URLs.",
+    "home_url": "https://rapidapi.com/doqs-doqs-default/api/doqs-html-to-pdf/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Render HTML to PDF",
+            "url": "https://doqs-html-to-pdf.p.rapidapi.com/render",
+            "description": "Create a PDF file from an HTML string or URL.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

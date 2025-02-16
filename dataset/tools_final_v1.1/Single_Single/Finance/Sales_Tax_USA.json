@@ -1,0 +1,18 @@
+{
+    "tool_name": "Sales Tax USA",
+    "tool_description": "A tool designed to assist users in testing and calculating sales tax rates across the United States.",
+    "home_url": "https://rapidapi.com/brisbaneagency/api/sales-tax-usa/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Test",
+            "url": "https://sales-tax-usa.p.rapidapi.com/",
+            "description": "This API endpoint allows users to test the sales tax functionality.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

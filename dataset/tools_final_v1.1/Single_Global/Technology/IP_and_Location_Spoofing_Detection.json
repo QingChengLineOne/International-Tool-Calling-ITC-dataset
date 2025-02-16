@@ -1,0 +1,35 @@
+{
+    "tool_name": "IP and Location Spoofing Detection",
+    "tool_description": "This tool helps ensure that individuals and merchants you are onboarding are not attempting to defraud you by hiding behind a fake IP address or pretending to be from a different location. With the IP and Location spoofing API, you can confidently verify that users on your platform are not faking their location or IP address using a VPN or proxy.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/ip-and-location-spoofing-detection/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://ip-and-location-spoofing-detection.p.rapidapi.com/v3/tasks",
+            "description": "Fetches the API result using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request to fetch results.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "IP and Location Spoofing Detection",
+            "url": "https://ip-and-location-spoofing-detection.p.rapidapi.com/v3/tasks/async/verify_with_source/ip_address",
+            "description": "Verifies if the provided IP address is genuine or spoofed. This endpoint is used to ensure that users are not attempting to defraud by hiding their real IP address.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

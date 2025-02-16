@@ -1,0 +1,18 @@
+{
+    "tool_name": "旺财图片-免费API",
+    "tool_description": "提供随机狗的品种图片",
+    "home_url": "https://www.free-api.com/doc/610",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机狗品种图片API",
+            "url": "https://dog.ceo/api/breeds/image/random",
+            "description": "获取随机狗品种的图片",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

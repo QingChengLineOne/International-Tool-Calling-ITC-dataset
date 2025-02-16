@@ -1,0 +1,25 @@
+{
+    "tool_name": "Domain Authority",
+    "tool_description": "Get Domain Authority and Page Authority of any Domain or URL.",
+    "home_url": "https://rapidapi.com/hassan.cs91/api/domain-authority1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Domain/URL Metrics",
+            "url": "https://domain-authority1.p.rapidapi.com/GetDomainAuthority",
+            "description": "This API retrieves the Domain Authority and Page Rank for any specified Domain or URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the domain for which the authority metrics are to be retrieved.",
+                    "default": "h-supertools.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

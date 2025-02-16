@@ -1,0 +1,25 @@
+{
+    "tool_name": "Testing123",
+    "tool_description": "A simple testing tool for API interactions.",
+    "home_url": "https://rapidapi.com/arthurducker54-s5RJ9jdSZtx/api/testing1232/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "echo",
+            "url": "https://testing1232.p.rapidapi.com/",
+            "description": "Returns a response based on the request made to the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "testparam",
+                    "type": "STRING",
+                    "description": "An optional parameter for testing purposes.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

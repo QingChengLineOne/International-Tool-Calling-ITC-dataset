@@ -1,0 +1,28 @@
+{
+    "tool_name": "All Cryptocurrency List",
+    "tool_description": "A comprehensive list of all cryptocurrencies available, providing users with up-to-date information on various digital currencies.",
+    "home_url": "https://rapidapi.com/ujjalruidas/api/all-cryptocurrency-list/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "All Cryptocurrency",
+            "url": "https://all-cryptocurrency-list.p.rapidapi.com/v1/cryptocurrency/listings/latest",
+            "description": "Fetches the latest listings of all cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "API Key",
+            "url": "https://all-cryptocurrency-list.p.rapidapi.com/X-CMC_PRO_API_KEY",
+            "description": "Retrieves the API key required for accessing the cryptocurrency data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

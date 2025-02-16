@@ -1,0 +1,125 @@
+{
+    "tool_name": "Astrologer",
+    "tool_description": "Astrology made easy! Astrological calculation, birth charts, composite charts in SVG. Plus all astrological data.",
+    "home_url": "https://rapidapi.com/gbattaglia/api/astrologer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Now",
+            "url": "https://astrologer.p.rapidapi.com/api/v3/now",
+            "description": "Gets astrological data for the current moment at UTC.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Birth Chart",
+            "url": "https://astrologer.p.rapidapi.com/api/v3/birth-chart",
+            "description": "Returns the birth chart of a subject in SVG format, including the birth chart data and aspects in JSON.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name of the person to get the birth chart for.",
+                    "default": ""
+                },
+                {
+                    "name": "year",
+                    "type": "integer",
+                    "description": "The year of birth.",
+                    "default": ""
+                },
+                {
+                    "name": "month",
+                    "type": "integer",
+                    "description": "The month of birth.",
+                    "default": ""
+                },
+                {
+                    "name": "day",
+                    "type": "integer",
+                    "description": "The day of birth.",
+                    "default": ""
+                },
+                {
+                    "name": "hour",
+                    "type": "integer",
+                    "description": "The hour of birth.",
+                    "default": ""
+                },
+                {
+                    "name": "minute",
+                    "type": "integer",
+                    "description": "The minute of birth.",
+                    "default": ""
+                },
+                {
+                    "name": "latitude",
+                    "type": "float",
+                    "description": "The latitude of the birth location.",
+                    "default": ""
+                },
+                {
+                    "name": "longitude",
+                    "type": "float",
+                    "description": "The longitude of the birth location.",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "The name of the city of birth.",
+                    "default": ""
+                },
+                {
+                    "name": "timezone",
+                    "type": "string",
+                    "description": "The timezone of the birth location.",
+                    "default": ""
+                },
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "The language of the birth chart, currently just English, Italian, and Portuguese are available.",
+                    "default": "English"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "Composite Chart",
+            "url": "https://astrologer.p.rapidapi.com/api/v3/composite-chart",
+            "description": "Get the composite chart data of two subjects.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Discepolo Score",
+            "url": "https://astrologer.p.rapidapi.com/api/v3/discepolo-score",
+            "description": "Get compatibility score number according to Ciro Discepolo method.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Birth Data",
+            "url": "https://astrologer.p.rapidapi.com/api/v3/birth-data",
+            "description": "Get the birth data of a subject.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

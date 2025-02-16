@@ -1,0 +1,49 @@
+{
+    "tool_name": "DietaGram",
+    "tool_description": "Find nutrition facts by food name or by UPC (barcode). API supports multiple languages including English, Russian, Polish, Spanish, Bulgarian, and Ukrainian.",
+    "home_url": "https://rapidapi.com/bulat.yauheni/api/dietagram/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Food Api",
+            "url": "https://dietagram.p.rapidapi.com/apiFood.php",
+            "description": "Find food information by name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the food item to search for.",
+                    "default": "Jabłko"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language for searching in the specific food database. It can be detected automatically or set manually from the available options.",
+                    "default": "pl"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "UPC Api",
+            "url": "https://dietagram.p.rapidapi.com/apiBarcode.php",
+            "description": "Find food information by UPC (barcode).",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The UPC code of the food item to search for.",
+                    "default": "4019300005154"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

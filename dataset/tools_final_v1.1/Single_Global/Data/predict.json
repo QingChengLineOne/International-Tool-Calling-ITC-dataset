@@ -1,0 +1,34 @@
+{
+    "tool_name": "predict",
+    "tool_description": "The Predict API: Forecast your data with simplicity and accuracy",
+    "home_url": "https://rapidapi.com/candyup/api/predict7/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "predict",
+            "url": "https://predict7.p.rapidapi.com/",
+            "description": "Endpoint to make projections.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "0.2": {
+                        "type": "number"
+                    },
+                    "0.5": {
+                        "type": "number"
+                    },
+                    "0.8": {
+                        "type": "number"
+                    },
+                    "1.0": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    ]
+}

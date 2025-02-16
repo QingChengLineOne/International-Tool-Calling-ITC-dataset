@@ -1,0 +1,18 @@
+{
+    "tool_name": "livestock",
+    "tool_description": "Images and details of livestock offering",
+    "home_url": "https://rapidapi.com/sohaib.shabbir424/api/livestock/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "livestock",
+            "url": "https://livestock.p.rapidapi.com/livestock",
+            "description": "Fetches information about various livestock offerings.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

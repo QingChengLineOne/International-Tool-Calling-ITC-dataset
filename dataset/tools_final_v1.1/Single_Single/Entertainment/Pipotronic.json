@@ -1,0 +1,18 @@
+{
+    "tool_name": "Pipotronic",
+    "tool_description": "This application is perfect for generating funny and ironic textual content in French to use in your powerpoints, meetings, corporate brochures, and more! It provides a random selection of humorous text to enhance your presentations.",
+    "home_url": "https://rapidapi.com/z.hmaidouch/api/pipotronic/",
+    "country": "France",
+    "api_list": [
+        {
+            "name": "Get sentence",
+            "url": "https://pipotronic.p.rapidapi.com/",
+            "description": "Generates funny and ironic randomly generated textual content to incorporate into powerpoints, meetings, corporate brochures, and more.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

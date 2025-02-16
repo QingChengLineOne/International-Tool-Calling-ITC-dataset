@@ -1,0 +1,49 @@
+{
+    "tool_name": "Exercises by API-Ninjas",
+    "tool_description": "Get workout exercises for every muscle group. This API provides a variety of exercises tailored to specific muscle groups and difficulty levels.",
+    "home_url": "https://rapidapi.com/apininjas/api/exercises-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/exercises",
+            "url": "https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises",
+            "description": "API Ninjas Exercises API endpoint. Returns up to 10 exercises that satisfy the given parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Number of results to offset for pagination. Default is 0.",
+                    "default": "0"
+                },
+                {
+                    "name": "muscle",
+                    "type": "STRING",
+                    "description": "Muscle group targeted by the exercise. Possible values include: abdominals, abductors, adductors, biceps, calves, chest, forearms, glutes, hamstrings, lats, lower_back, middle_back, neck, quadriceps, traps, triceps.",
+                    "default": "biceps"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Exercise type. Possible values include: cardio, olympic_weightlifting, plyometrics, powerlifting, strength, stretching, strongman.",
+                    "default": ""
+                },
+                {
+                    "name": "difficulty",
+                    "type": "STRING",
+                    "description": "Difficulty level of the exercise. Possible values include: beginner, intermediate, expert.",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the exercise. This value can be partial (e.g., 'press' will match 'Dumbbell Bench Press').",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

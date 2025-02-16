@@ -1,0 +1,25 @@
+{
+    "tool_name": "笑他图片API",
+    "tool_description": "将QQ好友头像围在中间笑他",
+    "home_url": "https://api.aa1.cn/doc/xiaota-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "笑他图片接口",
+            "url": "https://api.ahfi.cn/api/xiaota",
+            "description": "请求该接口可以生成包含指定QQ好友头像的笑他图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "需要围在中间的QQ好友的QQ号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

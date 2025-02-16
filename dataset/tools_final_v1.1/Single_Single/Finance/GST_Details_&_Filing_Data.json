@@ -1,0 +1,25 @@
+{
+    "tool_name": "GST Details & Filing Data",
+    "tool_description": "This API provides comprehensive details about companies based on their GSTIN, including return status and filing data. It offers monthly, quarterly, and yearly data along with HSN codes. The API has been updated for improved speed and accuracy as of May 21, 2023.",
+    "home_url": "https://rapidapi.com/420vijay47/api/gst-details-filing-data/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Get GST info & Filing Data",
+            "url": "https://gst-details-filing-data.p.rapidapi.com/gst/",
+            "description": "Retrieve company information and filing data by providing the GSTIN.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "GSTIN",
+                    "type": "STRING",
+                    "description": "The Goods and Services Tax Identification Number of the company.",
+                    "default": "33AAACR4849R4ZP"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

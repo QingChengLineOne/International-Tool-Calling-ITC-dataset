@@ -1,0 +1,28 @@
+{
+    "tool_name": "Lowest Bins Api",
+    "tool_description": "An API that provides information about the lowest bins in Hypixel.",
+    "home_url": "https://rapidapi.com/Tricked/api/lowest-bins-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Info endpoint",
+            "url": "https://lowest-bins-api.p.rapidapi.com/",
+            "description": "Retrieves general information about the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Fetch lowest bins",
+            "url": "https://lowest-bins-api.p.rapidapi.com/lowestbins",
+            "description": "Fetches the lowest bins available in the Hypixel market.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

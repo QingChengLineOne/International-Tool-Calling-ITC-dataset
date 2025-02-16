@@ -1,0 +1,52 @@
+{
+    "tool_name": "CellPhones",
+    "tool_description": "Welcome to the GSMarena API! Our API allows you to easily access and consume the vast array of data available on the GSMarena website. With our API, you can access detailed information about any phone or tablet, including technical specifications, images, and more. Quickly retrieve detailed information about any device, access images, get full specifications and features, and check prices and ratings.",
+    "home_url": "https://rapidapi.com/samehsilim/api/cellphones/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetPhonesByBrandId",
+            "url": "https://cellphones.p.rapidapi.com/phones/getphones",
+            "description": "Use this endpoint to load all phone IDs for a specific brand. Get the brand ID from the endpoint GetBrands.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "brandid",
+                    "type": "NUMBER",
+                    "description": "The ID of the brand for which to retrieve phone IDs.",
+                    "default": "237"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetBrands",
+            "url": "https://cellphones.p.rapidapi.com/phones/getbrands",
+            "description": "Load all cell phone brands.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPhoneDetails",
+            "url": "https://cellphones.p.rapidapi.com/phones/getphone",
+            "description": "Get all phone specifications and photos by phone ID. Get the phone ID from the endpoint GetPhonesByBrandId.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phoneid",
+                    "type": "NUMBER",
+                    "description": "The ID of the phone for which to retrieve details.",
+                    "default": "1859"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

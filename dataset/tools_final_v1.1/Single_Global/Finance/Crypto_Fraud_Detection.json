@@ -1,0 +1,157 @@
+{
+    "tool_name": "Crypto Fraud Detection",
+    "tool_description": "AI-based Crypto Fraud Detection API offers predictive analytics to identify crypto scams or fraud addresses. It supports Ethereum, Binance Smart Chain, and Polygon.",
+    "home_url": "https://rapidapi.com/smartcredit-io-smartcredit-io-default/api/crypto-fraud-detection2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/",
+            "url": "https://crypto-fraud-detection2.p.rapidapi.com/",
+            "description": "Fetches general information about the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/Polygon/fraud/",
+            "url": "https://crypto-fraud-detection2.p.rapidapi.com/Polygon/fraud/",
+            "description": "Checks the fraud probability of a specified Polygon wallet address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Wallet",
+                    "type": "STRING",
+                    "description": "Wallet address for which you want to check the fraud probability.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/BNB/fraud/",
+            "url": "https://crypto-fraud-detection2.p.rapidapi.com/BNB/fraud/",
+            "description": "Checks the fraud probability of a specified Binance Smart Chain wallet address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Wallet",
+                    "type": "STRING",
+                    "description": "Wallet address for which you want to check the fraud probability.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/ETH/fraud/",
+            "url": "https://crypto-fraud-detection2.p.rapidapi.com/ETH/fraud/",
+            "description": "Checks the fraud probability of a specified Ethereum wallet address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Wallet",
+                    "type": "STRING",
+                    "description": "Wallet address for which you want to check the fraud probability.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

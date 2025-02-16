@@ -1,0 +1,37 @@
+{
+    "tool_name": "查IP[查指定IP归属地]",
+    "tool_description": "查询指定的IPV4所属地址。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/chaapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查IP API",
+            "url": "https://cn.apihz.cn/api/ip/chaapi.php",
+            "description": "提供查询IP归属地服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API密钥ID，可在接口盒子后台获取",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API密钥，可在接口盒子后台获取",
+                    "default": "88888888"
+                },
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IP地址",
+                    "default": "49.234.56.78"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "tool_name": "ForexGo",
+    "tool_description": "Introducing ForexGo API - the powerful currency exchange solution for developers. Effortlessly integrate real-time forex rates and conversion capabilities into your applications with our easy-to-use API. Enhance your projects with accurate and up-to-date exchange data, empowering users across the globe to make informed financial decisions.",
+    "home_url": "https://rapidapi.com/ctr-ou-ctr-ou-default/api/forexgo/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/fx",
+            "url": "https://forexgo.p.rapidapi.com/fx",
+            "description": "Fetch real-time forex rates and perform currency conversions.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "Defines the value of the amount to be converted.",
+                    "default": "10"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The currency code to convert from. Supported currencies include EUR, USD, JPY, and others.",
+                    "default": "EUR"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The currency code to convert to. Supported currencies include EUR, USD, JPY, and others.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "ISO Date format (YYYY-MM-DDTHH:mm:ss.sssZ) to pull data from a specific date.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "result": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string"
+                            },
+                            "from": {
+                                "type": "object",
+                                "properties": {
+                                    "currency": {
+                                        "type": "string"
+                                    },
+                                    "amount": {
+                                        "type": "integer"
+                                    }
+                                }
+                            },
+                            "to": {
+                                "type": "object",
+                                "properties": {
+                                    "currency": {
+                                        "type": "string"
+                                    },
+                                    "amount": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

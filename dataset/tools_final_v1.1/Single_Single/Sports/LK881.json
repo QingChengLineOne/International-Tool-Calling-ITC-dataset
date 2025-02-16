@@ -1,0 +1,18 @@
+{
+    "tool_name": "LK881",
+    "tool_description": "LK881 is an online platform for sports betting, football betting, and casino games, offering a diverse range of exciting games with high reward rates.",
+    "home_url": "https://rapidapi.com/lk881/api/lk881/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "LK881",
+            "url": "https://lk881.p.rapidapi.com/",
+            "description": "This API provides access to the LK881 betting platform, allowing users to engage in various betting activities and access promotional offers.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

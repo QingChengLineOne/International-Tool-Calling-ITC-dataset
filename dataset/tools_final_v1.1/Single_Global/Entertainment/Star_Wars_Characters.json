@@ -1,0 +1,18 @@
+{
+    "tool_name": "Star Wars Characters",
+    "tool_description": "A comprehensive list of Star Wars characters along with their details.",
+    "home_url": "https://rapidapi.com/louislefebure9/api/star-wars-characters/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get all characters",
+            "url": "https://star-wars-characters.p.rapidapi.com/46DYBV/star_wars_characters",
+            "description": "Fetches all Star Wars characters with their complete details.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

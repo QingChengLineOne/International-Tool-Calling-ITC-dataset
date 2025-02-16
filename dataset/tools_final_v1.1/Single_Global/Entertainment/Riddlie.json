@@ -1,0 +1,287 @@
+{
+    "tool_name": "Riddlie",
+    "tool_description": "API that provides access to a collection of thousands of riddles (and growing). Fetch a random riddle or a riddle of the day. You can build a perfect app to entertain kids and families during dinner times. The API allows you to pull riddles by their ID, difficulty level, and keyword of your interest. It also collects feedback such as upvotes and flags to fine-tune the library of riddles. More riddles will be continuously added to the API.",
+    "home_url": "https://rapidapi.com/kenmak1979/api/riddlie/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Flag Riddle",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/flag/{id}",
+            "description": "This endpoint allows you to flag a riddle to help the API developer improve the service. You can flag a riddle as Duplicate, Inappropriate, Not a Riddle, or Missing Information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier of the riddle to be flagged.",
+                    "default": "63bdef027183b71946b64ee6"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "flag",
+                    "type": "NUMBER",
+                    "description": "The type of flag to apply to the riddle.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Update Level",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/level/{id}",
+            "description": "This endpoint enables you to update the difficulty level of a riddle. Levels can be set to Easy (0), Medium (1), or Hard (2).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier of the riddle to be updated.",
+                    "default": "63bdef027183b71946b64ee6"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "level",
+                    "type": "STRING",
+                    "description": "The new difficulty level for the riddle.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Riddle by Keyword",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/bykeyword/{keyword}",
+            "description": "Get a random riddle related to a specific subject or keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "string",
+                    "description": "The keyword to search for related riddles.",
+                    "default": "cat"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "riddle": {
+                        "type": "string"
+                    },
+                    "answer": {
+                        "type": "string"
+                    },
+                    "upVotes": {
+                        "type": "integer"
+                    },
+                    "difficultyLevel": {
+                        "type": "string"
+                    },
+                    "postedBy": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Riddle by Difficulty Level",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/bylevel/{level}",
+            "description": "Get a random riddle based on the specified difficulty level.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "level",
+                    "type": "STRING",
+                    "description": "The difficulty level to filter riddles by.",
+                    "default": "easy"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Riddle by ID",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/byid/{id}",
+            "description": "Retrieve a riddle using its unique identifier.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier of the riddle.",
+                    "default": "63bdef027183b71946b64ee6"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Delete Riddle (Admin Only)",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/{id}",
+            "description": "This endpoint allows an admin to delete a specific riddle.",
+            "method": "DELETE",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier of the riddle to be deleted.",
+                    "default": "63bdef027183b71946b64ee61"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Update Riddle (Admin Only)",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/{id}",
+            "description": "This endpoint allows an admin to update an existing riddle. Information should be provided in JSON format.",
+            "method": "PUT",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier of the riddle to be updated.",
+                    "default": "63bdef027183b71946b64ee6"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Create New Riddle (Admin Only)",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/",
+            "description": "This endpoint allows an admin to create a new riddle.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Upvote Riddle",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/upvote/{id}",
+            "description": "This endpoint registers an upvote for a riddle to improve its visibility in the future.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier of the riddle to be upvoted.",
+                    "default": "63bdef027183b71946b64ee6"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Riddle of the Day",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/rod",
+            "description": "Request a riddle of the day, which changes daily.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "riddle": {
+                        "type": "string"
+                    },
+                    "answer": {
+                        "type": "string"
+                    },
+                    "upVotes": {
+                        "type": "integer"
+                    },
+                    "difficultyLevel": {
+                        "type": "string"
+                    },
+                    "postedBy": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Random Riddle",
+            "url": "https://riddlie.p.rapidapi.com/api/v1/riddles/random",
+            "description": "Retrieve a new random riddle.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "riddle": {
+                        "type": "string"
+                    },
+                    "answer": {
+                        "type": "string"
+                    },
+                    "upVotes": {
+                        "type": "integer"
+                    },
+                    "difficultyLevel": {
+                        "type": "string"
+                    },
+                    "postedBy": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

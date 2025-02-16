@@ -1,0 +1,18 @@
+{
+    "tool_name": "Audio Captcha",
+    "tool_description": "This API is used to determine the text from audio captcha data. The data can be provided as either a URL to the audio file or a base64 encoded data stream. Both natural English alphabet and NATO alphabet are supported.",
+    "home_url": "https://rapidapi.com/appaio/api/audio-captcha/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AudioCaptchaLambda",
+            "url": "https://audio-captcha.p.rapidapi.com/AudioCaptchaLambda",
+            "description": "Use this API to decode the text from the audio data of an audio-based captcha.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

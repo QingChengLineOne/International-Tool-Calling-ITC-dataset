@@ -1,0 +1,25 @@
+{
+    "tool_name": "Vybit Notifications",
+    "tool_description": "Vybit (VIBE-it) sends personalized push notifications using sounds that you record or choose from thousands of searchable sounds. This API describes how to trigger a specific vyb notification.",
+    "home_url": "https://rapidapi.com/brady-UvvGnDzIw/api/vybit-notifications1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Vyb POST trigger with notification payload",
+            "url": "https://vybit-notifications1.p.rapidapi.com/cpmu3o9mio3xqof2",
+            "description": "This API endpoint allows you to send a push notification with a specific payload. Note that notification parameters included in the post will override the default notification settings for the vyb.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "The unique identifier for the notification trigger.",
+                    "default": "cpmu3o9mio3xqof2"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

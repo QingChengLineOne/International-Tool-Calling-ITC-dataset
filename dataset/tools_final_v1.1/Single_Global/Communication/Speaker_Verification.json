@@ -1,0 +1,77 @@
+{
+    "tool_name": "Speaker Verification",
+    "tool_description": "PresentID Speaker verification API checks whether two voices belong to the same person or not. This capability is potentially useful in call centers.",
+    "home_url": "https://rapidapi.com/PresentID/api/speaker-verification1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send voice with voice file",
+            "url": "https://speaker-verification1.p.rapidapi.com/Verification",
+            "description": "This API checks whether two voices belong to one person or not. The voice must be between three seconds and one minute and must not exceed 5 MB. Supported file types include wav, mp3, m4a, FLAC, aac, and ogg.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "sound1",
+                    "type": "BINARY",
+                    "description": "The first voice file to be verified.",
+                    "default": ""
+                },
+                {
+                    "name": "sound2",
+                    "type": "BINARY",
+                    "description": "The second voice file to be verified.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "Send voice with Base64",
+            "url": "https://speaker-verification1.p.rapidapi.com/Verification",
+            "description": "This API checks whether two voices belong to one person or not. The voice must be between three seconds and one minute and must not exceed 5 MB. Supported file types include wav, mp3, m4a, FLAC, aac, and ogg.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "sound1Base64",
+                    "type": "STRING",
+                    "description": "Base64 encoded string of the first voice file.",
+                    "default": ""
+                },
+                {
+                    "name": "sound2Base64",
+                    "type": "STRING",
+                    "description": "Base64 encoded string of the second voice file.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Send voice with Voice URL",
+            "url": "https://speaker-verification1.p.rapidapi.com/Verification",
+            "description": "This API checks whether two voices belong to one person or not. The voice must be between three seconds and one minute and must not exceed 5 MB. Supported file types include wav, mp3, m4a, FLAC, aac, and ogg.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "linkFile1",
+                    "type": "STRING",
+                    "description": "URL of the first voice file.",
+                    "default": ""
+                },
+                {
+                    "name": "linkFile2",
+                    "type": "STRING",
+                    "description": "URL of the second voice file.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

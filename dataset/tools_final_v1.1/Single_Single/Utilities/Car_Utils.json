@@ -1,0 +1,136 @@
+{
+    "tool_name": "Car Utils",
+    "tool_description": "FREE resources for checking VIN, getting the market value of your car, estimating the cost of ownership in the US, checking fuel economy, and more to come.",
+    "home_url": "https://rapidapi.com/dfskGT/api/car-utils/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Estimate Ownership Cost",
+            "url": "https://car-utils.p.rapidapi.com/ownershipcost",
+            "description": "Estimate how much you will spend on the car with specified VIN for the next 5 years.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "Vehicle identification number.",
+                    "default": "5N3AA08D68N901917"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "mileage_year",
+                    "type": "NUMBER",
+                    "description": "An estimate of how many miles you will drive every year for the next 5 years. Defaults to 15000.",
+                    "default": "15000"
+                },
+                {
+                    "name": "mileage_start",
+                    "type": "NUMBER",
+                    "description": "Start mileage of the car. If unspecified, an estimate will be used.",
+                    "default": "50000"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Estimate Market Value",
+            "url": "https://car-utils.p.rapidapi.com/marketvalue",
+            "description": "Estimate market value of the car with specified VIN.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "Vehicle identification number.",
+                    "default": "5N3AA08D68N901917"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "mileage",
+                    "type": "NUMBER",
+                    "description": "Current mileage of the car. If unspecified, an estimate will be used.",
+                    "default": "50000"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Decode VIN",
+            "url": "https://car-utils.p.rapidapi.com/vindecoder",
+            "description": "Decode VIN, get valuable information for the car you are interested in.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "Vehicle identification number. Incomplete VIN checking is supported.",
+                    "default": "5N3AA08D68N901917"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get fuel economy information",
+            "url": "https://car-utils.p.rapidapi.com/fueleconomy",
+            "description": "Get fuel economy information from the official U.S. government source.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "The vehicle model. Use /models endpoint to get supported models for the specified make.",
+                    "default": "Chiron"
+                },
+                {
+                    "name": "make",
+                    "type": "STRING",
+                    "description": "The vehicle make. Use /makes endpoint to get supported makes.",
+                    "default": "Bugatti"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "Model year. Currently supports model years from 1985 to 2023.",
+                    "default": "2023"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get vehicle models",
+            "url": "https://car-utils.p.rapidapi.com/models",
+            "description": "Get all supported vehicle models for specified make.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "make",
+                    "type": "STRING",
+                    "description": "The brand of the vehicle.",
+                    "default": "Bugatti"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get vehicle makes",
+            "url": "https://car-utils.p.rapidapi.com/makes",
+            "description": "Get all supported vehicle makes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

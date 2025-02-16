@@ -1,0 +1,76 @@
+{
+    "tool_name": "Phone and Email Validator_v2",
+    "tool_description": "An extremely useful tool for validating phone numbers, email addresses, IP addresses, and postal codes.",
+    "home_url": "https://rapidapi.com/nextgenict-nextgenict-default/api/phone-and-email-validator/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "PostalCode",
+            "url": "https://phone-and-email-validator.p.rapidapi.com/",
+            "description": "Validates a postal code or zip code and returns the corresponding location. For USA only.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal_code",
+                    "type": "STRING",
+                    "description": "The postal code to validate.",
+                    "default": "33166"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "IP Address",
+            "url": "https://phone-and-email-validator.p.rapidapi.com/",
+            "description": "Validates an IP address and returns its details. Example: 8.8.8.8.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "The IP address to validate.",
+                    "default": "127.0.0.1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Phone Number",
+            "url": "https://phone-and-email-validator.p.rapidapi.com/",
+            "description": "Validates a phone number in E164 format. Example: 19542567890 for USA.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phone",
+                    "type": "STRING",
+                    "description": "The phone number to validate.",
+                    "default": "12345678900 for US"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Email Id",
+            "url": "https://phone-and-email-validator.p.rapidapi.com/",
+            "description": "Validates an email address. Example: email@example.com.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to validate.",
+                    "default": "test@gmail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

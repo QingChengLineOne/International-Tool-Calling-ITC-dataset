@@ -1,0 +1,66 @@
+{
+    "tool_name": "Reddit meme",
+    "tool_description": "An API for showing the best memes on the internet using Reddit.",
+    "home_url": "https://rapidapi.com/thedeltaaw-NUf4SqoNoc/api/reddit-meme/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Trending memes",
+            "url": "https://reddit-meme.p.rapidapi.com/memes/trending",
+            "description": "Use this route to get the newest trending memes from subreddit.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "created_utc": {
+                            "type": "integer"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "subreddit": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Top memes",
+            "url": "https://reddit-meme.p.rapidapi.com/memes/top",
+            "description": "Use this route to get all top quality memes from subreddit.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "created_utc": {
+                            "type": "integer"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "subreddit": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

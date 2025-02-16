@@ -1,0 +1,222 @@
+{
+    "tool_name": "Quadro de sócios CPF CNPJ",
+    "tool_description": "Consultar Quadro de Sócios e Administradores registrados na Receita Federal",
+    "home_url": "https://rapidapi.com/binfoconsultas/api/quadro-de-socios-cpf-cnpj/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "CPF",
+            "url": "https://quadro-de-socios-cpf-cnpj.p.rapidapi.com/buscar-base.php",
+            "description": "Buscar pelo CPF do sócio ou administrador",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cpf",
+                    "type": "STRING",
+                    "description": "O CPF do sócio ou administrador a ser consultado.",
+                    "default": "09336443291"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "nome",
+                    "type": "STRING",
+                    "description": "O nome é opcional, porém ao informa-lo melhoram as chances de encontrar os dados.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "CNPJ",
+            "url": "https://quadro-de-socios-cpf-cnpj.p.rapidapi.com/buscar-base.php",
+            "description": "Buscar dados da empresa pelo CNPJ",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cnpj",
+                    "type": "STRING",
+                    "description": "O CNPJ da empresa a ser consultado.",
+                    "default": "22543331000100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "dados": {
+                        "properties": {
+                            "capital_social": {
+                                "type": "string"
+                            },
+                            "cnae_principal": {
+                                "type": "string"
+                            },
+                            "cnaes_secundarios": {
+                                "type": "array"
+                            },
+                            "cnpj": {
+                                "type": "string"
+                            },
+                            "data_criacao": {
+                                "type": "string"
+                            },
+                            "data_situacao": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "endereco": {
+                                "properties": {
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    },
+                                    "complemento": {
+                                        "type": "string"
+                                    },
+                                    "logradouro": {
+                                        "type": "string"
+                                    },
+                                    "municipio": {
+                                        "type": "string"
+                                    },
+                                    "numero": {
+                                        "type": "string"
+                                    },
+                                    "uf": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "natureza_juridica": {
+                                "type": "string"
+                            },
+                            "nome_fantasia": {
+                                "type": "string"
+                            },
+                            "porte": {
+                                "type": "string"
+                            },
+                            "razao_social": {
+                                "type": "string"
+                            },
+                            "situacao": {
+                                "type": "string"
+                            },
+                            "telefones": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "mensagem": {
+                        "type": "string"
+                    },
+                    "participacoes": {
+                        "type": "array"
+                    },
+                    "socios": {
+                        "items": {
+                            "properties": {
+                                "data_entrada": {
+                                    "type": "string"
+                                },
+                                "documento_socio": {
+                                    "type": "string"
+                                },
+                                "nome_socio": {
+                                    "type": "string"
+                                },
+                                "qualificacao": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "status": {
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "CPFObliterado",
+            "url": "https://quadro-de-socios-cpf-cnpj.p.rapidapi.com/buscar-base.php",
+            "description": "Buscar quando o CPF está obliterado. Ex: ***053599**",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "nome",
+                    "type": "STRING",
+                    "description": "Nome do sócio ou administrador.",
+                    "default": "WERNER ROMERA SUFFERT"
+                },
+                {
+                    "name": "cpf",
+                    "type": "STRING",
+                    "description": "CPF obliterado a ser consultado.",
+                    "default": "***960701**"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

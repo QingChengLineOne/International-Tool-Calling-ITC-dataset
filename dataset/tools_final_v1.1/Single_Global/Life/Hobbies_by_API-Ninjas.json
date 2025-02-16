@@ -1,0 +1,25 @@
+{
+    "tool_name": "Hobbies by API-Ninjas",
+    "tool_description": "Access thousands of awesome hobby ideas. This API provides a random hobby along with a Wikipedia link detailing the hobby.",
+    "home_url": "https://rapidapi.com/apininjas/api/hobbies-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/hobbies",
+            "url": "https://hobbies-by-api-ninjas.p.rapidapi.com/v1/hobbies",
+            "description": "Returns a random hobby and a Wikipedia link detailing the hobby.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Hobby category. Possible values are: general, sports_and_outdoors, education, collection, competition, observation.",
+                    "default": "general"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

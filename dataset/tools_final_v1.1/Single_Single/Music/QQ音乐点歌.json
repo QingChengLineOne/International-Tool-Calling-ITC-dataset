@@ -1,0 +1,31 @@
+{
+    "tool_name": "QQ音乐点歌",
+    "tool_description": "QQ音乐点歌接口",
+    "home_url": "https://api.aa1.cn/doc/52qqmusic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ音乐点歌API",
+            "url": "https://api.52vmy.cn/api/music/qq",
+            "description": "根据关键词搜索并点播QQ音乐中的歌曲",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "要搜索的歌曲关键词",
+                    "default": "默认为空，将返回推荐歌曲"
+                },
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "返回结果数量，默认为1",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

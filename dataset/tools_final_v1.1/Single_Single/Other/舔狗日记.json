@@ -1,0 +1,25 @@
+{
+    "tool_name": "舔狗日记",
+    "tool_description": "舔狗日记，无需多言",
+    "home_url": "https://api.aa1.cn/doc/mandog.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "舔狗日记API",
+            "url": "https://api.xiaole.work/api/dog/dog.php",
+            "description": "提供舔狗日记相关内容的查询接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，目前只支持json",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

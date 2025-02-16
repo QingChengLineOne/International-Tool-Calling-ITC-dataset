@@ -1,0 +1,68 @@
+{
+    "tool_name": "百度地图API",
+    "tool_description": "百度地图提供的服务API，用于地点检索等功能。",
+    "home_url": "https://lbsyun.baidu.com/",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "圆形区域检索",
+            "url": "https://api.map.baidu.com/place/v2/search",
+            "description": "根据圆形区域进行地点信息检索。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "string",
+                    "description": "检索关键字。",
+                    "default": ""
+                },
+                {
+                    "name": "location",
+                    "type": "string",
+                    "description": "圆形区域检索中心点，格式为'纬度,经度'。",
+                    "default": ""
+                },
+                {
+                    "name": "radius",
+                    "type": "string",
+                    "description": "圆形区域检索半径，单位为米。",
+                    "default": "1000"
+                },
+                {
+                    "name": "ak",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "tag",
+                    "type": "string",
+                    "description": "检索分类偏好。",
+                    "default": ""
+                },
+                {
+                    "name": "radius_limit",
+                    "type": "string",
+                    "description": "是否严格限定召回结果在设置检索半径范围内。",
+                    "default": "false"
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "输出格式，支持json或xml。",
+                    "default": "json"
+                },
+                {
+                    "name": "scope",
+                    "type": "string",
+                    "description": "检索结果详细程度。",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "0（成功）, 其他（失败）",
+            "schema": {}
+        }
+    ]
+}

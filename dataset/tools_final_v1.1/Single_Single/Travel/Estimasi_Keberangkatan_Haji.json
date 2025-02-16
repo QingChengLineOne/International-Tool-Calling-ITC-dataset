@@ -1,0 +1,25 @@
+{
+    "tool_name": "Estimasi Keberangkatan Haji",
+    "tool_description": "Cek Estimasi Keberangkatan Haji Indonesia melalui Nomor Porsi Haji. This tool allows users to check the estimated Hajj departure dates for Indonesian pilgrims based on their Hajj portion number.",
+    "home_url": "https://rapidapi.com/pergihaji-pergihaji-default/api/estimasi-keberangkatan-haji/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "Estimasi Keberangkatan Haji",
+            "url": "https://estimasi-keberangkatan-haji.p.rapidapi.com/api/estimasi",
+            "description": "Menampilkan informasi estimasi keberangkatan haji berdasarkan nomor porsi. Displays the estimated Hajj departure information based on the portion number.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "nomor_porsi",
+                    "type": "STRING",
+                    "description": "Nomor porsi haji yang digunakan untuk mendapatkan estimasi keberangkatan.",
+                    "default": "0600246144"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

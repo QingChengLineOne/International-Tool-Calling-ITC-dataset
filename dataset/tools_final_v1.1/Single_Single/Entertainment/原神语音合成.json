@@ -1,0 +1,31 @@
+{
+    "tool_name": "原神语音合成API",
+    "tool_description": "生成原神角色的语音",
+    "home_url": "https://api.aa1.cn/doc/genshinimpactaudio.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "原神语音合成接口",
+            "url": "https://api.pearktrue.cn/api/genshinimpactaudio/",
+            "description": "通过发送请求生成指定角色的语音",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要合成的语音文本内容",
+                    "default": ""
+                },
+                {
+                    "name": "speaker",
+                    "type": "string",
+                    "description": "指定要使用哪个角色的语音",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

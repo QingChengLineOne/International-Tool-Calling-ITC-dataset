@@ -1,0 +1,31 @@
+{
+    "tool_name": "Words to numbers",
+    "tool_description": "API to convert natural language words into numbers. Currently available in English and Italian, and limited to billions.",
+    "home_url": "https://rapidapi.com/giordano0alberti-e50D9-3izcS/api/words-to-numbers/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "words2number",
+            "url": "https://words-to-numbers.p.rapidapi.com/wordsToNumber",
+            "description": "Returns the corresponding number for your input sentence. Specify the language with the associated request parameter (currently available for Italian (\"it\") and English (\"en\")).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The natural language sentence to be converted into a number.",
+                    "default": "twentyone thousands three hundreds and thirty"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language of the input sentence.",
+                    "default": "en"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

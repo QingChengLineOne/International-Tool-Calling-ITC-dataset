@@ -1,0 +1,32 @@
+{
+    "tool_name": "光遇季蜡位置图片接口",
+    "tool_description": "生成光遇每日季节蜡烛位置图片",
+    "home_url": "https://api.aa1.cn/doc/ytgyjl.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "光遇季蜡位置图片API",
+            "url": "https://api.t1qq.com/api/sky/sc/scjl",
+            "description": "提供光遇每日季节蜡烛的位置图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "9uryZiknzUtTFkaYUQxcOeMwq4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "指定日期的蜡烛位置，格式为YYYY-MM-DD，默认为当前日期",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

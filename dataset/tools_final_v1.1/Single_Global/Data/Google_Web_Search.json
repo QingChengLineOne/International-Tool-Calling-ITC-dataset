@@ -1,0 +1,38 @@
+{
+    "tool_name": "Google Web Search",
+    "tool_description": "Google Web Search API. Search the world’s information, including webpages, related keywords and more.",
+    "home_url": "https://rapidapi.com/UnlimitedAPI/api/google-web-search1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://google-web-search1.p.rapidapi.com/",
+            "description": "Perform a search query using Google Search parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search query. You can use Google Search parameters, e.g., 'adele site:youtube.com', 'harry potter filetype:pdf', 'inurl:store', 'ronaldo -cristiano'.",
+                    "default": "World Cup"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "related_keywords",
+                    "type": "STRING",
+                    "description": "Indicates whether to show related keywords. Default is false. Setting to true increases API latency.",
+                    "default": "true"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Specifies the maximum number of results to return. The recommended maximum value is 300.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "tool_name": "IMDB",
+    "tool_description": "IMDb is an online database of information related to films, television series, podcasts, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.",
+    "home_url": "https://rapidapi.com/DataCrawler/api/imdb188/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Popular Movies",
+            "url": "https://imdb188.p.rapidapi.com/api/v1/getPopularMovies",
+            "description": "Retrieves a list of popular movies from the IMDb database.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Popular TV Shows",
+            "url": "https://imdb188.p.rapidapi.com/api/v1/getPopularTVShows",
+            "description": "Retrieves a list of popular TV shows from the IMDb database.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

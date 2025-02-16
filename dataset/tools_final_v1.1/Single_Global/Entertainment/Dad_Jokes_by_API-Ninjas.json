@@ -1,0 +1,25 @@
+{
+    "tool_name": "Dad Jokes by API-Ninjas",
+    "tool_description": "Thousands of hilarious dad jokes for your entertainment apps.",
+    "home_url": "https://rapidapi.com/apininjas/api/dad-jokes-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/dadjokes",
+            "url": "https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes",
+            "description": "API Ninjas Dad Jokes API endpoint. Returns one (or more) random dad jokes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "How many jokes to return. Must be between 1 and 10. Default is 1.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

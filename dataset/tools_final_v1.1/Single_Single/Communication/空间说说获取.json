@@ -1,0 +1,31 @@
+{
+    "tool_name": "空间说说获取API",
+    "tool_description": "用于获取指定QQ用户的空间说说信息",
+    "home_url": "https://api.aa1.cn/doc/kongjianshuoshuohuoqu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "空间说说获取",
+            "url": "https://api.oioweb.cn/api/qq/MsgList",
+            "description": "获取指定QQ用户的空间说说列表",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "QQ号码，用于查询指定用户的空间说说",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "页码，用于分页获取说说列表",
+                    "default": 1
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Vwin",
+    "tool_description": "Vwin là nhà cái cá cược trực tuyến hàng đầu thuộc tập đoàn BVI, cung cấp các sản phẩm được cấp phép hoạt động bởi Cục Quản lý Giải trí và Trò chơi Philippines.",
+    "home_url": "https://rapidapi.com/vwinwin/api/vwin/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "link vào Vwin 2022",
+            "url": "https://vwin.p.rapidapi.com/",
+            "description": "API cho phép người dùng truy cập vào các dịch vụ cá cược trực tuyến của Vwin.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "tool_name": "服务器端口扫描",
+    "tool_description": "可以快速扫描服务器对外网开放的服务端口",
+    "home_url": "https://api.aa1.cn/doc/xl-dksm.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "服务器端口扫描API",
+            "url": "https://api.lucksss.com/api/portscan",
+            "description": "用于扫描指定IP地址上开放的服务端口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要扫描的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "ports",
+                    "type": "string",
+                    "description": "需要扫描的端口号范围，用逗号分隔，如：80,443,8080",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

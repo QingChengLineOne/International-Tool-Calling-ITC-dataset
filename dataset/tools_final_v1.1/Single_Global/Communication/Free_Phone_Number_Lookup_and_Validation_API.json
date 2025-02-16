@@ -1,0 +1,25 @@
+{
+    "tool_name": "Free Phone Number Lookup and Validation API",
+    "tool_description": "This API allows users to perform free lookups and validations of phone numbers, providing additional information such as geographic location, timezone, and currency without requiring any signup.",
+    "home_url": "https://rapidapi.com/teracrawl-teracrawl-default/api/free-phone-number-lookup-and-validation-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Free JSON Endpoint",
+            "url": "https://free-phone-number-lookup-and-validation-api1.p.rapidapi.com/json",
+            "description": "This endpoint retrieves information about a phone number, including validation and additional details. For more information, please refer to the documentation at https://phone-number-api.com/docs/json.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "STRING",
+                    "description": "The phone number to be looked up and validated.",
+                    "default": "12134635888"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

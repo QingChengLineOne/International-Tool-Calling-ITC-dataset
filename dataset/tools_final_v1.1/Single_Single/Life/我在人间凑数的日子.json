@@ -1,0 +1,18 @@
+{
+    "tool_name": "我在人间凑数的日子",
+    "tool_description": "随机返回一条我在人间凑数的日子",
+    "home_url": "https://api.aa1.cn/doc/renjian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机返回一条我在人间凑数的日子",
+            "url": "https://api.52vmy.cn/api/wl/yan/renjian",
+            "description": "随机获取一条人生感悟或者语录",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

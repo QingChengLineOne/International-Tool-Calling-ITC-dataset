@@ -1,0 +1,91 @@
+{
+    "tool_name": "签名图片API",
+    "tool_description": "输入姓名生成签名图片",
+    "home_url": "https://api.aa1.cn/doc/SignatureImage.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "签名图片生成接口",
+            "url": "https://www.yishuzi.cn/qianming/image.png",
+            "description": "根据提供的姓名参数生成签名图片",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "fsize",
+                    "type": "int",
+                    "description": "字体大小，默认为50",
+                    "default": "50"
+                },
+                {
+                    "name": "font",
+                    "type": "string",
+                    "description": "字体文件，如qmt.ttf",
+                    "default": "qmt.ttf"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要生成的签名文本，如张三丰",
+                    "default": ""
+                },
+                {
+                    "name": "mirror",
+                    "type": "boolean",
+                    "description": "是否镜像显示签名，yes为是，no为否",
+                    "default": "no"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "签名颜色，如ee1d24",
+                    "default": "ee1d24"
+                },
+                {
+                    "name": "vcolor",
+                    "type": "string",
+                    "description": "签名边框颜色，如555",
+                    "default": "555"
+                },
+                {
+                    "name": "bgcolor",
+                    "type": "string",
+                    "description": "背景颜色，如fffα",
+                    "default": "fffα"
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "输出格式，如png",
+                    "default": "png"
+                },
+                {
+                    "name": "spacing",
+                    "type": "int",
+                    "description": "字体间距，默认为4",
+                    "default": "4"
+                },
+                {
+                    "name": "shadow",
+                    "type": "boolean",
+                    "description": "是否添加阴影，yes为是，no为否",
+                    "default": "no"
+                },
+                {
+                    "name": "transparent",
+                    "type": "boolean",
+                    "description": "是否透明，yes为是，no为否",
+                    "default": "no"
+                },
+                {
+                    "name": "icon",
+                    "type": "boolean",
+                    "description": "是否添加图标，yes为是，no为否",
+                    "default": "no"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

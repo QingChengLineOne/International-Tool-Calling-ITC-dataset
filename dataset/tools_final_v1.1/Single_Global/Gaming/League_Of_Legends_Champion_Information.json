@@ -1,0 +1,42 @@
+{
+    "tool_name": "League Of Legends Champion Information",
+    "tool_description": "An API that returns a Champion object containing a list of abilities, including the champion's passive ability.",
+    "home_url": "https://rapidapi.com/imploms/api/league-of-legends-champion-informaion/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Champions",
+            "url": "https://league-of-legends-champion-informaion.p.rapidapi.com/LolInfo/GetChampions",
+            "description": "Accepts a comma-delimited list of champion names or nicknames and returns a list of champions' full names along with their passive and standard abilities in an object format.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "champions",
+                    "type": "STRING",
+                    "description": "A comma-separated list of champion names or nicknames.",
+                    "default": "cait"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Champion Abilities as Text",
+            "url": "https://league-of-legends-champion-informaion.p.rapidapi.com/LolInfo/GetChampionAbilitiesText",
+            "description": "Accepts a comma-delimited list of champion names or nicknames and returns a text list of champions along with their passive and standard abilities.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "champion",
+                    "type": "STRING",
+                    "description": "The name or nickname of the champion.",
+                    "default": "vayne"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "扒站爬虫",
+    "tool_description": "一个用于爬取指定网站内容的爬虫工具，支持HTTPS请求。",
+    "home_url": "https://www.free-api.com/doc/601",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "扒站接口",
+            "url": "https://v.api.aa1.cn/api/api-bz/temp.php",
+            "description": "通过URL爬取指定网站的内容并提供下载链接。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要爬取的目标网站URL。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "返回状态码及信息",
+            "schema": {}
+        }
+    ]
+}

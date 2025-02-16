@@ -1,0 +1,38 @@
+{
+    "tool_name": "Whois查询API",
+    "tool_description": "该接口可以查询域名whois信息，缓存一天。包含1000多个whois服务器",
+    "home_url": "https://api.aa1.cn/doc/whois-api-m.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Whois查询接口",
+            "url": "https://v2.api-m.com/api/whois",
+            "description": "查询指定域名的whois信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "需要查询的域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "查询结果的返回语言，如en（英文）、zh（中文）等",
+                    "default": "en"
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "查询结果的输出格式，如json、xml等",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

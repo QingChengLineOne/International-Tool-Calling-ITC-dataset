@@ -1,0 +1,72 @@
+{
+    "tool_name": "Model Train Prices API",
+    "tool_description": "Get data on model train locomotives, wagons, and other related products.",
+    "home_url": "https://rapidapi.com/madsphi-1cnVTVPS_/api/model-train-prices-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Product Available",
+            "url": "https://model-train-prices-api.p.rapidapi.com/product-available",
+            "description": "Check if a specific model train product is available.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "An optional key to identify the product.",
+                    "default": ""
+                },
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "The model name of the product.",
+                    "default": ""
+                },
+                {
+                    "name": "brand",
+                    "type": "STRING",
+                    "description": "The brand name of the product.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Product",
+            "url": "https://model-train-prices-api.p.rapidapi.com/get-product",
+            "description": "Retrieve detailed information about a specific model train product.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "An optional key to identify the product.",
+                    "default": ""
+                },
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "The model name of the product.",
+                    "default": ""
+                },
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "The currency in which the product price is requested.",
+                    "default": ""
+                },
+                {
+                    "name": "brand",
+                    "type": "STRING",
+                    "description": "The brand name of the product.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

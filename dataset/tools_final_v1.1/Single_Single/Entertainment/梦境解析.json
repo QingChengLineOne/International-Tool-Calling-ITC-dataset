@@ -1,0 +1,38 @@
+{
+    "tool_name": "梦境解析",
+    "tool_description": "提供梦境解析服务",
+    "home_url": "https://api.qqsuu.cn/doc/dm-dream.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "梦境解析",
+            "url": "https://api.qqsuu.cn/api/dm-dream",
+            "description": "根据搜索词解析梦境的含义",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "搜索词，中文",
+                    "default": ""
+                },
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "返回数量",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "翻页",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

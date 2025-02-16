@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机风景图片API",
+    "tool_description": "提供随机高清风景图片的API接口",
+    "home_url": "https://api.aa1.cn/doc/view.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机风景图片接口",
+            "url": "https://api.52vmy.cn/api/img/tu/view",
+            "description": "获取一张随机的高清风景图片",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

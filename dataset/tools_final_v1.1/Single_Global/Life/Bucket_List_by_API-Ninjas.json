@@ -1,0 +1,18 @@
+{
+    "tool_name": "Bucket List by API-Ninjas",
+    "tool_description": "Get inspired with thousands of innovative bucket list ideas. See more info at https://api-ninjas.com/api/bucketlist.",
+    "home_url": "https://rapidapi.com/apininjas/api/bucket-list-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/bucketlist",
+            "url": "https://bucket-list-by-api-ninjas.p.rapidapi.com/v1/bucketlist",
+            "description": "Returns a random bucket list idea.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

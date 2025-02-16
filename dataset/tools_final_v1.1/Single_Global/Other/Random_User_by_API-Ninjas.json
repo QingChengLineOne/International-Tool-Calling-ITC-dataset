@@ -1,0 +1,18 @@
+{
+    "tool_name": "Random User by API-Ninjas",
+    "tool_description": "Random user data generator for placeholders and testing. This API provides fake random user profiles that can be used for various testing purposes.",
+    "home_url": "https://rapidapi.com/apininjas/api/random-user-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/randomuser",
+            "url": "https://random-user-by-api-ninjas.p.rapidapi.com/v1/randomuser",
+            "description": "API Ninjas Random User API endpoint. Returns a fake random user profile.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

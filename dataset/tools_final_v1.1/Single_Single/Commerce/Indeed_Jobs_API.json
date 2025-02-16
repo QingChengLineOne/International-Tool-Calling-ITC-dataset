@@ -1,0 +1,37 @@
+{
+    "tool_name": "Indeed Jobs API",
+    "tool_description": "Indeed Jobs Search API - USA. This API allows users to retrieve a list of job postings in JSON format by providing a keyword, location (USA only), and an offset value for pagination.",
+    "home_url": "https://rapidapi.com/vuesdata/api/indeed-jobs-api/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "SearchJobs",
+            "url": "https://indeed-jobs-api.p.rapidapi.com/indeed-us/",
+            "description": "This endpoint retrieves a list of job postings based on the specified keyword and location. The offset parameter is used for pagination, allowing users to access additional job postings by increasing the offset by 10 for each subsequent request.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to search for jobs, can be a specific city or state.",
+                    "default": "california"
+                },
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The search keyword, which can be a job title or skill.",
+                    "default": "python"
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "The starting point for pagination, must be increased by 10 for each page.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

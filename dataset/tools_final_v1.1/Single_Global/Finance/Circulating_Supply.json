@@ -1,0 +1,25 @@
+{
+    "tool_name": "Circulating Supply",
+    "tool_description": "This API returns the circulating supply value of a specified cryptocurrency.",
+    "home_url": "https://rapidapi.com/sazaktechs/api/circulating-supply3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Coin",
+            "url": "https://circulating-supply3.p.rapidapi.com/production/resource",
+            "description": "This endpoint retrieves the circulating supply value of the specified coin.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "coin",
+                    "type": "STRING",
+                    "description": "The cryptocurrency for which to retrieve the circulating supply.",
+                    "default": "btc"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

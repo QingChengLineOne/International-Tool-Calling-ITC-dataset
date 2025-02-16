@@ -1,0 +1,25 @@
+{
+    "tool_name": "【客户端信息ip】接口",
+    "tool_description": "该API用于获取指定IP地址的客户端相关信息，如地理位置、运营商等。",
+    "home_url": "https://api.aa1.cn/doc/UserInfo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取客户端信息",
+            "url": "https://api.cenguigui.cn/api/UserInfo/",
+            "description": "通过IP地址获取客户端的详细信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "客户端的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

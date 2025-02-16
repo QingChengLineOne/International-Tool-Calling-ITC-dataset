@@ -1,0 +1,50 @@
+{
+    "tool_name": "Feroeg - Reverse Geocoding",
+    "tool_description": "Get a fully customizable text address (country, city, house number) from latitude and longitude pairs.",
+    "home_url": "https://rapidapi.com/castelli0giovanni-VdUSmLXuCR3/api/feroeg-reverse-geocoding/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "ReverseGeocode",
+            "url": "https://feroeg-reverse-geocoding.p.rapidapi.com/address",
+            "description": "Return a text address from a latitude/longitude location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "The latitude of the location.",
+                    "default": "40.787542"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "The longitude of the location.",
+                    "default": "-73.955968"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "This is an advanced feature to get a custom formatted text. Please read the available documentation at www.feroeg.com/api.html.",
+                    "default": "'[SN[, ] - [23456789ab[, ]'"
+                },
+                {
+                    "name": "mode",
+                    "type": "STRING",
+                    "description": "The response is not in JSON, but as a single text string. NOTE: at the moment mode=text is the only option available. If omitted, the response will be in JSON.",
+                    "default": "text"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "This is the preferred language output. Use two character nation codes, as described in ISO 3166-1 alpha-2 specification.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

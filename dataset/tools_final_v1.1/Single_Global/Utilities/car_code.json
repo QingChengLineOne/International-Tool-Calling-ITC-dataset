@@ -1,0 +1,41 @@
+{
+    "tool_name": "car code",
+    "tool_description": "This is a simple API that will return the human readable version of DTC codes (OBD-II Trouble Codes).",
+    "home_url": "https://rapidapi.com/alexandremeylan92/api/car-code/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/obd2/{code}",
+            "url": "https://car-code.p.rapidapi.com/obd2/{code}",
+            "description": "This endpoint will provide the human readable version of a requested OBD-II code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "The OBD-II trouble code to be queried.",
+                    "default": "P0001"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "cause": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "definition": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

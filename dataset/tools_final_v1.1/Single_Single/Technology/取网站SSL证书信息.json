@@ -1,0 +1,26 @@
+{
+    "tool_name": "API名称：取网站SSL证书信息",
+    "tool_description": "API描述：用于获取指定网站的 SSL 证书信息，包括证书有效期、颁发者名称和证书名称等信息。",
+    "home_url": "文档地址：https://api.aa1.cn/doc/checkssl-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "API接口",
+            "url": "接口地址：https://api.ahfi.cn/api/checkssl",
+            "description": "请求指定网站的SSL证书信息",
+            "method": "请求方式：GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要查询的网站地址",
+                    "required": "是",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

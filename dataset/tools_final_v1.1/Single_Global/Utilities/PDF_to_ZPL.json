@@ -1,0 +1,37 @@
+{
+    "tool_name": "PDF to ZPL",
+    "tool_description": "This tool converts PDF files into ZPL (Zebra Programming Language) format, which is commonly used for label printing.",
+    "home_url": "https://rapidapi.com/adityawagh114/api/pdf-to-zpl/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "pdf-to-zpl",
+            "url": "https://pdf-to-zpl.p.rapidapi.com/pdf-to-zpl",
+            "description": "Convert PDF to ZPL format for printing.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "pdfBase64",
+                    "type": "STRING",
+                    "description": "The base64 encoded PDF file that needs to be converted.",
+                    "default": ""
+                },
+                {
+                    "name": "width",
+                    "type": "STRING",
+                    "description": "The width of the label in inches.",
+                    "default": "4"
+                },
+                {
+                    "name": "height",
+                    "type": "STRING",
+                    "description": "The height of the label in inches.",
+                    "default": "6"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

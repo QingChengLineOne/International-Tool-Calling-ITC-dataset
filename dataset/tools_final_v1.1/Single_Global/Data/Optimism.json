@@ -1,0 +1,145 @@
+{
+    "tool_name": "Optimism",
+    "tool_description": "All-In-One access to the Optimism blockchain data! More features are coming soon! Feedback and feature requests should be sent to: angleitnerchristoph123@gmail.com",
+    "home_url": "https://rapidapi.com/angleitnerchristoph123/api/optimism/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Block",
+            "url": "https://optimism.p.rapidapi.com/blockchain_block",
+            "description": "Get full data from a specific block on the Optimism blockchain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "block",
+                    "type": "STRING",
+                    "description": "Block you want to scan!",
+                    "default": "123"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "network",
+                    "type": "STRING",
+                    "description": "Specify which network you want to use! (mainnet/testnet)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Account Transaction History",
+            "url": "https://optimism.p.rapidapi.com/account_transaction_history",
+            "description": "Get an array of all transactions of an address on the Optimism blockchain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "Address you want to scan!",
+                    "default": "0x0000000000000000000000000000000000000123"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "network",
+                    "type": "STRING",
+                    "description": "Specify which network you want to use! (mainnet/testnet)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Account Balance",
+            "url": "https://optimism.p.rapidapi.com/account_balance",
+            "description": "Get the OP balance for an address on the Optimism blockchain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "Address you want to scan!",
+                    "default": "0x0000000000000000000000000000000000000123"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "network",
+                    "type": "STRING",
+                    "description": "Specify which network you want to use! (mainnet/testnet)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Account Transaction Count",
+            "url": "https://optimism.p.rapidapi.com/account_transaction_count",
+            "description": "Get the number of transactions done by an address on the Optimism blockchain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "Address you want to scan!",
+                    "default": "0x0000000000000000000000000000000000000123"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "network",
+                    "type": "STRING",
+                    "description": "Specify which network you want to use! (mainnet/testnet)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Current Block Number",
+            "url": "https://optimism.p.rapidapi.com/blockchain_block_number",
+            "description": "Get the current block number of the Optimism blockchain.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "network",
+                    "type": "STRING",
+                    "description": "Specify which network you want to use! (mainnet/testnet)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Transaction",
+            "url": "https://optimism.p.rapidapi.com/blockchain_transaction",
+            "description": "Get full data from a specific transaction on the Optimism blockchain!",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "hash",
+                    "type": "STRING",
+                    "description": "Transaction you want to scan!",
+                    "default": "0xc3f239bae81d78c344f475955801bf2a491430009f171c34a4937dc89ad88d9f"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "network",
+                    "type": "STRING",
+                    "description": "Specify which network you want to use! (mainnet/testnet)",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

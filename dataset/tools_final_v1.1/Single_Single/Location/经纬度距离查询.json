@@ -1,0 +1,43 @@
+{
+    "tool_name": "经纬度距离查询API",
+    "tool_description": "查询起始经纬度与结束经纬度的相关距离",
+    "home_url": "https://api.aa1.cn/doc/locationquery.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "经纬度距离查询接口",
+            "url": "https://api.pearktrue.cn/api/map/distance.php",
+            "description": "提供经纬度距离查询服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_lon",
+                    "type": "float",
+                    "description": "起始经度",
+                    "default": ""
+                },
+                {
+                    "name": "start_lat",
+                    "type": "float",
+                    "description": "起始纬度",
+                    "default": ""
+                },
+                {
+                    "name": "end_lon",
+                    "type": "float",
+                    "description": "结束经度",
+                    "default": ""
+                },
+                {
+                    "name": "end_lat",
+                    "type": "float",
+                    "description": "结束纬度",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

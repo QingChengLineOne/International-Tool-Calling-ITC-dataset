@@ -1,0 +1,18 @@
+{
+    "tool_name": "API Shibuya Information In Tokyo",
+    "tool_description": "This API provides information related to Shibuya, a vibrant district in Tokyo, Japan.",
+    "home_url": "https://rapidapi.com/tokyo11922527/api/api-shibuya-infomation-in-tokyo/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "API Shibuya Information In Tokyo",
+            "url": "https://api-shibuya-infomation-in-tokyo.p.rapidapi.com/QPN3L1/data",
+            "description": "Fetches data related to Shibuya, including various points of interest and local information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

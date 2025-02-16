@@ -1,0 +1,103 @@
+{
+    "tool_name": "Etsy Product",
+    "tool_description": "Etsy product API, Cached and Realtime data",
+    "home_url": "https://rapidapi.com/nguoithomo2030-rllPRPCwI0v/api/etsy-product/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "product_list_product_list_post",
+            "url": "https://etsy-product.p.rapidapi.com/product/list",
+            "description": "Retrieves a list of products from Etsy based on specified filters.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of products to return.",
+                    "default": "10"
+                },
+                {
+                    "name": "is_top_rated",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include only top-rated products.",
+                    "default": "True"
+                },
+                {
+                    "name": "shop_id",
+                    "type": "STRING",
+                    "description": "The ID of the shop to filter products from.",
+                    "default": ""
+                },
+                {
+                    "name": "is_available",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include only available products.",
+                    "default": "True"
+                },
+                {
+                    "name": "is_bestseller",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include only bestselling products.",
+                    "default": "True"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category to filter products by.",
+                    "default": ""
+                },
+                {
+                    "name": "favorites",
+                    "type": "NUMBER",
+                    "description": "Filter to include products with a specific number of favorites.",
+                    "default": ""
+                },
+                {
+                    "name": "is_wholesale",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include only wholesale products.",
+                    "default": "True"
+                },
+                {
+                    "name": "current_in_cart",
+                    "type": "NUMBER",
+                    "description": "Filter to include products currently in the cart.",
+                    "default": ""
+                },
+                {
+                    "name": "is_wholesale_only",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include only wholesale-only products.",
+                    "default": "True"
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "The number of products to skip before starting to collect the result set.",
+                    "default": "0"
+                },
+                {
+                    "name": "is_digital",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include only digital products.",
+                    "default": "True"
+                },
+                {
+                    "name": "is_sold_out",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include sold-out products.",
+                    "default": "True"
+                },
+                {
+                    "name": "is_active_for_wholesale",
+                    "type": "BOOLEAN",
+                    "description": "Filter to include products active for wholesale.",
+                    "default": "True"
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

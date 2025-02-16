@@ -1,0 +1,18 @@
+{
+    "tool_name": "gamebaitop1club",
+    "tool_description": "Game Bài Top 1 是一个专注于评估、分析和排名顶级游戏博彩平台的网站，旨在为热爱游戏的用户提供最新的游戏信息，包括下载链接、优惠活动和有价值的礼品代码。",
+    "home_url": "https://rapidapi.com/gamebaitop1club/api/gamebaitop1club/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Game Bài Top 1",
+            "url": "https://gamebaitop1club.p.rapidapi.com/",
+            "description": "Game Bài Top 1 提供有关各种游戏博彩平台的详细信息，包括最新的优惠和活动，帮助用户获取有价值的游戏代码和奖励。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

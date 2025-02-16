@@ -1,0 +1,40 @@
+{
+    "tool_name": "AnimImagine AI",
+    "tool_description": "Feel Power of 134 Cutting-Edge Models for Exceptional Text-to-Image and Animation Generation with Best Quality.",
+    "home_url": "https://rapidapi.com/serhaterfidan/api/animimagine-ai/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GenerateImage&Animation",
+            "url": "https://animimagine-ai.p.rapidapi.com/generateImage",
+            "description": "Generate image or animation",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

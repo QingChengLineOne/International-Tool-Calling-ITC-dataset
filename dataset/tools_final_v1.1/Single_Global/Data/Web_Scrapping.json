@@ -1,0 +1,25 @@
+{
+    "tool_name": "Web Scrapping",
+    "tool_description": "A beta tool for extracting data from web pages, allowing users to gather information such as images and links.",
+    "home_url": "https://rapidapi.com/cbwar/api/web-scrapping2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get urls from page contents",
+            "url": "https://web-scrapping2.p.rapidapi.com/api/scrapper",
+            "description": "Fetches all images and anchor links found on a specified web page.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the web page to scrape.",
+                    "default": "https://www.yahoo.fr"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

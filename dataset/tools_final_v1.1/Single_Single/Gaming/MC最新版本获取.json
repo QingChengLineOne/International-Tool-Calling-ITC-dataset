@@ -1,0 +1,25 @@
+{
+    "tool_name": "MC最新版本获取",
+    "tool_description": "获取最新MC的JAVA和基岩正式版，预览版，beta版版本号",
+    "home_url": "https://api.aa1.cn/doc/mcversions.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "MC最新版本获取API",
+            "url": "https://api.mg-tool.cn/v1/minecraft_versions.php",
+            "description": "获取最新Minecraft版本信息",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "version_type",
+                    "type": "string",
+                    "description": "可选参数，指定版本类型，如'java', 'bedrock', 'snapshot', 'beta'，默认为'java'获取JAVA版本",
+                    "default": "java"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

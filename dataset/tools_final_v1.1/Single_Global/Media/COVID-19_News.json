@@ -1,0 +1,116 @@
+{
+    "tool_name": "COVID-19 News",
+    "tool_description": "API to find all news mentioning COVID-19. You can filter news by topic, language, country, website, and time period. By newscatcherapi.com.",
+    "home_url": "https://rapidapi.com/newscatcher-api-newscatcher-api-default/api/covid-19-news/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/covid",
+            "url": "https://covid-19-news.p.rapidapi.com/v1/covid",
+            "description": "Highly customizable search through our database of news only on specific keywords related to COVID-19. All filters and sorting options are allowed.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "A word to search on from the list: `covid`, `covid-19`, `coronavirus`, `коронавирус`, `koronavirüs`, `التاجى`.",
+                    "default": "covid"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "media",
+                    "type": "STRING",
+                    "description": "Adds to the output of the call two more variables: `media` (the main image published with an article) and `media_content` (a comma-separated string of all images used in an article).",
+                    "default": "True"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Specifies the language of the search. Allowed values include various ISO language codes. Specifying the language will make your search more relevant.",
+                    "default": "en"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "From which point in time to start the search. No specific format is required. Defaults to one week ago at midnight UTC.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The number of the page. Use it to scroll through the results. Defaults to 1.",
+                    "default": ""
+                },
+                {
+                    "name": "search_in",
+                    "type": "STRING",
+                    "description": "By default, we search what you specified in `q` in both `title` and `summary` of the article. However, you can limit this to either `title` or `summary`.",
+                    "default": ""
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "Until which point in time to search for. The default timezone is UTC.",
+                    "default": ""
+                },
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "The topic to which you want to restrict the articles of your choice. This parameter is experimental.",
+                    "default": ""
+                },
+                {
+                    "name": "not_sources",
+                    "type": "STRING",
+                    "description": "One or more sources to be excluded from the search. Comma-separated string.",
+                    "default": ""
+                },
+                {
+                    "name": "to_rank",
+                    "type": "NUMBER",
+                    "description": "Upper boundary of the rank of news website to filter by.",
+                    "default": ""
+                },
+                {
+                    "name": "from_rank",
+                    "type": "NUMBER",
+                    "description": "Lowest boundary of the rank of news website to filter by. Lower rank means that a source is more popular.",
+                    "default": ""
+                },
+                {
+                    "name": "sort_by",
+                    "type": "STRING",
+                    "description": "Sorting options: `relevancy`, `date`, or `rank`.",
+                    "default": ""
+                },
+                {
+                    "name": "page_size",
+                    "type": "NUMBER",
+                    "description": "How many articles to return per page. Defaults to 50, max is 100.",
+                    "default": ""
+                },
+                {
+                    "name": "sources",
+                    "type": "STRING",
+                    "description": "One or more news resources to filter your search. Comma-separated string.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country to which you want to narrow your search. This parameter is experimental.",
+                    "default": ""
+                },
+                {
+                    "name": "ranked_only",
+                    "type": "STRING",
+                    "description": "Limit the search only for the sources which are in the top 1 million online websites.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

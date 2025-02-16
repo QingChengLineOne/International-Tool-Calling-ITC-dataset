@@ -1,0 +1,60 @@
+{
+    "tool_name": "HS Code - Harmonized System",
+    "tool_description": "Search Harmonized System (HS Code) definitions and descriptions.",
+    "home_url": "https://rapidapi.com/appcon-software-appcon-software-default/api/hs-code-harmonized-system/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "HS Code Details",
+            "url": "https://hs-code-harmonized-system.p.rapidapi.com/code",
+            "description": "Get details of a specific HS code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "term",
+                    "type": "STRING",
+                    "description": "The HS code to look up.",
+                    "default": "62"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "status": "string",
+                "msg": "string",
+                "result": {
+                    "code": "string",
+                    "digits": "string",
+                    "description": "string"
+                }
+            }
+        },
+        {
+            "name": "HS Code Search",
+            "url": "https://hs-code-harmonized-system.p.rapidapi.com/search",
+            "description": "Search for Harmonized HS Codes using keywords such as clothing or apparel.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "term",
+                    "type": "STRING",
+                    "description": "Keyword to search for HS codes.",
+                    "default": "apparel"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "status": "string",
+                "msg": "string",
+                "result": [
+                    {
+                        "code": "string",
+                        "digits": "string",
+                        "description": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "全球IP地理位置定位",
+    "tool_description": "全球IP地理位置定位API，如需查询更多数据请前往https://www.ipdatacloud.com/?utm-source=sfapi&utm-keyword=?2020",
+    "home_url": "https://api.aa1.cn/doc/ipdc.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全球IP地理位置定位API",
+            "url": "https://app.ipdatacloud.com/v2/free_query",
+            "description": "提供IP地址的地理位置信息查询服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IP地址",
+                    "required": true
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "fields",
+                    "type": "string",
+                    "description": "返回的字段列表，用逗号分隔，可选字段包括：ip, country, region, city, isp, domain, latitude, longitude等",
+                    "default": "country,region,city"
+                },
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "返回信息的语言，可选值包括：en, zh-CN",
+                    "default": "zh-CN"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

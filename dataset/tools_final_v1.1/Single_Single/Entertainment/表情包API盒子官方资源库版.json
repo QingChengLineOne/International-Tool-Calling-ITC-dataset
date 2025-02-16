@@ -1,0 +1,44 @@
+{
+    "tool_name": "表情包-API盒子官方资源库版",
+    "tool_description": "获取API盒子官方资源库表情包，数十万表情包资源，官方库搜索速度更快。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/apihzbqb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "表情包资源获取API",
+            "url": "https://cn.apihz.cn/api/img/apihzbqb.php",
+            "description": "获取表情包资源",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "表情包类型，1为热门，2为随机",
+                    "default": "1"
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每次返回的表情包数量",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

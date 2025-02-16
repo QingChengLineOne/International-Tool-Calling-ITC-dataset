@@ -1,0 +1,35 @@
+{
+    "tool_name": "CNPJ Validator",
+    "tool_description": "Validates Brazilian CNPJ numbers. It can also generate random, valid numbers.",
+    "home_url": "https://rapidapi.com/ulisses-9zez-A6pzdm/api/cnpj-validator/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "Generate CNPJ",
+            "url": "https://cnpj-validator.p.rapidapi.com/generate/cnpj",
+            "description": "Generates a valid CNPJ number.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Validate CNPJ",
+            "url": "https://cnpj-validator.p.rapidapi.com/validate/cnpj",
+            "description": "Check if a CNPJ number is valid. Ignores the following characters: .-/",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "STRING",
+                    "description": "A CNPJ number to validate.",
+                    "default": "11.200.200/2001-80"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": {}
+        }
+    ]
+}

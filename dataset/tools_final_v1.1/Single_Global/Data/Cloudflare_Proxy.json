@@ -1,0 +1,25 @@
+{
+    "tool_name": "Cloudflare Proxy",
+    "tool_description": "A tool designed to query Cloudflare guarded websites using axios or curl directly, and to query websocket and socket.io URLs via POST. It can function as a rotating proxy, offering cost savings compared to residential proxies while providing enhanced anonymity for data crawling and analysis.",
+    "home_url": "https://rapidapi.com/ruzumaki/api/cloudflare-proxy1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "POST",
+            "url": "https://cloudflare-proxy1.p.rapidapi.com/paid/px",
+            "description": "This API allows querying of Cloudflare guarded websites directly via axios or curl. It supports an optional header 'Px-IP' to forge the request IP (IPv4 only), and is effective for web applications that check headers like X-Forwarded-For, True-Client-IP, X-Real-IP, and CF-Connecting-IP.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the Cloudflare protected resource you wish to access.",
+                    "default": "https://api.dex.guru/v3/tokens"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

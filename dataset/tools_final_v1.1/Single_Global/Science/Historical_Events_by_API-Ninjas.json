@@ -1,0 +1,49 @@
+{
+    "tool_name": "Historical Events by API-Ninjas",
+    "tool_description": "Search through the most famous events in history. This API allows users to retrieve historical events based on specific search parameters such as text, year, month, and day.",
+    "home_url": "https://rapidapi.com/apininjas/api/historical-events-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/historicalevents",
+            "url": "https://historical-events-by-api-ninjas.p.rapidapi.com/v1/historicalevents",
+            "description": "API Ninjas Historical Events API endpoint. Returns a list of up to 10 events that match the search parameters. At least one of the following parameters is required: text, year, month, day.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "Query text to search events by. Use keywords or short phrases for best match results.",
+                    "default": "roman empire"
+                },
+                {
+                    "name": "month",
+                    "type": "NUMBER",
+                    "description": "Integer month (e.g. 3 for March).",
+                    "default": ""
+                },
+                {
+                    "name": "day",
+                    "type": "NUMBER",
+                    "description": "Calendar day of the month.",
+                    "default": ""
+                },
+                {
+                    "name": "year",
+                    "type": "NUMBER",
+                    "description": "4-digit year (e.g. 1776). For BC/BCE years, use a negative integer (e.g. -351 for 351 BC).",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Number of results to offset (for pagination).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

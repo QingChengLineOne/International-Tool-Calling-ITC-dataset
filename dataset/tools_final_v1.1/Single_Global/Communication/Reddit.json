@@ -1,0 +1,270 @@
+{
+    "tool_name": "Reddit",
+    "tool_description": "An API to access various Reddit functionalities, including retrieving popular posts, comments, and user-specific data. Please join our telegram channel to get notified about updates: https://t.me/social_miner_news",
+    "home_url": "https://rapidapi.com/socialminer/api/reddit34/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Popular Posts",
+            "url": "https://reddit34.p.rapidapi.com/getPopularPosts",
+            "description": "Fetches popular posts from Reddit based on specified sorting criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Specify the sorting method: `new` or `hot`.",
+                    "default": "new"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Comments By Username",
+            "url": "https://reddit34.p.rapidapi.com/getTopCommentsByUsername",
+            "description": "Retrieves the top comments made by a specific user within a given timeframe.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "time",
+                    "type": "STRING",
+                    "description": "Select a timeframe: `hour`, `day`, `week`, `month`, `year`, or `all`.",
+                    "default": "year"
+                },
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The Reddit username to fetch comments for.",
+                    "default": "GoldenChrysus"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Posts By Subreddit",
+            "url": "https://reddit34.p.rapidapi.com/getPostsBySubreddit",
+            "description": "Fetches posts from a specified subreddit.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "subreddit",
+                    "type": "STRING",
+                    "description": "The subreddit to fetch posts from, e.g., reddit.com/r/`memes`.",
+                    "default": "memes"
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Specify the sorting method: `new` or `hot`.",
+                    "default": "new"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Posts By Subreddit",
+            "url": "https://reddit34.p.rapidapi.com/getTopPostsBySubreddit",
+            "description": "Retrieves the top posts from a specified subreddit within a given timeframe.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "time",
+                    "type": "STRING",
+                    "description": "Select a timeframe: `hour`, `day`, `week`, `month`, `year`, or `all`.",
+                    "default": "year"
+                },
+                {
+                    "name": "subreddit",
+                    "type": "STRING",
+                    "description": "The subreddit to fetch top posts from, e.g., reddit.com/r/`memes`.",
+                    "default": "memes"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Post Details",
+            "url": "https://reddit34.p.rapidapi.com/getPostDetails",
+            "description": "Fetches detailed information about a specific post using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "post_id",
+                    "type": "STRING",
+                    "description": "The ID of the post to retrieve details for.",
+                    "default": "t3_t19inj"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Comments By Username",
+            "url": "https://reddit34.p.rapidapi.com/getCommentsByUsername",
+            "description": "Retrieves comments made by a specific user, sorted by the specified criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Specify the sorting method: `new` or `hot`.",
+                    "default": "hot"
+                },
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The Reddit username to fetch comments for.",
+                    "default": "GoldenChrysus"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Posts By Username",
+            "url": "https://reddit34.p.rapidapi.com/getTopPostsByUsername",
+            "description": "Retrieves the top posts made by a specific user within a given timeframe.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The Reddit username to fetch posts for.",
+                    "default": "GoldenChrysus"
+                },
+                {
+                    "name": "time",
+                    "type": "STRING",
+                    "description": "Select a timeframe: `hour`, `day`, `week`, `month`, `year`, or `all`.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Posts By Username",
+            "url": "https://reddit34.p.rapidapi.com/getPostsByUsername",
+            "description": "Fetches posts made by a specific user, sorted by the specified criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The Reddit username to fetch posts for.",
+                    "default": "GoldenChrysus"
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Specify the sorting method: `new` or `hot`.",
+                    "default": "new"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Rising Popular Posts",
+            "url": "https://reddit34.p.rapidapi.com/getRisingPopularPosts",
+            "description": "Fetches posts that are currently rising in popularity on Reddit.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Popular Posts",
+            "url": "https://reddit34.p.rapidapi.com/getTopPopularPosts",
+            "description": "Retrieves the top popular posts from Reddit within a specified timeframe.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "time",
+                    "type": "STRING",
+                    "description": "Select a timeframe: `hour`, `day`, `week`, `month`, `year`, or `all`.",
+                    "default": "year"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Used for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

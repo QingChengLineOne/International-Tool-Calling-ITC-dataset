@@ -1,0 +1,31 @@
+{
+    "tool_name": "CalAPI",
+    "tool_description": "CalAPI is a simple API designed for basic arithmetic operations, specifically for adding two numbers.",
+    "home_url": "https://rapidapi.com/riteshtyagi/api/calapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AddNumbers",
+            "url": "https://calapi.p.rapidapi.com/add/{vala}/{valb}",
+            "description": "This API endpoint allows users to add two numbers together.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "valA",
+                    "type": "NUMBER",
+                    "description": "The first number to be added.",
+                    "default": "10"
+                },
+                {
+                    "name": "valB",
+                    "type": "NUMBER",
+                    "description": "The second number to be added.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "tool_name": "BigBox",
+    "tool_description": "BigBox is an API that provides access to product information, reviews, and questions from Home Depot, allowing users to retrieve detailed data about various products.",
+    "home_url": "https://rapidapi.com/traject-data-traject-data-default/api/bigbox/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Product",
+            "url": "https://bigbox.p.rapidapi.com/request",
+            "description": "Retrieves details of a single product from Home Depot using either the item_id or url parameter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of request, default is 'product'.",
+                    "default": "product"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gtin",
+                    "type": "STRING",
+                    "description": "The GTIN/ISBN/UPC code to look up a matching product. If provided, item_id is ignored.",
+                    "default": "317061059"
+                },
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The Home Depot product-page URL to retrieve product details from. If provided, item_id and gtin are ignored.",
+                    "default": ""
+                },
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Determines the format of the results: JSON, HTML, or CSV. JSON is the default.",
+                    "default": ""
+                },
+                {
+                    "name": "item_id",
+                    "type": "NUMBER",
+                    "description": "The Home Depot Item ID to retrieve product details for.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Reviews",
+            "url": "https://bigbox.p.rapidapi.com/request",
+            "description": "Retrieves customer reviews for a single product from Home Depot using either the item_id or url parameter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "item_id",
+                    "type": "NUMBER",
+                    "description": "The Home Depot Item ID to retrieve reviews for. If provided, url is ignored.",
+                    "default": "317061059"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of request, default is 'reviews'.",
+                    "default": "reviews"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The current page of reviews to retrieve. Maximum of 10 reviews per page.",
+                    "default": ""
+                },
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Determines the format of the results: JSON, HTML, or CSV. JSON is the default.",
+                    "default": ""
+                },
+                {
+                    "name": "sort_by",
+                    "type": "STRING",
+                    "description": "Determines the sort order of reviews.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Questions",
+            "url": "https://bigbox.p.rapidapi.com/request",
+            "description": "Retrieves customer questions for a single product from Home Depot using either the item_id or url parameter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of request, default is 'questions'.",
+                    "default": "questions"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Determines the format of the results: JSON, HTML, or CSV. JSON is the default.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The current page of questions to retrieve. Maximum of 10 questions per page.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Category",
+            "url": "https://bigbox.p.rapidapi.com/request",
+            "description": "Retrieves category results from Home Depot based on the specified category_id.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category_id",
+                    "type": "STRING",
+                    "description": "A category ID to retrieve results from.",
+                    "default": "N-5yc1vZbzb3"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of request, default is 'category'.",
+                    "default": "category"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sort_by",
+                    "type": "STRING",
+                    "description": "Determines how the results are sorted.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://bigbox.p.rapidapi.com/request",
+            "description": "Retrieves search results from Home Depot based on the specified search term.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search_term",
+                    "type": "STRING",
+                    "description": "A search term to use to search for Home Depot items.",
+                    "default": "lawn mower"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of request, default is 'search'.",
+                    "default": "search"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Determines the format of the results: JSON, HTML, or CSV. JSON is the default.",
+                    "default": ""
+                },
+                {
+                    "name": "max_price",
+                    "type": "STRING",
+                    "description": "Determines the maximum price of results to return.",
+                    "default": "max_price=500"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

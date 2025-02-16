@@ -1,0 +1,75 @@
+{
+    "tool_name": "Instant Cameroon News",
+    "tool_description": "Instantly provide the latest news and the latest information on Cameroon. It is the easiest way to get the latest news about Cameroon.",
+    "home_url": "https://rapidapi.com/JohnConfit/api/instant-cameroon-news/",
+    "country": "Cameroon",
+    "api_list": [
+        {
+            "name": "Retrieve data",
+            "url": "https://instant-cameroon-news.p.rapidapi.com/camerounnews",
+            "description": "Endpoint used to retrieve the latest news data about Cameroon. This endpoint can accept parameters such as page number, search keyword, and data range.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "rank",
+                    "type": "STRING",
+                    "description": "Optional parameter to filter news by rank.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Optional parameter to specify the page number for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "Optional parameter to search for specific keywords in the news.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "titre": {
+                        "type": "string"
+                    },
+                    "heurepublication": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "string"
+                    },
+                    "urllogosite": {
+                        "type": "string"
+                    },
+                    "urlimage": {
+                        "type": "string"
+                    },
+                    "urlpost": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Home page",
+            "url": "https://instant-cameroon-news.p.rapidapi.com/",
+            "description": "Home and Welcome page that introduces the API and its functionalities.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

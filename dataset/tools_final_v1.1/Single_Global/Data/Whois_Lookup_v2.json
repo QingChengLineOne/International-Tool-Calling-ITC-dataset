@@ -1,0 +1,25 @@
+{
+    "tool_name": "Whois Lookup_v2",
+    "tool_description": "Whois Lookup API provides information about domain registration details in JSON format.",
+    "home_url": "https://rapidapi.com/iamnikhil/api/whois-lookup1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Whois Lookup",
+            "url": "https://whois-lookup1.p.rapidapi.com/imnikgoyal/whois-lookup",
+            "description": "This API endpoint returns Whois data for a specified domain name in JSON format.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which you want to retrieve Whois information.",
+                    "default": "facebook.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

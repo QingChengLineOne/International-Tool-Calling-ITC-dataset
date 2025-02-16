@@ -1,0 +1,52 @@
+{
+    "tool_name": "Dictionary Data API",
+    "tool_description": "A concise linguistic resource delivering pronunciation, definition, part of speech, and example usage for words via a single GET endpoint. Enrich your applications with accurate language insights.",
+    "home_url": "https://rapidapi.com/effeyerulez/api/dictionary-data-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetDefinition",
+            "url": "https://dictionary-data-api.p.rapidapi.com/definition/{word}",
+            "description": "This API is used to retrieve the definition, pronunciation, and example usages of any word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "The word for which the definition is to be retrieved.",
+                    "default": "dance"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "word": {
+                        "type": "string"
+                    },
+                    "pronunciation": {
+                        "type": "string"
+                    },
+                    "meaning": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tag": {
+                                    "type": "string"
+                                },
+                                "values": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

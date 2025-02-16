@@ -1,0 +1,38 @@
+{
+    "tool_name": "天气预报API",
+    "tool_description": "提供实时天气信息查询的API",
+    "home_url": "https://api.aa1.cn/doc/tianqi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取城市天气信息",
+            "url": "https://api.kuleu.com/api/weather",
+            "description": "根据城市名称获取该城市的天气信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "要查询的城市名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "返回信息的语言，如英文（en）或中文（zh）",
+                    "default": "zh"
+                },
+                {
+                    "name": "unit",
+                    "type": "string",
+                    "description": "温度单位，摄氏度（c）或华氏度（f）",
+                    "default": "c"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

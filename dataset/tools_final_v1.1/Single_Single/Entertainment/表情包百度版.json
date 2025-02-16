@@ -1,0 +1,49 @@
+{
+    "tool_name": "表情包-百度版",
+    "tool_description": "指定搜索表情关键词，获取百度通道表情包。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/apihzbqbbaidu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "表情包-百度版API",
+            "url": "https://cn.apihz.cn/api/img/apihzbqbbaidu.php",
+            "description": "根据关键词搜索并获取百度表情包",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子分配的唯一ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子分配的密钥",
+                    "default": "88888888"
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每页返回的表情包数量",
+                    "default": 10
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "当前页码",
+                    "default": 1
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "搜索表情的关键词",
+                    "default": "伤心"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

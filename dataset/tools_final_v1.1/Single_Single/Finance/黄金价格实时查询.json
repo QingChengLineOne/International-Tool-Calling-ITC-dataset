@@ -1,0 +1,32 @@
+{
+    "tool_name": "黄金价格实时查询",
+    "tool_description": "提供国内十大金店、国际金价以及国内金价实时查询服务",
+    "home_url": "https://api.aa1.cn/doc/hj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "黄金价格实时查询接口",
+            "url": "https://api.lolimi.cn/API/huangj/api.php",
+            "description": "查询黄金价格的实时信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "指定查询类型，可选参数：domestic（国内），international（国际），all（全部）",
+                    "default": "domestic"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gold_shop",
+                    "type": "string",
+                    "description": "指定金店，国内金店参数列表请参考API文档",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

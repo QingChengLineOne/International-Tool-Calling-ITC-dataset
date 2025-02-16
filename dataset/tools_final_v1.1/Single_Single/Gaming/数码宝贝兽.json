@@ -1,0 +1,61 @@
+{
+    "tool_name": "数码宝贝兽查询API",
+    "tool_description": "查询数码宝贝兽，无限制",
+    "home_url": "https://api.aa1.cn/doc/digimon.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "数码宝贝兽查询接口",
+            "url": "http://niningqi.com/digimon/list",
+            "description": "查询数码宝贝兽的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "数码宝贝的中文名称",
+                    "default": ""
+                },
+                {
+                    "name": "enName",
+                    "type": "string",
+                    "description": "数码宝贝的英文名称",
+                    "default": ""
+                },
+                {
+                    "name": "level",
+                    "type": "string",
+                    "description": "数码宝贝的成长阶段",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "数码宝贝的类型",
+                    "default": ""
+                },
+                {
+                    "name": "attr",
+                    "type": "string",
+                    "description": "数码宝贝的属性",
+                    "default": ""
+                },
+                {
+                    "name": "size",
+                    "type": "int",
+                    "description": "每页返回的数码宝贝数量",
+                    "default": "10"
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "当前页码",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

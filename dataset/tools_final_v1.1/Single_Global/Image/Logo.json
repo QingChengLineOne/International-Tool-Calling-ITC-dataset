@@ -1,0 +1,25 @@
+{
+    "tool_name": "Logo",
+    "tool_description": "Find the Logo of each company in real-time. Using our logo finder service is entirely free with attribution. A link back to companyurlfinder.com is required on any page the service is used.",
+    "home_url": "https://rapidapi.com/zahraupwork/api/logo4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Logo API",
+            "url": "https://logo4.p.rapidapi.com/logo/{domain}",
+            "description": "This API allows users to retrieve the logo of a specified company by providing its domain name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "The domain name of the company whose logo is to be retrieved.",
+                    "default": "amazon.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

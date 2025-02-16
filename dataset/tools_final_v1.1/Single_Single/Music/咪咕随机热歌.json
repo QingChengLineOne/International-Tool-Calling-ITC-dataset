@@ -1,0 +1,25 @@
+{
+    "tool_name": "咪咕随机热歌",
+    "tool_description": "随机返回咪咕热歌榜上的歌曲，支持会员",
+    "home_url": "https://api.aa1.cn/doc/migu_rege.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "咪咕随机热歌API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_List_mgmusic.php",
+            "description": "随机返回咪咕热歌榜上的歌曲",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "可选参数，用于指定返回数据的类型，默认为2",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

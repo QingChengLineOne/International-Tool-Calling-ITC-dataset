@@ -1,0 +1,388 @@
+{
+    "tool_name": "Cigars",
+    "tool_description": "Data about Cigar brands, Cigars, and country data",
+    "home_url": "https://rapidapi.com/DaThresh/api/cigars/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Brand by ID",
+            "url": "https://cigars.p.rapidapi.com/brands/15644",
+            "description": "Retrieve a specific Cigar brand using its Database ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "brandId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the cigar brand.",
+                    "default": "15644"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "brand": {
+                        "type": "object",
+                        "properties": {
+                            "brandId": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Brands",
+            "url": "https://cigars.p.rapidapi.com/brands",
+            "description": "Fetch a list of Cigar brands, with pagination and search capabilities.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "Search term to filter brands.",
+                    "default": "Dominican"
+                }
+            ],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "Get Cigar Strengths",
+            "url": "https://cigars.p.rapidapi.com/cigars/strengths",
+            "description": "Retrieve an enumeration of cigar strengths.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "strengths": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Cigar Average Ring Gauge",
+            "url": "https://cigars.p.rapidapi.com/cigars/averageRingGauge",
+            "description": "Get the average ring gauge of cigars, with optional filters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "brandId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the cigar brand.",
+                    "default": "13711"
+                },
+                {
+                    "name": "filler",
+                    "type": "STRING",
+                    "description": "Type of filler used in the cigars.",
+                    "default": "Nicaragua"
+                },
+                {
+                    "name": "wrapper",
+                    "type": "STRING",
+                    "description": "Type of wrapper used in the cigars.",
+                    "default": "Connecticut Shade, Ecuador"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country of origin for the cigars.",
+                    "default": "Nicaragua"
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Color classification of the cigars.",
+                    "default": "Mild-Medium"
+                },
+                {
+                    "name": "strength",
+                    "type": "STRING",
+                    "description": "Strength classification of the cigars.",
+                    "default": "Colorado Claro"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the cigar.",
+                    "default": "Maduro"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "average": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Cigar Average Length",
+            "url": "https://cigars.p.rapidapi.com/cigars/averageLength",
+            "description": "Get the average length of cigars, with optional filters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "wrapper",
+                    "type": "STRING",
+                    "description": "Type of wrapper used in the cigars.",
+                    "default": "Connecticut Shade, Ecuador"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the cigar.",
+                    "default": "Torpedo"
+                },
+                {
+                    "name": "filler",
+                    "type": "STRING",
+                    "description": "Type of filler used in the cigars.",
+                    "default": "Nicaragua"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country of origin for the cigars.",
+                    "default": "Nicaragua"
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Color classification of the cigars.",
+                    "default": "Colorado Claro"
+                },
+                {
+                    "name": "strength",
+                    "type": "STRING",
+                    "description": "Strength classification of the cigars.",
+                    "default": "Mild-Medium"
+                },
+                {
+                    "name": "brandId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the cigar brand.",
+                    "default": "13711"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "average": {
+                        "type": "number"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Cigar by ID",
+            "url": "https://cigars.p.rapidapi.com/cigars/87160",
+            "description": "Retrieve a specific Cigar using its Database ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cigarId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the cigar.",
+                    "default": "87160"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "cigar": {
+                        "type": "object",
+                        "properties": {
+                            "cigarId": {
+                                "type": "integer"
+                            },
+                            "brandId": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "length": {
+                                "type": "integer"
+                            },
+                            "ringGauge": {
+                                "type": "integer"
+                            },
+                            "country": {
+                                "type": "string"
+                            },
+                            "filler": {
+                                "type": "string"
+                            },
+                            "wrapper": {
+                                "type": "string"
+                            },
+                            "color": {
+                                "type": "string"
+                            },
+                            "strength": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Colors",
+            "url": "https://cigars.p.rapidapi.com/cigars/colors",
+            "description": "Retrieve an enumeration of Cigar colors.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "colors": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Cigars",
+            "url": "https://cigars.p.rapidapi.com/cigars",
+            "description": "Fetch cigar data with pagination and various filters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Color classification of the cigars.",
+                    "default": "Claro"
+                },
+                {
+                    "name": "filler",
+                    "type": "STRING",
+                    "description": "Type of filler used in the cigars.",
+                    "default": "Nicaragua"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country of origin for the cigars.",
+                    "default": "Nicaragua"
+                },
+                {
+                    "name": "strength",
+                    "type": "STRING",
+                    "description": "Strength classification of the cigars.",
+                    "default": "Mild"
+                },
+                {
+                    "name": "wrapper",
+                    "type": "STRING",
+                    "description": "Type of wrapper used in the cigars.",
+                    "default": "Connecticut"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Uses similar search to find a Cigar by name.",
+                    "default": "Connecticut"
+                },
+                {
+                    "name": "brandId",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the cigar brand.",
+                    "default": "13711"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "cigars": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "cigarId": {
+                                    "type": "integer"
+                                },
+                                "brandId": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "length": {
+                                    "type": "number"
+                                },
+                                "ringGauge": {
+                                    "type": "integer"
+                                },
+                                "country": {
+                                    "type": "string"
+                                },
+                                "filler": {
+                                    "type": "string"
+                                },
+                                "wrapper": {
+                                    "type": "string"
+                                },
+                                "color": {
+                                    "type": "string"
+                                },
+                                "strength": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "page": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

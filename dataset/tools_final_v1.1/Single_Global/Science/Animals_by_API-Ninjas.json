@@ -1,0 +1,25 @@
+{
+    "tool_name": "Animals by API-Ninjas",
+    "tool_description": "Detailed and interesting facts for thousands of animal species. See more info at https://api-ninjas.com/api/animals.",
+    "home_url": "https://rapidapi.com/apininjas/api/animals-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/animals",
+            "url": "https://animals-by-api-ninjas.p.rapidapi.com/v1/animals",
+            "description": "API Ninjas Animals API endpoint. Returns up to 10 results matching the input name parameter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Common name of the animal to search. This parameter supports partial matches (e.g. 'fox' will match 'gray fox' and 'red fox').",
+                    "default": "cheetah"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

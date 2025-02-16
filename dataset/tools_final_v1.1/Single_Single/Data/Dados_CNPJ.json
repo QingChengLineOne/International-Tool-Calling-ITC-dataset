@@ -1,0 +1,131 @@
+{
+    "tool_name": "Dados CNPJ",
+    "tool_description": "Busca os dados de um CNPJ diretamente na base de dados da Receita Federal, permitindo acesso a informações detalhadas sobre empresas registradas no Brasil.",
+    "home_url": "https://rapidapi.com/binfoconsultas/api/dados-cnpj/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "CNPJ",
+            "url": "https://dados-cnpj.p.rapidapi.com/buscar-base.php",
+            "description": "Buscar dados de uma empresa pelo CNPJ fornecido.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cnpj",
+                    "type": "STRING",
+                    "description": "Número do CNPJ da empresa que se deseja consultar.",
+                    "default": "22543331000100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "dados": {
+                        "properties": {
+                            "capital_social": {
+                                "type": "string"
+                            },
+                            "cnae_principal": {
+                                "type": "string"
+                            },
+                            "cnaes_secundarios": {
+                                "type": "array"
+                            },
+                            "cnpj": {
+                                "type": "string"
+                            },
+                            "data_criacao": {
+                                "type": "string"
+                            },
+                            "data_situacao": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "endereco": {
+                                "properties": {
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    },
+                                    "complemento": {
+                                        "type": "string"
+                                    },
+                                    "logradouro": {
+                                        "type": "string"
+                                    },
+                                    "municipio": {
+                                        "type": "string"
+                                    },
+                                    "numero": {
+                                        "type": "string"
+                                    },
+                                    "uf": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "natureza_juridica": {
+                                "type": "string"
+                            },
+                            "nome_fantasia": {
+                                "type": "string"
+                            },
+                            "porte": {
+                                "type": "string"
+                            },
+                            "razao_social": {
+                                "type": "string"
+                            },
+                            "situacao": {
+                                "type": "string"
+                            },
+                            "telefones": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "mensagem": {
+                        "type": "string"
+                    },
+                    "participacoes": {
+                        "type": "array"
+                    },
+                    "socios": {
+                        "items": {
+                            "properties": {
+                                "data_entrada": {
+                                    "type": "string"
+                                },
+                                "documento_socio": {
+                                    "type": "string"
+                                },
+                                "nome_socio": {
+                                    "type": "string"
+                                },
+                                "qualificacao": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "status": {
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

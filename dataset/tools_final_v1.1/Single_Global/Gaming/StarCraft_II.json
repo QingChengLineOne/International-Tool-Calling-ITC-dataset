@@ -1,0 +1,255 @@
+{
+    "tool_name": "StarCraft II",
+    "tool_description": "The StarCraft 2 API provides access to news, gameplays, guides, top players, and other relevant information related to StarCraft II.",
+    "home_url": "https://rapidapi.com/everyday/api/starcraft-ii/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetTopics",
+            "url": "https://starcraft-ii.p.rapidapi.com/topics/",
+            "description": "Retrieve a list of StarCraft II topics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSponsorships",
+            "url": "https://starcraft-ii.p.rapidapi.com/sponsorships/today/",
+            "description": "Fetch today's StarCraft II sponsorships.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetCommunitiesByTopic",
+            "url": "https://starcraft-ii.p.rapidapi.com/communities/{topic}/page/{page}/",
+            "description": "Get StarCraft II communities filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter communities by.",
+                    "default": "zerg"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetCommunities",
+            "url": "https://starcraft-ii.p.rapidapi.com/communities/page/{page}/",
+            "description": "Retrieve a list of StarCraft II communities.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetGames",
+            "url": "https://starcraft-ii.p.rapidapi.com/games/page/{page}/",
+            "description": "Fetch a list of StarCraft II gameplays.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetGamesByTopic",
+            "url": "https://starcraft-ii.p.rapidapi.com/games/{topic}/page/{page}/",
+            "description": "Get StarCraft II gameplays filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter gameplays by.",
+                    "default": "zerg"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetGameCollections",
+            "url": "https://starcraft-ii.p.rapidapi.com/games/collections/page/{page}/",
+            "description": "Retrieve collections of StarCraft II games.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetGuidesByTopic",
+            "url": "https://starcraft-ii.p.rapidapi.com/learning/{topic}/page/{page}/",
+            "description": "Get guides and tutorials for StarCraft II filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter guides by.",
+                    "default": "zerg"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetGuides",
+            "url": "https://starcraft-ii.p.rapidapi.com/learning/page/{page}/",
+            "description": "Retrieve a list of StarCraft II guides and tutorials.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsByTopic",
+            "url": "https://starcraft-ii.p.rapidapi.com/news/{topic}/page/{page}/",
+            "description": "Get news related to StarCraft II filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter news by.",
+                    "default": "zerg"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNews",
+            "url": "https://starcraft-ii.p.rapidapi.com/news/page/{page}/",
+            "description": "Retrieve a list of StarCraft II news articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeopleByTopic",
+            "url": "https://starcraft-ii.p.rapidapi.com/people/{topic}/page/{page}/",
+            "description": "Get top players, influencers, and celebrities in StarCraft II filtered by a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter people by.",
+                    "default": "zerg"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeople",
+            "url": "https://starcraft-ii.p.rapidapi.com/people/page/{page}/",
+            "description": "Retrieve a list of top players, influencers, and celebrities in StarCraft II.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsletters",
+            "url": "https://starcraft-ii.p.rapidapi.com/newsletters/",
+            "description": "Fetch the latest StarCraft II newsletters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

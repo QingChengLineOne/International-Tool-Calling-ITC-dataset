@@ -1,0 +1,25 @@
+{
+    "tool_name": "Profanity Filter by API-Ninjas",
+    "tool_description": "Detect and censor bad words in text, providing a censored version of the input text with profanity replaced by asterisks.",
+    "home_url": "https://rapidapi.com/apininjas/api/profanity-filter-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/profanityfilter",
+            "url": "https://profanity-filter-by-api-ninjas.p.rapidapi.com/v1/profanityfilter",
+            "description": "API Ninjas Profanity Filter API endpoint. Returns the censored version of any given text and indicates whether the text contains profanity.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "Input text to be filtered for profanity. Maximum length is 1000 characters.",
+                    "default": "damn it"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

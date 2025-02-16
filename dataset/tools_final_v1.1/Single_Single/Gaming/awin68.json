@@ -1,0 +1,18 @@
+{
+    "tool_name": "awin68",
+    "tool_description": "AWIN68 là trang cá cược đảm bảo uy tín hàng đầu trong năm 2022, có máy chủ chính thức được đặt tại Philippines. Chuyên cung cấp đến cho người chơi nhiều sản phẩm game đổi thưởng, dịch vụ trực tuyến với chất lượng vượt trội. Truy cập awin68.info ngay để thưởng thức ngay hàng loạt hoạt động khuyến mãi đình đám hiện đang được cổng game AWIN tổ chức diễn ra.",
+    "home_url": "https://rapidapi.com/awin68/api/awin68/",
+    "country": "Philippines",
+    "api_list": [
+        {
+            "name": "AWIN NHA CAI 2022",
+            "url": "https://awin68.p.rapidapi.com/",
+            "description": "AWIN68 là trang cá cược đảm bảo uy tín hàng đầu trong năm 2022, có máy chủ chính thức được đặt tại Philippines. Chuyên cung cấp đến cho người chơi nhiều sản phẩm game đổi thưởng, dịch vụ trực tuyến với chất lượng vượt trội.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

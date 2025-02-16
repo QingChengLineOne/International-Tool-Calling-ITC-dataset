@@ -1,0 +1,25 @@
+{
+    "tool_name": "手写爱只给API",
+    "tool_description": "在一张手写底图上写入指定名字的API接口",
+    "home_url": "https://api.aa1.cn/doc/shouxie_lyyai.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "手写爱只给API",
+            "url": "https://www.hhlqilongzhu.cn/api/tu_shouxie_lyyai.php",
+            "description": "用于将指定名字写入手写底图的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要写入的名字",
+                    "default": "示例名字"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

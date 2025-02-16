@@ -1,0 +1,171 @@
+{
+    "tool_name": "Deezer",
+    "tool_description": "Deezer is the No. 1 site for listening to music on demand. Discover more than 30 million tracks, create your own playlists, and share your favourite tracks.",
+    "home_url": "https://rapidapi.com/deezerdevs/api/deezer-1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Infos",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/infos",
+            "description": "Get the infos about the API in the current country.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Radio",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/radio/{id}",
+            "description": "Retrieve information about a specific radio station.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The radio Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Genre",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/genre/{id}",
+            "description": "Retrieve information about a specific music genre.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The editorial's Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/search",
+            "description": "Search for tracks based on a query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query.",
+                    "default": "eminem"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Playlist",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/playlist/{id}",
+            "description": "Retrieve information about a specific playlist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The playlist's Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Artist",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/artist/{id}",
+            "description": "Retrieve information about a specific artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The artist's Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Editorial",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/editorial/{id}",
+            "description": "Retrieve information about a specific editorial.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The editorial's Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Track",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/track/{id}",
+            "description": "Retrieve information about a specific track.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The track's Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Comment",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/comment/{id}",
+            "description": "Retrieve information about a specific comment.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The comment's Deezer ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Album",
+            "url": "https://deezerdevs-deezer.p.rapidapi.com/album/{id}",
+            "description": "Retrieve information about a specific album.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The Deezer album ID.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

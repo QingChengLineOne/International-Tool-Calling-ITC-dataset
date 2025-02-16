@@ -1,0 +1,36 @@
+{
+    "tool_name": "图片压缩API",
+    "tool_description": "提供图片URL压缩服务，支持指定压缩质量。",
+    "home_url": "https://api.aa1.cn/doc/ys.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图片压缩服务",
+            "url": "https://api.mg-tool.cn/v1/ys/",
+            "description": "对提供的图片进行压缩处理，返回压缩后的图片。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要压缩的图片URL，必须是公开可访问的。",
+                    "default": ""
+                },
+                {
+                    "name": "quality",
+                    "type": "integer",
+                    "description": "压缩质量，范围0-100，100为最高质量，0为最低质量。",
+                    "default": "75"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": {
+                "200": "请求成功，返回压缩后的图片。",
+                "400": "请求错误，请检查URL和压缩质量。",
+                "404": "图片URL不可访问。",
+                "500": "服务器错误，请稍后再试。"
+            },
+            "schema": {}
+        }
+    ]
+}

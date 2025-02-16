@@ -1,0 +1,32 @@
+{
+    "tool_name": "抖音主页详情解析",
+    "tool_description": "获取抖音用户的基本信息",
+    "home_url": "https://api.aa1.cn/doc/douyinauthor.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "抖音主页详情解析API",
+            "url": "https://api.pearktrue.cn/api/dy/dy_info.php",
+            "description": "通过抖音视频链接获取用户的基本信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "抖音视频链接，用于获取用户信息",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "语言参数，默认为zh-Hans（简体中文），可选值为en（英文）",
+                    "default": "zh-Hans"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

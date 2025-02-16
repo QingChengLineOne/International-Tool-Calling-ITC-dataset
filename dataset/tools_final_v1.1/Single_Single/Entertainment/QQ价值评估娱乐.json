@@ -1,0 +1,25 @@
+{
+    "tool_name": "QQ价值评估娱乐",
+    "tool_description": "QQ价值评估娱乐API用于评估用户在QQ平台上的价值，包括积分、等级等信息。",
+    "home_url": "https://api.aa1.cn/doc/qqpg.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ价值评估",
+            "url": "https://api.avdgw.com/api/qqpg",
+            "description": "用于获取QQ用户的价值评估信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "需要评估的QQ号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

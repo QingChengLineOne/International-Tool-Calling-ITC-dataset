@@ -1,0 +1,25 @@
+{
+    "tool_name": "影视插播广告去除",
+    "tool_description": "影视插播广告去除API接口，支持量子，非凡，暴风，索尼等M3U8直连解析",
+    "home_url": "https://api.aa1.cn/doc/delad.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "影视插播广告去除API",
+            "url": "http://api.suxun.site/api/delad",
+            "description": "用于去除影视插播广告的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "M3U8视频链接",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "tool_name": "Face Mask Detection",
+    "tool_description": "PresentID face mask detection API can detect whether a person is wearing a mask or not.",
+    "home_url": "https://rapidapi.com/PresentID/api/face-mask-detection/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send image with image URL",
+            "url": "https://face-mask-detection.p.rapidapi.com/FaceMaskDetection",
+            "description": "This API endpoint allows you to send an image via a URL to detect if a person is wearing a mask. The image size should not exceed 8 MB, and dimensions must be between 50 and 5000 pixels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "linkFile",
+                    "type": "STRING",
+                    "description": "The URL of the image to be analyzed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "x0": {
+                                    "type": "integer"
+                                },
+                                "x1": {
+                                    "type": "integer"
+                                },
+                                "y0": {
+                                    "type": "integer"
+                                },
+                                "y1": {
+                                    "type": "integer"
+                                },
+                                "masked": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Sending image with image file",
+            "url": "https://face-mask-detection.p.rapidapi.com/FaceMaskDetection",
+            "description": "This API endpoint allows you to send an image file directly to detect if a person is wearing a mask. The image size should not exceed 8 MB, and dimensions must be between 50 and 5000 pixels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "photo",
+                    "type": "BINARY",
+                    "description": "The binary data of the image file to be analyzed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "data": {
+                        "items": {
+                            "properties": {
+                                "masked": {
+                                    "type": "integer"
+                                },
+                                "x0": {
+                                    "type": "integer"
+                                },
+                                "x1": {
+                                    "type": "integer"
+                                },
+                                "y0": {
+                                    "type": "integer"
+                                },
+                                "y1": {
+                                    "type": "integer"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "Send image with Base64",
+            "url": "https://face-mask-detection.p.rapidapi.com/FaceMaskDetection",
+            "description": "This API endpoint allows you to send an image encoded in Base64 format to detect if a person is wearing a mask. The image size should not exceed 8 MB, and dimensions must be between 50 and 5000 pixels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "imageBase64",
+                    "type": "STRING",
+                    "description": "The Base64 encoded string of the image to be analyzed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "data": {
+                        "items": {
+                            "properties": {
+                                "masked": {
+                                    "type": "integer"
+                                },
+                                "x0": {
+                                    "type": "integer"
+                                },
+                                "x1": {
+                                    "type": "integer"
+                                },
+                                "y0": {
+                                    "type": "integer"
+                                },
+                                "y1": {
+                                    "type": "integer"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

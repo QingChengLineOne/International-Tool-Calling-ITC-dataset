@@ -1,0 +1,98 @@
+{
+    "tool_name": "Ylytic Influencers API",
+    "tool_description": "Discover Instagram & YouTube Influencers using various filters such as Follower Count, Category, Engagement Rate, Post Count, Social Platform, City & Country, Keywords in Bio and influencer handle. Choose from a list of 24 curated categories.",
+    "home_url": "https://rapidapi.com/ylytic/api/ylytic-influencers-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search Instagram and YouTube Influencer",
+            "url": "https://ylytic-influencers-api.p.rapidapi.com/ylytic/admin/api/v1/discovery",
+            "description": "Search Instagram & YouTube Influencers using various filters such as Follower Count, Category, Engagement Rate, Post Count, Social Platform, City & Country, Keywords in Bio and influencer handle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "current_page",
+                    "type": "NUMBER",
+                    "description": "Navigate through different pages of the desired query data.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "posts_minimum",
+                    "type": "NUMBER",
+                    "description": "Search creators based on the minimum number of posts they have shared.",
+                    "default": ""
+                },
+                {
+                    "name": "bio_contains",
+                    "type": "STRING",
+                    "description": "Search creators based on keywords mentioned in their Instagram bio or YouTube description.",
+                    "default": ""
+                },
+                {
+                    "name": "posts_maximum",
+                    "type": "NUMBER",
+                    "description": "Search creators based on the maximum number of posts they have shared.",
+                    "default": ""
+                },
+                {
+                    "name": "connector",
+                    "type": "STRING",
+                    "description": "Search creators either from Instagram or YouTube.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Search creators based on their country.",
+                    "default": ""
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Search creators based on their category.",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "Search creators based on their city.",
+                    "default": ""
+                },
+                {
+                    "name": "engagement_rate_minimum",
+                    "type": "NUMBER",
+                    "description": "Search creators based on their minimum engagement rate.",
+                    "default": ""
+                },
+                {
+                    "name": "followers_maximum",
+                    "type": "NUMBER",
+                    "description": "Filter creators based on maximum follower/subscriber count.",
+                    "default": ""
+                },
+                {
+                    "name": "engagement_rate_maximum",
+                    "type": "NUMBER",
+                    "description": "Search creators based on their maximum engagement rate.",
+                    "default": ""
+                },
+                {
+                    "name": "followers_minimum",
+                    "type": "NUMBER",
+                    "description": "Filter creators based on minimum follower/subscriber count.",
+                    "default": ""
+                },
+                {
+                    "name": "handle_contains",
+                    "type": "STRING",
+                    "description": "Filter creators based on specific text in their handle.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

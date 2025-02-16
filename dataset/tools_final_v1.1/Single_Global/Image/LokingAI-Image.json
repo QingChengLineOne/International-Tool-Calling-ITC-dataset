@@ -1,0 +1,157 @@
+{
+    "tool_name": "LokingAI-Image",
+    "tool_description": "AI Image processing APIs providing functionalities such as image classification, object detection, and image segmentation.",
+    "home_url": "https://rapidapi.com/josuebrunel/api/lokingai-image/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "detect_object_detect_object_post",
+            "url": "https://lokingai-image.p.rapidapi.com/detect-object",
+            "description": "Object detection. Detect objects in an uploaded image.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "BINARY",
+                    "description": "The uploaded image file.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "properties": {
+                    "error": {
+                        "type": "string",
+                        "title": "Error"
+                    },
+                    "data": {
+                        "items": {
+                            "properties": {
+                                "score": {
+                                    "type": "number",
+                                    "title": "Score"
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "title": "Label"
+                                },
+                                "box": {
+                                    "properties": {
+                                        "xmin": {
+                                            "type": "number",
+                                            "title": "Xmin"
+                                        },
+                                        "ymin": {
+                                            "type": "number",
+                                            "title": "Ymin"
+                                        },
+                                        "xmax": {
+                                            "type": "number",
+                                            "title": "Xmax"
+                                        },
+                                        "ymax": {
+                                            "type": "number",
+                                            "title": "Ymax"
+                                        }
+                                    },
+                                    "type": "object",
+                                    "required": [
+                                        "xmin",
+                                        "ymin",
+                                        "xmax",
+                                        "ymax"
+                                    ],
+                                    "title": "Box"
+                                }
+                            },
+                            "type": "object",
+                            "required": [
+                                "score",
+                                "label",
+                                "box"
+                            ],
+                            "title": "ObjectDectionOutput"
+                        },
+                        "type": "array",
+                        "title": "Data"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "data"
+                ],
+                "title": "DetectObjectResponse"
+            }
+        },
+        {
+            "name": "segment_segment_post",
+            "url": "https://lokingai-image.p.rapidapi.com/segment",
+            "description": "Image segmentation. Segment an uploaded image into different regions.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "BINARY",
+                    "description": "The uploaded image file.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "properties": {
+                    "error": {
+                        "type": "string",
+                        "title": "Error"
+                    },
+                    "data": {
+                        "items": {
+                            "properties": {
+                                "label": {
+                                    "type": "string",
+                                    "title": "Label"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "format": "binary",
+                                    "title": "Image"
+                                }
+                            },
+                            "type": "object",
+                            "required": [
+                                "label",
+                                "image"
+                            ],
+                            "title": "SegmentOutput"
+                        },
+                        "type": "array",
+                        "title": "Data"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "data"
+                ],
+                "title": "SegmentResponse"
+            }
+        },
+        {
+            "name": "classify_classify_post",
+            "url": "https://lokingai-image.p.rapidapi.com/classify",
+            "description": "Image classification. Classify an uploaded image using an image classification model.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "BINARY",
+                    "description": "The uploaded image file.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        }
+    ]
+}

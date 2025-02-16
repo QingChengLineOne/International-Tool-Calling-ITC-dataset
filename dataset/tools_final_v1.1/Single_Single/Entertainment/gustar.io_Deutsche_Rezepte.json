@@ -1,0 +1,42 @@
+{
+    "tool_name": "gustar.io Deutsche Rezepte",
+    "tool_description": "Generate German language recipes and recipe images using AI. Extract or search recipes from the web.",
+    "home_url": "https://rapidapi.com/gustario-gustario-default/api/gustar-io-deutsche-rezepte/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "AI Recipe Generator",
+            "url": "https://gustar-io-deutsche-rezepte.p.rapidapi.com/generateRecipe",
+            "description": "Generates a recipe in German language using AI, based on your query.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "AI Recipe Image Generator",
+            "url": "https://gustar-io-deutsche-rezepte.p.rapidapi.com/generateRecipeImage",
+            "description": "Generate a recipe image based on a provided recipe using AI.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

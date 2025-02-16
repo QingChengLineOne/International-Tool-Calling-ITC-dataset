@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机UserAgent生成API",
+    "tool_description": "Java开发，可随机返回一个userAgent数据，适用于爬虫等程序。",
+    "home_url": "https://api.aa1.cn/doc/us.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机UserAgent接口",
+            "url": "http://106.14.221.171:808/tUserAgent/getrandomua",
+            "description": "随机返回一个userAgent数据",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

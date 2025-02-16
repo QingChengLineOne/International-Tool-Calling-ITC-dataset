@@ -1,0 +1,326 @@
+{
+    "tool_name": "Coinpaprika",
+    "tool_description": "Crypto Data API that provides comprehensive information about various cryptocurrencies, including market data, exchanges, and events.",
+    "home_url": "https://rapidapi.com/lbraciszewski/api/coinpaprika1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Markets for coin",
+            "url": "https://coinpaprika1.p.rapidapi.com/coins/{coin_id}/markets",
+            "description": "Retrieve market information for a specific cryptocurrency identified by its coin ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coin_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the cryptocurrency, e.g., 'btc-bitcoin'.",
+                    "default": "btc-bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Coin ID",
+            "url": "https://coinpaprika1.p.rapidapi.com/coins/{coin_id}",
+            "description": "Get detailed information about a specific cryptocurrency using its coin ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coin_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the cryptocurrency, e.g., 'btc-bitcoin'.",
+                    "default": "btc-bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Exchanges for coin",
+            "url": "https://coinpaprika1.p.rapidapi.com/coins/{coin_id}/exchanges",
+            "description": "Retrieve a list of exchanges where a specific cryptocurrency is traded.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coin_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the cryptocurrency, e.g., 'btc-bitcoin'.",
+                    "default": "btc-bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "OHLC for last full day",
+            "url": "https://coinpaprika1.p.rapidapi.com/coins/{coin_id}/ohlcv/latest",
+            "description": "Get Open/High/Low/Close values along with volume and market cap for the last full day.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coin_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the cryptocurrency, e.g., 'btc-bitcoin'.",
+                    "default": "btc-bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Events for coin",
+            "url": "https://coinpaprika1.p.rapidapi.com/coins/{coin_id}/events",
+            "description": "Retrieve events related to a specific cryptocurrency using its coin ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coin_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the cryptocurrency, e.g., 'btc-bitcoin'.",
+                    "default": "btc-bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Exchanges",
+            "url": "https://coinpaprika1.p.rapidapi.com/exchanges",
+            "description": "List all available exchanges for trading cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Tags",
+            "url": "https://coinpaprika1.p.rapidapi.com/tags",
+            "description": "Retrieve a list of tags associated with cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Global",
+            "url": "https://coinpaprika1.p.rapidapi.com/global",
+            "description": "Get an overview of the cryptocurrency market, including total market cap and volume.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "People",
+            "url": "https://coinpaprika1.p.rapidapi.com/people/{person_id}",
+            "description": "Get information about a person in the cryptocurrency space using their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "person_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the person, e.g., 'vitalik-buterin'.",
+                    "default": "vitalik-buterin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Coins",
+            "url": "https://coinpaprika1.p.rapidapi.com/coins",
+            "description": "List all available cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "猫娘AI-米米",
+    "tool_description": "猫娘兼具猫的灵动与人的温柔，既独立又依赖，充满神秘魅力。",
+    "home_url": "https://api.aa1.cn/doc/gpt_aimaoniang.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "猫娘AI-米米API",
+            "url": "https://api.mhimg.cn/api/gpt_aimaoniang/",
+            "description": "猫娘AI-米米API，用于获取猫娘相关内容。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "prompt",
+                    "type": "string",
+                    "description": "输入的提示或问题",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

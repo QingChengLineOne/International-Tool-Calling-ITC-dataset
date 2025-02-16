@@ -1,0 +1,25 @@
+{
+    "tool_name": "随机图片API",
+    "tool_description": "随机获取一张图片的API接口",
+    "home_url": "https://api.aa1.cn/doc/yunmge-randomimg.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机图片获取接口",
+            "url": "https://api.yunmge.com/api/randomimg",
+            "description": "该接口提供随机获取一张图片的功能",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "response_example": {
+                "code": "200",
+                "message": "请求成功",
+                "data": {
+                    "image_url": "https://example.com/random-image.jpg"
+                }
+            },
+            "schema": {}
+        }
+    ]
+}

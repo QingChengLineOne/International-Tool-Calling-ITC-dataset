@@ -1,0 +1,56 @@
+{
+    "tool_name": "PhoneNumberValidate",
+    "tool_description": "Validate any phone number in any country.",
+    "home_url": "https://rapidapi.com/larroyouy70/api/phonenumbervalidate/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ValidateTest",
+            "url": "https://phonenumbervalidate.p.rapidapi.com/ts_PhoneNumberValidateTest.jsp",
+            "description": "Validate any phone number from any country. For testing purposes only.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "STRING",
+                    "description": "Phone number in local format (without prefix) or E.164 format (starting with + followed by country code and number).",
+                    "default": "+59894887766"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "ISO 3166-1 alpha-2 code of the country. Optional if the number starts with +.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Validate",
+            "url": "https://phonenumbervalidate.p.rapidapi.com/ts_PhoneNumberValidate.jsp",
+            "description": "Validate any phone number from any country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number",
+                    "type": "STRING",
+                    "description": "Phone number in local format (without prefix) or E.164 format (starting with + followed by country code and number).",
+                    "default": "94887799"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "ISO 3166-1 alpha-2 code of the country. Optional if the number starts with +.",
+                    "default": "UY"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "tool_name": "随机天文图[NASA官方]",
+    "tool_description": "随机获取一张NASA官方天文图，宇宙图像。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/nasaapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机天文图[NASA官方] API",
+            "url": "https://cn.apihz.cn/api/img/nasaapi.php",
+            "description": "获取NASA官方的随机天文图",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子分配的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子的密钥",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "图片类型，1表示返回高分辨率图片",
+                    "default": "1"
+                },
+                {
+                    "name": "hd",
+                    "type": "int",
+                    "description": "高清图片标志，1表示返回高清图片",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "节假日查询",
+    "tool_description": "查询节假日查询",
+    "home_url": "https://api.qqsuu.cn/doc/dm-jiejiari.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查询节假日查询",
+            "url": "https://api.qqsuu.cn/api/dm-jiejiari",
+            "description": "查询特定日期或日期范围的节假日信息，包括节假日名称、调休安排等",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "String",
+                    "description": "查询日期或日期范围",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "查询类型，0批量、1按年、2按月、3范围",
+                    "default": ""
+                },
+                {
+                    "name": "mode",
+                    "type": "int",
+                    "description": "查询模式，为1返回国际各类特殊纪念日信息",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

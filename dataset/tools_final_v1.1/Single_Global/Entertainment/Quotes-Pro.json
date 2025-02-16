@@ -1,0 +1,28 @@
+{
+    "tool_name": "Quotes-Pro",
+    "tool_description": "Quotes-Pro is an Entertainment API that provides random quotes from a vast collection across various categories. It distinguishes itself from the pquotes API by offering a higher quality and quantity of quotes, making it a premier choice for quote retrieval.",
+    "home_url": "https://rapidapi.com/primisign-pBrt_l-Weeu/api/quotes-pro1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "quotes",
+            "url": "https://quotes-pro1.p.rapidapi.com/api/quote",
+            "description": "This is the sole endpoint of the Quotes-Pro API. It allows users to send a POST request with a topic parameter to retrieve a random quote related to that topic.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "quote": {
+                        "type": "string"
+                    },
+                    "by": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

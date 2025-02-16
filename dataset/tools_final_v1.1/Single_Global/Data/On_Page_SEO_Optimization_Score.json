@@ -1,0 +1,25 @@
+{
+    "tool_name": "On Page SEO Optimization Score",
+    "tool_description": "This API can analyze any webpage for onpage search engine optimization efforts and give a score based on a 100-point scale.",
+    "home_url": "https://rapidapi.com/alreadycoded/api/on-page-seo-optimization-score/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "url",
+            "url": "https://on-page-seo-optimization-score.p.rapidapi.com/data",
+            "description": "It can accept any valid URL.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "",
+                    "default": "https://www.alreadycoded.com/seo-tools/seo-content-analysis-tool.html"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "statuscode",
+            "schema": {}
+        }
+    ]
+}

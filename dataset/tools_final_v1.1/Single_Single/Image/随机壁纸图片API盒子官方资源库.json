@@ -1,0 +1,44 @@
+{
+    "tool_name": "随机壁纸图片[API盒子官方资源库]",
+    "tool_description": "由API盒子官方资源库提供，数十万图片资源库，来源于网络公开收集。(不确定版权来源，请勿用于商业用途。)【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/apihzimgbz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机壁纸图片API",
+            "url": "https://cn.apihz.cn/api/img/apihzimgbz.php",
+            "description": "提供随机壁纸图片的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API盒子提供的接口ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API盒子提供的接口密钥",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "图片类型，1为风景，2为美女，3为动物，4为抽象，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "imgtype",
+                    "type": "int",
+                    "description": "图片格式，1为原图，2为压缩图，默认为2",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

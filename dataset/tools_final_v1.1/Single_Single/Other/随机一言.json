@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机一言",
+    "tool_description": "随机获取一言",
+    "home_url": "https://api.aa1.cn/doc/yunmge-aword.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机一言API",
+            "url": "https://api.yunmge.com/api/aword",
+            "description": "随机获取一言的API接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "tool_name": "Blackbox",
+    "tool_description": "Blackbox is a Proxy, Tor, Hosting, Cloud, Bogon detection service for IP addresses. Utilize Blackbox to protect your game-servers, user front-ends, and much more.",
+    "home_url": "https://rapidapi.com/CMunroe/api/blackbox/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Legacy | V1",
+            "url": "https://blackbox.p.rapidapi.com/v1/{ips}",
+            "description": "This is a legacy and free IP check service that provides a simple non-JSON style response to requests. Responses are cached for 7 days. The possible responses are (Y, E, N): (Y) Yes, the IP address is associated with Cloud, Hosting, Tor, or Proxy; (E) Error, something went wrong with the request; (N) No, the IP address is not associated with any of the above.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ips",
+                    "type": "string",
+                    "description": "The IP address to check.",
+                    "default": "1.1.1.1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Multiple Array | V2",
+            "url": "https://blackbox.p.rapidapi.com/v2/{ips}",
+            "description": "Using the GET method, you can request specific detections and other information for multiple IP addresses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ips",
+                    "type": "string",
+                    "description": "Comma-separated list of IP addresses to check.",
+                    "default": "1.1.1.1,8.8.8.8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {
+                            "type": "string"
+                        },
+                        "asn": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "number": {
+                                    "type": "integer"
+                                },
+                                "network": {
+                                    "type": "string"
+                                },
+                                "cidr": {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "detection": {
+                            "type": "object",
+                            "properties": {
+                                "bogon": {
+                                    "type": "boolean"
+                                },
+                                "cloud": {
+                                    "type": "boolean"
+                                },
+                                "hosting": {
+                                    "type": "boolean"
+                                },
+                                "proxy": {
+                                    "type": "boolean"
+                                },
+                                "spamhaus": {
+                                    "type": "boolean"
+                                },
+                                "tor": {
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "suggestion": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Singular Object | V2",
+            "url": "https://blackbox.p.rapidapi.com/v2/obj/{ip}",
+            "description": "This endpoint is for singular IP lookups. It simplifies the request process by returning a single IP object, but with less flexibility compared to multiple lookups.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "The single IP address to check.",
+                    "default": "8.8.8.8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

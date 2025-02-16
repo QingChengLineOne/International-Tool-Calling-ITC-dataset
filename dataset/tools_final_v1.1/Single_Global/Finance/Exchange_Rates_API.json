@@ -1,0 +1,71 @@
+{
+    "tool_name": "Exchange Rates API",
+    "tool_description": "This API retrieves all exchange rates between all currencies based on BCE.",
+    "home_url": "https://rapidapi.com/piero.porro/api/exchange-rates-api2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "currencies",
+            "url": "https://exchange-rates-api2.p.rapidapi.com/currencies",
+            "description": "This endpoint gets a list of available currency symbols along with their full names.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "historical",
+            "url": "https://exchange-rates-api2.p.rapidapi.com/{YYYY-MM-DD}",
+            "description": "This endpoint returns historical rates for any working day since 4 January 1999. You can tweak the response using the 'from' and 'to' parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "YYYY-MM-DD",
+                    "type": "string",
+                    "description": "The date for which historical rates are requested.",
+                    "default": "2023-03-24"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "Comma-separated list of currencies to limit the returned rates.",
+                    "default": "EUR,USD"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The base currency for the exchange rate.",
+                    "default": "CHF"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "latest",
+            "url": "https://exchange-rates-api2.p.rapidapi.com/latest",
+            "description": "This endpoint returns the latest exchange rates. Rates are quoted against the Euro by default, but can be adjusted using the 'from' parameter.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "Comma-separated list of currencies to limit the returned rates.",
+                    "default": "USD,AUD"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The base currency for the exchange rate.",
+                    "default": "EUR"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

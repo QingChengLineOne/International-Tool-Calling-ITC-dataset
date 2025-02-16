@@ -1,0 +1,18 @@
+{
+    "tool_name": "thomo678",
+    "tool_description": "Thomo67 - thomo678.com ✔️ nhà cái cá cược Đá Gà thomo trực tiếp uy tín số 1️⃣ Việt Nam ✔️ đến với thomo678 bạn sẽ được tặng 6888k thành viên mới ✔️",
+    "home_url": "https://rapidapi.com/thomonet/api/thomo678/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Thomo67",
+            "url": "https://thomo678.p.rapidapi.com/",
+            "description": "Thomo67 thomo678.com ✔️ nhà cái cá cược Đá Gà thomo trực tiếp uy tín số 1️⃣ Việt Nam ✔️ đến với thomo678 bạn sẽ được tặng 6888k thành viên mới ✔️",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "B站热搜-免费API",
+    "tool_description": "获取B站热搜数据，返回最新的B站热搜列表",
+    "home_url": "https://www.free-api.com/doc/639",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "B站热搜API",
+            "url": "https://v.api.aa1.cn/api/bilibili-rs/",
+            "description": "获取B站热搜数据",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

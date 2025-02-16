@@ -1,0 +1,18 @@
+{
+    "tool_name": "Real-time climate index",
+    "tool_description": "A standard index scaled 1-100 that compiles the most significant factors underlying climate change. R-TCI will make it easier to conceptualize and understand the nature and urgency of the current climate crises.",
+    "home_url": "https://rapidapi.com/ezimmerman/api/real-time-climate-index/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "all-data",
+            "url": "https://real-time-climate-index.p.rapidapi.com/api/climate-data",
+            "description": "Gather all data related to R-TCI.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

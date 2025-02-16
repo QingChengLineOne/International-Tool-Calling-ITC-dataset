@@ -1,0 +1,25 @@
+{
+    "tool_name": "indietracks",
+    "tool_description": "A platform for searching indie radio stations.",
+    "home_url": "https://rapidapi.com/aqfjr/api/indietracks/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "indietracks",
+            "url": "https://indietracks.p.rapidapi.com/",
+            "description": "Search for indie radio stations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "inditracks",
+                    "type": "STRING",
+                    "description": "A string parameter to filter the search results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

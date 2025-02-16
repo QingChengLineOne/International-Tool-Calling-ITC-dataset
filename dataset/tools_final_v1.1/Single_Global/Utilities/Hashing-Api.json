@@ -1,0 +1,214 @@
+{
+    "tool_name": "Hashing-Api",
+    "tool_description": "Blake2B/MD5/SHA Text/File/Bytes Hashing",
+    "home_url": "https://rapidapi.com/ezzatelbadrawy/api/hashing-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SHA Text Hash",
+            "url": "https://hashing-api.p.rapidapi.com/api/sha/{mode}/hashtext",
+            "description": "Hash text using SHA1, SHA256, SHA384, or SHA512 algorithm based on the selected mode.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataString",
+                    "type": "STRING",
+                    "description": "The text string to be hashed.",
+                    "default": "enter-your-string-here"
+                },
+                {
+                    "name": "mode",
+                    "type": "NUMBER",
+                    "description": "The hashing mode to use (1, 256, 384, or 512).",
+                    "default": "256"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "hashHexString": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "hashBase64String": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        {
+            "name": "MD5 Text Hash",
+            "url": "https://hashing-api.p.rapidapi.com/api/md5/hashtext",
+            "description": "Hash text using the MD5 algorithm.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataString",
+                    "type": "STRING",
+                    "description": "The text string to be hashed.",
+                    "default": "enter-your-string-here"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "hashHexString": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "hashBase64String": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        {
+            "name": "Blake2B Text Hash",
+            "url": "https://hashing-api.p.rapidapi.com/api/blake2b/hashtext",
+            "description": "Hash text using the Blake2B algorithm.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataString",
+                    "type": "STRING",
+                    "description": "The text string to be hashed.",
+                    "default": "enter-your-string-here"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "hashHexString": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "hashBase64String": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        {
+            "name": "MD5 File Hash",
+            "url": "https://hashing-api.p.rapidapi.com/api/md5/hashfile",
+            "description": "Hash an uploaded file using the MD5 algorithm.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The file to be hashed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "hashHexString": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "hashBase64String": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        {
+            "name": "Blake2B File Hash",
+            "url": "https://hashing-api.p.rapidapi.com/api/blake2b/hashfile",
+            "description": "Hash an uploaded file using the Blake2B algorithm.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The file to be hashed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "hashHexString": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "hashBase64String": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    ]
+}

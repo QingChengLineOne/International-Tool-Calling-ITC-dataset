@@ -1,0 +1,64 @@
+{
+    "tool_name": "Rapid Translate",
+    "tool_description": "Translate texts between 50+ natural languages.",
+    "home_url": "https://rapidapi.com/petadata/api/rapid-translate/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Languages",
+            "url": "https://rapid-translate.p.rapidapi.com/GetLanguages",
+            "description": "Returns a list of supported languages for translation.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "items": [
+                    {
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "englishName": {
+                                "type": "string"
+                            },
+                            "nativeName": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "code",
+                            "englishName",
+                            "nativeName"
+                        ],
+                        "type": "object"
+                    }
+                ],
+                "type": "array"
+            }
+        },
+        {
+            "name": "Translate Text",
+            "url": "https://rapid-translate.p.rapidapi.com/TranslateText",
+            "description": "Translates text from one language to another and returns the translated result.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

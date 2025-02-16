@@ -1,0 +1,147 @@
+{
+    "tool_name": "DogBreedDB",
+    "tool_description": "Get the basic metadata on all breeds of dogs from around the world. This API allows users to retrieve detailed information about various dog breeds, including their origins, fur colors, and more.",
+    "home_url": "https://rapidapi.com/encurate/api/dogbreeddb/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Paginated",
+            "url": "https://dogbreeddb.p.rapidapi.com/paginated/",
+            "description": "Get all dog breed results in a set of 10 per page.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Order by Descending",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all dogs sorted in descending order by name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ordering",
+                    "type": "STRING",
+                    "description": "Parameter to specify the order of the results.",
+                    "default": "-breedName"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Order by Ascending",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all dogs sorted in ascending order by name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ordering",
+                    "type": "STRING",
+                    "description": "Parameter to specify the order of the results.",
+                    "default": "breedName"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Origin",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all dogs with the origin country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "origin",
+                    "type": "STRING",
+                    "description": "Country of origin for the dog breeds.",
+                    "default": "germany"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Fur Color",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all dogs with the color as provided in the parameter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "furColor__icontains",
+                    "type": "STRING",
+                    "description": "Color of the fur to filter the dog breeds.",
+                    "default": "white"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Breed Type",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gives all results by the type of breed.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "breedType",
+                    "type": "STRING",
+                    "description": "Type of breed to filter the results.",
+                    "default": "Mixed Breed Dogs"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Search dog breed by keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "Keyword to search for specific dog breeds.",
+                    "default": "alaskan"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Single Dog Breed",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gives details of a single dog breed.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "ID of the dog breed to retrieve details.",
+                    "default": "47"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All Dog Breed",
+            "url": "https://dogbreeddb.p.rapidapi.com/",
+            "description": "Gets details of all dog breeds.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,218 @@
+{
+    "tool_name": "Twitch API",
+    "tool_description": "A comprehensive API for accessing various Twitch data, including stream data, streamer information, chat data, and channel points.",
+    "home_url": "https://rapidapi.com/cavsn/api/twitch-api8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Channel Points Context",
+            "url": "https://twitch-api8.p.rapidapi.com/get_channel_points_context",
+            "description": "Retrieves information about channel points for a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve channel points information.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Stream Views",
+            "url": "https://twitch-api8.p.rapidapi.com/get_stream_viewers",
+            "description": "Returns the number of viewers currently watching a specified stream.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve stream view information.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Streamer Info",
+            "url": "https://twitch-api8.p.rapidapi.com/get_streamer_info",
+            "description": "Fetches detailed information about a specified streamer.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel of the streamer to retrieve information for.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Channel Panels",
+            "url": "https://twitch-api8.p.rapidapi.com/get_channel_panels",
+            "description": "Retrieves the panels associated with a specified Twitch channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve panels.",
+                    "default": "xQc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Stream Tags",
+            "url": "https://twitch-api8.p.rapidapi.com/get_stream_tags",
+            "description": "Returns the tags associated with a specified stream.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve stream tags.",
+                    "default": "shadoune666"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Channel Leaderboards",
+            "url": "https://twitch-api8.p.rapidapi.com/get_channel_leaderboards",
+            "description": "Retrieves the leaderboard for a specified channel.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve the leaderboard.",
+                    "default": "shadoune666"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Channel Goals",
+            "url": "https://twitch-api8.p.rapidapi.com/get_channel_goals",
+            "description": "Fetches the goals set for a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve goals.",
+                    "default": "shadoune666"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Pinned Chat",
+            "url": "https://twitch-api8.p.rapidapi.com/get_pinned_chat",
+            "description": "Retrieves the pinned chat messages for a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve pinned chat messages.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Chat Restrictions",
+            "url": "https://twitch-api8.p.rapidapi.com/get_chat_restrictions",
+            "description": "Returns the chat restrictions for a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve chat restrictions.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Id",
+            "url": "https://twitch-api8.p.rapidapi.com/get_user_id",
+            "description": "Retrieves the user ID for a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve the user ID.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Channel Videos",
+            "url": "https://twitch-api8.p.rapidapi.com/get_channel_videos",
+            "description": "Fetches the videos associated with a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve videos.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Viewer Card (Pleb info)",
+            "url": "https://twitch-api8.p.rapidapi.com/get_viewer_card",
+            "description": "Retrieves the viewer card information for a specified user in a channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the viewer for whom to retrieve card information.",
+                    "default": "xqc"
+                },
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The Twitch channel for which to retrieve viewer card information.",
+                    "default": "xqc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

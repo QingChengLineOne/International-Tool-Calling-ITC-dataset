@@ -1,0 +1,25 @@
+{
+    "tool_name": "File Extension",
+    "tool_description": "Get data based on file extension. This API provides information such as the icon and full name of a specified file extension. The data is sourced from https://fileinfo.com/, which is known for its comprehensive list of file extensions.",
+    "home_url": "https://rapidapi.com/sanjaydookhoo4/api/file-extension/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "details",
+            "url": "https://file-extension.p.rapidapi.com/details",
+            "description": "Retrieve detailed information about a specific file extension, including its icon and full name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "extension",
+                    "type": "STRING",
+                    "description": "The file extension for which information is requested.",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

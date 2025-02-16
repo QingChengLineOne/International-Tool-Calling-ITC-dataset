@@ -1,0 +1,159 @@
+{
+    "tool_name": "Player Data",
+    "tool_description": "An API for accessing data related to SSCB players, including their weights and other attributes.",
+    "home_url": "https://rapidapi.com/soyamchinglemba/api/player-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/search_by_weight",
+            "url": "https://player-data.p.rapidapi.com/search_by_weight",
+            "description": "Search for players based on their weight.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "input_weight",
+                    "type": "STRING",
+                    "description": "The weight of the player to search for.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        },
+                        "PlayerName": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "Weight": {
+                            "type": "string",
+                            "description": ""
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/SearchPlayer",
+            "url": "https://player-data.p.rapidapi.com/SearchPlayer",
+            "description": "Search for a player by name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "player_input",
+                    "type": "STRING",
+                    "description": "The name of the player to search for.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        },
+                        "PlayerName": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "Weight": {
+                            "type": "string",
+                            "description": ""
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/delete_player",
+            "url": "https://player-data.p.rapidapi.com/delete_player",
+            "description": "Delete a player from the database.",
+            "method": "DELETE",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sscb_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier of the player to be deleted.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "/add_players",
+            "url": "https://player-data.p.rapidapi.com/add_players",
+            "description": "Add a new player to the database.",
+            "method": "PUT",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "input_weight",
+                    "type": "STRING",
+                    "description": "The weight of the player to be added.",
+                    "default": ""
+                },
+                {
+                    "name": "input_player",
+                    "type": "STRING",
+                    "description": "The name of the player to be added.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64",
+                        "description": "",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    },
+                    "PlayerName": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "Weight": {
+                        "type": "string",
+                        "description": ""
+                    }
+                }
+            }
+        },
+        {
+            "name": "/calculate",
+            "url": "https://player-data.p.rapidapi.com/calculate",
+            "description": "Perform calculations related to player data.",
+            "method": "PUT",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "tool_name": "Ahrefs DR & Rank Checker",
+    "tool_description": "Check domain rating and Ahrefs rank information for any domain/URL.",
+    "home_url": "https://rapidapi.com/ayushsomanime/api/ahrefs-dr-rank-checker/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check DR and Rank",
+            "url": "https://ahrefs-dr-rank-checker.p.rapidapi.com/check",
+            "description": "Check ahrefs DR and rank of a domain.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "domainRating": {
+                                "type": "integer"
+                            },
+                            "ahrefsRank": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "URL Intelligence",
+    "tool_description": "Extracts links from a target URL and provides linking metadata.",
+    "home_url": "https://rapidapi.com/zackproser/api/url-intelligence/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Rip",
+            "url": "https://url-intelligence.p.rapidapi.com/rip",
+            "description": "Extract links and info from a given URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "target",
+                    "type": "STRING",
+                    "description": "The URL to extract links and info from.",
+                    "default": "https://www.nytimes.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

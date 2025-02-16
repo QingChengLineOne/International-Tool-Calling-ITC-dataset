@@ -1,0 +1,54 @@
+{
+    "tool_name": "免费图床接口v1",
+    "tool_description": "免费极速图床接口，11MB图片秒开，自费流量包，宁缺毋滥",
+    "home_url": "https://api.aa1.cn/doc/tucdn.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取Token接口",
+            "url": "https://tucdn.wpon.cn/api/token",
+            "description": "用于获取使用图床接口的认证Token",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "string",
+                    "description": "用户名，用于注册或登录",
+                    "default": ""
+                },
+                {
+                    "name": "password",
+                    "type": "string",
+                    "description": "密码，用于注册或登录",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "上传图片接口",
+            "url": "https://tucdn.wpon.cn/api/upload",
+            "description": "用于上传图片到图床，并返回图片URL",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "认证Token，通过获取Token接口获得",
+                    "default": ""
+                },
+                {
+                    "name": "file",
+                    "type": "file",
+                    "description": "待上传的图片文件",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,415 @@
+{
+    "tool_name": "Hearthstone",
+    "tool_description": "This API provides comprehensive information about cards available in the Hearthstone game, including details such as card attributes, types, and mechanics.",
+    "home_url": "https://rapidapi.com/hefesto-technologies-hefesto-technologies-default/api/hearthstone11/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Cards",
+            "url": "https://hearthstone11.p.rapidapi.com/cards",
+            "description": "Retrieve a list of all the cards available in Hearthstone.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Specifies the page number of the results to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "pageSize",
+                    "type": "STRING",
+                    "description": "Specifies the number of results to return per page.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "cards": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "collectible": {
+                                    "type": "integer"
+                                },
+                                "slug": {
+                                    "type": "string"
+                                },
+                                "artistName": {
+                                    "type": "string"
+                                },
+                                "manaCost": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "type": "string"
+                                },
+                                "flavorText": {
+                                    "type": "string"
+                                },
+                                "duels": {
+                                    "type": "object",
+                                    "properties": {
+                                        "relevant": {
+                                            "type": "boolean"
+                                        },
+                                        "constructed": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "hasImage": {
+                                    "type": "boolean"
+                                },
+                                "hasImageGold": {
+                                    "type": "boolean"
+                                },
+                                "hasCropImage": {
+                                    "type": "boolean"
+                                },
+                                "keywords": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "slug": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "refText": {
+                                                "type": "string"
+                                            },
+                                            "text": {
+                                                "type": "string"
+                                            },
+                                            "gameModes": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "slug": {
+                                                            "type": "string"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "rarity": {
+                                    "type": "object",
+                                    "properties": {
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "craftingCost": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "dustValue": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "class": {
+                                    "type": "object",
+                                    "properties": {
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "type": {
+                                    "type": "object",
+                                    "properties": {
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "gameModes": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "slug": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "cardSet": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "collectibleCount": {
+                                            "type": "integer"
+                                        },
+                                        "collectibleRevealedCount": {
+                                            "type": "integer"
+                                        },
+                                        "nonCollectibleCount": {
+                                            "type": "integer"
+                                        },
+                                        "nonCollectibleRevealedCount": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "spellSchool": {
+                                    "type": "object",
+                                    "properties": {
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "cardCount": {
+                        "type": "integer"
+                    },
+                    "pageCount": {
+                        "type": "integer"
+                    },
+                    "page": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Card By Slug",
+            "url": "https://hearthstone11.p.rapidapi.com/cards/{slug}",
+            "description": "Retrieve detailed information about a specific card using its unique slug.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "slug",
+                    "type": "string",
+                    "description": "The unique identifier for the card.",
+                    "default": "a-light-in-the-darkness"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "collectible": {
+                        "type": "integer"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "artistName": {
+                        "type": "string"
+                    },
+                    "manaCost": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "flavorText": {
+                        "type": "string"
+                    },
+                    "duels": {
+                        "type": "object",
+                        "properties": {
+                            "relevant": {
+                                "type": "boolean"
+                            },
+                            "constructed": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "hasImage": {
+                        "type": "boolean"
+                    },
+                    "hasImageGold": {
+                        "type": "boolean"
+                    },
+                    "hasCropImage": {
+                        "type": "boolean"
+                    },
+                    "keywords": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "slug": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "refText": {
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "type": "string"
+                                },
+                                "gameModes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "slug": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "rarity": {
+                        "type": "object",
+                        "properties": {
+                            "slug": {
+                                "type": "string"
+                            },
+                            "craftingCost": {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                }
+                            },
+                            "dustValue": {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                }
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "class": {
+                        "type": "object",
+                        "properties": {
+                            "slug": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "type": {
+                        "type": "object",
+                        "properties": {
+                            "slug": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "gameModes": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "cardSet": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "slug": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "collectibleCount": {
+                                "type": "integer"
+                            },
+                            "collectibleRevealedCount": {
+                                "type": "integer"
+                            },
+                            "nonCollectibleCount": {
+                                "type": "integer"
+                            },
+                            "nonCollectibleRevealedCount": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "spellSchool": {
+                        "type": "object",
+                        "properties": {
+                            "slug": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

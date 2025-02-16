@@ -1,0 +1,49 @@
+{
+    "tool_name": "kotaklirik7",
+    "tool_description": "Gratis api lirik kotak7, 提供Kotak7歌曲的歌词信息。",
+    "home_url": "https://rapidapi.com/sakfery/api/kotaklirik7/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "Lirik",
+            "url": "https://kotaklirik7.p.rapidapi.com/single",
+            "description": "获取Kotak7歌曲的歌词。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "device",
+                    "type": "STRING",
+                    "description": "请求设备类型，通常为'mobile'或'desktop'。",
+                    "default": "mobile"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "歌曲的唯一标识符。",
+                    "default": "CRSS_pjfso1oN_5I_suxNg=="
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "请求的语言，通常为'id'表示印尼语。",
+                    "default": "id"
+                },
+                {
+                    "name": "regionURI",
+                    "type": "STRING",
+                    "description": "地区URI，通常为'id-id'表示印尼。",
+                    "default": "id-id"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "请求的国家，通常为'id'表示印尼。",
+                    "default": "id"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

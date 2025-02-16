@@ -1,0 +1,25 @@
+{
+    "tool_name": "空气吸收剂量率API",
+    "tool_description": "提供全国空气吸收剂量率的查询服务",
+    "home_url": "https://api.aa1.cn/doc/aqi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全国空气吸收剂量率查询",
+            "url": "https://api.52vmy.cn/api/query/aqi",
+            "description": "查询全国范围内的空气吸收剂量率数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "需要查询的城市名称",
+                    "default": "全国"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "tool_name": "Get emails from url",
+    "tool_description": "This tool retrieves all unique email addresses found on a specified URL.",
+    "home_url": "https://rapidapi.com/iredun/api/get-emails-from-url/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get emails",
+            "url": "https://get-emails-from-url.p.rapidapi.com/",
+            "description": "Fetches email addresses from the provided URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL from which to extract email addresses.",
+                    "default": "https://google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

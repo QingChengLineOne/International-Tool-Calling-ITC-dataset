@@ -1,0 +1,98 @@
+{
+    "tool_name": "roiquant",
+    "tool_description": "Welcome to roiquant's API, designed to provide insights into discontinued products and investors with losses.",
+    "home_url": "https://rapidapi.com/roiquant/api/roiquant/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "List discontinued products",
+            "url": "https://roiquant.p.rapidapi.com/discontinued-products",
+            "description": "Retrieve a list of discontinued products.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search investor's name with losses",
+            "url": "https://roiquant.p.rapidapi.com/investors-losses/search",
+            "description": "Search for an investor's name associated with losses.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List investors with losses",
+            "url": "https://roiquant.p.rapidapi.com/investors-losses",
+            "description": "Retrieve a list of investors who have incurred losses.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter shuttered companies by business model type",
+            "url": "https://roiquant.p.rapidapi.com/shuttered-companies/business-model-type",
+            "description": "Retrieve shuttered companies filtered by their business model type.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter shuttered companies by stage of development",
+            "url": "https://roiquant.p.rapidapi.com/shuttered-companies/stage-of-development",
+            "description": "Retrieve shuttered companies filtered by their stage of development.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter shuttered companies by entity type",
+            "url": "https://roiquant.p.rapidapi.com/shuttered-companies/entity-type",
+            "description": "Retrieve shuttered companies filtered by their entity type.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter shuttered companies by industry",
+            "url": "https://roiquant.p.rapidapi.com/shuttered-companies/industry",
+            "description": "Retrieve shuttered companies filtered by their industry.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search shuttered companies name",
+            "url": "https://roiquant.p.rapidapi.com/shuttered-companies/search",
+            "description": "Search for the names of shuttered companies.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List shuttered companies",
+            "url": "https://roiquant.p.rapidapi.com/shuttered-companies",
+            "description": "Retrieve a list of shuttered companies.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

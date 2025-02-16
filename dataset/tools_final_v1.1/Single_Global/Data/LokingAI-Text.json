@@ -1,0 +1,216 @@
+{
+    "tool_name": "LokingAI-Text",
+    "tool_description": "APIs collectively providing functionalities such as classification, sentiment analysis, summarization, question answering, labeling, and mask filling for various text processing tasks. They allow users to extract meaningful information from text data and perform different types of analyses and transformations.",
+    "home_url": "https://rapidapi.com/josuebrunel/api/lokingai-text/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "mask_filler_mask_filler_post",
+            "url": "https://lokingai-text.p.rapidapi.com/mask-filler",
+            "description": "Fill in masked values in the input text.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "TextRequest",
+                    "description": "Object containing the input text with masked values.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "question_answering_question_answering_post",
+            "url": "https://lokingai-text.p.rapidapi.com/question-answering",
+            "description": "Answer a list of questions based on the input text.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "QuestionAnswerRequest",
+                    "description": "Object containing the input text and list of questions.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "classifier_classifier_post",
+            "url": "https://lokingai-text.p.rapidapi.com/classifier",
+            "description": "Classify a list of texts using a text classification model.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "List of TextRequest",
+                    "description": "List containing the input texts to classify.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "error": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Error"
+                    },
+                    "data": {
+                        "items": {},
+                        "type": "array",
+                        "title": "Data"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "error",
+                    "data"
+                ],
+                "title": "ApiResponseList"
+            }
+        },
+        {
+            "name": "sentiment_analyzer_sentiment_analyzer_post",
+            "url": "https://lokingai-text.p.rapidapi.com/sentiment-analyzer",
+            "description": "Analyze sentiment for a list of texts.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "List of TextRequest",
+                    "description": "List containing the input texts for sentiment analysis.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "error": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Error"
+                    },
+                    "data": {
+                        "items": {},
+                        "type": "array",
+                        "title": "Data"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "error",
+                    "data"
+                ],
+                "title": "ApiResponseList"
+            }
+        },
+        {
+            "name": "summarizer_summarizer_post",
+            "url": "https://lokingai-text.p.rapidapi.com/summarizer",
+            "description": "Summarize the input text.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "TextRequest",
+                    "description": "Object containing the input text to summarize.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "labelizer_labelizer_post",
+            "url": "https://lokingai-text.p.rapidapi.com/labelizer",
+            "description": "Label the input text with specified labels.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "payload",
+                    "type": "LabelRequest",
+                    "description": "Object containing the input text and list of labels.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "multi_label",
+                    "type": "boolean",
+                    "description": "Indicates whether multiple labels can be assigned.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "error": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Error"
+                    },
+                    "data": {
+                        "properties": {
+                            "sequence": {
+                                "type": "string",
+                                "title": "Sequence"
+                            },
+                            "labels": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array",
+                                "title": "Labels"
+                            },
+                            "scores": {
+                                "items": {
+                                    "type": "number"
+                                },
+                                "type": "array",
+                                "title": "Scores"
+                            }
+                        },
+                        "type": "object",
+                        "required": [
+                            "sequence",
+                            "labels",
+                            "scores"
+                        ],
+                        "title": "LabelOutput"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "error",
+                    "data"
+                ],
+                "title": "LabelResponse"
+            }
+        }
+    ]
+}

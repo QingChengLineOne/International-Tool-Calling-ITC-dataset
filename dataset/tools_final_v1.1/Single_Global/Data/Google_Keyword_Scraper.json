@@ -1,0 +1,37 @@
+{
+    "tool_name": "Google Keyword Scraper",
+    "tool_description": "A tool for conducting keyword research on Google, allowing users to find popular keywords in various countries and languages.",
+    "home_url": "https://rapidapi.com/dodocr7/api/google-keyword-scraper/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "KeywordSearch",
+            "url": "https://google-keyword-scraper.p.rapidapi.com/",
+            "description": "Fetches all popular keywords based on specified country and language.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "glanguage",
+                    "type": "STRING",
+                    "description": "The alpha code for the language you want to use. For example, 'en' for English, 'fr' for French.",
+                    "default": "en"
+                },
+                {
+                    "name": "gcountry",
+                    "type": "STRING",
+                    "description": "The alpha code for the country you want to target. For example, 'us' for the United States, 'fr' for France.",
+                    "default": "ua"
+                },
+                {
+                    "name": "gkeyword",
+                    "type": "STRING",
+                    "description": "The keyword you want to search for. Default is 'ukraine war'.",
+                    "default": "ukraine war"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

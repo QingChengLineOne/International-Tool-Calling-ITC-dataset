@@ -1,0 +1,109 @@
+{
+    "tool_name": "pluses-and-minuses-of-the-car",
+    "tool_description": "The Car Pluses and Minuses API provides detailed insights into the pros and cons of various car makes, models, and years. It is designed to assist potential buyers, car enthusiasts, and businesses in evaluating vehicles effectively by offering information on performance, reliability, safety, comfort, and overall satisfaction based on real-world user experiences and expert reviews.",
+    "home_url": "https://rapidapi.com/pi16-pi16-default/api/pluses-and-minuses-of-the-car/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Pluses and minuses of the car",
+            "url": "https://pluses-and-minuses-of-the-car.p.rapidapi.com/b2b/plusminus",
+            "description": "This API endpoint retrieves the pros and cons of a specified car make, model, and year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "The manufacturing year of the car.",
+                    "default": "2012"
+                },
+                {
+                    "name": "make",
+                    "type": "STRING",
+                    "description": "The brand of the car.",
+                    "default": "bmw"
+                },
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "The specific model of the car.",
+                    "default": "5 series"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "pros": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "cons": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "totalRating": {
+                        "type": "string"
+                    },
+                    "fiveStars": {
+                        "type": "string"
+                    },
+                    "fourStars": {
+                        "type": "string"
+                    },
+                    "threeStarts": {
+                        "type": "string"
+                    },
+                    "twoStars": {
+                        "type": "string"
+                    },
+                    "oneStar": {
+                        "type": "string"
+                    },
+                    "individualRatings": {
+                        "type": "object",
+                        "properties": {
+                            "comfort": {
+                                "type": "string"
+                            },
+                            "driving": {
+                                "type": "string"
+                            },
+                            "overall": {
+                                "type": "string"
+                            },
+                            "utility": {
+                                "type": "string"
+                            },
+                            "interior": {
+                                "type": "string"
+                            },
+                            "technology": {
+                                "type": "string"
+                            },
+                            "performance": {
+                                "type": "string"
+                            },
+                            "quality": {
+                                "type": "string"
+                            },
+                            "reliability": {
+                                "type": "string"
+                            },
+                            "styling": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

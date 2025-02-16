@@ -1,0 +1,25 @@
+{
+    "tool_name": "SMS Fraud Detection",
+    "tool_description": "Introducing the SMS Fraud Detection API, powered by GPT-3.5, the ground-breaking language model developed by OpenAI. This API revolutionizes fraud prevention in the realm of SMS communication by leveraging the power of natural language processing and machine learning.",
+    "home_url": "https://rapidapi.com/hailbytes-hailbytes-default/api/sms-fraud-detection/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SMS Fraud Detection",
+            "url": "https://sms-fraud-detection.p.rapidapi.com/analyze-sms/",
+            "description": "The SMS Fraud Detection endpoint utilizes advanced algorithms and machine learning techniques to analyze the content and metadata of SMS messages you submit in real-time. It evaluates various parameters and indicators to identify potential fraudulent activities and raise alerts for further investigation.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "sms_msg",
+                    "type": "STRING",
+                    "description": "The SMS message content that needs to be analyzed for potential fraud.",
+                    "default": "CONGRATULATIONS! You won the lottery. Your friend Daniel wants to connect with you. Both of you can redeem the prize when you APPLY HERE: offer.1nuniyaz.co"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

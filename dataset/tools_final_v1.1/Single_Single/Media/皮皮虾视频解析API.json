@@ -1,0 +1,25 @@
+{
+    "tool_name": "皮皮虾视频解析API",
+    "tool_description": "使用该接口你可以解析皮皮虾视频，部分视频可能无法解析",
+    "home_url": "https://api.aa1.cn/doc/pipixia-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "皮皮虾视频解析接口",
+            "url": "https://v2.api-m.com/api/pipixia",
+            "description": "用于解析皮皮虾平台的视频内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "皮皮虾视频的链接",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

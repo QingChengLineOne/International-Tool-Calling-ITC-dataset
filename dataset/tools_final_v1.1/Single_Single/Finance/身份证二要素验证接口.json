@@ -1,0 +1,37 @@
+{
+    "tool_name": "身份证二要素验证接口",
+    "tool_description": "探查到一个身份证二要素验证接口，亲测可用",
+    "home_url": "https://api.aa1.cn/doc/idcardv2.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "身份证二要素验证API",
+            "url": "https://api.byxy.vip/v2/idcard/",
+            "description": "提供身份证号码和姓名的验证服务，用于验证身份证信息的真实性",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "realname",
+                    "type": "string",
+                    "description": "需要验证的姓名",
+                    "default": ""
+                },
+                {
+                    "name": "idcard",
+                    "type": "string",
+                    "description": "需要验证的身份证号码",
+                    "default": ""
+                },
+                {
+                    "name": "appkey",
+                    "type": "string",
+                    "description": "开发者申请的API密钥",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

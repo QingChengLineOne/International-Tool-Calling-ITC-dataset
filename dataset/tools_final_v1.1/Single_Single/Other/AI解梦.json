@@ -1,0 +1,25 @@
+{
+    "tool_name": "AI解梦API",
+    "tool_description": "描述你的梦境，让AI来解答",
+    "home_url": "https://api.aa1.cn/doc/dream.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI解梦接口",
+            "url": "https://api.52vmy.cn/api/chat/dream",
+            "description": "通过发送梦境描述，获取AI的解梦结果",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "梦境描述内容",
+                    "default": "请输入你的梦境描述"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "QQ音乐刷新cookie",
+    "tool_description": "通过提供一次cookie，自动刷新，有效期3天，抓取一次3个月内无限使用",
+    "home_url": "https://api.aa1.cn/doc/music_key.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ音乐cookie刷新接口",
+            "url": "https://www.hhlqilongzhu.cn/api/QQmusic_ck/cache_QQmusic/QQkey.php",
+            "description": "用于刷新QQ音乐的cookie，实现自动登录和播放等功能",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "QQ账号，用于获取cookie",
+                    "default": ""
+                },
+                {
+                    "name": "musickey",
+                    "type": "string",
+                    "description": "QQ音乐密钥，用于获取cookie",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

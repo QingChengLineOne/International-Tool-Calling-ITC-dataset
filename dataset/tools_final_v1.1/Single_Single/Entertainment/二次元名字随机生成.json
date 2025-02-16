@@ -1,0 +1,31 @@
+{
+    "tool_name": "二次元名字随机生成API",
+    "tool_description": "随机生成二次元风格的用户名或昵称",
+    "home_url": "https://api.aa1.cn/doc/wrxig.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "二次元名字随机生成API",
+            "url": "https://api.lolimi.cn/API/naen/api.php",
+            "description": "用于生成二次元风格的随机名字",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "gender",
+                    "type": "string",
+                    "description": "指定性别，可选值为'boy'或'girl'，默认为空，即随机性别",
+                    "default": ""
+                },
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "指定名字长度，默认为6",
+                    "default": 6
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

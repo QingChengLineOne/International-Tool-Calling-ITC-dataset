@@ -1,0 +1,31 @@
+{
+    "tool_name": "PHP混淆加密API",
+    "tool_description": "安克PHP混淆加密，基于自研算法，混淆强度高，算法持续更新，难能可贵的是其小众，市面上还没有出现自动化破解工具。本接口支持前端跨域部署，请注意，前端部署时需要进行一次base64ToArrayBuffer转换，详情请参考本接口的最佳实践：https://clown.mikv.cn/api/v1/akCryptDemo/demo.html 。本接口由安克持续维护，稳如老狗。",
+    "home_url": "https://api.aa1.cn/doc/akc.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "PHP混淆加密接口",
+            "url": "https://clown.mikv.cn/api/v1/akCryptForPhp",
+            "description": "提供PHP混淆加密服务",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "origin",
+                    "type": "string",
+                    "description": "固定值：api.aa1.cn",
+                    "default": "api.aa1.cn"
+                },
+                {
+                    "name": "file",
+                    "type": "binary",
+                    "description": "需要加密的PHP文件",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

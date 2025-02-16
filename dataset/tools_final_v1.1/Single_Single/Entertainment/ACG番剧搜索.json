@@ -1,0 +1,32 @@
+{
+    "tool_name": "ACG番剧搜索",
+    "tool_description": "对接著名动漫网www.clicli.wang，提供超高清画质MP4直链的番剧搜索API",
+    "home_url": "https://api.aa1.cn/doc/ziyuan_ACG.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "ACG番剧搜索API",
+            "url": "https://www.hhlqilongzhu.cn/api/ziyuan_ACG.php",
+            "description": "用于搜索动漫番剧，获取相应的超高清MP4直链",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "番剧名称，用于搜索",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "ACG_id",
+                    "type": "string",
+                    "description": "番剧ID，如果已知可以指定此参数进行精确搜索",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

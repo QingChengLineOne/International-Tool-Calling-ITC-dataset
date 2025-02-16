@@ -1,0 +1,109 @@
+{
+    "tool_name": "Covid Italy statistics",
+    "tool_description": "The Italian COVID statistics tool provides comprehensive data on COVID-19 cases, including active cases, confirmed cases, deaths, and recoveries across various regions in Italy.",
+    "home_url": "https://rapidapi.com/EminDemiri/api/covid-italy-statistics/",
+    "country": "Italy",
+    "api_list": [
+        {
+            "name": "General Info",
+            "url": "https://covid-italy-statistics.p.rapidapi.com/statistics/compressed",
+            "description": "Fetches general information about COVID-19 statistics in Italy.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "dashboardData": {
+                        "type": "object",
+                        "properties": {
+                            "active": {
+                                "type": "integer"
+                            },
+                            "confirmed": {
+                                "type": "integer"
+                            },
+                            "deaths": {
+                                "type": "integer"
+                            },
+                            "deltaConfirmed": {
+                                "type": "integer"
+                            },
+                            "deltaDeaths": {
+                                "type": "integer"
+                            },
+                            "deltaRecovered": {
+                                "type": "integer"
+                            },
+                            "recovered": {
+                                "type": "integer"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "stateCode": {
+                                "type": "string"
+                            },
+                            "stateNotes": {
+                                "type": "null"
+                            },
+                            "lastUpdatedTime": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "regions": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "state": {
+                                    "type": "string"
+                                },
+                                "stateCode": {
+                                    "type": "integer"
+                                },
+                                "confirmed": {
+                                    "type": "integer"
+                                },
+                                "active": {
+                                    "type": "integer"
+                                },
+                                "recovered": {
+                                    "type": "integer"
+                                },
+                                "deaths": {
+                                    "type": "integer"
+                                },
+                                "lastUpdatedTime": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "nationalCasesTimes": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "dailyConfirmed": {
+                                    "type": "integer"
+                                },
+                                "dailyDeceased": {
+                                    "type": "integer"
+                                },
+                                "dailyRecovered": {
+                                    "type": "integer"
+                                },
+                                "date": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

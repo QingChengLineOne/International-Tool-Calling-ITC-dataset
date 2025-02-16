@@ -1,0 +1,25 @@
+{
+    "tool_name": "PMI Jateng",
+    "tool_description": "Ini adalah data PMI Jateng unofficial, yang menyediakan informasi terkait data donor darah di provinsi Jawa Tengah.",
+    "home_url": "https://rapidapi.com/cas8398/api/pmi-jateng/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "TEST",
+            "url": "https://pmi-jateng.p.rapidapi.com/",
+            "description": "API untuk mengakses data PMI di Jawa Tengah.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "iniya",
+                    "type": "NUMBER",
+                    "description": "Parameter untuk menentukan nilai tertentu dalam permintaan.",
+                    "default": "9"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

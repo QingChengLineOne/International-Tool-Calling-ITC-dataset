@@ -1,0 +1,455 @@
+{
+    "tool_name": "MRZ Scanner",
+    "tool_description": "Scan MRZ from documents (Passports, Visas and ID Cards)",
+    "home_url": "https://rapidapi.com/PresentID/api/mrz-scanner/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send image as Base64",
+            "url": "https://mrz-scanner.p.rapidapi.com/ScanMRZ",
+            "description": "Send document image as a Base64 string for MRZ scanning.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "imageBase64",
+                    "type": "STRING",
+                    "description": "The document image encoded as a Base64 string.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "header": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "type_label": {
+                                        "type": "string"
+                                    },
+                                    "text": {
+                                        "type": "string"
+                                    },
+                                    "box": {
+                                        "type": "object",
+                                        "properties": {
+                                            "bottomLeftX": {
+                                                "type": "string"
+                                            },
+                                            "bottomLeftY": {
+                                                "type": "string"
+                                            },
+                                            "bottomRightX": {
+                                                "type": "string"
+                                            },
+                                            "bottomRightY": {
+                                                "type": "string"
+                                            },
+                                            "topLeftX": {
+                                                "type": "string"
+                                            },
+                                            "topLeftY": {
+                                                "type": "string"
+                                            },
+                                            "topRightX": {
+                                                "type": "string"
+                                            },
+                                            "topRightY": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "fields": {
+                                "type": "object",
+                                "properties": {
+                                    "surname": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "country": {
+                                        "type": "string"
+                                    },
+                                    "country_english": {
+                                        "type": "string"
+                                    },
+                                    "country_native": {
+                                        "type": "string"
+                                    },
+                                    "country_2letters": {
+                                        "type": "string"
+                                    },
+                                    "nationality": {
+                                        "type": "string"
+                                    },
+                                    "nationality_english": {
+                                        "type": "string"
+                                    },
+                                    "nationality_native": {
+                                        "type": "string"
+                                    },
+                                    "nationality_2letters": {
+                                        "type": "string"
+                                    },
+                                    "birth_date": {
+                                        "type": "string"
+                                    },
+                                    "expiry_date": {
+                                        "type": "string"
+                                    },
+                                    "sex": {
+                                        "type": "string"
+                                    },
+                                    "sex_label": {
+                                        "type": "string"
+                                    },
+                                    "document_type": {
+                                        "type": "string"
+                                    },
+                                    "document_number": {
+                                        "type": "string"
+                                    },
+                                    "optional_data": {
+                                        "type": "string"
+                                    },
+                                    "birth_date_hash": {
+                                        "type": "string"
+                                    },
+                                    "expiry_date_hash": {
+                                        "type": "string"
+                                    },
+                                    "document_number_hash": {
+                                        "type": "string"
+                                    },
+                                    "optional_data_hash": {
+                                        "type": "string"
+                                    },
+                                    "optional_data_2": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Send image with URL",
+            "url": "https://mrz-scanner.p.rapidapi.com/ScanMRZ",
+            "description": "Scan MRZ using a public image URL.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "linkFile",
+                    "type": "STRING",
+                    "description": "The public URL of the document image.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "header": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "type_label": {
+                                        "type": "string"
+                                    },
+                                    "text": {
+                                        "type": "string"
+                                    },
+                                    "box": {
+                                        "type": "object",
+                                        "properties": {
+                                            "bottomLeftX": {
+                                                "type": "string"
+                                            },
+                                            "bottomLeftY": {
+                                                "type": "string"
+                                            },
+                                            "bottomRightX": {
+                                                "type": "string"
+                                            },
+                                            "bottomRightY": {
+                                                "type": "string"
+                                            },
+                                            "topLeftX": {
+                                                "type": "string"
+                                            },
+                                            "topLeftY": {
+                                                "type": "string"
+                                            },
+                                            "topRightX": {
+                                                "type": "string"
+                                            },
+                                            "topRightY": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "fields": {
+                                "type": "object",
+                                "properties": {
+                                    "surname": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "country": {
+                                        "type": "string"
+                                    },
+                                    "country_english": {
+                                        "type": "string"
+                                    },
+                                    "country_native": {
+                                        "type": "string"
+                                    },
+                                    "country_2letters": {
+                                        "type": "string"
+                                    },
+                                    "nationality": {
+                                        "type": "string"
+                                    },
+                                    "nationality_english": {
+                                        "type": "string"
+                                    },
+                                    "nationality_native": {
+                                        "type": "string"
+                                    },
+                                    "nationality_2letters": {
+                                        "type": "string"
+                                    },
+                                    "birth_date": {
+                                        "type": "string"
+                                    },
+                                    "expiry_date": {
+                                        "type": "string"
+                                    },
+                                    "sex": {
+                                        "type": "string"
+                                    },
+                                    "sex_label": {
+                                        "type": "string"
+                                    },
+                                    "document_type": {
+                                        "type": "string"
+                                    },
+                                    "document_number": {
+                                        "type": "string"
+                                    },
+                                    "optional_data": {
+                                        "type": "string"
+                                    },
+                                    "birth_date_hash": {
+                                        "type": "string"
+                                    },
+                                    "expiry_date_hash": {
+                                        "type": "string"
+                                    },
+                                    "document_number_hash": {
+                                        "type": "string"
+                                    },
+                                    "optional_data_hash": {
+                                        "type": "string"
+                                    },
+                                    "optional_data_2": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Send image by file (Multipart/FormData)",
+            "url": "https://mrz-scanner.p.rapidapi.com/ScanMRZ",
+            "description": "Send document image as a file to the API for MRZ scanning.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "image",
+                    "type": "BINARY",
+                    "description": "The document image file to be scanned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "statusCode": {
+                        "type": "integer"
+                    },
+                    "statusMessage": {
+                        "type": "string"
+                    },
+                    "hasError": {
+                        "type": "boolean"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "header": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "type_label": {
+                                        "type": "string"
+                                    },
+                                    "text": {
+                                        "type": "string"
+                                    },
+                                    "box": {
+                                        "type": "object",
+                                        "properties": {
+                                            "bottomLeftX": {
+                                                "type": "string"
+                                            },
+                                            "bottomLeftY": {
+                                                "type": "string"
+                                            },
+                                            "bottomRightX": {
+                                                "type": "string"
+                                            },
+                                            "bottomRightY": {
+                                                "type": "string"
+                                            },
+                                            "topLeftX": {
+                                                "type": "string"
+                                            },
+                                            "topLeftY": {
+                                                "type": "string"
+                                            },
+                                            "topRightX": {
+                                                "type": "string"
+                                            },
+                                            "topRightY": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "fields": {
+                                "type": "object",
+                                "properties": {
+                                    "surname": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "country": {
+                                        "type": "string"
+                                    },
+                                    "country_english": {
+                                        "type": "string"
+                                    },
+                                    "country_native": {
+                                        "type": "string"
+                                    },
+                                    "country_2letters": {
+                                        "type": "string"
+                                    },
+                                    "nationality": {
+                                        "type": "string"
+                                    },
+                                    "nationality_english": {
+                                        "type": "string"
+                                    },
+                                    "nationality_native": {
+                                        "type": "string"
+                                    },
+                                    "nationality_2letters": {
+                                        "type": "string"
+                                    },
+                                    "birth_date": {
+                                        "type": "string"
+                                    },
+                                    "expiry_date": {
+                                        "type": "string"
+                                    },
+                                    "sex": {
+                                        "type": "string"
+                                    },
+                                    "sex_label": {
+                                        "type": "string"
+                                    },
+                                    "document_type": {
+                                        "type": "string"
+                                    },
+                                    "document_number": {
+                                        "type": "string"
+                                    },
+                                    "optional_data": {
+                                        "type": "string"
+                                    },
+                                    "birth_date_hash": {
+                                        "type": "string"
+                                    },
+                                    "expiry_date_hash": {
+                                        "type": "string"
+                                    },
+                                    "document_number_hash": {
+                                        "type": "string"
+                                    },
+                                    "optional_data_hash": {
+                                        "type": "string"
+                                    },
+                                    "optional_data_2": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

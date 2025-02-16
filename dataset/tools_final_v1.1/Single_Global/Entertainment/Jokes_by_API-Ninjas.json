@@ -1,0 +1,25 @@
+{
+    "tool_name": "Jokes by API-Ninjas",
+    "tool_description": "Access a large collection of jokes from the internet. This API allows users to retrieve jokes for entertainment purposes.",
+    "home_url": "https://rapidapi.com/apininjas/api/jokes-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/jokes",
+            "url": "https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes",
+            "description": "API Ninjas Jokes API endpoint for retrieving jokes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "Specifies how many jokes to return. Must be between 1 and 30. Default is 1.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

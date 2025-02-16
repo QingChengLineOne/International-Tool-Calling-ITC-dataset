@@ -1,0 +1,79 @@
+{
+    "tool_name": "Plants",
+    "tool_description": "The Plants API made by Pizza API boasts a database of over 40,000 plants that can be easily searched by either their common name or scientific name. Each plant entry in the API includes a comprehensive list of properties, such as genus, species, category, family, growth habit, duration, and growth rate, along with details like mature height, foliage texture, flower color, fruit color, toxicity, drought tolerance, and shade tolerance.",
+    "home_url": "https://rapidapi.com/raajreact/api/plants2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search Plant By ID",
+            "url": "https://plants2.p.rapidapi.com/api/plants",
+            "description": "Retrieves detailed information about a specific plant using its unique ID. This is useful for obtaining in-depth data after searching for a list of plants.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the plant.",
+                    "default": "63ef4eb7476230641c4c0d62"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "Authorization",
+                    "type": "STRING",
+                    "description": "Authorization token for accessing the API.",
+                    "default": "GKZOHNZj0xP65kk0BAE2Tl9LGagm0pfD3DFNxAEEZcMQBhRZVDco8vbNJdnwwCo0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search By Common Name",
+            "url": "https://plants2.p.rapidapi.com/api/plants",
+            "description": "Returns a list of plants that match the provided common name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "CN",
+                    "type": "STRING",
+                    "description": "The common name of the plant to search for.",
+                    "default": "acacia"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "Authorization",
+                    "type": "STRING",
+                    "description": "Authorization token for accessing the API.",
+                    "default": "GKZOHNZj0xP65kk0BAE2Tl9LGagm0pfD3DFNxAEEZcMQBhRZVDco8vbNJdnwwCo0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search By Scientific Name",
+            "url": "https://plants2.p.rapidapi.com/api/plants",
+            "description": "Allows users to search for plants using their scientific names and returns a list of matching plants.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Authorization",
+                    "type": "STRING",
+                    "description": "Authorization token for accessing the API.",
+                    "default": "GKZOHNZj0xP65kk0BAE2Tl9LGagm0pfD3DFNxAEEZcMQBhRZVDco8vbNJdnwwCo0"
+                },
+                {
+                    "name": "SN",
+                    "type": "STRING",
+                    "description": "The scientific name of the plant to search for.",
+                    "default": "abies"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

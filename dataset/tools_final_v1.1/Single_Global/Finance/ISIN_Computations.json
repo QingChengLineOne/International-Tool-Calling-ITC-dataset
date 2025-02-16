@@ -1,0 +1,38 @@
+{
+    "tool_name": "ISIN Computations",
+    "tool_description": "Computes with International Securities Identification Numbers (ISINs)",
+    "home_url": "https://rapidapi.com/progsbase/api/isin-computations/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Extend ISIN with Check Digit",
+            "url": "https://isin-computations.p.rapidapi.com/ISINExtendWithCheckDigit",
+            "description": "Generates an incomplete ISIN with the check digit.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Compute ISIN Check Digit",
+            "url": "https://isin-computations.p.rapidapi.com/ISINComputeCheckDigit",
+            "description": "Computes the check digit for a given ISIN.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Check ISIN",
+            "url": "https://isin-computations.p.rapidapi.com/ISINCheck",
+            "description": "Checks if the provided ISIN is valid.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "tool_name": "Dynamic UPI QR Code Generator",
+    "tool_description": "Generate dynamic UPI QR Code to receive payment from any UPI APP.",
+    "home_url": "https://rapidapi.com/sisinfo-sisinfo-default/api/dynamic-upi-qr-code-generator/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Dynamic UPI QR Code API",
+            "url": "https://dynamic-upi-qr-code-generator.p.rapidapi.com/dynaupiqrapi",
+            "description": "This API generates a Dynamic UPI QR Code in either PNG image or Base64 image format. The generated QR code can be displayed on POS systems, vending machines, or printed on bills, allowing payers to scan the UPI QR Code using UPI apps to make payments.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vpa",
+                    "type": "STRING",
+                    "description": "The Virtual Payment Address (VPA) of the receiver. It can be in the format of BankAccount@IFSCCode for bank account payments or upiid@upihandle for UPI ID payments.",
+                    "default": "5000004897053@hdfc0000061"
+                },
+                {
+                    "name": "payee",
+                    "type": "STRING",
+                    "description": "The name of the receiver of the payment whose VPA is provided. Ensure to replace any blank spaces in the parameter value with '%20'.",
+                    "default": "SoftsysInfotekSolutions"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "output",
+                    "type": "STRING",
+                    "description": "Specifies the output format of the response.",
+                    "default": "json"
+                },
+                {
+                    "name": "paymode",
+                    "type": "STRING",
+                    "description": "This parameter is required if receiving payment with Bank Account No. & IFSC Code. It is not required if you have a UPI ID / VPA.",
+                    "default": "bankac"
+                },
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The amount to be received through the QR code.",
+                    "default": "100.00"
+                },
+                {
+                    "name": "billno",
+                    "type": "STRING",
+                    "description": "The bill number, order number, or transaction reference associated with the payment.",
+                    "default": "123456"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

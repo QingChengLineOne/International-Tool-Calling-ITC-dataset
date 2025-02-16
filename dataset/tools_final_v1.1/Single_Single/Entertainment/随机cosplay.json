@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机cosplay",
+    "tool_description": "随机cosplay，大大滴好",
+    "home_url": "https://api.aa1.cn/doc/cosplay.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机cosplay API",
+            "url": "https://api.lolimi.cn/API/cosplay/api.php",
+            "description": "提供随机cosplay图片的API接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

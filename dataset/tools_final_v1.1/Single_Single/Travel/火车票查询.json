@@ -1,0 +1,37 @@
+{
+    "tool_name": "火车票查询API",
+    "tool_description": "马上过年了快看看回家的火车票吧",
+    "home_url": "https://api.aa1.cn/doc/hcp.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "火车票查询API",
+            "url": "https://api.lolimi.cn/API/hc/api.php",
+            "description": "查询火车票信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "time",
+                    "type": "string",
+                    "description": "出发时间，格式为YYYY-MM-DD",
+                    "default": ""
+                },
+                {
+                    "name": "arrival",
+                    "type": "string",
+                    "description": "到达城市",
+                    "default": ""
+                },
+                {
+                    "name": "departure",
+                    "type": "string",
+                    "description": "出发城市",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

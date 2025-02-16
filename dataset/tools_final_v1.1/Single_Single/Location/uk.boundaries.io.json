@@ -1,0 +1,159 @@
+{
+    "tool_name": "uk.boundaries.io",
+    "tool_description": "UK Postal Code (e.g., ZE1 0AE), Sector, District, Boundaries API: A simple and very fast API that allows integration of multiple GeoJson UK Unit and sector level boundaries into applications and systems. This API is designed for programmatic use to ensure optimal performance. Note that using the MashApe UI for queries may result in significant latency issues with large result sets.",
+    "home_url": "https://rapidapi.com/VanitySoft/api/uk-boundaries-io/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "Query for Hexagon by Location and Resolution",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/h3/location/boundary",
+            "description": "Retrieve hexagon boundary data based on geographical coordinates and specified resolution.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "longitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the location.",
+                    "default": "-73.4532516514038"
+                },
+                {
+                    "name": "latitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the location.",
+                    "default": "46.04643887621965"
+                },
+                {
+                    "name": "resolution",
+                    "type": "NUMBER",
+                    "description": "The resolution level for the hexagon.",
+                    "default": "13"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for Hexagon by H3Index",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/h3/index/{h3index}",
+            "description": "Retrieve hexagon boundary data using the H3 index.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "h3Index",
+                    "type": "NUMBER",
+                    "description": "The H3 index of the hexagon.",
+                    "default": "635177333670728575"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve UK Postal Sector Outline Boundaries",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/reaperfire/rest/v1/public/boundary/uk/sectors",
+            "description": "Retrieve outline boundaries for specified UK postal sectors (e.g., 'W41,W42').",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal-sector",
+                    "type": "STRING",
+                    "description": "Comma-separated list of postal sectors to query.",
+                    "default": "W41,W42,W43,W44,W45"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve UK Postal District Outline Boundaries",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/reaperfire/rest/v1/public/boundary/uk/districts",
+            "description": "Retrieve outline boundaries for a specified UK postal district (e.g., 'TW12').",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal-district",
+                    "type": "STRING",
+                    "description": "The postal district code to query.",
+                    "default": "TW12"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for Postal Code Unit Boundary (H3 Geo Boundary)",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/reaperfire/rest/v1/public/boundary/uk",
+            "description": "Retrieve the boundary for a specified postal unit (e.g., 'ZE1 0AE').",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal-unit",
+                    "type": "STRING",
+                    "description": "The postal unit code to query.",
+                    "default": "ZE1 0AE"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "resolution",
+                    "type": "NUMBER",
+                    "description": "The resolution level for the boundary.",
+                    "default": "13"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for Postal Unit Boundary by H3Index",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/uk/h3/unit/index/{h3ndex}",
+            "description": "Retrieve postal unit boundary data using the H3 index.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "h3ndex",
+                    "type": "NUMBER",
+                    "description": "The H3 index of the postal unit.",
+                    "default": "635177333670728575"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "resolution",
+                    "type": "NUMBER",
+                    "description": "The resolution level for the boundary.",
+                    "default": "13"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for Distance between two H3 Indexes",
+            "url": "https://vanitysoft-uk-boundaries-io-v1.p.rapidapi.com/rest/v1/public/boundary/h3/index1/{h3index1}/index2/{h3index2}/hex",
+            "description": "Calculate the distance between two specified H3 indexes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "h3Index1",
+                    "type": "string",
+                    "description": "The first H3 index.",
+                    "default": "8d2baad9c6f073f"
+                },
+                {
+                    "name": "h3Index2",
+                    "type": "string",
+                    "description": "The second H3 index.",
+                    "default": "8d09a6b6ed2d37f"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

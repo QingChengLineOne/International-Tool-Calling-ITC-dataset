@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机动漫图片API",
+    "tool_description": "随机获取高清动漫图片",
+    "home_url": "https://api.aa1.cn/doc/man.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机动漫图片接口",
+            "url": "https://api.52vmy.cn/api/img/tu/man",
+            "description": "通过此接口可以获取一张随机的高清动漫图片",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

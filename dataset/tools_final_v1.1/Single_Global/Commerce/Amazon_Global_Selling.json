@@ -1,0 +1,25 @@
+{
+    "tool_name": "Amazon Global Selling",
+    "tool_description": "The Harmonized System (HS) code is a standardized numerical method to classify export trade products by customs authorities around the world.",
+    "home_url": "https://rapidapi.com/amazon-global-selling-amazon-global-selling-default/api/amazon-global-selling/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Amazon",
+            "url": "https://amazon-global-selling.p.rapidapi.com/",
+            "description": "This API provides access to the Harmonized System (HS) code classification for export trade products.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "amazon",
+                    "type": "STRING",
+                    "description": "An optional parameter to specify additional information related to Amazon.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

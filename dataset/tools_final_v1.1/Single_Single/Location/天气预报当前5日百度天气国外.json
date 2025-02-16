@@ -1,0 +1,43 @@
+{
+    "tool_name": "天气预报-当前+5日-百度天气[国外]",
+    "tool_description": "获取国外当前天气与未来5日天气，数据来源于百度官方，该接口稳定性高。",
+    "home_url": "https://api.aa1.cn/doc/tqybbaiduun.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "天气预报-当前+5日-百度天气[国外]",
+            "url": "https://cn.apihz.cn/api/tianqi/tqybbaiduun.php",
+            "description": "获取国外特定地点的当前天气和未来5天的天气预报",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子中的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子中的密钥",
+                    "default": "88888888"
+                },
+                {
+                    "name": "sheng",
+                    "type": "string",
+                    "description": "省份名称",
+                    "default": "加利福尼亚"
+                },
+                {
+                    "name": "place",
+                    "type": "string",
+                    "description": "城市名称",
+                    "default": "洛杉矶"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

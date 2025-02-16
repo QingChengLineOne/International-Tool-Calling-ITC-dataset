@@ -1,0 +1,31 @@
+{
+    "tool_name": "每日星座运势API",
+    "tool_description": "获取每日星座运势API接口",
+    "home_url": "https://api.aa1.cn/doc/constellation.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "星座运势查询",
+            "url": "http://api.suxun.site/api/constellation",
+            "description": "根据星座类型和时间获取每日运势信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "星座类型，如：scorpio表示天蝎座",
+                    "default": "aries"
+                },
+                {
+                    "name": "time",
+                    "type": "string",
+                    "description": "指定日期，如：today表示今天，也可指定具体日期，格式为YYYY-MM-DD",
+                    "default": "today"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

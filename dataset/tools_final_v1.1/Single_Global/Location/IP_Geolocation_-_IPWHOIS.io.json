@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP Geolocation - IPWHOIS.io",
+    "tool_description": "This tool allows users to filter out bot traffic, customize content based on the visitor's location, display full country names, and perform bulk IP geolocation.",
+    "home_url": "https://ipwhois.io/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "JSON endpoint",
+            "url": "https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/",
+            "description": "Provides detailed geolocation information for a specified IP address or the current IP address if none is provided.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "{ip} can be an IPv4 or IPv6 address, or left empty to use the current IP address.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

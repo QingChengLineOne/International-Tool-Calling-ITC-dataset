@@ -1,0 +1,32 @@
+{
+    "tool_name": "文案 · 疯狂星期四",
+    "tool_description": "随机返回一条疯狂星期四",
+    "home_url": "https://api.aa1.cn/doc/52kfc.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "疯狂星期四接口",
+            "url": "https://api.52vmy.cn/api/wl/yan/kfc",
+            "description": "提供随机返回一条疯狂星期四文案的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "无",
+                    "type": "无",
+                    "description": "该接口无需任何参数，直接访问即可获取结果",
+                    "default": "直接访问接口"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "无",
+                    "type": "无",
+                    "description": "该接口没有可选参数",
+                    "default": "无需设置"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

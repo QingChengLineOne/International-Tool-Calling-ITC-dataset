@@ -1,0 +1,42 @@
+{
+    "tool_name": "Age Calculator",
+    "tool_description": "Returns age calculation based on the requested date.",
+    "home_url": "https://rapidapi.com/jwc-tech-jwc-tech-default/api/age-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Age Calculator",
+            "url": "https://age-calculator.p.rapidapi.com/age",
+            "description": "Calculates age based on the requested date. Accepts different formats and time zones.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date for which the age is to be calculated. Acceptable formats include: YYYYMMDD, YYYY-MM-DD, MMDDYYYY, MM-DD-YYYY.",
+                    "default": "19870630"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timezone",
+                    "type": "STRING",
+                    "description": "Optional: Default time zone is US/Eastern. To get the correct age based on your local time, you can select your timezone. Use the /timezone service to see all available time zones.",
+                    "default": "US/Eastern"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Usable Time Zones",
+            "url": "https://age-calculator.p.rapidapi.com/timezone",
+            "description": "Call this endpoint to view the current endpoint. Find the appropriate time zone for your location.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

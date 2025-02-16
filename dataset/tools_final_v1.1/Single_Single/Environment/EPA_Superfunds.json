@@ -1,0 +1,87 @@
+{
+    "tool_name": "EPA Superfunds",
+    "tool_description": "An intuitive endpoint to query the EPA Superfunds list, allowing users to search for Superfund sites based on various parameters such as location and facility status.",
+    "home_url": "https://rapidapi.com/homeluten-homeluten-default/api/epa-superfunds/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Superfund Search",
+            "url": "https://epa-superfunds.p.rapidapi.com/superfund",
+            "description": "Search Superfunds by geographical coordinates and radius.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "radius",
+                    "type": "STRING",
+                    "description": "The search radius in miles around the specified latitude and longitude.",
+                    "default": "2"
+                },
+                {
+                    "name": "lat",
+                    "type": "STRING",
+                    "description": "The latitude of the location to search around.",
+                    "default": "37.391935"
+                },
+                {
+                    "name": "lng",
+                    "type": "STRING",
+                    "description": "The longitude of the location to search around.",
+                    "default": "-122.079515"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Results": {
+                        "type": "object",
+                        "properties": {
+                            "FRSFacility": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "RegistryId": {
+                                            "type": "string"
+                                        },
+                                        "FacilityName": {
+                                            "type": "string"
+                                        },
+                                        "LocationAddress": {
+                                            "type": "string"
+                                        },
+                                        "SupplementalLocation": {
+                                            "type": "null"
+                                        },
+                                        "CityName": {
+                                            "type": "string"
+                                        },
+                                        "CountyName": {
+                                            "type": "string"
+                                        },
+                                        "StateAbbr": {
+                                            "type": "string"
+                                        },
+                                        "ZipCode": {
+                                            "type": "string"
+                                        },
+                                        "FIPSCode": {
+                                            "type": "string"
+                                        },
+                                        "Latitude83": {
+                                            "type": "string"
+                                        },
+                                        "Longitude83": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "tool_name": "OpenAI",
+    "tool_description": "OpenAI API for Image Generation & Text Completion. OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity. This API allows for image generation based on prompts and text completion based on user input.",
+    "home_url": "https://rapidapi.com/mnai01/api/openai37/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ChatGPT",
+            "url": "https://openai37.p.rapidapi.com/chat-completion",
+            "description": "The completions endpoint provides a simple interface to our models that is extremely flexible and powerful. You input some text as a prompt, and the model will generate a text completion that attempts to match the context or pattern you provided.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Generate Image",
+            "url": "https://openai37.p.rapidapi.com/generate-image",
+            "description": "The image generations endpoint allows you to create an original image given a text prompt. The more detailed the description, the more likely you are to get the desired result.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

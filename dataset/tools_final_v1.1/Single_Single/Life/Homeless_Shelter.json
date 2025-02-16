@@ -1,0 +1,77 @@
+{
+    "tool_name": "Homeless Shelter",
+    "tool_description": "Introducing our National Registered Homeless Shelters API for the United States, featuring an extensive and up-to-date database of homeless shelters across the country.",
+    "home_url": "https://rapidapi.com/topapis/api/homeless-shelter/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "By Zip Code",
+            "url": "https://homeless-shelter.p.rapidapi.com/zipcode",
+            "description": "Search Homeless Shelters by Zip Code",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "zipcode",
+                    "type": "STRING",
+                    "description": "The zip code to search for homeless shelters.",
+                    "default": "98004"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "By State & City",
+            "url": "https://homeless-shelter.p.rapidapi.com/state-city",
+            "description": "Search Homeless Shelters by State & City",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "The full name or abbreviation of the state (e.g., Washington or WA).",
+                    "default": "Washington"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city to search for homeless shelters.",
+                    "default": "Bellevue"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "By Location",
+            "url": "https://homeless-shelter.p.rapidapi.com/location",
+            "description": "Search Homeless Shelters by Location Coordinate and Radius",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "STRING",
+                    "description": "The latitude of the location.",
+                    "default": "47.630703"
+                },
+                {
+                    "name": "radius",
+                    "type": "STRING",
+                    "description": "The search radius in miles (maximum 10 miles).",
+                    "default": "1.4"
+                },
+                {
+                    "name": "lng",
+                    "type": "STRING",
+                    "description": "The longitude of the location.",
+                    "default": "-122.186370"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

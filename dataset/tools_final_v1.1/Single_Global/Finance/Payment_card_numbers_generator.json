@@ -1,0 +1,31 @@
+{
+    "tool_name": "Payment card numbers generator",
+    "tool_description": "A simple service to generate random credit/debit card numbers.",
+    "home_url": "https://rapidapi.com/a.neprokin/api/payment-card-numbers-generator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Generate",
+            "url": "https://payment-card-numbers-generator.p.rapidapi.com/generate",
+            "description": "Generates random payment card numbers based on specified parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "quantity",
+                    "type": "NUMBER",
+                    "description": "The number of card numbers to generate.",
+                    "default": "5"
+                },
+                {
+                    "name": "scheme",
+                    "type": "ENUM",
+                    "description": "The type of card to generate (e.g., VISA, MasterCard).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

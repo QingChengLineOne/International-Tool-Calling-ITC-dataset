@@ -1,0 +1,37 @@
+{
+    "tool_name": "手机号归属地查询API",
+    "tool_description": "查询指定手机号码归属地。",
+    "home_url": "https://api.aa1.cn/doc/shouji.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "手机号归属地查询接口",
+            "url": "https://cn.apihz.cn/api/ip/shouji.php",
+            "description": "通过手机号码查询归属地信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥",
+                    "default": "88888888"
+                },
+                {
+                    "name": "☎",
+                    "type": "string",
+                    "description": "要查询的手机号码",
+                    "default": "13219931963"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

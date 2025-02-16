@@ -1,0 +1,18 @@
+{
+    "tool_name": "html2pdf-rocket",
+    "tool_description": "Online HTML to PDF Converter",
+    "home_url": "https://rapidapi.com/html2pdf-rocket/api/html2pdf-rocket/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Convert HTML to PDF",
+            "url": "https://html2pdf-rocket.p.rapidapi.com/pdf",
+            "description": "Converts HTML content into a PDF document.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

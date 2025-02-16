@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP地址查询",
+    "tool_description": "IP地址归属地详情查询；仅限国内（含港澳台）",
+    "home_url": "https://api.aa1.cn/doc/dm-ipquery.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP地址查询API",
+            "url": "https://api.qqsuu.cn/api/dm-ipquery",
+            "description": "查询指定IP地址的归属地详情",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": "None"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

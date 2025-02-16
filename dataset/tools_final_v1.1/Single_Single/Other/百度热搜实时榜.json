@@ -1,0 +1,25 @@
+{
+    "tool_name": "百度热搜实时榜",
+    "tool_description": "提供百度热搜排行榜实时数据",
+    "home_url": "https://api.aa1.cn/doc/baidu-hot-jiuziges.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "百度热搜实时排行榜API",
+            "url": "https://acid.jiuzige.com.cn/web/index/fcyBaiduHot",
+            "description": "获取百度热搜实时排行榜数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tab",
+                    "type": "string",
+                    "description": "指定排行榜类型，'realtime'表示实时榜",
+                    "default": "realtime"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

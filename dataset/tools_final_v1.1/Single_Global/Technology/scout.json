@@ -1,0 +1,28 @@
+{
+    "tool_name": "scout",
+    "tool_description": "A tool for scouting how RapidAPI works, providing access to various endpoints.",
+    "home_url": "https://rapidapi.com/michelemendel/api/scout3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "get time",
+            "url": "https://scout3.p.rapidapi.com/time",
+            "description": "Retrieves the current time.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "index",
+            "url": "https://scout3.p.rapidapi.com/",
+            "description": "Root endpoint for the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

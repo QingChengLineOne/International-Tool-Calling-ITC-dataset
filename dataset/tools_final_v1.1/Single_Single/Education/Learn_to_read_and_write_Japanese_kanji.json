@@ -1,0 +1,188 @@
+{
+    "tool_name": "Learn to read and write Japanese kanji",
+    "tool_description": "Free API to the Kanji alive web application with CC-BY licensed language data on Japanese kanji, radicals and associated media files.",
+    "home_url": "https://rapidapi.com/KanjiAlive/api/learn-to-read-and-write-japanese-kanji/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "Onyomi reading",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve the Onyomi reading of a kanji character using Katakana or romaji.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "on",
+                    "type": "STRING",
+                    "description": "Katakana or romaji representation of the kanji reading.",
+                    "default": "シン"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Kunyomi reading",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve the Kunyomi reading of a kanji character using Hiragana or romaji.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "kun",
+                    "type": "STRING",
+                    "description": "Hiragana or romaji representation of the kanji reading.",
+                    "default": "oya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Kanji English meaning",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve the English meaning of a kanji character.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "kem",
+                    "type": "STRING",
+                    "description": "Simplified English meaning of the kanji.",
+                    "default": "parent"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Kanji stroke number",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve kanji characters based on the number of strokes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ks",
+                    "type": "NUMBER",
+                    "description": "Positive integer representing the number of strokes.",
+                    "default": "16"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Radical English meaning",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve the English meaning of a kanji radical.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "rem",
+                    "type": "STRING",
+                    "description": "Radical's meaning in English.",
+                    "default": "see"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Radical position",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve radicals based on their position in the kanji.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "rpos",
+                    "type": "STRING",
+                    "description": "Hiragana or romaji representation of the radical's position.",
+                    "default": "hen"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Radical stroke number",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve radicals based on the number of strokes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "rs",
+                    "type": "STRING",
+                    "description": "Positive integer representing the number of strokes.",
+                    "default": "7"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Study list (AP exam)",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve kanji divided into chapters for the AP exam.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "list",
+                    "type": "STRING",
+                    "description": "Kanji divided into chapters (1-20) by Kanji alive.",
+                    "default": "ap:c3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Study list (Macquarie)",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced",
+            "description": "Retrieve kanji divided into chapters for the Macquarie study list.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "list",
+                    "type": "STRING",
+                    "description": "Kanji divided into chapters (12-22).",
+                    "default": "mac:c12"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Kanji grade level",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/",
+            "description": "Retrieve kanji based on their grade level.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "grade",
+                    "type": "STRING",
+                    "description": "Positive integer representing the grade level.",
+                    "default": "2"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All Kanji Details",
+            "url": "https://kanjialive-api.p.rapidapi.com/api/public/kanji/all",
+            "description": "Retrieve language attributes and media files for all supported kanji.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

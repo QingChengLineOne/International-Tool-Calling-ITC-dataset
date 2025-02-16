@@ -1,0 +1,25 @@
+{
+    "tool_name": "健康小贴士",
+    "tool_description": "根据健康症状查询相关的健康小贴士和建议",
+    "home_url": "https://api.qqsuu.cn/doc/dm-healthskill.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "健康小贴士",
+            "url": "https://api.qqsuu.cn/api/dm-healthskill",
+            "description": "根据健康症状查询相关的健康小贴士和建议",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "健康症状",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

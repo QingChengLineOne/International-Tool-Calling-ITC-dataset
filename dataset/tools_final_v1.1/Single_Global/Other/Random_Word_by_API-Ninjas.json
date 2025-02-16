@@ -1,0 +1,25 @@
+{
+    "tool_name": "Random Word by API-Ninjas",
+    "tool_description": "A random word generator full of unique and interesting words, useful for various applications such as writing prompts, games, and vocabulary building.",
+    "home_url": "https://rapidapi.com/apininjas/api/random-word-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/randomword",
+            "url": "https://random-word-by-api-ninjas.p.rapidapi.com/v1/randomword",
+            "description": "API Ninjas Random Word API endpoint that returns a random word based on the specified type.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of word to generate. Possible values are: noun, verb, adjective, adverb.",
+                    "default": "verb"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Alpha Email Verification",
+    "tool_description": "Email Validation Service that checks if a specific e-mail address is valid. It verifies if the domain is proper and whether the e-mail is a temporary or disposable address. The API includes a database of 180,000 disposable email domains to ensure accurate validation.",
+    "home_url": "https://rapidapi.com/santrarahul7070/api/alpha-email-verification/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Email Checker",
+            "url": "https://alpha-email-verification.p.rapidapi.com/disposable/{email}",
+            "description": "Checks if the provided email address is valid or if it may be a disposable email.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "The email address to be checked for validity.",
+                    "default": "rahul@gmail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "tool_name": "Tesla VIN Identifier",
+    "tool_description": "Project TEMPA - This API is capable of resolving Tesla's VIN Identifier, providing detailed information about Tesla vehicles based on their VIN.",
+    "home_url": "https://rapidapi.com/trifinite/api/tesla-vin-identifier/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "VIN Detection",
+            "url": "https://tesla-vin-identifier.p.rapidapi.com/vin/0f7885c2af1a6ef9",
+            "description": "This endpoint resolves a Tesla VIN identifier to an actual VIN, providing information such as Manufacturer ID, Model Type, and more. The conversion has a success rate of approximately 98%.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin-identifier",
+                    "type": "string",
+                    "description": "The VIN identifier to be resolved.",
+                    "default": "0f7885c2af1a6ef9"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Manufacturing Location Detection",
+            "url": "https://tesla-vin-identifier.p.rapidapi.com/location/0f7885c2af1a6ef9",
+            "description": "This endpoint resolves a VIN identifier to its manufacturing location, such as Fremont, Shanghai, Berlin, or Austin.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin-identifier",
+                    "type": "string",
+                    "description": "The VIN identifier to be resolved.",
+                    "default": "0f7885c2af1a6ef9"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Manufacturing Year Detection",
+            "url": "https://tesla-vin-identifier.p.rapidapi.com/year/0f7885c2af1a6ef9",
+            "description": "Detects the manufacturing year of the respective vehicle based on the VIN identifier.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin-identifier",
+                    "type": "string",
+                    "description": "The VIN identifier to be resolved.",
+                    "default": "0f7885c2af1a6ef9"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Model Detection",
+            "url": "https://tesla-vin-identifier.p.rapidapi.com/s3xy/0f7885c2af1a6ef9",
+            "description": "This endpoint resolves a VIN identifier to a specific model type of the Tesla vehicle.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin-identifier",
+                    "type": "string",
+                    "description": "The VIN identifier to be resolved.",
+                    "default": "0f7885c2af1a6ef9"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

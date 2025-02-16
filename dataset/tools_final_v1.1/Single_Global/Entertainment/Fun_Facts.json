@@ -1,0 +1,25 @@
+{
+    "tool_name": "Fun Facts",
+    "tool_description": "This simple API returns randomly generated fun facts.",
+    "home_url": "https://rapidapi.com/primisign-pBrt_l-Weeu/api/fun-facts1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "fun-fact",
+            "url": "https://fun-facts1.p.rapidapi.com/api/fun-facts",
+            "description": "Returns randomly generated fun facts.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "fact": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

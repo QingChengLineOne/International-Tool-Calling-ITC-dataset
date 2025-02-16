@@ -1,0 +1,44 @@
+{
+    "tool_name": "Captcha",
+    "tool_description": "Feeling nostalgic? Generate the same old alphanumeric captchas.",
+    "home_url": "https://rapidapi.com/admin-aCJ3BZYkR/api/captcha2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Generate Captcha",
+            "url": "https://captcha2.p.rapidapi.com/captcha",
+            "description": "Generates a captcha and returns a UUID.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "captcha": "Base64 Encoded Image",
+                "uuid": "UUID"
+            }
+        },
+        {
+            "name": "Verify the captcha",
+            "url": "https://captcha2.p.rapidapi.com/verify",
+            "description": "Verifies the provided captcha against the generated UUID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "captcha",
+                    "type": "STRING",
+                    "description": "The text of the captcha to verify.",
+                    "default": "Captcha Text"
+                },
+                {
+                    "name": "uuid",
+                    "type": "STRING",
+                    "description": "The UUID associated with the generated captcha.",
+                    "default": "UUID"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

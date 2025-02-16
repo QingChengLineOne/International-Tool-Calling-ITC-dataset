@@ -1,0 +1,25 @@
+{
+    "tool_name": "Data Breach Checker",
+    "tool_description": "The Data Breach Checker API allows users to check if their data has been compromised in any known data breaches. By simply entering an email address, the API searches through a vast database of known data breaches using the reputable 'Have I Been Pwned' backend. This tool is essential for companies and individuals seeking to enhance their cybersecurity posture.",
+    "home_url": "https://rapidapi.com/vaibhavchandra2007/api/data-breach-checker/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Data Breach Checker Endpoint",
+            "url": "https://data-breach-checker.p.rapidapi.com/api/breach",
+            "description": "The Data Breach Checker API provides a simple endpoint for users to check if their email has been compromised in any known data breaches.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to check for breaches.",
+                    "default": "example@xyz.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

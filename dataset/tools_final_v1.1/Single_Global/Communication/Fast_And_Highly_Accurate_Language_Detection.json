@@ -1,0 +1,63 @@
+{
+    "tool_name": "Fast And Highly Accurate Language Detection",
+    "tool_description": "Fast and highly accurate (99.9% accuracy for most major languages*) language detection in 176 languages based on the Fast Text Machine Learning model. Please see the 'About' section for details on languages and accuracy data.",
+    "home_url": "https://rapidapi.com/smodin/api/fast-and-highly-accurate-language-detection/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Languages",
+            "url": "https://fast-and-highly-accurate-language-detection.p.rapidapi.com/languages",
+            "description": "Endpoint to return language information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object"
+                }
+            }
+        },
+        {
+            "name": "Language Detection Endpoint",
+            "url": "https://fast-and-highly-accurate-language-detection.p.rapidapi.com/detect",
+            "description": "This is the endpoint for language detection.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "lang": {
+                        "type": "string"
+                    },
+                    "prob": {
+                        "type": "number"
+                    },
+                    "isReliable": {
+                        "type": "boolean"
+                    },
+                    "highAccuracyLanguage": {
+                        "type": "boolean"
+                    },
+                    "predictions": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "lang": {
+                                    "type": "string"
+                                },
+                                "prob": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

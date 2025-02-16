@@ -1,0 +1,49 @@
+{
+    "tool_name": "hbsl",
+    "tool_description": "Holy Bible Sign Language of the Filipino",
+    "home_url": "https://rapidapi.com/psdaa-psdaa-default/api/hbsl/",
+    "country": "Philippines",
+    "api_list": [
+        {
+            "name": "bible",
+            "url": "https://hbsl.p.rapidapi.com/bible",
+            "description": "Retrieves Holy Bible Sign Language content.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "verse",
+                    "type": "STRING",
+                    "description": "Specifies the verse to retrieve.",
+                    "default": ""
+                },
+                {
+                    "name": "chapter",
+                    "type": "STRING",
+                    "description": "Specifies the chapter to retrieve.",
+                    "default": ""
+                },
+                {
+                    "name": "abbreviation",
+                    "type": "STRING",
+                    "description": "Abbreviation of the Bible version.",
+                    "default": ""
+                },
+                {
+                    "name": "bibleid",
+                    "type": "STRING",
+                    "description": "Identifier for the specific Bible version.",
+                    "default": ""
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Unique identifier for the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

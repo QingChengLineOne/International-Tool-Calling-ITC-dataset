@@ -1,0 +1,18 @@
+{
+    "tool_name": "melapi",
+    "tool_description": "A versatile API for storing and managing data.",
+    "home_url": "https://rapidapi.com/simmessa/api/melapi1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "store",
+            "url": "https://melapi1.p.rapidapi.com/",
+            "description": "This API endpoint allows users to store data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

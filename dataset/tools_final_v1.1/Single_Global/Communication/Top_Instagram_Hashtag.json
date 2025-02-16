@@ -1,0 +1,52 @@
+{
+    "tool_name": "Top Instagram Hashtag",
+    "tool_description": "Find the best Instagram hashtags to enhance your posts and increase engagement.",
+    "home_url": "https://rapidapi.com/kevinagustiansyah298-RSbcaTc-IDi/api/top-instagram-hashtag/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GET New Hashtags",
+            "url": "https://top-instagram-hashtag.p.rapidapi.com/new-hashtags",
+            "description": "Retrieve 1000 newly generated hashtags for Instagram.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Specify the page number (0 - 9) to retrieve hashtags.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET Hashtags",
+            "url": "https://top-instagram-hashtag.p.rapidapi.com/hashtags",
+            "description": "Get the 100 most popular Instagram hashtags.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET Hashtag",
+            "url": "https://top-instagram-hashtag.p.rapidapi.com/hashtag/{tag}",
+            "description": "Retrieve detailed information about a specific hashtag.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tag",
+                    "type": "string",
+                    "description": "The name of the hashtag to search for.",
+                    "default": "love"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

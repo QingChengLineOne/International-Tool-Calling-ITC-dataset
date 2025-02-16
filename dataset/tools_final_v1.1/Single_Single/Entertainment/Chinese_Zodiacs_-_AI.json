@@ -1,0 +1,37 @@
+{
+    "tool_name": "Chinese Zodiacs - AI",
+    "tool_description": "Provides insights and fortunes based on Chinese Zodiac signs in both Simplified and Traditional languages.",
+    "home_url": "https://rapidapi.com/ai-box-ai-box-default/api/chinese-zodiacs-ai/",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Get Zodiac",
+            "url": "https://chinese-zodiacs-ai.p.rapidapi.com/get_zodiac/{sign}/{period}/{lang}",
+            "description": "Returns specific zodiac fortune based on the provided sign, period, and language.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sign",
+                    "type": "ENUM",
+                    "description": "The zodiac sign for which the fortune is requested.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "Language option: Chinese Simplified or Traditional.",
+                    "default": ""
+                },
+                {
+                    "name": "period",
+                    "type": "ENUM",
+                    "description": "The time period for which the fortune is requested.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

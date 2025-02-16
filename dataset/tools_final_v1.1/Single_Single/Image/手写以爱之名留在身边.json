@@ -1,0 +1,44 @@
+{
+    "tool_name": "手写以爱之名留在身边API",
+    "tool_description": "在手写底图上写入指定名字的API接口",
+    "home_url": "https://api.aa1.cn/doc/shouxie_ai.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "手写以爱之名留在身边API",
+            "url": "https://www.hhlqilongzhu.cn/api/tu_shouxie_ai.php",
+            "description": "将用户指定的名字写入提供的手写底图上",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要写入的名字",
+                    "default": "示例名字"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "font_size",
+                    "type": "int",
+                    "description": "字体大小，可选参数，默认为20",
+                    "default": "20"
+                },
+                {
+                    "name": "font_color",
+                    "type": "string",
+                    "description": "字体颜色，格式为RGB（例如：#FF0000），可选参数，默认为黑色",
+                    "default": "#000000"
+                },
+                {
+                    "name": "position",
+                    "type": "string",
+                    "description": "文字位置，可选参数，默认在图片中心",
+                    "default": "center"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

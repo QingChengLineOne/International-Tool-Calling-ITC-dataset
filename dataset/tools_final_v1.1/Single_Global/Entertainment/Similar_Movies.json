@@ -1,0 +1,42 @@
+{
+    "tool_name": "Similar Movies",
+    "tool_description": "Find similar movies and series based on a given movie ID.",
+    "home_url": "https://rapidapi.com/animeslayerquiz/api/similar-movies/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "find similar",
+            "url": "https://similar-movies.p.rapidapi.com/similar",
+            "description": "Retrieve a list of movies that are similar to the specified movie.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the movie for which similar movies are to be found.",
+                    "default": "24168-titanic"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get Id",
+            "url": "https://similar-movies.p.rapidapi.com/search",
+            "description": "Obtain the unique ID of a movie based on its title.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The title of the movie to search for.",
+                    "default": "titanic"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

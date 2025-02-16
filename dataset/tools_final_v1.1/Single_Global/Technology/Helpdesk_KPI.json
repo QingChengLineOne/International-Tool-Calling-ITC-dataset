@@ -1,0 +1,18 @@
+{
+    "tool_name": "Helpdesk KPI",
+    "tool_description": "The Helpdesk KPI is an API designed to help you manage your customer support operations. This API provides comprehensive Key Performance Indicators (KPIs) that offer deep insights into the efficiency, effectiveness, and customer satisfaction levels of your helpdesk/customer support.",
+    "home_url": "https://rapidapi.com/algosapient/api/helpdesk-kpi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Send tickets data",
+            "url": "https://helpdesk-kpi.p.rapidapi.com/kpi/helpdesk",
+            "description": "Endpoint for sending tickets data to the Helpdesk KPI API for analysis.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

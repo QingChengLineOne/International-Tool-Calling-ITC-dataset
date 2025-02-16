@@ -1,0 +1,25 @@
+{
+    "tool_name": "CryptoPriceTracker",
+    "tool_description": "A tool that provides real-time prices for all cryptocurrencies along with their rate changes.",
+    "home_url": "https://rapidapi.com/BDev2022/api/cryptopricetracker/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get All Coins Prices",
+            "url": "https://cryptopricetracker.p.rapidapi.com/{id}",
+            "description": "This endpoint returns the currency name, price, and rate change for a specified cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The identifier for the cryptocurrency (e.g., BTC for Bitcoin).",
+                    "default": "BTC"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

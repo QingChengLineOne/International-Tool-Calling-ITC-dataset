@@ -1,0 +1,25 @@
+{
+    "tool_name": "TextSentAI - AI powered Text Sentiment Analyzer",
+    "tool_description": "📊 Looking for a powerful AI-driven API to analyze the sentiment of your text data? Look no further than TextSentAI! Our API can analyze text in over 140 languages, providing fast and accurate sentiment scores of either POSITIVE or NEGATIVE. Whether you're analyzing social media posts, customer feedback, or any other form of text data, TextSentAI can help you gain valuable insights into your content.",
+    "home_url": "https://rapidapi.com/IntelligenzaArtificiale/api/textsentai-ai-powered-text-sentiment-analyzer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "TextSentAI API 📊",
+            "url": "https://textsentai-ai-powered-text-sentiment-analyzer.p.rapidapi.com/sentiment",
+            "description": "Our API can analyze text in over 140 languages and provide sentiment scores.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text data to be analyzed for sentiment.",
+                    "default": "Support over 140 languages, try it now :)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

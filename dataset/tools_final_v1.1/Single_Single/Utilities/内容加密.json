@@ -1,0 +1,38 @@
+{
+    "tool_name": "内容加密",
+    "tool_description": "支持md5, sha1, sha256, sha512, urlencode, urldecode, base64_encode, base64_decode等多种加密方式",
+    "home_url": "https://www.free-api.com/doc/382",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "内容加密接口",
+            "url": "https://v2.alapi.cn/api/encrypt",
+            "description": "提供多种加密方式的API服务",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "LwExDtUWhF3rH5ib"
+                },
+                {
+                    "name": "content",
+                    "type": "string",
+                    "description": "要加密的内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "加密的方式",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

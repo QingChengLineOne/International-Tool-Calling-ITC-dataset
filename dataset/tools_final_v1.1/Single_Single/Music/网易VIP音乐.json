@@ -1,0 +1,44 @@
+{
+    "tool_name": "网易VIP音乐",
+    "tool_description": "提供网易云音乐付费歌曲的点播服务，返回无损音频",
+    "home_url": "https://api.aa1.cn/doc/wangyi_music.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网易云音乐付费歌曲点播接口",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_wyymusic.php",
+            "description": "通过该接口可以获取网易云音乐的付费歌曲，并返回无损音频文件",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "gm",
+                    "type": "string",
+                    "description": "需要点播的歌曲名称",
+                    "default": ""
+                },
+                {
+                    "name": "n",
+                    "type": "string",
+                    "description": "用于分隔歌曲名称和随机数的特殊字符，此处示例为'#='",
+                    "default": "#="
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "quality",
+                    "type": "string",
+                    "description": "音频质量，可选参数，默认为'320kbps'，支持'320kbps', '192kbps', '128kbps'等",
+                    "default": "320kbps"
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "音频格式，可选参数，默认为'mp3'，支持'mp3', 'wav'等",
+                    "default": "mp3"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

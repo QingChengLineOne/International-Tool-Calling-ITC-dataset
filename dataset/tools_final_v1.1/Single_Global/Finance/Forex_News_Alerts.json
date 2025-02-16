@@ -1,0 +1,241 @@
+{
+    "tool_name": "Forex News Alerts",
+    "tool_description": "Instant financial market news update API service for major Forex indexes. This service is designed for mobile and web alerting, providing users with the latest FX news.",
+    "home_url": "https://rapidapi.com/anju.313/api/forex-news-alerts/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Forex Article Details",
+            "url": "https://forex-news-alerts.p.rapidapi.com/api/v1/ForexArticleDetails/{requestid}/{uniquefxarticletoken}",
+            "description": "This endpoint provides details for a given Forex article token, including the article's title, summary, and publication time.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "requestId",
+                    "type": "STRING",
+                    "description": "User Request Id - Reference for the request.",
+                    "default": "Req123456"
+                },
+                {
+                    "name": "uniqueFXArticleToken",
+                    "type": "STRING",
+                    "description": "Unique token identifying the Forex article.",
+                    "default": "bf4dfb95-cef1-492c-948e-b5023a9c23eb:AUDUSD-20201015"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "additionalProperties": false,
+                "properties": {
+                    "errorMessage": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "friendlyFormattedDate": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "result": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "articleId": {
+                                "format": "int32",
+                                "maximum": 2147483647,
+                                "minimum": -2147483648,
+                                "type": "integer"
+                            },
+                            "articlePublicUrl": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "articleShortUrl": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "publicationTimeInGmt": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "publicationTimeStamp": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "summary": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "title": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "tokenExpirationTime": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "tokenExpirationTimeInUtc": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "userArticleToken": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "userRequestId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "Get Latest Forex News Updates",
+            "url": "https://forex-news-alerts.p.rapidapi.com/api/v1/ForexNewsUpdates/{requestid}/{indexcode}/{date}",
+            "description": "This endpoint provides a list of Forex News headlines for a specified currency pair index and date. Historical data requests older than a month can be made upon contact.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "requestId",
+                    "type": "STRING",
+                    "description": "User Request Id - Reference for the request.",
+                    "default": "Req12345678"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date for which news updates are requested.",
+                    "default": "20201015"
+                },
+                {
+                    "name": "indexCode",
+                    "type": "STRING",
+                    "description": "Forex Currency Code for the desired currency pair.",
+                    "default": "AUDUSD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "additionalProperties": false,
+                "properties": {
+                    "errorMessage": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "friendlyFormattedDate": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "resultCount": {
+                        "format": "int32",
+                        "maximum": 2147483647,
+                        "minimum": -2147483648,
+                        "type": "integer"
+                    },
+                    "results": {
+                        "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                                "forexKeywords": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ]
+                                },
+                                "publicationTimeInGmt": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "publicationTimeStamp": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "summary": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "title": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "uniqueFXArticleToken": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": [
+                            "array",
+                            "null"
+                        ]
+                    },
+                    "tokenExpirationTime": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "tokenExpirationTimeInUtc": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "userRequestId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

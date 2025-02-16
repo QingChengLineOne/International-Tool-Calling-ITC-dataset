@@ -1,0 +1,31 @@
+{
+    "tool_name": "蓝奏直链解析",
+    "tool_description": "解析蓝奏云文件直链，支持密码保护，响应速度极快。",
+    "home_url": "https://api.aa1.cn/doc/lanzouyun_jiexi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "蓝奏直链解析API",
+            "url": "https://www.hhlqilongzhu.cn/api/lanzouyun_jx.php",
+            "description": "提供蓝奏云文件直链解析服务，支持密码输入。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "蓝奏云文件的分享链接",
+                    "default": ""
+                },
+                {
+                    "name": "pwd",
+                    "type": "string",
+                    "description": "文件密码（如有）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

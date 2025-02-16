@@ -1,0 +1,331 @@
+{
+    "tool_name": "ODAM",
+    "tool_description": "ODAM is an API designed to provide access to various datasets and their metadata, allowing users to retrieve information and perform queries on the data.",
+    "home_url": "https://rapidapi.com/djacob65/api/odam/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "info",
+            "url": "https://odam.p.rapidapi.com/getdata/infos/frim1",
+            "description": "Get information on the dataset.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv6",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1/(activome)/factor",
+            "description": "Get the variable list within the specified category of a merged data subsets along with the metadata.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Category of the data.",
+                    "default": "factor"
+                },
+                {
+                    "name": "subset",
+                    "type": "STRING",
+                    "description": "Data subset identifier.",
+                    "default": "activome"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv4",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1/(activome)/entry",
+            "description": "Get the entry list of a merged data subsets.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "subset",
+                    "type": "STRING",
+                    "description": "Data subset identifier.",
+                    "default": "activome"
+                },
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "build",
+            "url": "https://odam.p.rapidapi.com/getdata/build/frim1",
+            "description": "Build a database and index it to accelerate response times on large files.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "debug",
+                    "type": "NUMBER",
+                    "description": "Debug status.",
+                    "default": 0
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv3",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1/(samples)",
+            "description": "Get all values of a merged data subsets.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                },
+                {
+                    "name": "subset",
+                    "type": "STRING",
+                    "description": "Data subset identifier.",
+                    "default": "samples"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "debug",
+                    "type": "NUMBER",
+                    "description": "Debug status.",
+                    "default": 0
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limit the number of lines in the output table (0 means no limit).",
+                    "default": 10
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv5",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1/(activome,qNMR_metabo)/sample/365",
+            "description": "Get all values of a merged data subsets based on filter criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "value",
+                    "type": "STRING",
+                    "description": "Value as filter criteria for entry attribute.",
+                    "default": "365"
+                },
+                {
+                    "name": "subset",
+                    "type": "STRING",
+                    "description": "Data subset identifier.",
+                    "default": "activome,qNMR_metabo"
+                },
+                {
+                    "name": "entry",
+                    "type": "STRING",
+                    "description": "Entry identifier.",
+                    "default": "sample"
+                },
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limit the number of lines in the output table (0 means no limit).",
+                    "default": 10
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                },
+                {
+                    "name": "debug",
+                    "type": "NUMBER",
+                    "description": "Debug status.",
+                    "default": 0
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1",
+            "description": "Get the subset list of a dataset along with the metadata.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "check",
+            "url": "https://odam.p.rapidapi.com/getdata/check/frim1",
+            "description": "Perform automatic checks and return a list of statuses about the dataset implementation.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv2",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1/samples",
+            "description": "Get all values of a data subset.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "subset",
+                    "type": "STRING",
+                    "description": "Data subset identifier.",
+                    "default": "samples"
+                },
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limit the number of lines in the output table (0 means no limit).",
+                    "default": 10
+                },
+                {
+                    "name": "debug",
+                    "type": "NUMBER",
+                    "description": "Debug status.",
+                    "default": 0
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tsv1",
+            "url": "https://odam.p.rapidapi.com/getdata/query/frim1/metadata",
+            "description": "Get all attribute metadata for all subsets of a dataset.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataset",
+                    "type": "STRING",
+                    "description": "Dataset identifier.",
+                    "default": "frim1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Output format.",
+                    "default": "tsv"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

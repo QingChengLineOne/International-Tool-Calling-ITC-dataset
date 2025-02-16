@@ -1,0 +1,25 @@
+{
+    "tool_name": "万能短网址还原",
+    "tool_description": "支持所有短网址还原真实网址",
+    "home_url": "https://api.aa1.cn/doc/wannenduanwangzihuanyuan.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "短网址还原API",
+            "url": "https://api.oioweb.cn/api/site/UrlRevert",
+            "description": "用于还原短网址的真实网址",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要还原的短网址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

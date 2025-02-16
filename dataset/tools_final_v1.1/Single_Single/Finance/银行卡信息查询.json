@@ -1,0 +1,25 @@
+{
+    "tool_name": "银行卡信息查询API",
+    "tool_description": "该API允许用户通过银行卡卡号查询对应的银行信息",
+    "home_url": "https://api.aa1.cn/doc/bankinfo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "银行卡信息查询接口",
+            "url": "https://api.52vmy.cn/api/query/bankinfo",
+            "description": "根据银行卡卡号获取银行信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "银行卡卡号，用于查询对应银行信息",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

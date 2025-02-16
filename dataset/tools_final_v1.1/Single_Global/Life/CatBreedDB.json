@@ -1,0 +1,147 @@
+{
+    "tool_name": "CatBreedDB",
+    "tool_description": "Get the basic metadata on all breeds of cats from around the world.",
+    "home_url": "https://rapidapi.com/encurate/api/catbreeddb/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Paginated",
+            "url": "https://catbreeddb.p.rapidapi.com/paginated/",
+            "description": "Get all cat breed results in a set of 10 per page.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Order by Descending",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all cats sorted in descending order by name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ordering",
+                    "type": "STRING",
+                    "description": "Parameter to specify the ordering criteria.",
+                    "default": "-breedName"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Order by Ascending",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all cats sorted in ascending order by name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ordering",
+                    "type": "STRING",
+                    "description": "Parameter to specify the ordering criteria.",
+                    "default": "breedName"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Origin",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all cats with the origin country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "origin",
+                    "type": "STRING",
+                    "description": "Parameter to specify the origin country.",
+                    "default": "egypt"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Fur Color",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Gives a list of all cats with the specified fur color.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "furColor__icontains",
+                    "type": "STRING",
+                    "description": "Parameter to specify the fur color.",
+                    "default": "black"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Breed Type",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Gives all results by the type of breed.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "breedType",
+                    "type": "STRING",
+                    "description": "Parameter to specify the type of breed.",
+                    "default": "Natural"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Search cat breed by keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "Keyword to search for a specific cat breed.",
+                    "default": "american"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Single Cat Breed",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Gives details of a single cat breed.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "Parameter to specify the ID of the cat breed.",
+                    "default": "34"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "All Cats",
+            "url": "https://catbreeddb.p.rapidapi.com/",
+            "description": "Get a list of all Cats with their basic meta data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

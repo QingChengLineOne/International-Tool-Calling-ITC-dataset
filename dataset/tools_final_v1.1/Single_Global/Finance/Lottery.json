@@ -1,0 +1,524 @@
+{
+    "tool_name": "Lottery",
+    "tool_description": "Find out about the winning numbers in the latest lotto.",
+    "home_url": "https://rapidapi.com/collectapi/api/lottery2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "millipiyango",
+            "url": "https://lottery2.p.rapidapi.com/millipiyango",
+            "description": "Service that brings you the full list of Milli Piyango results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Enter the date you would like to know the results (Format: 'YYYYMMDD')",
+                    "default": "20200409"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "onNumara",
+            "url": "https://lottery2.p.rapidapi.com/onNumara",
+            "description": "Service bringing numerical On Numara results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "sanstopu",
+            "url": "https://lottery2.p.rapidapi.com/sanstopu",
+            "description": "Service bringing numerical Şans Topu results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "sayisalLoto",
+            "url": "https://lottery2.p.rapidapi.com/sayisalLoto",
+            "description": "Service bringing Sayısal Loto results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "superLoto",
+            "url": "https://lottery2.p.rapidapi.com/superLoto",
+            "description": "Service bringing numerical Super Loto results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "euroMillions",
+            "url": "https://lottery2.p.rapidapi.com/euroMillions",
+            "description": "Information on the last draw of the Euro Millions lottery game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "euroMillionsChecker",
+            "url": "https://lottery2.p.rapidapi.com/euroMillionsChecker",
+            "description": "Ticket check service for the Euro Millions game showing winnings based on entered ticket.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "numbers",
+                    "type": "STRING",
+                    "description": "Numbers of tickets other than lucky stars.",
+                    "default": "4,5,14,33,48"
+                },
+                {
+                    "name": "ls",
+                    "type": "STRING",
+                    "description": "Numbers of tickets lucky stars numbers.",
+                    "default": "7,12"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "usaMegaMillions",
+            "url": "https://lottery2.p.rapidapi.com/usaMegaMillions",
+            "description": "Information on the last draw of the USA Mega Millions lottery game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "usaMegaMillionsChecker",
+            "url": "https://lottery2.p.rapidapi.com/usaMegaMillionsChecker",
+            "description": "Ticket check service for the USA Mega Millions game showing winnings based on entered ticket.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mb",
+                    "type": "STRING",
+                    "description": "Numbers of tickets megaball.",
+                    "default": "20"
+                },
+                {
+                    "name": "numbers",
+                    "type": "STRING",
+                    "description": "Numbers of tickets other than megaball.",
+                    "default": "25,33,43,51,67"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "usaPowerball",
+            "url": "https://lottery2.p.rapidapi.com/usaPowerball",
+            "description": "Information on the last draw of the USA Powerball lottery game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "usaPowerballChecker",
+            "url": "https://lottery2.p.rapidapi.com/usaPowerballChecker",
+            "description": "Ticket check service for the USA Powerball game showing winnings based on entered ticket.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pb",
+                    "type": "STRING",
+                    "description": "Numbers of tickets powerball.",
+                    "default": "6"
+                },
+                {
+                    "name": "numbers",
+                    "type": "STRING",
+                    "description": "Numbers of tickets other than powerball.",
+                    "default": "12,13,20,22,25"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "usaSuperLottoPlus",
+            "url": "https://lottery2.p.rapidapi.com/usaSuperLottoPlus",
+            "description": "Information on the last draw of the USA SuperLotto Plus lottery game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "result": {
+                        "properties": {
+                            "date": {
+                                "type": "string"
+                            },
+                            "jackpot": {
+                                "type": "string"
+                            },
+                            "next-jackpot": {
+                                "properties": {
+                                    "amount": {
+                                        "type": "string"
+                                    },
+                                    "date": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "numbers": {
+                                "properties": {
+                                    "n1": {
+                                        "type": "string"
+                                    },
+                                    "n2": {
+                                        "type": "string"
+                                    },
+                                    "n3": {
+                                        "type": "string"
+                                    },
+                                    "n4": {
+                                        "type": "string"
+                                    },
+                                    "n5": {
+                                        "type": "string"
+                                    },
+                                    "pb": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "usaSuperLottoPlusChecker",
+            "url": "https://lottery2.p.rapidapi.com/usaSuperLottoPlusChecker",
+            "description": "Ticket check service for the USA Super Lotto Plus game showing winnings based on entered ticket.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mn",
+                    "type": "STRING",
+                    "description": "Numbers of tickets powerball.",
+                    "default": "6"
+                },
+                {
+                    "name": "numbers",
+                    "type": "STRING",
+                    "description": "Numbers of tickets other than powerball.",
+                    "default": "12,13,20,22,25"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "result": {
+                        "properties": {
+                            "exactnumbers": {
+                                "type": "integer"
+                            },
+                            "exactpb": {
+                                "type": "integer"
+                            },
+                            "numbers": {
+                                "type": "string"
+                            },
+                            "pb": {
+                                "type": "string"
+                            },
+                            "prize": {
+                                "type": "string"
+                            },
+                            "yournumbers": {
+                                "type": "string"
+                            },
+                            "yourpb": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "success": {
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

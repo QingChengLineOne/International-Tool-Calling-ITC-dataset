@@ -1,0 +1,30 @@
+{
+    "tool_name": "姓名身份证二要素验证API",
+    "tool_description": "验证姓名/身份证是否真实",
+    "home_url": "https://api.aa1.cn/doc/xmsfzeysyz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "姓名身份证二要素验证",
+            "url": "https://api.2su.cc/api/112/",
+            "description": "用于验证提供的姓名和身份证是否匹配",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "需要验证的姓名",
+                    "default": ""
+                },
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "需要验证的身份证号码",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "schema": {}
+        }
+    ]
+}

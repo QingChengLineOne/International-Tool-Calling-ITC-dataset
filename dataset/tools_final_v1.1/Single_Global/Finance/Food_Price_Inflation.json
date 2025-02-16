@@ -1,0 +1,18 @@
+{
+    "tool_name": "Food Price Inflation",
+    "tool_description": "This API provides the percent change of the Inflation Rate for Food Prices over the last 2 years, independent of the Consumer Price Index (CPI) for food, which is a component of the all-items CPI.",
+    "home_url": "https://rapidapi.com/mostafatantawi14-2JZQYNJBe1e/api/food-price-inflation/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get all Food types",
+            "url": "https://food-price-inflation.p.rapidapi.com/yUNJ9j/food_data",
+            "description": "Retrieve a list of all food types available in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

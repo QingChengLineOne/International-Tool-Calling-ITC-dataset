@@ -1,0 +1,247 @@
+{
+    "tool_name": "ca.boundaries.io",
+    "tool_description": "CA Postal Code (e.g., T6H, or A0A0A1), FSA and LDU Boundaries API: A simple and very fast API that allows you to integrate multiple GeoJson CA FSA and LDU level boundaries results into your applications and systems. This API is designed for programmatic use to ensure optimal performance. Note that using the MashApe UI for queries may result in significant latency issues with large result sets.",
+    "home_url": "https://rapidapi.com/VanitySoft/api/ca-boundaries-io/",
+    "country": "Canada",
+    "api_list": [
+        {
+            "name": "Query by FSA Code",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/fsa",
+            "description": "Retrieve boundary information based on a Postal FSA code (e.g., T6H).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal-fsa",
+                    "type": "STRING",
+                    "description": "The FSA code to query, e.g., 'A0A'.",
+                    "default": "T6H"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "features": {
+                        "items": {
+                            "properties": {
+                                "geometry": {
+                                    "properties": {
+                                        "coordinates": {
+                                            "items": {
+                                                "items": {
+                                                    "items": {
+                                                        "type": "number"
+                                                    },
+                                                    "type": "array"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "properties": {
+                                    "properties": {
+                                        "postal-fsa": {
+                                            "type": "string"
+                                        },
+                                        "territory": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "Query for City names by province/territory name",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/province/city/names",
+            "description": "Retrieve city names based on the specified province or territory.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "province",
+                    "type": "STRING",
+                    "description": "The province or territory to query.",
+                    "default": "alberta"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for City Boundary by City name",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/province/city",
+            "description": "Retrieve the boundary information for a specified city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the city to query.",
+                    "default": "toronto"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for All Province / Territory names",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/province/name",
+            "description": "Retrieve a list of all province and territory names in Canada.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for LDU Boundary by Location and Resolution",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/h3/ldu/location/boundary",
+            "description": "Retrieve LDU boundary information based on geographic coordinates and resolution.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "longitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the location.",
+                    "default": "-73.4532516514038"
+                },
+                {
+                    "name": "latitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the location.",
+                    "default": "46.04643887621965"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "resolution",
+                    "type": "NUMBER",
+                    "description": "The resolution for the boundary query.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for LDU Boundary by H3Index",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/h3/ldu/index/{h3ndex}",
+            "description": "Retrieve LDU boundary information based on the H3 Index. If no LDU Postal Code exists within the H3 Index Hexagon, an empty FeatureCollection is returned. H3Index resolution must be greater than 8.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "h3ndex",
+                    "type": "NUMBER",
+                    "description": "The H3 Index to query.",
+                    "default": "635775751926485631"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for LDU boundary",
+            "url": "https://vanitysoft-canada-postal-boundaries-v1.p.rapidapi.com/rest/v1/public/boundary/ca/ldu",
+            "description": "Retrieve boundary information based on a specified LDU Postal Code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal-ldu",
+                    "type": "STRING",
+                    "description": "The LDU code to query.",
+                    "default": "L0R 1B7"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "resolution",
+                    "type": "NUMBER",
+                    "description": "The resolution for the boundary query.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "features": {
+                        "items": {
+                            "properties": {
+                                "geometry": {
+                                    "properties": {
+                                        "coordinates": {
+                                            "items": {
+                                                "items": {
+                                                    "items": {
+                                                        "type": "number"
+                                                    },
+                                                    "type": "array"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "properties": {
+                                    "properties": {
+                                        "city": {
+                                            "type": "string"
+                                        },
+                                        "country": {
+                                            "type": "string"
+                                        },
+                                        "fsaCode": {
+                                            "type": "string"
+                                        },
+                                        "postalCode": {
+                                            "type": "string"
+                                        },
+                                        "province": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

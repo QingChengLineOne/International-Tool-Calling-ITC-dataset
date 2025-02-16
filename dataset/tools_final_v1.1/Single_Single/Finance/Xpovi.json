@@ -1,0 +1,18 @@
+{
+    "tool_name": "Xpovi",
+    "tool_description": "A tool to convert EGP (Egyptian Pound) from USD (United States Dollar).",
+    "home_url": "https://rapidapi.com/karimhady200/api/xpovi/",
+    "country": "Egypt",
+    "api_list": [
+        {
+            "name": "usd-egp",
+            "url": "https://xpovi.p.rapidapi.com/",
+            "description": "This API retrieves the current exchange rate from USD to EGP.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

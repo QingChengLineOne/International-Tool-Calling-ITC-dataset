@@ -1,0 +1,173 @@
+{
+    "tool_name": "PNR STATUS - INDIAN RAILWAY",
+    "tool_description": "Get PNR status and additional passenger info of Indian railways using this easy API, developed for educational purposes.",
+    "home_url": "https://rapidapi.com/dev2919/api/pnr-status-indian-railway/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "PNR number",
+            "url": "https://pnr-status-indian-railway.p.rapidapi.com/pnr-check/{pnr}",
+            "description": "Check PNR status and passenger info. Returns information if the PNR is valid or not expired.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "PNR",
+                    "type": "string",
+                    "description": "Passenger Name Record number",
+                    "default": "8531575878"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "properties": {
+                    "arrival_data": {
+                        "properties": {
+                            "arrival_date": {
+                                "type": "string"
+                            },
+                            "arrival_time": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "arrival_date",
+                            "arrival_time"
+                        ],
+                        "type": "object"
+                    },
+                    "boarding_station": {
+                        "type": "string"
+                    },
+                    "chart_status": {
+                        "type": "string"
+                    },
+                    "class": {
+                        "type": "string"
+                    },
+                    "departure_data": {
+                        "properties": {
+                            "departure_date": {
+                                "type": "string"
+                            },
+                            "departure_time": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "departure_date",
+                            "departure_time"
+                        ],
+                        "type": "object"
+                    },
+                    "passenger": {
+                        "items": [
+                            {
+                                "properties": {
+                                    "booking_status": {
+                                        "type": "string"
+                                    },
+                                    "current_status": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "booking_status",
+                                    "current_status"
+                                ],
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "booking_status": {
+                                        "type": "string"
+                                    },
+                                    "current_status": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "booking_status",
+                                    "current_status"
+                                ],
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "booking_status": {
+                                        "type": "string"
+                                    },
+                                    "current_status": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "booking_status",
+                                    "current_status"
+                                ],
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "booking_status": {
+                                        "type": "string"
+                                    },
+                                    "current_status": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "booking_status",
+                                    "current_status"
+                                ],
+                                "type": "object"
+                            }
+                        ],
+                        "type": "array"
+                    },
+                    "quota": {
+                        "type": "string"
+                    },
+                    "reservation_upto": {
+                        "type": "string"
+                    },
+                    "train_name": {
+                        "type": "string"
+                    },
+                    "train_number": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "passenger",
+                    "boarding_station",
+                    "reservation_upto",
+                    "departure_data",
+                    "arrival_data",
+                    "quota",
+                    "class",
+                    "chart_status",
+                    "train_name",
+                    "train_number"
+                ],
+                "type": "object"
+            }
+        }
+    ]
+}

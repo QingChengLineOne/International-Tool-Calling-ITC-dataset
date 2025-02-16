@@ -1,0 +1,152 @@
+{
+    "tool_name": "Personator",
+    "tool_description": "Easily verify a person’s information, lookup and check customer data. Personator is a lightweight, flexible, and powerful customer verification and enrichment API that verifies contact data (name, address, e-mail, phone number), appends missing information, updates addresses with geolocation data, and augments with numerous demographic traits.",
+    "home_url": "https://rapidapi.com/adminMelissa/api/personator2/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Personator Endpoint",
+            "url": "https://personator2.p.rapidapi.com/v3/WEB/ContactVerify/doContactVerify",
+            "description": "Access to Personator Web Service for verifying and enriching customer contact data.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "act",
+                    "type": "STRING",
+                    "description": "Actions to perform (Check, Verify, Append, Move).",
+                    "default": "check,verify,append,move"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "last",
+                    "type": "STRING",
+                    "description": "Last Name of the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "lastline",
+                    "type": "STRING",
+                    "description": "Last Line (City, State, Postal).",
+                    "default": ""
+                },
+                {
+                    "name": "mak",
+                    "type": "STRING",
+                    "description": "Melissa Address Key for enhanced verification.",
+                    "default": ""
+                },
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "State (State and City required OR postal).",
+                    "default": "ca"
+                },
+                {
+                    "name": "comp",
+                    "type": "STRING",
+                    "description": "Company Name associated with the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "IP Address of the user.",
+                    "default": ""
+                },
+                {
+                    "name": "a2",
+                    "type": "STRING",
+                    "description": "Address Line 2.",
+                    "default": ""
+                },
+                {
+                    "name": "ctry",
+                    "type": "STRING",
+                    "description": "Country of residence.",
+                    "default": ""
+                },
+                {
+                    "name": "bmo",
+                    "type": "STRING",
+                    "description": "Birth Month of the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "bday",
+                    "type": "STRING",
+                    "description": "Birth Day of the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "byr",
+                    "type": "STRING",
+                    "description": "Birth Year of the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "ss",
+                    "type": "STRING",
+                    "description": "Social Security Number.",
+                    "default": ""
+                },
+                {
+                    "name": "first",
+                    "type": "STRING",
+                    "description": "First Name of the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Format of the response (e.g., JSON).",
+                    "default": "json"
+                },
+                {
+                    "name": "a1",
+                    "type": "STRING",
+                    "description": "Address Line 1.",
+                    "default": "22382 avenida empresa"
+                },
+                {
+                    "name": "postal",
+                    "type": "STRING",
+                    "description": "Postal Code.",
+                    "default": ""
+                },
+                {
+                    "name": "phone",
+                    "type": "STRING",
+                    "description": "Phone Number.",
+                    "default": ""
+                },
+                {
+                    "name": "full",
+                    "type": "STRING",
+                    "description": "Full Name of the individual.",
+                    "default": ""
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email Address.",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "City of residence.",
+                    "default": "rsm"
+                },
+                {
+                    "name": "ff",
+                    "type": "STRING",
+                    "description": "Free Form input for additional data.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

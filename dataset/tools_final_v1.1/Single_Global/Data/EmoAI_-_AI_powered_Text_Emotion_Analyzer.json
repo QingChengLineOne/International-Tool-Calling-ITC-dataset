@@ -1,0 +1,25 @@
+{
+    "tool_name": "EmoAI - AI powered Text Emotion Analyzer",
+    "tool_description": "🔥 Are you looking for a powerful API that can analyze the emotions of your text data? Look no further than EmoAI! Our AI-powered endpoint can analyze text in over 140 languages, providing fast and accurate emotion scores for six basic emotions plus a neutral class - anger 🤬, disgust 🤢, fear 😨, joy 😀, neutral 😐, and sadness 😭. Whether you're analyzing social media posts, customer feedback, or any other form of text data, EmoAI can help you gain valuable insights into the emotions of your content.",
+    "home_url": "https://rapidapi.com/IntelligenzaArtificiale/api/emoai-ai-powered-text-emotion-analyzer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "🔥 EmoAI API",
+            "url": "https://emoai-ai-powered-text-emotion-analyzer.p.rapidapi.com/emotion",
+            "description": "Our AI-powered endpoint can analyze text in over 140 languages.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text data you want to analyze for emotions.",
+                    "default": "Our AI-powered endpoint can analyze text in over 140 languages, try it now :)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

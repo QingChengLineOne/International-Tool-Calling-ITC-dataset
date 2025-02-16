@@ -1,0 +1,44 @@
+{
+    "tool_name": "全国天气自动获取版",
+    "tool_description": "根据IP获取当前城市的天气数据，同时也支持暖心问候、传入城市名查询天气",
+    "home_url": "https://api.aa1.cn/doc/weather_ip.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取当前城市天气数据",
+            "url": "https://www.apii.cn/api/weather/",
+            "description": "根据IP获取当前城市的天气数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "可选参数，用于查询特定城市的天气，不填则默认为当前IP所在城市",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "可选参数，用于指定返回的语言类型，如'zh-cn'表示简体中文，'zh-hk'表示繁体中文，默认为'zh-cn'",
+                    "default": "zh-cn"
+                },
+                {
+                    "name": "unit",
+                    "type": "string",
+                    "description": "可选参数，用于指定温度单位，如'c'表示摄氏度，'f'表示华氏度，默认为'c'",
+                    "default": "c"
+                },
+                {
+                    "name": "hour24",
+                    "type": "boolean",
+                    "description": "可选参数，用于指定返回的时间格式，true为24小时制，false为12小时制，默认为false",
+                    "default": false
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

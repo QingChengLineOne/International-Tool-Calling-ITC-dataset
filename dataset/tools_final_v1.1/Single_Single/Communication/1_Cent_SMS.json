@@ -1,0 +1,41 @@
+{
+    "tool_name": "1 Cent SMS",
+    "tool_description": "Send SMS for 1 US Cent to USA or Canada via this API",
+    "home_url": "https://rapidapi.com/dananos/api/1-cent-sms/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "SendSMS",
+            "url": "https://1-cent-sms.p.rapidapi.com/default/SMSLambda",
+            "description": "Send an SMS to the USA or Canada for 1 cent. The payload should include the message text and the recipient's phone number.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "The message content to be sent via SMS.",
+                    "default": ""
+                },
+                {
+                    "name": "phone",
+                    "type": "string",
+                    "description": "The recipient's phone number in international format.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

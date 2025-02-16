@@ -1,0 +1,18 @@
+{
+    "tool_name": "抖音获取前十热搜",
+    "tool_description": "该API用于获取抖音平台的前十热搜内容",
+    "home_url": "https://api.aa1.cn/doc/leno.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "抖音热搜获取接口",
+            "url": "https://dsp.lenovo.com.cn/lenovo/bid?positionId=50411",
+            "description": "获取抖音平台的前十热搜内容",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

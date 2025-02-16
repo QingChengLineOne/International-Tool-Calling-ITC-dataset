@@ -1,0 +1,44 @@
+{
+    "tool_name": "网页跳转个人小程序API",
+    "tool_description": "使用非个人小程序做跳板跳转个人小程序的API接口",
+    "home_url": "https://api.aa1.cn/doc/grxcx-khkj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网页跳转个人小程序接口",
+            "url": "https://service-m9yegcn9-1311248022.sh.apigw.tencentcs.com/release/grxcx",
+            "description": "通过非个人小程序跳转至个人小程序的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "appid",
+                    "type": "string",
+                    "description": "小程序的AppID，用于识别小程序",
+                    "default": ""
+                },
+                {
+                    "name": "path",
+                    "type": "string",
+                    "description": "要跳转到的页面路径",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "a",
+                    "type": "string",
+                    "description": "附加参数a，可根据需求提供",
+                    "default": ""
+                },
+                {
+                    "name": "b",
+                    "type": "string",
+                    "description": "附加参数b，可根据需求提供",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

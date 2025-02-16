@@ -1,0 +1,25 @@
+{
+    "tool_name": "虎牙直播源提取",
+    "tool_description": "提供虎牙直播平台的视频源提取服务",
+    "home_url": "https://api.aa1.cn/doc/huyalive.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "虎牙直播源提取API",
+            "url": "https://api.tsyinpin.com/huya.php",
+            "description": "提取虎牙直播平台的视频源信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "room",
+                    "type": "string",
+                    "description": "虎牙直播间的房间号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

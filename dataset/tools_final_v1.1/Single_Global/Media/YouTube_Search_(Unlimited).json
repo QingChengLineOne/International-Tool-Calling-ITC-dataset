@@ -1,0 +1,434 @@
+{
+    "tool_name": "YouTube Search (Unlimited)",
+    "tool_description": "Get YouTube Search Results Without API Key or Quota Restrictions",
+    "home_url": "https://rapidapi.com/420vijay47/api/youtube-search-unlimited/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search Results",
+            "url": "https://youtube-search-unlimited.p.rapidapi.com/ytsearch/",
+            "description": "Retrieve the top 22 YouTube search results, including video ID, URL, thumbnail, title, and duration. This API does not require an API key and has no quota limits.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search term to query YouTube for relevant videos.",
+                    "default": "interview preparation"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "type": "object",
+                        "properties": {
+                            "0": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "1": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "null"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "4": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "5": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "6": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "7": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "8": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "10": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "11": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "12": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "13": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "15": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "16": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "17": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "null"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "18": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "19": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "20": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "21": {
+                                "type": "object",
+                                "properties": {
+                                    "videoid": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "link": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

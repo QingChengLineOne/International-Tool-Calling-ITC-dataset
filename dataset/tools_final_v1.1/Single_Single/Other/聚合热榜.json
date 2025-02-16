@@ -1,0 +1,25 @@
+{
+    "tool_name": "聚合热榜",
+    "tool_description": "聚合热搜榜，将近20个平台有哔哩哔哩、抖音、微博、知乎、百度、百度贴吧、少数派、IT之家、澎湃新闻、今日头条、36氪、稀土掘金、腾讯新闻、网易新闻、英雄联盟、原神、微信读书、快手、历史上的今天",
+    "home_url": "https://api.aa1.cn/doc/jhrb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "聚合热榜API",
+            "url": "https://api.lolimi.cn/API/jhrb/",
+            "description": "获取聚合热搜榜信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "hot",
+                    "type": "string",
+                    "description": "热搜关键词，用于过滤特定平台的热搜",
+                    "default": "综合"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "tool_name": "Nurse Verification",
+    "tool_description": "Nurse verification is used to verify whether an individual is a registered nurse with the Indian Nurse Council (INC). This tool helps ensure that nursing professionals meet the required standards and are officially recognized.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/nurse-verification/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://nurse-verification.p.rapidapi.com/v3/tasks",
+            "description": "Fetches the results of the nurse verification process using the request ID received in the initial response.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the verification request.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Nurse Verification",
+            "url": "https://nurse-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/ind_nurse",
+            "description": "Initiates the nurse verification process to check if an individual is a registered nurse with the Indian Nurse Council (INC).",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

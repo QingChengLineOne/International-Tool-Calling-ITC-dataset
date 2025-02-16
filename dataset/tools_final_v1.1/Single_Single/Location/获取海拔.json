@@ -1,0 +1,31 @@
+{
+    "tool_name": "海拔高度查询API",
+    "tool_description": "通过提供经纬度信息，获取相应地点的海拔高度",
+    "home_url": "https://api.aa1.cn/doc/api-get-elevation.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取海拔",
+            "url": "https://zh-cn.topographic-map.com/",
+            "description": "该接口允许用户通过经纬度获取海拔高度信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "latitude",
+                    "type": "float",
+                    "description": "纬度坐标，表示地点的纬度",
+                    "default": ""
+                },
+                {
+                    "name": "longitude",
+                    "type": "float",
+                    "description": "经度坐标，表示地点的经度",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

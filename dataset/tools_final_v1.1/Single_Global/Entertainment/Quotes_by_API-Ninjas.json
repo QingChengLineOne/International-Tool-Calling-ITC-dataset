@@ -1,0 +1,31 @@
+{
+    "tool_name": "Quotes by API-Ninjas",
+    "tool_description": "Access over 50,000 quotes from famous people. This API allows users to retrieve random quotes based on various categories.",
+    "home_url": "https://rapidapi.com/apininjas/api/quotes-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/quotes",
+            "url": "https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes",
+            "description": "Returns one (or more) random quotes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "How many results to return. Must be between 1 and 10. Default is 1.",
+                    "default": "1"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Category to limit results to. Possible values include age, alone, amazing, anger, architecture, art, attitude, beauty, best, birthday, business, car, change, communications, computers, cool, courage, dad, dating, death, design, dreams, education, environmental, equality, experience, failure, faith, family, famous, fear, fitness, food, forgiveness, freedom, friendship, funny, future, god, good, government, graduation, great, happiness, health, history, home, hope, humor, imagination, inspirational, intelligence, jealousy, knowledge, leadership, learning, legal, life, love, marriage, medical, men, mom, money, morning, movies, success.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

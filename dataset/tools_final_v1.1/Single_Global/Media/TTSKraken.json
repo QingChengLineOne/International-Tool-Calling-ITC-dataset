@@ -1,0 +1,38 @@
+{
+    "tool_name": "TTSKraken",
+    "tool_description": "Introducing our cutting-edge text to speech service, designed to provide you with the most realistic human-sounding voices at an affordable price. Our service is fast and reliable, delivering high-quality audio output in a matter of seconds. Additionally, we offer a wide range of languages and a variety of voice choices, so you can find the perfect fit for your project. Whether you need a voiceover for a video, an audiobook, or any other project, our text to speech service has you covered.",
+    "home_url": "https://rapidapi.com/arucy-enterprises-arucy-enterprises-default/api/ttskraken/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "List Speakers",
+            "url": "https://ttskraken.p.rapidapi.com/models/list",
+            "description": "List the speakers available and some more information such as the languages they can speak.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List Languages",
+            "url": "https://ttskraken.p.rapidapi.com/languages/list",
+            "description": "Get a list of currently supported languages. We are constantly adding more every few weeks.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Run TTS",
+            "url": "https://ttskraken.p.rapidapi.com/tts/run",
+            "description": "Run the actual Text-to-speech and get a wav file back. You can then download or save the file to your drive.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

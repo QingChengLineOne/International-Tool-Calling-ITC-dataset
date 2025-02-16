@@ -1,0 +1,18 @@
+{
+    "tool_name": "lakshsucks",
+    "tool_description": "A simple API for testing purposes.",
+    "home_url": "https://rapidapi.com/young-justice-young-justice-default/api/lakshsucks/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Test",
+            "url": "https://lakshsucks.p.rapidapi.com/",
+            "description": "This endpoint is used to perform a test request.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

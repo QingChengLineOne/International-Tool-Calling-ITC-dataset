@@ -1,0 +1,25 @@
+{
+    "tool_name": "支付宝到账语音生成API",
+    "tool_description": "支付宝到账语音生成服务",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_aliyy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "支付宝到账语音生成接口",
+            "url": "https://free.wqwlkj.cn/wqwlapi/alipay_yy.php",
+            "description": "生成支付宝到账的语音通知",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "money",
+                    "type": "string",
+                    "description": "到账金额，例如：666.66",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

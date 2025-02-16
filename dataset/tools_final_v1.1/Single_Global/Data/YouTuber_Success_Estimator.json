@@ -1,0 +1,31 @@
+{
+    "tool_name": "YouTuber Success Estimator",
+    "tool_description": "Estimates how successful a hypothetical video from a given YouTube channel will be in the first 30 days of its lifecycle. Useful for influencer marketers to plan for successful campaigns and publishers to better rank their content.",
+    "home_url": "https://rapidapi.com/DMTAndy/api/youtuber-success-estimator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "estimate",
+            "url": "https://youtuber-success-estimator.p.rapidapi.com/api/v0/analytics/creators/estimator",
+            "description": "Submit a YouTube `channelName` username value along with the `channelType` as query parameters to get back the estimated video view performance of the submitted channel. This API supports a `channelId` parameter, but the `channelName` is now the default due to YouTube's standardized @username syntax.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channelType",
+                    "type": "STRING",
+                    "description": "The type of channel, default is YouTube.",
+                    "default": "youtube"
+                },
+                {
+                    "name": "channelName",
+                    "type": "STRING",
+                    "description": "Lookup a channel projection by the given username of the channel.",
+                    "default": "@chrispirillo"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

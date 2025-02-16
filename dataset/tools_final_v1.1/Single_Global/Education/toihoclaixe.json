@@ -1,0 +1,18 @@
+{
+    "tool_name": "toihoclaixe",
+    "tool_description": "API sharing driving learning knowledge, life skills and how to work from home, make money on the internet.",
+    "home_url": "https://rapidapi.com/lmphap-UTWRbUNNHxP/api/toihoclaixe/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Traffic and Life",
+            "url": "https://toihoclaixe.p.rapidapi.com/",
+            "description": "Provides access to resources and information related to driving, life skills, and online income generation.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Get public IP",
+    "tool_description": "Retrieve your public IP address.",
+    "home_url": "https://rapidapi.com/jsavajols/api/get-public-ip/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "IP",
+            "url": "https://get-public-ip.p.rapidapi.com/api/getMyIP",
+            "description": "Fetches the public IP address of the user.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Showgirl live",
+    "tool_description": "Showgirl live là ứng dụng dành riêng cho điện thoại, cho phép người dùng xem idol live và kiếm tiền. Ứng dụng có thể tải miễn phí.",
+    "home_url": "https://rapidapi.com/showgirl/api/showgirl-live/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Showgirl live",
+            "url": "https://showgirl-live.p.rapidapi.com/",
+            "description": "API cho phép truy cập vào ứng dụng Showgirl live, nơi người dùng có thể xem idol live và kiếm tiền.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

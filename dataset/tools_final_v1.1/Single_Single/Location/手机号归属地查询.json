@@ -1,0 +1,25 @@
+{
+    "tool_name": "手机号归属地查询API",
+    "tool_description": "提供手机号归属地查询服务",
+    "home_url": "https://api.aa1.cn/doc/phone.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "手机号归属地查询",
+            "url": "https://api.52vmy.cn/api/query/phone",
+            "description": "查询指定手机号的归属地信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phone",
+                    "type": "string",
+                    "description": "需要查询的手机号",
+                    "default": "请输入手机号码"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

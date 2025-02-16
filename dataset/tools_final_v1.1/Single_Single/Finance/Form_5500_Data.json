@@ -1,0 +1,25 @@
+{
+    "tool_name": "Form 5500 Data",
+    "tool_description": "Get information from all US Corporate Retirement plans from the Form 5500.",
+    "home_url": "https://rapidapi.com/dataminingapi-dataminingapi-default/api/form-5500-data/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Form5500_PlanName",
+            "url": "https://form-5500-data.p.rapidapi.com/api/721937f76ee4118d05d4268531b648ae/{ein}",
+            "description": "This API returns detailed information about a specific retirement plan based on the provided Employer Identification Number (EIN).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "EIN",
+                    "type": "NUMBER",
+                    "description": "The Employer Identification Number of the retirement plan.",
+                    "default": "311334685"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

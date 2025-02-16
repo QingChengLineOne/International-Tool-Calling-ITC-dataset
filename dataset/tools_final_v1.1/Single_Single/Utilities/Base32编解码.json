@@ -1,0 +1,44 @@
+{
+    "tool_name": "Base32编解码",
+    "tool_description": "PHP开发的一个Base32编解码功能",
+    "home_url": "https://api.aa1.cn/doc/Base32.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Base32编解码API",
+            "url": "https://tools.qsnctf.com/tools/Tools/Base32/api.php",
+            "description": "提供Base32编码和解码的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "method",
+                    "type": "string",
+                    "description": "操作类型，'encode'表示编码，'decode'表示解码",
+                    "default": "encode"
+                },
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "要编码或解码的字符串",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "input_type",
+                    "type": "string",
+                    "description": "输入类型，'text'表示文本，'url'表示URL编码，'base64'表示Base64编码",
+                    "default": "text"
+                },
+                {
+                    "name": "output_type",
+                    "type": "string",
+                    "description": "输出类型，'text'表示文本，'url'表示URL编码，'base64'表示Base64编码",
+                    "default": "text"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "tool_name": "Web Search Autocomplete",
+    "tool_description": "Fast and Simple web search query autocomplete with support for Knowledge Graph entities. Powered by Google Search Autocomplete.",
+    "home_url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/web-search-autocomplete/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Autocomplete",
+            "url": "https://web-search-autocomplete.p.rapidapi.com/autocomplete",
+            "description": "Get query suggestions from Google Search, including Knowledge Graph information when available.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Autocomplete / typeahead search query.",
+                    "default": "to"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The country / region from which to make the query. Allowed values: 2-letter country code (ISO 3166-1 alpha-2).",
+                    "default": "us"
+                },
+                {
+                    "name": "cursor_pointer",
+                    "type": "STRING",
+                    "description": "Defines the position of the cursor for the query provided, starting from 0. If not provided, cursor is placed at the end of the query.",
+                    "default": ""
+                },
+                {
+                    "name": "user_agent",
+                    "type": "ENUM",
+                    "description": "Device type to use for the search.",
+                    "default": ""
+                },
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "Set the language of the results. Allowed values: 2-letter language code (ISO 639-1).",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "query": {
+                                "type": "string"
+                            },
+                            "language": {
+                                "type": "string"
+                            },
+                            "region": {
+                                "type": "string"
+                            },
+                            "user_agent": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Autocomplete (Bulk)",
+            "url": "https://web-search-autocomplete.p.rapidapi.com/autocomplete",
+            "description": "Get query suggestions from Google Search, including Knowledge Graph information when available. Supports up to 30 queries per request.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "queries": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "language": {
+                                "type": "string"
+                            },
+                            "region": {
+                                "type": "string"
+                            },
+                            "user_agent": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "query": {
+                                    "type": "string"
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

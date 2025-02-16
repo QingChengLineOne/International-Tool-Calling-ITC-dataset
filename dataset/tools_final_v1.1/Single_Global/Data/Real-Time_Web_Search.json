@@ -1,0 +1,119 @@
+{
+    "tool_name": "Real-Time Web Search",
+    "tool_description": "Ultra-Fast, Scalable, and Simple real-time web searches and Google SERP at an unbeatable price.",
+    "home_url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-web-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://real-time-web-search.p.rapidapi.com/search",
+            "description": "Get real-time organic search results from across the web. Supports all Google Advanced Search operators such as inurl:, site:, intitle:, etc.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query. Supports all Google advanced search operators (e.g., site:, inurl:, intitle:, etc.). Examples: `website builder`, `site:youtube.com`, `nda filetype:pdf`, `cristiano -ronaldo`.",
+                    "default": "create an online store"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Maximum number of results to return (1-300).",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "snippet": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                },
+                                "domain": {
+                                    "type": "string"
+                                },
+                                "position": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search (Bulk)",
+            "url": "https://real-time-web-search.p.rapidapi.com/search",
+            "description": "Get real-time organic search results from across the web for up to 20 queries at once. This endpoint supports fetching up to top 50 search results per query and supports all Google Advanced Search operators.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "query": {
+                                    "type": "string"
+                                },
+                                "results": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "snippet": {
+                                                "type": "string"
+                                            },
+                                            "url": {
+                                                "type": "string"
+                                            },
+                                            "domain": {
+                                                "type": "string"
+                                            },
+                                            "position": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

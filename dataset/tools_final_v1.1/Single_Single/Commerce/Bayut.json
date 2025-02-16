@@ -1,0 +1,300 @@
+{
+    "tool_name": "Bayut",
+    "tool_description": "This API helps to query real estate in UAE to create a real estate site/application.",
+    "home_url": "https://rapidapi.com/apidojo/api/bayut/",
+    "country": "UAE",
+    "api_list": [
+        {
+            "name": "properties/detail",
+            "url": "https://bayut.p.rapidapi.com/properties/detail",
+            "description": "Get detailed information of a property.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "externalID",
+                    "type": "STRING",
+                    "description": "The value of externalID returned in the /properties/list endpoint.",
+                    "default": "4937770"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "agencies/list",
+            "url": "https://bayut.p.rapidapi.com/agencies/list",
+            "description": "List agencies or search for agencies by name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "For paging purpose.",
+                    "default": "0"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language option: en|ar.",
+                    "default": "en"
+                },
+                {
+                    "name": "hitsPerPage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "25"
+                },
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Any term or phrase that you are familiar with.",
+                    "default": "patriot"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "agencies/get-listings",
+            "url": "https://bayut.p.rapidapi.com/agencies/get-listings",
+            "description": "Get listings belonging to an agency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "agencySlug",
+                    "type": "STRING",
+                    "description": "The value of hits -> slug field returned in the /agencies/list endpoint.",
+                    "default": "patriot-real-estate-7737"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "categorySlug",
+                    "type": "STRING",
+                    "description": "Category of the listings.",
+                    "default": "commerical-properties"
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Sorting option.",
+                    "default": "price-asc"
+                },
+                {
+                    "name": "completionStatus",
+                    "type": "STRING",
+                    "description": "Completion status of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "rentFrequency",
+                    "type": "STRING",
+                    "description": "Frequency of rent.",
+                    "default": ""
+                },
+                {
+                    "name": "purpose",
+                    "type": "STRING",
+                    "description": "Purpose of the property: for-rent|for-sale.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "For paging purpose.",
+                    "default": "0"
+                },
+                {
+                    "name": "hitsPerPage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "25"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language option: en|ar.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "properties/list",
+            "url": "https://bayut.p.rapidapi.com/properties/list",
+            "description": "List properties with options and filters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "locationExternalIDs",
+                    "type": "STRING",
+                    "description": "The location/externalID fields returned in the /auto-complete endpoint, separated by commas for multiple locations.",
+                    "default": "5002,6020"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "hasFloorPlan",
+                    "type": "BOOLEAN",
+                    "description": "Whether the property has a floor plan.",
+                    "default": ""
+                },
+                {
+                    "name": "areaMin",
+                    "type": "NUMBER",
+                    "description": "Minimum area of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "purpose",
+                    "type": "STRING",
+                    "description": "Purpose of the property: for-rent|for-sale.",
+                    "default": "for-rent"
+                },
+                {
+                    "name": "hasVideo",
+                    "type": "BOOLEAN",
+                    "description": "Whether the property has a video.",
+                    "default": ""
+                },
+                {
+                    "name": "hasPanorama",
+                    "type": "BOOLEAN",
+                    "description": "Whether the property has a panorama.",
+                    "default": ""
+                },
+                {
+                    "name": "furnishingStatus",
+                    "type": "STRING",
+                    "description": "Furnishing status: unfurnished|furnished.",
+                    "default": ""
+                },
+                {
+                    "name": "bathsMin",
+                    "type": "NUMBER",
+                    "description": "Minimum number of bathrooms.",
+                    "default": ""
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Sorting option.",
+                    "default": "city-level-score"
+                },
+                {
+                    "name": "bathsMax",
+                    "type": "NUMBER",
+                    "description": "Maximum number of bathrooms.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "For paging purpose.",
+                    "default": "0"
+                },
+                {
+                    "name": "agencyExternalIDs",
+                    "type": "STRING",
+                    "description": "The externalID fields returned in the /agencies/list endpoint, separated by commas for multiple agencies.",
+                    "default": ""
+                },
+                {
+                    "name": "hitsPerPage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "25"
+                },
+                {
+                    "name": "roomsMin",
+                    "type": "NUMBER",
+                    "description": "Minimum number of rooms.",
+                    "default": ""
+                },
+                {
+                    "name": "roomsMax",
+                    "type": "NUMBER",
+                    "description": "Maximum number of rooms.",
+                    "default": ""
+                },
+                {
+                    "name": "categoryExternalID",
+                    "type": "NUMBER",
+                    "description": "Category of the property.",
+                    "default": "4"
+                },
+                {
+                    "name": "rentFrequency",
+                    "type": "STRING",
+                    "description": "Frequency of rent.",
+                    "default": "monthly"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language option: en|ar.",
+                    "default": "en"
+                },
+                {
+                    "name": "priceMin",
+                    "type": "NUMBER",
+                    "description": "Minimum price of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "priceMax",
+                    "type": "NUMBER",
+                    "description": "Maximum price of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "areaMax",
+                    "type": "NUMBER",
+                    "description": "Maximum area of the property.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "auto-complete",
+            "url": "https://bayut.p.rapidapi.com/auto-complete",
+            "description": "Get suggestions of locations by term or phrase.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Any term or phrase that you are familiar with.",
+                    "default": "abu dhabi"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "hitsPerPage",
+                    "type": "NUMBER",
+                    "description": "For paging purpose.",
+                    "default": "25"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language option: en|ar.",
+                    "default": "en"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "For paging purpose.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

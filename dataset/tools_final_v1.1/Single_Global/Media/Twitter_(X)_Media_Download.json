@@ -1,0 +1,38 @@
+{
+    "tool_name": "Twitter (X) Media Download",
+    "tool_description": "An API for downloading media and accessing public and private Twitter data.",
+    "home_url": "https://rapidapi.com/nguyenmanhict-MuTUtGWD7K/api/twitter-x-media-download/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Media Detail Private 18+",
+            "url": "https://twitter-x-media-download.p.rapidapi.com/media/private",
+            "description": "Retrieves detailed information about private media content rated 18+.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Media Detail",
+            "url": "https://twitter-x-media-download.p.rapidapi.com/media",
+            "description": "Retrieves detailed information about media content.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Profile Detail",
+            "url": "https://twitter-x-media-download.p.rapidapi.com/profile",
+            "description": "Retrieves detailed information about a Twitter profile.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

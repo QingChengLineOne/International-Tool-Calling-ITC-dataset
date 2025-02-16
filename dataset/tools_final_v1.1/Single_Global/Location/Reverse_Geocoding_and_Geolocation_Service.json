@@ -1,0 +1,53 @@
+{
+    "tool_name": "Reverse Geocoding and Geolocation Service",
+    "tool_description": "This service allows users to find the nearest or largest city information, as well as the timezone for any given geographical point defined by latitude and longitude. It converts GPS coordinates into readable place names, providing details such as county, city, distance, and population.",
+    "home_url": "https://rapidapi.com/Noggle/api/reverse-geocoding-and-geolocation-service/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetTimezone",
+            "url": "https://geocodeapi.p.rapidapi.com/GetTimezone",
+            "description": "Retrieves the local timezone for a specified geographical location using latitude and longitude, returning timezone information including the timezone name, ID, and current local time.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "longitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the location.",
+                    "default": "-74.40753570369408"
+                },
+                {
+                    "name": "latitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the location.",
+                    "default": "40.63380384389354"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "Country": {
+                        "type": "string"
+                    },
+                    "CountryId": {
+                        "type": "string"
+                    },
+                    "GMT_offset": {
+                        "type": "integer"
+                    },
+                    "LocalTime_Now": {
+                        "type": "string"
+                    },
+                    "TimeZoneId": {
+                        "type": "string"
+                    },
+                    "TimeZoneName": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

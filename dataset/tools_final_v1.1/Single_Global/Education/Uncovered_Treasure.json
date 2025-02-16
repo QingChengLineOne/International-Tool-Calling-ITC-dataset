@@ -1,0 +1,131 @@
+{
+    "tool_name": "Uncovered Treasure",
+    "tool_description": "The Uncovered Treasure API provides access to over 25,000 revealed truths from every book and chapter in the Bible, compiled by Phil Largent over the last 25 years.",
+    "home_url": "https://rapidapi.com/acg/api/uncovered-treasure/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/topics",
+            "url": "https://uncovered-treasure-v1.p.rapidapi.com/topics",
+            "description": "Retrieve a list of all topics available in the Uncovered Treasure API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "Optional JSONP callback for cross-domain requests.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/random",
+            "url": "https://uncovered-treasure-v1.p.rapidapi.com/random",
+            "description": "Get a random treasure from the Bible.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "Optional JSONP callback for cross-domain requests.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/verse/{verse}",
+            "url": "https://uncovered-treasure-v1.p.rapidapi.com/verse/{verse}",
+            "description": "Retrieve treasure based on a specific Bible verse.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "verse",
+                    "type": "STRING",
+                    "description": "The Bible verse in common English format, e.g., '1 Corinthians 1:5'.",
+                    "default": "Acts 21:8"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "Optional JSONP callback for cross-domain requests.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/search/{searchterm}",
+            "url": "https://uncovered-treasure-v1.p.rapidapi.com/search/{searchterm}",
+            "description": "Search for treasures by a specific term, such as 'wisdom'.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "searchterm",
+                    "type": "STRING",
+                    "description": "The term to search for in the treasures, e.g., 'God's plan'.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "Optional JSONP callback for cross-domain requests.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/today",
+            "url": "https://uncovered-treasure-v1.p.rapidapi.com/today",
+            "description": "Get the treasure of the day from the Bible.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "Optional JSONP callback for cross-domain requests.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/topic/{topic}",
+            "url": "https://uncovered-treasure-v1.p.rapidapi.com/topic/{topic}",
+            "description": "Retrieve entries related to a specific topic from the Bible.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "The topic to search for, e.g., 'seek God'.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "Optional JSONP callback for cross-domain requests.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

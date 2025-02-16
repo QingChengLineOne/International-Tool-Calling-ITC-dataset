@@ -1,0 +1,41 @@
+{
+    "tool_name": "Interesting Facts API",
+    "tool_description": "This API returns interesting facts about any specified topic. By providing the name of the topic, users can receive a list of facts generated using Chat GPT technology.",
+    "home_url": "https://rapidapi.com/usovigorok/api/interesting-facts-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Health Check Endpoint",
+            "url": "https://interesting-facts-api.p.rapidapi.com/",
+            "description": "This endpoint checks the health of the service and returns a successful response if the service is operational.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get list of interesting facts",
+            "url": "https://interesting-facts-api.p.rapidapi.com/api/{key}/{name}",
+            "description": "This endpoint returns a list of 5 interesting facts related to the specified topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "The API key required for authentication.",
+                    "default": "OPEN_AI_KEY"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name of the topic for which facts are requested.",
+                    "default": "berlin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

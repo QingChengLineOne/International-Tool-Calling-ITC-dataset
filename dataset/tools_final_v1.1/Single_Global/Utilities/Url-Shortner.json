@@ -1,0 +1,28 @@
+{
+    "tool_name": "Url-Shortner",
+    "tool_description": "lits.rocks is an API for URL shortening. Free to use, No advertising No registration. All shortened links are available for lifetime. Shorten your URLs now... Because small links are cool.",
+    "home_url": "https://rapidapi.com/drasticoder/api/url-shortner10/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "CREATE SHORT URL",
+            "url": "https://url-shortner10.p.rapidapi.com/lits.rocks/",
+            "description": "Creates a short URL from a long URL provided by the user.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET ALL URLs",
+            "url": "https://url-shortner10.p.rapidapi.com/lits.rocks/",
+            "description": "Retrieves all URLs shortened by the API, including the original long URL, the unique ID created by the API, and the shortened URL.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

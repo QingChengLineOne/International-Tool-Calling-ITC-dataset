@@ -1,0 +1,198 @@
+{
+    "tool_name": "OpenBlur",
+    "tool_description": "Unofficial Listings API for blur.io. This API allows users to retrieve listings, collections, and bid information from the Blur marketplace. It supports crypto payments and offers various request plans.",
+    "home_url": "https://rapidapi.com/openseatools/api/openblur/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Retrieve Listings",
+            "url": "https://openblur.p.rapidapi.com/listings",
+            "description": "Retrieve the top 100 listings from the Blur marketplace.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "The number of listings to retrieve.",
+                    "default": "20"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "pageNumber",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "orderBy",
+                    "type": "STRING",
+                    "description": "Sort listings by price in ascending or descending order.",
+                    "default": "ASC"
+                },
+                {
+                    "name": "contractAddress",
+                    "type": "STRING",
+                    "description": "The contract address of the NFT.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Collections",
+            "url": "https://openblur.p.rapidapi.com/collections",
+            "description": "Retrieve all collections available on Blur.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "The number of collections to retrieve.",
+                    "default": ""
+                },
+                {
+                    "name": "from",
+                    "type": "NUMBER",
+                    "description": "Starting point for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "slug",
+                    "type": "STRING",
+                    "description": "Slug for specific collection retrieval.",
+                    "default": ""
+                },
+                {
+                    "name": "contractAddress",
+                    "type": "STRING",
+                    "description": "The contract address of the collection.",
+                    "default": ""
+                },
+                {
+                    "name": "orderBy",
+                    "type": "STRING",
+                    "description": "Order the results in ascending or descending order.",
+                    "default": "desc"
+                },
+                {
+                    "name": "sortBy",
+                    "type": "STRING",
+                    "description": "Criteria to sort collections by various metrics.",
+                    "default": "volumeOneDay"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "isSuspicious",
+            "url": "https://openblur.p.rapidapi.com/isSuspicious",
+            "description": "Records the history of suspicious or stolen NFTs over time.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "contractAddress",
+                    "type": "STRING",
+                    "description": "The contract address of the NFT.",
+                    "default": ""
+                },
+                {
+                    "name": "afterID",
+                    "type": "NUMBER",
+                    "description": "ID to filter results after a certain point.",
+                    "default": ""
+                },
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "The number of records to retrieve.",
+                    "default": "50"
+                },
+                {
+                    "name": "beforeID",
+                    "type": "NUMBER",
+                    "description": "ID to filter results before a certain point.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Listing Events",
+            "url": "https://openblur.p.rapidapi.com/listingEvents",
+            "description": "Retrieve events related to listings on Blur.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pageSize",
+                    "type": "STRING",
+                    "description": "The number of events to retrieve.",
+                    "default": "20"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "marketplace",
+                    "type": "STRING",
+                    "description": "Specify the marketplace (BLUR or OPENSEA).",
+                    "default": ""
+                },
+                {
+                    "name": "beforeID",
+                    "type": "STRING",
+                    "description": "ID to filter results in descending order.",
+                    "default": ""
+                },
+                {
+                    "name": "contractAddress",
+                    "type": "STRING",
+                    "description": "The contract address of the NFT.",
+                    "default": ""
+                },
+                {
+                    "name": "afterID",
+                    "type": "STRING",
+                    "description": "ID to filter results in ascending order.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Bids",
+            "url": "https://openblur.p.rapidapi.com/bids",
+            "description": "Retrieve all bids placed on Blur.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "contractAddress",
+                    "type": "STRING",
+                    "description": "The contract address of the NFT.",
+                    "default": "0x231d3559aa848bf10366fb9868590f01d34bf240"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "from",
+                    "type": "NUMBER",
+                    "description": "Starting point for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "take",
+                    "type": "NUMBER",
+                    "description": "Number of bids to retrieve.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

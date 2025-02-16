@@ -1,0 +1,59 @@
+{
+    "tool_name": "Financial Statements",
+    "tool_description": "Get standardized balance sheet, income statement, and cash flow statement for global companies going back 5 years.",
+    "home_url": "https://rapidapi.com/alphawave/api/financial-statements/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Balance Sheet Statement",
+            "url": "https://financial-statements.p.rapidapi.com/api/v1/resources/balance-sheet",
+            "description": "Retrieve the balance sheet statement of a company for a specified year. All numbers are in thousands.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol of the company.",
+                    "default": "AAPL"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Cash Flow Statement",
+            "url": "https://financial-statements.p.rapidapi.com/api/v1/resources/cash-flow",
+            "description": "Retrieve the cash flow statement of a company for a specified year (ttm = Trailing Twelve Months). All numbers are in thousands.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol of the company.",
+                    "default": "AAPL"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Income Statement",
+            "url": "https://financial-statements.p.rapidapi.com/api/v1/resources/income-statement",
+            "description": "Retrieve the income statement of a company for a specified year (ttm = Trailing Twelve Months). All numbers are in thousands.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol of the company.",
+                    "default": "AAPL"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

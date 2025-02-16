@@ -1,0 +1,31 @@
+{
+    "tool_name": "酷狗VIP音乐",
+    "tool_description": "提供酷狗付费歌曲的点播服务",
+    "home_url": "https://api.aa1.cn/doc/kugou_music.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "酷狗VIP音乐点播API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_kgmusic.php",
+            "description": "通过该接口可以获取酷狗VIP音乐的内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "gm",
+                    "type": "string",
+                    "description": "歌曲搜索关键词，例如歌手名或歌曲名",
+                    "default": ""
+                },
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "歌曲列表页码，默认为1",
+                    "default": 1
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

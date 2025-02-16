@@ -1,0 +1,25 @@
+{
+    "tool_name": "Vessels",
+    "tool_description": "Track vessels with AIS data API",
+    "home_url": "https://rapidapi.com/neapi-neapi-default/api/vessels1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Latest vessel position",
+            "url": "https://vessels1.p.rapidapi.com/vessel/{mmsi}",
+            "description": "Retrieve the latest position of a vessel using its MMSI number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mmsi",
+                    "type": "string",
+                    "description": "The Maritime Mobile Service Identity number of the vessel.",
+                    "default": "244110352"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

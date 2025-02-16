@@ -1,0 +1,92 @@
+{
+    "tool_name": "de-boundaries-io",
+    "tool_description": "A Germany PostalCode Boundaries API that provides geographical boundaries for postal codes in Germany.",
+    "home_url": "https://rapidapi.com/VanitySoft/api/de-boundaries-io1/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "Query for Postal Code Boundary By location",
+            "url": "https://de-boundaries-io1.p.rapidapi.com/rest/v1/public/boundary/postalcode/within",
+            "description": "Retrieve the postal code boundary based on specified geographical coordinates (longitude and latitude).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "longitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the location for which the postal code boundary is queried.",
+                    "default": "11.5835"
+                },
+                {
+                    "name": "latitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the location for which the postal code boundary is queried.",
+                    "default": "48.1633"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for all State names.",
+            "url": "https://de-boundaries-io1.p.rapidapi.com/rest/v1/public/boundary/state/names",
+            "description": "Retrieve a list of all state names in Germany.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for Postal Code Boundary by postal code.",
+            "url": "https://de-boundaries-io1.p.rapidapi.com/rest/v1/public/boundary/postalcode/{postalcode}",
+            "description": "Retrieve the postal code boundary based on a specific postal code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postalcode",
+                    "type": "string",
+                    "description": "The postal code for which the boundary is queried.",
+                    "default": "80803"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for City Names by State",
+            "url": "https://de-boundaries-io1.p.rapidapi.com/rest/v1/public/boundary/city/state/{state}/names",
+            "description": "Retrieve a list of city names within a specified state.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "The name of the state for which city names are queried.",
+                    "default": "berlin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Query for City Boundary by Name",
+            "url": "https://de-boundaries-io1.p.rapidapi.com/rest/v1/public/boundary/city/{name}",
+            "description": "Retrieve the boundary of a city based on its name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name of the city for which the boundary is queried.",
+                    "default": "Karlsruhe"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

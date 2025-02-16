@@ -1,0 +1,334 @@
+{
+    "tool_name": "bulk",
+    "tool_description": "A comprehensive API tool for managing student records, including photo uploads and data processing.",
+    "home_url": "https://rapidapi.com/my-comp-my-comp-default/api/bulk3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Audit trail API",
+            "url": "https://bulk3.p.rapidapi.com/audittrail",
+            "description": "API to retrieve the audit trail for a specific record.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "trcking_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "transaction_id": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "Photo API",
+            "url": "https://bulk3.p.rapidapi.com/photos",
+            "description": "API to insert, update, or delete photos of students.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "photo",
+                    "type": "BINARY",
+                    "description": "The photo to be uploaded in .jpg, .jpeg, or .png format.",
+                    "default": "photo.jpg"
+                },
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "The year for which the photo is being uploaded.",
+                    "default": "2020"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "trcking_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "transaction_id": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "upload Bulk Photos API",
+            "url": "https://bulk3.p.rapidapi.com/uploadBulkPhotos",
+            "description": "API to upload bulk photos of students.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "photos_file",
+                    "type": "BINARY",
+                    "description": "The bulk photos to be uploaded in .zip format.",
+                    "default": "photo.zip"
+                },
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "The year for which the photos are being uploaded.",
+                    "default": "2020"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "trcking_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "transaction_id": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "Photo Update",
+            "url": "https://bulk3.p.rapidapi.com/photos/year/2020/photo_name/abc.jpg",
+            "description": "API to update the content of a photo with the same name.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "photo_name",
+                    "type": "STRING",
+                    "description": "The new name of the photograph.",
+                    "default": "abc.jpg"
+                },
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "The year associated with the photo.",
+                    "default": "2020"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "new_filename",
+                    "type": "STRING",
+                    "description": "The new filename for the photo.",
+                    "default": "2021"
+                },
+                {
+                    "name": "photo",
+                    "type": "BINARY",
+                    "description": "The photo to be replaced in .jpg, .jpeg, or .png format.",
+                    "default": "photo.jpg"
+                }
+            ],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "Authentication API",
+            "url": "https://bulk3.p.rapidapi.com/oauth",
+            "description": "API to authenticate and generate an authorized token required for accessing other APIs.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "customer_id",
+                    "type": "STRING",
+                    "description": "The customer ID for authentication.",
+                    "default": "UNIAADAEH12"
+                },
+                {
+                    "name": "customer_secret_key",
+                    "type": "STRING",
+                    "description": "The secret key for authentication.",
+                    "default": "KHJ458255KKKKKKK"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "access_token": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "token_type": {
+                        "type": "string"
+                    },
+                    "expires_in": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Publish API",
+            "url": "https://bulk3.p.rapidapi.com/publish",
+            "description": "API to publish or unpublish records on DigiLocker.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "year",
+                    "type": "NUMBER",
+                    "description": "The year for which records are to be published.",
+                    "default": "2021"
+                }
+            ],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "Uploading API",
+            "url": "https://bulk3.p.rapidapi.com/uploadFileRecords",
+            "description": "API for uploading student records in CSV format in bulk.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "year_of_exam",
+                    "type": "STRING",
+                    "description": "Year of the exam for which the file is uploaded.",
+                    "default": "2021"
+                },
+                {
+                    "name": "userfile",
+                    "type": "BINARY",
+                    "description": "The CSV file to be uploaded.",
+                    "default": ""
+                },
+                {
+                    "name": "doc_type",
+                    "type": "STRING",
+                    "description": "Document type for the uploaded file.",
+                    "default": "DGCER"
+                },
+                {
+                    "name": "institution_type",
+                    "type": "STRING",
+                    "description": "Type of institution for which data is uploaded.",
+                    "default": "University"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "trcking_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "transaction_id": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "process File Records",
+            "url": "https://bulk3.p.rapidapi.com/processFileRecords",
+            "description": "API for processing student records uploaded in CSV format.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "userfile",
+                    "type": "STRING",
+                    "description": "The CSV file to be processed.",
+                    "default": "valid_file_2.zip"
+                },
+                {
+                    "name": "institution_type",
+                    "type": "STRING",
+                    "description": "Type of institution for which data is processed.",
+                    "default": "University"
+                },
+                {
+                    "name": "doc_type",
+                    "type": "STRING",
+                    "description": "Document type for the uploaded file.",
+                    "default": "DGCER"
+                },
+                {
+                    "name": "year_of_exam",
+                    "type": "STRING",
+                    "description": "Year of the exam for which the file is processed.",
+                    "default": "2020"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "message": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                }
+            }
+        },
+        {
+            "name": "Data processing API",
+            "url": "https://bulk3.p.rapidapi.com/processRecords/institute_type/Disability",
+            "description": "API for processing data based on the type of institute.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "institute_type",
+                    "type": "STRING",
+                    "description": "The type of the institute.",
+                    "default": "Disability"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "Unpublish API",
+            "url": "https://bulk3.p.rapidapi.com/unpublish",
+            "description": "API to unpublish records on DigiLocker.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "year",
+                    "type": "NUMBER",
+                    "description": "The year for which records are to be unpublished.",
+                    "default": "2021"
+                }
+            ],
+            "statuscode": 1,
+            "schema": "\""
+        }
+    ]
+}

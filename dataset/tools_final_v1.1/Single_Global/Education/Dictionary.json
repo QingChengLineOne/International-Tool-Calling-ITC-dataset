@@ -1,0 +1,86 @@
+{
+    "tool_name": "Dictionary",
+    "tool_description": "Dictionaries API gives you access to our world-renowned dictionary data, including definitions, translations, synonyms, and audio pronunciations.",
+    "home_url": "https://rapidapi.com/collectapi/api/dictionary35/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "wordSearchEnglish",
+            "url": "https://dictionary35.p.rapidapi.com/wordSearchEnglish",
+            "description": "With this service you can learn the meaning of English words from Oxford dictionary.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Enter the word you want to search for.",
+                    "default": "book"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "wordSearchTurkish",
+            "url": "https://dictionary35.p.rapidapi.com/wordSearchTurkish",
+            "description": "With this service you can learn the meaning of words from Turkish dictionary.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Enter the word you want to search for.",
+                    "default": "kalem"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

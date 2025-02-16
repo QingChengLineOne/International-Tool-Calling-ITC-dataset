@@ -1,0 +1,130 @@
+{
+    "tool_name": "Complete Study Bible",
+    "tool_description": "The most COMPLETE Bible study API available! It provides access to Strong's numbers, locations, dictionaries, and more for in-depth biblical study.",
+    "home_url": "https://rapidapi.com/teachjesusapp/api/complete-study-bible/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search Strongs Number API",
+            "url": "https://complete-study-bible.p.rapidapi.com/search-strongs/{strongs_number}/{include_lxx}/",
+            "description": "Returns every verse containing the supplied Strong's number. The include_lxx boolean option allows searching the Septuagint translation of the Old Testament when searching for a Greek word, facilitating connections between New Testament words and Old Testament concepts.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "include-lxx",
+                    "type": "BOOLEAN",
+                    "description": "Indicates whether to include the Septuagint in the search.",
+                    "default": "true"
+                },
+                {
+                    "name": "Strongs-number",
+                    "type": "string",
+                    "description": "The Strong's number to search for.",
+                    "default": "G4931"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Strongs Number Detail API",
+            "url": "https://complete-study-bible.p.rapidapi.com/strongs-detail/{comma_separated_strongs_numbers}/",
+            "description": "Receives a Strong's Number or a comma-separated list of Strong's Numbers (limit 3 at a time) and returns detailed information for each number, including Greek and Hebrew definitions, phonetic pronunciation, and references from various lexicons.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "comma-separated-strongs-numbers",
+                    "type": "string",
+                    "description": "A comma-separated list of Strong's numbers to retrieve details for.",
+                    "default": "G4931,G5000"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Full Chapter API",
+            "url": "https://complete-study-bible.p.rapidapi.com/{book}/{chapter}/{translation}/",
+            "description": "Returns a specified chapter of a book in the Bible. The book parameter accepts either the full book name or a 3-letter abbreviation. Translation options include KJV, KJV-Strongs, ORIG, and LXX.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "chapter",
+                    "type": "NUMBER",
+                    "description": "The chapter number to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "translation",
+                    "type": "string",
+                    "description": "The translation of the Bible to use.",
+                    "default": "KJV"
+                },
+                {
+                    "name": "book",
+                    "type": "string",
+                    "description": "The name or abbreviation of the book.",
+                    "default": "John"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "chapter": {
+                        "type": "integer"
+                    },
+                    "pk": {
+                        "type": "integer"
+                    },
+                    "book": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "abbrev": {
+                                "type": "string"
+                            },
+                            "web_name": {
+                                "type": "string"
+                            },
+                            "testament": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "verses": {
+                        "type": "array"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Passage of the Day API",
+            "url": "https://complete-study-bible.p.rapidapi.com/daily-passage/",
+            "description": "Responds with a passage of the day from the KJV translation, which can be a single verse or multiple verses. Passages are pre-selected and updated every 24 hours.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Book List and Chapter Counts API",
+            "url": "https://complete-study-bible.p.rapidapi.com/books/",
+            "description": "Lists all books of the Bible, their abbreviations, and chapter counts. Useful for reference in chapter selection.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

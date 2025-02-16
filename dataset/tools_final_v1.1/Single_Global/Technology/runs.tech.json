@@ -1,0 +1,52 @@
+{
+    "tool_name": "runs.tech",
+    "tool_description": "Find the technologies that power a company.",
+    "home_url": "https://rapidapi.com/metaapi-metaapi-default/api/runs-tech/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getTechDomains",
+            "url": "https://runs-tech.p.rapidapi.com/v1/tech/g-suite",
+            "description": "Retrieve the domains that use a specific technology.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tech",
+                    "type": "STRING",
+                    "description": "The technology to search for.",
+                    "default": "g-suite"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getAllTech",
+            "url": "https://runs-tech.p.rapidapi.com/v1/tech",
+            "description": "Returns a list of all of the technology that runs.tech can find.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getDomainTech",
+            "url": "https://runs-tech.p.rapidapi.com/v1/domain/{domain}",
+            "description": "Retrieve domain technology information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain to retrieve technology information for.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "404 Not Found",
+            "schema": {}
+        }
+    ]
+}

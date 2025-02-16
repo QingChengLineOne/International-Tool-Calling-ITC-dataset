@@ -1,0 +1,25 @@
+{
+    "tool_name": "License Plate Recognition",
+    "tool_description": "License plate recognition involves capturing photographic video or images of license plates, whereby they are processed by a series of algorithms that are able to provide an alphanumeric conversion of the captured license plate images into a text entry.",
+    "home_url": "https://rapidapi.com/zyanyatech1/api/license-plate-recognition/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/recognize_url",
+            "url": "https://zyanyatech1-license-plate-recognition-v1.p.rapidapi.com/recognize_url",
+            "description": "Send an image URL with the license plate you wish to obtain.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "image_url",
+                    "type": "STRING",
+                    "description": "An image URL containing the license plate/vehicle you wish to obtain the data.",
+                    "default": "http://eslamoda.com/wp-content/uploads/sites/2/2014/11/america-carro-600x600.jpg"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

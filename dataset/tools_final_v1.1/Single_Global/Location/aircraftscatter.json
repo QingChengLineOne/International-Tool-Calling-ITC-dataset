@@ -1,0 +1,31 @@
+{
+    "tool_name": "aircraftscatter",
+    "tool_description": "Aircraft Scatter API by ADSBexchange.com provides real-time data on aircraft flying above 10,000 feet within a specified radius.",
+    "home_url": "https://rapidapi.com/adsbx/api/aircraftscatter/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Aircraft Scatter Data",
+            "url": "https://aircraftscatter.p.rapidapi.com/lat/{lat}/lon/{lon}/",
+            "description": "Returns all aircraft above 10,000 feet within 1000 kilometres from specified latitude and longitude.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "The latitude coordinate for the location to query.",
+                    "default": "51.533"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "The longitude coordinate for the location to query.",
+                    "default": "-0.0926"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

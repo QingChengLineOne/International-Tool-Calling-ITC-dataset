@@ -1,0 +1,28 @@
+{
+    "tool_name": "Correo Argentino",
+    "tool_description": "Calcula gratis el costo de envio de correo argentino. Obtene las sucursales de correo argentino en todo el pais.",
+    "home_url": "https://rapidapi.com/brunoaramburu/api/correo-argentino1/",
+    "country": "Argentina",
+    "api_list": [
+        {
+            "name": "Calcular peso volumetrico",
+            "url": "https://correo-argentino1.p.rapidapi.com/calcularPesoVol",
+            "description": "Calculo de peso volumetrico. Se calcula como (largo * ancho * alto) / 5000. En el body se deben enviar: - Largo en cm: largo - Ancho en cm: ancho - Alto en cm: alto",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Calcular costo de envio",
+            "url": "https://correo-argentino1.p.rapidapi.com/calcularPrecio",
+            "description": "Calculo de costo de envio de paqueteria con correo argentino. Retorna el costo de envio a sucursal y a domicilio. En el body se deben enviar: - Codigo postal de origen: cpOrigen - Codigo postal de destino: cpDestino - Codigo ISO 3166-2 de provincia de origen: provinciaOrigen - Codigo ISO 3166-2 de provincia de destino: provinciaDestino - Peso real o volumetrico (el que sea mayor): peso",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

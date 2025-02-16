@@ -1,0 +1,44 @@
+{
+    "tool_name": "Vibrant DNS",
+    "tool_description": "Get DNS record information for a specified domain.",
+    "home_url": "https://rapidapi.com/vibrant-api-vibrant-api-default/api/vibrant-dns/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get DNS Records",
+            "url": "https://vibrant-dns.p.rapidapi.com/dns/get",
+            "description": "Retrieve the DNS records for a given domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which to retrieve DNS records.",
+                    "default": "rapidapi.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "record_type",
+                    "type": "STRING",
+                    "description": "Specify the type of DNS records to retrieve. Can be a comma-separated string with options: a, ns, mx, txt, cname. Example: a,mx,cname.",
+                    "default": "a,mx"
+                },
+                {
+                    "name": "response_type_seperator",
+                    "type": "STRING",
+                    "description": "Defines the separator for the response when response_type is set to target. Default is newline, but can be set to comma or pipe.",
+                    "default": ","
+                },
+                {
+                    "name": "response_type",
+                    "type": "STRING",
+                    "description": "Determines the format of the response. If set to target, it will return either ip, txt, or target of the requested DNS record type.",
+                    "default": "target"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

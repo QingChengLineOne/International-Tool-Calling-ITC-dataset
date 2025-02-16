@@ -1,0 +1,31 @@
+{
+    "tool_name": "免费歌曲API",
+    "tool_description": "收集所有免费的API，提供部分免费歌曲信息",
+    "home_url": "https://www.free-api.com/doc/643",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "免费歌曲查询",
+            "url": "https://api.cenguigui.cn/api/music/qianqian_music.php",
+            "description": "查询特定歌手的免费歌曲信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "歌手名",
+                    "default": "张杰"
+                },
+                {
+                    "name": "n",
+                    "type": "integer",
+                    "description": "返回歌曲数量",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

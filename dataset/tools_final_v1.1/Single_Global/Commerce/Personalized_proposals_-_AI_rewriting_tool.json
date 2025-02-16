@@ -1,0 +1,18 @@
+{
+    "tool_name": "Personalized proposals - AI rewriting tool",
+    "tool_description": "AI analyzes an individual's unique personality traits and crafts a persuasive message that is guaranteed to convert the recipient into a customer.",
+    "home_url": "https://rapidapi.com/admireone/api/personalized-proposals-ai-rewriting-tool/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "create_proposal_personal",
+            "url": "https://personalized-proposals-ai-rewriting-tool.p.rapidapi.com/",
+            "description": "Create effective proposals that drive results and save you time.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

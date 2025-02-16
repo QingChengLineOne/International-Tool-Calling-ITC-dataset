@@ -1,0 +1,18 @@
+{
+    "tool_name": "Google Trends US",
+    "tool_description": "Gives the list of trending search results in the United States at the current time.",
+    "home_url": "https://rapidapi.com/truelife-truelife-default/api/google-trends-us/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get Trending Result",
+            "url": "https://google-trends-us.p.rapidapi.com/get-trending-results",
+            "description": "Gives you an array of trending search results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

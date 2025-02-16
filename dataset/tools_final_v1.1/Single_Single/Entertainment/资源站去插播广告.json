@@ -1,0 +1,25 @@
+{
+    "tool_name": "资源站去插播广告",
+    "tool_description": "支持去插播广告的多个资源站API接口",
+    "home_url": "https://api.aa1.cn/doc/zyzqcb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "资源站去插播广告接口",
+            "url": "https://xxx.suxun.site/zyzqcb.php?url=",
+            "description": "用于去除特定资源站视频播放前的插播广告",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "资源站视频播放地址，需要去除广告的链接",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

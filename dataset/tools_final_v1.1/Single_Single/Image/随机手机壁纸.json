@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机手机壁纸API",
+    "tool_description": "随机输出一张4k壁纸，输出信息为图片直链",
+    "home_url": "https://api.aa1.cn/doc/mo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机手机壁纸API",
+            "url": "https://api.52vmy.cn/api/img/tu/mo",
+            "description": "获取随机手机壁纸",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

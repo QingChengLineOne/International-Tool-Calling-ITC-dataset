@@ -1,0 +1,25 @@
+{
+    "tool_name": "Busy and Popular Times",
+    "tool_description": "This API provides access to Google popular times data, allowing users to see how busy a location typically is at different times of the day.",
+    "home_url": "https://rapidapi.com/rodolfojnn/api/busy-and-popular-times/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search a Place",
+            "url": "https://busy-and-popular-times.p.rapidapi.com/search/{query}",
+            "description": "Search for a location using the same query format as Google. The API will return data only if the search yields a 'Popular Times' graph.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "string",
+                    "description": "The name and address of the location you want to search for.",
+                    "default": "Walmart+8400+Coral+Way+Miami+FL+33155"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

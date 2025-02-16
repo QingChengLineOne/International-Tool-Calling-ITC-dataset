@@ -1,0 +1,25 @@
+{
+    "tool_name": "AI绘画",
+    "tool_description": "由PHP开发的AI绘画接口",
+    "home_url": "https://api.aa1.cn/doc/sd-draw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI绘画API",
+            "url": "https://ai.cloudroo.top/draw/",
+            "description": "使用此接口可以生成AI绘画作品",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "string",
+                    "description": "绘画主题，如sea表示海景",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

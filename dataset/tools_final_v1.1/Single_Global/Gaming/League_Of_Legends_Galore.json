@@ -1,0 +1,172 @@
+{
+    "tool_name": "League Of Legends Galore",
+    "tool_description": "Get detailed information about players, champions, and more related to League of Legends. Check the About page for more details on every API available!",
+    "home_url": "https://rapidapi.com/maconnell.balderas/api/league-of-legends-galore/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Player Details",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/getPlayerRank",
+            "description": "Fetch details of a player based on their username. Note that the username is case-sensitive.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The username of the player.",
+                    "default": "CoreJJ"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region of the player.",
+                    "default": "na"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Random Champion",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/randomChamp",
+            "description": "Randomly selects and returns a single champion from the list of champions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Champion Tier List",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/getChampTierList",
+            "description": "Retrieve either a complete champion tier list or a specific tier list section based on your request.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "rank",
+                    "type": "STRING",
+                    "description": "The rank to filter the tier list.",
+                    "default": "master"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region for the tier list.",
+                    "default": "kr"
+                },
+                {
+                    "name": "tier",
+                    "type": "STRING",
+                    "description": "The specific tier level.",
+                    "default": "s+"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All League Ranks",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/getLoLRanks",
+            "description": "Get a comprehensive list of League of Legends ranks and their corresponding player base.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search For A Champion",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/selectChamp",
+            "description": "Search through the champion list to return a specific champion or a list of champions based on your criteria.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "releaseDate",
+                    "type": "STRING",
+                    "description": "Filter by the champion's release date.",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the champion to search for.",
+                    "default": "zed"
+                },
+                {
+                    "name": "resource",
+                    "type": "STRING",
+                    "description": "The resource used by the champion (e.g., mana, energy).",
+                    "default": ""
+                },
+                {
+                    "name": "rp",
+                    "type": "STRING",
+                    "description": "The amount of RP (Riot Points) the champion costs.",
+                    "default": ""
+                },
+                {
+                    "name": "blueEssence",
+                    "type": "STRING",
+                    "description": "The amount of Blue Essence the champion costs.",
+                    "default": ""
+                },
+                {
+                    "name": "attribute",
+                    "type": "STRING",
+                    "description": "Filter by champion attributes (e.g., Assassin, Tank).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Random Item",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/randomItem",
+            "description": "Randomly selects and returns a single item from the list of items.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search For A Item",
+            "url": "https://league-of-legends-galore.p.rapidapi.com/api/selectItem",
+            "description": "Search through the item list to return a specific item or a list of items based on your criteria.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "champSynergy",
+                    "type": "STRING",
+                    "description": "Filter items by champion synergy.",
+                    "default": ""
+                },
+                {
+                    "name": "itemSynergy",
+                    "type": "STRING",
+                    "description": "Filter items by synergy with other items.",
+                    "default": ""
+                },
+                {
+                    "name": "price",
+                    "type": "STRING",
+                    "description": "Filter items based on their price.",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the item to search for.",
+                    "default": "sword"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

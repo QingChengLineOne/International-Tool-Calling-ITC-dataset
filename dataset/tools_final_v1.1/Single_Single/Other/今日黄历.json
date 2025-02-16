@@ -1,0 +1,25 @@
+{
+    "tool_name": "今日黄历",
+    "tool_description": "简简单单的黄历API",
+    "home_url": "https://api.aa1.cn/doc/dxhy-hl.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "黄历查询API",
+            "url": "https://jx.iqfk.top/api/huangli.php",
+            "description": "获取特定日期的黄历信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "查询的日期，格式为YYYY-MM-DD",
+                    "default": "当前日期"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

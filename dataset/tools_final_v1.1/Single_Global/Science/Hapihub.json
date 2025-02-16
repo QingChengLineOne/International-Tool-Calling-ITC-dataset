@@ -1,0 +1,38 @@
+{
+    "tool_name": "Hapihub",
+    "tool_description": "Healthcare infrastructure for compliance, interoperability, & building applications",
+    "home_url": "https://rapidapi.com/hapihub-hapihub-default/api/hapihub/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Fixtures",
+            "url": "https://hapihub.p.rapidapi.com/fixtures",
+            "description": "Fetch a list of fixtures related to healthcare applications.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Version metadata",
+            "url": "https://hapihub.p.rapidapi.com/version",
+            "description": "Retrieve the server's version metadata to understand the current API version.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Healthcheck",
+            "url": "https://hapihub.p.rapidapi.com/health",
+            "description": "Service healthcheck endpoint to verify the operational status of the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

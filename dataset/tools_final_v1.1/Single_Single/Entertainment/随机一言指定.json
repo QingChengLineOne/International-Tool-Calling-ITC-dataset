@@ -1,0 +1,37 @@
+{
+    "tool_name": "随机一言[指定]",
+    "tool_description": "指定一个关键词，随机返回一条相关的经典语句。包括电影台词，名言警句，古诗词等。",
+    "home_url": "https://api.aa1.cn/doc/ssapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机一言[指定] API",
+            "url": "https://cn.apihz.cn/api/yiyan/ssapi.php",
+            "description": "获取指定关键词的随机一言",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API接口盒子提供的唯一标识ID，用于验证身份。",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API接口盒子提供的密钥，用于验证身份。",
+                    "default": "88888888"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "用户指定的关键词，用于获取相关经典语句。",
+                    "default": "功夫"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

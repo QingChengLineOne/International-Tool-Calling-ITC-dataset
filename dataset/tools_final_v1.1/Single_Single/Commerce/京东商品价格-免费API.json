@@ -1,0 +1,25 @@
+{
+    "tool_name": "京东商品价格-免费API",
+    "tool_description": "通过指定SKU ID查询京东商品的价格信息",
+    "home_url": "https://www.free-api.com/doc/555",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "京东商品价格查询",
+            "url": "https://p.3.cn/prices/mgets",
+            "description": "查询指定SKU的商品价格",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "skuIds",
+                    "type": "string",
+                    "description": "商品的SKU ID，用于查询价格",
+                    "default": "100026761926"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

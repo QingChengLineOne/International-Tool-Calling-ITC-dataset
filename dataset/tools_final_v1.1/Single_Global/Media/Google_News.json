@@ -1,0 +1,66 @@
+{
+    "tool_name": "Google News",
+    "tool_description": "Provide real-time news and articles sourced from Google News.",
+    "home_url": "https://rapidapi.com/bfd-id/api/google-news13/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Supported languages and regions",
+            "url": "https://google-news13.p.rapidapi.com/languageRegions",
+            "description": "This endpoint is used to retrieve a list of supported languages and regions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "success",
+            "schema": {}
+        },
+        {
+            "name": "Suggest",
+            "url": "https://google-news13.p.rapidapi.com/search/suggest",
+            "description": "This endpoint is used to get autocomplete suggestions or query predictions as a user types a search query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The mandatory parameter to specify the search term",
+                    "default": "facebook"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lr",
+                    "type": "STRING",
+                    "description": "Language region, e.g., en-US",
+                    "default": "en-US"
+                }
+            ],
+            "statuscode": "success",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://google-news13.p.rapidapi.com/search",
+            "description": "This endpoint is used to search for news from Google News based on keywords.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The mandatory parameter to specify the search term",
+                    "default": "facebook"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lr",
+                    "type": "STRING",
+                    "description": "Language region, e.g., en-US",
+                    "default": "en-US"
+                }
+            ],
+            "statuscode": "success",
+            "schema": {}
+        }
+    ]
+}

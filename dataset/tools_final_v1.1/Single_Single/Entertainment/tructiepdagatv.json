@@ -1,0 +1,18 @@
+{
+    "tool_name": "tructiepdagatv",
+    "tool_description": "Trực tiếp đá gà TV là website xem đá gà trực tiếp hôm nay, xem đá gà campuchia, đá gà cựa sắt thomo và chia sẻ thông tin, kinh nghiệm bổ ích về việc nuôi gà cũng như kiến thức nuôi gà hiệu quả. Các giải đá gà lớn nhỏ từ đá gà tre, gà chọi và nhiều giải khác. Hãy nhanh chóng truy cập tructiepdaga.tv để xem ngay các trận đá gà hấp dẫn nhất trong ngày.",
+    "home_url": "https://rapidapi.com/tructiepdagatv/api/tructiepdagatv/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Trực tiếp đá gà TV",
+            "url": "https://tructiepdagatv.p.rapidapi.com/",
+            "description": "API cho phép người dùng truy cập thông tin về các trận đá gà trực tiếp, bao gồm các giải đấu từ đá gà tre đến gà chọi.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

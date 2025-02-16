@@ -1,0 +1,25 @@
+{
+    "tool_name": "musicApp",
+    "tool_description": "A music application that allows users to search for and retrieve music tracks.",
+    "home_url": "https://rapidapi.com/soneryildirimx/api/musicapp8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "track",
+            "url": "https://musicapp8.p.rapidapi.com/",
+            "description": "Retrieve information about a specific music track based on a search query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query for the music track.",
+                    "default": "test"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

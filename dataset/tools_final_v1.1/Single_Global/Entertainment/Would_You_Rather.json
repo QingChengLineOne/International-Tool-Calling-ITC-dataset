@@ -1,0 +1,18 @@
+{
+    "tool_name": "Would You Rather",
+    "tool_description": "Get random fun 'Would You Rather' questions that are up to date! Data is constantly being updated/added!",
+    "home_url": "https://rapidapi.com/thunderapi-thunderapi-default/api/would-you-rather/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "question",
+            "url": "https://would-you-rather.p.rapidapi.com/wyr/random",
+            "description": "Get a random 'Would You Rather' question.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

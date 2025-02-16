@@ -1,0 +1,18 @@
+{
+    "tool_name": "游戏图片API",
+    "tool_description": "随机返回游戏相关图片的API",
+    "home_url": "https://api.aa1.cn/doc/game.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "游戏图片接口",
+            "url": "https://api.52vmy.cn/api/img/tu/game",
+            "description": "随机获取一张游戏图片",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

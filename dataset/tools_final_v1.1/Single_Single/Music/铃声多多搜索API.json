@@ -1,0 +1,38 @@
+{
+    "tool_name": "铃声多多搜索API",
+    "tool_description": "铃声多的多搜索API",
+    "home_url": "https://api.aa1.cn/doc/lingshengduoduosearch.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "铃声多多搜索接口",
+            "url": "https://v2.api-m.com/api/kugousearch",
+            "description": "通过关键词搜索铃声",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "music",
+                    "type": "string",
+                    "description": "搜索关键词，如歌曲名或歌手名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "分页页码，默认为1",
+                    "default": 1
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每页返回数据条数，默认为20",
+                    "default": 20
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

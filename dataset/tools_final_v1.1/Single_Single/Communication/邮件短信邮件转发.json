@@ -1,0 +1,97 @@
+{
+    "tool_name": "邮件短信-邮件转发",
+    "tool_description": "通过SMTP方式发送邮件的API接口，支持填写邮件账号及内容。",
+    "home_url": "https://api.aa1.cn/doc/zfapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "邮件转发接口",
+            "url": "https://cn.apihz.cn/api/mail/zfapi.php",
+            "description": "使用SMTP协议发送邮件的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥，用于验证请求者身份",
+                    "default": "88888888"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "发送者名称",
+                    "default": "联盟平台"
+                },
+                {
+                    "name": "tomail",
+                    "type": "string",
+                    "description": "收件人邮箱地址",
+                    "default": "2813858888@qq.com"
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "邮件标题",
+                    "default": "测试邮件"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "邮件正文内容",
+                    "default": "测试邮件内容"
+                },
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "邮件编码格式，如UTF-8",
+                    "default": "UTF-8"
+                },
+                {
+                    "name": "port",
+                    "type": "int",
+                    "description": "SMTP服务器端口号",
+                    "default": 25
+                },
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "SMTP服务器IP地址",
+                    "default": "mail.erguanmingmin.com"
+                },
+                {
+                    "name": "secure",
+                    "type": "string",
+                    "description": "连接安全类型，如tls",
+                    "default": "tls"
+                },
+                {
+                    "name": "idmail",
+                    "type": "string",
+                    "description": "发送者邮箱地址",
+                    "default": "mail@erguanmingmin.com"
+                },
+                {
+                    "name": "pwd",
+                    "type": "string",
+                    "description": "发送者邮箱密码",
+                    "default": "r5415tyul152t..."
+                },
+                {
+                    "name": "usermail",
+                    "type": "string",
+                    "description": "发送者邮箱地址",
+                    "default": "mail@erguanmingmin.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

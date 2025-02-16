@@ -1,0 +1,106 @@
+{
+    "tool_name": "Smart EMI Calculator",
+    "tool_description": "The Smart EMI Calculator API is a powerful and easy-to-use tool for calculating the Equated Monthly Installment (EMI) for loans, as well as providing a detailed breakdown of loan repayment plans on a monthly and yearly basis.",
+    "home_url": "https://rapidapi.com/arjansolanki25-xtEh4AYAGOi/api/smart-emi-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Calculate EMI",
+            "url": "https://smart-emi-calculator.p.rapidapi.com/",
+            "description": "This API takes the loan amount, interest rate, and loan term as input, and returns the calculated EMI along with a detailed breakdown of the EMI for each year.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "loan_term",
+                    "type": "NUMBER",
+                    "description": "The duration of the loan in years.",
+                    "default": "3"
+                },
+                {
+                    "name": "interest_rate",
+                    "type": "NUMBER",
+                    "description": "The annual interest rate for the loan.",
+                    "default": "6"
+                },
+                {
+                    "name": "loan_amount",
+                    "type": "NUMBER",
+                    "description": "The total amount of the loan.",
+                    "default": "50000"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The start date for the loan repayment schedule.",
+                    "default": "2023-01-01"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "emi": {
+                        "type": "integer"
+                    },
+                    "total_interest": {
+                        "type": "integer"
+                    },
+                    "total_payment": {
+                        "type": "integer"
+                    },
+                    "emi_breakdown": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "year": {
+                                    "type": "string"
+                                },
+                                "yearly_emi": {
+                                    "type": "integer"
+                                },
+                                "yearly_principal": {
+                                    "type": "integer"
+                                },
+                                "yearly_interest": {
+                                    "type": "integer"
+                                },
+                                "yearly_remaining_loan_amount": {
+                                    "type": "integer"
+                                },
+                                "monthly_breakdown": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "date": {
+                                                "type": "string"
+                                            },
+                                            "month": {
+                                                "type": "string"
+                                            },
+                                            "monthly_emi": {
+                                                "type": "integer"
+                                            },
+                                            "monthly_principal": {
+                                                "type": "integer"
+                                            },
+                                            "monthly_interest": {
+                                                "type": "integer"
+                                            },
+                                            "remaining_loan_amount": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

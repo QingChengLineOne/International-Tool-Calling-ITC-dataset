@@ -1,0 +1,55 @@
+{
+    "tool_name": "Dad Jokes_v2",
+    "tool_description": "This API returns a wide range of dad jokes. New jokes are added monthly.",
+    "home_url": "https://rapidapi.com/almann/api/dad-jokes7/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/dad-jokes/joke-of-the-day",
+            "url": "https://dad-jokes7.p.rapidapi.com/dad-jokes/joke-of-the-day",
+            "description": "Returns the joke of the day. Each new UTC day, the API will return a new joke. During the UTC day, the API returns the same joke.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/dad-jokes/search",
+            "url": "https://dad-jokes7.p.rapidapi.com/dad-jokes/search",
+            "description": "Search for a joke by a keyword. The keyword will be used as is in the search. The search is not case-sensitive and returns a maximum of 3 records per request.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "'text' query parameter is required and should be more than 3 characters long.",
+                    "default": "dad"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/dad-jokes/random",
+            "url": "https://dad-jokes7.p.rapidapi.com/dad-jokes/random",
+            "description": "Returns a random dad joke.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/dad-jokes/health",
+            "url": "https://dad-jokes7.p.rapidapi.com/dad-jokes/health",
+            "description": "Returns the health status of the API, including the current UTC time.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

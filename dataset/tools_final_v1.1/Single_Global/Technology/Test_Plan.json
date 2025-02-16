@@ -1,0 +1,28 @@
+{
+    "tool_name": "Test Plan",
+    "tool_description": "A tool designed for testing various functionalities through API calls.",
+    "home_url": "https://rapidapi.com/RapidSri/api/test-plan/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "translate",
+            "url": "https://test-plan.p.rapidapi.com/translate",
+            "description": "Translates text from one language to another.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "asdf",
+            "url": "https://test-plan.p.rapidapi.com/asdf",
+            "description": "A placeholder API endpoint for demonstration purposes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

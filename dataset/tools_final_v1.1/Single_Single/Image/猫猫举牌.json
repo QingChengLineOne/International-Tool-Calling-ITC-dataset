@@ -1,0 +1,25 @@
+{
+    "tool_name": "猫猫举牌",
+    "tool_description": "输入文字，生成一张猫羽雫举牌的图片",
+    "home_url": "https://api.aa1.cn/doc/mmjp_sr.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "猫猫举牌API",
+            "url": "https://api.s1f.top/meme/maomaojupai",
+            "description": "通过文字生成猫羽雫举牌图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要生成的举牌文字内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

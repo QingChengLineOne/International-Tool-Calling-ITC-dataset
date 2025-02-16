@@ -1,0 +1,56 @@
+{
+    "tool_name": "360MiQ",
+    "tool_description": "Stock Market Breadth API for the US and Global Stock Markets",
+    "home_url": "https://rapidapi.com/mchanlg/api/360miq1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Market Breadth",
+            "url": "https://360miq1.p.rapidapi.com/",
+            "description": "Provides market breadth data for various stock exchanges, allowing users to analyze market trends and performance.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "exchange",
+                    "type": "STRING",
+                    "description": "The stock exchange to query data from. Options include NYSE, Nasdaq, TSX, LSE, ASX, NSE, TYO, HKEX, SHSE, SZSE.",
+                    "default": "NYSE"
+                },
+                {
+                    "name": "series",
+                    "type": "STRING",
+                    "description": "The specific market breadth series to retrieve. Options include various moving averages and indicators.",
+                    "default": "C>MA50"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "bar",
+                    "type": "NUMBER",
+                    "description": "Number of the most recent bar to retrieve.",
+                    "default": "10"
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "The format of the response data. Options are CSV or JSON.",
+                    "default": "JSON"
+                },
+                {
+                    "name": "to",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The end date for the data retrieval.",
+                    "default": "2023-01-31"
+                },
+                {
+                    "name": "from",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The start date for the data retrieval.",
+                    "default": "2023-01-01"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

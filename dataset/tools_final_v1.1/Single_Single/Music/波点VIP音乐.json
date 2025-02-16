@@ -1,0 +1,31 @@
+{
+    "tool_name": "波点VIP音乐",
+    "tool_description": "提供波点音乐付费歌曲的API，返回无损音频",
+    "home_url": "https://api.aa1.cn/doc/bodian_music.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "波点VIP音乐API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_BDbdmusic.php",
+            "description": "访问波点VIP音乐的API，获取付费歌曲的无损音频",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "gm",
+                    "type": "string",
+                    "description": "歌手名称，用于搜索特定歌手的歌曲",
+                    "default": ""
+                },
+                {
+                    "name": "n",
+                    "type": "string",
+                    "description": "歌曲名称，用于搜索特定歌曲",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

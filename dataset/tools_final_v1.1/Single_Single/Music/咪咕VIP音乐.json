@@ -1,0 +1,31 @@
+{
+    "tool_name": "咪咕VIP音乐",
+    "tool_description": "提供咪咕音乐VIP歌曲的点播服务",
+    "home_url": "https://api.aa1.cn/doc/mgmusic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "咪咕VIP音乐点播API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_mgmusic.php",
+            "description": "用于点播咪咕音乐VIP歌曲",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "gm",
+                    "type": "string",
+                    "description": "歌曲名称或关键词",
+                    "default": ""
+                },
+                {
+                    "name": "n",
+                    "type": "string",
+                    "description": "可选参数，用于进一步筛选或排序",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

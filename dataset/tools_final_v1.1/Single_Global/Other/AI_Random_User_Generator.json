@@ -1,0 +1,37 @@
+{
+    "tool_name": "AI Random User Generator",
+    "tool_description": "AI-based freemium API for generating random user data with AI. Like Lorem Ipsum, but for people.",
+    "home_url": "https://rapidapi.com/berkbirkan/api/ai-random-user-generator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Random User",
+            "url": "https://ai-random-user-generator.p.rapidapi.com/random-user",
+            "description": "Fetches a random user profile based on specified parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "results",
+                    "type": "STRING",
+                    "description": "Number of random users to generate.",
+                    "default": "7"
+                },
+                {
+                    "name": "nation",
+                    "type": "STRING",
+                    "description": "Specifies the nationality of the generated users.",
+                    "default": "en_US"
+                },
+                {
+                    "name": "gender",
+                    "type": "STRING",
+                    "description": "Specifies the gender of the generated users.",
+                    "default": "female"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

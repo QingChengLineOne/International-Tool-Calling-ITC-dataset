@@ -1,0 +1,18 @@
+{
+    "tool_name": "light switch",
+    "tool_description": "This tool provides API for controlling light switches.",
+    "home_url": "https://rapidapi.com/yatinnagpal19/api/light-switch/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "switches",
+            "url": "https://light-switch.p.rapidapi.com/",
+            "description": "This endpoint helps you read all the switches and their state",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

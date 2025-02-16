@@ -1,0 +1,18 @@
+{
+    "tool_name": "alfa",
+    "tool_description": "beta",
+    "home_url": "https://rapidapi.com/emacostanzopro/api/alfa1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AA",
+            "url": "https://alfa1.p.rapidapi.com/",
+            "description": "aa",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

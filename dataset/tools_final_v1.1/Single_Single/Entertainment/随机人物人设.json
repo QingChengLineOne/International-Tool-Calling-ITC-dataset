@@ -1,0 +1,44 @@
+{
+    "tool_name": "随机人物人设API",
+    "tool_description": "随机返回一个人物的人设及背景故事",
+    "home_url": "https://api.aa1.cn/doc/renwu_renshe.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机人物人设接口",
+            "url": "https://www.hhlqilongzhu.cn/api/suiji_renshe.php",
+            "description": "获取随机人物的人设及背景故事信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "random",
+                    "type": "boolean",
+                    "description": "是否需要随机返回，默认为true",
+                    "default": "true"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gender",
+                    "type": "string",
+                    "description": "指定人物性别，可选值：male, female",
+                    "default": ""
+                },
+                {
+                    "name": "age",
+                    "type": "int",
+                    "description": "指定人物年龄范围，例如：18-30",
+                    "default": ""
+                },
+                {
+                    "name": "occupation",
+                    "type": "string",
+                    "description": "指定人物职业，例如：doctor, teacher",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

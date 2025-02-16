@@ -1,0 +1,42 @@
+{
+    "tool_name": "WikiHow",
+    "tool_description": "Retrieve random out-of-context text and images from WikiHow articles.",
+    "home_url": "https://rapidapi.com/hargrimm/api/wikihow/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Steps",
+            "url": "https://hargrimm-wikihow-v1.p.rapidapi.com/steps",
+            "description": "Gets a random selection of WikiHow steps.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "The number of step strings to retrieve (maximum 100).",
+                    "default": "3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Images",
+            "url": "https://hargrimm-wikihow-v1.p.rapidapi.com/images",
+            "description": "Gets the src URL for random WikiHow images.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "The number of image URLs to retrieve (maximum 100).",
+                    "default": "3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

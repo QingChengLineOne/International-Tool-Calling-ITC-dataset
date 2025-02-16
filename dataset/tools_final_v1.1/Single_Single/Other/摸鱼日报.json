@@ -1,0 +1,25 @@
+{
+    "tool_name": "摸鱼日报",
+    "tool_description": "每日更新摸鱼日报",
+    "home_url": "https://api.aa1.cn/doc/moyuribao.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "每日摸鱼日报API",
+            "url": "https://dayu.qqsuu.cn/moyuribao/apis.php",
+            "description": "获取最新的摸鱼日报内容",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "数据格式，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

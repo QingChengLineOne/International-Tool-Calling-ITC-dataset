@@ -1,0 +1,143 @@
+{
+    "tool_name": "Currency Conversion and Exchange Rates",
+    "tool_description": "A simple and reliable API for accessing current and historical foreign exchange (forex) currency rates.",
+    "home_url": "https://rapidapi.com/principalapis/api/currency-conversion-and-exchange-rates/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Recent Exchange Rates",
+            "url": "https://currency-conversion-and-exchange-rates.p.rapidapi.com/latest",
+            "description": "Retrieve the latest exchange rate data. The refresh rate depends on your subscription: updated every 60 minutes, every 10 minutes, or every 60 seconds.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Three-letter currency code of the currency you would like to convert from. This currency will be converted into the code of the currency provided in the `to` parameter.",
+                    "default": "USD"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "A comma-separated list of currency codes to convert the `from` parameter into.",
+                    "default": "EUR,GBP"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical Exchange Rates",
+            "url": "https://currency-conversion-and-exchange-rates.p.rapidapi.com/{date}",
+            "description": "Retrieve historical exchange rate data. Data is available for most currencies dating back to 1999.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date to retrieve the historical exchange rates from.",
+                    "default": "2019-10-16"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Three-letter currency code of the currency you would like to convert from. This currency will be converted into the code of the currency provided in the `to` parameter.",
+                    "default": "USD"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "A comma-separated list of currency codes to convert the `from` parameter into.",
+                    "default": "EUR,GBP"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Convert",
+            "url": "https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert",
+            "description": "Provides conversion rates and allows conversion of a specific amount of currency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The three-letter currency code of the currency you would like to convert to.",
+                    "default": "EUR"
+                },
+                {
+                    "name": "amount",
+                    "type": "STRING",
+                    "description": "The amount to be converted.",
+                    "default": "750"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The three-letter currency code of the currency you would like to convert from.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Optionally, provide a specific date (format YYYY-MM-DD) to use historical rates for this conversion.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Symbols",
+            "url": "https://currency-conversion-and-exchange-rates.p.rapidapi.com/symbols",
+            "description": "Retrieve a list of all currently available currency symbols.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Time-Series Endpoint",
+            "url": "https://currency-conversion-and-exchange-rates.p.rapidapi.com/timeseries",
+            "description": "Retrieve historical rates between two specified dates. Maximum of 365 days time range.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date for the time series data.",
+                    "default": "2019-01-01"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date for the time series data.",
+                    "default": "2019-01-02"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Three-letter currency code of the currency you would like to convert from. This currency will be converted into the code of the currency provided in the `to` parameter.",
+                    "default": "USD"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "A comma-separated list of currency codes to convert the `from` parameter into.",
+                    "default": "EUR,GBP"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "今日追番列表API",
+    "tool_description": "获取今日的番剧更新情况",
+    "home_url": "https://api.aa1.cn/doc/pearno-animetoday.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "今日追番列表",
+            "url": "https://api.pearktrue.cn/api/todayanime/",
+            "description": "获取今日的番剧更新情况",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "None",
+                    "type": "None",
+                    "description": "此接口无请求参数",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

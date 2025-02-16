@@ -1,0 +1,31 @@
+{
+    "tool_name": "QQ信息获取",
+    "tool_description": "查询QQ相关信息的API",
+    "home_url": "https://api.shwgij.com/doc/24",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ信息获取",
+            "url": "https://api.shwgij.com/api/qq/qqinfo",
+            "description": "查询QQ相关信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "U5IkU9EPBJc7wNWJseJAZNvkX8"
+                },
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "要查询的QQ号码",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

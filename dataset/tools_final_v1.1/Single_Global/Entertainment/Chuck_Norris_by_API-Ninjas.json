@@ -1,0 +1,18 @@
+{
+    "tool_name": "Chuck Norris by API-Ninjas",
+    "tool_description": "Access thousands of funny Chuck Norris Jokes! See more info at https://api-ninjas.com/api/worldtime",
+    "home_url": "https://rapidapi.com/apininjas/api/chuck-norris-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/chucknorris",
+            "url": "https://chuck-norris-by-api-ninjas.p.rapidapi.com/v1/chucknorris",
+            "description": "API Ninjas Chuck Norris API endpoint. Returns a Chuck Norris joke.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

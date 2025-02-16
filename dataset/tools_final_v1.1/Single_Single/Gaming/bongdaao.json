@@ -1,0 +1,18 @@
+{
+    "tool_name": "bongdaao",
+    "tool_description": "Bongdaao.online | Bóng đá ảo Online là trò chơi cá độ đổi thưởng thú vị và được ưa chuộng hiện nay. Các trận đấu bóng đá ảo được lập trình sẵn, diễn ra ngẫu nhiên giữa các đội bóng.",
+    "home_url": "https://rapidapi.com/bongdaao/api/bongdaao/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "bongdaao",
+            "url": "https://bongdaao.p.rapidapi.com/",
+            "description": "API cho phép người dùng truy cập vào các trận đấu bóng đá ảo được lập trình sẵn và diễn ra ngẫu nhiên.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

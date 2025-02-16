@@ -1,0 +1,76 @@
+{
+    "tool_name": "Wyre Data",
+    "tool_description": "A comprehensive API for searching all types of establishments in the UK, including restaurants, pubs, bars, cafes, coffee shops, and nightclubs. It provides detailed information such as establishment names, addresses, postcodes, food hygiene ratings, local authorities, and geographical coordinates.",
+    "home_url": "https://rapidapi.com/vfunnell/api/wyre-data/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "Get ratings by restaurant",
+            "url": "https://wyre-data.p.rapidapi.com/restaurants/ratings/{restaurant}",
+            "description": "Retrieve the Food Hygiene Rating for a specified restaurant.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "restaurant",
+                    "type": "string",
+                    "description": "The name of the restaurant for which to retrieve the hygiene rating.",
+                    "default": "Shovels Inn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get all data on an establishment by restaurant",
+            "url": "https://wyre-data.p.rapidapi.com/restaurants/{restaurant}",
+            "description": "Fetch comprehensive information about a specified restaurant.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "restaurant",
+                    "type": "string",
+                    "description": "The name of the restaurant to retrieve data for.",
+                    "default": "Shovels Inn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search restaurants by town",
+            "url": "https://wyre-data.p.rapidapi.com/restaurants/town/{town}",
+            "description": "Find all restaurants located within a specified town or city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "town",
+                    "type": "string",
+                    "description": "The name of the town or city to search for restaurants.",
+                    "default": "hambleton"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search restaurants by local authority",
+            "url": "https://wyre-data.p.rapidapi.com/restaurants/localauthority/{localauthority}",
+            "description": "Find all restaurants within a specified local authority area.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "localauthority",
+                    "type": "string",
+                    "description": "The name of the local authority to search for restaurants.",
+                    "default": "wyre"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "testPostApi",
+    "tool_description": "A POST API for interacting with the Batman RDS service.",
+    "home_url": "https://rapidapi.com/achmaddayat/api/testpostapi1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "PostEndPoint",
+            "url": "https://testpostapi1.p.rapidapi.com/testBatmanApi/name/batman",
+            "description": "This API endpoint allows users to post data related to Batman.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address of the user.",
+                    "default": "batman@gmail.com"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the character or user.",
+                    "default": "batman"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

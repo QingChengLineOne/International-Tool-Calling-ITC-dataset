@@ -1,0 +1,28 @@
+{
+    "tool_name": "api.kraken",
+    "tool_description": "API Kraken provides access to cryptocurrency market data.",
+    "home_url": "https://rapidapi.com/JEANFRANCOISTeddy/api/api-kraken1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AssetPairs",
+            "url": "https://api-kraken1.p.rapidapi.com/AssetPairs",
+            "description": "Retrieve available asset pairs for trading.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Ticker",
+            "url": "https://api-kraken1.p.rapidapi.com/Ticker",
+            "description": "Get the current price and volume data for specified asset pairs.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

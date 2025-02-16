@@ -1,0 +1,25 @@
+{
+    "tool_name": "站长 · Ping测速",
+    "tool_description": "测试网站的Ping延迟",
+    "home_url": "https://api.aa1.cn/doc/ping.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Ping测速API",
+            "url": "https://api.52vmy.cn/api/wl/ping",
+            "description": "提供网站Ping延迟测试服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要测试的网站URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

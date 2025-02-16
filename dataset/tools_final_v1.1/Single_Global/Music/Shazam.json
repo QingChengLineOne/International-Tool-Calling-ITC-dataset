@@ -1,0 +1,197 @@
+{
+    "tool_name": "Shazam",
+    "tool_description": "Shazam API helps you to recognize any song from a music file, fetch data from https://www.shazam.com/, and extract information related to artists, tracks, or provide top songs by country.",
+    "home_url": "https://rapidapi.com/yashmakan261/api/shazam8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Artist Top Tracks",
+            "url": "https://shazam8.p.rapidapi.com/artist/top_track",
+            "description": "This endpoint returns the top tracks of a specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of top tracks to return.",
+                    "default": "5"
+                },
+                {
+                    "name": "artist_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the artist.",
+                    "default": "40543550"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Track by City",
+            "url": "https://shazam8.p.rapidapi.com/track/top/city",
+            "description": "This endpoint provides the top song in a specific city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city_name",
+                    "type": "STRING",
+                    "description": "The name of the city.",
+                    "default": "Moscow"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The country code for the specified city.",
+                    "default": "RU"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of top tracks to return.",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Track by Country",
+            "url": "https://shazam8.p.rapidapi.com/track/top/country",
+            "description": "This endpoint returns the top tracks from a specific country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of top tracks to return.",
+                    "default": "2"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The country code for the specified country.",
+                    "default": "RU"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Track Recommendations",
+            "url": "https://shazam8.p.rapidapi.com/track/recommedations",
+            "description": "This endpoint returns recommendations or similar songs for a given track.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "track_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the track.",
+                    "default": "296831279"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of recommendations to return.",
+                    "default": "4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search Track",
+            "url": "https://shazam8.p.rapidapi.com/track/search",
+            "description": "This endpoint searches for a song by name and returns similar songs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of results to return.",
+                    "default": "5"
+                },
+                {
+                    "name": "track",
+                    "type": "STRING",
+                    "description": "The name of the track to search for.",
+                    "default": "Love Yourself"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Track Info",
+            "url": "https://shazam8.p.rapidapi.com/track/info",
+            "description": "This endpoint returns detailed information about a specific track.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "track_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the track.",
+                    "default": "296831279"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Track Recognition",
+            "url": "https://shazam8.p.rapidapi.com/track/recognize",
+            "description": "This endpoint recognizes song details from the provided audio file.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Artist Search",
+            "url": "https://shazam8.p.rapidapi.com/artist/search",
+            "description": "This endpoint allows you to search for an artist by name and get a list of matching artists.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of results to return.",
+                    "default": "5"
+                },
+                {
+                    "name": "artist",
+                    "type": "STRING",
+                    "description": "The name of the artist to search for.",
+                    "default": "Justin Bieber"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Artist Info",
+            "url": "https://shazam8.p.rapidapi.com/artist/info",
+            "description": "This endpoint extracts detailed information about a specific artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the artist.",
+                    "default": "40543550"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

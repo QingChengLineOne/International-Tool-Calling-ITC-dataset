@@ -1,0 +1,28 @@
+{
+    "tool_name": "MailValid",
+    "tool_description": "A REST API that checks for disposable and invalid emails.",
+    "home_url": "https://rapidapi.com/iftiin-koox-iftiin-koox-default/api/mailvalid1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check lists",
+            "url": "https://mailvalid1.p.rapidapi.com/api/lists",
+            "description": "The route for checking the lists of disposable or non-disposable emails.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Email Validation",
+            "url": "https://mailvalid1.p.rapidapi.com/api/validate",
+            "description": "The route for validating an email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

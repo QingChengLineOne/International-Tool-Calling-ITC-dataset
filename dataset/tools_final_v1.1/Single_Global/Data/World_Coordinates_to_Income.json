@@ -1,0 +1,31 @@
+{
+    "tool_name": "World Coordinates to Income",
+    "tool_description": "Get sub-city level individual per-capita USD/yr income data from across the globe. Useful in LTV & user valuation modeling.",
+    "home_url": "https://rapidapi.com/businessdatasets-businessdatasets-default/api/world-coordinates-to-income/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "World Coordinate to Income",
+            "url": "https://world-coordinates-to-income.p.rapidapi.com/test/",
+            "description": "Retrieve granular city per capita income based on geographical coordinates.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location for which income data is requested.",
+                    "default": "0"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location for which income data is requested.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Random Yes No",
+    "tool_description": "Get some random Yes or No responses.",
+    "home_url": "https://rapidapi.com/maketest-1YGgU5ZOtA/api/random-yes-no/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Yes or No",
+            "url": "https://random-yes-no.p.rapidapi.com/",
+            "description": "Fetch a random Yes or No response.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

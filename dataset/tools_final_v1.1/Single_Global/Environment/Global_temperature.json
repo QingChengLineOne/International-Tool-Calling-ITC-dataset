@@ -1,0 +1,25 @@
+{
+    "tool_name": "Global temperature",
+    "tool_description": "This API provides the global mean surface temperature anomaly on a monthly basis from 1880.04 to the present, measured in degrees Celsius.",
+    "home_url": "https://rapidapi.com/rene-mdd/api/global-temperature/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "temperatureEndpoint",
+            "url": "https://global-temperature.p.rapidapi.com/api/temperature-api",
+            "description": "This endpoint retrieves the global mean surface temperature anomaly data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "temp",
+                    "type": "OBJECT",
+                    "description": "An optional parameter for additional temperature data.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

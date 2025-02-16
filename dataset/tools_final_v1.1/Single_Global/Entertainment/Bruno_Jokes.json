@@ -1,0 +1,18 @@
+{
+    "tool_name": "Bruno Jokes",
+    "tool_description": "Generates a Bruno joke",
+    "home_url": "https://rapidapi.com/wouter-planet-wouter-planet-default/api/bruno-jokes/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get a Joke",
+            "url": "https://bruno-jokes.p.rapidapi.com/",
+            "description": "Retrieves a joke",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

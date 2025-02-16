@@ -1,0 +1,18 @@
+{
+    "tool_name": "CryptoCRIT",
+    "tool_description": "CryptoCRIT is an open-source Cryptocurrency project which facilitates a Cryptocurrency wallet for making payments. The associated Cryptocurrency is called CritCoin.",
+    "home_url": "https://rapidapi.com/theabbie/api/cryptocrit1/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "CryptoCRIT",
+            "url": "https://cryptocrit1.p.rapidapi.com/",
+            "description": "This API provides access to the CryptoCRIT wallet functionalities, allowing users to manage their CritCoin transactions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

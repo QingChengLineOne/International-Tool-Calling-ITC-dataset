@@ -1,0 +1,25 @@
+{
+    "tool_name": "随机密钥生成API",
+    "tool_description": "生成一串1-128数量的随机密钥",
+    "home_url": "https://api.aa1.cn/doc/key.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机密钥生成接口",
+            "url": "https://api.52vmy.cn/api/wl/randkey",
+            "description": "生成随机密钥的API",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "密钥长度，取值范围1-128",
+                    "default": "8"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "AE6888 Link vao nha cai AE688 2022",
+    "tool_description": "AE6888 - Ae6888.net is the official homepage for registration and login to AE888, featuring various online betting options including cockfighting, tài xỉu, sports, and lottery. It provides official links to ae388, ae688, and ae88.",
+    "home_url": "https://rapidapi.com/ae6888net/api/ae6888-link-vao-nha-cai-ae688-2022/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "AE6888 Link vao nha cai AE688 Trang Chu dang ky chinh thuc",
+            "url": "https://ae6888-link-vao-nha-cai-ae688-2022.p.rapidapi.com/",
+            "description": "This API provides access to the official homepage for registration and login to AE888, including various online betting options.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

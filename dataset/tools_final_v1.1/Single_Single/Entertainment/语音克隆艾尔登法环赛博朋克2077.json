@@ -1,0 +1,44 @@
+{
+    "tool_name": "语音克隆艾尔登法环赛博朋克2077",
+    "tool_description": "提供语音克隆服务，支持艾尔登法环和赛博朋克2077中角色的语音克隆。",
+    "home_url": "https://api.aa1.cn/doc/tts_eldenring_2077.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "语音克隆服务接口",
+            "url": "http://uapi.dxx.gd.cn/voice/add",
+            "description": "用于发送语音克隆请求的API接口。",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "role",
+                    "type": "string",
+                    "description": "角色名称，如孙笑川、东雪莲、菈妮等。",
+                    "default": ""
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要克隆的语音文本。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "语音输出语言，默认为中文。",
+                    "default": "zh"
+                },
+                {
+                    "name": "voice",
+                    "type": "string",
+                    "description": "特定角色的声音设置，如中配、女v等。",
+                    "default": "default"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

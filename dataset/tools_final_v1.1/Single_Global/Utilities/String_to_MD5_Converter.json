@@ -1,0 +1,47 @@
+{
+    "tool_name": "String to MD5 Converter",
+    "tool_description": "This API endpoint allows you to convert a given string into its MD5 hash representation. The server takes the input string from the request body, processes it, and responds with the MD5 hash as a JSON object.",
+    "home_url": "https://rapidapi.com/owunnakerjew/api/string-to-md5-converter/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "postStringToMd5",
+            "url": "https://string-to-md5-converter.p.rapidapi.com/api/convert",
+            "description": "Converts a provided string into its MD5 hash.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "string",
+                    "type": "string",
+                    "description": "The input string that you want to convert to MD5.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

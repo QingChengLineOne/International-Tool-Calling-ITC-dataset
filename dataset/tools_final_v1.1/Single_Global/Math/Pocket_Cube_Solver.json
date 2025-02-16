@@ -1,0 +1,42 @@
+{
+    "tool_name": "Pocket Cube Solver",
+    "tool_description": "Returns the list of all optimal solutions (QTM not HTM) for a given pocket cube (2x2x2) position.",
+    "home_url": "https://rapidapi.com/pavankteja/api/pocket-cube-solver1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getRandomSolution",
+            "url": "https://pocket-cube-solver1.p.rapidapi.com/{position}/random",
+            "description": "Returns JSON data consisting of a random optimal solution for a given cube position.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "position",
+                    "type": "string",
+                    "description": "The current configuration of the pocket cube.",
+                    "default": "GBWGYOGYRYOORWROBRWYGWBB"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getAllSolutions",
+            "url": "https://pocket-cube-solver1.p.rapidapi.com/{position}/all",
+            "description": "Returns JSON data consisting of all optimal solutions for a given cube position.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "position",
+                    "type": "string",
+                    "description": "The current configuration of the pocket cube.",
+                    "default": "GBWGYOGYRYOORWROBRWYGWBB"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

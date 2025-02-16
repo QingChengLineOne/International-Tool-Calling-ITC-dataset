@@ -1,0 +1,18 @@
+{
+    "tool_name": "s777pro",
+    "tool_description": "S777 - s777pro Game Bài Đổi Thưởng Uy Tín tặng ngay 30k trải nghiệm và 100% ngay lần nạp đầu tiên. Nhà Cái S777 Game Bài với nhiều thể loại game như xổ số, bắn cá.",
+    "home_url": "https://rapidapi.com/s777pro/api/s777pro/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "s777pro",
+            "url": "https://s777pro.p.rapidapi.com/",
+            "description": "S777 - s777pro Game Bài Đổi Thưởng Uy Tín tặng ngay 30k trải nghiệm và 100% ngay lần nạp đầu tiên. Nhà Cái S777 Game Bài với nhiều thể loại game như xổ số, bắn cá.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

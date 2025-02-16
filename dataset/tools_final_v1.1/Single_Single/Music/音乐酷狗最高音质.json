@@ -1,0 +1,44 @@
+{
+    "tool_name": "[音乐]酷狗最高音质",
+    "tool_description": "提供酷狗音乐的全部歌曲，并允许用户自定义音质下载",
+    "home_url": "https://api.aa1.cn/doc/kugou_musicSQ.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "酷狗音乐最高音质API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_kugouSQ.php",
+            "description": "获取酷狗音乐的指定歌曲，并支持最高音质下载",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "歌曲名或歌手名，用于搜索歌曲",
+                    "default": "默认搜索"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "搜索结果数量，默认为10条",
+                    "default": "10"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据格式，默认为JSON",
+                    "default": "json"
+                },
+                {
+                    "name": "quality",
+                    "type": "int",
+                    "description": "下载音质，可选值有128、320等，默认为128",
+                    "default": "128"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

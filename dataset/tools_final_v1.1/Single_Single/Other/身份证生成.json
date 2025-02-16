@@ -1,0 +1,50 @@
+{
+    "tool_name": "身份证生成API",
+    "tool_description": "可自定义日期，性别，省份，生成数量等的身份证生成API",
+    "home_url": "https://api.aa1.cn/doc/idcard.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "身份证生成接口",
+            "url": "http://niningqi.com/idcard/gen",
+            "description": "用于生成指定条件的身份证号码",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "district",
+                    "type": "string",
+                    "description": "省份和城市代码，例如四川省成都市锦江区的代码为510107",
+                    "default": "510107"
+                },
+                {
+                    "name": "sex",
+                    "type": "int",
+                    "description": "性别标识，1为男性，2为女性",
+                    "default": "1"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "出生日期，格式为YYYYMMDD",
+                    "default": "20000101"
+                },
+                {
+                    "name": "count",
+                    "type": "int",
+                    "description": "生成身份证号码的数量",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，支持json和xml两种格式，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "tool_name": "AcroSuite GeoValidator",
+    "tool_description": "Validate Well-known text (WKT) of LineString and Polygon. This tool checks the validity of WKT format for polylines and polygons according to OGC standards.",
+    "home_url": "https://rapidapi.com/AcroChannel/api/acrosuite-geovalidator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Validate Polygon",
+            "url": "https://acrosuite-geovalidator.p.rapidapi.com/v0_1/CstService/tools/geometry/ispolygon",
+            "description": "Validates a set of Polygon's coordinates (longitude/latitude) in WKT format against OGC standards. Returns FALSE if there are intersections or if the interior linear rings are counterclockwise and the exterior linear ring is clockwise.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Validate LineString",
+            "url": "https://acrosuite-geovalidator.p.rapidapi.com/v0_1/CstService/tools/geometry/isline",
+            "description": "Validates a set of LineString's coordinates (longitude/latitude) in WKT format against OGC standards. Returns FALSE if there are intersections.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

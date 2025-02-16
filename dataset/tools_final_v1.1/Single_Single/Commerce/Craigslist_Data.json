@@ -1,0 +1,110 @@
+{
+    "tool_name": "Craigslist Data",
+    "tool_description": "The Craigslist API provides access to a wide range of classified advertisements, allowing you to search for and retrieve listings from various categories such as jobs, housing, services, and more.",
+    "home_url": "https://rapidapi.com/sohailglt/api/craigslist-data/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Gigs",
+            "url": "https://craigslist-data.p.rapidapi.com/gigs",
+            "description": "Retrieve gig listings from Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Resumes",
+            "url": "https://craigslist-data.p.rapidapi.com/resumes",
+            "description": "Access resumes posted on Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://craigslist-data.p.rapidapi.com/search",
+            "description": "Search for listings across various categories.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "For Sale",
+            "url": "https://craigslist-data.p.rapidapi.com/for-sale",
+            "description": "Retrieve listings for items for sale.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": 812974940
+        },
+        {
+            "name": "Community",
+            "url": "https://craigslist-data.p.rapidapi.com/community",
+            "description": "Access community listings on Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Jobs",
+            "url": "https://craigslist-data.p.rapidapi.com/jobs",
+            "description": "Retrieve job listings from Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "Services",
+            "url": "https://craigslist-data.p.rapidapi.com/services",
+            "description": "Access service listings on Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Events",
+            "url": "https://craigslist-data.p.rapidapi.com/events",
+            "description": "Retrieve event listings from Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Housing",
+            "url": "https://craigslist-data.p.rapidapi.com/housing",
+            "description": "Access housing listings on Craigslist.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Single Page",
+            "url": "https://craigslist-data.p.rapidapi.com/post",
+            "description": "Retrieve a single page of listings.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

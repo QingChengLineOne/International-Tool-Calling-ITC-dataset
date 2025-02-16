@@ -1,0 +1,25 @@
+{
+    "tool_name": "IIN Lookup",
+    "tool_description": "An API for looking up, checking, or searching issuer card information using the card BIN (Bank Identification Number).",
+    "home_url": "https://rapidapi.com/rahmar4/api/bin-iin-lookup1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "BIN/IIN Lookup",
+            "url": "https://bin-iin-lookup1.p.rapidapi.com/bins/cards.php",
+            "description": "This API allows users to retrieve issuer card information by inputting the first six digits of a credit or debit card.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "bin",
+                    "type": "NUMBER",
+                    "description": "The first six digits of the credit or debit card.",
+                    "default": "470886"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

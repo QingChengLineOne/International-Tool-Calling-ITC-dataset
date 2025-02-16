@@ -1,0 +1,50 @@
+{
+    "tool_name": "Weather Forecast Map Tiles",
+    "tool_description": "Generate weather forecast map tiles to overlay on any web map.",
+    "home_url": "https://rapidapi.com/samvanemelen/api/weather-forecast-map-tiles/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Weather Tile",
+            "url": "https://weather-forecast-map-tiles.p.rapidapi.com/tile/{z}/{x}/{y}",
+            "description": "Retrieve a transparent weather tile based on the Web Tile Standard.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "y",
+                    "type": "NUMBER",
+                    "description": "The y value of the requested tile.",
+                    "default": "44"
+                },
+                {
+                    "name": "z",
+                    "type": "NUMBER",
+                    "description": "The z value of the requested tile.",
+                    "default": "7"
+                },
+                {
+                    "name": "x",
+                    "type": "NUMBER",
+                    "description": "The x value of the requested tile.",
+                    "default": "68"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "time",
+                    "type": "NUMBER",
+                    "description": "The local time at which the weather should be shown, measured in hours since today 00:00. A time value of 10 would be today at 10:00. Forecast tiles can be requested for 7 days, with a max time value of 168.",
+                    "default": "30"
+                },
+                {
+                    "name": "unit",
+                    "type": "STRING",
+                    "description": "The unit for temperature and precipitation. Options are 'none' (no labels), 'metric' (°C and mm), or 'imperial' (°F and inches).",
+                    "default": "metric"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

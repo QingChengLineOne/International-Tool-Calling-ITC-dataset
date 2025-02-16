@@ -1,0 +1,25 @@
+{
+    "tool_name": "Threads User",
+    "tool_description": "Threads user details API provides access to comprehensive information and details about specific Threads users, including their profile data and other relevant statistics.",
+    "home_url": "https://rapidapi.com/drazazora/api/threads-user/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get User",
+            "url": "https://threads-user.p.rapidapi.com/",
+            "description": "Retrieve detailed data about a specific Threads user.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "variables",
+                    "type": "STRING",
+                    "description": "A JSON string containing the user ID for which data is requested.",
+                    "default": "{\"userID\":\"9105\"}"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

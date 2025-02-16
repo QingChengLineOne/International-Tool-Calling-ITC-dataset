@@ -1,0 +1,38 @@
+{
+    "tool_name": "王者荣耀英雄图集API",
+    "tool_description": "获取王者荣耀里面英雄的所有皮肤图片",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_wztj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "英雄皮肤图片获取接口",
+            "url": "https://free.wqwlkj.cn/wqwlapi/wzherotj.php",
+            "description": "通过英雄名称获取对应的英雄皮肤图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "hero",
+                    "type": "string",
+                    "description": "英雄名称，用于查询特定英雄的皮肤图片",
+                    "default": "无"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "分页参数，默认为1，用于获取特定页的皮肤图片",
+                    "default": "1"
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每页返回的图片数量，默认为10",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "EK88 dang nhap dang ky nha cai truc tuyen",
+    "tool_description": "EK88 là nhà cái uy tín hàng đầu châu Á, cung cấp tỷ lệ cược tốt nhất và nhiều khuyến mãi. Link vào EK88 nhanh không bị chặn mới nhất 2022.",
+    "home_url": "https://rapidapi.com/ek88betpro/api/ek88-dang-nhap-dang-ky-nha-cai-truc-tuyen/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "EK88 dang nhap dang ky nha cai",
+            "url": "https://ek88-dang-nhap-dang-ky-nha-cai-truc-tuyen.p.rapidapi.com/",
+            "description": "API cho phép người dùng đăng nhập và đăng ký tại nhà cái EK88, cung cấp thông tin về tỷ lệ cược và khuyến mãi.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

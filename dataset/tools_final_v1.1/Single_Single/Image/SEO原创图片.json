@@ -1,0 +1,50 @@
+{
+    "tool_name": "SEO原创图片API",
+    "tool_description": "PHP开发，用于生成原创不侵权的图片，支持将文案输入后生成带有该文案的图片。",
+    "home_url": "https://api.aa1.cn/doc/CreateImg.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "CreateImage",
+            "url": "https://www.xcntools.com/CreateImg/createimage",
+            "description": "生成带有特定文案的图片接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "wd",
+                    "type": "string",
+                    "description": "需要生成图片的文案",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "string",
+                    "description": "图片大小，如'500x500'，默认为'500x500'",
+                    "default": "500x500"
+                },
+                {
+                    "name": "font_size",
+                    "type": "int",
+                    "description": "文字大小，单位为像素，默认为'24'",
+                    "default": "24"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "文字颜色，如'#FFFFFF'，默认为'#000000'",
+                    "default": "#000000"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "description": "背景颜色，如'#000000'，默认为'#FFFFFF'",
+                    "default": "#FFFFFF"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

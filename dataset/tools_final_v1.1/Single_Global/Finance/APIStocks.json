@@ -1,0 +1,125 @@
+{
+    "tool_name": "APIStocks",
+    "tool_description": "High performance API for stocks & ETFs. You can get intraday, daily, weekly and monthly historical market data.",
+    "home_url": "https://rapidapi.com/api4stocks/api/apistocks/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "daily",
+            "url": "https://apistocks.p.rapidapi.com/daily",
+            "description": "Get daily historical data for stocks and ETFs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dateStart",
+                    "type": "STRING",
+                    "description": "The start date for the historical data.",
+                    "default": "2021-07-01"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock or ETF symbol.",
+                    "default": "AAPL"
+                },
+                {
+                    "name": "dateEnd",
+                    "type": "STRING",
+                    "description": "The end date for the historical data.",
+                    "default": "2021-07-31"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "monthly",
+            "url": "https://apistocks.p.rapidapi.com/monthly",
+            "description": "Get monthly historical data for stocks and ETFs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dateStart",
+                    "type": "STRING",
+                    "description": "The start date for the historical data.",
+                    "default": "2021-01-01"
+                },
+                {
+                    "name": "dateEnd",
+                    "type": "STRING",
+                    "description": "The end date for the historical data.",
+                    "default": "2021-07-31"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock or ETF symbol.",
+                    "default": "AAPL"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "weekly",
+            "url": "https://apistocks.p.rapidapi.com/weekly",
+            "description": "Get weekly historical data for stocks and ETFs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "Upper case stock or ETF symbol.",
+                    "default": "AAPL"
+                },
+                {
+                    "name": "dateStart",
+                    "type": "STRING",
+                    "description": "The start date for the historical data.",
+                    "default": "2021-06-01"
+                },
+                {
+                    "name": "dateEnd",
+                    "type": "STRING",
+                    "description": "The end date for the historical data.",
+                    "default": "2021-07-31"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "intraday",
+            "url": "https://apistocks.p.rapidapi.com/intraday",
+            "description": "Get intraday price for stocks and ETFs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock or ETF symbol.",
+                    "default": "AAPL"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "maxreturn",
+                    "type": "NUMBER",
+                    "description": "Maximum number of items (data points) to be returned. Default is 1000.",
+                    "default": "100"
+                },
+                {
+                    "name": "interval",
+                    "type": "STRING",
+                    "description": "The time interval for the intraday data. Default is '5min'. Supported values: 1min, 5min, 15min, 30min, 60min.",
+                    "default": "5min"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

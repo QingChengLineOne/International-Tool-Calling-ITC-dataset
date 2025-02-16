@@ -1,0 +1,18 @@
+{
+    "tool_name": "Feed Reader",
+    "tool_description": "Read and normalize data from RSS/ATOM/JSON feed URL",
+    "home_url": "https://rapidapi.com/pwshub-pwshub-default/api/feed-reader1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "POST /feed/parse",
+            "url": "https://feed-reader1.p.rapidapi.com/feed/parse",
+            "description": "Get feed data from given ATOM/RSS source.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

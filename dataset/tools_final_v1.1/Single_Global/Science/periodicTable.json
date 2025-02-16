@@ -1,0 +1,25 @@
+{
+    "tool_name": "periodicTable",
+    "tool_description": "It provides detailed information about the periodic table and its elements.",
+    "home_url": "https://rapidapi.com/mukundKumar/api/periodictable/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "periodic table",
+            "url": "https://periodictable.p.rapidapi.com/",
+            "description": "It gives detailed information about elements in the periodic table.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "all",
+                    "type": "STRING",
+                    "description": "A parameter to retrieve all elements if specified.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

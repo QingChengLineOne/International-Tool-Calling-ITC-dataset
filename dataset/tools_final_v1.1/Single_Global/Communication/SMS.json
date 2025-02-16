@@ -1,0 +1,18 @@
+{
+    "tool_name": "SMS",
+    "tool_description": "A service for sending SMS messages.",
+    "home_url": "https://rapidapi.com/plugincim-plugincim-default/api/sms144/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SMS",
+            "url": "https://sms144.p.rapidapi.com/",
+            "description": "API for sending SMS messages.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

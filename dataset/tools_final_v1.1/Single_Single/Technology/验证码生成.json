@@ -1,0 +1,50 @@
+{
+    "tool_name": "验证码生成API",
+    "tool_description": "用于生成验证码的API接口",
+    "home_url": "https://api.aa1.cn/doc/mg_captcha.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "验证码生成接口",
+            "url": "https://api.mg-tool.cn/v1/mg_captcha.php",
+            "description": "提供验证码生成服务，用于网站登录、表单验证等场景",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "验证码的长度，默认为6",
+                    "default": "6"
+                },
+                {
+                    "name": "obfuscationLevel",
+                    "type": "int",
+                    "description": "验证码的混淆级别，值越大，混淆效果越好，默认为2",
+                    "default": "2"
+                },
+                {
+                    "name": "hasLetters",
+                    "type": "bool",
+                    "description": "是否包含字母，默认为true",
+                    "default": "true"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "hasNumbers",
+                    "type": "bool",
+                    "description": "是否包含数字，默认为true",
+                    "default": "true"
+                },
+                {
+                    "name": "hasSymbols",
+                    "type": "bool",
+                    "description": "是否包含符号，默认为false",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

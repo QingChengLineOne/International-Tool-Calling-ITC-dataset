@@ -1,0 +1,352 @@
+{
+    "tool_name": "Intobo WhatsApp API",
+    "tool_description": "This API is used to send messages to the WhatsApp chat platform via API. It allows users to manage WhatsApp accounts, send messages, and retrieve message history.",
+    "home_url": "https://rapidapi.com/root-h1mkMNR1x/api/intobo-whatsapp-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "startInstance",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/startInstance/{number_id}",
+            "description": "Start an instance node for a WhatsApp account.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "stopInstance",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/stopInstance/{number_id}",
+            "description": "Stop an instance node for a WhatsApp account.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "CaptureScreenShot",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/CaptureScreenShot/{number_id}",
+            "description": "Capture a screenshot of the current instance.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetQrCode",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/GetQrCode/{number_id}",
+            "description": "Get the QR code for the WhatsApp instance.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "CreateWaAccount",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/CreateWaAccount",
+            "description": "Create a new WhatsApp account.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "DeleteAccount",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/DeleteAccount/{number_id}",
+            "description": "Completely delete a WhatsApp account, including all associated data.",
+            "method": "DELETE",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14585"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "GetMessage",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/GetMessage/{message_id}",
+            "description": "Retrieve information about a specific message.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "message_id",
+                    "type": "string",
+                    "description": "The unique identifier for the message.",
+                    "default": "145861670527682"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "SendMessage",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/SendMessage/{number_id}",
+            "description": "Send a message to a specified phone number. The recipient's phone number must include the country code.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "MessageQueue",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/MessageQueue/{number_id}",
+            "description": "Retrieve the message queue for a specified phone number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "MessageHistory",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/MessageHistory/{number_id}",
+            "description": "Retrieve the message history for a specified phone number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "GetStatus",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/GetStatus/{number_id}",
+            "description": "Check the sync status of a WhatsApp account.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "number_id",
+                    "type": "string",
+                    "description": "The unique identifier for the WhatsApp account.",
+                    "default": "14586"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "AccountList",
+            "url": "https://intobo-whatsapp-api1.p.rapidapi.com/AccountList",
+            "description": "Retrieve a list of all WhatsApp accounts associated with your account.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

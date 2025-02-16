@@ -1,0 +1,48 @@
+{
+    "tool_name": "铃声多多点歌",
+    "tool_description": "铃声多多点歌API，用于查询和获取指定歌名的铃声信息。",
+    "home_url": "https://api.aa1.cn/doc/lsdd_music.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "铃声多多点歌API",
+            "url": "https://api.cenguigui.cn/api/music/lsdd_music.php",
+            "description": "根据歌名查询铃声信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "要查询的歌名",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "当前页码，默认为1",
+                    "default": 1
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每页显示的歌曲数量，默认为10",
+                    "default": 10
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "author",
+                    "type": "string",
+                    "description": "歌曲作者，可选"
+                },
+                {
+                    "name": "album",
+                    "type": "string",
+                    "description": "歌曲专辑，可选"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

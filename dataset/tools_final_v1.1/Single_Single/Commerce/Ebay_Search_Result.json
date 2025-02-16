@@ -1,0 +1,25 @@
+{
+    "tool_name": "Ebay Search Result",
+    "tool_description": "This API returns essential information from eBay search page results, including product price, title, shipping cost, and a direct URL to the product.",
+    "home_url": "https://rapidapi.com/ruamazi/api/ebay-search-result/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Search on ebay",
+            "url": "https://ebay-search-result.p.rapidapi.com/search/{searchquery}",
+            "description": "Allows users to search for any item on the eBay website.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "searchQuery",
+                    "type": "string",
+                    "description": "The term or phrase to search for on eBay.",
+                    "default": "iphone"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Keyword Research for Youtube",
+    "tool_description": "Unlock the Power of Youtube Keyword Research for Your Youtube Channel with our API. Get Accurate Monthly Search Volume, Keyword Difficulty, and Competition Details to Drive Traffic and Boost Views!",
+    "home_url": "https://rapidapi.com/ajithjojo1230/api/keyword-research-for-youtube/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Keyword Research",
+            "url": "https://keyword-research-for-youtube.p.rapidapi.com/yttags.php",
+            "description": "Get exact and related keywords information including monthly search volume, SEO difficulty, and competition score.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The keyword for which you want to retrieve search data.",
+                    "default": "Email Marketing"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

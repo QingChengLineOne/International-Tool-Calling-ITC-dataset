@@ -1,0 +1,43 @@
+{
+    "tool_name": "Distance Calculator_v3",
+    "tool_description": "Calculates the distance between two geographical coordinates.",
+    "home_url": "https://rapidapi.com/tierisvalente-XBIB_hr-jt2/api/distance-calculator8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "calc",
+            "url": "https://distance-calculator8.p.rapidapi.com/calc",
+            "description": "Calculate distance between two coordinates based on their longitude and latitude.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "startLongitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the starting point.",
+                    "default": "-48.880964"
+                },
+                {
+                    "name": "startLatitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the starting point.",
+                    "default": "-26.311960"
+                },
+                {
+                    "name": "endLongitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the destination point.",
+                    "default": "-48.881103"
+                },
+                {
+                    "name": "endLatitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the destination point.",
+                    "default": "-26.313662"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

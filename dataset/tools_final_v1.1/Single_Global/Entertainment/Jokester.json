@@ -1,0 +1,55 @@
+{
+    "tool_name": "Jokester",
+    "tool_description": "Your Source for Endless Laughter - Jokester API is your go-to source for hilarious jokes and puns.",
+    "home_url": "https://rapidapi.com/kevinwilliamsedu3000/api/jokester/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/jokes/categories",
+            "url": "https://jokester.p.rapidapi.com/jokes/categories",
+            "description": "Retrieve a list of joke categories available in the Jokester API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "name": "/jokes",
+            "url": "https://jokester.p.rapidapi.com/jokes",
+            "description": "Fetch a random joke or filter jokes by category.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Filter jokes by category.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "joke": {
+                            "type": "string",
+                            "description": "The text of the joke"
+                        },
+                        "category": {
+                            "type": "string",
+                            "description": "The category of the joke"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "fathersham",
+    "tool_description": "AWS",
+    "home_url": "https://rapidapi.com/load-my-pixel-load-my-pixel-default/api/fathersham/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Love Button",
+            "url": "https://fathersham.p.rapidapi.com/",
+            "description": "This endpoint allows users to interact with the Love Button feature, providing a simple way to express affection.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

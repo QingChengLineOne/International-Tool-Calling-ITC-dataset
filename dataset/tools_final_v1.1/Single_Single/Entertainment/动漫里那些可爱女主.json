@@ -1,0 +1,38 @@
+{
+    "tool_name": "动漫里那些可爱女主",
+    "tool_description": "提供动漫中可爱女主角的相关信息",
+    "home_url": "https://api.aa1.cn/doc/kanz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取动漫可爱女主信息",
+            "url": "https://api.suyanw.cn/api/Lovely.php",
+            "description": "根据动漫名称查询对应的可爱女主信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "anime_name",
+                    "type": "string",
+                    "description": "动漫名称，用于查询对应的可爱女主信息",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "分页索引，默认为1",
+                    "default": 1
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每页显示数量，默认为10",
+                    "default": 10
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

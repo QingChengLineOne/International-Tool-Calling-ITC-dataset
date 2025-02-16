@@ -1,0 +1,32 @@
+{
+    "tool_name": "Adobe全家桶",
+    "tool_description": "获取Adobe软件全家桶，自带licence,含CS6至CC2023所有版本，支持windows和Mac平台，高速下载链接。本接口由安克维护，长效稳定。",
+    "home_url": "https://api.aa1.cn/doc/adobesofts.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Adobe全家桶下载接口",
+            "url": "https://clown.mikv.cn/api/v1/getAdobeSofts/index.html",
+            "description": "提供Adobe软件全家桶的下载服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "string",
+                    "description": "指定软件支持的操作系统，windows或mac",
+                    "default": "windows"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "version",
+                    "type": "string",
+                    "description": "可选参数，指定需要下载的Adobe软件版本，如CS6, CC2018等",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

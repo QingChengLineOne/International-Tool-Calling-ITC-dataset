@@ -1,0 +1,25 @@
+{
+    "tool_name": "动漫情头",
+    "tool_description": "返回一对情头,包含情头合成图和图片直链",
+    "home_url": "https://api.aa1.cn/doc/qingtou.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "动漫情头API",
+            "url": "https://www.hhlqilongzhu.cn/api/tu_qingtou.php",
+            "description": "获取动漫情头合成图和图片直链",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "请求类型，指定为'image'获取图片",
+                    "default": "image"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

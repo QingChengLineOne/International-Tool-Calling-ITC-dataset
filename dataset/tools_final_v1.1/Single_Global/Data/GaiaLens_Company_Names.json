@@ -1,0 +1,18 @@
+{
+    "tool_name": "GaiaLens Company Names",
+    "tool_description": "Get all company names within the GaiaLens Dataset.",
+    "home_url": "https://rapidapi.com/gaialens-gaialens-default/api/gaialens-company-names/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getCompanyNames",
+            "url": "https://gaialens-company-names.p.rapidapi.com/companynames",
+            "description": "This API returns a list of all company names available to the user. It can be used as a pre-step before invoking other GaiaLens APIs such as GaiaLens ESG Scores, GaiaLens Historical ESG Scores, and GaiaLens ESG News.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

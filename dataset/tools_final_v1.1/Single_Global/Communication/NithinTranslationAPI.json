@@ -1,0 +1,37 @@
+{
+    "tool_name": "NithinTranslationAPI",
+    "tool_description": "An API designed for text translation between different languages.",
+    "home_url": "https://rapidapi.com/nithinv/api/nithintranslationapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "translate",
+            "url": "https://nithintranslationapi.p.rapidapi.com/",
+            "description": "This API function allows users to translate text from one language to another.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text that needs to be translated.",
+                    "default": "Hello world!"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The target language code for translation.",
+                    "default": "es"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The source language code of the text.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

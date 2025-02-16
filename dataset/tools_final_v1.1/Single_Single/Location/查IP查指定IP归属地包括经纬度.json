@@ -1,0 +1,38 @@
+{
+    "tool_name": "查IP[查指定IP归属地-包括经纬度]",
+    "tool_description": "查询指定的IPV4所属地址。数据来源于百度数据。",
+    "home_url": "https://api.aa1.cn/doc/ipbaidu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查IP API",
+            "url": "https://cn.apihz.cn/api/ip/ipbaidu.php",
+            "description": "查询指定IP的归属地，包括经纬度信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "用户在接口盒子[www.apihz.cn]注册后获得的唯一标识",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "用户在接口盒子[www.apihz.cn]注册后获得的密钥",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址，如果不传则返回示例中的IP地址",
+                    "default": "8.8.8.8"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

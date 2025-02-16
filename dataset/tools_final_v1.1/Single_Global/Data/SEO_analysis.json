@@ -1,0 +1,38 @@
+{
+    "tool_name": "SEO analysis",
+    "tool_description": "Analyse the content of an article by submitting a URL or by posting content to the API.",
+    "home_url": "https://rapidapi.com/seo-review-tools-seo-review-tools-default/api/seo-analysis/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Content Analysis",
+            "url": "https://seo-analysis.p.rapidapi.com/seo-content-analysis/",
+            "description": "This endpoint analyzes the SEO content of a specified URL based on the provided keyword.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the article to be analyzed.",
+                    "default": "https://www.seoreviewtools.com"
+                },
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The primary keyword for SEO analysis.",
+                    "default": "seo"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "relatedkeywords",
+                    "type": "STRING",
+                    "description": "Additional keywords related to the primary keyword for a more comprehensive analysis.",
+                    "default": "SEO Tools|Free SEO tools|online tools"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Japanese Alphabet",
+    "tool_description": "The Japanese alphabet API is used to retrieve characters from the Japanese writing systems, including hiragana and katakana.",
+    "home_url": "https://rapidapi.com/CarlosCr18/api/japanese-alphabet/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "Get Language Characters",
+            "url": "https://japanese-alphabet.p.rapidapi.com/v1.0/language/{language}",
+            "description": "This API endpoint retrieves characters from the specified Japanese writing system. Options include all characters from hiragana, katakana, and their combinations, as well as specific sets like base hiragana or katakana.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "Specifies the type of characters to retrieve.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

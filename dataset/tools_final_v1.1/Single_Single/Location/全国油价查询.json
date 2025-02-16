@@ -1,0 +1,31 @@
+{
+    "tool_name": "全国油价查询API",
+    "tool_description": "提供全国范围内的油价查询服务，可查询到县级行政区域油价信息。",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_oilprice.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全国油价查询接口",
+            "url": "https://free.wqwlkj.cn/wqwlapi/oilprice.php",
+            "description": "查询指定城市和类型下的油价信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "要查询的城市名称。",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据格式，目前支持json格式。",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

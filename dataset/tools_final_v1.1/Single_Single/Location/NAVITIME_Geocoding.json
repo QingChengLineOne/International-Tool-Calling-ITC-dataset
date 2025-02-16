@@ -1,0 +1,210 @@
+{
+    "tool_name": "NAVITIME Geocoding",
+    "tool_description": "This API provides address information including longitude, latitude, and postal codes by specifying keywords or postal codes. It also offers a reverse geocoding function that converts longitude and latitude into address information.",
+    "home_url": "https://rapidapi.com/navitimejapan-navitimejapan/api/navitime-geocoding/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "datum_conversion",
+            "url": "https://navitime-geocoding.p.rapidapi.com/datum_conversion",
+            "description": "Converts geodetic systems (Japanese Geodetic System/World Geodetic System) for latitude and longitude.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coord",
+                    "type": "STRING",
+                    "description": "Latitude and longitude before conversion. Supports millisecond and degree indication.",
+                    "default": "35.624822,139.742121"
+                },
+                {
+                    "name": "after_datum",
+                    "type": "STRING",
+                    "description": "Geodetic system after conversion (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "address_inclusion",
+            "url": "https://navitime-geocoding.p.rapidapi.com/address_inclusion",
+            "description": "Determines if the specified latitude and longitude are within the range of the address code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "STRING",
+                    "description": "Address Code. Can be specified multiple times, separated by a period.",
+                    "default": "13"
+                },
+                {
+                    "name": "coord",
+                    "type": "STRING",
+                    "description": "Latitude and longitude.",
+                    "default": "35.664159,139.718117"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "address_reverse_geocoding",
+            "url": "https://navitime-geocoding.p.rapidapi.com/address/reverse_geocoding",
+            "description": "Retrieves address information by specifying latitude and longitude.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coord",
+                    "type": "STRING",
+                    "description": "Latitude and longitude.",
+                    "default": "35.624822,139.742121"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                },
+                {
+                    "name": "coord_unit",
+                    "type": "STRING",
+                    "description": "The unit of latitude and longitude included in the output data (degree: decimal system of degrees (default), millisec: milliseconds).",
+                    "default": "degree"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "address",
+            "url": "https://navitime-geocoding.p.rapidapi.com/address",
+            "description": "Returns address information such as postal code or latitude/longitude from free keyword of request parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "coord_unit",
+                    "type": "STRING",
+                    "description": "The unit of latitude and longitude included in the output data (degree: decimal system of degrees (default), millisec: milliseconds).",
+                    "default": "degree"
+                },
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limits the number of response data (Minimum value: 1, Maximum value: 100, Default value: 10).",
+                    "default": "10"
+                },
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "Search word. Cannot be used in combination with 'code'. Please specify either 'word' or 'code'.",
+                    "default": "代々木"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "address_code",
+            "url": "https://navitime-geocoding.p.rapidapi.com/address/code",
+            "description": "Returns address information from address code of request parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "STRING",
+                    "description": "Address Code. Can be specified multiple times, separated by a period.",
+                    "default": "13101001"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "coord_unit",
+                    "type": "STRING",
+                    "description": "The unit of latitude and longitude included in the output data (degree: decimal system of degrees (default), millisec: milliseconds).",
+                    "default": "degree"
+                },
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "address_postal_code",
+            "url": "https://navitime-geocoding.p.rapidapi.com/address/postal_code",
+            "description": "Returns address information from postal code of request parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postal_code",
+                    "type": "STRING",
+                    "description": "Postal code string (Minimum: 3 digits, Maximum: 7 digits).",
+                    "default": "1510053"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limits the number of response data (Minimum value: 1, Maximum value: 100, Default value: 10).",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "address_autocomplete",
+            "url": "https://navitime-geocoding.p.rapidapi.com/address/autocomplete",
+            "description": "Returns address predictions from the specified keyword of request parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "Address string (Minimum: 2 characters, Maximum: 50 characters). If a string of 51 or more characters is entered, the 51st and subsequent characters will be deleted and searched.",
+                    "default": "とうk"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "datum",
+                    "type": "STRING",
+                    "description": "Geodetic system of latitude and longitude (wgs84: World Geodetic System (default), tokyo: Old Japan Geodetic System).",
+                    "default": "wgs84"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

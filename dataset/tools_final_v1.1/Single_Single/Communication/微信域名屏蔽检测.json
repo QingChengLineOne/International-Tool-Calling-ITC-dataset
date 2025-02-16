@@ -1,0 +1,25 @@
+{
+    "tool_name": "微信域名屏蔽检测",
+    "tool_description": "微信内域名屏蔽监测，新接口",
+    "home_url": "https://api.aa1.cn/doc/weixin.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "微信域名屏蔽检测接口",
+            "url": "https://xialiu.cn/api/wxjc/",
+            "description": "检测特定域名是否在微信内被屏蔽",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要检测的域名URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "葫芦侠登陆api",
+    "tool_description": "葫芦侠用户登录接口",
+    "home_url": "https://api.aa1.cn/doc/hlxlogin.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "葫芦侠登陆接口",
+            "url": "https://api.suyanw.cn/api/hlx_login.php",
+            "description": "用于用户通过手机号和密码进行登录的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phone",
+                    "type": "string",
+                    "description": "用户手机号",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "用户密码",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

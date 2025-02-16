@@ -1,0 +1,25 @@
+{
+    "tool_name": "计算机术语",
+    "tool_description": "查询计算机术语的全称和释义",
+    "home_url": "https://api.qqsuu.cn/doc/dm-pcterm.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "计算机术语",
+            "url": "https://api.qqsuu.cn/api/dm-pcterm",
+            "description": "查询计算机术语的全称和释义",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "术语缩写",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "tool_name": "百度地图地名检索API",
+    "tool_description": "通过地名检索相关地点显示基础信息",
+    "home_url": "https://api.aa1.cn/doc/pearno-baidumap.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "百度地图地名检索",
+            "url": "https://api.pearktrue.cn/api/baidumap/",
+            "description": "检索指定地名并获取其基础信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "string",
+                    "description": "要检索的地名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "城市名，如果未指定，默认返回全国范围内结果",
+                    "default": ""
+                },
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "区域名，用于缩小检索范围，如果未指定，默认返回城市范围内结果",
+                    "default": ""
+                },
+                {
+                    "name": "scope",
+                    "type": "int",
+                    "description": "检索结果的精确度，1为全国，2为省份，3为城市，4为区县，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "page_size",
+                    "type": "int",
+                    "description": "每页返回的结果数量，默认为10",
+                    "default": "10"
+                },
+                {
+                    "name": "page_num",
+                    "type": "int",
+                    "description": "当前页码，默认为1",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "tool_name": "Cek ID PLN PASCA DAN PRA BAYAR",
+    "tool_description": "一个用于检查PLN客户ID的工具，支持后付费和预付费电力账单查询。",
+    "home_url": "https://rapidapi.com/yagamicell/api/cek-id-pln-pasca-dan-pra-bayar/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "Get Data ID Pelanggan Tagihan PLN / PASCA BAYAR",
+            "url": "https://cek-id-pln-pasca-dan-pra-bayar.p.rapidapi.com/plnpostpaid/{id}",
+            "description": "获取PLN后付费客户的账单数据。需要在表单中输入PLN ID。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "PLN客户的ID",
+                    "default": "532411286263"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET Data ID Pelanggan Token PLN",
+            "url": "https://cek-id-pln-pasca-dan-pra-bayar.p.rapidapi.com/pln/{id}/token_pln",
+            "description": "获取PLN预付费客户的令牌数据。需要在表单中输入PLN ID。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "PLN客户的ID",
+                    "default": "56213840202"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

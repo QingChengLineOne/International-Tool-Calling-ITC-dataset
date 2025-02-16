@@ -1,0 +1,42 @@
+{
+    "tool_name": "Rephraser Text and Spintax",
+    "tool_description": "This API allows users to quickly rewrite texts by generating multiple versions. It also supports the generation of spintax for different texts.",
+    "home_url": "https://rapidapi.com/micaelbh/api/rephraser-text-and-spintax/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "text_to_spintax",
+            "url": "https://rephraser-text-and-spintax.p.rapidapi.com/spintax.php",
+            "description": "This endpoint takes a text input and returns it in spintax format, which can be used for content spinning.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "text_to_spintax",
+                    "type": "STRING",
+                    "description": "The text that will be converted to spintax format.",
+                    "default": "A physical activity capable of working in a complementary way with issues related to stress, anxiety, in addition to collaborating in the treatment of depression and insomnia."
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "text_to_rewrite",
+            "url": "https://rephraser-text-and-spintax.p.rapidapi.com/spintext.php",
+            "description": "This endpoint takes a text input and returns a rewritten version of the text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "text_to_rewrite",
+                    "type": "STRING",
+                    "description": "The text that will be rewritten.",
+                    "default": "A physical activity capable of working in a complementary way with issues related to stress, anxiety, in addition to collaborating in the treatment of depression and insomnia."
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

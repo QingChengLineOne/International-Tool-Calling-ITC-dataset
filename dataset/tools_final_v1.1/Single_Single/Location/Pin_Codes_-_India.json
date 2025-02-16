@@ -1,0 +1,28 @@
+{
+    "tool_name": "Pin Codes - India",
+    "tool_description": "Find a list of post offices using either a postal code/pincode or search string in location name.",
+    "home_url": "https://rapidapi.com/navii/api/pin-codes-india/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "PIN",
+            "url": "https://pincode.p.rapidapi.com/",
+            "description": "Search by pin code.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "ADDRESS",
+            "url": "https://pincode.p.rapidapi.com/",
+            "description": "Search by location name. Please check the 'OVERVIEW' Tab for the list of State IDs to use with this API.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

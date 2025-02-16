@@ -1,0 +1,25 @@
+{
+    "tool_name": "1万+短剧搜索接口|免费短剧接口",
+    "tool_description": "全网短剧搜索API接口，目前收录7000+部短剧资源，适用于对接机器人或网页展示。",
+    "home_url": "https://api.aa1.cn/doc/lygz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "短剧搜索接口",
+            "url": "https://files.ptger.cn/api/files/vagueQuery",
+            "description": "提供短剧关键词搜索服务，返回相关短剧信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "搜索关键词，用于查找短剧。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

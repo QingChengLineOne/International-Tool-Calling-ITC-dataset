@@ -1,0 +1,25 @@
+{
+    "tool_name": "QQ音乐歌单随机歌曲API",
+    "tool_description": "返回对应歌单id的随机歌曲，可听会员！",
+    "home_url": "https://api.aa1.cn/doc/QQmusic_gedan.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ音乐歌单随机歌曲API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_qqlist.php",
+            "description": "获取指定歌单的随机歌曲信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "List_id",
+                    "type": "string",
+                    "description": "歌单的唯一标识符",
+                    "default": "无默认值"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

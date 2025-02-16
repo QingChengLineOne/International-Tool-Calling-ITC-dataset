@@ -1,0 +1,18 @@
+{
+    "tool_name": "Legend of Takada Kenshi",
+    "tool_description": "An API that randomly returns the legend of Takada Kenshi.",
+    "home_url": "https://rapidapi.com/ichii731/api/legend-of-takada-kenshi/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "Main",
+            "url": "https://legend-of-takada-kenshi.p.rapidapi.com/takada.php",
+            "description": "This API endpoint returns a random legend of Takada Kenshi without requiring any query parameters. Please access it directly. While there are no specific API authentication requirements, if accessing via a program, please include the service name or application in the User-Agent header.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

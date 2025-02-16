@@ -1,0 +1,31 @@
+{
+    "tool_name": "中文单字笔画查询",
+    "tool_description": "提供中文单字笔画数查询服务的API",
+    "home_url": "https://api.aa1.cn/doc/wq_zibs.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "单字笔画查询接口",
+            "url": "https://free.wqwlkj.cn/wqwlapi/zibishun.php",
+            "description": "查询指定汉字的笔画数",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "需要查询的汉字",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据的格式，目前支持'json'",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

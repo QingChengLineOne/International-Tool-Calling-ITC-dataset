@@ -1,0 +1,25 @@
+{
+    "tool_name": "每日Bing",
+    "tool_description": "每日Bing美图",
+    "home_url": "https://api.aa1.cn/doc/dxhy-bing.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "每日Bing美图API",
+            "url": "https://jx.iqfk.top/api/bing.php",
+            "description": "获取每日Bing壁纸图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，通常为json或xml",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

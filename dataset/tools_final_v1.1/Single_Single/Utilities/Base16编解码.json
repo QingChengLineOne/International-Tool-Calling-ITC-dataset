@@ -1,0 +1,31 @@
+{
+    "tool_name": "Base16编解码",
+    "tool_description": "PHP开发的一个Base16编解码功能",
+    "home_url": "https://api.aa1.cn/doc/Base16.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Base16编解码API",
+            "url": "https://tools.qsnctf.com/tools/Tools/Base16/api.php",
+            "description": "提供Base16编码和解码的API服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "method",
+                    "type": "string",
+                    "description": "操作类型，encode为编码，decode为解码",
+                    "default": "encode"
+                },
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "要处理的字符串",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

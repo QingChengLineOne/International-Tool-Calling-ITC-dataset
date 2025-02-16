@@ -1,0 +1,25 @@
+{
+    "tool_name": "今日头条热搜榜",
+    "tool_description": "获取今日头条热搜榜信息",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_jrtt.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "今日头条热搜榜API",
+            "url": "https://free.wqwlkj.cn/wqwlapi/jrtt_hot.php",
+            "description": "提供今日头条热搜榜的数据接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据的格式，例如：json",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

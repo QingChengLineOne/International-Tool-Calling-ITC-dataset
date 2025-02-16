@@ -1,0 +1,25 @@
+{
+    "tool_name": "TelephoneToCountry",
+    "tool_description": "Validate and get location information about phone numbers. Supports 245 countries.",
+    "home_url": "https://rapidapi.com/r11baka/api/telephonetocountry/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getCountryByNumber",
+            "url": "https://telephonetocountry.p.rapidapi.com/number",
+            "description": "Returns country information based on the provided phone number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The phone number to search for.",
+                    "default": "12136210002"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

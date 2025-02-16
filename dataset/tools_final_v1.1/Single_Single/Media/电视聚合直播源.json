@@ -1,0 +1,32 @@
+{
+    "tool_name": "电视聚合直播源API",
+    "tool_description": "提供电视频道直播源信息的API",
+    "home_url": "https://api.aa1.cn/doc/tvsearch.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "电视频道直播源查询接口",
+            "url": "https://api.pearktrue.cn/api/tv/search.php",
+            "description": "用于获取指定电视频道的直播源信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "电视频道名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "platform",
+                    "type": "string",
+                    "description": "指定平台，如：pptv, letv, youku等",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

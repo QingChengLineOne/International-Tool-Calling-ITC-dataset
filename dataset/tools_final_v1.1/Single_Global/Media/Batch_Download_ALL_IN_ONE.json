@@ -1,0 +1,78 @@
+{
+    "tool_name": "Batch Download ALL IN ONE",
+    "tool_description": "Download a series of multi-platform video channels: Tiktok, Douyin, Hipi, Kuaishou, Instagram, and more.",
+    "home_url": "https://rapidapi.com/nguyenmanhict-MuTUtGWD7K/api/batch-download-all-in-one/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Kuaishou",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/",
+            "description": "Kuaishou Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Douyin Get Limit",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/douyin/user/itemlist",
+            "description": "Douyin Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Douyin Get Cursor",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/batchpost",
+            "description": "Douyin Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Tiktok Get Cursor",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/batchpost",
+            "description": "Tiktok Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Facebook",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/",
+            "description": "Facebook Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Instagram",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/instagram/media/post",
+            "description": "Instagram Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Tiktok Get Limit",
+            "url": "https://batch-download-all-in-one.p.rapidapi.com/api/v1/social/tiktok/user/itemlist",
+            "description": "Tiktok Download All Post Media",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

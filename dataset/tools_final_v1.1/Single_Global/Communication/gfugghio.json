@@ -1,0 +1,18 @@
+{
+    "tool_name": "gfugghio",
+    "tool_description": "A tool for managing and processing emails.",
+    "home_url": "https://rapidapi.com/b6385575/api/gfugghio/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "kbkbnnk",
+            "url": "https://gfugghio.p.rapidapi.com/",
+            "description": "This API endpoint retrieves email-related data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

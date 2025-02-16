@@ -1,0 +1,25 @@
+{
+    "tool_name": "GitHub加速下载",
+    "tool_description": "根据传入的 GitHub 文件链接，随机选择一个远程 API，返回 JSON 格式的下载链接信息。",
+    "home_url": "https://api.aa1.cn/doc/github-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "GitHub加速下载API",
+            "url": "https://api.ahfi.cn/api/GithubDownload",
+            "description": "通过此API获取GitHub文件的加速下载链接",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "GitHub文件链接",
+                    "default": "请提供GitHub文件链接"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

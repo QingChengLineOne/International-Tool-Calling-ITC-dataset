@@ -1,0 +1,38 @@
+{
+    "tool_name": "炫彩流光字制作",
+    "tool_description": "炫彩流光字体制作API，用于生成带有特殊效果的炫彩流光文字。",
+    "home_url": "https://api.aa1.cn/doc/ggapi-timetxt.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "炫彩流光字制作API",
+            "url": "https://api.mhimg.cn/api/ATime_txt/",
+            "description": "生成特定文字的炫彩流光效果",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "需要制作炫彩流光效果的文字",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sort",
+                    "type": "string",
+                    "description": "文字的颜色排序，例如：紫绶金章",
+                    "default": ""
+                },
+                {
+                    "name": "sort2",
+                    "type": "string",
+                    "description": "文字的形状排序，例如：小菱心",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

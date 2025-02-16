@@ -1,0 +1,83 @@
+{
+    "tool_name": "Fastest Social Video and Image Downloader",
+    "tool_description": "A tool designed to quickly download videos and images from social media platforms such as Instagram, Pinterest, and Facebook, with more platforms to be added soon.",
+    "home_url": "https://rapidapi.com/vikas5914/api/fastest-social-video-and-image-downloader/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get YouTube Video/Image Link",
+            "url": "https://fastest-social-video-and-image-downloader.p.rapidapi.com/youtube",
+            "description": "Fetches the video or image link from a specified YouTube URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The YouTube video URL from which to extract the link.",
+                    "default": "https://www.youtube.com/watch?v=eVTXPUF4Oz4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Pinterest Video/Image Link",
+            "url": "https://fastest-social-video-and-image-downloader.p.rapidapi.com/pinterest",
+            "description": "Fetches the video or image link from a specified Pinterest URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The Pinterest pin URL from which to extract the link.",
+                    "default": "https://in.pinterest.com/pin/1095852521805152932/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Facebook Video/Story without watermark",
+            "url": "https://fastest-social-video-and-image-downloader.p.rapidapi.com/facebook",
+            "description": "Fetches Facebook videos or stories without a watermark from a specified URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The Facebook video or reel URL from which to extract the link.",
+                    "default": "https://www.facebook.com/reel/1187362698778788"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "thumbnail": {
+                        "type": "string"
+                    },
+                    "links": {
+                        "type": "object",
+                        "properties": {
+                            "Download Low Quality": {
+                                "type": "string"
+                            },
+                            "Download High Quality": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

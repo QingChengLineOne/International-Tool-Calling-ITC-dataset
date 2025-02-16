@@ -1,0 +1,28 @@
+{
+    "tool_name": "FaceMatch",
+    "tool_description": "This API compares two face images to determine if they belong to the same person, aiding in authentication and impersonation detection.",
+    "home_url": "https://rapidapi.com/way2risetech/api/facematch/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Facematch by URL",
+            "url": "https://facematch.p.rapidapi.com/API/verify/Facematch",
+            "description": "Compare two faces and decide whether they are from the same person using image URLs.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Facematch by Base64",
+            "url": "https://facematch.p.rapidapi.com/API/verify/Facematch",
+            "description": "Compare two faces and decide whether they are from the same person using Base64 encoded images.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

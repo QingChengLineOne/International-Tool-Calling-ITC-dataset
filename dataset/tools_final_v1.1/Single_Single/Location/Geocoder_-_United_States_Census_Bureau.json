@@ -1,0 +1,74 @@
+{
+    "tool_name": "Geocoder - United States Census Bureau",
+    "tool_description": "Census geocoder provides interactive & programmatic (REST) access to users interested in matching addresses to geographic locations and entities containing those addresses.",
+    "home_url": "https://rapidapi.com/eec19846/api/geocoder-united-states-census-bureau/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Geocoding for an address",
+            "url": "https://eec19846-geocoder-us-census-bureau-v1.p.rapidapi.com/locations/onelineaddress",
+            "description": "Returns a geocode for a specified address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "benchmark",
+                    "type": "STRING",
+                    "description": "A numerical ID or name that references what version of the locator should be searched.",
+                    "default": "Public_AR_Current"
+                },
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "A single line containing the full address to be searched.",
+                    "default": "1 Embarcadero street San Francisco"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Response format, either json or html.",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Geocoding and Geolookup for an address",
+            "url": "https://eec19846-geocoder-us-census-bureau-v1.p.rapidapi.com/geographies/onelineaddress",
+            "description": "Returns a geocode and a geolookup for a specified address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "benchmark",
+                    "type": "STRING",
+                    "description": "A numerical ID or name that references what version of the locator should be searched.",
+                    "default": "Public_AR_Current"
+                },
+                {
+                    "name": "address",
+                    "type": "STRING",
+                    "description": "Address in one line.",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Response format, either json or html.",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "vintage",
+                    "type": "STRING",
+                    "description": "A numerical ID or name that references what vintage of geography is desired for the geoLookup.",
+                    "default": "Current_Current"
+                }
+            ],
+            "statuscode": "400",
+            "schema": {}
+        }
+    ]
+}

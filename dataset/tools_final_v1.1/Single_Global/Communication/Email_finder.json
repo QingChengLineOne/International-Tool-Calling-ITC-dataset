@@ -1,0 +1,37 @@
+{
+    "tool_name": "Email finder",
+    "tool_description": "Find email of anyone from their first name, last name, and domain.",
+    "home_url": "https://rapidapi.com/nicholasbudiharsa/api/email-finder8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Fetch email of a person",
+            "url": "https://email-finder8.p.rapidapi.com/fetch_email_of_person",
+            "description": "Retrieve the email address of an individual based on their first name, last name, and domain. This API is particularly useful for lead generation, prospecting, and cold marketing.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "first_name",
+                    "type": "STRING",
+                    "description": "The first name of the person whose email is being searched.",
+                    "default": "John"
+                },
+                {
+                    "name": "last_name",
+                    "type": "STRING",
+                    "description": "The last name of the person whose email is being searched.",
+                    "default": "Doe"
+                },
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain of the email provider (e.g., google.com).",
+                    "default": "google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

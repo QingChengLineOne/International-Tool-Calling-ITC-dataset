@@ -1,0 +1,18 @@
+{
+    "tool_name": "Venus888",
+    "tool_description": "Venus888 - AE8888 - ae8888.net ⭐ Trang chủ đăng ký và đăng nhập của nhà cái ae388 ⭐ Link vào ae888 chính thức để chơi bóng đá, đá gà, tài xỉu, lô đề tại Venus casino. Cung cấp hướng dẫn, trò chơi và khuyến mãi cho người dùng.",
+    "home_url": "https://rapidapi.com/ae8888net/api/venus888/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Venus888",
+            "url": "https://venus888.p.rapidapi.com/",
+            "description": "API cho phép người dùng truy cập vào các dịch vụ của Venus888, bao gồm đăng ký, đăng nhập và chơi các trò chơi cá cược.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

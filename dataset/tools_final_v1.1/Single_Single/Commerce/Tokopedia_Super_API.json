@@ -1,0 +1,119 @@
+{
+    "tool_name": "Tokopedia Super API",
+    "tool_description": "Unleash the Power of Tokopedia: Effortlessly Retrieve Shop and Product Information with Our API! (Unofficial)",
+    "home_url": "https://rapidapi.com/dytra/api/tokopedia-super-api/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "searchProducts",
+            "url": "https://tokopedia-super-api.p.rapidapi.com/searchProducts",
+            "description": "Search for products by keyword in Tokopedia.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The keyword to search for products.",
+                    "default": "TV"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "The sorting method to use, see `/sortProductsMaster`.",
+                    "default": ""
+                },
+                {
+                    "name": "max_price",
+                    "type": "STRING",
+                    "description": "The maximum price of the product.",
+                    "default": ""
+                },
+                {
+                    "name": "min_price",
+                    "type": "STRING",
+                    "description": "The minimum price of the product.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getShopInfo",
+            "url": "https://tokopedia-super-api.p.rapidapi.com/getShopInfo",
+            "description": "Retrieve information about a shop or seller.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "shop_domain",
+                    "type": "STRING",
+                    "description": "The static username of the shop or seller.",
+                    "default": "spacegros"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getShopProducts",
+            "url": "https://tokopedia-super-api.p.rapidapi.com/getShopProducts",
+            "description": "Get product details or search for products in a specific shop or seller.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "shop_domain",
+                    "type": "STRING",
+                    "description": "The username of the shop or seller.",
+                    "default": "spacegros"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "The sorting method to use, see `/sortProductsMaster`.",
+                    "default": ""
+                },
+                {
+                    "name": "slug",
+                    "type": "STRING",
+                    "description": "The slug or code of the product.",
+                    "default": ""
+                },
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The keyword of the product to search for.",
+                    "default": ""
+                },
+                {
+                    "name": "max_price",
+                    "type": "NUMBER",
+                    "description": "The maximum price of the product.",
+                    "default": ""
+                },
+                {
+                    "name": "min_price",
+                    "type": "NUMBER",
+                    "description": "The minimum price of the product.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "sortProductsMaster",
+            "url": "https://tokopedia-super-api.p.rapidapi.com/sortProductsMaster",
+            "description": "Retrieve the list of available sorting methods.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

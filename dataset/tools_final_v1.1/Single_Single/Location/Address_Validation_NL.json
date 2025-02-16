@@ -1,0 +1,58 @@
+{
+    "tool_name": "Address Validation NL",
+    "tool_description": "Address Validation NL API returns a valid Dutch address (street name and city/town) for a given postcode and house number.",
+    "home_url": "https://rapidapi.com/afaqkhan-To2oba4n3/api/address-validation-nl1/",
+    "country": "Netherlands",
+    "api_list": [
+        {
+            "name": "/api/v1/addresses",
+            "url": "https://address-validation-nl1.p.rapidapi.com/api/v1/addresses",
+            "description": "Retrieve a valid address based on the provided postcode and house number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Postcode",
+                    "type": "STRING",
+                    "description": "The postal code of the address to validate.",
+                    "default": "3021GS"
+                },
+                {
+                    "name": "HouseNumber",
+                    "type": "NUMBER",
+                    "description": "The house number of the address to validate.",
+                    "default": "288"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "HouseNumberSuffix",
+                    "type": "STRING",
+                    "description": "An optional suffix for the house number (e.g., A, B).",
+                    "default": "B"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "streetName": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "residence": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            }
+        }
+    ]
+}

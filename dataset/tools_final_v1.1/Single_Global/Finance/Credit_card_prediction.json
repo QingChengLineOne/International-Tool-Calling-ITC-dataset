@@ -1,0 +1,48 @@
+{
+    "tool_name": "Credit card prediction",
+    "tool_description": "At Credit Card, we know that your time is valuable. That’s why we offer a fast and easy way to get the information you need. With our new API, you can get the data you need in seconds.",
+    "home_url": "https://rapidapi.com/rowsanonline/api/credit-card-prediction/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Credit_Limit",
+            "url": "https://credit-card-prediction.p.rapidapi.com/1/2/3/4",
+            "description": "Retrieve the credit limit information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Months_on_book",
+            "url": "https://credit-card-prediction.p.rapidapi.com/1/2/3",
+            "description": "Get the number of months the card has been active and its category.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Dependent_count",
+            "url": "https://credit-card-prediction.p.rapidapi.com/1/2",
+            "description": "Fetch the count of dependents associated with the account.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Attrition_Flag",
+            "url": "https://credit-card-prediction.p.rapidapi.com/1",
+            "description": "Get the attrition flag status for the account.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

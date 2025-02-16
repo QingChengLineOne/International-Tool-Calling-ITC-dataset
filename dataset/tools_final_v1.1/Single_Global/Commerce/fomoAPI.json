@@ -1,0 +1,106 @@
+{
+    "tool_name": "fomoAPI",
+    "tool_description": "The #1 Social Proof API, Boost Your Conversions",
+    "home_url": "https://rapidapi.com/DocteurSEO/api/fomoapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Campaign From URL",
+            "url": "https://fomoapi.p.rapidapi.com/",
+            "description": "Retrieve leads from a specific website campaign.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Identifier for the lead.",
+                    "default": "Lead"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the website campaign.",
+                    "default": "gogofodo.com"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "list_complete": {
+                        "type": "boolean"
+                    },
+                    "keys": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "metadata": {
+                                    "type": "object",
+                                    "properties": {
+                                        "date": {
+                                            "type": "string"
+                                        },
+                                        "datefr": {
+                                            "type": "string"
+                                        },
+                                        "time": {
+                                            "type": "string"
+                                        },
+                                        "leadEmail": {
+                                            "type": "string"
+                                        },
+                                        "leadName": {
+                                            "type": "string"
+                                        },
+                                        "country": {
+                                            "type": "string"
+                                        },
+                                        "regionName": {
+                                            "type": "string"
+                                        },
+                                        "city": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Post Lead",
+            "url": "https://fomoapi.p.rapidapi.com/",
+            "description": "Submit a lead for your social proof campaign.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Campaign Lead From ID",
+            "url": "https://fomoapi.p.rapidapi.com/",
+            "description": "Retrieve all leads from your social proof campaign using the campaign ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Identifier for the campaign.",
+                    "default": "Lead"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

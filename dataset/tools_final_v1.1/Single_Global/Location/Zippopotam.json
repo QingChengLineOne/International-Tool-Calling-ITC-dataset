@@ -1,0 +1,60 @@
+{
+    "tool_name": "Zippopotam",
+    "tool_description": "Zip Code Galore! Postal Codes and Zip Codes made easy. Free API with JSON Response Format. Over 60 Countries Supported. Perfect for Form Autocompletion. Open for Crowdsourcing and Contribution.",
+    "home_url": "https://rapidapi.com/trea/api/zippopotam-us/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Zip Code info",
+            "url": "https://community-zippopotamus.p.rapidapi.com/us/90210",
+            "description": "Retrieve information about a specific zip code in the specified country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country code for the zip code lookup.",
+                    "default": "us"
+                },
+                {
+                    "name": "postal_code",
+                    "type": "STRING",
+                    "description": "The postal code to look up.",
+                    "default": "90210"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Get info by city",
+            "url": "https://community-zippopotamus.p.rapidapi.com/us/ma/belmont",
+            "description": "Retrieve information about a specific city in the specified state and country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country code for the city lookup.",
+                    "default": "us"
+                },
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "The state abbreviation for the city lookup.",
+                    "default": "ma"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city to look up.",
+                    "default": "belmont"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

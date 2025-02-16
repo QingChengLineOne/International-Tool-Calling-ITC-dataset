@@ -1,0 +1,25 @@
+{
+    "tool_name": "公安备案查询API",
+    "tool_description": "公安备案查询（无缓存）,不支持大并发调用。",
+    "home_url": "https://api.aa1.cn/doc/coolxi_police.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "公安备案查询接口",
+            "url": "https://beian.kuxi.tech/api/police",
+            "description": "查询指定网站是否在公安备案",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "conten",
+                    "type": "string",
+                    "description": "要查询的网站域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+{
+    "tool_name": "Cryptocurrency Markets",
+    "tool_description": "Official cryptocurrency market API provides a comprehensive list of coins, profiles, stats, trends, most watched, top gainers/losers, newly created, and more! This API is ideal for web and app developers.",
+    "home_url": "https://rapidapi.com/sparior/api/cryptocurrency-markets/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Coin Quote",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/coin/quote",
+            "description": "Get quotes for a specific cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Enter a coin key (this information can be found in the Coin List endpoint)",
+                    "default": "bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Most Visited",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/most_visited",
+            "description": "Retrieve the most visited cryptocurrencies today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Coin Holders",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/coin/holders",
+            "description": "Get the top holders for a specific cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Enter a coin key (this information can be found in the Coin List endpoint)",
+                    "default": "bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Newly Listed",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/new_coins",
+            "description": "Retrieve recently listed cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Coin Profile",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/coin/profile",
+            "description": "Get cryptocurrency profile details such as name, description, quotes, links, etc.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Enter a coin key (this information can be found in the Coin List endpoint)",
+                    "default": "bitcoin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Gainers",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/gainer",
+            "description": "Retrieve cryptocurrencies with the most gains today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Losers",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/loser",
+            "description": "Retrieve cryptocurrencies with the most losses today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Videos",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/videos",
+            "description": "Retrieve recently published cryptocurrency videos.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Global Metric",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/global_matric",
+            "description": "Get current cryptocurrency global metrics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Coin List",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/coins",
+            "description": "Retrieve all active cryptocurrencies available to trade.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Enter a page number",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Trending",
+            "url": "https://cryptocurrency-markets.p.rapidapi.com/general/trending",
+            "description": "Retrieve current cryptocurrencies trending today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

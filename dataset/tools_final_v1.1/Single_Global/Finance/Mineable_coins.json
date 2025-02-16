@@ -1,0 +1,18 @@
+{
+    "tool_name": "Mineable coins",
+    "tool_description": "Access coin rewards, mining difficulty, algorithms, and other useful data for hundreds of coins and multi pools.",
+    "home_url": "https://rapidapi.com/minerstat/api/mineable-coins/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get coins' data",
+            "url": "https://mineable-coins.p.rapidapi.com/coins",
+            "description": "This endpoint allows you to retrieve a collection of all available coins, including their mining details and algorithms.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

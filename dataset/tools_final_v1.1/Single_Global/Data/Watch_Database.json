@@ -1,0 +1,104 @@
+{
+    "tool_name": "Watch Database",
+    "tool_description": "Our Watch Models API is a comprehensive and accurate data source of more than 20,000 watch models. This API allows users to retrieve detailed information about each model, including brand, model name, release date, features, and more. This data can be easily integrated into a wide range of use cases, such as e-commerce, watch retailers, watch collectors, research and development, and watch repair. Our API is constantly updated and maintained to ensure that the data provided is accurate and comprehensive.",
+    "home_url": "https://rapidapi.com/makingdatameaningful/api/watch-database1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Media Links",
+            "url": "https://watch-database1.p.rapidapi.com/watch-media-links-by-id/{watchId}",
+            "description": "Retrieves media links associated with a specific watch model using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "watchId",
+                    "type": "ENUM",
+                    "description": "The unique identifier for the watch model.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Watches By Brand Family Model",
+            "url": "https://watch-database1.p.rapidapi.com/all-watches-by/brandname/Omega/family/Aqua Terra/model/2005.75.00",
+            "description": "Retrieves all watches that match the specified brand, family, and model.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "brandName",
+                    "type": "string",
+                    "description": "The name of the watch brand.",
+                    "default": "Omega"
+                },
+                {
+                    "name": "model",
+                    "type": "string",
+                    "description": "The specific model of the watch.",
+                    "default": "2005.75.00"
+                },
+                {
+                    "name": "family",
+                    "type": "string",
+                    "description": "The family category of the watch.",
+                    "default": "Aqua Terra"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Models By Brand And Family",
+            "url": "https://watch-database1.p.rapidapi.com/all-models-by/brandname/Omega/family/Aqua Terra",
+            "description": "Retrieves all models available under a specific brand and family.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "family",
+                    "type": "string",
+                    "description": "The family category of the watches.",
+                    "default": "Aqua Terra"
+                },
+                {
+                    "name": "brandName",
+                    "type": "string",
+                    "description": "The name of the watch brand.",
+                    "default": "Omega"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Family By Brand name",
+            "url": "https://watch-database1.p.rapidapi.com/all-family-by/brandname/Omega",
+            "description": "Retrieves all family categories available for a specific brand.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "brandName",
+                    "type": "string",
+                    "description": "The name of the watch brand.",
+                    "default": "Omega"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Brands",
+            "url": "https://watch-database1.p.rapidapi.com/all-brands",
+            "description": "Retrieves a list of all watch brands available in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "tool_name": "国外地区经纬度查询",
+    "tool_description": "查询国外地区经纬度【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/xzqhunzb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "国外地区经纬度查询API",
+            "url": "https://cn.apihz.cn/api/other/xzqhunzb.php",
+            "description": "查询指定国外地区的经纬度信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的ID，用于识别API调用者",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥，用于验证API调用者",
+                    "default": "88888888"
+                },
+                {
+                    "name": "sheng",
+                    "type": "string",
+                    "description": "需要查询的地区省份",
+                    "default": "加利福尼亚"
+                },
+                {
+                    "name": "place",
+                    "type": "string",
+                    "description": "需要查询的地区具体位置",
+                    "default": "洛杉矶"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

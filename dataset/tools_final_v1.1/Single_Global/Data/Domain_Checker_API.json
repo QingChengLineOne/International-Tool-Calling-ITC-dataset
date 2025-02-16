@@ -1,0 +1,25 @@
+{
+    "tool_name": "Domain Checker API",
+    "tool_description": "The Domain Checker API allows users to retrieve detailed information about a specific domain name, including registrar information and registrant contact details. This API is useful for developers, businesses, and individuals seeking to gather valuable data about domain names.",
+    "home_url": "https://rapidapi.com/JustMobi/api/domain-checker-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Checker",
+            "url": "https://domain-checker-api.p.rapidapi.com/lookup",
+            "description": "Checks the domain details and provides information such as registrar info and registrant contact details.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The domain name to check.",
+                    "default": "https://rapidapi.com/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

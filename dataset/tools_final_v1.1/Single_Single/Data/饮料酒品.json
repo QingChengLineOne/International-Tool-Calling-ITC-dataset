@@ -1,0 +1,25 @@
+{
+    "tool_name": "饮料酒品",
+    "tool_description": "查询来自世界各地的饮料和鸡尾酒",
+    "home_url": "https://www.thecocktaildb.com",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "搜索饮料酒品",
+            "url": "https://www.thecocktaildb.com/api/json/v1/1/search.php",
+            "description": "根据饮料酒品名称进行搜索",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "s",
+                    "type": "string",
+                    "description": "饮料酒品名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

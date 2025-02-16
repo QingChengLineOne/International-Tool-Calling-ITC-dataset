@@ -1,0 +1,25 @@
+{
+    "tool_name": "eSignly",
+    "tool_description": "eSignly revolutionary electronic signatures are transforming the way industries such as insurance, healthcare, government, real estate, finance, and IT firms manage document signing. It simplifies the process of preparing, sending, sharing, and producing documents in seconds, significantly reducing the burden of handling physical paperwork.",
+    "home_url": "https://rapidapi.com/esignly/api/esignly/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "API EndPoint",
+            "url": "https://esignly.p.rapidapi.com/api.esignly.com/v1",
+            "description": "Main endpoint to access the eSignly API for electronic signature functionalities.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "v1",
+                    "type": "STRING",
+                    "description": "Version parameter for the API.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

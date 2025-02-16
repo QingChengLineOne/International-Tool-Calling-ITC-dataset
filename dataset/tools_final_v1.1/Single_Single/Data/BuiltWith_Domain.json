@@ -1,0 +1,215 @@
+{
+    "tool_name": "BuiltWith Domain",
+    "tool_description": "Get web technology current and usage history for a domain going back to 2000.",
+    "home_url": "https://rapidapi.com/builtwith/api/builtwith-domain/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "v19 JSON",
+            "url": "https://builtwith-domain.p.rapidapi.com/v19/api.json",
+            "description": "Get technology usage for a domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "LOOKUP",
+                    "type": "STRING",
+                    "description": "The domain you want to lookup. You can parse up to 16 domains at once as a CSV for improved throughput.",
+                    "default": "overstock.com"
+                },
+                {
+                    "name": "KEY",
+                    "type": "STRING",
+                    "description": "This is your key, use this for lookups. Get this key from https://api.builtwith.com.",
+                    "default": "your-api-key"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Result": {
+                                    "type": "object",
+                                    "properties": {
+                                        "IsDB": {
+                                            "type": "string"
+                                        },
+                                        "Spend": {
+                                            "type": "integer"
+                                        },
+                                        "Paths": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Technologies": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object"
+                                                        }
+                                                    },
+                                                    "FirstIndexed": {
+                                                        "type": "integer"
+                                                    },
+                                                    "LastIndexed": {
+                                                        "type": "integer"
+                                                    },
+                                                    "Domain": {
+                                                        "type": "string"
+                                                    },
+                                                    "Url": {
+                                                        "type": "string"
+                                                    },
+                                                    "SubDomain": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "Meta": {
+                                    "type": "object",
+                                    "properties": {
+                                        "Majestic": {
+                                            "type": "integer"
+                                        },
+                                        "Umbrella": {
+                                            "type": "integer"
+                                        },
+                                        "Vertical": {
+                                            "type": "string"
+                                        },
+                                        "Social": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "CompanyName": {
+                                            "type": "string"
+                                        },
+                                        "Telephones": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "Emails": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "City": {
+                                            "type": "string"
+                                        },
+                                        "State": {
+                                            "type": "string"
+                                        },
+                                        "Postcode": {
+                                            "type": "string"
+                                        },
+                                        "Country": {
+                                            "type": "string"
+                                        },
+                                        "Names": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Name": {
+                                                        "type": "string"
+                                                    },
+                                                    "Type": {
+                                                        "type": "integer"
+                                                    },
+                                                    "Email": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "ARank": {
+                                            "type": "integer"
+                                        },
+                                        "QRank": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "Attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "MJRank": {
+                                            "type": "integer"
+                                        },
+                                        "MJTLDRank": {
+                                            "type": "integer"
+                                        },
+                                        "RefSN": {
+                                            "type": "integer"
+                                        },
+                                        "RefIP": {
+                                            "type": "integer"
+                                        },
+                                        "Followers": {
+                                            "type": "integer"
+                                        },
+                                        "Sitemap": {
+                                            "type": "integer"
+                                        },
+                                        "GTMTags": {
+                                            "type": "integer"
+                                        },
+                                        "QubitTags": {
+                                            "type": "integer"
+                                        },
+                                        "TealiumTags": {
+                                            "type": "integer"
+                                        },
+                                        "AdobeTags": {
+                                            "type": "integer"
+                                        },
+                                        "CDimensions": {
+                                            "type": "integer"
+                                        },
+                                        "CGoals": {
+                                            "type": "integer"
+                                        },
+                                        "CMetrics": {
+                                            "type": "integer"
+                                        },
+                                        "ProductCount": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                },
+                                "FirstIndexed": {
+                                    "type": "integer"
+                                },
+                                "LastIndexed": {
+                                    "type": "integer"
+                                },
+                                "Lookup": {
+                                    "type": "string"
+                                },
+                                "SalesRevenue": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "Errors": {
+                        "type": "array"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "tool_name": "filmaffinity unofficial",
+    "tool_description": "Filmaffinity unofficial API - BETA, providing access to film data including details and search functionalities.",
+    "home_url": "https://rapidapi.com/mack06/api/filmaffinity-unofficial/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Detail",
+            "url": "https://filmaffinity-unofficial.p.rapidapi.com/movie/detail/",
+            "description": "Retrieve detailed information about a specific film using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the film.",
+                    "default": "750283"
+                },
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "The language in which the film details should be returned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "message": {
+                        "properties": {
+                            "actors": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "country": {
+                                "type": "string"
+                            },
+                            "director": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "duration": {
+                                "type": "string"
+                            },
+                            "excerpt": {
+                                "type": "string"
+                            },
+                            "genres": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "link": {
+                                "type": "string"
+                            },
+                            "rating": {
+                                "type": "integer"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "votes": {
+                                "type": "integer"
+                            },
+                            "year": {
+                                "type": "integer"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "Search",
+            "url": "https://filmaffinity-unofficial.p.rapidapi.com/movie/search/",
+            "description": "Search for films by title, returning a maximum of 100 results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The title or keyword to search for films.",
+                    "default": "superman"
+                },
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "The language in which the search results should be returned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "toYear",
+                    "type": "NUMBER",
+                    "description": "The upper limit of the year range for the search.",
+                    "default": ""
+                },
+                {
+                    "name": "fromYear",
+                    "type": "NUMBER",
+                    "description": "The lower limit of the year range for the search.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

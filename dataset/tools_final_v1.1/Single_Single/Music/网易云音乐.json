@@ -1,0 +1,25 @@
+{
+    "tool_name": "网易云音乐",
+    "tool_description": "获取网易云ID的音乐直链，欢迎对接",
+    "home_url": "https://api.aa1.cn/doc/wymusic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网易云音乐音乐直链获取API",
+            "url": "https://api.aa1.cn/api/wymusic/",
+            "description": "通过网易云音乐ID获取音乐直链",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "网易云音乐的唯一标识符",
+                    "default": "音乐ID"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

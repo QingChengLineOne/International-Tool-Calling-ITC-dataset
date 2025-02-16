@@ -1,0 +1,18 @@
+{
+    "tool_name": "Zakka Naturals",
+    "tool_description": "Zakka Naturals is a brand of natural cosmetics that utilizes advanced technology. Their product range includes Vitamin C serum, Niacinamide serum, and B5 serum, among others.",
+    "home_url": "https://rapidapi.com/zakkanaturals/api/zakka-naturals/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Zakka Naturals API",
+            "url": "https://zakka-naturals.p.rapidapi.com/",
+            "description": "This API provides access to Zakka Naturals' product information and services.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

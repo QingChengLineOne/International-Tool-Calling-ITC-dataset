@@ -1,0 +1,25 @@
+{
+    "tool_name": "我的世界SRV解析还原",
+    "tool_description": "还原我的世界SRV解析下的记录，获取服务器真实地址",
+    "home_url": "https://api.aa1.cn/doc/SRV.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "还原SRV解析记录",
+            "url": "https://api.imzzh.cn/minecraft-srv/",
+            "description": "通过此接口获取SRV解析记录还原后的服务器真实地址",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "SRV记录中的域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

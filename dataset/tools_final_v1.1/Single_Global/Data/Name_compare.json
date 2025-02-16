@@ -1,0 +1,35 @@
+{
+    "tool_name": "Name compare",
+    "tool_description": "IDfy’s Name Compare API ensures that the documents provided to you belong to the individuals you expect them to. Automate workflows by eliminating the need to manually eyeball and compare names across multiple documents and forms. This API takes two names as inputs and returns a match score to help you make decisions faster. Pair it with IDfy’s OCR APIs to completely automate your workflows and get your onboarding process right the first time!",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/name-compare/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://name-compare.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch API results using the request ID received in responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request made to the API.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Name compare",
+            "url": "https://name-compare.p.rapidapi.com/v3/tasks/async/compare/ind_names",
+            "description": "This endpoint allows you to compare two names and produces a match score on a scale of 1 to 5. Use the GET call to fetch API call results by passing the request ID.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "tool_name": "Email Verification",
+    "tool_description": "Validate email addresses in real time by checking syntax and verifying the domain's MX records.",
+    "home_url": "https://rapidapi.com/info-qGn690NaE/api/email-verification7/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/verify",
+            "url": "https://email-verification7.p.rapidapi.com/email/verify/{email}",
+            "description": "Verifies the validity of an email address by checking its syntax and MX records.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "The email address to be verified.",
+                    "default": "test@gmail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "domain": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "error": {
+                        "type": "string"
+                    },
+                    "hasMXRecord": {
+                        "type": "boolean"
+                    },
+                    "isDomainValid": {
+                        "type": "boolean"
+                    },
+                    "isSyntaxValid": {
+                        "type": "boolean"
+                    },
+                    "isValid": {
+                        "type": "boolean"
+                    },
+                    "mxRecords": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

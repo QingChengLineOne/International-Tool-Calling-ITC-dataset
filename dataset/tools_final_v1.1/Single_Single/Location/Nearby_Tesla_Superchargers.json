@@ -1,0 +1,38 @@
+{
+    "tool_name": "Nearby Tesla Superchargers",
+    "tool_description": "Find nearby Tesla Superchargers globally, allowing Tesla owners to locate charging stations efficiently.",
+    "home_url": "https://rapidapi.com/NovusAPI/api/nearby-tesla-superchargers/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Nearby superchargers",
+            "url": "https://nearby-tesla-superchargers.p.rapidapi.com/chargers",
+            "description": "Retrieve a list of Tesla Superchargers located within a specified radius, up to 50 kilometers away.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lng",
+                    "type": "NUMBER",
+                    "description": "The longitude of the user's location.",
+                    "default": "-122.348906"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "The latitude of the user's location.",
+                    "default": "47.619957"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "radius",
+                    "type": "NUMBER",
+                    "description": "The search radius in kilometers. Default is 25 km, maximum is 50 km.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

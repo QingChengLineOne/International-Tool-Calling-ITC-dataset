@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP Geolocation_v3",
+    "tool_description": "The IP Geolocation API allows developers to obtain geolocation information for a given IP address. It provides data points such as city, state, province, country, continent, latitude, longitude, region, timezone, current time, organization, ISP, local currency, and country flags. This API can be utilized for various purposes including content personalization, geotargeting, geofencing, ad targeting, and digital rights management.",
+    "home_url": "https://rapidapi.com/Chetan11dev/api/ip-geolocation21/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get IP Geolocation",
+            "url": "https://ip-geolocation21.p.rapidapi.com/backend/ipinfo/",
+            "description": "This endpoint returns geolocation and other useful information based on an IP address. If an IP address is provided as a query parameter, geolocation is performed on that specific IP address. If the IP address is left empty, the geolocation data of the client's IP is returned.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "The IP address for which geolocation information is requested.",
+                    "default": "206.71.50.230"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

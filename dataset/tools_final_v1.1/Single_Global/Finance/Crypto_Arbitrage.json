@@ -1,0 +1,37 @@
+{
+    "tool_name": "Crypto Arbitrage",
+    "tool_description": "Find cryptocurrency arbitrage opportunities in real-time across over 120 exchanges and 1400 pairs.",
+    "home_url": "https://rapidapi.com/WRT/api/crypto-arbitrage/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "crypto-arb",
+            "url": "https://crypto-arbitrage.p.rapidapi.com/crypto-arb",
+            "description": "Detects the exchanges with the highest bid and lowest ask for the currency pair provided by the user. Users can allow trading fees (market taker fees from each exchange) to be considered. It returns the arbitrage profit, data for the highest bid and lowest ask exchanges, and a list of exchanges considered.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "selected_exchanges",
+                    "type": "STRING",
+                    "description": "User can provide a string of exchanges separated by space so that only these exchanges will be considered in the search.",
+                    "default": "exmo cex bitstamp hitbtc"
+                },
+                {
+                    "name": "pair",
+                    "type": "STRING",
+                    "description": "The currency pair for which arbitrage opportunities are being searched.",
+                    "default": "BTC/USD"
+                },
+                {
+                    "name": "consider_fees",
+                    "type": "STRING",
+                    "description": "Set to 'True' to consider Market Taker fees of each exchange in the return calculation. Set to 'False' to ignore fees in the calculation.",
+                    "default": "False"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

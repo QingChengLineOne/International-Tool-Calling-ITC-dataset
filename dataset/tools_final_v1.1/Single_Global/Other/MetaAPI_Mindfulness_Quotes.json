@@ -1,0 +1,31 @@
+{
+    "tool_name": "MetaAPI Mindfulness Quotes",
+    "tool_description": "Get a random quote about mindfulness from a list of 100 quotes.",
+    "home_url": "https://rapidapi.com/metaapi-metaapi-default/api/metaapi-mindfulness-quotes/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getMindfulnessQuote",
+            "url": "https://metaapi-mindfulness-quotes.p.rapidapi.com/v1/mindfulness",
+            "description": "Fetch a random mindfulness quote from a curated list.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "author",
+                    "type": "STRING",
+                    "description": "Filter quotes by a specific author.",
+                    "default": ""
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Filter quotes by a specific category.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

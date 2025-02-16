@@ -1,0 +1,165 @@
+{
+    "tool_name": "Screening and Matching Resumes",
+    "tool_description": "A tool designed for recruiters to expedite the resume screening process and for candidates to verify if their profiles match specific job offers.",
+    "home_url": "https://rapidapi.com/volkeno-volkeno-default/api/screening-and-matching-resumes/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/sourcingResume",
+            "url": "https://screening-and-matching-resumes.p.rapidapi.com/sourcingResume",
+            "description": "Fetches sourced resumes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/ScreeningOffer",
+            "url": "https://screening-and-matching-resumes.p.rapidapi.com/ScreeningOffer",
+            "description": "Uploads a file and computes cosine similarity with each file in the dataset.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The file to upload for similarity computation.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "/ResumeScreeningLink",
+            "url": "https://screening-and-matching-resumes.p.rapidapi.com/ResumeScreeningLink",
+            "description": "Uploads a resume and a job offer link to evaluate the match.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "resume",
+                    "type": "BINARY",
+                    "description": "The resume file to upload.",
+                    "default": ""
+                },
+                {
+                    "name": "job_offer_link",
+                    "type": "STRING",
+                    "description": "The link to the job offer page.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "resume_category_link": {
+                        "type": "string",
+                        "description": "category of the resume"
+                    },
+                    "matching_score_link": {
+                        "type": "number",
+                        "description": "The matching score between file and given Link "
+                    }
+                }
+            }
+        },
+        {
+            "name": "/ScreeningOfferLink",
+            "url": "https://screening-and-matching-resumes.p.rapidapi.com/ScreeningOfferLink",
+            "description": "Extracts job offer text from a link and calculates cosine similarity with resumes in a CSV file.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "job_offer_link",
+                    "type": "STRING",
+                    "description": "The link to the job offer page.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "top_matches_files": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "filename": {
+                                    "type": "string"
+                                },
+                                "similarity": {
+                                    "type": "number",
+                                    "format": "float",
+                                    "minimum": -3.402823669209385e+38,
+                                    "maximum": 3.402823669209385e+38
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/ResumeScreening",
+            "url": "https://screening-and-matching-resumes.p.rapidapi.com/ResumeScreening",
+            "description": "Uploads a job offer and a resume to evaluate their compatibility.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "job_offer",
+                    "type": "BINARY",
+                    "description": "The job offer file to upload.",
+                    "default": ""
+                },
+                {
+                    "name": "resume",
+                    "type": "BINARY",
+                    "description": "The resume file to upload.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "resume_category_file": {
+                        "type": "string",
+                        "description": "The category of the uploaded resume"
+                    },
+                    "matching score_file": {
+                        "type": "number",
+                        "description": "The cosine similarity between the uploaded resume and job offer"
+                    }
+                }
+            }
+        }
+    ]
+}

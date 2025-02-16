@@ -1,0 +1,25 @@
+{
+    "tool_name": "小姐姐短视频API",
+    "tool_description": "随机遍历目录下文件，视频数据来源于自媒体平台",
+    "home_url": "https://api.aa1.cn/doc/girl.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "小姐姐短视频接口",
+            "url": "https://tucdn.wpon.cn/api-girl/index.php",
+            "description": "获取随机视频内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "wpon",
+                    "type": "string",
+                    "description": "请求类型参数，用于指定返回数据格式为JSON",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

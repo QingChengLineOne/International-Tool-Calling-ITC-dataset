@@ -1,0 +1,122 @@
+{
+    "tool_name": "spacHero - SPAC Database",
+    "tool_description": "Official spacHero SPAC API with live rankings, SPAC target names, merger meetings, warrant redemption deadlines, price targets, SEC filings, investor presentations and more.",
+    "home_url": "https://rapidapi.com/spachero/api/spachero-spac-database/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "SPAC Top-10 Rankings",
+            "url": "https://spachero-spac-database.p.rapidapi.com/top10/",
+            "description": "Returns Top-10 gainers, losers and volume leaders for a given period and equity type (i.e., common, unit, warrants).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sortby",
+                    "type": "STRING",
+                    "description": "Specifies the sorting criteria for the rankings.",
+                    "default": "gainers"
+                },
+                {
+                    "name": "period",
+                    "type": "STRING",
+                    "description": "Defines the time period for the rankings.",
+                    "default": "daily"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Indicates the type of equity to rank.",
+                    "default": "common"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "SPAC Summary",
+            "url": "https://spachero-spac-database.p.rapidapi.com/summary/{symbol}",
+            "description": "Retrieve SPAC summary including important dates, status and target names.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The ticker symbol of the SPAC.",
+                    "default": "GGPI"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest SPAC Deals, IPOs, Closings",
+            "url": "https://spachero-spac-database.p.rapidapi.com/news/latest/",
+            "description": "Returns a list of latest SPAC events, such as deals, IPOs, closings, rumors.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "event",
+                    "type": "STRING",
+                    "description": "Specifies the type of event to retrieve.",
+                    "default": "deals"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "SPAC Calendar",
+            "url": "https://spachero-spac-database.p.rapidapi.com/calendar/",
+            "description": "Get important SPAC dates such as merger meetings dates, warrant redemption deadlines, definitive agreement dates.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of date to retrieve.",
+                    "default": "redemption"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "SPAC SEC Filings",
+            "url": "https://spachero-spac-database.p.rapidapi.com/secfilings/latest/",
+            "description": "Get latest SPAC SEC filings, filter by SPAC symbol.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The ticker symbol to filter SEC filings.",
+                    "default": "ITAC"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "SPAC Price Targets",
+            "url": "https://spachero-spac-database.p.rapidapi.com/pricetargets/latest/",
+            "description": "Get latest SPAC price targets from analysts, filter by SPAC symbol.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The ticker symbol to filter price targets.",
+                    "default": "SOFI"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

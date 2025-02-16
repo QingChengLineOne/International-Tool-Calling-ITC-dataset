@@ -1,0 +1,100 @@
+{
+    "tool_name": "Pinterest Downloader - Download Pinterest image Video and reels",
+    "tool_description": "This API allows you to retrieve information about a specific pin on Pinterest, including details such as the pin’s title, description, image, video, gif, and reel. It provides easy access to the wealth of information available on Pinterest.",
+    "home_url": "https://rapidapi.com/JustMobi/api/pinterest-downloader-download-pinterest-image-video-and-reels/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Pin Data using FormData",
+            "url": "https://pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com/api/pin",
+            "description": "This endpoint returns all information about a specific pin on Pinterest.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Use pin id (e.g., 898608931881203244) or a valid Pinterest URL.",
+                    "default": "https://pin.it/1JyKAWz"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve User's Pins on Pinterest",
+            "url": "https://pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com/api/userpins",
+            "description": "This API responds with a JSON object containing the pins of a specified user on Pinterest.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "Example username: logodesignforentrepreneurs. Extract username from a Pinterest URL.",
+                    "default": "logodesignforentrepreneurs"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pinterest pin keyword search",
+            "url": "https://pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com/api/basesearch",
+            "description": "This endpoint returns images or videos related to a specific keyword on Pinterest.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The keyword to search for.",
+                    "default": "messi"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "update",
+                    "type": "STRING",
+                    "description": "Optional parameter for updates.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Pin Data",
+            "url": "https://pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com/api/data",
+            "description": "This endpoint returns all information about a specific pin on Pinterest.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "Use pin URL (e.g., https://pin.it/1JyKAWz or https://www.pinterest.com/pin/898608931881203244/).",
+                    "default": "https://pin.it/5TZnIsk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Pin Data V2",
+            "url": "https://pinterest-downloader-download-pinterest-image-video-and-reels.p.rapidapi.com/api/getdata",
+            "description": "This endpoint returns all information about a specific pin on Pinterest.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "Use a valid Pinterest URL.",
+                    "default": "https://www.pinterest.com/pin/957577939494397767/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

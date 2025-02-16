@@ -1,0 +1,50 @@
+{
+    "tool_name": "非百度坐标系转换API",
+    "tool_description": "用于将非百度坐标系转换为百度坐标系",
+    "home_url": "https://www.free-api.com/doc/288",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "坐标转换",
+            "url": "http://api.map.baidu.com/geoconv/v1/",
+            "description": "将非百度坐标系转换为百度坐标系",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "coords",
+                    "type": "float",
+                    "description": "需转换的源坐标，多组坐标以‘；’分隔",
+                    "default": ""
+                },
+                {
+                    "name": "ak",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "from",
+                    "type": "int",
+                    "description": "源坐标类型",
+                    "default": "1"
+                },
+                {
+                    "name": "to",
+                    "type": "int",
+                    "description": "目标坐标类型",
+                    "default": "5"
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "返回结果格式",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

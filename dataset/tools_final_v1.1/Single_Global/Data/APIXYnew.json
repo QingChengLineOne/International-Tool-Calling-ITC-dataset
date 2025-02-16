@@ -1,0 +1,50 @@
+{
+    "tool_name": "APIXYnew",
+    "tool_description": "A versatile API for managing user data and posts.",
+    "home_url": "https://rapidapi.com/this-is-an-org-default/api/apixynew/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "users",
+            "url": "https://apixynew.p.rapidapi.com/users",
+            "description": "Fetches a list of users.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "posts",
+            "url": "https://apixynew.p.rapidapi.com/posts",
+            "description": "Creates a new post.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

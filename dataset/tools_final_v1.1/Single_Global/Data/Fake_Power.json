@@ -1,0 +1,59 @@
+{
+    "tool_name": "Fake Power",
+    "tool_description": "A Powerful Fake [Realistic] Data generator that generates fake JSON responses based on a schema provided which can be complex. It has a huge set of data from information about people, databases, finances, credit card information, jargons and much more.",
+    "home_url": "https://rapidapi.com/ywadi85/api/fake-power/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Fake Data Generate",
+            "url": "https://fake-power.p.rapidapi.com/v1/fake/generate",
+            "description": "Generate fake data based on predefined schemas.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "dog": {
+                                    "type": "string"
+                                },
+                                "avatarsOfFamily": {
+                                    "type": "object"
+                                },
+                                "friends": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "age": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

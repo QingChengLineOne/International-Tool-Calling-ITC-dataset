@@ -1,0 +1,55 @@
+{
+    "tool_name": "Quotation Service for Domestic Helper Insurance",
+    "tool_description": "This API provides quotations for Domestic Helper Insurance, allowing users to obtain pricing based on specific parameters.",
+    "home_url": "https://rapidapi.com/duttagoutam/api/quotation-service-for-domestic-helper-insurance/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "quote",
+            "url": "https://quotation-service-for-domestic-helper-insurance.p.rapidapi.com/api/broker/dwp/quote",
+            "description": "This endpoint accepts parameters to generate a quotation for Domestic Helper Insurance.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "nationality",
+                    "type": "STRING",
+                    "description": "The nationality of the domestic helper.",
+                    "default": ""
+                },
+                {
+                    "name": "duty",
+                    "type": "STRING",
+                    "description": "The specific duties of the domestic helper.",
+                    "default": ""
+                },
+                {
+                    "name": "plan_cd",
+                    "type": "STRING",
+                    "description": "The code for the insurance plan selected.",
+                    "default": ""
+                },
+                {
+                    "name": "birthday",
+                    "type": "STRING",
+                    "description": "The birthday of the domestic helper.",
+                    "default": ""
+                },
+                {
+                    "name": "eff_date",
+                    "type": "STRING",
+                    "description": "The effective date for the insurance coverage.",
+                    "default": ""
+                },
+                {
+                    "name": "monthly_salary",
+                    "type": "STRING",
+                    "description": "The monthly salary of the domestic helper.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

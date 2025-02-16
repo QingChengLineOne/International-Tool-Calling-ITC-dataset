@@ -1,0 +1,87 @@
+{
+    "tool_name": "Live Metal Prices",
+    "tool_description": "Live prices for Gold, Silver, Palladium and Platinum in 160+ currencies including USD, GBP and EUR.",
+    "home_url": "https://rapidapi.com/solutionsbynotnull/api/live-metal-prices/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Latest In chosen currency",
+            "url": "https://live-metal-prices.p.rapidapi.com/v1/latest/{requestedsymbols}/{requestedcurrency}",
+            "description": "Fetch real-time prices for selected metals in a specified currency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "requestedSymbols",
+                    "type": "string",
+                    "description": "Comma-separated list of metal symbols to retrieve prices for.",
+                    "default": "XAU,XAG,PA,PL,GBP,EUR"
+                },
+                {
+                    "name": "requestedCurrency",
+                    "type": "string",
+                    "description": "The currency in which to return the prices.",
+                    "default": "EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Latest Selected Metals in Selected Currency In Grams",
+            "url": "https://live-metal-prices.p.rapidapi.com/v1/latest/{requestedsymbols}/{requestedcurrency}/{requestedunitofweight}",
+            "description": "Fetch real-time prices for selected metals in a specified currency and weight unit.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "requestedUnitOfWeight",
+                    "type": "string",
+                    "description": "The unit of weight for the prices (e.g., gram).",
+                    "default": "gram"
+                },
+                {
+                    "name": "requestedCurrency",
+                    "type": "string",
+                    "description": "The currency in which to return the prices.",
+                    "default": "EUR"
+                },
+                {
+                    "name": "requestedSymbols",
+                    "type": "string",
+                    "description": "Comma-separated list of metal symbols to retrieve prices for.",
+                    "default": "XAU,XAG,PA,PL,GBP,EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Latest (retrieve XAU, XAG, PA, PL, EUR, GBP, USD)",
+            "url": "https://live-metal-prices.p.rapidapi.com/v1/latest",
+            "description": "Retrieve real-time prices for Gold, Silver, Palladium, and Platinum in USD, GBP, and EUR.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Latest (retrieve selected 160+ Symbols)",
+            "url": "https://live-metal-prices.p.rapidapi.com/v1/latest/{requestedsymbols}",
+            "description": "Fetch real-time prices for selected metals in 160+ currencies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "requestedSymbols",
+                    "type": "string",
+                    "description": "Comma-separated list of metal symbols to retrieve prices for.",
+                    "default": "XAU,XAG,PA,PL,GBP,EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

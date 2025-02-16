@@ -1,0 +1,66 @@
+{
+    "tool_name": "Business Days  Work Days Calculator",
+    "tool_description": "This API helps users calculate workdays or convert business days into calendar days, taking into account weekends and holidays.",
+    "home_url": "https://rapidapi.com/Morax/api/business-days-work-days-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Business Days / Work Days Calculator API",
+            "url": "https://business-days-work-days-calculator.p.rapidapi.com/api/v1/get_result",
+            "description": "The Workdays Calculation API allows you to calculate the date after a given number of workdays, considering weekends and holidays based on the specified country code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "The country code for which the workdays are calculated.",
+                    "default": ""
+                },
+                {
+                    "name": "work_days",
+                    "type": "NUMBER",
+                    "description": "The number of workdays to calculate.",
+                    "default": ""
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The starting date from which to begin counting the workdays, formatted as DD/MM/YYYY.",
+                    "default": "2023-05-19"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "options",
+                    "type": "NUMBER",
+                    "description": "Options for skipping specific days: 0 for skipping holidays and weekends, 1 for skipping only weekends, 2 for skipping only holidays.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

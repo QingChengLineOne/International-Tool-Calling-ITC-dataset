@@ -1,0 +1,200 @@
+{
+    "tool_name": "eQRito",
+    "tool_description": "Create beautiful customized, colored, QR Code in svg, pdf, png, jpeg, webp format.",
+    "home_url": "https://rapidapi.com/klicat-sas-klicat-sas-default/api/eqrito1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Create beautiful QR code in one request",
+            "url": "https://eqrito1.p.rapidapi.com/gen",
+            "description": "This endpoint creates your QR code as an image in various formats and with multiple customization options.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "content",
+                    "type": "STRING",
+                    "description": "The URL or text content to encode in the QR code.",
+                    "default": "https://myurl.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "logo",
+                    "type": "STRING",
+                    "description": "Base64 encoded image to include as a logo in the QR code.",
+                    "default": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..."
+                },
+                {
+                    "name": "eyeFrameColor",
+                    "type": "STRING",
+                    "description": "Color of the eye frame of the QR code.",
+                    "default": "purple"
+                },
+                {
+                    "name": "format",
+                    "type": "ENUM",
+                    "description": "Output format of the QR code image.",
+                    "default": ""
+                },
+                {
+                    "name": "cellType",
+                    "type": "ENUM",
+                    "description": "Type of cells in the QR code.",
+                    "default": ""
+                },
+                {
+                    "name": "eyeBallType",
+                    "type": "ENUM",
+                    "description": "Type of eyeballs in the QR code.",
+                    "default": ""
+                },
+                {
+                    "name": "eyeRotate",
+                    "type": "BOOLEAN",
+                    "description": "Whether to rotate the eyeballs.",
+                    "default": "true"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "Size of the QR code image in pixels.",
+                    "default": "1024"
+                },
+                {
+                    "name": "colorGradientFromOffset",
+                    "type": "NUMBER",
+                    "description": "Offset for the color gradient start.",
+                    "default": "5"
+                },
+                {
+                    "name": "backgroundGradientToOffset",
+                    "type": "NUMBER",
+                    "description": "Offset for the background gradient end.",
+                    "default": "95"
+                },
+                {
+                    "name": "backgroundGradientAngle",
+                    "type": "NUMBER",
+                    "description": "Angle of the background gradient.",
+                    "default": "20"
+                },
+                {
+                    "name": "useEyeFrameColor",
+                    "type": "BOOLEAN",
+                    "description": "Whether to use the specified eye frame color.",
+                    "default": "true"
+                },
+                {
+                    "name": "backgroundGradientTo",
+                    "type": "STRING",
+                    "description": "Color at the end of the background gradient.",
+                    "default": "gray"
+                },
+                {
+                    "name": "useEyeBallColor",
+                    "type": "BOOLEAN",
+                    "description": "Whether to use the specified eyeball color.",
+                    "default": "true"
+                },
+                {
+                    "name": "useColorGradient",
+                    "type": "BOOLEAN",
+                    "description": "Whether to apply a color gradient.",
+                    "default": "true"
+                },
+                {
+                    "name": "backgroundGradientFrom",
+                    "type": "STRING",
+                    "description": "Color at the start of the background gradient.",
+                    "default": "black"
+                },
+                {
+                    "name": "eyeBallColor",
+                    "type": "STRING",
+                    "description": "Color of the eyeballs in the QR code.",
+                    "default": "blue"
+                },
+                {
+                    "name": "background",
+                    "type": "STRING",
+                    "description": "Background color of the QR code.",
+                    "default": "white"
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Main color of the QR code.",
+                    "default": "red"
+                },
+                {
+                    "name": "eyeFrameType",
+                    "type": "ENUM",
+                    "description": "Type of the eye frame.",
+                    "default": ""
+                },
+                {
+                    "name": "shake",
+                    "type": "BOOLEAN",
+                    "description": "Whether to add a shake effect to the QR code.",
+                    "default": "true"
+                },
+                {
+                    "name": "backgroundGradientType",
+                    "type": "ENUM",
+                    "description": "Type of the background gradient.",
+                    "default": ""
+                },
+                {
+                    "name": "colorGradientAngle",
+                    "type": "NUMBER",
+                    "description": "Angle of the color gradient.",
+                    "default": "20"
+                },
+                {
+                    "name": "colorGradientTo",
+                    "type": "STRING",
+                    "description": "Color at the end of the color gradient.",
+                    "default": "red"
+                },
+                {
+                    "name": "backgroundGradientFromOffset",
+                    "type": "NUMBER",
+                    "description": "Offset for the background gradient start.",
+                    "default": "5"
+                },
+                {
+                    "name": "useLogo",
+                    "type": "BOOLEAN",
+                    "description": "Whether to include a logo in the QR code.",
+                    "default": "false"
+                },
+                {
+                    "name": "colorGradientFrom",
+                    "type": "STRING",
+                    "description": "Color at the start of the color gradient.",
+                    "default": "black"
+                },
+                {
+                    "name": "useBackgroundGradient",
+                    "type": "BOOLEAN",
+                    "description": "Whether to apply a background gradient.",
+                    "default": "false"
+                },
+                {
+                    "name": "colorGradientType",
+                    "type": "ENUM",
+                    "description": "Type of the color gradient.",
+                    "default": ""
+                },
+                {
+                    "name": "colorGradientToOffset",
+                    "type": "NUMBER",
+                    "description": "Offset for the color gradient end.",
+                    "default": "95"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

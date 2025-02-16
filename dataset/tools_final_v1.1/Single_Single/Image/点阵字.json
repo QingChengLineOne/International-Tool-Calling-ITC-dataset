@@ -1,0 +1,50 @@
+{
+    "tool_name": "点阵字API",
+    "tool_description": "生成点阵字图片的API",
+    "home_url": "https://api.aa1.cn/doc/dzz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "点阵字生成接口",
+            "url": "https://api.lolimi.cn/API/dzz/",
+            "description": "用于生成点阵字图片的服务接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要转换成点阵字的内容",
+                    "default": "欢迎"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "fill",
+                    "type": "string",
+                    "description": "点阵字背景填充色，默认为黑色",
+                    "default": "黑"
+                },
+                {
+                    "name": "font",
+                    "type": "string",
+                    "description": "字体类型，默认为宋体",
+                    "default": "宋体"
+                },
+                {
+                    "name": "size",
+                    "type": "int",
+                    "description": "字体大小，默认为16",
+                    "default": "16"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "字体颜色，默认为白色",
+                    "default": "白"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,320 @@
+{
+    "tool_name": "Working days",
+    "tool_description": "The API returns the number of days, hours, working days, working hours, wages, weekend days, and the list of public holidays for the requested date period and country. It supports 50 countries and over 230 regional calendars, allowing users to add any number of working days or hours to a given date.",
+    "home_url": "https://rapidapi.com/joursouvres-api/api/working-days/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/1.3/get_info_day",
+            "url": "https://working-days.p.rapidapi.com/1.3/get_info_day",
+            "description": "Get detailed information about a specific day.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO country code (2 letters). See available countries & configurations.",
+                    "default": "US"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date to analyze (YYYY-MM-DD).",
+                    "default": "2013-12-31"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "configuration",
+                    "type": "STRING",
+                    "description": "The name of the preset configuration to be used. See available countries & configurations.",
+                    "default": "Federal holidays"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the user profile.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/1.3/delete_custom_period",
+            "url": "https://working-days.p.rapidapi.com/1.3/delete_custom_period",
+            "description": "Remove a previously defined custom period.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date of the custom period (YYYY-MM-DD).",
+                    "default": "2013-01-01"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the calendar we are customizing.",
+                    "default": "CB7EF3"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date of the custom period (YYYY-MM-DD). If omitted, end date will be equal to start date.",
+                    "default": "2013-01-07"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/1.3/analyse",
+            "url": "https://working-days.p.rapidapi.com/1.3/analyse",
+            "description": "Analyse a period by providing a start_date and an end_date over a given calendar.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date (YYYY-MM-DD).",
+                    "default": "2013-01-01"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date (YYYY-MM-DD).",
+                    "default": "2013-12-31"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO country code (2 letters). See available countries & configurations.",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "end_time",
+                    "type": "STRING",
+                    "description": "The end date's time in 24-hour format. Default is 23:59.",
+                    "default": "18:15"
+                },
+                {
+                    "name": "start_time",
+                    "type": "STRING",
+                    "description": "The start date's time in 24-hour format. Default is 00:00.",
+                    "default": "09:14"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the user profile.",
+                    "default": ""
+                },
+                {
+                    "name": "configuration",
+                    "type": "STRING",
+                    "description": "The name of the preset configuration to be used.",
+                    "default": "Federal holidays"
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/1.3/add_working_hours",
+            "url": "https://working-days.p.rapidapi.com/1.3/add_working_hours",
+            "description": "Add an amount of working time to a given start date/time.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date (YYYY-MM-DD).",
+                    "default": "2013-12-31"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO country code (2 letters). See available countries & configurations.",
+                    "default": "US"
+                },
+                {
+                    "name": "start_time",
+                    "type": "STRING",
+                    "description": "The start time in a 24-hour format.",
+                    "default": "08:15"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "increment_time",
+                    "type": "STRING",
+                    "description": "The amount of working time to be added (or removed) to the start date time. Format H:i.",
+                    "default": "1815"
+                },
+                {
+                    "name": "configuration",
+                    "type": "STRING",
+                    "description": "The name of the preset configuration to be used.",
+                    "default": "Federal holidays"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the user profile.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/1.3/list_non_working_days",
+            "url": "https://working-days.p.rapidapi.com/1.3/list_non_working_days",
+            "description": "List the non-working days (weekend days, public holidays, and custom dates) between two dates in chronological order.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date (YYYY-MM-DD).",
+                    "default": "2013-01-01"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date (YYYY-MM-DD).",
+                    "default": "2013-12-31"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO country code (2 letters). See available countries & configurations.",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "configuration",
+                    "type": "STRING",
+                    "description": "The name of the preset configuration to be used.",
+                    "default": "Federal holidays"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the user profile.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/1.3/define_custom_period",
+            "url": "https://working-days.p.rapidapi.com/1.3/define_custom_period",
+            "description": "Define a custom period, such as employee vacations or company closure days.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "description",
+                    "type": "STRING",
+                    "description": "A textual description of the custom period (up to 30 characters).",
+                    "default": "Vacations to Bahamas"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the calendar we are customizing.",
+                    "default": "CB7EF3"
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date of the custom period (YYYY-MM-DD).",
+                    "default": "2013-01-01"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "The color of the custom period when displayed on the calendar.",
+                    "default": "orange"
+                },
+                {
+                    "name": "start_morning",
+                    "type": "BOOLEAN",
+                    "description": "Does the custom period start in the morning of the start_date? Default is true.",
+                    "default": true
+                },
+                {
+                    "name": "end_afternoon",
+                    "type": "BOOLEAN",
+                    "description": "Does the custom period end in the afternoon of the end_date? Default is true.",
+                    "default": true
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date of the custom period (YYYY-MM-DD). If omitted, end date will be equal to start date.",
+                    "default": "2013-01-07"
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/1.3/add_working_days",
+            "url": "https://working-days.p.rapidapi.com/1.3/add_working_days",
+            "description": "Add (or remove) any number of working days to a date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The ISO country code (2 letters). See available countries & configurations.",
+                    "default": "US"
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date (YYYY-MM-DD).",
+                    "default": "2013-12-31"
+                },
+                {
+                    "name": "increment",
+                    "type": "NUMBER",
+                    "description": "The number of working days you want to add to your start date (positive or negative integer but not zero).",
+                    "default": 10
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "include_start",
+                    "type": "BOOLEAN",
+                    "description": "Should the count include the start_date? Default is true.",
+                    "default": true
+                },
+                {
+                    "name": "configuration",
+                    "type": "STRING",
+                    "description": "The name of the preset configuration to be used.",
+                    "default": "Federal holidays"
+                },
+                {
+                    "name": "profile_id",
+                    "type": "STRING",
+                    "description": "The ID of the user profile.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

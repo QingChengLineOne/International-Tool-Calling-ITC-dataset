@@ -1,0 +1,201 @@
+{
+    "tool_name": "English Talking",
+    "tool_description": "This API provides users with the ability to conduct dialogues in English, where conversations and responses are recorded and evaluated by the users themselves.",
+    "home_url": "https://rapidapi.com/maatheusb96/api/english-talking2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get an answer",
+            "url": "https://english-talking2.p.rapidapi.com/v1/dialog",
+            "description": "Retrieve a response based on the user's input speech.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number of the results.",
+                    "default": "1"
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The number of results per page.",
+                    "default": "10"
+                },
+                {
+                    "name": "status",
+                    "type": "STRING",
+                    "description": "The approval status of the dialogue, either 'approved' or 'analyzing'.",
+                    "default": "approved"
+                },
+                {
+                    "name": "answer",
+                    "type": "STRING",
+                    "description": "The response to the initial speech of the dialogue.",
+                    "default": "Hi, how are you?"
+                },
+                {
+                    "name": "_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the dialogue (automatically generated).",
+                    "default": "5ec47b3d8958430d6a6d5898"
+                },
+                {
+                    "name": "speech",
+                    "type": "STRING",
+                    "description": "The speech input for which the user wants to receive an answer.",
+                    "default": "Hi"
+                },
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "The identifier of the user who created the dialogue.",
+                    "default": "5ec479048958430d6a6d5895"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "items": {
+                            "properties": {
+                                "__v": {
+                                    "type": "integer"
+                                },
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "answer": {
+                                    "type": "string"
+                                },
+                                "approval_rate": {
+                                    "type": "integer"
+                                },
+                                "approvals": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "type": "array"
+                                },
+                                "createdAt": {
+                                    "type": "string"
+                                },
+                                "disapprovals": {
+                                    "type": "array"
+                                },
+                                "speech": {
+                                    "type": "string"
+                                },
+                                "status": {
+                                    "type": "string"
+                                },
+                                "updatedAt": {
+                                    "type": "string"
+                                },
+                                "user": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "entity": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "Approve a dialogue",
+            "url": "https://english-talking2.p.rapidapi.com/v1/dialog/{id}/approval",
+            "description": "Approve a specific dialogue.",
+            "method": "PUT",
+            "required_parameters": [
+                {
+                    "name": "Authorization",
+                    "type": "STRING",
+                    "description": "Access token of a registered user.",
+                    "default": "Bearer "
+                },
+                {
+                    "name": "_id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the dialogue to be approved.",
+                    "default": "5ec47b3d8958430d6a6d5898"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Rejecting a dialogue",
+            "url": "https://english-talking2.p.rapidapi.com/v1/dialog/{id}/rejection",
+            "description": "Reject a specific dialogue.",
+            "method": "PUT",
+            "required_parameters": [
+                {
+                    "name": "Authorization",
+                    "type": "STRING",
+                    "description": "Access token of a registered user.",
+                    "default": "Bearer "
+                },
+                {
+                    "name": "_id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the dialogue to be rejected.",
+                    "default": "5ec47b3d8958430d6a6d5898"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Register User",
+            "url": "https://english-talking2.p.rapidapi.com/v1/register",
+            "description": "Register a new user in the application.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Authenticate User",
+            "url": "https://english-talking2.p.rapidapi.com/v1/authenticate",
+            "description": "Authenticate a registered user.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "Authorization",
+                    "type": "STRING",
+                    "description": "Basic authentication credentials.",
+                    "default": "Basic eW91cmVtYWlsQG1haWwuY29tOnlvdXJfcGFzc3dvcmQ="
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Create a dialogue",
+            "url": "https://english-talking2.p.rapidapi.com/v1/dialog",
+            "description": "Create a new dialogue.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        }
+    ]
+}

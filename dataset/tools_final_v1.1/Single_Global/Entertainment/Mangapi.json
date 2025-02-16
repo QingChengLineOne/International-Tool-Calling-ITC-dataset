@@ -1,0 +1,31 @@
+{
+    "tool_name": "Mangapi",
+    "tool_description": "Simple API to translate manga pages from one language to another. (Example: English to German)",
+    "home_url": "https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Translate",
+            "url": "https://mangapi3.p.rapidapi.com/api/translate",
+            "description": "Translates manga pages from one language to another by providing an image of the page.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The target language for translation.",
+                    "default": "FRENCH"
+                },
+                {
+                    "name": "image",
+                    "type": "BINARY",
+                    "description": "The image file of the manga page to be translated.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

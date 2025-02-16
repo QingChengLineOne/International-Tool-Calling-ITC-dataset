@@ -1,0 +1,25 @@
+{
+    "tool_name": "Myritebook",
+    "tool_description": "Online Streaming of Movies and TV shows on my website.",
+    "home_url": "https://rapidapi.com/myritebook-myritebook-default/api/myritebook/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Studio",
+            "url": "https://myritebook.p.rapidapi.com/",
+            "description": "Fetches a list of available movies and TV shows.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Nik",
+                    "type": "STRING",
+                    "description": "An optional string parameter for additional filtering.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

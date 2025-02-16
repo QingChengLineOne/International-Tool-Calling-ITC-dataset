@@ -1,0 +1,18 @@
+{
+    "tool_name": "Freebooks API",
+    "tool_description": "Libgen scraper API to search books by title, author, or genre and provides a list of results with important data like book cover images, author, publisher, etc. It also generates summaries of each book, making it an invaluable resource for researchers, students, and book enthusiasts.",
+    "home_url": "https://rapidapi.com/happy2purchase/api/freebooks-api2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AI Book Search",
+            "url": "https://freebooks-api2.p.rapidapi.com/aiBookSearch",
+            "description": "This endpoint has the ability to search for books using natural language queries. The endpoint translates your natural language request into a precise search, delivering a curated list of books that match your query.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

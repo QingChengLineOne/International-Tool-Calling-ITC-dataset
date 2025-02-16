@@ -1,0 +1,40 @@
+{
+    "tool_name": "Dummy User",
+    "tool_description": "Our API can quickly produce a variety of profiles for your application, giving it a boost with actual user data and providing a lively and interesting user experience while saving you time.",
+    "home_url": "https://rapidapi.com/mageshkannanam/api/dummy-user1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "addUser",
+            "url": "https://dummy-user1.p.rapidapi.com/users",
+            "description": "This API endpoint allows you to add a new user profile to the application.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

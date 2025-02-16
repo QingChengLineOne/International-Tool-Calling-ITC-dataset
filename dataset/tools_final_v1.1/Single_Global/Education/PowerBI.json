@@ -1,0 +1,255 @@
+{
+    "tool_name": "PowerBI",
+    "tool_description": "The Power BI API offers access to Microsoft Power BI news, learning resources, events, samples, and other related information.",
+    "home_url": "https://rapidapi.com/everyday/api/powerbi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetSponsorships",
+            "url": "https://powerbi.p.rapidapi.com/sponsorships/today/",
+            "description": "Retrieve the current Power BI sponsorships.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsletters",
+            "url": "https://powerbi.p.rapidapi.com/newsletters/",
+            "description": "Retrieve Power BI newsletters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetTopics",
+            "url": "https://powerbi.p.rapidapi.com/topics/",
+            "description": "Retrieve Power BI topics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNews",
+            "url": "https://powerbi.p.rapidapi.com/news/page/{page}/",
+            "description": "Retrieve Power BI news articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetCommunities",
+            "url": "https://powerbi.p.rapidapi.com/communities/page/{page}/",
+            "description": "Retrieve Power BI communities.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResources",
+            "url": "https://powerbi.p.rapidapi.com/learning/page/{page}/",
+            "description": "Retrieve Power BI learning resources.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetLearningResourcesByTopic",
+            "url": "https://powerbi.p.rapidapi.com/learning/{topic}/page/{page}/",
+            "description": "Retrieve Power BI learning resources filtered by topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter learning resources.",
+                    "default": "dax"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetSamples",
+            "url": "https://powerbi.p.rapidapi.com/samples/page/{page}/",
+            "description": "Retrieve Power BI samples.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetFunctions",
+            "url": "https://powerbi.p.rapidapi.com/functions/page/{page}/",
+            "description": "Retrieve Power BI DAX functions.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetFunctionsByTopic",
+            "url": "https://powerbi.p.rapidapi.com/functions/{topic}/page/{page}/",
+            "description": "Retrieve Power BI DAX functions filtered by topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter DAX functions.",
+                    "default": "dax"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeople",
+            "url": "https://powerbi.p.rapidapi.com/people/page/{page}/",
+            "description": "Retrieve Power BI influencers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetPeopleByTopic",
+            "url": "https://powerbi.p.rapidapi.com/people/{topic}/page/{page}/",
+            "description": "Retrieve Power BI influencers filtered by topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter influencers.",
+                    "default": "dax"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetNewsByTopic",
+            "url": "https://powerbi.p.rapidapi.com/news/{topic}/page/{page}/",
+            "description": "Retrieve Power BI news articles filtered by topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter news articles.",
+                    "default": "dax"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetCommunitiesByTopic",
+            "url": "https://powerbi.p.rapidapi.com/communities/{topic}/page/{page}/",
+            "description": "Retrieve Power BI communities filtered by topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "string",
+                    "description": "The topic to filter communities.",
+                    "default": "dax"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

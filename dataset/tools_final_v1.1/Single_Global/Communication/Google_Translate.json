@@ -1,0 +1,18 @@
+{
+    "tool_name": "Google Translate",
+    "tool_description": "A tool for translating text between different languages using Google's translation services.",
+    "home_url": "https://rapidapi.com/nickrapidapi/api/google_translate/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "translate1",
+            "url": "https://google_translate.p.rapidapi.com/",
+            "description": "This API endpoint allows users to perform translations of text from one language to another.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

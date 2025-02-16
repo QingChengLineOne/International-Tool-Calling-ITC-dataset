@@ -1,0 +1,25 @@
+{
+    "tool_name": "teste",
+    "tool_description": "API for testing betting house functionalities.",
+    "home_url": "https://rapidapi.com/carlosjyraia-pt7s1-rI9/api/teste497/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Authentication",
+            "url": "https://teste497.p.rapidapi.com/api-football-v1.p.rapidapi.com/v3/",
+            "description": "Endpoint for authenticating API requests.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "X-RapidAPI-Key",
+                    "type": "STRING",
+                    "description": "Your RapidAPI key for authentication.",
+                    "default": "af2f4c1c96msh1408493318963ffp195b9cjsn99554fc04ea7"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

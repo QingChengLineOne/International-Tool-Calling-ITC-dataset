@@ -1,0 +1,46 @@
+{
+    "tool_name": "Electricity Carbon Footprint Germany",
+    "tool_description": "This tool provides the CO2 footprint of current electricity consumption in Germany, allowing users to understand the environmental impact of their electricity usage.",
+    "home_url": "https://rapidapi.com/stromdao-stromdao-default/api/electricity-carbon-footprint-germany/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "CO2 Emission",
+            "url": "https://electricity-carbon-footprint-germany.p.rapidapi.com/gridde",
+            "description": "This API endpoint returns the carbon emissions in grams per Kilo-Watt-Hour, providing both the latest and historical footprint information for electricity in Germany.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Allows retrieving historical values (back to the year 2017). Accepted formats include YYYY-MM-DD, MM/DD/YYYY, and Unix Timestamp (ms).",
+                    "default": "2022-08-20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string"
+                    },
+                    "co2perKwh": {
+                        "type": "integer"
+                    },
+                    "trend": {
+                        "type": "object",
+                        "properties": {
+                            "avg30": {
+                                "type": "integer"
+                            },
+                            "avg365": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "查看UA (User-Agent) API",
+    "tool_description": "快速查看发起请求的User-Agent信息",
+    "home_url": "https://api.aa1.cn/doc/Get_User_Agent.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查看UA (User-Agent) 接口",
+            "url": "https://api.jaxing.cc/v2/Info/UserAgent",
+            "description": "获取发起请求的User-Agent信息",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

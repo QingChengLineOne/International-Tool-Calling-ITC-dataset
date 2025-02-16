@@ -1,0 +1,31 @@
+{
+    "tool_name": "Crypto Events Calendar",
+    "tool_description": "Get crypto events like listings, airdrops, releases, tokenomics, partnerships, and more, grouped by days.",
+    "home_url": "https://rapidapi.com/emir12/api/crypto-events-calendar/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Events",
+            "url": "https://crypto-events-calendar.p.rapidapi.com/index",
+            "description": "Retrieve a list of upcoming crypto events such as listings, airdrops, releases, tokenomics, and partnerships, organized by date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pageSize",
+                    "type": "STRING",
+                    "description": "The maximum number of events to return per page. The maximum pageSize is 10.",
+                    "default": "10"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "tool_name": "PubNub Network",
+    "tool_description": "The PubNub Network makes Real-time Communications Simple with an easy API. It provides a web-scale API for businesses to build scalable Data Push communication apps on Mobile, Tablet, and Web, utilizing bidirectional JSON for Send/Receive (Publish/Subscribe) functionalities.",
+    "home_url": "https://rapidapi.com/pubnub/api/pubnub-network/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "History",
+            "url": "https://pubnub-pubnub.p.rapidapi.com/history/demo/my_channel/0/2",
+            "description": "Retrieve older messages from a specified channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "JSONP Callback for handling the response.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The maximum number of messages to return.",
+                    "default": "2"
+                },
+                {
+                    "name": "subscribe_key",
+                    "type": "STRING",
+                    "description": "The key used to subscribe to the channel.",
+                    "default": "demo"
+                },
+                {
+                    "name": "channel",
+                    "type": "STRING",
+                    "description": "The name of the channel from which to retrieve messages.",
+                    "default": "my_channel"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Time",
+            "url": "https://pubnub-pubnub.p.rapidapi.com/time/0",
+            "description": "Get the current timetoken from the PubNub Network.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "callback",
+                    "type": "STRING",
+                    "description": "JSONP Callback for handling the response.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Grammar Genius",
+    "tool_description": "Grammar Genius is the latest product by Genius Tools. It helps users correct sentence structure, verb usage, and improve the overall quality of their sentences using state-of-the-art AI technology. While there is no enforced word limit, it is recommended to limit requests to approximately 15,000 words or fewer to avoid timeouts.",
+    "home_url": "https://rapidapi.com/genius-tools-genius-tools-default/api/grammar-genius/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Grammar Check",
+            "url": "https://grammar-genius.p.rapidapi.com/dev/grammar/",
+            "description": "Fix any grammar mistakes in your text.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

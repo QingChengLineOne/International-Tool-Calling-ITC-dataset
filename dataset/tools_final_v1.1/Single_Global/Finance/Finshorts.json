@@ -1,0 +1,113 @@
+{
+    "tool_name": "Finshorts",
+    "tool_description": "Finshorts is a platform where you can access real-time stock quotes, company information, historical price charts, historical dividends, and cash flow statements for various companies.",
+    "home_url": "https://rapidapi.com/finshorts-finshorts-default/api/finshorts/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Historical Prices",
+            "url": "https://finshorts.p.rapidapi.com/history_chart_monthly.php",
+            "description": "Provides real-time historical prices for companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The stock symbol of the company.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "month",
+                    "type": "STRING",
+                    "description": "The number of months of historical data to retrieve.",
+                    "default": "6"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Stock Quote",
+            "url": "https://finshorts.p.rapidapi.com/index.php",
+            "description": "Provides real-time stock quote data for companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The stock symbol of the company.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Cash flow statement",
+            "url": "https://finshorts.p.rapidapi.com/cashflow.php",
+            "description": "Provides real-time cash flow statements for companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The stock symbol of the company.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical Dividends",
+            "url": "https://finshorts.p.rapidapi.com/history_dividend.php",
+            "description": "Provides real-time historical dividends data for companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The stock symbol of the company.",
+                    "default": "AAPL"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "range_type",
+                    "type": "STRING",
+                    "description": "The type of range for historical dividends.",
+                    "default": "y"
+                },
+                {
+                    "name": "range",
+                    "type": "STRING",
+                    "description": "The number of years of historical dividends to retrieve.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Company Info",
+            "url": "https://finshorts.p.rapidapi.com/company_info.php",
+            "description": "Provides real-time information about companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The stock symbol of the company.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

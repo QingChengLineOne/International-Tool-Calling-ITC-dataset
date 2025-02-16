@@ -1,0 +1,35 @@
+{
+    "tool_name": "Roman Gods By Pizza API",
+    "tool_description": "The Roman Gods API provides access to detailed information about various Roman gods, including Jupiter, the king of the gods, and Juno, the goddess of marriage and childbirth. Users can explore other significant deities such as Mars, Venus, and Mercury, making it a valuable resource for applications focused on ancient mythology, history, or culture.",
+    "home_url": "https://rapidapi.com/raajreact/api/roman-gods-by-pizza-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search Roman God By Name",
+            "url": "https://roman-gods-by-pizza-api.p.rapidapi.com/Roman-God-By-Name",
+            "description": "Search for a Roman God by name to retrieve a detailed description about them.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "god",
+                    "type": "STRING",
+                    "description": "The name of the Roman god you want to search for.",
+                    "default": "jupiter"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Random Roman God",
+            "url": "https://roman-gods-by-pizza-api.p.rapidapi.com/Roman-God",
+            "description": "Returns information about a randomly selected Roman God.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

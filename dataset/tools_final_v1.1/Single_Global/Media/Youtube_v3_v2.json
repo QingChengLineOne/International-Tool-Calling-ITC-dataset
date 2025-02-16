@@ -1,0 +1,327 @@
+{
+    "tool_name": "Youtube v3_v2",
+    "tool_description": "Get YouTube data without any YouTube Data API key.",
+    "home_url": "https://rapidapi.com/ytdlfree/api/youtube-v31/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Channel Videos",
+            "url": "https://youtube-v31.p.rapidapi.com/search",
+            "description": "Retrieve videos from a specific YouTube channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channelId",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube channel.",
+                    "default": "UCBVjMGOIkavEAhyqpxJ73Dw"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the video resource to retrieve.",
+                    "default": "snippet,id"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "maxResults",
+                    "type": "STRING",
+                    "description": "The maximum number of results to return.",
+                    "default": "50"
+                },
+                {
+                    "name": "pageToken",
+                    "type": "STRING",
+                    "description": "Token for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "order",
+                    "type": "STRING",
+                    "description": "Order of the results.",
+                    "default": "date"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Playlist Videos",
+            "url": "https://youtube-v31.p.rapidapi.com/playlistItems",
+            "description": "Retrieve videos from a specific YouTube playlist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the playlist item resource to retrieve.",
+                    "default": "snippet"
+                },
+                {
+                    "name": "playlistId",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube playlist.",
+                    "default": "RDZiQo7nAkQHU"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "pageToken",
+                    "type": "STRING",
+                    "description": "Token for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "maxResults",
+                    "type": "STRING",
+                    "description": "The maximum number of results to return.",
+                    "default": "50"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Playlist Details",
+            "url": "https://youtube-v31.p.rapidapi.com/playlists",
+            "description": "Retrieve details about a specific YouTube playlist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube playlist.",
+                    "default": "RDZiQo7nAkQHU"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the playlist resource to retrieve.",
+                    "default": "snippet"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Video Comments",
+            "url": "https://youtube-v31.p.rapidapi.com/commentThreads",
+            "description": "Retrieve comments for a specific YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "videoId",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube video.",
+                    "default": "7ghhRHRP6t4"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the comment resource to retrieve.",
+                    "default": "snippet"
+                },
+                {
+                    "name": "maxResults",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": "100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Channel details",
+            "url": "https://youtube-v31.p.rapidapi.com/channels",
+            "description": "Retrieve details about a specific YouTube channel.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube channel.",
+                    "default": "UCBVjMGOIkavEAhyqpxJ73Dw"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the channel resource to retrieve.",
+                    "default": "snippet,statistics"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Video details",
+            "url": "https://youtube-v31.p.rapidapi.com/videos",
+            "description": "Retrieve details about a specific YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube video.",
+                    "default": "7ghhRHRP6t4"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the video resource to retrieve.",
+                    "default": "contentDetails,snippet,statistics"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Suggested Videos",
+            "url": "https://youtube-v31.p.rapidapi.com/search",
+            "description": "Retrieve videos similar to a specific YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of resource to search for.",
+                    "default": "video"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the video resource to retrieve.",
+                    "default": "id,snippet"
+                },
+                {
+                    "name": "relatedToVideoId",
+                    "type": "STRING",
+                    "description": "The ID of the video to find similar videos for.",
+                    "default": "7ghhRHRP6t4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "maxResults",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": "50"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Comment Info",
+            "url": "https://youtube-v31.p.rapidapi.com/comments",
+            "description": "Retrieve information about specific comments.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the comment resource to retrieve.",
+                    "default": "snippet"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The ID of the comment.",
+                    "default": "UgzZ696zk0n_CBhYMK14AaABAg"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "maxResults",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": ""
+                },
+                {
+                    "name": "parentId",
+                    "type": "STRING",
+                    "description": "The ID of the parent comment, if applicable.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Captions List",
+            "url": "https://youtube-v31.p.rapidapi.com/captions",
+            "description": "Retrieve a list of caption tracks associated with a specified video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the caption resource to retrieve.",
+                    "default": "snippet"
+                },
+                {
+                    "name": "videoId",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube video.",
+                    "default": "M7FIvfx5J10"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://youtube-v31.p.rapidapi.com/search",
+            "description": "Search for content on YouTube.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "The part of the search resource to retrieve.",
+                    "default": "snippet,id"
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query.",
+                    "default": "music"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "pageToken",
+                    "type": "STRING",
+                    "description": "Token for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "order",
+                    "type": "STRING",
+                    "description": "Order of the search results.",
+                    "default": "date"
+                },
+                {
+                    "name": "regionCode",
+                    "type": "STRING",
+                    "description": "The region code for the search.",
+                    "default": "US"
+                },
+                {
+                    "name": "maxResults",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": "50"
+                }
+            ],
+            "statuscode": "",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "tool_name": "Judge0 Extra CE",
+    "tool_description": "The most advanced open-source online code execution system in the world.",
+    "home_url": "https://rapidapi.com/judge0-official/api/judge0-extra-ce/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "About",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/about",
+            "description": "Get general information about the Judge0 Extra CE API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a Language",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/languages/10",
+            "description": "Retrieve information about a specific programming language by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The ID of the programming language to retrieve.",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Configuration",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/config_info",
+            "description": "Get detailed configuration information about the Judge0 system.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Languages",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/languages",
+            "description": "Retrieve a list of active programming languages supported by Judge0.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Statuses",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/statuses",
+            "description": "Get a list of possible statuses for submissions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Create a Batched Submission",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/submissions/batch",
+            "description": "Create multiple submissions at once for processing.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "base64_encoded",
+                    "type": "BOOLEAN",
+                    "description": "Set to true to send Base64 encoded data for submissions.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "201 Created",
+            "schema": {}
+        },
+        {
+            "name": "Create a Submission",
+            "url": "https://judge0-extra-ce.p.rapidapi.com/submissions",
+            "description": "Create a new submission which will wait in queue for processing.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "fields",
+                    "type": "STRING",
+                    "description": "Specify which attributes to return in the response.",
+                    "default": "*"
+                },
+                {
+                    "name": "wait",
+                    "type": "BOOLEAN",
+                    "description": "Set to true for synchronous mode to get immediate results.",
+                    "default": "false"
+                },
+                {
+                    "name": "base64_encoded",
+                    "type": "BOOLEAN",
+                    "description": "Set to true to send Base64 encoded data for submissions.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "201 Created",
+            "schema": {}
+        }
+    ]
+}

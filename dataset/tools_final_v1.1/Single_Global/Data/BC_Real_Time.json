@@ -1,0 +1,47 @@
+{
+    "tool_name": "BC Real Time",
+    "tool_description": "Real Time services of Bourgarel Conseil",
+    "home_url": "https://rapidapi.com/bourgarel-conseil-bourgarel-conseil-default/api/bc-real-time/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Notion Service",
+            "url": "https://bc-real-time.p.rapidapi.com/bcTransferNotion/ddd",
+            "description": "Watch Notion database and launch Make.com scenario",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "Notion-database-Id",
+                    "type": "string",
+                    "description": "The ID of the Notion database to be monitored.",
+                    "default": "ddd"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

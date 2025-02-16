@@ -1,0 +1,121 @@
+{
+    "tool_name": "Random Words",
+    "tool_description": "Random words API provides you a list of random words or a single random word from a collection of over 35,000 words.",
+    "home_url": "https://rapidapi.com/sheharyar566/api/random-words5/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get a random word",
+            "url": "https://random-words5.p.rapidapi.com/getRandom",
+            "description": "Returns a single random word from a list of more than 35,000 words. Important Note: *wordLength* must not be used with minLength and/or maxLength.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "beginsWith",
+                    "type": "STRING",
+                    "description": "Filter words that begin with the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "minLength",
+                    "type": "NUMBER",
+                    "description": "Minimum length of the word.",
+                    "default": ""
+                },
+                {
+                    "name": "endsWith",
+                    "type": "STRING",
+                    "description": "Filter words that end with the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "excludes",
+                    "type": "STRING",
+                    "description": "Exclude words that contain the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "wordLength",
+                    "type": "NUMBER",
+                    "description": "Exact length of the word.",
+                    "default": ""
+                },
+                {
+                    "name": "includes",
+                    "type": "STRING",
+                    "description": "Include words that contain the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "maxLength",
+                    "type": "NUMBER",
+                    "description": "Maximum length of the word.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get multiple random words",
+            "url": "https://random-words5.p.rapidapi.com/getMultipleRandom",
+            "description": "Get multiple random words (minimum 2 and maximum 50) from a list of over 35,000 words. Important Notes: *count* must be a valid number between 2 and 50 (both included). *wordLength* must not be used with minLength and/or maxLength.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "The number of random words to return, must be between 2 and 50.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "excludes",
+                    "type": "STRING",
+                    "description": "Exclude words that contain the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "beginsWith",
+                    "type": "STRING",
+                    "description": "Filter words that begin with the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "includes",
+                    "type": "STRING",
+                    "description": "Include words that contain the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "wordLength",
+                    "type": "NUMBER",
+                    "description": "Exact length of the words.",
+                    "default": ""
+                },
+                {
+                    "name": "maxLength",
+                    "type": "NUMBER",
+                    "description": "Maximum length of the words.",
+                    "default": ""
+                },
+                {
+                    "name": "endsWith",
+                    "type": "STRING",
+                    "description": "Filter words that end with the specified string.",
+                    "default": ""
+                },
+                {
+                    "name": "minLength",
+                    "type": "NUMBER",
+                    "description": "Minimum length of the words.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "TNEF Attachment Extractor",
+    "tool_description": "TNEF Attachment Extractor API helps you to extract attachments in Base64 format from a Base64-encoded TNEF file string.",
+    "home_url": "https://rapidapi.com/andreascieslik/api/tnef-attachment-extractor/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/MimeAutomation/ExtractFiles",
+            "url": "https://tnef-attachment-extractor.p.rapidapi.com/MimeAutomation/ExtractFiles",
+            "description": "This endpoint allows you to extract attachments from a Base64-encoded TNEF file string.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "fileName": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "content": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            }
+        }
+    ]
+}

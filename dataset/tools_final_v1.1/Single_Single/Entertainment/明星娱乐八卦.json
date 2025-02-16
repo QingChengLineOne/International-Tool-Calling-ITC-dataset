@@ -1,0 +1,44 @@
+{
+    "tool_name": "明星娱乐八卦",
+    "tool_description": "贵圈很乱，吃瓜需谨慎",
+    "home_url": "https://api.aa1.cn/doc/mingxingbagua.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "明星娱乐八卦API",
+            "url": "https://dayu.qqsuu.cn/mingxingbagua/apis.php",
+            "description": "提供最新的明星娱乐新闻和八卦信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "请求的数据格式，目前支持json",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "category",
+                    "type": "string",
+                    "description": "可选的分类，如：news, gossip, photos等",
+                    "default": "all"
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "可选的页码，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "per_page",
+                    "type": "int",
+                    "description": "可选的每页数量，默认为10",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "tool_name": "Redfin Base",
+    "tool_description": "[IMPROVED SEARCH API] API Redfin offers a powerful search feature that allows users to easily find their desired properties. Users can refine their search based on location, price range, property type, and various other criteria. They can also customize their search by specifying the number of bedrooms and bathrooms, square footage, and other specific features they are looking for in a home. Redfin's search feature provides accurate and up-to-date results, helping users make informed decisions.",
+    "home_url": "https://rapidapi.com/tvhaudev/api/redfin-base/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get ZipCode by City",
+            "url": "https://redfin-base.p.rapidapi.com/base/getZipCodeByCity",
+            "description": "Retrieve the ZIP code for a specified city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city for which to retrieve the ZIP code.",
+                    "default": "Holtsville"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get location information by zipcode",
+            "url": "https://redfin-base.p.rapidapi.com/base/getLocationInfoByZipCode",
+            "description": "Retrieve location information based on the provided ZIP code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "zipcode",
+                    "type": "STRING",
+                    "description": "The ZIP code for which to retrieve location information.",
+                    "default": "01003"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Property details",
+            "url": "https://redfin-base.p.rapidapi.com/redfin/detail",
+            "description": "Get detailed information about a specific property.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The URL or address of the property. Example: `5065-Eloy-St-78521` or `123165030` (propertyId).",
+                    "default": "5065-Eloy-St-78521"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "propertyId",
+                    "type": "STRING",
+                    "description": "The property ID for more accurate results when multiple addresses are found.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search by URL",
+            "url": "https://redfin-base.p.rapidapi.com/redfin/searchByUrlv2",
+            "description": "Search for properties using a specific URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL to search for properties.",
+                    "default": "https://www.redfin.com/city/30749/NY/New-York/filter/property-type=house+condo+townhouse,include=forsale+mlsfsbo+construction/page-2"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Auto-complete-v2",
+            "url": "https://redfin-base.p.rapidapi.com/redfin/locationAutocompletev2",
+            "description": "Get auto-complete suggestions for locations based on user input.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "Input for city, address, school, agent, or ZIP code.",
+                    "default": "Brownsville"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get region info",
+            "url": "https://redfin-base.p.rapidapi.com/redfin/regionInfo",
+            "description": "Retrieve information about a specific region using its URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The full or sub URL of the region. Example: `https://www.redfin.com/zipcode/01026` or `/zipcode/01026`.",
+                    "default": "https://www.redfin.com/zipcode/01026"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://redfin-base.p.rapidapi.com/redfin/search",
+            "description": "Search for properties based on location and various filters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "City, school, ZIP code, or address to search for properties.",
+                    "default": "78521"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sub_location",
+                    "type": "STRING",
+                    "description": "More specific location details for precise results.",
+                    "default": ""
+                },
+                {
+                    "name": "status",
+                    "type": "STRING",
+                    "description": "Property status to filter results (e.g., active, comingsoon).",
+                    "default": "active,comingsoon"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

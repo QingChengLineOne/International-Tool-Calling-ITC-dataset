@@ -1,0 +1,18 @@
+{
+    "tool_name": "Notes API",
+    "tool_description": "Easy management for your notes!",
+    "home_url": "https://rapidapi.com/gia-web-development1-gia-web-development-default/api/notes-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Post new note",
+            "url": "https://notes-api1.p.rapidapi.com/v1/notes",
+            "description": "This endpoint will save a new note!",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

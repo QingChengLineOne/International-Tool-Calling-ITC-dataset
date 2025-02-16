@@ -1,0 +1,35 @@
+{
+    "tool_name": "India - Pan card OCR",
+    "tool_description": "This API allows you to extract text from an image of a PAN card, which is an important identification document in India.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/india-pan-card-ocr/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://india-pan-card-ocr.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch the API result using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request made to the API.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "India - Pan card OCR",
+            "url": "https://india-pan-card-ocr.p.rapidapi.com/v3/tasks/sync/extract/ind_pan",
+            "description": "This API allows you to extract the text present on a PAN card. The PAN card is issued by the National Securities Depository Limited (NSDL) in India.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

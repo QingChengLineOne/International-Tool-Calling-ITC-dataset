@@ -1,0 +1,31 @@
+{
+    "tool_name": "Nearest Delhi Metro Station",
+    "tool_description": "\"Nearest Delhi Metro Station\" API is a web service that provides users with the nearest Delhi Metro station based on the latitude and longitude coordinates provided as input.",
+    "home_url": "https://rapidapi.com/ahlawataman3/api/nearest-delhi-metro-station/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Nearest Metro Station",
+            "url": "https://nearest-delhi-metro-station.p.rapidapi.com/nearestmetro",
+            "description": "This endpoint is a GET method API that returns the nearest Delhi Metro station along with its name, latitude, longitude, and Google Maps directions.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "long",
+                    "type": "STRING",
+                    "description": "The longitude coordinate of the user's location.",
+                    "default": "77.2122"
+                },
+                {
+                    "name": "lat",
+                    "type": "STRING",
+                    "description": "The latitude coordinate of the user's location.",
+                    "default": "28.5729"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

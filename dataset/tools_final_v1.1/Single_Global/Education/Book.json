@@ -1,0 +1,118 @@
+{
+    "tool_name": "Book",
+    "tool_description": "Get and save testing book data.",
+    "home_url": "https://rapidapi.com/momo24/api/book4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getBook",
+            "url": "https://book4.p.rapidapi.com/",
+            "description": "Retrieve a list of books with details such as author, publication date, and price.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "books": {
+                        "items": {
+                            "properties": {
+                                "author": {
+                                    "type": "string"
+                                },
+                                "date": {
+                                    "type": "string"
+                                },
+                                "detail": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "price": {
+                                    "type": "integer"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "postbook",
+            "url": "https://book4.p.rapidapi.com/",
+            "description": "Post new book data to the database.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "Unique identifier for the book.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Publication date of the book.",
+                    "default": ""
+                },
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "URL for the book cover image.",
+                    "default": ""
+                },
+                {
+                    "name": "detail",
+                    "type": "STRING",
+                    "description": "Detailed description of the book.",
+                    "default": ""
+                },
+                {
+                    "name": "author",
+                    "type": "STRING",
+                    "description": "Author of the book.",
+                    "default": ""
+                },
+                {
+                    "name": "price",
+                    "type": "NUMBER",
+                    "description": "Price of the book in cents.",
+                    "default": ""
+                },
+                {
+                    "name": "rate",
+                    "type": "NUMBER",
+                    "description": "Rating of the book.",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "STRING",
+                    "description": "Title of the book.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "result": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

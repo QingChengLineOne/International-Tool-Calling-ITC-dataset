@@ -1,0 +1,25 @@
+{
+    "tool_name": "ToxDetectAI - AI Powered Toxic Comment Detector",
+    "tool_description": "🚫🤬 ToxDetectAI helps you identify harmful and toxic comments in your online community, ensuring a safe and welcoming environment for users. Our advanced AI models classify comments as toxic, obscene, insulting, and even containing threats or identity hate, supporting over 140 languages.",
+    "home_url": "https://rapidapi.com/IntelligenzaArtificiale/api/toxdetectai-ai-powered-toxic-comment-detector/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "🔥 ToxDetectAI API",
+            "url": "https://toxdetectai-ai-powered-toxic-comment-detector.p.rapidapi.com/toxic",
+            "description": "This API endpoint analyzes text for toxicity in over 140 languages.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text to be analyzed for toxic content.",
+                    "default": "Our AI-powered endpoint can analyze text in over 140 languages, try it now :)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

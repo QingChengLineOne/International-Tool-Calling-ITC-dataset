@@ -1,0 +1,38 @@
+{
+    "tool_name": "360搜图",
+    "tool_description": "360官方搜图接口",
+    "home_url": "https://api.aa1.cn/doc/360-img.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "360搜图API",
+            "url": "https://api.52vmy.cn/api/img/360",
+            "description": "通过关键词进行图片搜索",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "搜索关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "页码，默认为1",
+                    "default": 1
+                },
+                {
+                    "name": "size",
+                    "type": "int",
+                    "description": "每页数量，默认为10",
+                    "default": 10
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "WHOIS查询（CN域名）",
+    "tool_description": "该接口允许用户查询.cn后缀的域名的WHOIS信息。",
+    "home_url": "https://api.aa1.cn/doc/whoiscn-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "WHOIS查询接口",
+            "url": "https://api.ahfi.cn/api/WhoisCN",
+            "description": "查询.cn域名的WHOIS信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "需要查询的.cn域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

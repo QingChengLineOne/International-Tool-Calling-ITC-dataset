@@ -1,0 +1,18 @@
+{
+    "tool_name": "8prd2T1api1",
+    "tool_description": "A versatile API for accessing posts and related data.",
+    "home_url": "https://rapidapi.com/188org1-t1/api/8prd2t1api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ep1",
+            "url": "https://8prd2t1api1.p.rapidapi.com/posts",
+            "description": "Retrieves a list of posts for testing purposes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

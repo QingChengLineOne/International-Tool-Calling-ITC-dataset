@@ -1,0 +1,104 @@
+{
+    "tool_name": "JoJ Finance",
+    "tool_description": "JoJ Finance API provides real-time market quotes, international exchanges, up-to-date financial news, analytics and more.",
+    "home_url": "https://rapidapi.com/jojapi/api/joj-finance/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Market Trends",
+            "url": "https://joj-finance.p.rapidapi.com/market-trends/",
+            "description": "Explore market trends across various categories such as indexes, most-active stocks, gainers, losers, climate leaders, cryptocurrencies, and currencies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "STRING",
+                    "description": "Tab name. One of these: `indexes`, `most-active`, `gainers`, `losers`, `climate-leaders`, `cryptocurrencies`, `currencies`.",
+                    "default": "indexes"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Geolocation for market trends.",
+                    "default": "US"
+                },
+                {
+                    "name": "s",
+                    "type": "STRING",
+                    "description": "Subtab name. If you selected the `indexes` tab, you can choose one of the following: `americas`, `europe-middle-east-africa`, `asia-pacific`. Leave empty to get all.",
+                    "default": ""
+                },
+                {
+                    "name": "hl",
+                    "type": "STRING",
+                    "description": "Language for the response.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Ticker",
+            "url": "https://joj-finance.p.rapidapi.com/ticker/",
+            "description": "Get stats, price, charts, news and information about indexes, stocks, ETFs, cryptocurrencies, currencies and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "STRING",
+                    "description": "Ticker symbol. For example: `ABNB:NASDAQ`, `.DJI:INDEXDJX`, `EUR-USD`, `BTC-USD`.",
+                    "default": "ABNB:NASDAQ"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Geolocation for ticker information.",
+                    "default": "US"
+                },
+                {
+                    "name": "hl",
+                    "type": "STRING",
+                    "description": "Language for the response.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://joj-finance.p.rapidapi.com/search/",
+            "description": "Search for indexes, stocks, ETFs, cryptocurrencies, currencies and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query.",
+                    "default": "Airbnb"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Geolocation for search results.",
+                    "default": "US"
+                },
+                {
+                    "name": "hl",
+                    "type": "STRING",
+                    "description": "Language for the response.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

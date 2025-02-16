@@ -1,0 +1,25 @@
+{
+    "tool_name": "QQ信息 · 无需Ck版",
+    "tool_description": "无需用户输入skey参数，只需QQ号即可查询QQ的基础信息",
+    "home_url": "https://api.aa1.cn/doc/qqquery.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ信息查询接口",
+            "url": "https://api.pearktrue.cn/api/qq/query.php",
+            "description": "通过QQ号查询QQ的基础信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "需要查询的QQ号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

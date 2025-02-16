@@ -1,0 +1,49 @@
+{
+    "tool_name": "ClassifyAI",
+    "tool_description": "ClassifyAI is an AI-powered classification service that accurately categorizes and labels your content with ease. By providing your text or data and specifying the possible classifications, ClassifyAI employs advanced machine learning algorithms to determine the most appropriate class for your content. Whether it's sentiment analysis, topic categorization, spam detection, or intent recognition, ClassifyAI simplifies the process by delivering accurate and reliable classifications.",
+    "home_url": "https://rapidapi.com/shake-chillies-shake-chillies-default/api/classifyai/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Classify",
+            "url": "https://classifyai.p.rapidapi.com/classify",
+            "description": "The ClassifyAI API allows you to classify text based on predefined or custom categories. With a simple HTTP request, you can provide a text input along with a list of possible classes and receive the most relevant class as the output.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "The text input that you want to classify. For example, \"What's the weather like today?\"",
+                    "default": ""
+                },
+                {
+                    "name": "classes",
+                    "type": "array",
+                    "description": "A list of possible classes or categories that you want to consider for the classification. For example, [\"Weather\", \"News\", \"Sports\"].",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "Accuracy": {
+                                "type": "number"
+                            },
+                            "Class": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

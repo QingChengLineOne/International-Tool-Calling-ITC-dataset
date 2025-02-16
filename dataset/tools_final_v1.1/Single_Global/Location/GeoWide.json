@@ -1,0 +1,43 @@
+{
+    "tool_name": "GeoWide",
+    "tool_description": "GeoWide API efficiently calculates distances between geographic points, enabling accurate measurements for various applications. With minimal latency, it returns the distance in kilometers, miles, or other units, empowering developers to incorporate precise geographic calculations into their projects effortlessly.",
+    "home_url": "https://rapidapi.com/fma/api/geowide/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Distance",
+            "url": "https://geowide.p.rapidapi.com/distance",
+            "description": "This API endpoint takes latitude and longitude coordinates for two points and calculates the geodesic and great circle distances between them. It returns a JSON object with formatted coordinate information for each point, along with the distances in miles, kilometers, meters, feet, and nautical miles for both geodesic and great circle measurements.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start_longitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the starting point.",
+                    "default": "12.482778"
+                },
+                {
+                    "name": "start_latitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the starting point.",
+                    "default": "41.893333"
+                },
+                {
+                    "name": "end_latitude",
+                    "type": "NUMBER",
+                    "description": "The latitude of the destination point.",
+                    "default": "40.416944"
+                },
+                {
+                    "name": "end_longitude",
+                    "type": "NUMBER",
+                    "description": "The longitude of the destination point.",
+                    "default": "-3.703333"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

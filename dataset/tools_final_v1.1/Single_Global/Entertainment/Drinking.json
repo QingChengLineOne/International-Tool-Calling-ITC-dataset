@@ -1,0 +1,42 @@
+{
+    "tool_name": "Drinking",
+    "tool_description": "API that provides drinking-related questions and challenges for entertainment purposes.",
+    "home_url": "https://rapidapi.com/smoragigor/api/drinking1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get random question",
+            "url": "https://drinking1.p.rapidapi.com/questions/random",
+            "description": "Allows you to get a random drinking question, with an option to specify the type of the challenge.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Choose the type of question from: funny or dirty.",
+                    "default": "dirty"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get random challenge",
+            "url": "https://drinking1.p.rapidapi.com/challenges/random",
+            "description": "Allows you to get a random drinking challenge, with an option to specify the type of the challenge.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Choose the type of challenge from: funny, dirty, or sport.",
+                    "default": "funny"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "随机白丝图片API",
+    "tool_description": "随机返回一张白丝图片",
+    "home_url": "https://api.aa1.cn/doc/baisi-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机白丝图片接口",
+            "url": "https://v2.api-m.com/api/baisi",
+            "description": "通过GET请求随机获取一张白丝图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "return",
+                    "type": "int",
+                    "description": "可选参数，用于指定返回图片的数量，默认为随机返回一张",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "string",
+                    "description": "可选参数，用于指定图片大小，如：small, medium, large，默认为medium",
+                    "default": "medium"
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "可选参数，用于指定图片格式，如：jpg, png，默认为jpg",
+                    "default": "jpg"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

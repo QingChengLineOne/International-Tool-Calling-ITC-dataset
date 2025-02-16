@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP归属地信息",
+    "tool_description": "IP归属地查询工具",
+    "home_url": "https://api.aa1.cn/doc/ipxx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP归属地查询API",
+            "url": "https://www.7udh.com/ipinfo.php?ip=",
+            "description": "查询指定IP地址的归属地信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IP地址",
+                    "default": "140.205.135.3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

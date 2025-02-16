@@ -1,0 +1,31 @@
+{
+    "tool_name": "收录查询API",
+    "tool_description": "查询各平台对域名的收录情况",
+    "home_url": "https://api.aa1.cn/doc/slcx-s1f.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "收录查询接口",
+            "url": "https://api.s1f.top/checkEmploy",
+            "description": "根据域名查询各平台的收录情况",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "string",
+                    "description": "平台标识，例如：baidu, google等",
+                    "default": ""
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要查询的域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

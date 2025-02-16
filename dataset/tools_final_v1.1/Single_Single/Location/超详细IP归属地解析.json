@@ -1,0 +1,32 @@
+{
+    "tool_name": "超详细IP归属地解析",
+    "tool_description": "获取IP的归属地址信息。",
+    "home_url": "https://api.aa1.cn/doc/ip_location.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "超详细IP归属地解析API",
+            "url": "http://api-wanyueyun.xbjstd.cn/API/ip_location/",
+            "description": "提供IP地址的详细归属地信息。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，默认为JSON，可选值：JSON, XML",
+                    "default": "JSON"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

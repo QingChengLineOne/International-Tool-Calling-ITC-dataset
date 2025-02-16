@@ -1,0 +1,18 @@
+{
+    "tool_name": "巴黎奥运会实时奖牌榜",
+    "tool_description": "获取实时奥运会奖牌榜",
+    "home_url": "https://api.aa1.cn/doc/olympicsMedal.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "巴黎奥运会实时奖牌榜API",
+            "url": "https://www.haotechs.cn/ljh-wx/api/olympicsMedal",
+            "description": "提供巴黎奥运会奖牌榜的实时数据",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

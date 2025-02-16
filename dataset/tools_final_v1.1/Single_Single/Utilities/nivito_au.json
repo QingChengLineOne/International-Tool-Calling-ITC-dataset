@@ -1,0 +1,18 @@
+{
+    "tool_name": "nivito au",
+    "tool_description": "Looking for a sleek and stylish kitchen faucet to complete your modern kitchen design? Look no further than the Nivito Kitchen Faucet. This elegant faucet is made from high-quality materials and features a contemporary design that will perfectly complement your kitchen décor. The Nivito Kitchen Faucet is also extremely easy to use, with a single lever control that makes it simple to adjust the water flow and temperature. Plus, the integrated sprayhead provides even coverage for all your cooking and cleaning needs.",
+    "home_url": "https://rapidapi.com/uhardemos/api/nivito-au/",
+    "country": "Australia",
+    "api_list": [
+        {
+            "name": "nivito au",
+            "url": "https://nivito-au.p.rapidapi.com/",
+            "description": "This API provides access to information about the Nivito Kitchen Faucet, including its features and specifications.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

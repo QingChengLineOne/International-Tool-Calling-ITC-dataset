@@ -1,0 +1,25 @@
+{
+    "tool_name": "Word Scramble",
+    "tool_description": "Scramble a given input word to create a jumbled version of it.",
+    "home_url": "https://rapidapi.com/deepbluesky/api/word-scramble/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "scramble/{word}",
+            "url": "https://word-scramble.p.rapidapi.com/scramble/{word}",
+            "description": "This API function scrambles the provided word and returns the jumbled result.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "The word that you want to scramble.",
+                    "default": "TEST"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

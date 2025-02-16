@@ -1,0 +1,18 @@
+{
+    "tool_name": "JUN88 Thuong hieu nha cai uy tin dang choi nhat nam 2022",
+    "tool_description": "Jun88 là nhà cái cá cược trực tuyến uy tín ở khu vực Việt Nam và Đông Nam Á, cung cấp các sản phẩm cá cược độc quyền bởi tập đoàn Taipei.",
+    "home_url": "https://rapidapi.com/jun888live/api/jun88-thuong-hieu-nha-cai-uy-tin-dang-choi-nhat-nam-2022/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "JUN88",
+            "url": "https://jun88-thuong-hieu-nha-cai-uy-tin-dang-choi-nhat-nam-2022.p.rapidapi.com/",
+            "description": "API cung cấp thông tin về nhà cái Jun88, bao gồm các sản phẩm cá cược và dịch vụ hỗ trợ.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "短剧影视API",
+    "tool_description": "提供最新的短剧和影视资源，每日更新",
+    "home_url": "https://api.aa1.cn/doc/yingshi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "短剧影视分类查询接口",
+            "url": "https://www.hhlqilongzhu.cn/api/duanju_cat.php",
+            "description": "用于查询不同分类的短剧和影视内容",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "查询的分类名称，例如：总裁、爱情等",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

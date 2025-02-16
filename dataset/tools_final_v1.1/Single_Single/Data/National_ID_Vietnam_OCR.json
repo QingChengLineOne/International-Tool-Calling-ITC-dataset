@@ -1,0 +1,35 @@
+{
+    "tool_name": "National ID Vietnam OCR",
+    "tool_description": "Vietnam NID OCR API allows you to onboard your customers with speed and precision. Enable them to pre-fill their onboarding forms instantly by just uploading or scanning their NID card – IDfy will digitize the document for you!",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/national-id-vietnam-ocr/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://national-id-vietnam-ocr.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch API result using the request ID received in responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request made to the API.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "National ID Vietnam OCR",
+            "url": "https://national-id-vietnam-ocr.p.rapidapi.com/v3/tasks/async/extract/vietnam_nid",
+            "description": "This endpoint allows you to upload or scan a NID card for digitization.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "PAN Tampering",
+    "tool_description": "This API checks for any signs of tampering on Indian PAN cards.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/pan-tampering/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "PAN Tampering",
+            "url": "https://pan-tampering.p.rapidapi.com/v3/tasks/sync/tampering/ind_pan",
+            "description": "This API checks for any signs of tampering on Indian PAN cards.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

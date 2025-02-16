@@ -1,0 +1,31 @@
+{
+    "tool_name": "Android PlayStore Scraper",
+    "tool_description": "[Unofficial] Extract and retrieve information about Android applications listed on the Google Play Store. With this API, you can access valuable metadata, ratings, reviews, pricing, and other details for apps available on the Play Store, empowering you to gather insights, conduct market research, and enhance your app-related services.",
+    "home_url": "https://rapidapi.com/evlar-evlar-default/api/android-playstore-scraper/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get App Details",
+            "url": "https://android-playstore-scraper.p.rapidapi.com/v1/playstore",
+            "description": "Retrieve app details about the app on the Play Store",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Enter the two letter country code to search in. Default is 'us'. Examples include: us, ca, gb, de, etc.",
+                    "default": "us"
+                },
+                {
+                    "name": "appid",
+                    "type": "STRING",
+                    "description": "Enter the app ID that you want to retrieve, for example 'com.twitter.android'",
+                    "default": "com.twitter.android"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

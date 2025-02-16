@@ -1,0 +1,25 @@
+{
+    "tool_name": "获取网站信息API",
+    "tool_description": "提供获取网站标题、描述、关键词和ico图标地址的服务",
+    "home_url": "https://api.aa1.cn/doc/websiteinfo-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取网站信息接口",
+            "url": "https://api.ahfi.cn/api/websiteinfo",
+            "description": "用于获取指定网站的标题、描述、关键词和ico图标地址",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要获取信息的网站URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

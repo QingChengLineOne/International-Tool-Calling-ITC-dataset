@@ -1,0 +1,18 @@
+{
+    "tool_name": "Allianze BPO Services",
+    "tool_description": "Allianze BPO Services is a globally recognized offshore service provider offering a variety of back-office support services, focused on achieving exceptional customer satisfaction.",
+    "home_url": "https://rapidapi.com/batistalexandraa-Fcxz1BDUu_/api/allianze-bpo-services2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Business",
+            "url": "https://allianze-bpo-services2.p.rapidapi.com/",
+            "description": "Retrieves business-related information and services offered by Allianze BPO.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

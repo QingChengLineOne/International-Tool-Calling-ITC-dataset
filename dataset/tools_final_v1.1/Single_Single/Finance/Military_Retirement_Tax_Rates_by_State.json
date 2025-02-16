@@ -1,0 +1,18 @@
+{
+    "tool_name": "Military Retirement Tax Rates by State",
+    "tool_description": "This tool provides information on military retirement tax rates across different states in the United States.",
+    "home_url": "https://rapidapi.com/cjackson99/api/military-retirement-tax-rates-by-state/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Military Retirement Tax Rate by State",
+            "url": "https://military-retirement-tax-rates-by-state.p.rapidapi.com/",
+            "description": "Fetches the military retirement tax rate for each state.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

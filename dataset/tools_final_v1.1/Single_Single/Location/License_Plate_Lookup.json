@@ -1,0 +1,31 @@
+{
+    "tool_name": "License Plate Lookup",
+    "tool_description": "Check VIN by US license plate and state. This tool allows users to retrieve vehicle information using a license plate number and the corresponding state. It utilizes a VIN decoder to provide detailed vehicle specifications.",
+    "home_url": "https://rapidapi.com/dominonet-lTpEE6zONeS/api/license-plate-lookup2/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "License Plate Lookup",
+            "url": "https://license-plate-lookup2.p.rapidapi.com/license_plate_lookup",
+            "description": "Retrieve vehicle information based on the license plate and state code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "license_plate",
+                    "type": "STRING",
+                    "description": "The license plate number of the vehicle.",
+                    "default": "S8TAN"
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The two-letter state code where the vehicle is registered. Valid options include AL, AK, AZ, AR, CA, CO, CT, DE, DC, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY.",
+                    "default": "AL"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

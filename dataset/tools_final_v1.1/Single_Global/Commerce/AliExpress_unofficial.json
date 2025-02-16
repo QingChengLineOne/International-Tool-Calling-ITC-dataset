@@ -1,0 +1,387 @@
+{
+    "tool_name": "AliExpress unofficial",
+    "tool_description": "This API provides access to various functionalities related to AliExpress, including product categories, feedbacks, shipping information, and product details. Note that this API is deprecated and will be deleted after March 1, 2023.",
+    "home_url": "https://rapidapi.com/vladdnepr1989/api/aliexpress-unofficial/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/categories",
+            "url": "https://aliexpress-unofficial.p.rapidapi.com/categories",
+            "description": "Retrieve a list of product categories available on AliExpress.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Language locale for the response.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code for the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/feedbacks/{id}",
+            "url": "https://aliexpress-unofficial.p.rapidapi.com/feedbacks/4000886597329",
+            "description": "Get feedback for a specific product by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the product to retrieve feedback for.",
+                    "default": "4000886597329"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "withPictures",
+                    "type": "NUMBER",
+                    "description": "Include pictures in the feedback response.",
+                    "default": 1
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": 1
+                }
+            ],
+            "statuscode": "1",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/categories/{id}",
+            "url": "https://aliexpress-unofficial.p.rapidapi.com/categories/200000783",
+            "description": "Retrieve details for a specific category by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the category to retrieve.",
+                    "default": "200000783"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Language locale for the response.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code for the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/shipping/{id}",
+            "url": "https://aliexpress-unofficial.p.rapidapi.com/shipping/4000886597329",
+            "description": "Get shipping information for a specific product by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the product to retrieve shipping information for.",
+                    "default": "4000886597329"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of shipping options to retrieve.",
+                    "default": 1
+                },
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Language locale for the response.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code for the request.",
+                    "default": ""
+                },
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the shipping price.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "items": {
+                        "items": {
+                            "properties": {
+                                "countryFrom": {
+                                    "description": "Country of sender",
+                                    "type": "string"
+                                },
+                                "deliveryDate": {
+                                    "description": "Expected delivery date",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "isTracking": {
+                                    "description": "Is package tracked or not",
+                                    "type": "boolean"
+                                },
+                                "priceBase": {
+                                    "description": "Price in base currency",
+                                    "properties": {
+                                        "currency": {
+                                            "type": "string"
+                                        },
+                                        "formattedAmount": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "format": "float",
+                                            "maximum": 3.402823669209385e+38,
+                                            "minimum": -3.402823669209385e+38,
+                                            "type": "number"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "priceLocal": {
+                                    "description": "Price in local currency",
+                                    "oneOf": [
+                                        {
+                                            "properties": {
+                                                "currency": {
+                                                    "type": "string"
+                                                },
+                                                "formattedAmount": {
+                                                    "type": "string"
+                                                },
+                                                "value": {
+                                                    "format": "float",
+                                                    "maximum": 3.402823669209385e+38,
+                                                    "minimum": -3.402823669209385e+38,
+                                                    "type": "number"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    ]
+                                },
+                                "serviceName": {
+                                    "description": "Name of shipping company",
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "description": "Title of shipping method",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/products/{id}",
+            "url": "https://aliexpress-unofficial.p.rapidapi.com/products/200000783",
+            "description": "Retrieve details for a specific product by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the product to retrieve.",
+                    "default": "200000783"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": 1
+                },
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the product price.",
+                    "default": ""
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Sorting criteria for the product list.",
+                    "default": ""
+                },
+                {
+                    "name": "priceMax",
+                    "type": "NUMBER",
+                    "description": "Maximum price filter.",
+                    "default": 100
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code for the request.",
+                    "default": ""
+                },
+                {
+                    "name": "priceMin",
+                    "type": "NUMBER",
+                    "description": "Minimum price filter.",
+                    "default": 20
+                },
+                {
+                    "name": "isSale",
+                    "type": "BOOLEAN",
+                    "description": "Filter for sale items.",
+                    "default": 0
+                },
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Language locale for the response.",
+                    "default": ""
+                },
+                {
+                    "name": "isFreeShip",
+                    "type": "BOOLEAN",
+                    "description": "Filter for free shipping items.",
+                    "default": 0
+                },
+                {
+                    "name": "isFavorite",
+                    "type": "BOOLEAN",
+                    "description": "Filter for favorite items.",
+                    "default": 0
+                }
+            ],
+            "statuscode": "1",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/product/{id}",
+            "url": "https://aliexpress-unofficial.p.rapidapi.com/product/4000886597329",
+            "description": "Get detailed information about a specific product by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the product to retrieve.",
+                    "default": "4000886597329"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "locale",
+                    "type": "STRING",
+                    "description": "Language locale for the response.",
+                    "default": ""
+                },
+                {
+                    "name": "currency",
+                    "type": "STRING",
+                    "description": "Currency for the product price.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code for the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

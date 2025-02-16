@@ -1,0 +1,25 @@
+{
+    "tool_name": "ICP备案查询",
+    "tool_description": "对接备案管理通信局api，实时数据",
+    "home_url": "https://api.aa1.cn/doc/fzhan_com_icp.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "ICP备案信息查询API",
+            "url": "https://www.fzhan.com/tem/moban/niu/api/tools_domain_name_registration_query.php",
+            "description": "查询指定域名ICP备案信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "需要查询的域名",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

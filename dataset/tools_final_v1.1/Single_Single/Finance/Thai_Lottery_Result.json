@@ -1,0 +1,493 @@
+{
+    "tool_name": "Thai Lottery Result",
+    "tool_description": "An API that provides the results of the Thai lottery, allowing users to check winning numbers and prize details.",
+    "home_url": "https://rapidapi.com/thailand-api-thailand-api-default/api/thai-lottery-result/",
+    "country": "Thailand",
+    "api_list": [
+        {
+            "name": "Check Lottery Results",
+            "url": "https://thai-lottery-result.p.rapidapi.com/check",
+            "description": "This API allows users to check the lottery results for up to 10 numbers at the same time.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date of the lottery draw in YYYYMMDD format.",
+                    "default": "20220316"
+                },
+                {
+                    "name": "lottery_number",
+                    "type": "STRING",
+                    "description": "A comma-separated list of lottery numbers to check.",
+                    "default": "737867,737866,349012,737788,344503,985003,123456"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "payload": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "object",
+                                "properties": {
+                                    "day": {
+                                        "type": "integer"
+                                    },
+                                    "month": {
+                                        "type": "integer"
+                                    },
+                                    "year": {
+                                        "type": "integer"
+                                    }
+                                }
+                            },
+                            "results": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "number": {
+                                            "type": "string"
+                                        },
+                                        "result": {
+                                            "type": "array"
+                                        },
+                                        "isWin": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Lottery Results by Date ID",
+            "url": "https://thai-lottery-result.p.rapidapi.com/results/{dateid}",
+            "description": "Retrieve lottery results based on a specific date ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dateid",
+                    "type": "STRING",
+                    "description": "The ID of the date for which to retrieve lottery results.",
+                    "default": "20220316"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "payload": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "object",
+                                "properties": {
+                                    "day": {
+                                        "type": "integer"
+                                    },
+                                    "month": {
+                                        "type": "integer"
+                                    },
+                                    "year": {
+                                        "type": "integer"
+                                    }
+                                }
+                            },
+                            "results": {
+                                "type": "object",
+                                "properties": {
+                                    "FirstPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "SideFirstPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "SecondPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "ThirdPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "FourthPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "FifthPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "FirstThreeDigitsPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LastThreeDigitsPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LastTwoDigitsPrize": {
+                                        "type": "object",
+                                        "properties": {
+                                            "info": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "amount": {
+                                                        "type": "integer"
+                                                    },
+                                                    "prizeMoney": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            },
+                                            "numbers": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Latest Draw Date",
+            "url": "https://thai-lottery-result.p.rapidapi.com/latest",
+            "description": "Get information about the latest lottery draw date.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "payload": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "date": {
+                                    "type": "object",
+                                    "properties": {
+                                        "day": {
+                                            "type": "integer"
+                                        },
+                                        "month": {
+                                            "type": "integer"
+                                        },
+                                        "year": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Draw Date Listing",
+            "url": "https://thai-lottery-result.p.rapidapi.com/",
+            "description": "List all draw dates for the Thai lottery.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination of results.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "success": {
+                        "type": "boolean"
+                    },
+                    "payload": {
+                        "type": "object",
+                        "properties": {
+                            "paginate": {
+                                "type": "object",
+                                "properties": {
+                                    "total": {
+                                        "type": "integer"
+                                    },
+                                    "currentPage": {
+                                        "type": "integer"
+                                    },
+                                    "maxPages": {
+                                        "type": "integer"
+                                    },
+                                    "perPage": {
+                                        "type": "integer"
+                                    }
+                                }
+                            },
+                            "results": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "date": {
+                                            "type": "object",
+                                            "properties": {
+                                                "day": {
+                                                    "type": "integer"
+                                                },
+                                                "month": {
+                                                    "type": "integer"
+                                                },
+                                                "year": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

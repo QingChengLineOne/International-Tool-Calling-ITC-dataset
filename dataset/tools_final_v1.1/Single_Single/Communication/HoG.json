@@ -1,0 +1,910 @@
+{
+    "tool_name": "HoG",
+    "tool_description": "論壇專用",
+    "home_url": "https://rapidapi.com/hog-developer-team-hog-developer-team-default/api/hog/",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "15.2 取得文章與討論區內容",
+            "url": "https://hog.p.rapidapi.com/hogApp/v1/forum/getPost",
+            "description": "取得討論區列表內容",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "msg",
+                    "code",
+                    "resultData"
+                ],
+                "properties": {
+                    "msg": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "resultData": {
+                        "type": {
+                            "type": "object",
+                            "required": [
+                                "total_reply_count",
+                                "controlBtn",
+                                "like_count",
+                                "mem_nickname",
+                                "forum_type",
+                                "mem_url",
+                                "allow_reply",
+                                "replyList",
+                                "mem_uid",
+                                "forum_title",
+                                "userMsg",
+                                "reply_count",
+                                "postMsg",
+                                "mem_photo",
+                                "post_info",
+                                "like_on_flag",
+                                "share_link",
+                                "forum_uid",
+                                "article_status",
+                                "replyMsg",
+                                "forumTopic_title",
+                                "forum_content",
+                                "share_img",
+                                "time",
+                                "forum_banner"
+                            ],
+                            "properties": {
+                                "controlBtn": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer"
+                                    },
+                                    "minItems": 1,
+                                    "uniqueItems": true
+                                },
+                                "forum_type": {
+                                    "type": "string"
+                                },
+                                "like_count": {
+                                    "type": "integer"
+                                },
+                                "allow_reply": {
+                                    "type": "string"
+                                },
+                                "replyList": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "required": [
+                                            "controlBtn",
+                                            "like_count",
+                                            "mem_nickname",
+                                            "mem_url",
+                                            "mem_uid",
+                                            "reply_count",
+                                            "mem_photo",
+                                            "post_info",
+                                            "like_on_flag",
+                                            "forum_uid",
+                                            "forum_content"
+                                        ],
+                                        "properties": {
+                                            "controlBtn": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "integer"
+                                                },
+                                                "minItems": 1,
+                                                "uniqueItems": true
+                                            },
+                                            "like_count": {
+                                                "type": "integer"
+                                            },
+                                            "reply_status": {
+                                                "type": "string"
+                                            },
+                                            "mem_nickname": {
+                                                "type": "string"
+                                            },
+                                            "mem_url": {
+                                                "type": "string"
+                                            },
+                                            "mem_uid": {
+                                                "type": "integer"
+                                            },
+                                            "reply_count": {
+                                                "type": "integer"
+                                            },
+                                            "post_info": {
+                                                "type": "string"
+                                            },
+                                            "like_on_flag": {
+                                                "type": "string"
+                                            },
+                                            "mem_photo": {
+                                                "type": "string"
+                                            },
+                                            "forum_uid": {
+                                                "type": "integer"
+                                            },
+                                            "replyList": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "controlBtn",
+                                                        "like_count",
+                                                        "reply_status",
+                                                        "mem_nickname",
+                                                        "mem_url",
+                                                        "mem_uid",
+                                                        "reply_count",
+                                                        "post_info",
+                                                        "like_on_flag",
+                                                        "mem_photo",
+                                                        "forum_uid",
+                                                        "reply_list",
+                                                        "forum_content",
+                                                        "unlike_count",
+                                                        "sort_order"
+                                                    ],
+                                                    "properties": {
+                                                        "controlBtn": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "integer"
+                                                            },
+                                                            "minItems": 1,
+                                                            "uniqueItems": true
+                                                        },
+                                                        "like_count": {
+                                                            "type": "integer"
+                                                        },
+                                                        "reply_status": {
+                                                            "type": "string"
+                                                        },
+                                                        "mem_nickname": {
+                                                            "type": "string"
+                                                        },
+                                                        "mem_url": {
+                                                            "type": "string"
+                                                        },
+                                                        "mem_uid": {
+                                                            "type": "integer"
+                                                        },
+                                                        "reply_count": {
+                                                            "type": "integer"
+                                                        },
+                                                        "post_info": {
+                                                            "type": "string"
+                                                        },
+                                                        "like_on_flag": {
+                                                            "type": "string"
+                                                        },
+                                                        "mem_photo": {
+                                                            "type": "string"
+                                                        },
+                                                        "forum_uid": {
+                                                            "type": "integer"
+                                                        },
+                                                        "reply_list": {
+                                                            "type": "array"
+                                                        },
+                                                        "forum_content": {
+                                                            "type": "string"
+                                                        },
+                                                        "unlike_count": {
+                                                            "type": "integer"
+                                                        },
+                                                        "sort_order": {
+                                                            "type": "integer"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "forum_content": {
+                                                "type": "string"
+                                            },
+                                            "unlike_count": {
+                                                "type": "integer"
+                                            },
+                                            "sort_order": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    }
+                                },
+                                "total_reply_count": {
+                                    "type": "integer"
+                                },
+                                "mem_nickname": {
+                                    "type": "string"
+                                },
+                                "mem_url": {
+                                    "type": "string"
+                                },
+                                "mem_uid": {
+                                    "type": "integer"
+                                },
+                                "reply_count": {
+                                    "type": "integer"
+                                },
+                                "post_info": {
+                                    "type": "string"
+                                },
+                                "like_on_flag": {
+                                    "type": "string"
+                                },
+                                "mem_photo": {
+                                    "type": "string"
+                                },
+                                "forum_uid": {
+                                    "type": "integer"
+                                },
+                                "userMsg": {
+                                    "type": "string"
+                                },
+                                "postMsg": {
+                                    "type": "string"
+                                },
+                                "forum_banner": {
+                                    "type": "string"
+                                },
+                                "share_link": {
+                                    "type": "string"
+                                },
+                                "forumList_uid": {
+                                    "type": "string"
+                                },
+                                "article_status": {
+                                    "type": "string"
+                                },
+                                "replyMsg": {
+                                    "type": "string"
+                                },
+                                "forumTopic_title": {
+                                    "type": "string"
+                                },
+                                "forum_content": {
+                                    "type": "string"
+                                },
+                                "share_img": {
+                                    "type": "string"
+                                },
+                                "time": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "18.1 App Config",
+            "url": "https://hog.p.rapidapi.com/hogApp/v1/sys/getHoGConfig/seanTest1",
+            "description": "取得系統參數",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "msg",
+                    "code",
+                    "resultData"
+                ],
+                "properties": {
+                    "msg": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "resultData": {
+                        "type": "object",
+                        "required": [
+                            "controlBtn",
+                            "userMsg",
+                            "time",
+                            "replyList"
+                        ],
+                        "properties": {
+                            "controlBtn": {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                },
+                                "minItems": 1,
+                                "uniqueItems": true
+                            },
+                            "userMsg": {
+                                "type": "string"
+                            },
+                            "time": {
+                                "type": "string"
+                            },
+                            "replyList": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "controlBtn",
+                                        "like_count",
+                                        "reply_status",
+                                        "mem_nickname",
+                                        "mem_url",
+                                        "mem_uid",
+                                        "reply_count",
+                                        "mem_photo",
+                                        "post_info",
+                                        "replyList",
+                                        "like_on_flag",
+                                        "forum_uid",
+                                        "forum_content",
+                                        "unlike_count",
+                                        "sort_order",
+                                        "floor_uid"
+                                    ],
+                                    "properties": {
+                                        "controlBtn": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            },
+                                            "minItems": 1,
+                                            "uniqueItems": true
+                                        },
+                                        "like_count": {
+                                            "type": "integer"
+                                        },
+                                        "floor_uid": {
+                                            "type": "integer"
+                                        },
+                                        "reply_status": {
+                                            "type": "string",
+                                            "enum": [
+                                                "N",
+                                                "L"
+                                            ]
+                                        },
+                                        "mem_nickname": {
+                                            "type": "string"
+                                        },
+                                        "mem_url": {
+                                            "type": "string"
+                                        },
+                                        "mem_uid": {
+                                            "type": "integer"
+                                        },
+                                        "reply_count": {
+                                            "type": "integer"
+                                        },
+                                        "post_info": {
+                                            "type": "string"
+                                        },
+                                        "like_on_flag": {
+                                            "type": "string"
+                                        },
+                                        "mem_photo": {
+                                            "type": "string"
+                                        },
+                                        "forum_uid": {
+                                            "type": "integer"
+                                        },
+                                        "replyList": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "required": [
+                                                    "controlBtn",
+                                                    "like_count",
+                                                    "reply_status",
+                                                    "mem_nickname",
+                                                    "mem_url",
+                                                    "mem_uid",
+                                                    "post_info",
+                                                    "like_on_flag",
+                                                    "mem_photo",
+                                                    "forum_uid",
+                                                    "forum_content",
+                                                    "unlike_count",
+                                                    "sort_order",
+                                                    "floor_uid"
+                                                ],
+                                                "properties": {
+                                                    "controlBtn": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "integer"
+                                                        },
+                                                        "minItems": 1,
+                                                        "uniqueItems": true
+                                                    },
+                                                    "like_count": {
+                                                        "type": "integer"
+                                                    },
+                                                    "floor_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "reply_status": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_nickname": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_url": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "post_info": {
+                                                        "type": "string"
+                                                    },
+                                                    "like_on_flag": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_photo": {
+                                                        "type": "string"
+                                                    },
+                                                    "forum_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "forum_content": {
+                                                        "type": "string"
+                                                    },
+                                                    "unlike_count": {
+                                                        "type": "integer"
+                                                    },
+                                                    "sort_order": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "forum_content": {
+                                            "type": "string"
+                                        },
+                                        "unlike_count": {
+                                            "type": "integer"
+                                        },
+                                        "sort_order": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "15.4 文章內容更新與狀態變更",
+            "url": "https://hog.p.rapidapi.com/hogApp/v1/forum/publishPost",
+            "description": "新增、更改文章",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "15.5 文章讚/倒讚",
+            "url": "https://hog.p.rapidapi.com/hogApp/v1/forum/likeOrDislike",
+            "description": "讚/倒讚",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "msg",
+                    "code",
+                    "resultData"
+                ],
+                "properties": {
+                    "msg": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "resultData": {
+                        "type": "object",
+                        "required": [
+                            "controlBtn",
+                            "userMsg",
+                            "time",
+                            "replyList"
+                        ],
+                        "properties": {
+                            "controlBtn": {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                },
+                                "minItems": 1,
+                                "uniqueItems": true
+                            },
+                            "userMsg": {
+                                "type": "string"
+                            },
+                            "time": {
+                                "type": "string"
+                            },
+                            "replyList": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "controlBtn",
+                                        "like_count",
+                                        "reply_status",
+                                        "mem_nickname",
+                                        "mem_url",
+                                        "mem_uid",
+                                        "reply_count",
+                                        "mem_photo",
+                                        "post_info",
+                                        "replyList",
+                                        "like_on_flag",
+                                        "forum_uid",
+                                        "forum_content",
+                                        "unlike_count",
+                                        "sort_order",
+                                        "floor_uid"
+                                    ],
+                                    "properties": {
+                                        "controlBtn": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            },
+                                            "minItems": 1,
+                                            "uniqueItems": true
+                                        },
+                                        "like_count": {
+                                            "type": "integer"
+                                        },
+                                        "floor_uid": {
+                                            "type": "integer"
+                                        },
+                                        "reply_status": {
+                                            "type": "string",
+                                            "enum": [
+                                                "N",
+                                                "L"
+                                            ]
+                                        },
+                                        "mem_nickname": {
+                                            "type": "string"
+                                        },
+                                        "mem_url": {
+                                            "type": "string"
+                                        },
+                                        "mem_uid": {
+                                            "type": "integer"
+                                        },
+                                        "reply_count": {
+                                            "type": "integer"
+                                        },
+                                        "post_info": {
+                                            "type": "string"
+                                        },
+                                        "like_on_flag": {
+                                            "type": "string"
+                                        },
+                                        "mem_photo": {
+                                            "type": "string"
+                                        },
+                                        "forum_uid": {
+                                            "type": "integer"
+                                        },
+                                        "replyList": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "required": [
+                                                    "controlBtn",
+                                                    "like_count",
+                                                    "reply_status",
+                                                    "mem_nickname",
+                                                    "mem_url",
+                                                    "mem_uid",
+                                                    "post_info",
+                                                    "like_on_flag",
+                                                    "mem_photo",
+                                                    "forum_uid",
+                                                    "forum_content",
+                                                    "unlike_count",
+                                                    "sort_order",
+                                                    "floor_uid"
+                                                ],
+                                                "properties": {
+                                                    "controlBtn": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "integer"
+                                                        },
+                                                        "minItems": 1,
+                                                        "uniqueItems": true
+                                                    },
+                                                    "like_count": {
+                                                        "type": "integer"
+                                                    },
+                                                    "floor_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "reply_status": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_nickname": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_url": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "post_info": {
+                                                        "type": "string"
+                                                    },
+                                                    "like_on_flag": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_photo": {
+                                                        "type": "string"
+                                                    },
+                                                    "forum_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "forum_content": {
+                                                        "type": "string"
+                                                    },
+                                                    "unlike_count": {
+                                                        "type": "integer"
+                                                    },
+                                                    "sort_order": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "forum_content": {
+                                            "type": "string"
+                                        },
+                                        "unlike_count": {
+                                            "type": "integer"
+                                        },
+                                        "sort_order": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "15.1 取得論壇列表",
+            "url": "https://hog.p.rapidapi.com/hogApp/v1/forum/listPosts",
+            "description": "取得論壇列表，如遊戲區",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "15.3 取得指定文章討論區內容",
+            "url": "https://hog.p.rapidapi.com/hogApp/v1/forum/getCommentList",
+            "description": "用於文章內展開使用",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "msg",
+                    "code",
+                    "resultData"
+                ],
+                "properties": {
+                    "msg": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "resultData": {
+                        "type": "object",
+                        "required": [
+                            "controlBtn",
+                            "userMsg",
+                            "time",
+                            "replyList"
+                        ],
+                        "properties": {
+                            "controlBtn": {
+                                "type": "array",
+                                "items": {
+                                    "type": "integer"
+                                },
+                                "minItems": 1,
+                                "uniqueItems": true
+                            },
+                            "userMsg": {
+                                "type": "string"
+                            },
+                            "time": {
+                                "type": "string"
+                            },
+                            "replyList": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "controlBtn",
+                                        "like_count",
+                                        "reply_status",
+                                        "mem_nickname",
+                                        "mem_url",
+                                        "mem_uid",
+                                        "reply_count",
+                                        "mem_photo",
+                                        "post_info",
+                                        "replyList",
+                                        "like_on_flag",
+                                        "forum_uid",
+                                        "forum_content",
+                                        "unlike_count",
+                                        "sort_order",
+                                        "floor_uid"
+                                    ],
+                                    "properties": {
+                                        "controlBtn": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "integer"
+                                            },
+                                            "minItems": 1,
+                                            "uniqueItems": true
+                                        },
+                                        "like_count": {
+                                            "type": "integer"
+                                        },
+                                        "floor_uid": {
+                                            "type": "integer"
+                                        },
+                                        "reply_status": {
+                                            "type": "string",
+                                            "enum": [
+                                                "N",
+                                                "L"
+                                            ]
+                                        },
+                                        "mem_nickname": {
+                                            "type": "string"
+                                        },
+                                        "mem_url": {
+                                            "type": "string"
+                                        },
+                                        "mem_uid": {
+                                            "type": "integer"
+                                        },
+                                        "reply_count": {
+                                            "type": "integer"
+                                        },
+                                        "post_info": {
+                                            "type": "string"
+                                        },
+                                        "like_on_flag": {
+                                            "type": "string"
+                                        },
+                                        "mem_photo": {
+                                            "type": "string"
+                                        },
+                                        "forum_uid": {
+                                            "type": "integer"
+                                        },
+                                        "replyList": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "required": [
+                                                    "controlBtn",
+                                                    "like_count",
+                                                    "reply_status",
+                                                    "mem_nickname",
+                                                    "mem_url",
+                                                    "mem_uid",
+                                                    "post_info",
+                                                    "like_on_flag",
+                                                    "mem_photo",
+                                                    "forum_uid",
+                                                    "forum_content",
+                                                    "unlike_count",
+                                                    "sort_order",
+                                                    "floor_uid"
+                                                ],
+                                                "properties": {
+                                                    "controlBtn": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "integer"
+                                                        },
+                                                        "minItems": 1,
+                                                        "uniqueItems": true
+                                                    },
+                                                    "like_count": {
+                                                        "type": "integer"
+                                                    },
+                                                    "floor_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "reply_status": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_nickname": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_url": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "post_info": {
+                                                        "type": "string"
+                                                    },
+                                                    "like_on_flag": {
+                                                        "type": "string"
+                                                    },
+                                                    "mem_photo": {
+                                                        "type": "string"
+                                                    },
+                                                    "forum_uid": {
+                                                        "type": "integer"
+                                                    },
+                                                    "forum_content": {
+                                                        "type": "string"
+                                                    },
+                                                    "unlike_count": {
+                                                        "type": "integer"
+                                                    },
+                                                    "sort_order": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "forum_content": {
+                                            "type": "string"
+                                        },
+                                        "unlike_count": {
+                                            "type": "integer"
+                                        },
+                                        "sort_order": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

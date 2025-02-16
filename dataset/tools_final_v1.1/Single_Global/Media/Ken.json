@@ -1,0 +1,18 @@
+{
+    "tool_name": "Ken",
+    "tool_description": "A tool designed for Kodi, providing various functionalities for media management.",
+    "home_url": "https://rapidapi.com/killak5121981/api/ken2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Ken",
+            "url": "https://ken2.p.rapidapi.com/",
+            "description": "This API allows users to interact with the Ken service for Kodi, enabling media-related operations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

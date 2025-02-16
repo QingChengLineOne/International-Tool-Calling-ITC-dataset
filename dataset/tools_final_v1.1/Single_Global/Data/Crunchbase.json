@@ -1,0 +1,18 @@
+{
+    "tool_name": "Crunchbase",
+    "tool_description": "Provides access to Crunchbase data",
+    "home_url": "https://rapidapi.com/shake-chillies-shake-chillies-default/api/crunchbase4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Company details",
+            "url": "https://crunchbase4.p.rapidapi.com/company",
+            "description": "Get company details such as about, founded year, funding, industries, location, long description, size, and website.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

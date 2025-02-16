@@ -1,0 +1,66 @@
+{
+    "tool_name": "Counter",
+    "tool_description": "Count views on your website or any other specific action on your application.",
+    "home_url": "https://rapidapi.com/abdheshnayak/api/counter10/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Current Count",
+            "url": "https://counter10.p.rapidapi.com/",
+            "description": "Retrieve the current count without increasing it.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "CLABEL",
+                    "type": "STRING",
+                    "description": "Label for the counter display.",
+                    "default": "blue"
+                },
+                {
+                    "name": "COLOR",
+                    "type": "STRING",
+                    "description": "Color of the counter display.",
+                    "default": "red"
+                },
+                {
+                    "name": "IDV",
+                    "type": "STRING",
+                    "description": "Identifier for the specific counter instance.",
+                    "default": "sample"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Count And Increase By One",
+            "url": "https://counter10.p.rapidapi.com/",
+            "description": "Retrieve the current count and increase it by one.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ID",
+                    "type": "STRING",
+                    "description": "Identifier for the specific counter instance.",
+                    "default": ""
+                },
+                {
+                    "name": "CLABEL",
+                    "type": "STRING",
+                    "description": "Label for the counter display.",
+                    "default": "blue"
+                },
+                {
+                    "name": "COLOR",
+                    "type": "STRING",
+                    "description": "Color of the counter display.",
+                    "default": "red"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

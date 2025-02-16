@@ -1,0 +1,44 @@
+{
+    "tool_name": "数学题生成API",
+    "tool_description": "用于生成数学题目的API",
+    "home_url": "https://api.aa1.cn/doc/sxjs.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "数学题生成接口",
+            "url": "https://api.mg-tool.cn/v1/sxjs/",
+            "description": "提供生成数学题目的功能",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "difficulty",
+                    "type": "string",
+                    "description": "题目的难度级别，例如easy, medium, hard",
+                    "default": "easy"
+                },
+                {
+                    "name": "steps",
+                    "type": "int",
+                    "description": "解题步骤的数量，范围从0到5",
+                    "default": 1
+                },
+                {
+                    "name": "allow_negative",
+                    "type": "boolean",
+                    "description": "是否允许题目中有负数，true表示允许，false表示不允许",
+                    "default": false
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "questions",
+                    "type": "int",
+                    "description": "请求生成题目的数量",
+                    "default": 1
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "tool_name": "LBC Shark",
+    "tool_description": "API for leboncoin, a popular French classifieds website. This API allows users to access various functionalities related to listings on the platform.",
+    "home_url": "https://rapidapi.com/dodocr7/api/lbc-shark/",
+    "country": "France",
+    "api_list": [
+        {
+            "name": "SingleOffer",
+            "url": "https://lbc-shark.p.rapidapi.com/api/parrot/v1/classified/{id}",
+            "description": "Retrieve a single offer by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the classified listing.",
+                    "default": "1874583655"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "PhoneNumber",
+            "url": "https://lbc-shark.p.rapidapi.com/api/utils/phonenumber.json",
+            "description": "Get the phone number of any listing on leboncoin.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "list_id",
+                    "type": "STRING",
+                    "description": "The listing ID. For example, in the URL www.leboncoin.fr/voitures/2019289966.htm, the ID is 2019289966.",
+                    "default": "2054687238"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Offers",
+            "url": "https://lbc-shark.p.rapidapi.com/finder/search",
+            "description": "Retrieve offers from the platform.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Location",
+            "url": "https://lbc-shark.p.rapidapi.com/api/parrot/v3/complete/location",
+            "description": "Get location information related to listings.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

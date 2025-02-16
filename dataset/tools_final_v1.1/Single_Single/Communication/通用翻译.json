@@ -1,0 +1,31 @@
+{
+    "tool_name": "通用翻译API",
+    "tool_description": "支持200+语种、覆盖4万多个语言方向，实时响应海量、复杂的翻译请求，翻译质量达到世界领先水平， 为各类开发者提供业界最全的翻译服务解决方案。",
+    "home_url": "https://api.aa1.cn/doc/translates.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文本翻译接口",
+            "url": "https://suapi.net/api/text/translate",
+            "description": "提供文本翻译功能，支持多种语言之间的转换。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "string",
+                    "description": "目标语言代码，例如'en'代表英语。",
+                    "default": "en"
+                },
+                {
+                    "name": "text[]",
+                    "type": "string[]",
+                    "description": "待翻译的文本列表，每个文本用'&text[]='参数传递。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

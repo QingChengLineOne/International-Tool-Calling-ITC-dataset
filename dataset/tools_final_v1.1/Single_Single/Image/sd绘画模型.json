@@ -1,0 +1,31 @@
+{
+    "tool_name": "sd绘画模型API",
+    "tool_description": "提供一个选择写实和动漫风格的绘画模型接口",
+    "home_url": "https://api.aa1.cn/doc/aisd.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "sd绘画模型接口",
+            "url": "https://api.lolimi.cn/API/AI/sd.php",
+            "description": "用于生成具有特定风格的绘画作品",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "输入描述绘画内容的信息",
+                    "default": "示例描述"
+                },
+                {
+                    "name": "mode",
+                    "type": "string",
+                    "description": "绘画风格选择，可选'写实'或'动漫'",
+                    "default": "写实"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "tool_name": "Simple Salvage Vin Check",
+    "tool_description": "Provided by vinalert.com, this simple API will return true or false for any VIN depending on the salvage records that are found. The database contains 19.2 million VINs as of April 2020 and is continuously updated.",
+    "home_url": "https://rapidapi.com/nadkabbani/api/simple-salvage-vin-check/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "VIN Decoder",
+            "url": "https://simple-salvage-vin-check.p.rapidapi.com/",
+            "description": "Provides a VIN decoder for all US standard VINS.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "DecodeVIN",
+                    "type": "STRING",
+                    "description": "The VIN to decode.",
+                    "default": "LGWED2A34LE620959"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "salvagecheck",
+            "url": "https://simple-salvage-vin-check.p.rapidapi.com/",
+            "description": "Returns true if the VIN was in a salvage database in the past. False otherwise. Must be a valid 17 digit VIN from North America.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "vin",
+                    "type": "STRING",
+                    "description": "The 17 digit VIN to check.",
+                    "default": "1G1JC5SHXC4134208"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

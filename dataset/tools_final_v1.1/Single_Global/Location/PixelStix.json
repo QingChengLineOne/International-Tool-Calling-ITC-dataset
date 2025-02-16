@@ -1,0 +1,153 @@
+{
+    "tool_name": "PixelStix",
+    "tool_description": "PixelStix is a suite of technologies for locating and interacting with physical objects.",
+    "home_url": "https://rapidapi.com/pixelstixlabs-pixelstixlabs-default/api/pixelstix/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "PixelStix Meta",
+            "url": "https://pixelstix.p.rapidapi.com/api/v2/public/object_voices/{pixelstix_code}",
+            "description": "Retrieves the meta information for a given PixelStix code and any associated Maps/Galleries if the PixelStix is of type 'PREMIUM'.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pixelstix_code",
+                    "type": "string",
+                    "description": "The unique code for the PixelStix object.",
+                    "default": "BAAA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Log in",
+            "url": "https://pixelstix.p.rapidapi.com/api/v2/login",
+            "description": "Authenticates a user by comparing the provided username and password against registered PixelStix users. Returns a JWT token for further API requests.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the account.",
+                    "default": "user"
+                },
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "The password for the account.",
+                    "default": "password"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Register",
+            "url": "https://pixelstix.p.rapidapi.com/api/v2/register",
+            "description": "Enables a new account to be registered in the PixelStix system using a username and password.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The desired username for the new account.",
+                    "default": "user2"
+                },
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "The password for the new account.",
+                    "default": "password"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "PixelStix Map Meta",
+            "url": "https://pixelstix.p.rapidapi.com/api/v2/public/tags/tag_name/{pixelstix_map_name}",
+            "description": "Retrieves information about a specific PixelStix Map/Gallery, which is a collection of PREMIUM PixelStix assigned with coordinates.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pixelstix_map_name",
+                    "type": "string",
+                    "description": "The name of the PixelStix map.",
+                    "default": "morningbreath"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Add To Account Map",
+            "url": "https://pixelstix.p.rapidapi.com/api/v2/accounts/current/username_tag/object_voices/{pixelstix_code}",
+            "description": "Assigns a PixelStix to the account map associated with the provided JWT token.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "jwt",
+                    "type": "STRING",
+                    "description": "The JWT token for authentication.",
+                    "default": ""
+                },
+                {
+                    "name": "pixelstix_code",
+                    "type": "string",
+                    "description": "The unique code for the PixelStix object.",
+                    "default": "BAAA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Assign",
+            "url": "https://pixelstix.p.rapidapi.com/api/v2/object_voices/{pixelstix_code}/web_locations",
+            "description": "Assigns content to a PixelStix. The PixelStix must be owned by the account associated with the provided JWT token.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "jwt",
+                    "type": "STRING",
+                    "description": "The JWT token for authentication.",
+                    "default": ""
+                },
+                {
+                    "name": "pixelstix_code",
+                    "type": "string",
+                    "description": "The unique code for the PixelStix object.",
+                    "default": "BAAA"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of content being assigned.",
+                    "default": "text/html"
+                },
+                {
+                    "name": "Content-Type",
+                    "type": "STRING",
+                    "description": "The content type of the request.",
+                    "default": "application/x-www-form-urlencoded"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The URL of the content to be assigned.",
+                    "default": "https://vimeo.com/495518878/ab3ddb80dc"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

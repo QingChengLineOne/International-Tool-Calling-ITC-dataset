@@ -1,0 +1,348 @@
+{
+    "tool_name": "Geography _v2",
+    "tool_description": "API that includes all the continents, countries, and cities of the world.",
+    "home_url": "https://rapidapi.com/hefesto-technologies-hefesto-technologies-default/api/geography2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "cities",
+            "url": "https://geography2.p.rapidapi.com/cities",
+            "description": "Retrieve a list of all cities, filtered by name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the city to filter by.",
+                    "default": "medellin"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "The number of results per page.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "cities": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "countryId": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "code": {
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "type": "object",
+                                    "properties": {
+                                        "latitude": {
+                                            "type": "number"
+                                        },
+                                        "longitude": {
+                                            "type": "number"
+                                        },
+                                        "locationType": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "population": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "items": {
+                        "type": "integer"
+                    },
+                    "numberOfPages": {
+                        "type": "integer"
+                    },
+                    "currentPage": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "get city by id",
+            "url": "https://geography2.p.rapidapi.com/cities/1796236",
+            "description": "Retrieve city details by its unique ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the city.",
+                    "default": "1796236"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "location": {
+                        "type": "object",
+                        "properties": {
+                            "latitude": {
+                                "type": "integer"
+                            },
+                            "longitude": {
+                                "type": "integer"
+                            },
+                            "locationType": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "cityId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "population": {
+                        "type": "integer"
+                    },
+                    "adminCode": {
+                        "type": "string"
+                    },
+                    "countryId": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "get continent by id",
+            "url": "https://geography2.p.rapidapi.com/continents/1",
+            "description": "Retrieve continent details by its unique ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the continent.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "get country by id",
+            "url": "https://geography2.p.rapidapi.com/countries/1",
+            "description": "Retrieve country details by its unique ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the country.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "continentId": {
+                        "type": "integer"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "native": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    },
+                    "capital": {
+                        "type": "string"
+                    },
+                    "currency": {
+                        "type": "string"
+                    },
+                    "emoji": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "countries",
+            "url": "https://geography2.p.rapidapi.com/countries",
+            "description": "Retrieve a list of all countries, filtered by name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "The number of results per page.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "countries": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "continentId": {
+                                    "type": "integer"
+                                },
+                                "code": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "native": {
+                                    "type": "string"
+                                },
+                                "phone": {
+                                    "type": "string"
+                                },
+                                "capital": {
+                                    "type": "string"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "emoji": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "items": {
+                        "type": "integer"
+                    },
+                    "numberOfPages": {
+                        "type": "integer"
+                    },
+                    "currentPage": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "continents",
+            "url": "https://geography2.p.rapidapi.com/continents",
+            "description": "Retrieve a list of all continents, filtered by name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the continent to filter by.",
+                    "default": "North America"
+                },
+                {
+                    "name": "pageSize",
+                    "type": "NUMBER",
+                    "description": "The number of results per page.",
+                    "default": "10"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "continents": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "code": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "items": {
+                        "type": "integer"
+                    },
+                    "numberOfPages": {
+                        "type": "integer"
+                    },
+                    "currentPage": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

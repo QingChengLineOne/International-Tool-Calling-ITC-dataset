@@ -1,0 +1,56 @@
+{
+    "tool_name": "生成随机验证码API",
+    "tool_description": "生成文字、数字、算数验证码接口，演示地址：https://github.com/xxhzm/captcha，生成的验证码二分钟内有效！！！",
+    "home_url": "https://api.aa1.cn/doc/captcha-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "生成随机验证码接口",
+            "url": "https://v2.api-m.com/api/captcha",
+            "description": "提供生成文字、数字、算数验证码的服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "验证码类型，可选值：text, numeric, arithmetic",
+                    "default": "text"
+                },
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "验证码长度，默认为6",
+                    "default": 6
+                },
+                {
+                    "name": "width",
+                    "type": "int",
+                    "description": "验证码图片宽度，默认为120",
+                    "default": 120
+                },
+                {
+                    "name": "height",
+                    "type": "int",
+                    "description": "验证码图片高度，默认为40",
+                    "default": 40
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "验证码输出格式，可选值：png, jpg，默认为png",
+                    "default": "png"
+                },
+                {
+                    "name": "font_size",
+                    "type": "int",
+                    "description": "验证码字体大小，默认为20",
+                    "default": 20
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

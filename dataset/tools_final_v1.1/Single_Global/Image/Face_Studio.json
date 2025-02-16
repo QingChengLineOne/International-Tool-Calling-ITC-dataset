@@ -1,0 +1,59 @@
+{
+    "tool_name": "Face Studio",
+    "tool_description": "Face Generation: use AI to dynamically generate high-resolution, photo-realistic pictures of faces based on demographic input including gender, age, and ethnicity.",
+    "home_url": "https://rapidapi.com/blue-reach-ai-blue-reach-ai-default/api/face-studio/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/generate",
+            "url": "https://face-studio.p.rapidapi.com/generate",
+            "description": "Generate a face given optional parameters: gender, age, and ethnicity. Ethnicity is an approximation of the corresponding ethnic/racial phenotype for a given option.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ethnicity",
+                    "type": "STRING",
+                    "description": "Specifies the ethnic phenotype of the generated face. Options include: european, african, west_asian, south_asian, east_asian, southeast_asian, and latin_american. If not specified, the ethnic phenotype will be random.",
+                    "default": "european"
+                },
+                {
+                    "name": "gender",
+                    "type": "STRING",
+                    "description": "Specifies the gender of the generated face. Options include: male and female. If not specified, the gender will be random.",
+                    "default": "female"
+                },
+                {
+                    "name": "age",
+                    "type": "STRING",
+                    "description": "Specifies the age of the generated face. Options include: 10s, 20s, 30s, 40s, 50s, and 60s. A specific numeric value can also be provided. If not specified, the age will be random.",
+                    "default": "20s"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

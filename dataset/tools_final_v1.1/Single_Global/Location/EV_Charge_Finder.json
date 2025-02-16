@@ -1,0 +1,154 @@
+{
+    "tool_name": "EV Charge Finder",
+    "tool_description": "Extremely Fast and Simple real-time searches for EV charging stations, anywhere in the world.",
+    "home_url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/ev-charge-finder/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search by Coordinates Point",
+            "url": "https://ev-charge-finder.p.rapidapi.com/search-by-coordinates-point",
+            "description": "Search for EV charging stations near specific geographic coordinates point.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lng",
+                    "type": "STRING",
+                    "description": "Longitude of the geographic coordinates point to search near by.",
+                    "default": "-121.925337"
+                },
+                {
+                    "name": "lat",
+                    "type": "STRING",
+                    "description": "Latitude of the geographic coordinates point to search near by.",
+                    "default": "37.359428"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Return EV charging stations matching a specific query or keyword (e.g. 'evgo', 'tesla', 'chargepoint').",
+                    "default": ""
+                },
+                {
+                    "name": "min_kw",
+                    "type": "STRING",
+                    "description": "Restrict the result to the availability for connectors with a specific minimal value of power in kilowatts.",
+                    "default": ""
+                },
+                {
+                    "name": "max_kw",
+                    "type": "STRING",
+                    "description": "Restrict the result to the availability for connectors with a specific maximal value of power in kilowatts.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "Maximum number of results to return (Allowed values: 1-500, Default: 20).",
+                    "default": "20"
+                },
+                {
+                    "name": "available",
+                    "type": "STRING",
+                    "description": "Find EV charging stations with an available connector.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Return EV charging stations with connectors of specified types (e.g. 'CHAdeMO', 'J1772,CCS').",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search by Location",
+            "url": "https://ev-charge-finder.p.rapidapi.com/search-by-location",
+            "description": "Search for EV charging stations near a specific location specified as a free-form location query (e.g. 'San Francisco, CA, USA').",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "near",
+                    "type": "STRING",
+                    "description": "Free-form location query to search near by (e.g. 'New York, NY, USA').",
+                    "default": "New York, NY, USA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Return EV charging stations matching a specific query or keyword (e.g. 'evgo', 'tesla', 'chargepoint').",
+                    "default": ""
+                },
+                {
+                    "name": "max_kw",
+                    "type": "STRING",
+                    "description": "Restrict the result to the availability for connectors with a specific maximum value of power in kilowatts.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "Maximum number of results to return (Allowed values: 1-500, Default: 20).",
+                    "default": "20"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Return EV charging stations with connectors of specified types (e.g. 'CHAdeMO', 'J1772,CCS').",
+                    "default": ""
+                },
+                {
+                    "name": "min_kw",
+                    "type": "STRING",
+                    "description": "Restrict the result to the availability for connectors with a specific minimal value of power in kilowatts.",
+                    "default": ""
+                },
+                {
+                    "name": "available",
+                    "type": "STRING",
+                    "description": "Only return EV charging stations with an available connector.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

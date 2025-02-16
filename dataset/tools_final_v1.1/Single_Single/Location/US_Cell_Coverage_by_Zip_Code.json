@@ -1,0 +1,99 @@
+{
+    "tool_name": "US Cell Coverage by Zip Code",
+    "tool_description": "Check cell coverage for all US networks by entering a zip code.",
+    "home_url": "https://rapidapi.com/dataskunks-dataskunks-default/api/us-cell-coverage-by-zip-code/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get Coverage",
+            "url": "https://us-cell-coverage-by-zip-code.p.rapidapi.com/",
+            "description": "Retrieve cell coverage information for AT&T, T-Mobile, U.S. Cellular, and Verizon based on the provided zip code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postcode",
+                    "type": "STRING",
+                    "description": "The zip code for which to check cell coverage.",
+                    "default": "92101"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "request": {
+                    "postcode": "string"
+                },
+                "result": {
+                    "Att": {
+                        "2G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "3G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "4G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "5G": {
+                            "label": "string",
+                            "quality": "number"
+                        }
+                    },
+                    "Tmobile": {
+                        "2G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "3G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "4G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "5G": {
+                            "label": "string",
+                            "quality": "number"
+                        }
+                    },
+                    "UsCellular": {
+                        "2G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "3G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "4G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "5G": {
+                            "label": "string",
+                            "quality": "number"
+                        }
+                    },
+                    "Verizon": {
+                        "2G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "3G": {
+                            "label": "string",
+                            "quality": "number"
+                        },
+                        "4G": {
+                            "label": "string",
+                            "quality": "number"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

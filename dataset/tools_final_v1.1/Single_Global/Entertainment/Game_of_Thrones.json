@@ -1,0 +1,45 @@
+{
+    "tool_name": "Game of Thrones",
+    "tool_description": "List of all Game of Thrones characters' names, families, images, and more.",
+    "home_url": "https://rapidapi.com/mrmalinsky08-MHGsijNPHM/api/game-of-thrones1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get continents",
+            "url": "https://game-of-thrones1.p.rapidapi.com/Continents",
+            "description": "Returns all Game of Thrones continents.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get character by ID",
+            "url": "https://game-of-thrones1.p.rapidapi.com/Characters/{id}",
+            "description": "Returns a character by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the character.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get all characters",
+            "url": "https://game-of-thrones1.p.rapidapi.com/Characters",
+            "description": "Returns all of the Game of Thrones characters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "tool_name": "Genderizeio",
+    "tool_description": "Predict the gender of a person based on their name.",
+    "home_url": "https://rapidapi.com/AmirFischer/api/genderizeio/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "genderize",
+            "url": "https://genderizeio.p.rapidapi.com/",
+            "description": "Predict the gender of a person based on their name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the person for which the gender is to be predicted.",
+                    "default": "amir"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "gender": {
+                        "type": "string"
+                    },
+                    "probability": {
+                        "type": "float"
+                    },
+                    "count": {
+                        "type": "float"
+                    }
+                }
+            }
+        }
+    ]
+}

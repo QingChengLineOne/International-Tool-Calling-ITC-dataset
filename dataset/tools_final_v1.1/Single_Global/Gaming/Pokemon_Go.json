@@ -1,0 +1,228 @@
+{
+    "tool_name": "Pokemon Go",
+    "tool_description": "API that is dedicated to various machine readable data about Pokemon Go.",
+    "home_url": "https://rapidapi.com/Chewett/api/pokemon-go1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Type Effectiveness",
+            "url": "https://pokemon-go1.p.rapidapi.com/type_effectiveness.json",
+            "description": "This API provides information on how type multipliers are applied when a Pokemon attacks, which is crucial for maximizing damage in raids and PvP.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Rarity",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_rarity.json",
+            "description": "This API categorizes Pokemon into three rarity types: Standard, Legendary, and Mythic, detailing their trading rules and buddy walking distances.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Power Up Requirements",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_powerup_requirements.json",
+            "description": "This API outlines the stardust and candy costs required to power up a Pokemon at each level, up to a maximum level of 40.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Genders",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_genders.json",
+            "description": "This API provides the gender distribution for each Pokemon, including the percentage chance of being male, female, or genderless.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Current Pokemon Moves",
+            "url": "https://pokemon-go1.p.rapidapi.com/current_pokemon_moves.json",
+            "description": "This API returns the current moves that Pokemon can learn through catching, evolving, or using TMs, including special moves available during events.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Evolutions",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_evolutions.json",
+            "description": "This API lists all Pokemon that can evolve, detailing their evolution requirements and potential evolution forms.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Raid Exclusive Pokemon",
+            "url": "https://pokemon-go1.p.rapidapi.com/raid_exclusive_pokemon.json",
+            "description": "This API provides a list of Pokemon that can only be found in specific raid levels.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Buddy Distances",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_buddy_distances.json",
+            "description": "This API details the distances required to earn candy from Pokemon when they are set as your buddy.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Candy to Evolve",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_candy_to_evolve.json",
+            "description": "This API groups Pokemon by their candy requirements for evolution, providing a list of Pokemon and their respective candy needs.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Stats",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_stats.json",
+            "description": "This API returns the base stats (attack, defense, stamina) for each Pokemon, which determine their strength in battles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Nesting Pokemon",
+            "url": "https://pokemon-go1.p.rapidapi.com/nesting_pokemon.json",
+            "description": "This API provides a list of Pokemon that are known to nest in specific locations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Maximum CP",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_max_cp.json",
+            "description": "This API returns the maximum CP that each Pokemon can achieve at level 40 with perfect stats.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Shiny Pokemon",
+            "url": "https://pokemon-go1.p.rapidapi.com/shiny_pokemon.json",
+            "description": "This API provides information on which Pokemon can be found as shiny variants and the methods to obtain them.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Alolan Pokemon",
+            "url": "https://pokemon-go1.p.rapidapi.com/alolan_pokemon.json",
+            "description": "This API lists the Alolan variants of Pokemon, which have different appearances and typings compared to their standard forms.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Fast Moves",
+            "url": "https://pokemon-go1.p.rapidapi.com/fast_moves.json",
+            "description": "This API provides a complete list of fast moves available in the current Pokemon Go game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Names",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_names.json",
+            "description": "This API returns a list of Pokemon names and their corresponding IDs.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Charged Moves",
+            "url": "https://pokemon-go1.p.rapidapi.com/charged_moves.json",
+            "description": "This API provides a complete list of charged moves available in the current Pokemon Go game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Released Pokemon",
+            "url": "https://pokemon-go1.p.rapidapi.com/released_pokemon.json",
+            "description": "This API provides a list of all Pokemon that have been released in Pokemon Go from the first three generations.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Weather Boosts",
+            "url": "https://pokemon-go1.p.rapidapi.com/weather_boosts.json",
+            "description": "This API lists the types of Pokemon that receive boosts during specific weather conditions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Possible Ditto Pokemon",
+            "url": "https://pokemon-go1.p.rapidapi.com/possible_ditto_pokemon.json",
+            "description": "This API provides a list of Pokemon that can potentially transform into Ditto when caught.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Types",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_types.json",
+            "description": "This API lists the types of each Pokemon, which affect their strengths and weaknesses in battles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pokemon Encounter Data",
+            "url": "https://pokemon-go1.p.rapidapi.com/pokemon_encounter_data.json",
+            "description": "This API provides metrics that influence the catch rate and behavior of Pokemon during encounters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

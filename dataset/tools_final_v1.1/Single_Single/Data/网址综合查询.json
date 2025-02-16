@@ -1,0 +1,25 @@
+{
+    "tool_name": "网址综合查询API",
+    "tool_description": "综合查询网址的ICP,Whois,DNS服务器信息",
+    "home_url": "https://api.aa1.cn/doc/websitequery.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网址综合查询接口",
+            "url": "https://api.pearktrue.cn/api/website/synthesis.php",
+            "description": "用于查询特定网址的ICP备案信息、Whois信息以及DNS服务器信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要查询的网址",
+                    "default": "无"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

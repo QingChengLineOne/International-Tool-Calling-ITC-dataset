@@ -1,0 +1,38 @@
+{
+    "tool_name": "SERP Results",
+    "tool_description": "Get Search Engine Results with simple API (SERP API)",
+    "home_url": "https://rapidapi.com/herosAPI/api/serp-results/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "SERP",
+            "url": "https://serp-results.p.rapidapi.com/",
+            "description": "Fetch search engine results based on a query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search query to retrieve results for. Example: `music site:youtube.com`.",
+                    "default": "YouTube"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "proxy",
+                    "type": "STRING",
+                    "description": "Specify the country for the proxy to use.",
+                    "default": "US"
+                },
+                {
+                    "name": "max",
+                    "type": "NUMBER",
+                    "description": "The maximum number of results to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

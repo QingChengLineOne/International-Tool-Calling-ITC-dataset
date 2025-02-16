@@ -1,0 +1,25 @@
+{
+    "tool_name": "Twitter User ID",
+    "tool_description": "The Twitter User ID API allows users to retrieve the unique identification numbers assigned to individual Twitter accounts for easy tracking and analysis.",
+    "home_url": "https://rapidapi.com/drazazora/api/twitter-user-id/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Twitter User ID or Username",
+            "url": "https://twitter-user-id.p.rapidapi.com/ajax.php",
+            "description": "Retrieve the user ID or username associated with a Twitter account.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "input",
+                    "type": "STRING",
+                    "description": "The Twitter username or user ID to be queried.",
+                    "default": "elonmusk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

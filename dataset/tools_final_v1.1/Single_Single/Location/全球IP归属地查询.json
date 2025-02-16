@@ -1,0 +1,25 @@
+{
+    "tool_name": "全球IP归属地查询",
+    "tool_description": "全球IP归属地查询API，提供详细的IP地理位置信息",
+    "home_url": "https://api.aa1.cn/doc/getipaddr.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全球IP归属地查询接口",
+            "url": "https://www.haotechs.cn/ljh-wx/getIpAddr",
+            "description": "查询指定IP地址的地理位置信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": "请求时必须提供"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

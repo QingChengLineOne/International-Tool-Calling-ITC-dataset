@@ -1,0 +1,43 @@
+{
+    "tool_name": "天气预报-当前+5日-百度天气",
+    "tool_description": "获取当前天气与未来5日天气，数据来源于百度官方，该接口稳定性高。【示例参数里的ID与KEY为公共ID，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，本接口免费且无使用上限。]",
+    "home_url": "https://api.aa1.cn/doc/tqybbaiducn.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "天气预报-当前+5日-百度天气",
+            "url": "https://cn.apihz.cn/api/tianqi/tqybbaiducn.php",
+            "description": "获取指定城市当前天气及未来5天的天气预报",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口ID",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口密钥",
+                    "default": ""
+                },
+                {
+                    "name": "sheng",
+                    "type": "string",
+                    "description": "省份名称",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "城市名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

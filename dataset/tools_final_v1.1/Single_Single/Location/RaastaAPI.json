@@ -1,0 +1,59 @@
+{
+    "tool_name": "RaastaAPI",
+    "tool_description": "This API provides access to the database that contains road-related information about Karachi, Pakistan.",
+    "home_url": "https://rapidapi.com/AbeerKhan/api/raastaapi/",
+    "country": "Pakistan",
+    "api_list": [
+        {
+            "name": "getIntersection",
+            "url": "https://raastaapi.p.rapidapi.com/get_intersection/24.91098,67.12646",
+            "description": "For a given route, this returns the total number of potholes and speedbreakers that have been found in the database that our system has detected.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "input",
+                    "type": "string",
+                    "description": "Coordinates of the location in latitude and longitude format.",
+                    "default": "24.91098,67.12646"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getPoints",
+            "url": "https://raastaapi.p.rapidapi.com/get_points/Pothole",
+            "description": "This will retrieve specific points from the database and return it.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "TypePoint",
+                    "type": "string",
+                    "description": "Type of point to retrieve, such as 'Pothole'.",
+                    "default": "Pothole"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getNearestNeighbor",
+            "url": "https://raastaapi.p.rapidapi.com/get_nearest_neighbor/27.5,67.5",
+            "description": "For every location point given, this searches the database and returns the nearest pothole and speed-breaker events and the distances from it.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "input",
+                    "type": "string",
+                    "description": "Coordinates of the location in latitude and longitude format.",
+                    "default": "27.5,67.5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

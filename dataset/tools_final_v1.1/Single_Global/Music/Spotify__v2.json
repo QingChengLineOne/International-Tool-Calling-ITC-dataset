@@ -1,0 +1,898 @@
+{
+    "tool_name": "Spotify _v2",
+    "tool_description": "Get Spotify Tracks & Playlist Details",
+    "home_url": "https://rapidapi.com/420vijay47/api/spotify117/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://spotify117.p.rapidapi.com/search/",
+            "description": "Search for tracks, albums, artists, or genres on Spotify.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The search keyword.",
+                    "default": "romantic songs"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Type of search. ACCEPTED VALUES: album, artist, track, year, genre.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Audio Analysis",
+            "url": "https://spotify117.p.rapidapi.com/audio_analysis/",
+            "description": "Get audio analysis of any track.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "track_id",
+                    "type": "STRING",
+                    "description": "The ID of the track to analyze.",
+                    "default": "0gPgdRfB4jdGrlyXS0Vx78"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Audio Features",
+            "url": "https://spotify117.p.rapidapi.com/audio_features/",
+            "description": "Get audio features of any track.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "track_id",
+                    "type": "STRING",
+                    "description": "The ID of the track to get features for.",
+                    "default": "0gPgdRfB4jdGrlyXS0Vx78"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Album Tracks",
+            "url": "https://spotify117.p.rapidapi.com/get_album_tracks/",
+            "description": "Get all tracks of a specific Spotify album.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "album_id",
+                    "type": "STRING",
+                    "description": "The ID of the album.",
+                    "default": "2DOgJMDXu4A2V4u0sV1b56"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Artist Albums",
+            "url": "https://spotify117.p.rapidapi.com/get_artist_albums/",
+            "description": "Fetch all albums of any Spotify artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist_id",
+                    "type": "STRING",
+                    "description": "The ID of the artist.",
+                    "default": "52wBYviD0Fnactl1q7ibdT"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Related Artists",
+            "url": "https://spotify117.p.rapidapi.com/get_related_artists/",
+            "description": "Get related artists based on a given artist ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist_id",
+                    "type": "STRING",
+                    "description": "The ID of the artist to find related artists for.",
+                    "default": "0EmeFodog0BfCgMzAIvKQp"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Album Info (Single)",
+            "url": "https://spotify117.p.rapidapi.com/get_single_album/",
+            "description": "Get information about a single Spotify album.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "album_id",
+                    "type": "STRING",
+                    "description": "The ID of the album.",
+                    "default": "2DOgJMDXu4A2V4u0sV1b56"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Artist Details (Single)",
+            "url": "https://spotify117.p.rapidapi.com/get_single_artist/",
+            "description": "Get details of a single Spotify artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist_id",
+                    "type": "STRING",
+                    "description": "The ID of the artist.",
+                    "default": "52wBYviD0Fnactl1q7ibdT"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "User details",
+            "url": "https://spotify117.p.rapidapi.com/get_user_details/",
+            "description": "Get user details of any Spotify user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The ID of the user.",
+                    "default": "cruilla"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get user Playlists",
+            "url": "https://spotify117.p.rapidapi.com/get_user_playlist/",
+            "description": "Fetch all public playlists of a specific user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "STRING",
+                    "description": "The ID of the user.",
+                    "default": "cruilla"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "New releases",
+            "url": "https://spotify117.p.rapidapi.com/new_releases/",
+            "description": "Get new releases based on country code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Enter country code like: US, CA, SE, IN, UK...",
+                    "default": "us"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Playlist Details",
+            "url": "https://spotify117.p.rapidapi.com/spotify_playlist/",
+            "description": "Get playlist details including name, description, thumbnail, likes count, tracks count, and details of each individual song.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the Spotify playlist.",
+                    "default": "https://open.spotify.com/playlist/3nS8d7ekVjFLM4jVyqbDGY"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "track_details": {
+                        "type": "object",
+                        "properties": {
+                            "0": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "1": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "4": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "5": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "6": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "7": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "8": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "9": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "10": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "11": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "12": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "13": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "14": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "15": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "16": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "17": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "18": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "19": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "20": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "21": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "22": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "23": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "24": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "25": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "26": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "27": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "28": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "29": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "30": {
+                                "type": "object",
+                                "properties": {
+                                    "link": {
+                                        "type": "string"
+                                    },
+                                    "song_name": {
+                                        "type": "string"
+                                    },
+                                    "artist": {
+                                        "type": "string"
+                                    },
+                                    "thumb": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "pdesc": {
+                                "type": "string"
+                            },
+                            "count": {
+                                "type": "integer"
+                            },
+                            "pimg": {
+                                "type": "string"
+                            },
+                            "likes": {
+                                "type": "integer"
+                            },
+                            "pname": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Track Details (Single)",
+            "url": "https://spotify117.p.rapidapi.com/spotify_single_track/",
+            "description": "Get track name, thumbnail, duration, and artist name of any Spotify track.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the Spotify track.",
+                    "default": "https://open.spotify.com/track/1Ef0TmgS1QrVO6tKHrMMmH"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "song_name": {
+                        "type": "string"
+                    },
+                    "artist": {
+                        "type": "string"
+                    },
+                    "img": {
+                        "type": "string"
+                    },
+                    "duration": {
+                        "type": "string"
+                    },
+                    "res": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Fast QR Code generator",
+    "tool_description": "Generates QR code for given input text",
+    "home_url": "https://rapidapi.com/engagehitsmail/api/fast-qr-code-generator1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get QR Code",
+            "url": "https://fast-qr-code-generator1.p.rapidapi.com/qrcode",
+            "description": "Returns a QR Code based on the provided input data using the POST method.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "data",
+                    "type": "STRING",
+                    "description": "The input text or URL for which the QR code will be generated.",
+                    "default": "www.example.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

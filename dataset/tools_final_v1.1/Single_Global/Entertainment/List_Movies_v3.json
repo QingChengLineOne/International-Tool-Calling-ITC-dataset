@@ -1,0 +1,135 @@
+{
+    "tool_name": "List Movies v3",
+    "tool_description": "This Movies API contains the data of the best movies ever made in a very easy-to-use and organized format. It is a great choice for REST API based Frontend Developer Projects. The API provides access to a complete list of movies, including details such as Cover image, Rank, Title, Thumbnail, Rating, Id, Year, Images, Description, Trailer, Genre, Director, Writer, and ID of the movies. This is a lightweight web service with a REST interface, offering an easy way to access the movie database.",
+    "home_url": "https://rapidapi.com/jpbermoy/api/list-movies-v3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Movie Details",
+            "url": "https://list-movies-v3.p.rapidapi.com/api/v2/movie_details.json",
+            "description": "Returns the information about a specific movie.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "movie_id",
+                    "type": "NUMBER",
+                    "description": "The YTS ID of the movie or the IMDB ID.",
+                    "default": "10"
+                },
+                {
+                    "name": "imdb_id",
+                    "type": "NUMBER",
+                    "description": "The YTS ID of the movie or the IMDB ID.",
+                    "default": "10"
+                },
+                {
+                    "name": "with_cast",
+                    "type": "BOOLEAN",
+                    "description": "When set to true, the data returned will include information about the cast.",
+                    "default": "false"
+                },
+                {
+                    "name": "with_images",
+                    "type": "BOOLEAN",
+                    "description": "When set to true, the data returned will include image URLs.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Movie Parental Guides",
+            "url": "https://list-movies-v3.p.rapidapi.com/api/v2/movie_parental_guides.json",
+            "description": "Returns all the parental guide ratings for the specified movie.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Movie Suggestions",
+            "url": "https://list-movies-v3.p.rapidapi.com/api/v2/movie_suggestions.json",
+            "description": "Returns 4 related movies as suggestions for the user.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "movie_id",
+                    "type": "NUMBER",
+                    "description": "The ID of the movie for which suggestions are requested.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List Movies",
+            "url": "https://list-movies-v3.p.rapidapi.com/api/v2/list_movies.json",
+            "description": "Used to list and search through all the available movies. Can sort, filter, search, and order the results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "genre",
+                    "type": "STRING",
+                    "description": "Used to filter by a given genre (See http://www.imdb.com/genre/ for full list).",
+                    "default": "all"
+                },
+                {
+                    "name": "order_by",
+                    "type": "STRING",
+                    "description": "Orders the results by either Ascending or Descending order.",
+                    "default": "desc"
+                },
+                {
+                    "name": "with_rt_ratings",
+                    "type": "BOOLEAN",
+                    "description": "Returns the list with the Rotten Tomatoes rating included.",
+                    "default": "false"
+                },
+                {
+                    "name": "sort_by",
+                    "type": "STRING",
+                    "description": "Sorts the results by chosen value.",
+                    "default": "date_added"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Used to see the next page of movies.",
+                    "default": "1"
+                },
+                {
+                    "name": "query_term",
+                    "type": "STRING",
+                    "description": "Used for movie search, matching on: Movie Title/IMDB Code, Actor Name/IMDb, Director Name/IMDb Code.",
+                    "default": "0"
+                },
+                {
+                    "name": "quality",
+                    "type": "STRING",
+                    "description": "Used to filter by a given quality.",
+                    "default": "all"
+                },
+                {
+                    "name": "minimum_rating",
+                    "type": "NUMBER",
+                    "description": "Used to filter movie by a given minimum IMDB rating.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The limit of results per page that has been set.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

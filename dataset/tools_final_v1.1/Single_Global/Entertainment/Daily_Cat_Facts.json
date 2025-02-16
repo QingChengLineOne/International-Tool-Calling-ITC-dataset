@@ -1,0 +1,31 @@
+{
+    "tool_name": "Daily Cat Facts",
+    "tool_description": "This API provides a simple service to send random cat facts to users.",
+    "home_url": "https://rapidapi.com/standingapi-standingapi-default/api/daily-cat-facts/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get some random facts",
+            "url": "https://daily-cat-facts.p.rapidapi.com/facts/random",
+            "description": "Retrieve one or more random cat facts.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "animal_type",
+                    "type": "STRING",
+                    "description": "Type of animal the fact will describe. Default is 'cat'.",
+                    "default": "cat"
+                },
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "Number of facts to retrieve. If set to one, the response will be a single fact object. If many, the response will be an array of facts. Default is 1, with a limit of 500.",
+                    "default": "5"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

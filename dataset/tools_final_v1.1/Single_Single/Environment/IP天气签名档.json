@@ -1,0 +1,44 @@
+{
+    "tool_name": "IP天气签名档",
+    "tool_description": "开发语言：PHP，实现功能：读取IP所在地的天气数据。",
+    "home_url": "https://api.aa1.cn/doc/weather_sign.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP天气签名档API",
+            "url": "https://api.mhimg.cn/api/weather_sign/",
+            "description": "提供IP所在地天气数据查询服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "请求查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "返回数据的语言，如：zh-CN，en-US等，默认为zh-CN",
+                    "default": "zh-CN"
+                },
+                {
+                    "name": "unit",
+                    "type": "string",
+                    "description": "温度单位，如：C（摄氏度），F（华氏度），默认为C",
+                    "default": "C"
+                },
+                {
+                    "name": "time",
+                    "type": "string",
+                    "description": "返回的时间粒度，如：1h（每小时），12h（每12小时），1d（每天），默认为1h",
+                    "default": "1h"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

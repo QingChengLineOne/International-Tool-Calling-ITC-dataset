@@ -1,0 +1,40 @@
+{
+    "tool_name": "March4",
+    "tool_description": "An advertising tool that provides access to various APIs for managing and retrieving album data.",
+    "home_url": "https://rapidapi.com/spce2/api/march4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "albums",
+            "url": "https://march4.p.rapidapi.com/albums",
+            "description": "Retrieves a list of albums with their details.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

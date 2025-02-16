@@ -1,0 +1,25 @@
+{
+    "tool_name": "链接百度收录检测API",
+    "tool_description": "用于检测指定链接是否被百度收录的API接口",
+    "home_url": "https://api.aa1.cn/doc/shou.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "检测链接是否被百度收录",
+            "url": "https://api.fish9.cn/api/baidu/",
+            "description": "检查提供的链接是否在百度搜索引擎中已有收录记录",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要检测的链接地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

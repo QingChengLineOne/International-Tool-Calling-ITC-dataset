@@ -1,0 +1,26 @@
+{
+    "tool_name": "字数检测API",
+    "tool_description": "用于检测文本中包含的数字数量",
+    "home_url": "https://api.aa1.cn/doc/zishu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "字数检测接口",
+            "url": "https://api.52vmy.cn/api/wl/s/zishu",
+            "description": "提供文本数字检测功能",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "待检测的文本内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "request_example": "https://api.52vmy.cn/api/wl/s/zishu?msg=你好",
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

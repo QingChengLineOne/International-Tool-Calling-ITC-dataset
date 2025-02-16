@@ -1,0 +1,18 @@
+{
+    "tool_name": "[en-GB] Bing Wallpaper All In One",
+    "tool_description": "en-GB Bing Wallpaper complete data API, updated daily at 9:30 AM, with 278 days of updates.",
+    "home_url": "https://api.aa1.cn/doc/bing-wallpaper-en_GB.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "[en-GB] Bing Wallpaper All In One",
+            "url": "https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/data/en-GB_all.json",
+            "description": "The complete data API for en-GB Bing Wallpaper, updated daily.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

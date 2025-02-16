@@ -1,0 +1,38 @@
+{
+    "tool_name": "ChatGPT - GPT4 Ai Chatbot",
+    "tool_description": "Introducing ChatGPT - GPT-4 AI Chatbot, a cutting-edge conversational solution designed to revolutionize your user engagement experience. Leveraging the powerful GPT-4 technology, our AI chatbot ensures seamless and natural interactions with your users while significantly reducing operational costs.",
+    "home_url": "https://rapidapi.com/nextbaseapp/api/chatgpt-gpt4-ai-chatbot/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Chat",
+            "url": "https://chatgpt-gpt4-ai-chatbot.p.rapidapi.com/ask",
+            "description": "To start a new chat or get a one-time response, send a POST request to the /chat endpoint with a JSON object that includes a query property containing the text of the message you want to send. To get a response based on previous chats, send a POST request to the /ask endpoint with a JSON object that includes both a query property and a conversationId property.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "string",
+                    "description": "The text of the message you want to send.",
+                    "default": ""
+                },
+                {
+                    "name": "conversationId",
+                    "type": "string",
+                    "description": "The ID of the conversation you want to retrieve the response for.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "wordLimit",
+                    "type": "integer",
+                    "description": "The maximum number of words for the response.",
+                    "default": "256"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

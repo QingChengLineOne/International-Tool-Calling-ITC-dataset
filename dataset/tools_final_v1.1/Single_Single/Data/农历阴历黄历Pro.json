@@ -1,0 +1,31 @@
+{
+    "tool_name": "农历阴历黄历Pro",
+    "tool_description": "提供公历、星期、星座、农历阴历、节日、节气等信息的API",
+    "home_url": "https://api.shwgij.com/doc/7",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "农历阴历黄历Pro API",
+            "url": "https://api.shwgij.com/api/lunars/lunarpro",
+            "description": "通过传入日期时间，返回公历、星期、星座、农历阴历、节日、节气等信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "14位日期时间，格式如：20240102081420，或完整的标准时间格式：2024-01-02 08:14:20",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "U5IkU9EPBJc7wNWJseJAZNvkX8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

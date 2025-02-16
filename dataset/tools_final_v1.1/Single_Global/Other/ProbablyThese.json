@@ -1,0 +1,18 @@
+{
+    "tool_name": "ProbablyThese",
+    "tool_description": "API for app ProbablyThese, designed to provide users with various functionalities related to the ProbablyThese application.",
+    "home_url": "https://rapidapi.com/alemupx/api/probablythese/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "EndPoint",
+            "url": "https://probablythese.p.rapidapi.com/",
+            "description": "This endpoint allows users to access the main functionalities of the ProbablyThese API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

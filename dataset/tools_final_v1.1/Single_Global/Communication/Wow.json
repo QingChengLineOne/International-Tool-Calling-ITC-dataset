@@ -1,0 +1,18 @@
+{
+    "tool_name": "Wow",
+    "tool_description": "A simple API for retrieving posts.",
+    "home_url": "https://rapidapi.com/sanity-eran-org-default/api/wow/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "posts",
+            "url": "https://wow.p.rapidapi.com/posts",
+            "description": "Fetches a list of posts.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

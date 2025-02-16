@@ -1,0 +1,49 @@
+{
+    "tool_name": "GST Details",
+    "tool_description": "Get Details about GSTIN (GST number)",
+    "home_url": "https://rapidapi.com/way2risetech/api/gst-details2/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GST-v2",
+            "url": "https://gst-details2.p.rapidapi.com/Gstverifywebsvcv2/Gstverify",
+            "description": "Retrieve detailed information about a GSTIN (GST number), including the latest return filing list, return filing status, GST compliance classification, and HSN/SAC codes.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "gstnumber",
+                    "type": "STRING",
+                    "description": "Enter the 15-digit GST Number to be verified.",
+                    "default": ""
+                },
+                {
+                    "name": "clientid",
+                    "type": "STRING",
+                    "description": "Client ID for the API request.",
+                    "default": "222"
+                },
+                {
+                    "name": "txn_id",
+                    "type": "STRING",
+                    "description": "A random transaction ID for tracking the request.",
+                    "default": "2254545"
+                },
+                {
+                    "name": "method",
+                    "type": "STRING",
+                    "description": "The method to be used for verification.",
+                    "default": "gstvalidatev2"
+                },
+                {
+                    "name": "consent",
+                    "type": "STRING",
+                    "description": "Consent to share the GST number for verification.",
+                    "default": "Y"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

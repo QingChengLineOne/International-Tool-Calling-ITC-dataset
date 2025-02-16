@@ -1,0 +1,57 @@
+{
+    "tool_name": "rapid-porn",
+    "tool_description": "This API provides random adult pictures based on specified categories. Users can request a random image for various purposes, whether for projects or personal enjoyment.",
+    "home_url": "https://rapidapi.com/arjundhawan2002/api/rapid-porn/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/photo",
+            "url": "https://rapid-porn.p.rapidapi.com/photo",
+            "description": "Fetch a random adult picture by specifying a category. If you encounter a 500 Internal Server Error, please verify the category used from the all-tags endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category of the adult picture to retrieve.",
+                    "default": "ass"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/all-tags",
+            "url": "https://rapid-porn.p.rapidapi.com/all-tags",
+            "description": "Retrieve a list of all available categories (tags) for fetching adult pictures.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

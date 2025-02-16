@@ -1,0 +1,192 @@
+{
+    "tool_name": "K-POP",
+    "tool_description": "Get K-POP detailed songs, idol, group info!",
+    "home_url": "https://rapidapi.com/thunderapi-thunderapi-default/api/k-pop/",
+    "country": "Korea",
+    "api_list": [
+        {
+            "name": "girl-groups",
+            "url": "https://k-pop.p.rapidapi.com/girl-groups",
+            "description": "Get info of girl-groups",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query to search (Required)",
+                    "default": "Twice"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "by",
+                    "type": "STRING",
+                    "description": "Choose which info to query based on. Acceptable values: Group Name (default), Short Group Name, Korean Name, Date of Debut, Company, Members, Original Members, Fanclub Name, Active.",
+                    "default": "Group Name"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Count limit for result.",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Offset for the result data.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random girl-group",
+            "url": "https://k-pop.p.rapidapi.com/girl-groups/random",
+            "description": "Get random girl-group",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random boy-group",
+            "url": "https://k-pop.p.rapidapi.com/boy-groups/random",
+            "description": "Get random boy-group",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "songs",
+            "url": "https://k-pop.p.rapidapi.com/songs",
+            "description": "Get K-POP songs info",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query to search (Required)",
+                    "default": "Spring Day"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "by",
+                    "type": "STRING",
+                    "description": "Choose which info to query based on. Acceptable values: Song Name (default), Date, Artist, Korean Name, Director, Type, Release.",
+                    "default": "Song Name"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Count limit for result.",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Offset for the result data.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random idol",
+            "url": "https://k-pop.p.rapidapi.com/idols/random",
+            "description": "Get random idol",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "boy-groups",
+            "url": "https://k-pop.p.rapidapi.com/boy-groups",
+            "description": "Get boy-groups info",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query to search (Required)",
+                    "default": "BTS"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Offset for the result data.",
+                    "default": ""
+                },
+                {
+                    "name": "by",
+                    "type": "STRING",
+                    "description": "Choose which info to query based on. Acceptable values: Group Name (default), Short Group Name, Korean Name, Date of Debut, Company, Members, Original Members, Fanclub Name, Active.",
+                    "default": "Group Name"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Count limit for result.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random song",
+            "url": "https://k-pop.p.rapidapi.com/songs/random",
+            "description": "Get random K-POP song",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Idols",
+            "url": "https://k-pop.p.rapidapi.com/idols",
+            "description": "Get idol individual info",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query to search (Required)",
+                    "default": "Jungkook"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "by",
+                    "type": "STRING",
+                    "description": "Choose which info to query based on. Acceptable values: Stage Name (default), Full Name, Korean Name, K. Stage Name, Date of Birth, Group, Country, Second Country, Height, Weight, Birthplace, Other Group, Former Group, Gender, Position, Instagram, Twitter.",
+                    "default": "Stage Name"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Count limit for result.",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Offset for the result data.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

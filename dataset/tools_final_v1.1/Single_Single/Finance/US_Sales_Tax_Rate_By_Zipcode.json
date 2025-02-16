@@ -1,0 +1,25 @@
+{
+    "tool_name": "US Sales Tax Rate By Zipcode",
+    "tool_description": "Sales tax calculation based on ZIPCODE. Provide realtime and accurate US Sales Tax Rate by Zipcode. (FREE TRIAL)",
+    "home_url": "https://rapidapi.com/USTax/api/us-sales-tax-rate-by-zipcode1/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "salestax_rate",
+            "url": "https://us-sales-tax-rate-by-zipcode1.p.rapidapi.com/",
+            "description": "Returns detailed sales tax data given the zip_code.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "zip_code",
+                    "type": "string",
+                    "description": "The ZIP code for which the sales tax rate is requested.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

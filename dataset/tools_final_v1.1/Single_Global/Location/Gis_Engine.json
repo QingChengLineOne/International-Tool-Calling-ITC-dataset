@@ -1,0 +1,137 @@
+{
+    "tool_name": "Gis Engine",
+    "tool_description": "Provides information about regions, cities, and districts for various countries.",
+    "home_url": "https://rapidapi.com/blueant/api/gis-engine/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get districts",
+            "url": "https://gis-engine.p.rapidapi.com/countries/{country_code}/regions/{region_code}/cities/{city_num}/districts",
+            "description": "Fetches districts by providing the country code, region code, and city number. The country code can be obtained from the Get Countries endpoint, the region code from the Get Regions endpoint, and the city number from the Get Cities endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city_num",
+                    "type": "string",
+                    "description": "The number representing the city.",
+                    "default": "151245"
+                },
+                {
+                    "name": "region_code",
+                    "type": "string",
+                    "description": "The code representing the region.",
+                    "default": "pam"
+                },
+                {
+                    "name": "country_code",
+                    "type": "string",
+                    "description": "The two-letter code representing the country.",
+                    "default": "ph"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get cities",
+            "url": "https://gis-engine.p.rapidapi.com/countries/{country_code}/regions/{region_code}/cities",
+            "description": "Fetches cities by providing the country code and region code. The country code can be obtained from the Get Countries endpoint, and the region code from the Get Regions endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region_code",
+                    "type": "string",
+                    "description": "The code representing the region.",
+                    "default": "abr"
+                },
+                {
+                    "name": "country_code",
+                    "type": "string",
+                    "description": "The two-letter code representing the country.",
+                    "default": "ph"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get region details",
+            "url": "https://gis-engine.p.rapidapi.com/countries/{country_code}/regions/{region_code}",
+            "description": "Fetches details of a specific region by providing the country code and region code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region_code",
+                    "type": "string",
+                    "description": "The code representing the region.",
+                    "default": "abr"
+                },
+                {
+                    "name": "country_code",
+                    "type": "string",
+                    "description": "The two-letter code representing the country.",
+                    "default": "ph"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get regions",
+            "url": "https://gis-engine.p.rapidapi.com/countries/{country_code}/regions",
+            "description": "Fetches all regions for a specified country. The country code can be obtained from the Get Countries endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_code",
+                    "type": "string",
+                    "description": "The two-letter code representing the country.",
+                    "default": "ph"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get country details",
+            "url": "https://gis-engine.p.rapidapi.com/countries/{country_code}",
+            "description": "Fetches details of a specific country by providing the country code (2-letter code).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_code",
+                    "type": "string",
+                    "description": "The two-letter code representing the country.",
+                    "default": "ph"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get all countries",
+            "url": "https://gis-engine.p.rapidapi.com/countries",
+            "description": "Fetches a list of all supported countries.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Health Check",
+            "url": "https://gis-engine.p.rapidapi.com/check",
+            "description": "Provides a way to test connectivity to the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,213 @@
+{
+    "tool_name": "Real-Time Quotes",
+    "tool_description": "Provides real-time and historical data of stocks, cryptocurrencies, and forex based on multiple data sources such as Yahoo Finance.",
+    "home_url": "https://rapidapi.com/StoxApi/api/real-time-quotes1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Forex symbols",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/symbol/forex",
+            "description": "Returns a list of all available foreign exchange currencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Crypto symbols",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/symbol/crypto",
+            "description": "Returns a list of all available cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "includeNames",
+                    "type": "BOOLEAN",
+                    "description": "Indicates whether to include the names of the cryptocurrencies.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Stock symbols",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/symbol/stock",
+            "description": "Returns a list of all available stock symbols.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "includeNames",
+                    "type": "BOOLEAN",
+                    "description": "Indicates whether to include the names of the stocks.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "ETF symbols",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/symbol/etf",
+            "description": "Returns a list of all available ETF symbols.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "includeNames",
+                    "type": "BOOLEAN",
+                    "description": "Indicates whether to include the names of the ETFs.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical crypto price",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/historical/crypto",
+            "description": "Returns historical data of a specific time interval and cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "target",
+                    "type": "STRING",
+                    "description": "The currency to convert to.",
+                    "default": "USD"
+                },
+                {
+                    "name": "interval",
+                    "type": "ENUM",
+                    "description": "The time interval for the historical data.",
+                    "default": ""
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "The cryptocurrency to get historical data for.",
+                    "default": "BTC"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical forex price",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/historical/forex",
+            "description": "Returns historical data of a specific time interval and foreign exchange currency pair.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "target",
+                    "type": "STRING",
+                    "description": "The currency to convert to.",
+                    "default": "USD"
+                },
+                {
+                    "name": "interval",
+                    "type": "ENUM",
+                    "description": "The time interval for the historical data.",
+                    "default": ""
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "The foreign exchange currency to get historical data for.",
+                    "default": "EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical stock price",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/historical/stock",
+            "description": "Returns historical data of a specific time interval and stock symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "interval",
+                    "type": "ENUM",
+                    "description": "The time interval for the historical data.",
+                    "default": ""
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol to get historical data for.",
+                    "default": "MSFT"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Crypto quotes",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/realtime/crypto",
+            "description": "Returns the real-time price of a cryptocurrency pair.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "The cryptocurrency to convert from.",
+                    "default": "BTC"
+                },
+                {
+                    "name": "target",
+                    "type": "STRING",
+                    "description": "The currency to convert to.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Forex quotes",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/realtime/forex",
+            "description": "Returns the real-time price of a forex currency pair.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "target",
+                    "type": "STRING",
+                    "description": "The currency to convert to.",
+                    "default": "USD"
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "The foreign exchange currency to convert from.",
+                    "default": "EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Stock quotes",
+            "url": "https://real-time-quotes1.p.rapidapi.com/api/v1/realtime/stock",
+            "description": "Returns the real-time price of one or multiple companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Comma-separated list of stock symbols.",
+                    "default": "MSFT, PLTR, PG, TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

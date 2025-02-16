@@ -1,0 +1,101 @@
+{
+    "tool_name": "US Zipcodes",
+    "tool_description": "The API offers detailed data about zip codes in the USA, including geographic coordinates, county, city, and time zone. This information is valuable for targeted marketing, data analysis, and location-based services. Users can retrieve location-specific details about a given zip code using the API.",
+    "home_url": "https://rapidapi.com/ayyildiz-ayyildiz-default/api/us-zipcodes/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "code_search",
+            "url": "https://us-zipcodes.p.rapidapi.com/codes",
+            "description": "Find zip codes by city name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "City name for searching.",
+                    "default": "New"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "zip_code": {
+                            "type": "string"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "state_code": {
+                            "type": "string"
+                        },
+                        "city": {
+                            "type": "string"
+                        },
+                        "population": {
+                            "type": "integer"
+                        },
+                        "timezone": {
+                            "type": "string"
+                        },
+                        "latitude": {
+                            "type": "number"
+                        },
+                        "longitude": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "code_get",
+            "url": "https://us-zipcodes.p.rapidapi.com/codes/{code}",
+            "description": "Return detailed information about a specific zip code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "STRING",
+                    "description": "Zip code to retrieve details for.",
+                    "default": "5033"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "zip_code": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "state_code": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "population": {
+                        "type": "integer"
+                    },
+                    "timezone": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "number"
+                    },
+                    "longitude": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    ]
+}

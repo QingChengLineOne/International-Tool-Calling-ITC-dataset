@@ -1,0 +1,50 @@
+{
+    "tool_name": "在线奖状生成器",
+    "tool_description": "生成经典的奖状图片",
+    "home_url": "https://api.aa1.cn/doc/certcommend.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "在线奖状生成器API",
+            "url": "https://api.pearktrue.cn/api/certcommend/",
+            "description": "通过指定参数生成个性化的奖状图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "奖状接收者的姓名",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "奖状的称号",
+                    "default": ""
+                },
+                {
+                    "name": "classname",
+                    "type": "string",
+                    "description": "获奖者的班级信息",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "background_color",
+                    "type": "string",
+                    "description": "奖状背景颜色，如#FFFFFF，默认为白色",
+                    "default": ""
+                },
+                {
+                    "name": "font_color",
+                    "type": "string",
+                    "description": "奖状字体颜色，如#000000，默认为黑色",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

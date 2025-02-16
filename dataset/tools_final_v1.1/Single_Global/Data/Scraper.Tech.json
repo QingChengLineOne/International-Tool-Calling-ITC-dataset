@@ -1,0 +1,52 @@
+{
+    "tool_name": "Scraper.Tech",
+    "tool_description": "A powerful API for scraping via different proxies, making a screenshot of a website, or getting the HTML of a JavaScript-rendered page.",
+    "home_url": "https://rapidapi.com/alexanderxbx/api/scraper-tech/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "JS Rendered Page",
+            "url": "https://scraper-tech.p.rapidapi.com/fullpage.php",
+            "description": "Retrieve the final HTML of a page with many JavaScript-rendered elements.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Website Screenshot",
+            "url": "https://scraper-tech.p.rapidapi.com/screenshot.php",
+            "description": "Capture a screenshot of a specified webpage.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The webpage URL to capture a screenshot of.",
+                    "default": "https://example.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "screen_size",
+                    "type": "STRING",
+                    "description": "Browser window size for the screenshot image.",
+                    "default": "1920x1080"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "POST/GET Request",
+            "url": "https://scraper-tech.p.rapidapi.com/get.php",
+            "description": "Parse a web page using a simple request.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "百度题库搜索API",
+    "tool_description": "通过用户输入的问题对接百度题库进行回答",
+    "home_url": "https://api.aa1.cn/doc/pearno-baidutiku.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "百度题库搜索接口",
+            "url": "https://api.pearktrue.cn/api/baidutiku/",
+            "description": "搜索百度题库中的问题及答案",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "question",
+                    "type": "string",
+                    "description": "用户输入的问题",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

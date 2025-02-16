@@ -1,0 +1,173 @@
+{
+    "tool_name": "India Pincode with Latitude and Longitude",
+    "tool_description": "This API provides data for Indian pincodes (postal codes) across 29 states and seven territories, including latitude and longitude details. Users can retrieve nearby areas of pincodes, pincodes by districts, distances between two pincodes, and nearby areas based on latitude and longitude information. The API contains data for approximately 20,000 pincodes.",
+    "home_url": "https://rapidapi.com/vigowebs/api/india-pincode-with-latitude-and-longitude/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "DistanceBetweenTwoLat,Lng",
+            "url": "https://india-pincode-with-latitude-and-longitude.p.rapidapi.com/api/v1/distance",
+            "description": "This API returns the distance between two specified latitude and longitude coordinates.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "lng2",
+                    "type": "NUMBER",
+                    "description": "Longitude of the second location.",
+                    "default": "80.223240"
+                },
+                {
+                    "name": "lng1",
+                    "type": "NUMBER",
+                    "description": "Longitude of the first location.",
+                    "default": "79.385975"
+                },
+                {
+                    "name": "lat1",
+                    "type": "NUMBER",
+                    "description": "Latitude of the first location.",
+                    "default": "10.958721"
+                },
+                {
+                    "name": "lat2",
+                    "type": "NUMBER",
+                    "description": "Latitude of the second location.",
+                    "default": "13.0222"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "unit",
+                    "type": "ENUM",
+                    "description": "Unit of measurement for the distance (e.g., kilometers, miles).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "distance": {
+                        "type": "number"
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "DistanceBetweenTwoPincodes",
+            "url": "https://india-pincode-with-latitude-and-longitude.p.rapidapi.com/api/v1/pincode/distance",
+            "description": "This API returns the distance between two specified pincodes.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "pincode1",
+                    "type": "NUMBER",
+                    "description": "The first pincode.",
+                    "default": "600001"
+                },
+                {
+                    "name": "pincode2",
+                    "type": "NUMBER",
+                    "description": "The second pincode.",
+                    "default": "600075"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "unit",
+                    "type": "ENUM",
+                    "description": "Unit of measurement for the distance (e.g., kilometers, miles).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "items": {
+                    "default": "Andaman and Nicobar Islands",
+                    "description": "",
+                    "type": "string"
+                },
+                "type": "array"
+            }
+        },
+        {
+            "name": "NearByAreasByPincode",
+            "url": "https://india-pincode-with-latitude-and-longitude.p.rapidapi.com/api/v1/pincode/600001/nearby",
+            "description": "This API returns details of nearby areas (including area name, district, city, latitude, and longitude) for a given pincode.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "pincode",
+                    "type": "NUMBER",
+                    "description": "The pincode for which nearby areas are to be retrieved.",
+                    "default": "600001"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "areas": {
+                        "items": {
+                            "properties": {
+                                "area": {
+                                    "type": "string"
+                                },
+                                "distance": {
+                                    "type": "string"
+                                },
+                                "distance_unit": {
+                                    "type": "string"
+                                },
+                                "district": {
+                                    "type": "string"
+                                },
+                                "lat": {
+                                    "type": "number"
+                                },
+                                "lng": {
+                                    "type": "number"
+                                },
+                                "pincode": {
+                                    "type": "integer"
+                                },
+                                "state": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "page": {
+                        "type": "integer"
+                    },
+                    "total": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "NearbyareasByLatLng",
+            "url": "https://india-pincode-with-latitude-and-longitude.p.rapidapi.com/api/v1/pincode/nearby",
+            "description": "This API retrieves nearby areas based on latitude and longitude.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "items": {
+                    "default": "Andaman and Nicobar Islands",
+                    "description": "",
+                    "type": "string"
+                },
+                "type": "array"
+            }
+        }
+    ]
+}

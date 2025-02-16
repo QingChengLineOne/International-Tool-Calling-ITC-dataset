@@ -1,0 +1,48 @@
+{
+    "tool_name": "Pipican - Dog Park and Dog Beach Locator API",
+    "tool_description": "Pipican is a comprehensive and user-friendly API that serves as a powerful tool for locating and discovering dog parks and dog-friendly beaches. With up to 18,000 locations, this API simplifies the process of finding suitable outdoor spaces for dogs and their owners, enabling developers to create engaging applications and services that cater to the needs of dog enthusiasts.",
+    "home_url": "https://rapidapi.com/jtejedera/api/pipican-dog-park-and-dog-beach-locator-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Basic pipican list",
+            "url": "https://pipican-dog-park-and-dog-beach-locator-api.p.rapidapi.com/nearby-basic",
+            "description": "This API endpoint provides a basic list of dog parks and dog beaches within a specified radius of up to 5 kilometers from a given reference coordinate.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Extended pipican",
+            "url": "https://pipican-dog-park-and-dog-beach-locator-api.p.rapidapi.com/nearby-extended",
+            "description": "This API endpoint offers comprehensive information about dog parks and beaches within a flexible radius of up to 50 kilometers from a specified reference coordinate.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Advanced Pipican list Radius",
+            "url": "https://pipican-dog-park-and-dog-beach-locator-api.p.rapidapi.com/nearby-advanced-radius",
+            "description": "This API endpoint offers an extensive and detailed list of advanced information regarding pipicans (dog parks) and dog beaches within a designated radius of up to 200km.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Advanced Pipican list BBOX",
+            "url": "https://pipican-dog-park-and-dog-beach-locator-api.p.rapidapi.com/nearby-advanced-bbox",
+            "description": "This API endpoint offers an extensive and detailed list of advanced information regarding pipicans (dog parks) and dog beaches within a designated bounding box area.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "tool_name": "领随机svip0-60天API",
+    "tool_description": "领随机0-60天SVIP的API接口",
+    "home_url": "https://api.aa1.cn/doc/sjsvip.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "领随机svip0-60天接口",
+            "url": "http://fkapi.rjk66.cn/sjsvip/sjvip.php",
+            "description": "用于领取随机0-60天的SVIP服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "uin",
+                    "type": "string",
+                    "description": "用户唯一标识",
+                    "default": ""
+                },
+                {
+                    "name": "skey",
+                    "type": "string",
+                    "description": "安全密钥，通常由服务器端提供",
+                    "default": ""
+                },
+                {
+                    "name": "pskey",
+                    "type": "string",
+                    "description": "安全密钥，通常由服务器端提供",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "请求类型，用于指定API功能",
+                    "default": "4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "tool_name": "Subtitles for YouTube_v2",
+    "tool_description": "API for fetching YouTube subtitles, allowing users to download subtitles in various formats and languages.",
+    "home_url": "https://rapidapi.com/airaudoeduardo/api/subtitles-for-youtube2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Download mp3",
+            "url": "https://subtitles-for-youtube2.p.rapidapi.com/download_mp3/KvMY1uzSC1E",
+            "description": "Download mp3 audio from a YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "videoId",
+                    "type": "string",
+                    "description": "YouTube Video ID to identify the video.",
+                    "default": "KvMY1uzSC1E"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List all available subtitles",
+            "url": "https://subtitles-for-youtube2.p.rapidapi.com/subtitles/hKmqP6-TcWA/list",
+            "description": "Retrieve a list of all available subtitles for a specified YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "videoId",
+                    "type": "string",
+                    "description": "YouTube video ID to fetch subtitles for.",
+                    "default": "hKmqP6-TcWA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List languages",
+            "url": "https://subtitles-for-youtube2.p.rapidapi.com/subtitles/languages",
+            "description": "Get a list of all supported languages for subtitles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Subtitle in JSON format",
+            "url": "https://subtitles-for-youtube2.p.rapidapi.com/subtitles/hKmqP6-TcWA",
+            "description": "Fetch the subtitle for a YouTube video in JSON format.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "videoId",
+                    "type": "string",
+                    "description": "YouTube video ID to retrieve the subtitle.",
+                    "default": "hKmqP6-TcWA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "translated",
+                    "type": "ENUM",
+                    "description": "Auto-translate subtitle to the requested language if not present.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Specify the language for the subtitle.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "ENUM",
+                    "description": "Specify whether to use human-generated or auto-generated subtitles.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get subtitle in SRT format",
+            "url": "https://subtitles-for-youtube2.p.rapidapi.com/subtitles/hKmqP6-TcWA/srt",
+            "description": "Retrieve the subtitle for a YouTube video in SRT format.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "videoId",
+                    "type": "string",
+                    "description": "YouTube video ID to fetch the SRT subtitle.",
+                    "default": "hKmqP6-TcWA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "ENUM",
+                    "description": "Specify whether to use human-generated or auto-generated subtitles.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Specify the language for the SRT subtitle.",
+                    "default": ""
+                },
+                {
+                    "name": "translated",
+                    "type": "ENUM",
+                    "description": "Auto-translate subtitle to the requested language if not present.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

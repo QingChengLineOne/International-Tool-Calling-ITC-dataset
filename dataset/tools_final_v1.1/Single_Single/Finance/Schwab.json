@@ -1,0 +1,322 @@
+{
+    "tool_name": "Schwab",
+    "tool_description": "Research investments, and follow market news",
+    "home_url": "https://rapidapi.com/apidojo/api/schwab/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "quote/get-chart",
+            "url": "https://schwab.p.rapidapi.com/quote/get-chart",
+            "description": "Get data to draw chart for a specific stock symbol over a defined time period.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "endDate",
+                    "type": "STRING",
+                    "description": "The end date for the chart data in the format yyyy-MM-dd'T'HH:mm:ss.",
+                    "default": "2020-04-28T05:49:27"
+                },
+                {
+                    "name": "startDate",
+                    "type": "STRING",
+                    "description": "The start date for the chart data in the format yyyy-MM-dd'T'HH:mm:ss.",
+                    "default": "2020-04-27T05:49:27"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which to retrieve chart data.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "dataPeriod",
+                    "type": "STRING",
+                    "description": "The period for the data, can be Minute, Hour, Day, Week, or Month.",
+                    "default": "Hour"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "quote/get-option-chains",
+            "url": "https://schwab.p.rapidapi.com/quote/get-option-chains",
+            "description": "Get option chains for a specific stock symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "root",
+                    "type": "STRING",
+                    "description": "The value of RootSymbol field returned in the quote/get-option-fundamentals endpoint.",
+                    "default": "TSLA"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which to retrieve option chains.",
+                    "default": "TSLA"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date for which to retrieve option chains in the format yyyyMMdd.",
+                    "default": "20200415"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "quote/get-summary",
+            "url": "https://schwab.p.rapidapi.com/quote/get-summary",
+            "description": "Get summary information of a specific stock symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which to retrieve summary information.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-volatility",
+            "url": "https://schwab.p.rapidapi.com/market/get-volatility",
+            "description": "Get market volatility data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news/get-market-update-audio",
+            "url": "https://schwab.p.rapidapi.com/news/get-market-update-audio",
+            "description": "Get an audio link to hear the latest market update news.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "quote/get-details",
+            "url": "https://schwab.p.rapidapi.com/quote/get-details",
+            "description": "Get detailed information about a specific stock symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which to retrieve detailed information.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news/get-market-update",
+            "url": "https://schwab.p.rapidapi.com/news/get-market-update",
+            "description": "Get the latest market update news.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "auto-complete",
+            "url": "https://schwab.p.rapidapi.com/auto-complete",
+            "description": "Get suggestions based on a word or phrase.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "MatchChars",
+                    "type": "STRING",
+                    "description": "The characters to match for suggestions.",
+                    "default": "tesla"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-reports",
+            "url": "https://schwab.p.rapidapi.com/market/get-reports",
+            "description": "Get reports about the market.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "quote/get-margin-requirements",
+            "url": "https://schwab.p.rapidapi.com/quote/get-margin-requirements",
+            "description": "Get margin requirements for a specific stock symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which to retrieve margin requirements.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-sectors",
+            "url": "https://schwab.p.rapidapi.com/market/get-sectors",
+            "description": "Get brief information about all market sectors.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news/get-details",
+            "url": "https://schwab.p.rapidapi.com/news/get-details",
+            "description": "Read detailed news articles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "docID",
+                    "type": "STRING",
+                    "description": "The DocumentID returned in the news/list-latest endpoint.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-indices",
+            "url": "https://schwab.p.rapidapi.com/market/get-indices",
+            "description": "List all available market indices.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "quote/get-option-fundamentals",
+            "url": "https://schwab.p.rapidapi.com/quote/get-option-fundamentals",
+            "description": "Get option fundamentals for a specific stock symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which to retrieve option fundamentals.",
+                    "default": "TSLA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news/get-market-update-details",
+            "url": "https://schwab.p.rapidapi.com/news/get-market-update-details",
+            "description": "Read detailed market update news articles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-top-mentions",
+            "url": "https://schwab.p.rapidapi.com/market/get-top-mentions",
+            "description": "List top mentioned stock quotes in the market.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news/list-latest",
+            "url": "https://schwab.p.rapidapi.com/news/list-latest",
+            "description": "List the latest news articles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-movers",
+            "url": "https://schwab.p.rapidapi.com/market/get-movers",
+            "description": "List recent movers in the market based on various criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "rankType",
+                    "type": "STRING",
+                    "description": "Type of ranking: MostActives, PctChgGainers, PctChgLosers, NetGainers, NetLosers, 52WkHigh, or 52WkLow.",
+                    "default": "MostActives"
+                },
+                {
+                    "name": "exchange",
+                    "type": "STRING",
+                    "description": "The exchange to filter results: US, USN, USQ, or USA.",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sectorCusip",
+                    "type": "STRING",
+                    "description": "The value of Sectors/SectorCusip returned in this endpoint.",
+                    "default": "ALL"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "content/decrypt",
+            "url": "https://schwab.p.rapidapi.com/content/decrypt",
+            "description": "Decrypt content of Url fields returned in the market/get-reports endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "encryptedContent",
+                    "type": "STRING",
+                    "description": "The value of Url fields returned in the market/get-reports endpoint.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "market/get-futures",
+            "url": "https://schwab.p.rapidapi.com/market/get-futures",
+            "description": "Get future reports about the market.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

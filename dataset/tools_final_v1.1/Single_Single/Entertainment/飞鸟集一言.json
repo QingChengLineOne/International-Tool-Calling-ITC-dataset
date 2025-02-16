@@ -1,0 +1,25 @@
+{
+    "tool_name": "《飞鸟集》一言API",
+    "tool_description": "《飞鸟集》泰戈尔创作的诗集，接口随机返回其中一首诗句",
+    "home_url": "https://api.aa1.cn/doc/stray-birds-test63.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "《飞鸟集》一言接口",
+            "url": "https://api.mu-jie.cc/stray-birds/range",
+            "description": "随机返回《飞鸟集》中的一首诗句",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "指定返回数据的格式，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

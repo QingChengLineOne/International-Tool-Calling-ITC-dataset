@@ -1,0 +1,25 @@
+{
+    "tool_name": "lemlist",
+    "tool_description": "Send cold emails that get replies.",
+    "home_url": "https://rapidapi.com/Atomoworks/api/lemlist/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "team",
+            "url": "https://lemlist.p.rapidapi.com/team/{user}",
+            "description": "Retrieve information about your team associated with the lemlist account.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "Your lemlist API key used for authentication.",
+                    "default": "424e6f6f73ad5b075661257132705887"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "tool_name": "邮件发送API",
+    "tool_description": "调用该API可以发送邮件，支持使用自己的账户进行发送",
+    "home_url": "https://api.aa1.cn/doc/email-robot.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "发送邮件接口",
+            "url": "https://api.mu-jie.cc/email",
+            "description": "发送邮件的API接口",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "string",
+                    "description": "收件人邮箱地址",
+                    "default": ""
+                },
+                {
+                    "name": "subject",
+                    "type": "string",
+                    "description": "邮件主题",
+                    "default": ""
+                },
+                {
+                    "name": "body",
+                    "type": "string",
+                    "description": "邮件正文内容",
+                    "default": ""
+                },
+                {
+                    "name": "from",
+                    "type": "string",
+                    "description": "发件人邮箱地址",
+                    "default": ""
+                },
+                {
+                    "name": "username",
+                    "type": "string",
+                    "description": "SMTP服务器用户名",
+                    "default": ""
+                },
+                {
+                    "name": "password",
+                    "type": "string",
+                    "description": "SMTP服务器密码",
+                    "default": ""
+                },
+                {
+                    "name": "smtp_server",
+                    "type": "string",
+                    "description": "SMTP服务器地址",
+                    "default": ""
+                },
+                {
+                    "name": "smtp_port",
+                    "type": "int",
+                    "description": "SMTP服务器端口号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "attachments",
+                    "type": "array",
+                    "description": "附件列表，可以包含多个附件",
+                    "default": ""
+                },
+                {
+                    "name": "cc",
+                    "type": "string",
+                    "description": "抄送人邮箱地址，可以是多个，以逗号分隔",
+                    "default": ""
+                },
+                {
+                    "name": "bcc",
+                    "type": "string",
+                    "description": "密送人邮箱地址，可以是多个，以逗号分隔",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

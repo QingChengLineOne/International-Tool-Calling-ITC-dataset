@@ -1,0 +1,44 @@
+{
+    "tool_name": "全国热搜榜",
+    "tool_description": "支持60多个平台的热搜数据",
+    "home_url": "https://api.aa1.cn/doc/quanguoreshoubang.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全国热搜榜API",
+            "url": "https://api.oioweb.cn/api/common/HotList",
+            "description": "获取全国热搜榜信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "string",
+                    "description": "指定平台名称，如：weibo, baidu, douyin等",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "当前页码，默认为1",
+                    "default": 1
+                },
+                {
+                    "name": "size",
+                    "type": "int",
+                    "description": "每页显示条数，默认为20",
+                    "default": 20
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sort",
+                    "type": "string",
+                    "description": "排序方式，如：hot, time，默认为hot",
+                    "default": "hot"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

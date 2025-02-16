@@ -1,0 +1,26 @@
+{
+    "tool_name": "骚扰号码查询",
+    "tool_description": "查查你的朋友们的电话号码是不是骚扰号码吧",
+    "home_url": "https://api.aa1.cn/doc/shaoraohaomacaxun.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "骚扰号码查询API",
+            "url": "https://api.oioweb.cn/api/search/harassPhone",
+            "description": "查询指定电话号码是否为骚扰号码",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phone",
+                    "type": "string",
+                    "description": "需要查询的电话号码",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "example": "https://api.oioweb.cn/api/search/harassPhone?phone=0574967966",
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

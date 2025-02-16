@@ -1,0 +1,58 @@
+{
+    "tool_name": "Linkedin Live Data",
+    "tool_description": "You can use it to retrieve data from LinkedIn and integrate it into your application or platform. The API allows you to access a wide range of data, including user profiles, company profiles, job postings, and more.",
+    "home_url": "https://rapidapi.com/sohailglt/api/linkedin-live-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Industries List",
+            "url": "https://linkedin-live-data.p.rapidapi.com/company-industries",
+            "description": "Retrieve the list of industries applicable for utilization on the search endpoint.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Company Types",
+            "url": "https://linkedin-live-data.p.rapidapi.com/company-types",
+            "description": "Get the list of company types to use in company_type search filter.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Company Details",
+            "url": "https://linkedin-live-data.p.rapidapi.com/profile-details",
+            "description": "You can use this endpoint to get details for companies LinkedIn profiles.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Profile Details",
+            "url": "https://linkedin-live-data.p.rapidapi.com/profile-details",
+            "description": "You can use this endpoint to get details for personal LinkedIn profiles.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Linkedin Search",
+            "url": "https://linkedin-live-data.p.rapidapi.com/linkedin-search",
+            "description": "This endpoint will be used to search for LinkedIn profiles and data.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

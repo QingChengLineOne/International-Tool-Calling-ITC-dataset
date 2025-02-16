@@ -1,0 +1,37 @@
+{
+    "tool_name": "随机头像图片[API盒子官方资源库]",
+    "tool_description": "由API盒子官方资源库提供，海量头像资源库，来源于网络公开收集。(不确定版权来源，请勿用于商业用途。)【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/apihzimgtx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机头像图片API",
+            "url": "https://cn.apihz.cn/api/img/apihzimgtx.php",
+            "description": "提供随机头像图片的API服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "用户在接口盒子的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "用户的接口密钥",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "图片类型，可选值包括1-男性头像，2-女性头像，3-动漫头像等",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "tool_name": "Inteltech SMS",
+    "tool_description": "Intelligent Technologies SMS API. Allows sending and receiving of SMS messages. An account is required. Sign up for free at http://inteltech.com.au. Send messages to any country in the world.",
+    "home_url": "https://rapidapi.com/inteltech/api/inteltech-sms/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check Credit",
+            "url": "https://inteltech.p.rapidapi.com/credit.php",
+            "description": "Returns Prepaid Account Balance",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "Your API Username (from user dashboard)",
+                    "default": "temp-idk-test-dynamic"
+                },
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Your API Key (from user dashboard)",
+                    "default": "1B490066-EA03-E39A-A18C-C4868E45CFAE"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Send SMS",
+            "url": "https://inteltech.p.rapidapi.com/send.php",
+            "description": "Send an SMS with the Inteltech API",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "sms",
+                    "type": "STRING",
+                    "description": "Recipient Mobile Number in international format. Separate multiple recipients with a comma (,).",
+                    "default": "+61420020011"
+                },
+                {
+                    "name": "message",
+                    "type": "STRING",
+                    "description": "The message body to be sent.",
+                    "default": "Test message here."
+                },
+                {
+                    "name": "key",
+                    "type": "STRING",
+                    "description": "Your API Key (from user dashboard)",
+                    "default": "1B490066-EA03-E39A-A18C-C4868E45CFAE"
+                },
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "Your API Username (from user dashboard)",
+                    "default": "temp-idk-test-dynamic"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "senderid",
+                    "type": "STRING",
+                    "description": "11 character custom sender ID. Leave blank for two-way SMS.",
+                    "default": "MyCompany"
+                },
+                {
+                    "name": "schedule",
+                    "type": "STRING",
+                    "description": "Allows you to schedule message delivery. Must be in unix format.",
+                    "default": "1377959755"
+                },
+                {
+                    "name": "return",
+                    "type": "STRING",
+                    "description": "Redirect to a URL after delivering the message(s).",
+                    "default": "http://yourwebsite.com"
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "语录 · 毒鸡汤",
+    "tool_description": "随机输出一条毒鸡汤",
+    "home_url": "https://api.aa1.cn/doc/du.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "毒鸡汤API",
+            "url": "https://api.52vmy.cn/api/wl/yan/du",
+            "description": "获取随机毒鸡汤",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "请求类型，默认为text",
+                    "default": "text"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

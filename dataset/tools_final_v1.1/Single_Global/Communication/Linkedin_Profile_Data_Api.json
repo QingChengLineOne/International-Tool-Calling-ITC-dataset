@@ -1,0 +1,59 @@
+{
+    "tool_name": "Linkedin Profile Data Api",
+    "tool_description": "The LinkedIn Profile Data API provides access to various LinkedIn profile data, including the profile connection count, whether the user is open to work, and if they are hiring, all returned in a JSON format.",
+    "home_url": "https://rapidapi.com/rockdevs-rockdevs-default/api/linkedin-profile-data-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get profile data",
+            "url": "https://linkedin-profile-data-api.p.rapidapi.com/",
+            "description": "Retrieves the LinkedIn profile data for a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The LinkedIn username of the profile to retrieve.",
+                    "default": "username"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "Get profile data & connection count",
+            "url": "https://linkedin-profile-data-api.p.rapidapi.com/data-connection-count",
+            "description": "Retrieves both the LinkedIn profile data and the connection count for a specified user.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The LinkedIn username of the profile to retrieve.",
+                    "default": "username"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "Get profile connection count",
+            "url": "https://linkedin-profile-data-api.p.rapidapi.com/connection-count",
+            "description": "Retrieves the connection count for a specified LinkedIn profile.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The LinkedIn username of the profile to retrieve the connection count for.",
+                    "default": "username"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

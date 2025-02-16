@@ -1,0 +1,18 @@
+{
+    "tool_name": "Da Ga Truc Tiep Xem Da Ga Cua Dao Cua Sat Thomo",
+    "tool_description": "Đá gà trực tiếp là hình thức chơi cá cược phổ biến hiện nay, cho phép người dùng xem các trận đá gà cựa sắt thomo và cựa dao được phát trực tiếp 12 giờ mỗi ngày trên daga988.com.",
+    "home_url": "https://rapidapi.com/daga988com/api/da-ga-truc-tiep-xem-da-ga-cua-dao-cua-sat-thomo/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Da Ga Truc Tiep Xem Da Ga Cua Dao Cua Sat Thomo",
+            "url": "https://da-ga-truc-tiep-xem-da-ga-cua-dao-cua-sat-thomo.p.rapidapi.com/",
+            "description": "API cho phép người dùng truy cập và xem các trận đá gà trực tiếp, bao gồm thông tin về các trận đấu và các dịch vụ liên quan.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

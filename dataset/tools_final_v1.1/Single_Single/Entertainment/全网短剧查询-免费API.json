@@ -1,0 +1,25 @@
+{
+    "tool_name": "全网短剧查询-免费API",
+    "tool_description": "爱情短剧查询",
+    "home_url": "https://www.free-api.com/doc/645",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "爱情短剧查询",
+            "url": "https://api.kuleu.com/api/action?text=爱情",
+            "description": "通过API查询爱情相关的短剧信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "查询关键词",
+                    "default": "爱情"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

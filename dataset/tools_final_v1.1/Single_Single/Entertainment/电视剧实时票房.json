@@ -1,0 +1,25 @@
+{
+    "tool_name": "电视剧实时票房",
+    "tool_description": "热播电视剧实时票房数据查询",
+    "home_url": "https://api.aa1.cn/doc/tv.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "电视剧实时票房查询",
+            "url": "https://api.52vmy.cn/api/wl/top/tv",
+            "description": "获取热播电视剧的实时票房数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据格式，目前支持'json'或'text'，默认为'text'",
+                    "default": "text"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

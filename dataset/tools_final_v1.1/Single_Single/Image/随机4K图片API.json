@@ -1,0 +1,25 @@
+{
+    "tool_name": "随机4K图片API",
+    "tool_description": "随机返回一张4K二次元图片或4K风景图片。",
+    "home_url": "https://api.aa1.cn/doc/random4kPic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机4K图片API",
+            "url": "https://v2.api-m.com/api/random4kPic",
+            "description": "提供随机返回4K图片的接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "图片类型，可选值为wallpaper（默认，返回4K风景图片）或anime（返回4K二次元图片）",
+                    "default": "wallpaper"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "tool_name": "一笔签名设计",
+    "tool_description": "一笔签名设计，数据来自艺术字官网，侵权请联系站长删除",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_ysz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "一笔签名设计API",
+            "url": "https://free.wqwlkj.cn/wqwlapi/ysz.php",
+            "description": "提供个性化签名设计服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据的格式，目前支持json格式",
+                    "default": "json"
+                },
+                {
+                    "name": "id",
+                    "type": "int",
+                    "description": "签名模板的ID，根据提供的ID获取对应的签名样式",
+                    "default": "0"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要设计的签名文字内容",
+                    "default": ""
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "签名文字的颜色，以十六进制形式表示",
+                    "default": "000000"
+                },
+                {
+                    "name": "shadow",
+                    "type": "string",
+                    "description": "签名文字的阴影颜色，以十六进制形式表示，默认为无阴影",
+                    "default": "000000"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "description": "签名背景的颜色，以十六进制形式表示",
+                    "default": "FFFFFF"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

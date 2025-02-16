@@ -1,0 +1,18 @@
+{
+    "tool_name": "Sholltna",
+    "tool_description": "Sholltna Website",
+    "home_url": "https://rapidapi.com/mrdpsho/api/sholltna/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "1",
+            "url": "https://sholltna.p.rapidapi.com/",
+            "description": "Retrieves data from the Sholltna API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

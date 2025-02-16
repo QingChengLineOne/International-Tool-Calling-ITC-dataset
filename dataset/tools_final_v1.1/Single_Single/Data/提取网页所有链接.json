@@ -1,0 +1,43 @@
+{
+    "tool_name": "网页链接提取API",
+    "tool_description": "提取指定网页内所有链接信息并归类。",
+    "home_url": "https://api.aa1.cn/doc/getres.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网页链接提取接口",
+            "url": "https://cn.apihz.cn/api/wangzhan/getres.php",
+            "description": "提取指定网页内所有链接信息并归类。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥，用于验证身份",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "指定链接类型，1表示所有链接，2表示外部链接，3表示内部链接",
+                    "default": "1"
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要提取链接的网页URL",
+                    "default": "www.apihz.cn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

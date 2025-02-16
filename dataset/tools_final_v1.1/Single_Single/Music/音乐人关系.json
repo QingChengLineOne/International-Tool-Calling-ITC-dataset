@@ -1,0 +1,25 @@
+{
+    "tool_name": "音乐人关系API",
+    "tool_description": "查询音乐人的好友关系",
+    "home_url": "https://api.aa1.cn/doc/pear-musicpeople.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "音乐人关系查询接口",
+            "url": "https://api.pearktrue.cn/api/music/relation/",
+            "description": "用于查询特定音乐人的好友关系",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "singer",
+                    "type": "string",
+                    "description": "音乐人的名称，用于查询其好友关系",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "German Cities",
+    "tool_description": "Returns information about all German cities with more than 2500 inhabitants, including the number of inhabitants, average age, and surrounding areas.",
+    "home_url": "https://rapidapi.com/immobilien.kompendium/api/german-cities/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "city_name",
+            "url": "https://german-cities.p.rapidapi.com/dresden",
+            "description": "Returns information about the specified city. In case of ambiguity, a maximum of three results will be returned. Returned values include population, average age, and surrounding areas.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city-name",
+                    "type": "string",
+                    "description": "The name of the city to retrieve information for.",
+                    "default": "dresden"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

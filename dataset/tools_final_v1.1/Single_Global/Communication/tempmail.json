@@ -1,0 +1,18 @@
+{
+    "tool_name": "tempmail",
+    "tool_description": "A temporary email service that allows users to create disposable email addresses for receiving emails without revealing their personal email accounts.",
+    "home_url": "https://rapidapi.com/Julian045/api/tempmail43/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ak",
+            "url": "https://tempmail43.p.rapidapi.com/",
+            "description": "Fetches temporary email data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

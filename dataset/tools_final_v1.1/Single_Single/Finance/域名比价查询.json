@@ -1,0 +1,44 @@
+{
+    "tool_name": "域名比价查询API",
+    "tool_description": "查询域名后缀的注册,续费,转入的各平台的价格排行",
+    "home_url": "https://api.aa1.cn/doc/websitedomainprice.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "域名比价查询接口",
+            "url": "https://api.pearktrue.cn/api/website/domain/",
+            "description": "查询特定域名后缀的价格信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "要查询的域名后缀",
+                    "default": "null"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "操作类型，new为注册，renew为续费，transfer为转入",
+                    "default": "new"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "tld",
+                    "type": "string",
+                    "description": "顶级域名，可选参数，用于更精确地指定域名后缀",
+                    "default": "null"
+                },
+                {
+                    "name": "platform",
+                    "type": "string",
+                    "description": "指定查询的平台，例如Godaddy，可选参数",
+                    "default": "null"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

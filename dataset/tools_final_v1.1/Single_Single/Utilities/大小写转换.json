@@ -1,0 +1,43 @@
+{
+    "tool_name": "大小写转换API",
+    "tool_description": "将指定拼音，单词字符串进行大小写互转，首字转大写等。",
+    "home_url": "https://api.aa1.cn/doc/daxiao.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "大小写转换API",
+            "url": "https://cn.apihz.cn/api/zici/daxiao.php",
+            "description": "执行大小写转换操作",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子中的公共ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子中的密钥",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "转换类型，1为大小写互转，2为首字大写",
+                    "default": "1"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "需要转换的字符串，多个用空格分隔",
+                    "default": "da xiao"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

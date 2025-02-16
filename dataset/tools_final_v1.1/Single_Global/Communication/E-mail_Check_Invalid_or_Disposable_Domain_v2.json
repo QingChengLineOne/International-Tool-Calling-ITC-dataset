@@ -1,0 +1,25 @@
+{
+    "tool_name": "E-mail Check Invalid or Disposable Domain_v2",
+    "tool_description": "Easily check if a certain e-mail address is valid. This tool verifies if the domain is valid and whether the e-mail is a temporary or disposable address, which is a common indicator of spamming or trolling.",
+    "home_url": "https://rapidapi.com/Top-Rated/api/e-mail-check-invalid-or-disposable-domain/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "mailcheck",
+            "url": "https://mailcheck.p.rapidapi.com/",
+            "description": "Check if an e-mail domain is valid or if it is a disposable/temporary address. Invalid domains (typos, non-responding mailserver, etc.) will return 'valid: false' and 'block: true'. Disposable e-mail domains will return 'valid: true' (since it's a valid domain), but 'block: true' and 'disposable: true'.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "Full e-mail address or domain to check for validity or if it is temporary/disposable. It is recommended to enter just the domain for user privacy reasons.",
+                    "default": "mailinator.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

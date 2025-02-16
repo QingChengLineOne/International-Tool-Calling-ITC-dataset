@@ -1,0 +1,288 @@
+{
+    "tool_name": "Blog Guru AI",
+    "tool_description": "An all-in-one blog writing assistant that generates blog titles or even a full-fledged blog post based on your idea.",
+    "home_url": "https://rapidapi.com/dytra/api/blog-guru-ai/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/scrapeRewriteBlogPost",
+            "url": "https://blog-guru-ai.p.rapidapi.com/scrapeRewriteBlogPost",
+            "description": "Scrapes and rewrites a blog post from a given URL.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the blog post to be scraped and rewritten.",
+                    "default": "https://cointelegraph.com/press-releases/member-of-st-maartens-parliament-initiates-law-to-adopt-tron-as-legal-tender"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "titleSelector",
+                    "type": "STRING",
+                    "description": "The HTML selector for the title (Default: h1). You can use a CSS selector.",
+                    "default": ""
+                },
+                {
+                    "name": "contentSelector",
+                    "type": "STRING",
+                    "description": "The HTML selector for the article content (Default: article). You can use a CSS selector.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/scrapeBlogPost",
+            "url": "https://blog-guru-ai.p.rapidapi.com/scrapeBlogPost",
+            "description": "Scrapes a blog post from a given URL.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the blog post to be scraped.",
+                    "default": "https://cointelegraph.com/press-releases/member-of-st-maartens-parliament-initiates-law-to-adopt-tron-as-legal-tender"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "titleSelector",
+                    "type": "STRING",
+                    "description": "The HTML selector for the title (Default: h1). You can use a CSS selector.",
+                    "default": ""
+                },
+                {
+                    "name": "contentSelector",
+                    "type": "STRING",
+                    "description": "The HTML selector for the article content (Default: article). You can use a CSS selector.",
+                    "default": ""
+                },
+                {
+                    "name": "useAi",
+                    "type": "BOOLEAN",
+                    "description": "Use AI technology to remove unnecessary words (Default: false).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/generateBlogPost",
+            "url": "https://blog-guru-ai.p.rapidapi.com/generateBlogPost",
+            "description": "Generates a full-fledged blog post based on your idea.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "The idea/topic/title of your blog post.",
+                    "default": "siberian husky"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "max_tokens",
+                    "type": "NUMBER",
+                    "description": "The maximum total length of the generated content. Each token is roughly 4 characters in English words (Max: 4000).",
+                    "default": "768"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/generateBlogTitles",
+            "url": "https://blog-guru-ai.p.rapidapi.com/generateBlogTitles",
+            "description": "Generates blog titles based on a topic.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "The idea/topic/title of your blog post.",
+                    "default": "technology and cats"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/rewriteBlogSection",
+            "url": "https://blog-guru-ai.p.rapidapi.com/rewriteBlogSection",
+            "description": "Rewrites a part of a blog section.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "article",
+                    "type": "STRING",
+                    "description": "The content of the blog section to be rewritten.",
+                    "default": "The size increase comes a day after CZ said that Binance is targeting $1 billion for its crypto recovery fund..."
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/fixGrammar",
+            "url": "https://blog-guru-ai.p.rapidapi.com/fixGrammar",
+            "description": "Fixes grammatical errors in the provided content.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "content",
+                    "type": "STRING",
+                    "description": "The content with grammatical errors.",
+                    "default": "teh fox jupms over teh lzy dgo"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/completeSentence",
+            "url": "https://blog-guru-ai.p.rapidapi.com/completeSentence",
+            "description": "Completes a given sentence.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sentence",
+                    "type": "STRING",
+                    "description": "The sentence to be completed.",
+                    "default": "\"A blockchain is a type of distributed ledger technology that "
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/summarizeBlogPost",
+            "url": "https://blog-guru-ai.p.rapidapi.com/summarizeBlogPost",
+            "description": "Summarizes a blog post based on the provided content.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "article",
+                    "type": "STRING",
+                    "description": "The content of the blog post to be summarized.",
+                    "default": "Most addresses holding bitcoin (BTC), the largest cryptocurrency, are now in the red..."
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/generateMetaTags",
+            "url": "https://blog-guru-ai.p.rapidapi.com/generateMetaTags",
+            "description": "Generates meta tags based on the provided content.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "content",
+                    "type": "STRING",
+                    "description": "The content for which meta tags are to be generated.",
+                    "default": "tech and paranormal activity"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

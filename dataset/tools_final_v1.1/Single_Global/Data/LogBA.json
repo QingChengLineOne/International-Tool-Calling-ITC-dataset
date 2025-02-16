@@ -1,0 +1,18 @@
+{
+    "tool_name": "LogBA",
+    "tool_description": "LogBA is a logging and analytics tool designed to help users manage and analyze log data efficiently.",
+    "home_url": "https://rapidapi.com/pruebas972-wfkbo1Y4zmK/api/logba/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "a1",
+            "url": "https://logba.p.rapidapi.com/",
+            "description": "This API endpoint retrieves log data from the LogBA service.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

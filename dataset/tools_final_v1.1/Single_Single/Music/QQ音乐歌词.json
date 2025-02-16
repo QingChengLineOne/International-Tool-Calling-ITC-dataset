@@ -1,0 +1,38 @@
+{
+    "tool_name": "QQ音乐歌词",
+    "tool_description": "搜索QQ音乐的歌词，极速",
+    "home_url": "https://api.aa1.cn/doc/qqmusic_geci.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "QQ音乐歌词搜索API",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_geci.php",
+            "description": "提供歌词搜索功能",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要搜索的歌词关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "搜索结果数量，默认为10",
+                    "default": "10"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "搜索类型，默认为0",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

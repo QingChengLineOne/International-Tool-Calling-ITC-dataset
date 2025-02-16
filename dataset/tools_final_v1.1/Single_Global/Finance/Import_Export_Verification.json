@@ -1,0 +1,35 @@
+{
+    "tool_name": "Import Export Verification",
+    "tool_description": "Make your onboarding process safer, faster, and smarter by verifying the legitimacy of your merchants using their import export certification. With the Import Export verification API, you can confidently onboard merchants knowing that they are genuine entities, registered under the Registrar of Companies, and authorized to partake in the import and export of products.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/import-export-verification/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://import-export-verification.p.rapidapi.com/v3/tasks",
+            "description": "Fetch API result using the request ID received in responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request to fetch results.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Import Export Verification",
+            "url": "https://import-export-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/roc_iec",
+            "description": "Verify the legitimacy of merchants using their import export certification. This API allows you to onboard merchants confidently.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

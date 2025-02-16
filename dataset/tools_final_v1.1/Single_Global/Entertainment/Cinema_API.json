@@ -1,0 +1,82 @@
+{
+    "tool_name": "Cinema API",
+    "tool_description": "Welcome to our exciting new API! 🎉 Our API provides a seamless experience for accessing a treasure trove of information about catalogs, actors, movies, and streaming platforms. With just a few simple requests, you can unlock a world of entertainment possibilities! Retrieve comprehensive details about catalogs, including genres, release dates, and more. Dive into the captivating lives of actors by exploring their biographies, filmography, and achievements. Discover the latest blockbusters, trailers, and much more.",
+    "home_url": "https://rapidapi.com/cantagalloedoardo/api/cinema-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Movie Reviews By Id",
+            "url": "https://cinema-api.p.rapidapi.com/get_reviews/{id}",
+            "description": "This endpoint returns a complete list of reviews associated with the specified movie ID. You can obtain the ID from the Get Movie By ID endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "Movie ID. You can obtain the ID from the Get Movie By ID endpoint.",
+                    "default": "tt0120338"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Movie Images By ID",
+            "url": "https://cinema-api.p.rapidapi.com/get_images/{id}",
+            "description": "This endpoint returns a complete list of images associated with the specified movie ID. You can obtain the ID from the Get Movie By ID endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "Movie ID. You can obtain the ID from the Get Movie By ID endpoint.",
+                    "default": "tt0120338"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Movie ID By Title",
+            "url": "https://cinema-api.p.rapidapi.com/get_ids/{title}/{category}",
+            "description": "Use this endpoint to retrieve the ID of the movies you are interested in. You can search for a movie or your favorite actor.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "string",
+                    "description": "Two categories allowed: movies or actors.",
+                    "default": "movies"
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "Enter the text to search for the movie or actor.",
+                    "default": "Titanic"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Cast By ID",
+            "url": "https://cinema-api.p.rapidapi.com/get_cast/{id}",
+            "description": "With this endpoint, you can retrieve the full cast's list, including their images and roles in the movie.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "Movie ID. You can obtain the ID from the Get Movie By ID endpoint.",
+                    "default": "tt0120338"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

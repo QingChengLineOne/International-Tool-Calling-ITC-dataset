@@ -1,0 +1,59 @@
+{
+    "tool_name": "People photo background removal",
+    "tool_description": "This API provides people photo segmentation with consequent background removal, allowing users to easily isolate subjects in images.",
+    "home_url": "https://rapidapi.com/api4ai-api4ai-default/api/people-photo-background-removal/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Remove background from photo of people and return results",
+            "url": "https://people-photo-background-removal.p.rapidapi.com/v1/results",
+            "description": "Performs actual people photo analysis and responds with results. The input image must be a JPEG or PNG file, with a maximum size of 16MB.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "Use this field to pass an image as a link to a public web resource. The image must be a JPEG or PNG file.",
+                    "default": "https://storage.googleapis.com/api4ai-static/samples/img-bg-removal-people-2.jpg"
+                },
+                {
+                    "name": "image",
+                    "type": "BINARY",
+                    "description": "Use this field to pass an image as a binary file. The image must be a JPEG or PNG file.",
+                    "default": ""
+                },
+                {
+                    "name": "image-bg",
+                    "type": "BINARY",
+                    "description": "Optional background image to blend below the person image. The final output will have the same size as the main input image.",
+                    "default": ""
+                },
+                {
+                    "name": "url-bg",
+                    "type": "STRING",
+                    "description": "Optional background image as a link to a public web resource. The image must be a JPEG or PNG file.",
+                    "default": ""
+                },
+                {
+                    "name": "mode",
+                    "type": "STRING",
+                    "description": "Optional parameter to choose the format of the output image: 'fg-image' for a transparent background or 'fg-mask' for a grayscale mask.",
+                    "default": "fg-image"
+                }
+            ],
+            "statuscode": 200,
+            "schema": "\""
+        },
+        {
+            "name": "Get version",
+            "url": "https://people-photo-background-removal.p.rapidapi.com/v1/version",
+            "description": "Returns the current version of the service in the format 'vX.Y.Z'.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

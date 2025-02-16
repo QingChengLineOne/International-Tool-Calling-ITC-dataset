@@ -1,0 +1,133 @@
+{
+    "tool_name": "Meme Generator and Template Database",
+    "tool_description": "A versatile meme generator that allows users to add captions and text directly onto images using over 1,800 meme templates in more than 10 fonts, supporting multiple languages.",
+    "home_url": "https://rapidapi.com/eximia-eximia-default/api/meme-generator-and-template-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/template/{image}",
+            "url": "https://meme-generator-and-template-database.p.rapidapi.com/template/{image}",
+            "description": "This endpoint allows users to add text to a specified meme template image. The image width is fixed at 500px, with variable length depending on the template. The request includes predefined text boxes for the template, and users can specify text content, font, size, color, and alignment.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "image",
+                    "type": "STRING",
+                    "description": "(Required) The name of the meme template image.",
+                    "default": "Bernie_I_Am_Once_Again_Asking_For_Your_Support"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/text-box/{image}",
+            "url": "https://meme-generator-and-template-database.p.rapidapi.com/text-box/{image}",
+            "description": "This endpoint allows users to define custom text boxes on a specified meme template image. Users can specify the position, size, and content of each text box, with a maximum of 15 text boxes allowed.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "image",
+                    "type": "STRING",
+                    "description": "(Required) The name of the meme template image.",
+                    "default": "Tuxedo_Winnie_The_Pooh"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/caption/{image}",
+            "url": "https://meme-generator-and-template-database.p.rapidapi.com/caption/{image}",
+            "description": "This endpoint allows users to add captions to a specified meme template image, expanding the image size based on the caption height. Users can specify text for the top and bottom captions, along with font and color options.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "image",
+                    "type": "STRING",
+                    "description": "(Required) The name of the meme template image.",
+                    "default": "Leonardo_Dicaprio_Cheers"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "bsize",
+                    "type": "NUMBER",
+                    "description": "The base size for the caption.",
+                    "default": "32"
+                },
+                {
+                    "name": "font",
+                    "type": "STRING",
+                    "description": "The font to use for the caption.",
+                    "default": "impact"
+                },
+                {
+                    "name": "top",
+                    "type": "STRING",
+                    "description": "Text for the top caption.",
+                    "default": "Thanks for trying out this meme generator"
+                },
+                {
+                    "name": "bottom",
+                    "type": "STRING",
+                    "description": "Text for the bottom caption.",
+                    "default": "There is also a useless bottom caption that you can go without"
+                },
+                {
+                    "name": "tsize",
+                    "type": "NUMBER",
+                    "description": "Font size for the caption text.",
+                    "default": "44"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "/search",
+            "url": "https://meme-generator-and-template-database.p.rapidapi.com/search",
+            "description": "This endpoint returns meme templates that contain a specific string. The search is case-sensitive.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "searchString",
+                    "type": "STRING",
+                    "description": "(Required) The string to search for in meme templates.",
+                    "default": "cat"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/fonts",
+            "url": "https://meme-generator-and-template-database.p.rapidapi.com/fonts",
+            "description": "This endpoint returns a list of available fonts that can be used in any text box or caption. Some fonts are language-specific.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "/templates",
+            "url": "https://meme-generator-and-template-database.p.rapidapi.com/templates",
+            "description": "This endpoint returns all currently supported meme templates along with the number of text boxes each template can support.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}

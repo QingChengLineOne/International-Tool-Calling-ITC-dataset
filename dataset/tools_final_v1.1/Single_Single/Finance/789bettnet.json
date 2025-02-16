@@ -1,0 +1,18 @@
+{
+    "tool_name": "789bettnet",
+    "tool_description": "789bet là nhà cái cá cược trực tuyến uy tín top đầu khu vực châu Á, cung cấp các dịch vụ cá cược như casino, cá cược thể thao, nổ hũ, bắn cá, tài xỉu.",
+    "home_url": "https://rapidapi.com/789bettnet/api/789bettnet/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "789betlinkvao2022",
+            "url": "https://789bettnet.p.rapidapi.com/",
+            "description": "API cung cấp thông tin và dịch vụ cá cược trực tuyến từ 789bet.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

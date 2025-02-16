@@ -1,0 +1,45 @@
+{
+    "tool_name": "apimail10",
+    "tool_description": "apimail10 is an API service that provides temporary email addresses for users to receive emails without revealing their personal email addresses.",
+    "home_url": "https://rapidapi.com/dev2k3xxx/api/apimail10/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Current Mail",
+            "url": "https://apimail10.p.rapidapi.com/address.api.php",
+            "description": "Fetches the current mail associated with the temporary email address.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getNewEmail10",
+            "url": "https://apimail10.p.rapidapi.com/address.api.php?new=1",
+            "description": "Generates a new temporary email address.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "ReadMail",
+            "url": "https://apimail10.p.rapidapi.com/mail.api.php",
+            "description": "Retrieves the content of an email using its unique mail ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mailid",
+                    "type": "STRING",
+                    "description": "The unique identifier for the email to be read.",
+                    "default": "null"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

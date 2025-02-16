@@ -1,0 +1,52 @@
+{
+    "tool_name": "IP2ASN",
+    "tool_description": "Get information on who is announcing an IPv4 or IPv6 address.",
+    "home_url": "https://rapidapi.com/CMunroe/api/ip2asn1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "IP to ASN",
+            "url": "https://ip2asn1.p.rapidapi.com/lookup/{ip_address}",
+            "description": "Quickly get the ASN(s) announcing a particular IP address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip-address",
+                    "type": "string",
+                    "description": "The IP address for which you want to retrieve ASN information.",
+                    "default": "8.8.8.8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "ip": {
+                        "type": "string"
+                    },
+                    "announcedBy": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "asn": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "subnet": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "error": {
+                        "type": "null"
+                    }
+                }
+            }
+        }
+    ]
+}

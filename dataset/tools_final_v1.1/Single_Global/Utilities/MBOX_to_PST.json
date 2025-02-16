@@ -1,0 +1,18 @@
+{
+    "tool_name": "MBOX to PST",
+    "tool_description": "Migrate MBOX file to Outlook PST file format using MailsDaddy MBOX to PST Converter tool. This tool allows users to convert MBOX files into PST format, making it easier to import emails into Microsoft Outlook.",
+    "home_url": "https://rapidapi.com/vishwakarmasomit205/api/mbox-to-pst/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Download MBOX to PST Converter",
+            "url": "https://mbox-to-pst.p.rapidapi.com/",
+            "description": "Try Free Demo version of the software to export 20 emails from MBOX to PST.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

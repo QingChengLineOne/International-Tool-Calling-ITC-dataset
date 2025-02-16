@@ -1,0 +1,18 @@
+{
+    "tool_name": "Jobs from remoteok",
+    "tool_description": "A tool that provides a list of all remote job postings from the website remoteok.com. Please note that this is not an official service.",
+    "home_url": "https://rapidapi.com/Flatroy/api/jobs-from-remoteok/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get list",
+            "url": "https://jobs-from-remoteok.p.rapidapi.com/",
+            "description": "Retrieves all job posts. You can filter results by appending ?tags=digital+nomad to the endpoint.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

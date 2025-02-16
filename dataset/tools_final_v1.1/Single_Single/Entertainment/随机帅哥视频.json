@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机帅哥视频",
+    "tool_description": "缓存在七牛云CDN的帅哥视频",
+    "home_url": "https://api.aa1.cn/doc/handsomvideo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机帅哥视频接口",
+            "url": "https://papi.oxoll.cn/API/sgsp/",
+            "description": "提供随机获取帅哥视频的功能",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

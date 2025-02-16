@@ -1,0 +1,34 @@
+{
+    "tool_name": "快递100快递查询",
+    "tool_description": "调用快递100快递接口查询",
+    "home_url": "https://api.aa1.cn/doc/kd100.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "快递100快递查询API",
+            "url": "https://free.wqwlkj.cn/wqwlapi/kd100.php",
+            "description": "通过快递单号查询快递信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dh",
+                    "type": "string",
+                    "description": "快递单号，必填",
+                    "default": "无默认值"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "response_example": {
+                "message": "OK",
+                "data": {
+                    "com": "快递公司名称",
+                    "nu": "快递单号",
+                    "time": "更新时间",
+                    "context": "快递物流信息详情"
+                }
+            },
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "GST Details API Documentation",
+    "tool_description": "This API allows users to retrieve data related to GST (Goods and Services Tax) and obtain owner details associated with a GST number.",
+    "home_url": "https://rapidapi.com/ashutosh05/api/gst-details-api-documentation/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GST Number Search Tool & GSTIN Verification Online",
+            "url": "https://gst-details-api-documentation.p.rapidapi.com/GetGSTDetails",
+            "description": "This API endpoint enables users to search for GST numbers and verify GSTIN (Goods and Services Tax Identification Number) online.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "GST",
+                    "type": "STRING",
+                    "description": "The GST number to be searched or verified.",
+                    "default": "24AAKCS0993B2ZF"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

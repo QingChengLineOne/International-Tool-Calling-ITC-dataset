@@ -1,0 +1,25 @@
+{
+    "tool_name": "GST advance",
+    "tool_description": "A tool to retrieve data from the Goods and Services Tax (GST) system, including owner details and turnover information.",
+    "home_url": "https://rapidapi.com/way2risetech/api/gst-advance/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GST",
+            "url": "https://gst-advance.p.rapidapi.com/basic",
+            "description": "Used to verify a GST Number and retrieve associated details.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "GST",
+                    "type": "STRING",
+                    "description": "The GST Number to be verified.",
+                    "default": "24AEAPS9376R2ZI"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

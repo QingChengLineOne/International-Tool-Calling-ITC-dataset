@@ -1,0 +1,43 @@
+{
+    "tool_name": "Heightmap from Latitude and Longitude",
+    "tool_description": "This tool generates a heightmap based on provided geographical coordinates (latitude and longitude). The heightmap is represented as a black and white PNG image, where the brightest pixel indicates the highest elevation.",
+    "home_url": "https://rapidapi.com/ondrejholik/api/heightmap-from-latitude-and-longitude/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "get heightmap from two geopoints",
+            "url": "https://heightmap-from-latitude-and-longitude.p.rapidapi.com/",
+            "description": "This API allows users to input two geographical points (latitude and longitude) and returns a heightmap image (PNG) that represents the elevation within the specified borders.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lng0",
+                    "type": "NUMBER",
+                    "description": "The longitude of the first point.",
+                    "default": "-112.726473"
+                },
+                {
+                    "name": "lng1",
+                    "type": "NUMBER",
+                    "description": "The longitude of the second point.",
+                    "default": "-200.561530"
+                },
+                {
+                    "name": "lat1",
+                    "type": "NUMBER",
+                    "description": "The latitude of the first point.",
+                    "default": "35.940449"
+                },
+                {
+                    "name": "lat0",
+                    "type": "NUMBER",
+                    "description": "The latitude of the second point.",
+                    "default": "36.477988"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

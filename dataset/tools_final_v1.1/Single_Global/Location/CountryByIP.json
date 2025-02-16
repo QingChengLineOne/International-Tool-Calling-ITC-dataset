@@ -1,0 +1,25 @@
+{
+    "tool_name": "CountryByIP",
+    "tool_description": "Get country code by providing IP address (IPV4 & IPV6). We aim to provide output at lightning speed.",
+    "home_url": "https://rapidapi.com/piyushprakash32/api/countrybyip1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getCountryByIP",
+            "url": "https://countrybyip1.p.rapidapi.com/getCountryByIP",
+            "description": "Retrieve the country code associated with a given IP address. Supports both IPV4 and IPV6 formats.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "The IP address for which the country code is to be retrieved.",
+                    "default": "4.98.25.25"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

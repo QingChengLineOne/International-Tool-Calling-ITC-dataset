@@ -1,0 +1,28 @@
+{
+    "tool_name": "satoshivision",
+    "tool_description": "Satoshi Vision. Our ecosystem is based on four pillars that form the basis of Bitcoin SV's infrastructure, creating the leading blockchain protocol for the world.",
+    "home_url": "https://rapidapi.com/atifmunaf12/api/satoshivision/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "news",
+            "url": "https://satoshivision.p.rapidapi.com/news",
+            "description": "Fetches the latest news related to Satoshi Vision and Bitcoin SV.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "news_copy",
+            "url": "https://satoshivision.p.rapidapi.com/news",
+            "description": "Fetches the latest news related to Satoshi Vision and Bitcoin SV.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

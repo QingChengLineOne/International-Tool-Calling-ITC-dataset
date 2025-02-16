@@ -1,0 +1,75 @@
+{
+    "tool_name": "Exchange Rate",
+    "tool_description": "An API for current and historical foreign exchange rates published by the European Central Bank.",
+    "home_url": "https://rapidapi.com/Serply/api/exchange-rate9/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Symbols",
+            "url": "https://exchange-rate9.p.rapidapi.com/symbols",
+            "description": "Get all available currencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Historical",
+            "url": "https://exchange-rate9.p.rapidapi.com/{date}",
+            "description": "Get historical rates for any day since 1999.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "The date for which historical rates are requested.",
+                    "default": "2000-01-03"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Latest",
+            "url": "https://exchange-rate9.p.rapidapi.com/latest",
+            "description": "Get the latest foreign exchange rates.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "The base currency for the exchange rates.",
+                    "default": "USD"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Convert",
+            "url": "https://exchange-rate9.p.rapidapi.com/convert",
+            "description": "Currency conversion endpoint, can be used to convert any amount from one currency to another.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The currency to convert to.",
+                    "default": "USD"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The currency to convert from.",
+                    "default": "EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Technology User Lists",
+    "tool_description": "With an experience of over two decades, Technology User Lists provides 100% accurate data on technology users.",
+    "home_url": "https://rapidapi.com/kerryblake/api/technology-user-lists/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Salesforce Customers List",
+            "url": "https://technology-user-lists.p.rapidapi.com/",
+            "description": "Retrieve a list of customers using Salesforce technology.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

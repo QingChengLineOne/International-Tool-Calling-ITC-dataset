@@ -1,0 +1,18 @@
+{
+    "tool_name": "[zh-CN] Bing壁纸 All In One",
+    "tool_description": "zh-CN Bing 壁纸 完整数据接口，每日 9:30 更新，已更新 278 天。",
+    "home_url": "https://api.aa1.cn/doc/bing-wallpaper-zh_CN.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Bing壁纸数据接口",
+            "url": "https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/data/zh-CN_all.json",
+            "description": "提供Bing每日壁纸的完整数据，包括图片链接、描述等信息。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

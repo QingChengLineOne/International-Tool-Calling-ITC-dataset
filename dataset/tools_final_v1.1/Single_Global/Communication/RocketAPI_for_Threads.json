@@ -1,0 +1,88 @@
+{
+    "tool_name": "RocketAPI for Threads",
+    "tool_description": "🧵 Fast and stable Threads API. Scrape any information from Threads: user info, feed, replies and more. Custom plans and crypto payments are available on request.",
+    "home_url": "https://rapidapi.com/rocketapi/api/rocketapi-for-threads/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Thread Replies",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/thread/get_replies",
+            "description": "Retrieve thread replies by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Thread Likes",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/thread/get_likes",
+            "description": "Retrieve thread likes by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Following",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/user/get_following",
+            "description": "Retrieve Threads user following by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Feed",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/user/get_feed",
+            "description": "Retrieve Threads user feed by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Followers",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/user/get_followers",
+            "description": "Retrieve Threads user followers by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Replies",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/user/get_replies",
+            "description": "Retrieve Threads user replies by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Info",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/user/get_info",
+            "description": "Retrieve Threads user information by id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search Users 🔎👨‍🦱",
+            "url": "https://rocketapi-for-threads.p.rapidapi.com/threads/search_users",
+            "description": "Search for a specific user in Threads.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

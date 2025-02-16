@@ -1,0 +1,779 @@
+{
+    "tool_name": "ecoweather",
+    "tool_description": "Economically relevant meteorological data like heat degree days and average temperature.",
+    "home_url": "https://rapidapi.com/stromdao-stromdao-default/api/ecoweather/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Schneetage",
+            "url": "https://ecoweather.p.rapidapi.com/ucSNOW",
+            "description": "Provides information on how much snow and on how many days it has been present within a specified time period. Useful for winter service planning and tourism.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Start date for the snow data in YYYY-MM-DD format.",
+                    "default": "2021-01-01"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "8.79"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "49.34"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "End date for the snow data in YYYY-MM-DD format.",
+                    "default": "2021-09-21"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "input": {
+                        "type": "object",
+                        "properties": {
+                            "geo": {
+                                "type": "object",
+                                "properties": {
+                                    "lat": {
+                                        "type": "string"
+                                    },
+                                    "lon": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "timeframe": {
+                                "type": "object",
+                                "properties": {
+                                    "from": {
+                                        "type": "string"
+                                    },
+                                    "to": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "aggregations": {
+                        "type": "object",
+                        "properties": {
+                            "precipitationdays": {
+                                "type": "integer"
+                            },
+                            "precipitation": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "result": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "timestamp": {
+                                    "type": "integer"
+                                },
+                                "date": {
+                                    "type": "string"
+                                },
+                                "precipitation": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Heizgradtage",
+            "url": "https://ecoweather.p.rapidapi.com/ucHDD",
+            "description": "Calculates the number of heating degree days within a specified time period. Useful for determining heating costs in utility billing.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Start date for the heating degree days data in YYYY-MM-DD format.",
+                    "default": "2021-01-01"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "8.79"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "49.34"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "End date for the heating degree days data in YYYY-MM-DD format.",
+                    "default": "2021-09-21"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "input": {
+                        "type": "object",
+                        "properties": {
+                            "geo": {
+                                "type": "object",
+                                "properties": {
+                                    "lat": {
+                                        "type": "string"
+                                    },
+                                    "lon": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "timeframe": {
+                                "type": "object",
+                                "properties": {
+                                    "from": {
+                                        "type": "string"
+                                    },
+                                    "to": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "aggregations": {
+                        "type": "object",
+                        "properties": {
+                            "hdd12": {
+                                "type": "number"
+                            },
+                            "hdd15": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "result": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "timestamp": {
+                                    "type": "integer"
+                                },
+                                "date": {
+                                    "type": "string"
+                                },
+                                "hdd12": {
+                                    "type": "number"
+                                },
+                                "hdd15": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Niederschlag",
+            "url": "https://ecoweather.p.rapidapi.com/ucPREC",
+            "description": "Provides information on the amount of precipitation within a specified time period. Useful for rainwater utilization planning and gardening.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Start date for the precipitation data in YYYY-MM-DD format.",
+                    "default": "2021-01-01"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "8.79"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "49.34"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "End date for the precipitation data in YYYY-MM-DD format.",
+                    "default": "2021-09-21"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "input": {
+                        "type": "object",
+                        "properties": {
+                            "geo": {
+                                "type": "object",
+                                "properties": {
+                                    "lat": {
+                                        "type": "string"
+                                    },
+                                    "lon": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "timeframe": {
+                                "type": "object",
+                                "properties": {
+                                    "from": {
+                                        "type": "string"
+                                    },
+                                    "to": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "aggregations": {
+                        "type": "object",
+                        "properties": {
+                            "precipitationdays": {
+                                "type": "integer"
+                            },
+                            "precipitation": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "result": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "timestamp": {
+                                    "type": "integer"
+                                },
+                                "date": {
+                                    "type": "string"
+                                },
+                                "precipitation": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "ecoweather",
+            "url": "https://ecoweather.p.rapidapi.com/ecoweather",
+            "description": "Retrieve historical weather data for a location. Dataset lasts back until year 2016. Results are limited to 366 days (1 year) per request.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude of a geo-location in degrees.",
+                    "default": "8.80282"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of a geo-location in degrees.",
+                    "default": "49.3427818"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "Start date in YYYY-MM-DD format.",
+                    "default": "2021-12-31"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "End date in YYYY-MM-DD format. Note: if time period relative to `from` is more than 366 days it will automatically be replaced with this date.",
+                    "default": "2022-09-31"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "timestamp": {
+                                    "type": "integer"
+                                },
+                                "humidity": {
+                                    "type": "number"
+                                },
+                                "snow": {
+                                    "type": "number"
+                                },
+                                "windspeed": {
+                                    "type": "number"
+                                },
+                                "winddirection": {
+                                    "type": "number"
+                                },
+                                "count": {
+                                    "type": "integer"
+                                },
+                                "tempC": {
+                                    "type": "number"
+                                },
+                                "tempminC": {
+                                    "type": "number"
+                                },
+                                "tempmaxC": {
+                                    "type": "number"
+                                },
+                                "precipitation": {
+                                    "type": "number"
+                                },
+                                "date": {
+                                    "type": "string"
+                                },
+                                "hdd12": {
+                                    "type": "number"
+                                },
+                                "hdd15": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    },
+                    "aggregations": {
+                        "type": "object",
+                        "properties": {
+                            "year": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "year": {
+                                            "type": "string"
+                                        },
+                                        "count": {
+                                            "type": "integer"
+                                        },
+                                        "snowdays": {
+                                            "type": "integer"
+                                        },
+                                        "precipitationdays": {
+                                            "type": "integer"
+                                        },
+                                        "desertdays": {
+                                            "type": "integer"
+                                        },
+                                        "tropicalnights": {
+                                            "type": "integer"
+                                        },
+                                        "icedays": {
+                                            "type": "integer"
+                                        },
+                                        "icingdays": {
+                                            "type": "integer"
+                                        },
+                                        "tropicaldays": {
+                                            "type": "integer"
+                                        },
+                                        "vegetationdays": {
+                                            "type": "integer"
+                                        },
+                                        "tempC": {
+                                            "type": "number"
+                                        },
+                                        "windspeed": {
+                                            "type": "number"
+                                        },
+                                        "tempminC": {
+                                            "type": "number"
+                                        },
+                                        "tempmaxC": {
+                                            "type": "number"
+                                        },
+                                        "humidity": {
+                                            "type": "number"
+                                        },
+                                        "winddirection": {
+                                            "type": "number"
+                                        },
+                                        "hdd12": {
+                                            "type": "number"
+                                        },
+                                        "hdd15": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            },
+                            "month": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "month": {
+                                            "type": "string"
+                                        },
+                                        "count": {
+                                            "type": "integer"
+                                        },
+                                        "snowdays": {
+                                            "type": "integer"
+                                        },
+                                        "precipitationdays": {
+                                            "type": "integer"
+                                        },
+                                        "desertdays": {
+                                            "type": "integer"
+                                        },
+                                        "tropicalnights": {
+                                            "type": "integer"
+                                        },
+                                        "vegetationdays": {
+                                            "type": "integer"
+                                        },
+                                        "icedays": {
+                                            "type": "integer"
+                                        },
+                                        "icingdays": {
+                                            "type": "integer"
+                                        },
+                                        "tropicaldays": {
+                                            "type": "integer"
+                                        },
+                                        "tempC": {
+                                            "type": "number"
+                                        },
+                                        "windspeed": {
+                                            "type": "number"
+                                        },
+                                        "tempminC": {
+                                            "type": "number"
+                                        },
+                                        "tempmaxC": {
+                                            "type": "number"
+                                        },
+                                        "humidity": {
+                                            "type": "number"
+                                        },
+                                        "winddirection": {
+                                            "type": "number"
+                                        },
+                                        "hdd12": {
+                                            "type": "number"
+                                        },
+                                        "hdd15": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            },
+                            "all": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "integer"
+                                        },
+                                        "snowdays": {
+                                            "type": "integer"
+                                        },
+                                        "precipitationdays": {
+                                            "type": "integer"
+                                        },
+                                        "desertdays": {
+                                            "type": "integer"
+                                        },
+                                        "tropicalnights": {
+                                            "type": "integer"
+                                        },
+                                        "icedays": {
+                                            "type": "integer"
+                                        },
+                                        "icingdays": {
+                                            "type": "integer"
+                                        },
+                                        "tropicaldays": {
+                                            "type": "integer"
+                                        },
+                                        "vegetationdays": {
+                                            "type": "integer"
+                                        },
+                                        "tempC": {
+                                            "type": "number"
+                                        },
+                                        "windspeed": {
+                                            "type": "number"
+                                        },
+                                        "tempminC": {
+                                            "type": "number"
+                                        },
+                                        "tempmaxC": {
+                                            "type": "number"
+                                        },
+                                        "humidity": {
+                                            "type": "number"
+                                        },
+                                        "winddirection": {
+                                            "type": "number"
+                                        },
+                                        "hdd12": {
+                                            "type": "number"
+                                        },
+                                        "hdd15": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "meta": {
+                        "type": "object",
+                        "properties": {
+                            "count": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "tempC": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "precipitation": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "snow": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "windspeed": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "timestamp": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "hdd12": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "hdd15": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "snowdays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "precipitationdays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "icedays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "tropicaldays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "desertdays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "tropicalnights": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "vegetationdays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "icingdays": {
+                                "type": "object",
+                                "properties": {
+                                    "dimension": {
+                                        "type": "string"
+                                    },
+                                    "measurement": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "input": {
+                        "type": "object",
+                        "properties": {
+                            "geo": {
+                                "type": "object",
+                                "properties": {
+                                    "lat": {
+                                        "type": "string"
+                                    },
+                                    "lon": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "timeframe": {
+                                "type": "object",
+                                "properties": {
+                                    "from": {
+                                        "type": "string"
+                                    },
+                                    "to": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

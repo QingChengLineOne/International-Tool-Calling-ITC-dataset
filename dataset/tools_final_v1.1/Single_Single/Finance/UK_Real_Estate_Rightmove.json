@@ -1,0 +1,246 @@
+{
+    "tool_name": "UK Real Estate Rightmove",
+    "tool_description": "Rightmove is a leading UK Real Estate website that provides detailed and reliable information about various types of properties, making it an essential resource for individuals looking to buy, sell, or rent property in the UK.",
+    "home_url": "https://rapidapi.com/ntd119/api/uk-real-estate-rightmove/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "commercial/property-to-sale",
+            "url": "https://uk-real-estate-rightmove.p.rapidapi.com/commercial/property-to-sale",
+            "description": "Fetches commercial properties available for sale.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "`identifier` obtained from the **auto-complete** endpoint, data[index]->`locationIdentifier`.",
+                    "default": "REGION^1036"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sort_by",
+                    "type": "ENUM",
+                    "description": "Criteria to sort the results.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page number for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "max_size",
+                    "type": "NUMBER",
+                    "description": "Maximum size of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "property_type",
+                    "type": "STRING",
+                    "description": "Comma-separated property types (e.g., Office, BusinessPark).",
+                    "default": ""
+                },
+                {
+                    "name": "max_price",
+                    "type": "NUMBER",
+                    "description": "Maximum price of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "min_price",
+                    "type": "NUMBER",
+                    "description": "Minimum price of the property.",
+                    "default": ""
+                },
+                {
+                    "name": "search_radius",
+                    "type": "STRING",
+                    "description": "Search radius in miles (e.g., 0.0, 0.25, 0.5, etc.).",
+                    "default": "0.0"
+                },
+                {
+                    "name": "has_parking",
+                    "type": "BOOLEAN",
+                    "description": "Filter for properties with parking.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "currentPage": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "resultsPerPage": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "boolean"
+                    },
+                    "totalResultCount": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "sold-house-prices",
+            "url": "https://uk-real-estate-rightmove.p.rapidapi.com/house-prices/sold-house-prices",
+            "description": "Retrieves sold house prices.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "`identifier` obtained from the **/house-prices/auto-complete** endpoint, data[index]->`locationIdentifier`.",
+                    "default": "STATION^18013"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "search_radius",
+                    "type": "STRING",
+                    "description": "Search radius in miles.",
+                    "default": "0.0"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "currentPage": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "resultsPerPage": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "boolean"
+                    },
+                    "totalResultCount": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "student-property-to-rent",
+            "url": "https://uk-real-estate-rightmove.p.rapidapi.com/rent/student-property-to-rent",
+            "description": "Fetches student properties available for rent.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "`identifier` obtained from the **auto-complete** endpoint, data[index]->`locationIdentifier`.",
+                    "default": "REGION^1036"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "max_price",
+                    "type": "NUMBER",
+                    "description": "Maximum rental price.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "currentPage": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "resultsPerPage": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "boolean"
+                    },
+                    "totalResultCount": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "new-homes-for-sale",
+            "url": "https://uk-real-estate-rightmove.p.rapidapi.com/buy/new-homes-for-sale",
+            "description": "Retrieves new homes available for sale.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "identifier",
+                    "type": "STRING",
+                    "description": "`identifier` obtained from the **auto-complete** endpoint, data[index]->`locationIdentifier`.",
+                    "default": "REGION^1036"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "min_price",
+                    "type": "NUMBER",
+                    "description": "Minimum price of the new home.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "currentPage": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "resultsPerPage": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "boolean"
+                    },
+                    "totalResultCount": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

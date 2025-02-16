@@ -1,0 +1,18 @@
+{
+    "tool_name": "Thitruong Forex",
+    "tool_description": "Thitruong Forex is a platform that shares knowledge about forex trading and provides guidance on reputable trading platforms such as Exness and FBS. It also offers instructions for beginners on how to open trading accounts.",
+    "home_url": "https://thitruongforex.info/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Thitruong Forex",
+            "url": "https://thitruong-forex.p.rapidapi.com/",
+            "description": "This API provides access to forex trading knowledge and guidance for beginners, including information on reputable trading platforms.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

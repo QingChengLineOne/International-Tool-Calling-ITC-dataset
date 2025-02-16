@@ -1,0 +1,37 @@
+{
+    "tool_name": "实时公交站点查询API",
+    "tool_description": "查询公交车到站的距离，预计到站的时间，提供准确实时公交信息",
+    "home_url": "https://api.aa1.cn/doc/gjc.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "实时公交站点查询接口",
+            "url": "https://api.lolimi.cn/API/che/api.php",
+            "description": "获取指定城市和线路的公交站点信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "请求类型，固定为text",
+                    "default": "text"
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "查询的城市名称",
+                    "default": ""
+                },
+                {
+                    "name": "line",
+                    "type": "string",
+                    "description": "查询的公交线路名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

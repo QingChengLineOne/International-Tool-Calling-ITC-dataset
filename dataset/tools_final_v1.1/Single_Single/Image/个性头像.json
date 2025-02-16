@@ -1,0 +1,25 @@
+{
+    "tool_name": "个性头像API",
+    "tool_description": "提供各种个性头像，包括男生、女生等，数据来源于我要个性网",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_select_avatar.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "个性头像选择接口",
+            "url": "https://free.wqwlkj.cn/wqwlapi/select_avatar.php",
+            "description": "根据类型选择个性头像",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "头像类型，如男生为'nan'，女生为'nv'等",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

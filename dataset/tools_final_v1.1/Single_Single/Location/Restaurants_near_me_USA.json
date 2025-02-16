@@ -1,0 +1,120 @@
+{
+    "tool_name": "Restaurants near me USA",
+    "tool_description": "A comprehensive API for accessing a database of restaurants across the USA, allowing users to find restaurants near their location by querying various parameters.",
+    "home_url": "https://rapidapi.com/makingdatameaningful/api/restaurants-near-me-usa/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "GET all City names",
+            "url": "https://restaurants-near-me-usa.p.rapidapi.com/restaurants/all-city",
+            "description": "Retrieves a list of all city names available in the restaurant database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET all State names",
+            "url": "https://restaurants-near-me-usa.p.rapidapi.com/restaurants/all-state",
+            "description": "Retrieves a list of all state names available in the restaurant database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET all Restaurant locations",
+            "url": "https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/{page}",
+            "description": "Fetches a paginated list of all restaurant locations.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET all Restaurant locations by zipcode",
+            "url": "https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/zipcode/{zipcode}/{page}",
+            "description": "Fetches restaurant locations based on a specified zipcode.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "0"
+                },
+                {
+                    "name": "zipCode",
+                    "type": "string",
+                    "description": "The zipcode to search for restaurants.",
+                    "default": "90210"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET all Restaurant locations by state",
+            "url": "https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/{state}/{page}",
+            "description": "Fetches restaurant locations based on a specified state.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "The state to search for restaurants.",
+                    "default": "AZ"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET all Restaurant locations by state and city",
+            "url": "https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/state/{state}/city/{city}/{page}",
+            "description": "Fetches restaurant locations based on a specified state and city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "0"
+                },
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "The city to search for restaurants.",
+                    "default": "West Bloomfield"
+                },
+                {
+                    "name": "state",
+                    "type": "string",
+                    "description": "The state to search for restaurants.",
+                    "default": "MI"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

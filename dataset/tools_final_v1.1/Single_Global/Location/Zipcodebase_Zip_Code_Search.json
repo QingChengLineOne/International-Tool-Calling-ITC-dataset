@@ -1,0 +1,32 @@
+{
+    "tool_name": "Zipcodebase Zip Code Search",
+    "tool_description": "Zip Code API - Free Access to Worldwide Postal Code Data",
+    "home_url": "https://rapidapi.com/saasindustries/api/zipcodebase-zip-code-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Postalcode to location information (/search)",
+            "url": "https://zipcodebase-zip-code-search.p.rapidapi.com/search",
+            "description": "This endpoint allows you to receive information for one or multiple given postalcodes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "codes",
+                    "type": "STRING",
+                    "description": "A postal code or a list of postal codes to search for.",
+                    "default": "10005"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country code to filter the postal codes by.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

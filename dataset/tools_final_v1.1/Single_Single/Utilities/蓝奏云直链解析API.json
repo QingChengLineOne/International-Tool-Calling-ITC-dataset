@@ -1,0 +1,25 @@
+{
+    "tool_name": "蓝奏云直链解析API",
+    "tool_description": "蓝奏云直链解析，返回文件下载直链",
+    "home_url": "https://api.aa1.cn/doc/lanzou-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "蓝奏云直链解析",
+            "url": "https://v2.api-m.com/api/lanzou",
+            "description": "获取蓝奏云文件的下载直链",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "蓝奏云文件的链接地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

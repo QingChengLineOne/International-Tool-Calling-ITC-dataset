@@ -1,0 +1,25 @@
+{
+    "tool_name": "Cors Proxy",
+    "tool_description": "Cross-Origin Resource Sharing Proxy that allows you to bypass CORS restrictions when making requests to external websites.",
+    "home_url": "https://rapidapi.com/mabi/api/cors-proxy/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "proxy request endpoint",
+            "url": "https://cors-proxy.p.rapidapi.com/proxy",
+            "description": "Returns the response text of a given website using the CORS proxy.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the website you want to access through the proxy.",
+                    "default": "https://www.google.de"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

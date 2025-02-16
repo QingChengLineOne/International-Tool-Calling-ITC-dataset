@@ -1,0 +1,61 @@
+{
+    "tool_name": "原神/崩坏3/等语音合成",
+    "tool_description": "原神/崩坏3/等语音合成 可支持超多语音合成,语音会在30分钟后自动删除",
+    "home_url": "https://api.aa1.cn/doc/ysyyhc.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "语音合成API",
+            "url": "https://api.lolimi.cn/API/yyhc/y.php",
+            "description": "使用该API可以合成原神、崩坏3等游戏的语音",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "要合成的语音内容",
+                    "default": ""
+                },
+                {
+                    "name": "speaker",
+                    "type": "string",
+                    "description": "语音的说话人角色或名称",
+                    "default": ""
+                },
+                {
+                    "name": "Length",
+                    "type": "int",
+                    "description": "语音的长度（秒）",
+                    "default": 1
+                },
+                {
+                    "name": "noisew",
+                    "type": "float",
+                    "description": "背景噪声水平",
+                    "default": 0.8
+                },
+                {
+                    "name": "sdp",
+                    "type": "float",
+                    "description": "语音的清晰度",
+                    "default": 0.4
+                },
+                {
+                    "name": "noise",
+                    "type": "float",
+                    "description": "语音的噪声水平",
+                    "default": 0.6
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "语音类型，可选值为 'mp3' 或 'wav'，默认为 'mp3'",
+                    "default": "mp3"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

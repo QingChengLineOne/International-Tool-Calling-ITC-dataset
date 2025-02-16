@@ -1,0 +1,68 @@
+{
+    "tool_name": "Mortgage Calculator by API-Ninjas",
+    "tool_description": "A simple yet powerful mortgage calculator designed for home financing, allowing users to calculate mortgage payments based on various parameters.",
+    "home_url": "https://rapidapi.com/apininjas/api/mortgage-calculator-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/mortgagecalculator",
+            "url": "https://mortgage-calculator-by-api-ninjas.p.rapidapi.com/v1/mortgagecalculator",
+            "description": "This endpoint calculates mortgage payments. Either 'loan_amount' or a combination of 'home_value' and 'downpayment' must be provided.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "interest_rate",
+                    "type": "NUMBER",
+                    "description": "The annual interest rate (in %). For example, a 3.5% interest rate would be entered as 3.5. This value cannot exceed 10000.",
+                    "default": "3.5"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "downpayment",
+                    "type": "NUMBER",
+                    "description": "The downpayment on the home or asset. This value cannot exceed 'home_value'.",
+                    "default": ""
+                },
+                {
+                    "name": "home_value",
+                    "type": "NUMBER",
+                    "description": "The total value of the home or asset. This value must be greater than 'downpayment'.",
+                    "default": ""
+                },
+                {
+                    "name": "monthly_hoa",
+                    "type": "NUMBER",
+                    "description": "Monthly homeowner association fees.",
+                    "default": ""
+                },
+                {
+                    "name": "annual_property_tax",
+                    "type": "STRING",
+                    "description": "The annual property tax owed.",
+                    "default": ""
+                },
+                {
+                    "name": "duration_years",
+                    "type": "NUMBER",
+                    "description": "The duration of the loan in years. This value must be between 1 and 10000. If not set, the default value is 30 years.",
+                    "default": ""
+                },
+                {
+                    "name": "loan_amount",
+                    "type": "NUMBER",
+                    "description": "The principal loan amount.",
+                    "default": "200000"
+                },
+                {
+                    "name": "annual_home_insurance",
+                    "type": "NUMBER",
+                    "description": "The annual homeowner's insurance bill.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "versioning-free",
+    "tool_description": "A tool designed to provide versioning capabilities without the need for complex version management.",
+    "home_url": "https://rapidapi.com/michael--1O36NJeg/api/versioning-free/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "v1",
+            "url": "https://versioning-free.p.rapidapi.com/v1",
+            "description": "Fetches the current versioning information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

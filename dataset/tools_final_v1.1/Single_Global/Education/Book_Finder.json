@@ -1,0 +1,73 @@
+{
+    "tool_name": "Book Finder",
+    "tool_description": "Find books by title, author, series, and reading complexity.",
+    "home_url": "https://rapidapi.com/dfskGT/api/book-finder1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Find books",
+            "url": "https://book-finder1.p.rapidapi.com/api/search",
+            "description": "Search books using optional title, author, series, book type, categories, and Lexile measure range.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "book_type",
+                    "type": "STRING",
+                    "description": "Book type, fiction or nonfiction.",
+                    "default": "Fiction"
+                },
+                {
+                    "name": "categories",
+                    "type": "STRING",
+                    "description": "Semicolon separated book categories to search for, e.g., 'Mystery & Suspense; Science Fiction & Fantasy'. Available categories include: ['Animals, Bugs & Pets', 'Art, Creativity & Music', 'General Literature', 'Hobbies, Sports & Outdoors', 'Science Fiction & Fantasy', 'Real Life', 'Science & Technology', 'Mystery & Suspense', 'Reference']",
+                    "default": ""
+                },
+                {
+                    "name": "lexile_max",
+                    "type": "NUMBER",
+                    "description": "Maximum Lexile measure.",
+                    "default": "800"
+                },
+                {
+                    "name": "series",
+                    "type": "STRING",
+                    "description": "Series name.",
+                    "default": "Wings of fire"
+                },
+                {
+                    "name": "lexile_min",
+                    "type": "NUMBER",
+                    "description": "Minimum Lexile measure.",
+                    "default": "600"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page of the results.",
+                    "default": 1
+                },
+                {
+                    "name": "author",
+                    "type": "STRING",
+                    "description": "Name of the author.",
+                    "default": ""
+                },
+                {
+                    "name": "title",
+                    "type": "STRING",
+                    "description": "Terms to be appeared in book title.",
+                    "default": ""
+                },
+                {
+                    "name": "results_per_page",
+                    "type": "NUMBER",
+                    "description": "Results per page.",
+                    "default": 25
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "Brand tl",
+    "tool_description": "We provide articles and news related to various brands. Users can search for their desired brand name in the query.",
+    "home_url": "https://rapidapi.com/brand-tl-brand-tl-default/api/brand-tl/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "search results",
+            "url": "https://brand-tl.p.rapidapi.com/index.php",
+            "description": "This API allows users to retrieve articles and news related to a specific brand by searching with the brand name.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The brand name to search for.",
+                    "default": "nike"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country code for the search results.",
+                    "default": "in"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language for the search results.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

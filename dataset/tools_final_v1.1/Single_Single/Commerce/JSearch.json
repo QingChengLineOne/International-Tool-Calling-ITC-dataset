@@ -1,0 +1,597 @@
+{
+    "tool_name": "JSearch",
+    "tool_description": "Fast and Simple searches for jobs posted on LinkedIn, Indeed, Glassdoor, ZipRecruiter, Dice and others, all in a single API.",
+    "home_url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Estimated Salary",
+            "url": "https://jsearch.p.rapidapi.com/estimated-salary",
+            "description": "Get estimated salaries for jobs around a specified location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "Location in which to get salary estimation.",
+                    "default": "New-York, NY, USA"
+                },
+                {
+                    "name": "job_title",
+                    "type": "STRING",
+                    "description": "Job title for which to get salary estimation.",
+                    "default": "NodeJS Developer"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "radius",
+                    "type": "NUMBER",
+                    "description": "Search radius in km (measured from location).",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "job_title": {
+                                "type": "string"
+                            },
+                            "location": {
+                                "type": "string"
+                            },
+                            "radius": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "location": {
+                                    "type": "string"
+                                },
+                                "job_title": {
+                                    "type": "string"
+                                },
+                                "publisher_name": {
+                                    "type": "string"
+                                },
+                                "publisher_link": {
+                                    "type": "string"
+                                },
+                                "min_salary": {
+                                    "type": "integer"
+                                },
+                                "max_salary": {
+                                    "type": "integer"
+                                },
+                                "median_salary": {
+                                    "type": "integer"
+                                },
+                                "salary_period": {
+                                    "type": "string"
+                                },
+                                "salary_currency": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Job Details",
+            "url": "https://jsearch.p.rapidapi.com/job-details",
+            "description": "Get all job details, including additional application options/links, employer reviews, and estimated salaries for similar jobs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "job_id",
+                    "type": "STRING",
+                    "description": "Job Id of the job for which to get details. Batching of up to 20 Job Ids is supported by separating multiple Job Ids by comma (,).",
+                    "default": "fFunVwyb9l4AAAAAAAAAAA=="
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "extended_publisher_details",
+                    "type": "BOOLEAN",
+                    "description": "Return additional publisher details such as website URL and favicon.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "job_id": {
+                                "type": "string"
+                            },
+                            "extended_publisher_details": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "employer_name": {
+                                    "type": "string"
+                                },
+                                "employer_logo": {
+                                    "type": "string"
+                                },
+                                "employer_website": {
+                                    "type": "string"
+                                },
+                                "employer_company_type": {
+                                    "type": "string"
+                                },
+                                "job_publisher": {
+                                    "type": "string"
+                                },
+                                "job_id": {
+                                    "type": "string"
+                                },
+                                "job_employment_type": {
+                                    "type": "string"
+                                },
+                                "job_title": {
+                                    "type": "string"
+                                },
+                                "job_apply_link": {
+                                    "type": "string"
+                                },
+                                "job_apply_is_direct": {
+                                    "type": "boolean"
+                                },
+                                "job_apply_quality_score": {
+                                    "type": "number"
+                                },
+                                "job_description": {
+                                    "type": "string"
+                                },
+                                "job_is_remote": {
+                                    "type": "boolean"
+                                },
+                                "job_posted_at_timestamp": {
+                                    "type": "integer"
+                                },
+                                "job_posted_at_datetime_utc": {
+                                    "type": "string"
+                                },
+                                "job_city": {
+                                    "type": "string"
+                                },
+                                "job_state": {
+                                    "type": "string"
+                                },
+                                "job_country": {
+                                    "type": "string"
+                                },
+                                "job_latitude": {
+                                    "type": "number"
+                                },
+                                "job_longitude": {
+                                    "type": "number"
+                                },
+                                "job_benefits": {
+                                    "type": "null"
+                                },
+                                "job_google_link": {
+                                    "type": "string"
+                                },
+                                "job_offer_expiration_datetime_utc": {
+                                    "type": "null"
+                                },
+                                "job_offer_expiration_timestamp": {
+                                    "type": "null"
+                                },
+                                "job_required_experience": {
+                                    "type": "object",
+                                    "properties": {
+                                        "no_experience_required": {
+                                            "type": "boolean"
+                                        },
+                                        "required_experience_in_months": {
+                                            "type": "integer"
+                                        },
+                                        "experience_mentioned": {
+                                            "type": "boolean"
+                                        },
+                                        "experience_preferred": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "job_required_skills": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "job_required_education": {
+                                    "type": "object",
+                                    "properties": {
+                                        "postgraduate_degree": {
+                                            "type": "boolean"
+                                        },
+                                        "professional_certification": {
+                                            "type": "boolean"
+                                        },
+                                        "high_school": {
+                                            "type": "boolean"
+                                        },
+                                        "associates_degree": {
+                                            "type": "boolean"
+                                        },
+                                        "bachelors_degree": {
+                                            "type": "boolean"
+                                        },
+                                        "degree_mentioned": {
+                                            "type": "boolean"
+                                        },
+                                        "degree_preferred": {
+                                            "type": "boolean"
+                                        },
+                                        "professional_certification_mentioned": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "job_experience_in_place_of_education": {
+                                    "type": "boolean"
+                                },
+                                "job_min_salary": {
+                                    "type": "null"
+                                },
+                                "job_max_salary": {
+                                    "type": "null"
+                                },
+                                "job_salary_currency": {
+                                    "type": "null"
+                                },
+                                "job_salary_period": {
+                                    "type": "null"
+                                },
+                                "job_highlights": {
+                                    "type": "object",
+                                    "properties": {
+                                        "Qualifications": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "job_job_title": {
+                                    "type": "null"
+                                },
+                                "job_posting_language": {
+                                    "type": "string"
+                                },
+                                "job_onet_soc": {
+                                    "type": "string"
+                                },
+                                "job_onet_job_zone": {
+                                    "type": "string"
+                                },
+                                "job_occupational_categories": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "job_naics_code": {
+                                    "type": "string"
+                                },
+                                "job_naics_name": {
+                                    "type": "string"
+                                },
+                                "estimated_salaries": {
+                                    "type": "array"
+                                },
+                                "apply_options": {
+                                    "type": "array"
+                                },
+                                "employer_reviews": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "publisher": {
+                                                "type": "string"
+                                            },
+                                            "employer_name": {
+                                                "type": "string"
+                                            },
+                                            "score": {
+                                                "type": "number"
+                                            },
+                                            "num_stars": {
+                                                "type": "integer"
+                                            },
+                                            "review_count": {
+                                                "type": "integer"
+                                            },
+                                            "max_score": {
+                                                "type": "integer"
+                                            },
+                                            "reviews_link": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search Filters",
+            "url": "https://jsearch.p.rapidapi.com/search-filters",
+            "description": "Accepts all Search endpoint parameters (except for `page` and `num_pages`) and returns the relevant filters and their estimated result counts for later use in search or for analytics.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Free-form jobs search query. It is highly recommended to include job title and location as part of the query.",
+                    "default": "Python developer in Texas, USA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "[EXPERIMENTAL] Set the language of the results.",
+                    "default": ""
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "[EXPERIMENTAL] The country/region from which to make the query.",
+                    "default": ""
+                },
+                {
+                    "name": "remote_jobs_only",
+                    "type": "BOOLEAN",
+                    "description": "Find remote jobs only (work from home).",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "query": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "categories": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "job_titles": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "company_types": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "employers": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "date_posted": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "employment_types": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "job_requirements": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "est_count": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "url": "https://jsearch.p.rapidapi.com/search",
+            "description": "Search for jobs posted on job sites across the web on the largest job aggregate in the world - Google for Jobs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Free-form jobs search query. It is highly recommended to include job title and location as part of the query.",
+                    "default": "Python developer in Texas, USA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "exclude_job_publishers",
+                    "type": "STRING",
+                    "description": "Exclude jobs published by specific publishers.",
+                    "default": ""
+                },
+                {
+                    "name": "num_pages",
+                    "type": "STRING",
+                    "description": "Number of pages to return, starting from `page`.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "query": {
+                                "type": "string"
+                            },
+                            "page": {
+                                "type": "integer"
+                            },
+                            "num_pages": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

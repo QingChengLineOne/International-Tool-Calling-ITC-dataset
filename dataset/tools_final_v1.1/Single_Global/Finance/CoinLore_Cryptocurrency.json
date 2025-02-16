@@ -1,0 +1,102 @@
+{
+    "tool_name": "CoinLore Cryptocurrency",
+    "tool_description": "Provides cryptocurrency prices, exchanges, and markets API.",
+    "home_url": "https://rapidapi.com/coinlore/api/coinlore-cryptocurrency/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get exchange pairs",
+            "url": "https://coinlore-cryptocurrency.p.rapidapi.com/api/exchange/",
+            "description": "Returns the top 100 exchange pairs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the exchange to retrieve pairs for.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Global crypto stats",
+            "url": "https://coinlore-cryptocurrency.p.rapidapi.com/api/global/",
+            "description": "Get global cryptocurrency statistics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All coins ticker",
+            "url": "https://coinlore-cryptocurrency.p.rapidapi.com/api/tickers/",
+            "description": "Get tickers for all cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "start",
+                    "type": "NUMBER",
+                    "description": "The starting index for the ticker list.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of tickers to return.",
+                    "default": "100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get ticker for specific coin",
+            "url": "https://coinlore-cryptocurrency.p.rapidapi.com/api/ticker/",
+            "description": "Get the ticker information for a specific cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the cryptocurrency to retrieve the ticker for.",
+                    "default": "90"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get exchanges",
+            "url": "https://coinlore-cryptocurrency.p.rapidapi.com/api/exchanges/",
+            "description": "Get a list of all cryptocurrency exchanges.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get markets of coin",
+            "url": "https://coinlore-cryptocurrency.p.rapidapi.com/api/coin/markets/",
+            "description": "Returns the top 50 markets for a specific cryptocurrency.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the cryptocurrency to retrieve market data for.",
+                    "default": "90"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

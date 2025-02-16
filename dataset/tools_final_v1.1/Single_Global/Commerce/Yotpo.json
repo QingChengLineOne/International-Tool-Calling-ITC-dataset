@@ -1,0 +1,43 @@
+{
+    "tool_name": "Yotpo",
+    "tool_description": "Yotpo is an innovative platform that enhances the review process for e-commerce customers, making it a fun and social experience. Users can read and write reviews seamlessly. To get started, sign up for a free account at Yotpo and explore example sites where Yotpo is implemented.",
+    "home_url": "https://rapidapi.com/omrico1/api/yotpo/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Product Reviews",
+            "url": "https://yotpo.p.rapidapi.com/products/B02uug6tF2uEA0Denhj0c9PV73y5PEOuKFmTCGb1/92431514/reviews",
+            "description": "Fetches all reviews for a specific product associated with a given app_key.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Specifies the number of reviews to retrieve.",
+                    "default": "3"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Specifies the page number of reviews to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "app_key",
+                    "type": "STRING",
+                    "description": "Your application key assigned after signing up for Yotpo.",
+                    "default": "B02uug6tF2uEA0Denhj0c9PV73y5PEOuKFmTCGb1"
+                },
+                {
+                    "name": "domain_key",
+                    "type": "STRING",
+                    "description": "Unique identifier of the product as stored when creating the review.",
+                    "default": "92431514"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

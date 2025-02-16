@@ -1,0 +1,38 @@
+{
+    "tool_name": "支付宝到账语音",
+    "tool_description": "输入钱数返回支付宝到账语音",
+    "home_url": "https://api.aa1.cn/doc/zfb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "支付宝到账语音API",
+            "url": "https://api.milorapart.top/test/ai/zfb.php",
+            "description": "通过输入金额，生成支付宝到账语音",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "amount",
+                    "type": "integer",
+                    "description": "交易金额，单位为元",
+                    "default": "0"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "voice_speed",
+                    "type": "integer",
+                    "description": "语音播放速度，1为正常速度，2为慢速，3为快速，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "voice_volume",
+                    "type": "integer",
+                    "description": "语音播放音量，1为正常音量，2为降低音量，3为提高音量，默认为1",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

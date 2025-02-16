@@ -1,0 +1,37 @@
+{
+    "tool_name": "Text Translator",
+    "tool_description": "Translate text to 100+ languages. Fast processing, cost saving. Free up to 100,000 characters per month.",
+    "home_url": "https://rapidapi.com/dickyagustin/api/text-translator2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "translate",
+            "url": "https://text-translator2.p.rapidapi.com/translate",
+            "description": "This endpoint is used to translate text from one language to another using the POST method.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "target_language",
+                    "type": "STRING",
+                    "description": "Target language, filled with supported language codes such as: **en**, **eu**, **id**, and many others.",
+                    "default": "id"
+                },
+                {
+                    "name": "source_language",
+                    "type": "STRING",
+                    "description": "Source language, filled with supported language codes such as: **en**, **eu**, **id**, and many others. You can also set the value '**auto**' if you want the API to detect the language automatically.",
+                    "default": "en"
+                },
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The field must be filled with text content to be translated, maximum 15,000 characters.",
+                    "default": "What is your name?"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "Address Correction and Geocoding",
+    "tool_description": "Postal Address Correction, Validation, Standardization and Geocoding",
+    "home_url": "https://rapidapi.com/YAddress/api/address-correction-and-geocoding-1/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "/address",
+            "url": "https://yurisw-address-correction-and-geocoding.p.rapidapi.com/address",
+            "description": "This API endpoint corrects and validates postal addresses, providing standardized address formats and geocoding information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "AddressLine1",
+                    "type": "STRING",
+                    "description": "First line of address",
+                    "default": "506 Fourth Avenue Unit 1"
+                },
+                {
+                    "name": "AddressLine2",
+                    "type": "STRING",
+                    "description": "Second line of address - city, state, zip.",
+                    "default": "Asbury Prk, NJ"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

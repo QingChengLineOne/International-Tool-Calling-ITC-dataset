@@ -1,0 +1,38 @@
+{
+    "tool_name": "Provinces of Thailand",
+    "tool_description": "An API providing information about the provinces, districts, and subdistricts of Thailand.",
+    "home_url": "https://rapidapi.com/dtanapot/api/provinces-of-thailand/",
+    "country": "Thailand",
+    "api_list": [
+        {
+            "name": "subdistrict",
+            "url": "https://provinces-of-thailand.p.rapidapi.com/subdistrict/",
+            "description": "Retrieve information about subdistricts (ตำบล) in Thailand.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "district",
+            "url": "https://provinces-of-thailand.p.rapidapi.com/district/",
+            "description": "Retrieve information about districts (อำเภอ) in Thailand.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "province",
+            "url": "https://provinces-of-thailand.p.rapidapi.com/province/",
+            "description": "Retrieve information about provinces (จังหวัด) in Thailand.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

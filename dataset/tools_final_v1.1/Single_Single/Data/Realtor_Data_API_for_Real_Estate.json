@@ -1,0 +1,101 @@
+{
+    "tool_name": "Realtor Data API for Real Estate",
+    "tool_description": "Data API for Realtor USA. You can use this API to get all the Realtor Property data, Realtor Agents data, and Realtor School data. Currently, it is from Realtor USA only. Contact me at: vuesdata@gmail.com or visit https://www.vuesdata.com for building custom spiders or custom requests.",
+    "home_url": "https://rapidapi.com/vuesdata/api/realtor-data-api-for-real-estate/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "RealtorPropertyList",
+            "url": "https://realtor-data-api-for-real-estate.p.rapidapi.com/realtor_data/property/",
+            "description": "This endpoint retrieves the Realtor Property List based on the provided city, state code, and offset for pagination.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The state code of the property location.",
+                    "default": "CA"
+                },
+                {
+                    "name": "offset",
+                    "type": "STRING",
+                    "description": "The offset for pagination, starting from 0 and increasing by 42 for each subsequent request.",
+                    "default": "0"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The city where the property is located.",
+                    "default": "San Jose"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "RealtorSchoolList",
+            "url": "https://realtor-data-api-for-real-estate.p.rapidapi.com/realtor_data/schools/",
+            "description": "This endpoint retrieves the Realtor School List based on the provided city, state code, school level, and page number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "school_level",
+                    "type": "STRING",
+                    "description": "The level of the school (elementary, middle, high, private, or charter).",
+                    "default": "elementary"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination, starting from 1.",
+                    "default": "1"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The city where the school is located.",
+                    "default": "San Jose"
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The state code of the school location.",
+                    "default": "CA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "RealtorAgentList",
+            "url": "https://realtor-data-api-for-real-estate.p.rapidapi.com/realtor_data/agents/",
+            "description": "This endpoint retrieves the Realtor Agent List based on the provided city, state code, and page number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination, starting from 1.",
+                    "default": "1"
+                },
+                {
+                    "name": "state_code",
+                    "type": "STRING",
+                    "description": "The state code of the agent's location.",
+                    "default": "CA"
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The city where the agent operates.",
+                    "default": "San Jose"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Directions Routing",
+    "tool_description": "Directions Routing for open street map",
+    "home_url": "https://rapidapi.com/jawakeror/api/directions-routing/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "DirectionAPI",
+            "url": "https://directions-routing.p.rapidapi.com/routing",
+            "description": "Get Direction",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

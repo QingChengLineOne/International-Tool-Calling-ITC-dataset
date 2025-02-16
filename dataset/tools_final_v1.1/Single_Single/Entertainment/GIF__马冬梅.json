@@ -1,0 +1,25 @@
+{
+    "tool_name": "GIF · 马冬梅",
+    "tool_description": "马冬梅表情包",
+    "home_url": "https://api.aa1.cn/doc/mdm.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "GIF · 马冬梅",
+            "url": "https://api.52vmy.cn/api/img/gif/mdm",
+            "description": "获取马冬梅表情包的图片链接",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "表情包的搜索关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

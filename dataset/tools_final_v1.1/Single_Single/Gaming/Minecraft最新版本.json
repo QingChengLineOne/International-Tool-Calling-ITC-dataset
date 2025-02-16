@@ -1,0 +1,18 @@
+{
+    "tool_name": "Minecraft最新版本API",
+    "tool_description": "提供Minecraft游戏最新版本的查询服务",
+    "home_url": "https://api.aa1.cn/doc/mcversion.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Minecraft最新版本查询接口",
+            "url": "https://api.beijing.mingpixel.site/",
+            "description": "查询Minecraft游戏当前最新版本",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

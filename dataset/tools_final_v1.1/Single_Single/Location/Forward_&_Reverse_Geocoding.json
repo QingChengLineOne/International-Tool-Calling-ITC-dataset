@@ -1,0 +1,331 @@
+{
+    "tool_name": "Forward & Reverse Geocoding",
+    "tool_description": "Forward & Reverse Geocoding API. Get address by location or location by address.",
+    "home_url": "https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "ForwardGeocoding",
+            "url": "https://forward-reverse-geocoding.p.rapidapi.com/v1/forward",
+            "description": "Turn an address into latitude and longitude (e.g. to display on a map) by schematic input.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "json_callback",
+                    "type": "STRING",
+                    "description": "Use this with format=json to define a callback function for jsonp.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_kml",
+                    "type": "ENUM",
+                    "description": "KML representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "bounded",
+                    "type": "ENUM",
+                    "description": "Used in conjunction with viewbox to search only in an area.",
+                    "default": ""
+                },
+                {
+                    "name": "addressdetails",
+                    "type": "ENUM",
+                    "description": "Include additional address details in the response.",
+                    "default": ""
+                },
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "City name to search for.",
+                    "default": "New York City"
+                },
+                {
+                    "name": "namedetails",
+                    "type": "ENUM",
+                    "description": "Set this to 1 to receive different spellings in different languages of a returned place. Default is 0.",
+                    "default": ""
+                },
+                {
+                    "name": "countrycodes",
+                    "type": "STRING",
+                    "description": "Two letter country code to restrict area to search in.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "ENUM",
+                    "description": "Limit the number of results returned.",
+                    "default": ""
+                },
+                {
+                    "name": "accept-language",
+                    "type": "STRING",
+                    "description": "Set the query and response language.",
+                    "default": "en"
+                },
+                {
+                    "name": "format",
+                    "type": "ENUM",
+                    "description": "Response format.",
+                    "default": ""
+                },
+                {
+                    "name": "postalcode",
+                    "type": "STRING",
+                    "description": "Postal code to search for.",
+                    "default": "10011"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country name to search in.",
+                    "default": "USA"
+                },
+                {
+                    "name": "county",
+                    "type": "STRING",
+                    "description": "County name to search in.",
+                    "default": ""
+                },
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "State name to search in.",
+                    "default": "NY"
+                },
+                {
+                    "name": "street",
+                    "type": "STRING",
+                    "description": "Street name to search for.",
+                    "default": "34 West 13th Street"
+                },
+                {
+                    "name": "viewbox",
+                    "type": "STRING",
+                    "description": "Restrict search area to a bounded box defined by two coordinates.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_text",
+                    "type": "ENUM",
+                    "description": "Text representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_geojson",
+                    "type": "ENUM",
+                    "description": "GeoJSON representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_threshold",
+                    "type": "NUMBER",
+                    "description": "Threshold for polygon matching.",
+                    "default": "0.0"
+                },
+                {
+                    "name": "polygon_svg",
+                    "type": "ENUM",
+                    "description": "SVG representation of a polygon.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "ReverseGeocoding",
+            "url": "https://forward-reverse-geocoding.p.rapidapi.com/v1/reverse",
+            "description": "Find address or place by latitude and longitude.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "-87.6244212"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "41.8755616"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "json_callback",
+                    "type": "STRING",
+                    "description": "Name of json callback function for jsonp calls.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_geojson",
+                    "type": "ENUM",
+                    "description": "GeoJSON representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "ENUM",
+                    "description": "Limit the number of results returned.",
+                    "default": ""
+                },
+                {
+                    "name": "accept-language",
+                    "type": "STRING",
+                    "description": "Set the response language.",
+                    "default": "en"
+                },
+                {
+                    "name": "polygon_kml",
+                    "type": "ENUM",
+                    "description": "KML representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "zoom",
+                    "type": "ENUM",
+                    "description": "Zoom level for the response.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_svg",
+                    "type": "ENUM",
+                    "description": "SVG representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "addressdetails",
+                    "type": "ENUM",
+                    "description": "Include additional address details in the response.",
+                    "default": ""
+                },
+                {
+                    "name": "namedetails",
+                    "type": "ENUM",
+                    "description": "Include different spellings in different languages.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_threshold",
+                    "type": "NUMBER",
+                    "description": "Threshold for polygon matching.",
+                    "default": "0.0"
+                },
+                {
+                    "name": "format",
+                    "type": "ENUM",
+                    "description": "Response format.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_text",
+                    "type": "ENUM",
+                    "description": "Text representation of a polygon.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GeocodingSearch",
+            "url": "https://forward-reverse-geocoding.p.rapidapi.com/v1/search",
+            "description": "Free-form query forward geocoding.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query for geocoding.",
+                    "default": "New York City NY USA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "countrycodes",
+                    "type": "STRING",
+                    "description": "Two-letter country code to restrict search to a country.",
+                    "default": ""
+                },
+                {
+                    "name": "json_callback",
+                    "type": "STRING",
+                    "description": "Name of json callback function for jsonp calls.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_text",
+                    "type": "ENUM",
+                    "description": "Text representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "namedetails",
+                    "type": "ENUM",
+                    "description": "Include different spellings in different languages.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "ENUM",
+                    "description": "Limit the number of results returned.",
+                    "default": ""
+                },
+                {
+                    "name": "viewbox",
+                    "type": "STRING",
+                    "description": "Restrict search area to a bounded box defined by two coordinates.",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "ENUM",
+                    "description": "Response format.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_geojson",
+                    "type": "ENUM",
+                    "description": "GeoJSON representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "bounded",
+                    "type": "ENUM",
+                    "description": "Use bounded=1 in conjunction with viewbox to restrict search area.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_svg",
+                    "type": "ENUM",
+                    "description": "SVG representation of a polygon.",
+                    "default": ""
+                },
+                {
+                    "name": "polygon_threshold",
+                    "type": "NUMBER",
+                    "description": "Threshold for polygon matching.",
+                    "default": "0.0"
+                },
+                {
+                    "name": "accept-language",
+                    "type": "STRING",
+                    "description": "Set the query and response language.",
+                    "default": "en"
+                },
+                {
+                    "name": "addressdetails",
+                    "type": "ENUM",
+                    "description": "Include additional address details in the response.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "梦想解释器",
+    "tool_description": "提供有关用户梦想的AI解释服务",
+    "home_url": "https://api.aa1.cn/doc/dreamexplain.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "梦想解释API",
+            "url": "https://api.pearktrue.cn/api/dream/",
+            "description": "通过提供用户的梦想描述，获取AI解释",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "用户梦想的描述文本",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

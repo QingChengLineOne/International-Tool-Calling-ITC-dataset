@@ -1,0 +1,25 @@
+{
+    "tool_name": "每日一言(新版数据)",
+    "tool_description": "新版数据用每日一言,使用Spring Boot开发",
+    "home_url": "https://api.aa1.cn/doc/szx-daily-wisdom.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "每日一言获取接口",
+            "url": "https://api.songzixian.com/api/daily-wisdom",
+            "description": "获取每日一言的数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源标识，指定为LOCAL_DAILY_WORD获取本地数据",
+                    "default": "LOCAL_DAILY_WORD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

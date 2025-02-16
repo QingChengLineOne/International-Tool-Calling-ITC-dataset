@@ -1,0 +1,25 @@
+{
+    "tool_name": "图像CDN加速",
+    "tool_description": "加速用户输入的url链接，提供更快的图片加载速度",
+    "home_url": "https://api.aa1.cn/doc/imageaccelerate.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图像CDN加速API",
+            "url": "https://api.pearktrue.cn/api/imageaccelerate/",
+            "description": "用于加速用户输入的图片URL，提高图片加载速度",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要加速的图片URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

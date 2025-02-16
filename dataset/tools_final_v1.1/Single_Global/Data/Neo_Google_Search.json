@@ -1,0 +1,161 @@
+{
+    "tool_name": "Neo Google Search",
+    "tool_description": "API used to retrieve data from Google search results in real time. Supports both web search and image search.",
+    "home_url": "https://rapidapi.com/neoscrap-net/api/neo-google-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Web Search",
+            "url": "https://neo-google-search.p.rapidapi.com/search",
+            "description": "This endpoint is used for performing web searches.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query to be executed.",
+                    "default": "New York"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lr",
+                    "type": "STRING",
+                    "description": "Restricts the search to documents written in a specific language.",
+                    "default": "lang_en"
+                },
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Boosts search results whose country of origin matches the specified two-letter country code.",
+                    "default": "US"
+                },
+                {
+                    "name": "num",
+                    "type": "NUMBER",
+                    "description": "Specifies the number of search results to return. Valid values are integers between 1 and 20, inclusive.",
+                    "default": "10"
+                },
+                {
+                    "name": "start",
+                    "type": "NUMBER",
+                    "description": "The index of the first result to return.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "htmlTitle": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "displayLink": {
+                                    "type": "string"
+                                },
+                                "snippet": {
+                                    "type": "string"
+                                },
+                                "htmlSnippet": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Image Search",
+            "url": "https://neo-google-search.p.rapidapi.com/imagesearch",
+            "description": "This endpoint is used for performing image searches.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query to be executed.",
+                    "default": "New York"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Boosts search results whose country of origin matches the specified two-letter country code.",
+                    "default": "US"
+                },
+                {
+                    "name": "lr",
+                    "type": "STRING",
+                    "description": "Restricts the search to documents written in a specific language.",
+                    "default": "lang_en"
+                },
+                {
+                    "name": "start",
+                    "type": "NUMBER",
+                    "description": "The index of the first result to return.",
+                    "default": "0"
+                },
+                {
+                    "name": "num",
+                    "type": "NUMBER",
+                    "description": "Specifies the number of search results to return. Valid values are integers between 1 and 20, inclusive.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "thumbnailImageUrl": {
+                                    "type": "string"
+                                },
+                                "originalImageUrl": {
+                                    "type": "string"
+                                },
+                                "height": {
+                                    "type": "integer"
+                                },
+                                "width": {
+                                    "type": "integer"
+                                },
+                                "size": {
+                                    "type": "string"
+                                },
+                                "contextLink": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "工作日判断API",
+    "tool_description": "根据日期判断是否为工作日的API",
+    "home_url": "https://api.aa1.cn/doc/isworkday.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "工作日判断接口",
+            "url": "https://api.liangmlk.cn/k780/aapi.php",
+            "description": "判断给定日期是否为工作日",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "app",
+                    "type": "string",
+                    "description": "API应用标识",
+                    "default": "life.workday"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "要判断的日期，格式为YYYY-MM-DD",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

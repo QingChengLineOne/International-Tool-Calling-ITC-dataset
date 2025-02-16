@@ -1,0 +1,55 @@
+{
+    "tool_name": "Celebrity by API-Ninjas",
+    "tool_description": "Get information on all your favorite celebrities, including their height, net worth, and nationality.",
+    "home_url": "https://rapidapi.com/apininjas/api/celebrity-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/celebrity",
+            "url": "https://celebrity-by-api-ninjas.p.rapidapi.com/v1/celebrity",
+            "description": "API Ninjas Celebrity API endpoint for retrieving celebrity information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the celebrity you wish to search. This field is case-insensitive.",
+                    "default": "Michael Jordan"
+                },
+                {
+                    "name": "min_height",
+                    "type": "STRING",
+                    "description": "Minimum height of celebrities in meters (e.g. **1.65**).",
+                    "default": ""
+                },
+                {
+                    "name": "min_net_worth",
+                    "type": "NUMBER",
+                    "description": "Minimum net worth of celebrities.",
+                    "default": ""
+                },
+                {
+                    "name": "nationality",
+                    "type": "STRING",
+                    "description": "Nationality of celebrities. Must be an ISO 3166 Alpha-2 country code (e.g. **US**).",
+                    "default": ""
+                },
+                {
+                    "name": "max_net_worth",
+                    "type": "NUMBER",
+                    "description": "Maximum net worth of celebrities.",
+                    "default": ""
+                },
+                {
+                    "name": "max_height",
+                    "type": "STRING",
+                    "description": "Maximum height of celebrities in meters (e.g. **1.80**).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

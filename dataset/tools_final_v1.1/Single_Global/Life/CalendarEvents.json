@@ -1,0 +1,32 @@
+{
+    "tool_name": "CalendarEvents",
+    "tool_description": "Retrieve Google Calendar Events from a public calendar",
+    "home_url": "https://rapidapi.com/fraigo/api/calendarevents/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Calendar Events",
+            "url": "https://calendarevents.p.rapidapi.com/calendar/{src}/{months}",
+            "description": "This API allows users to retrieve events from a specified public Google Calendar.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "src",
+                    "type": "string",
+                    "description": "Calendar ID (ending in `@group.calendar.google.com`). You can find it in the `src` parameter of the embed URL.",
+                    "default": "a212edcb509733e73dca4ef55f447980c6b2b5db055aaa46bf3fda05f3c6e452@group.calendar.google.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "months",
+                    "type": "NUMBER",
+                    "description": "Number of months of events to retrieve. Default is `2`. Max is `12`.",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

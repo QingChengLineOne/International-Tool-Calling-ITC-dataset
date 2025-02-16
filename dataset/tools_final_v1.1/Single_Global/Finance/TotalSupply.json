@@ -1,0 +1,25 @@
+{
+    "tool_name": "TotalSupply",
+    "tool_description": "Retrieves the total supply of the LEAF token.",
+    "home_url": "https://rapidapi.com/leafdefi/api/totalsupply/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "totlSupply",
+            "url": "https://totalsupply.p.rapidapi.com/",
+            "description": "Gets the total supply of the LEAF token.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "result": {
+                        "type": "string"
+                    }
+                },
+                "type": "number"
+            }
+        }
+    ]
+}

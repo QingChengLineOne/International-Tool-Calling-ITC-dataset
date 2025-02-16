@@ -1,0 +1,44 @@
+{
+    "tool_name": "生活指数-免费API",
+    "tool_description": "提供洗车、穿衣、感冒、运动、旅行、紫外线等生活指数建议",
+    "home_url": "https://www.free-api.com/doc/560",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "生活指数建议",
+            "url": "https://api.seniverse.com/v3/life/suggestion.json",
+            "description": "提供洗车、穿衣、感冒、运动、旅行、紫外线等生活指数建议",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "SCYrvkytJze9qyzOh"
+                },
+                {
+                    "name": "location",
+                    "type": "string",
+                    "description": "所查询的位置",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "string",
+                    "description": "语言，默认zh-Hans",
+                    "default": "zh-Hans"
+                },
+                {
+                    "name": "unit",
+                    "type": "string",
+                    "description": "单位，默认c",
+                    "default": "c"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "ShayShay",
+    "tool_description": "A free REST API for random Shannon Sharpe quotes.",
+    "home_url": "https://rapidapi.com/burliEnterprises/api/shayshay/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Random quote",
+            "url": "https://shayshay.p.rapidapi.com/random",
+            "description": "This endpoint retrieves a random Shannon Sharpe quote. The quote is generic and not categorized.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Specifies the number of quotes to return.",
+                    "default": "3"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

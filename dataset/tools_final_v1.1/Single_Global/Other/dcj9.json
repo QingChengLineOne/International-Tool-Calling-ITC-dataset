@@ -1,0 +1,25 @@
+{
+    "tool_name": "dcj9",
+    "tool_description": "dcj9-unh",
+    "home_url": "https://rapidapi.com/dcj9-3d5AaGECEQ/api/dcj9/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "dcj9_test",
+            "url": "https://dcj9.p.rapidapi.com/",
+            "description": "This API endpoint is used for testing the dcj9 functionality.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "get_test",
+                    "type": "STRING",
+                    "description": "An optional parameter to specify the test to be retrieved.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

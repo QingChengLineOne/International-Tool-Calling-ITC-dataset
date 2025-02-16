@@ -1,0 +1,205 @@
+{
+    "tool_name": "Print your own labels and stickers",
+    "tool_description": "Help your customers print their own labels and stickers, from your own website and under your own branding.",
+    "home_url": "https://rapidapi.com/ecardify-ecardify-default/api/print-your-own-labels-and-stickers/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Label templates",
+            "url": "https://print-your-own-labels-and-stickers.p.rapidapi.com/labels/{format}",
+            "description": "Retrieve a list of label templates filtered by parameters such as paper format, template brand, exact or approximate label size, and label shape.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "The paper format, either 'Letter' (8.5 inch by 11 inch) or 'A4' (210 mm by 297 mm).",
+                    "default": "letter"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "brand",
+                    "type": "STRING",
+                    "description": "The name of the label manufacturer. Possible values include Avery, Herma, Onlinelabels, Uline, Megastar, and Sheetlabels.",
+                    "default": "avery"
+                },
+                {
+                    "name": "height",
+                    "type": "STRING",
+                    "description": "The height of the label.",
+                    "default": ""
+                },
+                {
+                    "name": "code",
+                    "type": "STRING",
+                    "description": "Represents average label sizes in the format [width]x[height]. For example, '2.5x4' or '70x40'.",
+                    "default": "2x2"
+                },
+                {
+                    "name": "width",
+                    "type": "STRING",
+                    "description": "The width of the label.",
+                    "default": ""
+                },
+                {
+                    "name": "shape",
+                    "type": "STRING",
+                    "description": "The shape of the label. Valid values are square, rectangle, circle, and oval.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Print on dynamically generated label templates",
+            "url": "https://print-your-own-labels-and-stickers.p.rapidapi.com/labels",
+            "description": "Generates a PDF file containing the printout of labels based on the provided label layout dimensions and content.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "rightMargin",
+                    "type": "NUMBER",
+                    "description": "Distance from the right edge of the paper to the right edge of the last column of labels, measured in inches (for Letter) or millimeters (for A4).",
+                    "default": "8"
+                },
+                {
+                    "name": "labelHeight",
+                    "type": "NUMBER",
+                    "description": "The height of the label, measured in inches (for Letter) or millimeters (for A4).",
+                    "default": "33"
+                },
+                {
+                    "name": "number",
+                    "type": "NUMBER",
+                    "description": "The total number of labels to print.",
+                    "default": "40"
+                },
+                {
+                    "name": "bottomMargin",
+                    "type": "NUMBER",
+                    "description": "Distance from the bottom edge of the paper to the bottom edge of the last row of labels.",
+                    "default": "9.5"
+                },
+                {
+                    "name": "topMargin",
+                    "type": "NUMBER",
+                    "description": "Distance from the top edge of the paper to the top edge of the first row of labels.",
+                    "default": "9.5"
+                },
+                {
+                    "name": "templateCode",
+                    "type": "STRING",
+                    "description": "The paper format for generating the label layout template. Valid values are 'A4' and 'Letter'.",
+                    "default": "A4"
+                },
+                {
+                    "name": "leftMargin",
+                    "type": "NUMBER",
+                    "description": "Distance from the left edge of the paper to the left edge of the first column of labels.",
+                    "default": "8"
+                },
+                {
+                    "name": "labelWidth",
+                    "type": "NUMBER",
+                    "description": "The width of the label, measured in inches (for Letter) or millimeters (for A4).",
+                    "default": "33"
+                },
+                {
+                    "name": "labelContent",
+                    "type": "STRING",
+                    "description": "The URL of the image to be printed on the labels.",
+                    "default": "https://ecardify.io/images/iam/video-audio-reviews.jpg"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "heightRatio",
+                    "type": "NUMBER",
+                    "description": "Percentage of label height occupied by the printed image. Default is 80%. Minimum is 40%, maximum is 95%.",
+                    "default": ""
+                },
+                {
+                    "name": "marker",
+                    "type": "NUMBER",
+                    "description": "Markers for ensuring centered printing. Possible values are 0 (no markers), 1 (dots), 2 (crosses), 3 (lines).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Label shapes",
+            "url": "https://print-your-own-labels-and-stickers.p.rapidapi.com/labelShapes/{format}",
+            "description": "Retrieve a list of available label shapes based on the specified paper format.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "The paper format, either 'Letter' or 'A4'.",
+                    "default": "a4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "brand",
+                    "type": "STRING",
+                    "description": "The name of the label manufacturer. Possible values include Avery, Herma, Onlinelabels, Uline, Megastar, and Sheetlabels.",
+                    "default": "Megastar"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Label sizes",
+            "url": "https://print-your-own-labels-and-stickers.p.rapidapi.com/labelSizes/{format}",
+            "description": "Returns a list of label sizes in the format [width]x[height]. Sizes are rounded to represent close variations.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "The paper format, either 'Letter' or 'A4'.",
+                    "default": "letter"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "shape",
+                    "type": "STRING",
+                    "description": "The shape of the label.",
+                    "default": "square"
+                },
+                {
+                    "name": "brand",
+                    "type": "STRING",
+                    "description": "The name of the label manufacturer. Possible values include Avery, Herma, Onlinelabels, Uline, Megastar, and Sheetlabels.",
+                    "default": "avery"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Label template brands",
+            "url": "https://print-your-own-labels-and-stickers.p.rapidapi.com/labelBrands/{format}",
+            "description": "Returns a list of blank label sheet brands supported by Ecardify. If your preferred brand is missing, please let us know.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "The paper format, either 'Letter' or 'A4'.",
+                    "default": "a4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

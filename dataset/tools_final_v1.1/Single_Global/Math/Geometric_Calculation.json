@@ -1,0 +1,168 @@
+{
+    "tool_name": "Geometric Calculation",
+    "tool_description": "Contains collections of geometric algorithms such as Minkovski, Polygon operations, Polygon Collision with Circle, Delaunay Triangulation, Voronoi Diagram, Polyline Simplification, and more.",
+    "home_url": "https://rapidapi.com/phinguyen/api/geometric-calculation/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Polygon Triangulation",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polygontriangulation",
+            "description": "Decompose a polygon into a set of triangles.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Rectangle Max Empty",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/rectanglemaxempty",
+            "description": "Given a rectangle A and a set S of n points in A, find a largest-area rectangle which is contained in A, has its sides parallel to those of A, and does not contain any of the points in S.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Segment Intersect",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/intersect2segments",
+            "description": "Detect where 2 line segments intersect.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Rectangle Packing",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/rectanglepacking",
+            "description": "Given a bunch of rectangular objects which to pack into the smallest space possible.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Minkowski Diff",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/minkowskidiff",
+            "description": "The Minkowski difference of two 2D shapes is the shape produced when subtracting every point on one shape from every point on the other shape.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Minkowski Sum",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/minkowskisum",
+            "description": "The Minkowski sum of two 2D shapes is formed by adding each point on one shape to each point in the other shape.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon Overlap",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polygonoverlap",
+            "description": "Find overlapping polygons.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon Combine",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polygoncombine",
+            "description": "Find combining polygons.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon Outer Offset",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polygonouteroffset",
+            "description": "Compute the offset region of a polygon by shifting the boundary outwards by a specified distance.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon Inner Offset",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polygoninneroffset",
+            "description": "Compute the offset region of a polygon by shifting the boundary inwards by a specified distance.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon Partition",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polygonpartion",
+            "description": "Decompose a polygon into a set of sub polygons such that the interiors of the sub polygons do not intersect and the union of the sub polygons is equal to the interior of the original polygon.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polyline Simplification",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/polylinesimplyfication",
+            "description": "Reduce the resolution of a polyline by removing vertices and edges, while maintaining a good approximation of the original curve.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Delaunay Triangulation",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/delaunaytriangulation",
+            "description": "Given a point set, find the set of edges satisfying a property: for each edge we can find a circle containing the edge's endpoints but not containing any other points.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Voronoi Diagram",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/voronoidiagram",
+            "description": "Given a collection of points, find a partition of space into cells, each of which consists of the points closer to one particular cell than to any others.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Largest Empty Circle",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/largestemptycircle",
+            "description": "Find a circle of largest radius in the plane whose interior does not overlap with any given points.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Is Convex Polygon",
+            "url": "https://geometric-calculation.p.rapidapi.com/geometric/isconvexpolygon",
+            "description": "Check if a polygon has all its interior angles less than 180°.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

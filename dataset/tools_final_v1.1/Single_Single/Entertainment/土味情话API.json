@@ -1,0 +1,32 @@
+{
+    "tool_name": "土味情话API",
+    "tool_description": "获取土味情话，支持指定返回格式",
+    "home_url": "https://www.free-api.com/doc/374",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "土味情话",
+            "url": "https://v2.alapi.cn/api/qinghua",
+            "description": "获取土味情话",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "LwExDtUWhF3rH5ib"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回格式，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

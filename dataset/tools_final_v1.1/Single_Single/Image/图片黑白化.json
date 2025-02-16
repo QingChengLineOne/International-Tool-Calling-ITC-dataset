@@ -1,0 +1,25 @@
+{
+    "tool_name": "图片黑白化API",
+    "tool_description": "将传入的图片黑白化",
+    "home_url": "https://api.aa1.cn/doc/ib.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图片黑白化接口",
+            "url": "https://api.mg-tool.cn/v1/color-to-black/",
+            "description": "提供将图片黑白化的API服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "image",
+                    "type": "string",
+                    "description": "需要黑白化的图片的URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

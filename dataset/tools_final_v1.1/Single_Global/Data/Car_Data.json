@@ -1,0 +1,86 @@
+{
+    "tool_name": "Car Data",
+    "tool_description": "Use this API to pull relevant automobile data such as the car make, model, type, and year.",
+    "home_url": "https://rapidapi.com/principalapis/api/car-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Cars",
+            "url": "https://car-data.p.rapidapi.com/cars",
+            "description": "Retrieve and filter lists of cars based on various parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number of the results to retrieve.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The number of results to return per page.",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "make",
+                    "type": "STRING",
+                    "description": "The manufacturer of the car.",
+                    "default": ""
+                },
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "The year the car was manufactured.",
+                    "default": ""
+                },
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "The specific model of the car.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of the car (e.g., SUV, Sedan).",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Types",
+            "url": "https://car-data.p.rapidapi.com/cars/types",
+            "description": "Get a list of supported car types.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Makes",
+            "url": "https://car-data.p.rapidapi.com/cars/makes",
+            "description": "Get a list of supported car makes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Years",
+            "url": "https://car-data.p.rapidapi.com/cars/years",
+            "description": "Get a list of supported car manufacturing years.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

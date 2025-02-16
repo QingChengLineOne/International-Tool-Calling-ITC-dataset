@@ -1,0 +1,38 @@
+{
+    "tool_name": "文件上传API",
+    "tool_description": "允许用户上传任意大小和类型的文档到服务器，存储在云存储空间中，上传成功后返回云链接，方便用户进行云访问。",
+    "home_url": "https://api.aa1.cn/doc/upload-api.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文件上传接口",
+            "url": "https://d6hqs7.lafyun.com:443/upload",
+            "description": "用于上传文件并获取云链接的服务接口。",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "file",
+                    "type": "file",
+                    "description": "需要上传的文件内容。",
+                    "default": ""
+                },
+                {
+                    "name": "filename",
+                    "type": "string",
+                    "description": "上传文件的名称。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "overwrite",
+                    "type": "boolean",
+                    "description": "是否覆盖同名文件，默认为false。",
+                    "default": false
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

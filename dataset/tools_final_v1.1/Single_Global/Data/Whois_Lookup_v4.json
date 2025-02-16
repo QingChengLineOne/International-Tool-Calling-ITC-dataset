@@ -1,0 +1,280 @@
+{
+    "tool_name": "Whois Lookup_v4",
+    "tool_description": "WHOIS API (v1) returns well-parsed WHOIS records with fields in JSON formats for any domain name.",
+    "home_url": "https://rapidapi.com/peekdomainapi/api/whois-lookup7/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "newlyRegisteredDomains",
+            "url": "https://whois-lookup7.p.rapidapi.com/api/newly-registered-domains",
+            "description": "REST API to lookup newly registered domains.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "exclude",
+                    "type": "STRING",
+                    "description": "Exclude keywords of domain to be searched.",
+                    "default": ""
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Registered date of domain to be searched.",
+                    "default": "2023-06-12"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Page of domain to be searched.",
+                    "default": 1
+                },
+                {
+                    "name": "keywords",
+                    "type": "STRING",
+                    "description": "Contains keywords of domain to be searched.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "whois",
+            "url": "https://whois-lookup7.p.rapidapi.com/api/whois",
+            "description": "REST API to WhoIS lookup data.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "Domain name of WhoIS to be searched.",
+                    "default": "peekdomain.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "registrationDate": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "registrarAbuseContactEmail": {
+                        "type": "string"
+                    },
+                    "registrarAbuseContactPhone": {
+                        "type": "string"
+                    },
+                    "domainInfo": {
+                        "type": "object",
+                        "properties": {
+                            "domainId": {
+                                "type": "string"
+                            },
+                            "registrar": {
+                                "type": "string"
+                            },
+                            "registrarName": {
+                                "type": "string"
+                            },
+                            "registrarWhoIsServer": {
+                                "type": "string"
+                            },
+                            "registrarUrl": {
+                                "type": "string"
+                            },
+                            "registrarIanaId": {
+                                "type": "string"
+                            },
+                            "creationDate": {
+                                "type": "string",
+                                "format": "date-time"
+                            },
+                            "updatedDate": {
+                                "type": "string",
+                                "format": "date-time"
+                            },
+                            "expirationDate": {
+                                "type": "string",
+                                "format": "date-time"
+                            },
+                            "domainStatus": {
+                                "uniqueItems": true,
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "nameServers": {
+                                "uniqueItems": true,
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "dnsSec": {
+                                "type": "string"
+                            },
+                            "reseller": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "registrantContact": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "organization": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "postalCode": {
+                                "type": "string"
+                            },
+                            "country": {
+                                "type": "string"
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "fax": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "adminContact": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "organization": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "postalCode": {
+                                "type": "string"
+                            },
+                            "country": {
+                                "type": "string"
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "fax": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "techContact": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "organization": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "postalCode": {
+                                "type": "string"
+                            },
+                            "country": {
+                                "type": "string"
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "fax": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "emailValidation",
+            "url": "https://whois-lookup7.p.rapidapi.com/api/email-validation",
+            "description": "Clean your email list database with our free email checker and verifier.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email to be verified.",
+                    "default": "info@peekdomain.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "checkDisposableEmail",
+            "url": "https://whois-lookup7.p.rapidapi.com/api/disposable",
+            "description": "REST API to lookup disposable email.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "Email to check if it is disposable.",
+                    "default": "info@peekdomain.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        }
+    ]
+}

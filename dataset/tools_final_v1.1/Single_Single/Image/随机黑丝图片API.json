@@ -1,0 +1,25 @@
+{
+    "tool_name": "随机黑丝图片API",
+    "tool_description": "随机返回一张黑丝图片",
+    "home_url": "https://api.aa1.cn/doc/heisi-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机黑丝图片接口",
+            "url": "https://v2.api-m.com/api/heisi",
+            "description": "用于获取随机黑丝图片的API接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "return",
+                    "type": "int",
+                    "description": "可选参数，用于指定返回图片的数量，默认为1",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "每日一句英语API",
+    "tool_description": "提供每日一句英语，鼓励用户每天学习新知识",
+    "home_url": "https://api.aa1.cn/doc/dayword.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "每日一句英语",
+            "url": "https://api.oioweb.cn/api/common/OneDayEnglish",
+            "description": "获取每日一句英语的接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

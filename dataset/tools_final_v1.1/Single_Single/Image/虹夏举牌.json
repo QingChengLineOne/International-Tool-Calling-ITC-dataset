@@ -1,0 +1,38 @@
+{
+    "tool_name": "虹夏举牌",
+    "tool_description": "输入文字，生成一张虹夏举牌的图片",
+    "home_url": "https://api.aa1.cn/doc/hxjp-s1f.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "虹夏举牌API",
+            "url": "https://api.s1f.top/meme/nijikajupai",
+            "description": "生成虹夏举牌图片的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要生成的虹夏举牌图片中的文字内容",
+                    "default": "默认文字"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "文字颜色，默认为黑色",
+                    "default": "black"
+                },
+                {
+                    "name": "background_color",
+                    "type": "string",
+                    "description": "背景颜色，默认为白色",
+                    "default": "white"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

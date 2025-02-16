@@ -1,0 +1,18 @@
+{
+    "tool_name": "Keyword Generation",
+    "tool_description": "Generate number of keywords from given input text.",
+    "home_url": "https://rapidapi.com/ArdicAITeam/api/keyword-generation/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Keywords From Input",
+            "url": "https://keyword-generation.p.rapidapi.com/get_keywords",
+            "description": "Generate keywords for text input.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

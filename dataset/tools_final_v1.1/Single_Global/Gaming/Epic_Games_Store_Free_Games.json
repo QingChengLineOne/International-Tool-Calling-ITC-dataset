@@ -1,0 +1,25 @@
+{
+    "tool_name": "Epic Games Store - Free Games",
+    "tool_description": "Unofficial API for scraping Free Games Offers from the Epic Games Store.",
+    "home_url": "https://rapidapi.com/pyuser/api/epic-games-store-free-games/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Free Games",
+            "url": "https://epic-games-store-free-games.p.rapidapi.com/free",
+            "description": "Returns all free games currently on offer on the Epic Games Store, including upcoming free games.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code for local offers. E.g., ES for Spain, DE for Germany, US for United States. Defaults to US.",
+                    "default": "US"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

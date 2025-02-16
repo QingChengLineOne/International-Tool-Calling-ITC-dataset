@@ -1,0 +1,38 @@
+{
+    "tool_name": "城市查询",
+    "tool_description": "免费API数据接口调用服务平台",
+    "home_url": "https://api.qqsuu.cn/doc/dm-citylookup.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "城市查询",
+            "url": "https://api.qqsuu.cn/api/dm-citylookup",
+            "description": "根据地区名称查询城市的详细信息，包括地区类型、地区ID、地区名称等",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "area",
+                    "type": "String",
+                    "description": "地区名称，中文",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "返回数量，取值1-50",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "翻页",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

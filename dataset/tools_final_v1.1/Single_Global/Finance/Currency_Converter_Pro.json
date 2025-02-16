@@ -1,0 +1,71 @@
+{
+    "tool_name": "Currency Converter Pro",
+    "tool_description": "Accurate and Reliable Data for 170 World Currencies. Exchange rates are updated every hour.",
+    "home_url": "https://rapidapi.com/Dezento/api/currency-converter-pro1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Latest Rates",
+            "url": "https://currency-converter-pro1.p.rapidapi.com/latest-rates",
+            "description": "Fetch real-time exchange rate data for 170 world currencies, updated every 10 minutes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "The base currency for which the exchange rates are requested.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currencies",
+                    "type": "STRING",
+                    "description": "Comma-separated list of individual currencies for faster response. Example: EUR,RSD,AUD,CAD",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Currencies",
+            "url": "https://currency-converter-pro1.p.rapidapi.com/currencies",
+            "description": "Retrieve a list of all supported currencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Convert Currency",
+            "url": "https://currency-converter-pro1.p.rapidapi.com/convert",
+            "description": "Convert any specified amount from one currency to another.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The amount of money to convert.",
+                    "default": "100"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The currency code to convert from.",
+                    "default": "USD"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The currency code to convert to.",
+                    "default": "EUR"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

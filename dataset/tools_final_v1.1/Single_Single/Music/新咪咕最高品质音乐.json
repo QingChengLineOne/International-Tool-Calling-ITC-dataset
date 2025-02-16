@@ -1,0 +1,32 @@
+{
+    "tool_name": "[新]咪咕最高品质音乐",
+    "tool_description": "提供咪咕付费高品歌曲，支持24bit至臻-SQ无损-HQ高品-PQ标准音质",
+    "home_url": "https://api.aa1.cn/doc/migu_24bit.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "[新]咪咕最高品质音乐",
+            "url": "https://www.hhlqilongzhu.cn/api/dg_mgmusic_24bit.php",
+            "description": "获取咪咕付费高品歌曲的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "搜索的歌曲名称或艺术家",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "n",
+                    "type": "int",
+                    "description": "可选参数，用于分页，默认为1",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

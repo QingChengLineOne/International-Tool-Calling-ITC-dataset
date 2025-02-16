@@ -1,0 +1,32 @@
+{
+    "tool_name": "KFC locations",
+    "tool_description": "Get the list of all KFC locations.",
+    "home_url": "https://rapidapi.com/ronhartman/api/kfc-locations1/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get by Id",
+            "url": "https://kfc-locations1.p.rapidapi.com/{id}",
+            "description": "Retrieve details of a specific KFC location by its unique identifier.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the KFC location.",
+                    "default": "kfc62790694"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the KFC location (optional, same as required).",
+                    "default": "kfc62790694"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

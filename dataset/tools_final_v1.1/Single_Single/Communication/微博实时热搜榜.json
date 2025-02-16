@@ -1,0 +1,18 @@
+{
+    "tool_name": "微博实时热搜榜API",
+    "tool_description": "获取微博实时热搜榜的数据接口",
+    "home_url": "https://api.aa1.cn/doc/weiboHotSearch.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "微博实时热搜榜",
+            "url": "https://www.haotechs.cn/ljh-wx/api/weiboHot",
+            "description": "返回微博实时热搜榜的数据",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

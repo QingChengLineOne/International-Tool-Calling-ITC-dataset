@@ -1,0 +1,25 @@
+{
+    "tool_name": "English Dictionary API",
+    "tool_description": "An API for querying the dictionary meanings of English words",
+    "home_url": "https://api.aa1.cn/doc/englishword.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "English Dictionary API",
+            "url": "https://api.pearktrue.cn/api/word/english/parse.php",
+            "description": "Query the dictionary meaning of an English word",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "The English word to be queried",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

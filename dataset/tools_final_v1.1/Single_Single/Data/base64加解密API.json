@@ -1,0 +1,54 @@
+{
+    "tool_name": "base64加解密API",
+    "tool_description": "提供base64加密与解密服务的API",
+    "home_url": "https://api.aa1.cn/doc/base64-api-m.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "base64加密API",
+            "url": "https://v2.api-m.com/api/base64",
+            "description": "用于将文本转换为base64编码",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "操作类型，'encode'表示加密，'decode'表示解密",
+                    "default": "encode"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要加密或解密的文本",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "base64解密API",
+            "url": "https://v2.api-m.com/api/base64",
+            "description": "用于将base64编码的文本解密回原始文本",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "操作类型，'encode'表示加密，'decode'表示解密",
+                    "default": "encode"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要加密或解密的文本",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

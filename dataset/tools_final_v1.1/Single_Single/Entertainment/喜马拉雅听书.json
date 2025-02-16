@@ -1,0 +1,25 @@
+{
+    "tool_name": "喜马拉雅听书",
+    "tool_description": "可搜索喜马拉雅获取免费音频",
+    "home_url": "https://api.aa1.cn/doc/ximalaya_tingshu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "喜马拉雅听书搜索接口",
+            "url": "https://www.hhlqilongzhu.cn/api/ximalaya/ximalaya.php",
+            "description": "通过关键词搜索喜马拉雅上的音频内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "要搜索的音频名称或关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

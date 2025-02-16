@@ -1,0 +1,44 @@
+{
+    "tool_name": "文字识别OCR",
+    "tool_description": "通用图片识别OCR服务，支持快速识别图片中的文字内容，每分钟可调用60次，超过频率限制可能被封IP。",
+    "home_url": "https://api.aa1.cn/doc/tulingyun_ocr.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文字识别OCR接口",
+            "url": "https://www.tulingyun.com/api/ocr",
+            "description": "用于发送图片进行文字识别的API接口",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "www.tulingyun.com"
+                },
+                {
+                    "name": "upfile_b64",
+                    "type": "string",
+                    "description": "使用base64编码图片文件",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "return_text",
+                    "type": "int",
+                    "description": "识别到多处文字时的拼接符号，0为不拼接，返回list，1为用空格拼接，2为换行拼接，默认为0，注意：此值为1或2时只返回纯识别文本，无位置信息",
+                    "default": ""
+                },
+                {
+                    "name": "only_rec",
+                    "type": "int",
+                    "description": "是否为单行文本，0为普通识别模式，1为单行文本识别，默认为0。注意：单行文本使用1时识别更准确，但要求请求图片必须为单行，否则无法识别。",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

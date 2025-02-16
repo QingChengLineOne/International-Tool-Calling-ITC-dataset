@@ -1,0 +1,32 @@
+{
+    "tool_name": "GST Return Status",
+    "tool_description": "GST Return Filing Status for India",
+    "home_url": "https://rapidapi.com/adarshmadrecha/api/gst-return-status/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "/gstin",
+            "url": "https://gst-return-status.p.rapidapi.com/free/gstin/{gstin}",
+            "description": "Retrieve details about a specific GSTIN (Goods and Services Tax Identification Number), including the latest return filing list, GST compliance classification, and HSN/SAC codes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "gstin",
+                    "type": "string",
+                    "description": "The GSTIN for which details are to be fetched.",
+                    "default": "27AAJCM9929L1ZM"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "Content-Type",
+                    "type": "STRING",
+                    "description": "The content type of the request.",
+                    "default": "application/json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

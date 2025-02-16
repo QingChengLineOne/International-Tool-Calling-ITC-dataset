@@ -1,0 +1,18 @@
+{
+    "tool_name": "模拟快递信息",
+    "tool_description": "随机模拟各种快递信息，数据只是模拟数据，并非真实数据",
+    "home_url": "http://www.kuaidi.com/index-ajaxselectcourierinfo--.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "模拟快递信息API",
+            "url": "http://www.kuaidi.com/index-ajaxselectcourierinfo--.html",
+            "description": "获取模拟的快递信息",
+            "method": "GET/POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

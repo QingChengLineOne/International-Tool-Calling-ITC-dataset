@@ -1,0 +1,62 @@
+{
+    "tool_name": "Unofficial mobile legends",
+    "tool_description": "An unofficial tool for Mobile Legends that allows users to query all available heroes and their roles.",
+    "home_url": "https://rapidapi.com/tulusibrahim/api/unofficial-mobile-legends/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Role name",
+            "url": "https://unofficial-mobile-legends.p.rapidapi.com/roles/{name}",
+            "description": "Returns all heroes associated with a specific role.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "The name of the role to query heroes for.",
+                    "default": "Assassin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Roles",
+            "url": "https://unofficial-mobile-legends.p.rapidapi.com/roles",
+            "description": "Returns a list of all available roles in the game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Hero detail",
+            "url": "https://unofficial-mobile-legends.p.rapidapi.com/heroes/{id}",
+            "description": "Returns detailed information about a specific hero.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The unique ID of the hero. Valid range is between 1 and 115.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Heroes",
+            "url": "https://unofficial-mobile-legends.p.rapidapi.com/heroes",
+            "description": "Returns a list of all heroes available in the game.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

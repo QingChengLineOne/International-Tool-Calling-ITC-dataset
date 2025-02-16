@@ -1,0 +1,97 @@
+{
+    "tool_name": "Digital Business Card",
+    "tool_description": "With our API, you can generate interactive business cards in PDF Base64 format, which can be converted to PDF using any programming language. These interactive business cards are highly profitable and can be sold to customers and users.",
+    "home_url": "https://rapidapi.com/micaelbh/api/digital-business-card1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "download-business-card-pdf",
+            "url": "https://digital-business-card1.p.rapidapi.com/",
+            "description": "To create an interactive card, you can send the following parameters: email, number_background, color_code, url_or_base64_img, name_or_company, activity_or_profession, complete_whatsapp, complete_phone, address, instagram_url, facebook_url, youtube_url, and site_url. If you don't want to send an item, just leave it with empty quotes.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "The email address to be included on the business card.",
+                    "default": ""
+                },
+                {
+                    "name": "number_background",
+                    "type": "integer",
+                    "description": "The background number for the card design.",
+                    "default": "1"
+                },
+                {
+                    "name": "color_code",
+                    "type": "string",
+                    "description": "The color code for the card background.",
+                    "default": "#58D555"
+                },
+                {
+                    "name": "url_or_base64_img",
+                    "type": "string",
+                    "description": "The URL or Base64 image for the card logo.",
+                    "default": "https://card4.me/avatar_or_logo.jpg"
+                },
+                {
+                    "name": "name_or_company",
+                    "type": "string",
+                    "description": "The name or company to be displayed on the card.",
+                    "default": "Micael"
+                },
+                {
+                    "name": "activity_or_profession",
+                    "type": "string",
+                    "description": "The profession or activity of the cardholder.",
+                    "default": "Programador"
+                },
+                {
+                    "name": "complete_whatsapp",
+                    "type": "string",
+                    "description": "The complete WhatsApp number.",
+                    "default": "123456789"
+                },
+                {
+                    "name": "complete_phone",
+                    "type": "string",
+                    "description": "The complete phone number.",
+                    "default": "123456789"
+                },
+                {
+                    "name": "address",
+                    "type": "string",
+                    "description": "The address to be included on the card.",
+                    "default": "Street, avenue, local..."
+                },
+                {
+                    "name": "instagram_url",
+                    "type": "string",
+                    "description": "The Instagram profile URL.",
+                    "default": "https://instagram.com/yourprofile"
+                },
+                {
+                    "name": "facebook_url",
+                    "type": "string",
+                    "description": "The Facebook profile URL.",
+                    "default": "https://facebook.com/yourprofile"
+                },
+                {
+                    "name": "youtube_url",
+                    "type": "string",
+                    "description": "The YouTube profile URL.",
+                    "default": "https://youtube.com/yourprofile"
+                },
+                {
+                    "name": "site_url",
+                    "type": "string",
+                    "description": "The website URL.",
+                    "default": "yoursite here"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

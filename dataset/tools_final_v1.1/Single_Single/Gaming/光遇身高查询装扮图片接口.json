@@ -1,0 +1,44 @@
+{
+    "tool_name": "光遇身高查询装扮图片接口",
+    "tool_description": "生成光遇身高资料卡片",
+    "home_url": "https://api.aa1.cn/doc/ytgysgcx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "光遇身高查询装扮图片接口",
+            "url": "https://api.t1qq.com/api/sky/sc/sczb",
+            "description": "提供光遇中角色的身高查询和装扮图片生成的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "9uryZiknzUtTFkaYUQxcOeMwq4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "character",
+                    "type": "string",
+                    "description": "角色名称，用于查询特定角色的身高和装扮图片",
+                    "default": ""
+                },
+                {
+                    "name": "height",
+                    "type": "int",
+                    "description": "角色身高，单位为厘米，用于生成身高资料卡片",
+                    "default": 0
+                },
+                {
+                    "name": "outfit",
+                    "type": "string",
+                    "description": "角色装扮，用于生成特定装扮的图片",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

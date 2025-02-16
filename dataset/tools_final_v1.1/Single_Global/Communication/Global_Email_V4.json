@@ -1,0 +1,38 @@
+{
+    "tool_name": "Global Email V4",
+    "tool_description": "Easily verify, check or lookup email. Global Email JSON API provides real-time email mailbox checking including domain-specific logic, SMTP commands and other proprietary mechanisms to validate that inboxes are live using a cached inbox validation database of known good and bad emails.",
+    "home_url": "https://rapidapi.com/adminMelissa/api/global-email-v4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Global Email V4",
+            "url": "https://global-email-v4.p.rapidapi.com/v4/WEB/GlobalEmail/doGlobalEmail",
+            "description": "Define Input Fields for email verification.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "opt",
+                    "type": "STRING",
+                    "description": "Verification option, either Express or Premium.",
+                    "default": "VerifyMailbox:Express|VerifyMailbox:ExpressPremium"
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to be verified.",
+                    "default": "support@melissa.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "STRING",
+                    "description": "Format of the response data.",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

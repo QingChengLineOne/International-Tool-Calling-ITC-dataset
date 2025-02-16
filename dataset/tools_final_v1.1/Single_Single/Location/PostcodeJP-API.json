@@ -1,0 +1,25 @@
+{
+    "tool_name": "PostcodeJP-API",
+    "tool_description": "An API that provides information about Japanese postal codes and addresses. For more details, please visit https://postcode-jp.com.",
+    "home_url": "https://rapidapi.com/postcodejpapi/api/postcodejp-api/",
+    "country": "Japan",
+    "api_list": [
+        {
+            "name": "postcodes",
+            "url": "https://postcodejp-api.p.rapidapi.com/postcodes",
+            "description": "Retrieves address information based on the provided postal code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "postcode",
+                    "type": "STRING",
+                    "description": "The postal code for which to retrieve address information.",
+                    "default": "1000001"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

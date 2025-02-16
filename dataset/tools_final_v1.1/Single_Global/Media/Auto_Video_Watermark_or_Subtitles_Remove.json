@@ -1,0 +1,38 @@
+{
+    "tool_name": "Auto Video Watermark or Subtitles Remove",
+    "tool_description": "Automatically detects and removes embedded subtitles and watermarks from videos using AI technology.",
+    "home_url": "https://rapidapi.com/jollytoday-jollytoday-default/api/auto-video-watermark-or-subtitles-remove/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Open Account",
+            "url": "https://auto-video-watermark-or-subtitles-remove.p.rapidapi.com/user/create",
+            "description": "Creates a new user account for accessing the API.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Remove Subtitles",
+            "url": "https://auto-video-watermark-or-subtitles-remove.p.rapidapi.com/work/fast",
+            "description": "Removes watermarks and subtitles from a video.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Result",
+            "url": "https://auto-video-watermark-or-subtitles-remove.p.rapidapi.com/work/status",
+            "description": "Retrieves the status of the video processing task.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

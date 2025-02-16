@@ -1,0 +1,35 @@
+{
+    "tool_name": "Bitcoin News",
+    "tool_description": "An API showing all the latest news of Bitcoin around the world from all the major websites.",
+    "home_url": "https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/bitcoin-news1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get All Bitcoin News",
+            "url": "https://bitcoin-news1.p.rapidapi.com/news",
+            "description": "This endpoint will return all the news across all major Bitcoin news sites from around the world.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Individual Bitcoin News Sources",
+            "url": "https://bitcoin-news1.p.rapidapi.com/news/{newspaperid}",
+            "description": "This endpoint allows you to get information for a specific news resource.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "newspaperId",
+                    "type": "string",
+                    "description": "The unique identifier for the news source.",
+                    "default": "coindesk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

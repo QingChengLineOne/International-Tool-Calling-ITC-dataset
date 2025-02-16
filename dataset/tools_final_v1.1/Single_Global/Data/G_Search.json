@@ -1,0 +1,128 @@
+{
+    "tool_name": "G Search",
+    "tool_description": "Web search API using best search engine",
+    "home_url": "https://rapidapi.com/datascraper/api/g-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/location",
+            "url": "https://g-search.p.rapidapi.com/location",
+            "description": "The Location API allows users to search for supported Google search locations. You can use the `location_name` returned by this API in a Search API query to retrieve localized search results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "location_name",
+                    "type": "STRING",
+                    "description": "The name of the location to search for.",
+                    "default": "London"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The country code for the location.",
+                    "default": "GB"
+                }
+            ],
+            "statuscode": "200",
+            "schema": "\""
+        },
+        {
+            "name": "/search",
+            "url": "https://g-search.p.rapidapi.com/search",
+            "description": "Get real-time search results based on a query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query, which can include any valid Google search syntax.",
+                    "default": "bitcoin"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "google_domain",
+                    "type": "STRING",
+                    "description": "The Google domain to use for the search.",
+                    "default": ""
+                },
+                {
+                    "name": "cr",
+                    "type": "STRING",
+                    "description": "Limits results to websites in the specified country.",
+                    "default": ""
+                },
+                {
+                    "name": "tbs",
+                    "type": "STRING",
+                    "description": "Advanced search parameters for filtering results.",
+                    "default": ""
+                },
+                {
+                    "name": "nfpr",
+                    "type": "STRING",
+                    "description": "Excludes results from auto-corrected queries.",
+                    "default": ""
+                },
+                {
+                    "name": "gl",
+                    "type": "STRING",
+                    "description": "Determines the Google country to use for the query.",
+                    "default": ""
+                },
+                {
+                    "name": "safe",
+                    "type": "STRING",
+                    "description": "Defines the level of filtering for adult content.",
+                    "default": ""
+                },
+                {
+                    "name": "filter",
+                    "type": "STRING",
+                    "description": "Enables or disables filters for similar and omitted results.",
+                    "default": ""
+                },
+                {
+                    "name": "location_parameters_auto",
+                    "type": "STRING",
+                    "description": "Automatically updates parameters based on the specified location.",
+                    "default": "true"
+                },
+                {
+                    "name": "location_name",
+                    "type": "STRING",
+                    "description": "Specifies the geographic location for the query.",
+                    "default": "London,Ontario,Canada"
+                },
+                {
+                    "name": "num",
+                    "type": "STRING",
+                    "description": "Defines the maximum number of results to return.",
+                    "default": ""
+                },
+                {
+                    "name": "hl",
+                    "type": "STRING",
+                    "description": "Determines the display language for results.",
+                    "default": ""
+                },
+                {
+                    "name": "lr",
+                    "type": "STRING",
+                    "description": "Limits results to websites in the specified language.",
+                    "default": ""
+                },
+                {
+                    "name": "start",
+                    "type": "STRING",
+                    "description": "Defines the offset for pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

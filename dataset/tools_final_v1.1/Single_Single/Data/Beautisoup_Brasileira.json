@@ -1,0 +1,126 @@
+{
+    "tool_name": "Beautisoup Brasileira",
+    "tool_description": "Scrap de dados",
+    "home_url": "https://rapidapi.com/diegao-diegao-default/api/beautisoup-brasileira/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "Scraping de postagem",
+            "url": "https://beautisoup-brasileira.p.rapidapi.com/info-post",
+            "description": "Captura dados de postagens com base nas classes dos elementos informados.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string"
+                    },
+                    "titulo": {
+                        "type": "string"
+                    },
+                    "descricao": {
+                        "type": "string"
+                    },
+                    "imagem": {
+                        "type": "string"
+                    },
+                    "direito-imagem": {
+                        "type": "string"
+                    },
+                    "conteudo": {
+                        "type": "string"
+                    },
+                    "favicon": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Portal de notícias",
+            "url": "https://beautisoup-brasileira.p.rapidapi.com/portal_noticia",
+            "description": "Endpoint específico para grandes portais de notícias do Brasil.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string"
+                    },
+                    "titulo": {
+                        "type": "string"
+                    },
+                    "descricao": {
+                        "type": "string"
+                    },
+                    "imagem": {
+                        "type": "string"
+                    },
+                    "direito-imagem": {
+                        "type": "string"
+                    },
+                    "conteudo": {
+                        "type": "string"
+                    },
+                    "favicon": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Primeira matéria",
+            "url": "https://beautisoup-brasileira.p.rapidapi.com/primeira-materia",
+            "description": "Retorna apenas a primeira matéria da pesquisa, que é a mais recente.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string"
+                    },
+                    "parent_tag": {
+                        "type": "string"
+                    },
+                    "parent_class": {
+                        "type": "string"
+                    },
+                    "titulo": {
+                        "type": "string"
+                    },
+                    "resumo": {
+                        "type": "string"
+                    },
+                    "imagem": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "string"
+                    },
+                    "link": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Scraping de categorias",
+            "url": "https://beautisoup-brasileira.p.rapidapi.com/scrape_website",
+            "description": "Retorna a lista de postagens de uma página, sem o conteúdo da matéria.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

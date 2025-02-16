@@ -1,0 +1,25 @@
+{
+    "tool_name": "Email validator_v5",
+    "tool_description": "This API validates email addresses by checking the domain name, helping to filter out invalid emails and domains to ensure a perfect match delivery rate and minimize email bounce.",
+    "home_url": "https://rapidapi.com/tradingtipsstock/api/email-validator39/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Email",
+            "url": "https://email-validator39.p.rapidapi.com/api/validate/email",
+            "description": "This API endpoint validates an email address by checking its format and domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to be validated.",
+                    "default": "example@gmail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

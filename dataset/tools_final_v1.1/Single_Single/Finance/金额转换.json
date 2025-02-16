@@ -1,0 +1,32 @@
+{
+    "tool_name": "金额转换",
+    "tool_description": "将金额阿拉伯数字转换为中文大写金额、西式三位分节法数字和英语大写金额",
+    "home_url": "https://api.qqsuu.cn/doc/dm-cnmoney.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "金额转换",
+            "url": "https://api.qqsuu.cn/api/dm-cnmoney",
+            "description": "将金额阿拉伯数字转换为中文大写金额、西式三位分节法数字和英语大写金额",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "money",
+                    "type": "String",
+                    "description": "金额阿拉伯数字",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "String",
+                    "description": "单位类型，默认为美元单位元",
+                    "default": "usd"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

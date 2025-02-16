@@ -1,0 +1,37 @@
+{
+    "tool_name": "查词语字典[38万词库]",
+    "tool_description": "查询指定词语的解释等信息。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/chaciyu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查词语字典[38万词库]接口",
+            "url": "https://cn.apihz.cn/api/zici/chaciyu.php",
+            "description": "提供查询词语解释等信息的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API密钥，请替换为您的接口盒子ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API密钥，请替换为您的接口盒子KEY",
+                    "default": "88888888"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "需要查询的词语",
+                    "default": "宇宙"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

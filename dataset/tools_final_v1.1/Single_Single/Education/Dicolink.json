@@ -1,0 +1,351 @@
+{
+    "tool_name": "Dicolink",
+    "tool_description": "Dicolink API lets you retrieve information about French words, including definitions, synonyms, antonyms, quotes, expressions, lexical field, scrabble score, and much more.",
+    "home_url": "https://rapidapi.com/dicolink/api/dicolink/",
+    "country": "France",
+    "api_list": [
+        {
+            "name": "Get Definitions",
+            "url": "https://dicolink.p.rapidapi.com/mot/cheval/definitions",
+            "description": "Retrieve the definition of a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to search for.",
+                    "default": "cheval"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Lexical Field",
+            "url": "https://dicolink.p.rapidapi.com/mot/cheval/champlexical",
+            "description": "Retrieve the lexical field for a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to search for.",
+                    "default": "cheval"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limite",
+                    "type": "STRING",
+                    "description": "Limit the number of results returned.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Antonyms",
+            "url": "https://dicolink.p.rapidapi.com/mot/autre/antonymes",
+            "description": "Retrieve antonyms of a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to find antonyms for.",
+                    "default": "autre"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limite",
+                    "type": "NUMBER",
+                    "description": "Limit the number of antonyms returned.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Citations",
+            "url": "https://dicolink.p.rapidapi.com/mot/cheval/citations",
+            "description": "Retrieve citations related to a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to find citations for.",
+                    "default": "cheval"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limite",
+                    "type": "STRING",
+                    "description": "Limit the number of citations returned.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Expressions",
+            "url": "https://dicolink.p.rapidapi.com/mot/cheval/expressions",
+            "description": "Retrieve expressions that include a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to find expressions for.",
+                    "default": "cheval"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limite",
+                    "type": "STRING",
+                    "description": "Limit the number of expressions returned.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Scrabble score",
+            "url": "https://dicolink.p.rapidapi.com/mot/cheval/scorescrabble",
+            "description": "Retrieve the Scrabble score for a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to find the Scrabble score for.",
+                    "default": "cheval"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get synonyms",
+            "url": "https://dicolink.p.rapidapi.com/mot/cheval/synonymes",
+            "description": "Retrieve synonyms of a specific word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "mot",
+                    "type": "string",
+                    "description": "The word you want to find synonyms for.",
+                    "default": "cheval"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limite",
+                    "type": "STRING",
+                    "description": "Limit the number of synonyms returned.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Random Word",
+            "url": "https://dicolink.p.rapidapi.com/mots/motauhasard",
+            "description": "Retrieve a random word.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "verbeconjugue",
+                    "type": "BOOLEAN",
+                    "description": "Indicates if the word should be a conjugated verb.",
+                    "default": "false"
+                },
+                {
+                    "name": "minlong",
+                    "type": "STRING",
+                    "description": "Minimum length of the word.",
+                    "default": "5"
+                },
+                {
+                    "name": "maxlong",
+                    "type": "STRING",
+                    "description": "Maximum length of the word.",
+                    "default": "-1"
+                },
+                {
+                    "name": "avecdef",
+                    "type": "BOOLEAN",
+                    "description": "Indicates if the definition should be included.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+{
+    "tool_name": "TrackService",
+    "tool_description": "Route optimization & dispatching of multiple vehicles and multiple stops. Use TrackRoad API to optimize hundreds of stops in seconds, calculate distances, provide turn-by-turn directions, and perform geocoding. Real-time asset tracking and two-way texting are available through a web interface, free iPhone app, or Android app. Routing features include intelligent dispatching, multiple region routing, time window management, load capacity balancing, auto address geocoding, highlighted route maps, and more.",
+    "home_url": "https://rapidapi.com/rdrunnerxx/api/trackservice/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Geocode",
+            "url": "https://rdrunnerxx-trackservice.p.rapidapi.com/geocode",
+            "description": "Get latitude and longitude coordinates for a location by specifying values such as a postal code and street address.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Calculate Distance by Address",
+            "url": "https://rdrunnerxx-trackservice.p.rapidapi.com/distance",
+            "description": "Calculate distance and time between two addresses.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Calculate Distance by Location",
+            "url": "https://rdrunnerxx-trackservice.p.rapidapi.com/distance",
+            "description": "Calculate distance and time between two locations using GPS coordinates.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Calculate Route",
+            "url": "https://rdrunnerxx-trackservice.p.rapidapi.com/route",
+            "description": "Get a route by specifying a series of locations defined by longitude and latitude, including route instructions, travel duration, and distance.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Calculate Routes",
+            "url": "https://rdrunnerxx-trackservice.p.rapidapi.com/routes",
+            "description": "Get multiple routes by specifying a series of locations defined by longitude and latitude, including route instructions, travel duration, and distance.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Dispatch",
+            "url": "https://rdrunnerxx-trackservice.p.rapidapi.com/dispatch",
+            "description": "Optimize hundreds of stops using one or several vehicles, defined by address or latitude/longitude.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

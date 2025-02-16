@@ -1,0 +1,18 @@
+{
+    "tool_name": "Women in Tech",
+    "tool_description": "A dataset of Women-led startups worldwide",
+    "home_url": "https://rapidapi.com/dnorton/api/women-in-tech/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getCompanies",
+            "url": "https://women-in-tech.p.rapidapi.com/",
+            "description": "Retrieves a list of women-led startups from the dataset.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "tool_name": "Cats by API-Ninjas",
+    "tool_description": "Get detailed facts for every cat breed. See more info at https://api-ninjas.com/api/cats.",
+    "home_url": "https://rapidapi.com/apininjas/api/cats-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/cats",
+            "url": "https://cats-by-api-ninjas.p.rapidapi.com/v1/cats",
+            "description": "API Ninjas Cats API endpoint for retrieving information about various cat breeds.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "max_life_expectancy",
+                    "type": "NUMBER",
+                    "description": "Maximum life expectancy in years.",
+                    "default": ""
+                },
+                {
+                    "name": "playfulness",
+                    "type": "NUMBER",
+                    "description": "How playful the cat is. Possible values: 0 (serious) to 5 (maximum playfulness).",
+                    "default": ""
+                },
+                {
+                    "name": "grooming",
+                    "type": "NUMBER",
+                    "description": "How much work is required to properly groom the cat. Possible values: 0 (maximum effort) to 5 (minimum effort).",
+                    "default": ""
+                },
+                {
+                    "name": "min_life_expectancy",
+                    "type": "NUMBER",
+                    "description": "Minimum life expectancy in years.",
+                    "default": ""
+                },
+                {
+                    "name": "max_weight",
+                    "type": "NUMBER",
+                    "description": "Maximum weight in pounds.",
+                    "default": ""
+                },
+                {
+                    "name": "family_friendly",
+                    "type": "NUMBER",
+                    "description": "How affectionate the cat is to family. Possible values: 0 (minimal affection) to 5 (maximum affection).",
+                    "default": ""
+                },
+                {
+                    "name": "min_weight",
+                    "type": "NUMBER",
+                    "description": "Minimum weight in pounds.",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Number of results to offset for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "children_friendly",
+                    "type": "NUMBER",
+                    "description": "How well the cat gets along with children. Possible values: 0 (not friendly) to 5 (very friendly).",
+                    "default": ""
+                },
+                {
+                    "name": "other_pets_friendly",
+                    "type": "NUMBER",
+                    "description": "How well the cat gets along with other pets. Possible values: 0 (not friendly) to 5 (very friendly).",
+                    "default": ""
+                },
+                {
+                    "name": "shedding",
+                    "type": "NUMBER",
+                    "description": "How much hair the cat sheds. Possible values: 0 (no shedding) to 5 (maximum shedding).",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the cat breed.",
+                    "default": "aegean"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

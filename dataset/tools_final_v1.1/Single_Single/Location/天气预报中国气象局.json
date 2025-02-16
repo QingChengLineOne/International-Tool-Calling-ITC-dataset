@@ -1,0 +1,43 @@
+{
+    "tool_name": "天气预报-中国气象局",
+    "tool_description": "获取指定城市当日天气信息，来源于中国气象局官方数据。",
+    "home_url": "https://api.aa1.cn/doc/tqyb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "天气预报API",
+            "url": "https://cn.apihz.cn/api/tianqi/tqyb.php",
+            "description": "获取指定城市当日天气信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API ID，请在接口盒子后台获取",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API KEY，请在接口盒子后台获取",
+                    "default": "88888888"
+                },
+                {
+                    "name": "sheng",
+                    "type": "string",
+                    "description": "省份名称",
+                    "required": true
+                },
+                {
+                    "name": "place",
+                    "type": "string",
+                    "description": "城市名称",
+                    "required": true
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

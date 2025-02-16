@@ -1,0 +1,18 @@
+{
+    "tool_name": "Registration",
+    "tool_description": "API for handling registration details.",
+    "home_url": "https://rapidapi.com/divyaoblr89/api/registration31/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "registration",
+            "url": "https://registration31.p.rapidapi.com/register",
+            "description": "Endpoint for registering user details.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

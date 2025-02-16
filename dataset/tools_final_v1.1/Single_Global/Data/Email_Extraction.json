@@ -1,0 +1,18 @@
+{
+    "tool_name": "Email Extraction",
+    "tool_description": "Will take a String and return an array of all emails contained within.",
+    "home_url": "https://rapidapi.com/brettw894/api/email-extraction/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Email Query",
+            "url": "https://email-extraction.p.rapidapi.com/email",
+            "description": "Extracts all emails as an array contained in a string.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

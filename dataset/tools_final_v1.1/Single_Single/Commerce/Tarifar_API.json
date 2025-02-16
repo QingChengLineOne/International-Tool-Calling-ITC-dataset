@@ -1,0 +1,82 @@
+{
+    "tool_name": "Tarifar API",
+    "tool_description": "En el mundo actual altamente competitivo, tener información actualizada y precisa sobre el Comercio Exterior de Argentina es esencial para el éxito empresarial. Con la API de información de Comercio Exterior de Argentina, tendrás acceso instantáneo a datos confiables y relevantes que te ayudarán a comprender mejor el panorama comercial y tomar decisiones inteligentes. Ya sea que necesites conocer los aranceles aplicables a tus productos, monitorear las tendencias de importación y exportación, o acceder a cotizaciones de moneda extranjera.",
+    "home_url": "https://rapidapi.com/sistemas-qcKyouk4f/api/tarifar-api/",
+    "country": "Argentina",
+    "api_list": [
+        {
+            "name": "Observaciones",
+            "url": "https://tarifar-api.p.rapidapi.com/observaciones/{posicionsim}",
+            "description": "Obtiene observaciones relacionadas con una posición arancelaria específica.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "posicionsim",
+                    "type": "string",
+                    "description": "Código de la posición arancelaria.",
+                    "default": "42029200110V"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Posición SIM",
+            "url": "https://tarifar-api.p.rapidapi.com/posicion/{posicionsim}",
+            "description": "Proporciona información detallada sobre una posición arancelaria específica.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "posicionsim",
+                    "type": "string",
+                    "description": "Código de la posición arancelaria.",
+                    "default": "42029200110V"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Cotización",
+            "url": "https://tarifar-api.p.rapidapi.com/cotizacion/{codigo}/{fecha}",
+            "description": "Obtiene cotizaciones de moneda extranjera en Argentina para una fecha específica.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "codigo",
+                    "type": "string",
+                    "description": "Código de la moneda, por ejemplo, 'DOLAR'.",
+                    "default": "DOLAR"
+                },
+                {
+                    "name": "fecha",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Fecha para la cual se desea la cotización.",
+                    "default": "2022-09-06"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Sufijos Valor",
+            "url": "https://tarifar-api.p.rapidapi.com/sufijos/{posicionsim}",
+            "description": "Proporciona los sufijos de valor asociados a una posición arancelaria específica.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "posicionsim",
+                    "type": "string",
+                    "description": "Código de la posición arancelaria.",
+                    "default": "42029200110V"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "Easy Email Validation",
+    "tool_description": "Use this API to quickly and effectively validate email addresses. It checks for valid email format, MX records, and disposable email addresses.",
+    "home_url": "https://rapidapi.com/principalapis/api/easy-email-validation/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Validate Email",
+            "url": "https://easy-email-validation.p.rapidapi.com/validate",
+            "description": "Validates an email address to determine its validity and other characteristics.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to be validated.",
+                    "default": "example@gmail.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "tool_name": "Croatia Company Data",
+    "tool_description": "Access to the official Croatian government business register with this API, ideal for Know Your Business (KYB) purposes.",
+    "home_url": "https://rapidapi.com/appaio/api/croatia-company-data/",
+    "country": "Croatia",
+    "api_list": [
+        {
+            "name": "Search by MBS or OIB",
+            "url": "https://croatia-company-data.p.rapidapi.com/default/HR/subjekt_detalji",
+            "description": "Search the Croatian company register by either MBS (Main Business Subject) or OIB (Personal Identification Number) company identifiers.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tipIdentifikatora",
+                    "type": "STRING",
+                    "description": "Type of identifier to search by, either MBS or OIB.",
+                    "default": "mbs"
+                },
+                {
+                    "name": "expand_relations",
+                    "type": "STRING",
+                    "description": "Indicates whether to expand related entities in the response.",
+                    "default": "True"
+                },
+                {
+                    "name": "identifikator",
+                    "type": "NUMBER",
+                    "description": "The specific identifier (MBS or OIB) of the company to search for.",
+                    "default": 80733282
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

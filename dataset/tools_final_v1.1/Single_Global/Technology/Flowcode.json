@@ -1,0 +1,68 @@
+{
+    "tool_name": "Flowcode",
+    "tool_description": "Flowcode is an API that allows users to create QR codes in various image formats. It provides a simple interface for generating QR codes that can link to any URL.",
+    "home_url": "https://rapidapi.com/flowcode/api/flowcode1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Create QR Code",
+            "url": "https://flowcode1.p.rapidapi.com/flowcode",
+            "description": "This API takes a URL and returns an image for a QR Code in either SVG, PNG, JPG, or PDF format.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL that the QR code will link to.",
+                    "default": "https://www.flowcode.com"
+                },
+                {
+                    "name": "imageType",
+                    "type": "STRING",
+                    "description": "The format of the response image. Options include PNG, SVG, PDF, or JPG.",
+                    "default": "svg"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "bgColor",
+                    "type": "STRING",
+                    "description": "Hex background color for the QR code. Format: #rrggbb or 'transparent' for a transparent background.",
+                    "default": "#cbcbcb"
+                },
+                {
+                    "name": "fgColor",
+                    "type": "STRING",
+                    "description": "Hex foreground color for the QR code. Format: #rrggbb.",
+                    "default": "#ff0000"
+                },
+                {
+                    "name": "rimTextTop",
+                    "type": "STRING",
+                    "description": "Text to display at the top of the rim for style 'rim'.",
+                    "default": "Scan Me"
+                },
+                {
+                    "name": "style",
+                    "type": "STRING",
+                    "description": "Style of the QR code. Options include 'default', 'inset', or 'rim'.",
+                    "default": "default"
+                },
+                {
+                    "name": "moduleShape",
+                    "type": "STRING",
+                    "description": "Shape to use for the QR code pattern. Options include 'default', 'circle', 'square', or 'diamond'.",
+                    "default": "default"
+                },
+                {
+                    "name": "rimTextBottom",
+                    "type": "STRING",
+                    "description": "Text to display at the bottom of the rim for style 'rim'.",
+                    "default": "Scan Me"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

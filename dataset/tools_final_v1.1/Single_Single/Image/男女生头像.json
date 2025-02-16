@@ -1,0 +1,18 @@
+{
+    "tool_name": "男女生头像API",
+    "tool_description": "随机男女生头像生成API",
+    "home_url": "https://api.aa1.cn/doc/avath.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机男女生头像接口",
+            "url": "https://api.52vmy.cn/api/avath/rand",
+            "description": "随机获取男女生头像",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "tool_name": "Pascal Code Compiler",
+    "tool_description": "An API for compiling Pascal code using the Free Pascal Compiler.",
+    "home_url": "https://rapidapi.com/UnlimitedAPI/api/pascal-code-compiler/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Pascal Versions",
+            "url": "https://pascal-code-compiler.p.rapidapi.com/versions/",
+            "description": "Retrieves the available versions of the Free Pascal Compiler.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pascal Code Compiler",
+            "url": "https://pascal-code-compiler.p.rapidapi.com/",
+            "description": "Compiles Pascal code and returns the output.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

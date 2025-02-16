@@ -1,0 +1,25 @@
+{
+    "tool_name": "88zhan在线扒站api",
+    "tool_description": "php开发在线扒站api",
+    "home_url": "https://api.aa1.cn/doc/88zhan-cn.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "在线扒站API",
+            "url": "http://88zhan.cn/api.php",
+            "description": "提供网站内容抓取服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要抓取内容的网站URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

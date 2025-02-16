@@ -1,0 +1,32 @@
+{
+    "tool_name": "Historical Figures by API-Ninjas",
+    "tool_description": "Get vital information on the most famous people in history, including their contributions and significance.",
+    "home_url": "https://rapidapi.com/apininjas/api/historical-figures-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/historicalfigures",
+            "url": "https://historical-figures-by-api-ninjas.p.rapidapi.com/v1/historicalfigures",
+            "description": "API Ninjas Historical Figures API endpoint. Returns a list of up to 10 people that match the search parameters. Either 'name' and/or 'title' parameter is required.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the person to search. Includes partial results (e.g. 'julius' will match 'Julius Caesar').",
+                    "default": "julius caesar"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Number of results to offset pagination.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

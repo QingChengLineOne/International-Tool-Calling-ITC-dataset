@@ -1,0 +1,190 @@
+{
+    "tool_name": "Realtime Stock Data",
+    "tool_description": "The world's cheapest Realtime stock data provider",
+    "home_url": "https://rapidapi.com/mbzkrm/api/realtime-stock-data/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "asset-profile",
+            "url": "https://realtime-stock-data.p.rapidapi.com/asset-profile/{symb}",
+            "description": "Provides detailed information about a specific asset, including the company's physical address, contact information, number of full-time employees, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symb",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "finance-analytics",
+            "url": "https://realtime-stock-data.p.rapidapi.com/finance-analytics/{symb}",
+            "description": "Returns financial analysis and AI recommendations for a specific asset, assessing its viability, stability, and profitability.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symb",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "balance-sheet",
+            "url": "https://realtime-stock-data.p.rapidapi.com/balance-sheet/{symbol}",
+            "description": "Provides the balance sheet of a company, detailing its assets, liabilities, and shareholder equity.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The stock symbol of the company.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "earnings-trend",
+            "url": "https://realtime-stock-data.p.rapidapi.com/earnings-trend/{symbl}",
+            "description": "Reflects the company's profits over time and provides expert and AI-supported predictions about future stock behavior.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbl",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "historic data",
+            "url": "https://realtime-stock-data.p.rapidapi.com/historic/{symbol}/{interval}/{range}",
+            "description": "Returns historical stock data based on specified intervals and ranges.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "range",
+                    "type": "string",
+                    "description": "The time range for which the data is returned.",
+                    "default": "20d"
+                },
+                {
+                    "name": "interval",
+                    "type": "string",
+                    "description": "The time interval between two data points.",
+                    "default": "1d"
+                },
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "earnings",
+            "url": "https://realtime-stock-data.p.rapidapi.com/earnings/{symb}",
+            "description": "Returns a company's earnings, which is its after-tax net income, along with historical earnings data.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symb",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "options",
+            "url": "https://realtime-stock-data.p.rapidapi.com/options/{symbol}",
+            "description": "Provides option chain data for a specific stock, detailing calls and puts for various strike prices.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "price",
+            "url": "https://realtime-stock-data.p.rapidapi.com/price/{symbol}",
+            "description": "Returns the real-time stock price information for the specified symbol.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "index-trend",
+            "url": "https://realtime-stock-data.p.rapidapi.com/index-trend/{symbol}",
+            "description": "Analyzes trends based on historical relationships between operational indices and labor demand.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "esg-score",
+            "url": "https://realtime-stock-data.p.rapidapi.com/esg-score/{symb}",
+            "description": "Measures a company's exposure to long-term environmental, social, and governance risks.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symb",
+                    "type": "string",
+                    "description": "The stock symbol of the asset.",
+                    "default": "aapl"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Gorilla Printing test",
+    "tool_description": "A testing tool for printing services.",
+    "home_url": "https://rapidapi.com/printingdigital/api/gorilla-printing-test/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Test",
+            "url": "https://gorilla-printing-test.p.rapidapi.com/",
+            "description": "This API endpoint is used to test the functionality of the Gorilla Printing service.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

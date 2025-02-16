@@ -1,0 +1,44 @@
+{
+    "tool_name": "AI绘图每天免费400图",
+    "tool_description": "AI绘图70+模型可选！可画任务行业的图片",
+    "home_url": "https://api.aa1.cn/doc/ht-avdgw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI绘图接口",
+            "url": "https://api.avdgw.com/api/hiutu/ht",
+            "description": "调用此接口可以生成AI绘图",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "model",
+                    "type": "string",
+                    "description": "绘图的AI模型，可选值如：anime, cartoon, abstract, etc.",
+                    "default": ""
+                },
+                {
+                    "name": "prompt",
+                    "type": "string",
+                    "description": "绘制内容的描述，如：一个卡通风格的咖啡店",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "string",
+                    "description": "图像大小，如：1024x1024",
+                    "default": "1024x1024"
+                },
+                {
+                    "name": "style",
+                    "type": "string",
+                    "description": "绘图风格，如：watercolor, oilpainting, etc.",
+                    "default": "default"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

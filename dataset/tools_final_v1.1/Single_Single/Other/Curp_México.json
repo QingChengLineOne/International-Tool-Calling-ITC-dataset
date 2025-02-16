@@ -1,0 +1,25 @@
+{
+    "tool_name": "Curp México",
+    "tool_description": "Una herramienta para validar la información de un CURP en México.",
+    "home_url": "https://rapidapi.com/mo.rodrigo/api/curp-mexico1/",
+    "country": "Mexico",
+    "api_list": [
+        {
+            "name": "porCurp",
+            "url": "https://curp-mexico1.p.rapidapi.com/porCurp/{curp}",
+            "description": "Valida la información de una persona utilizando su CURP.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "curp",
+                    "type": "string",
+                    "description": "El CURP que se desea validar.",
+                    "default": "SAGC480403HDFLRR0"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

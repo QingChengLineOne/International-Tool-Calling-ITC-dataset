@@ -1,0 +1,25 @@
+{
+    "tool_name": "Sentiment by API-Ninjas",
+    "tool_description": "State-of-the-art text sentiment analysis. This API provides insights into the sentiment of a given text, helping users understand the emotional tone behind the words.",
+    "home_url": "https://rapidapi.com/apininjas/api/sentiment-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/sentiment",
+            "url": "https://sentiment-by-api-ninjas.p.rapidapi.com/v1/sentiment",
+            "description": "Returns sentiment analysis score and overall sentiment for a given block of text.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "Query text for sentiment analysis. Maximum 2000 characters.",
+                    "default": "It's a wonderful day!"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

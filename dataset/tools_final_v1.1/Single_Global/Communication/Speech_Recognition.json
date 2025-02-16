@@ -1,0 +1,41 @@
+{
+    "tool_name": "Speech Recognition",
+    "tool_description": "Convert speech to text quickly and easily. Supports 100+ languages.",
+    "home_url": "https://rapidapi.com/dickyagustin/api/speech-recognition14/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "languages",
+            "url": "https://speech-recognition14.p.rapidapi.com/languages",
+            "description": "Retrieve a list of supported languages for speech recognition.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "recognize",
+            "url": "https://speech-recognition14.p.rapidapi.com/recognize",
+            "description": "Endpoint for the speech recognition process. Supports audio formats: mp3, wav, and ogg.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "audio_url",
+                    "type": "STRING",
+                    "description": "The URL of the audio file to be processed.",
+                    "default": "https://firebasestorage.googleapis.com/v0/b/rapid-tts.appspot.com/o/audio-464d3947de1178515a3a937f0d7e2f10.mp3?alt=media"
+                },
+                {
+                    "name": "language_code",
+                    "type": "STRING",
+                    "description": "The language code for the audio being processed.",
+                    "default": "en-US"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

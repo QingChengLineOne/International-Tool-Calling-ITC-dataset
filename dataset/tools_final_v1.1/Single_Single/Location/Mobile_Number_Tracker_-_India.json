@@ -1,0 +1,18 @@
+{
+    "tool_name": "Mobile Number Tracker - India",
+    "tool_description": "Get information (series, circle, operator) about any mobile number of India.",
+    "home_url": "https://rapidapi.com/navii/api/mobile-number-tracker-india/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "MOBILE",
+            "url": "https://mobileinfo.p.rapidapi.com/",
+            "description": "This API allows users to retrieve information related to a specific mobile number in India, including details such as the service provider and geographical area.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

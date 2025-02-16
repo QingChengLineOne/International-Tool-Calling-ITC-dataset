@@ -1,0 +1,55 @@
+{
+    "tool_name": "SMS_v2",
+    "tool_description": "Send SMS from your own number (Telekom Slovenije, T-2)",
+    "home_url": "https://rapidapi.com/rsmt-rsmt-default/api/sms136/",
+    "country": "Slovenia",
+    "api_list": [
+        {
+            "name": "Send SMS",
+            "url": "https://sms136.p.rapidapi.com/send-sms",
+            "description": "This API allows you to send SMS messages using your own number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "provider",
+                    "type": "ENUM",
+                    "description": "The SMS provider you are using.",
+                    "default": ""
+                },
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "Your provider account password.",
+                    "default": "your_provider_password"
+                },
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "Your provider account username.",
+                    "default": "your_provider_username"
+                },
+                {
+                    "name": "phone_number",
+                    "type": "STRING",
+                    "description": "The recipient's phone number.",
+                    "default": "051123123"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The sender's phone number.",
+                    "default": "040123123"
+                },
+                {
+                    "name": "sms",
+                    "type": "STRING",
+                    "description": "The content of the SMS message.",
+                    "default": "Test SMS message."
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

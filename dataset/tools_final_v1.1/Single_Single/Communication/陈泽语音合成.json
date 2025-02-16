@@ -1,0 +1,25 @@
+{
+    "tool_name": "陈泽语音合成",
+    "tool_description": "陈泽语音合成API，用于将文本转换为语音。",
+    "home_url": "https://api.aa1.cn/doc/czyy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "陈泽语音合成API",
+            "url": "https://api.lolimi.cn/API/yyhc/cz.php",
+            "description": "将用户提供的文本转换为语音的接口。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要合成的文本内容。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

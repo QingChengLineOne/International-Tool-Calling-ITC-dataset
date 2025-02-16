@@ -1,0 +1,48 @@
+{
+    "tool_name": "Backlinks and Keywords Fetcher",
+    "tool_description": "Discover valuable insights about any domain or URL with our Backlinks and Keyword Fetching API. Gain access to comprehensive data on backlinks, keywords, and SEO performance, empowering you to optimize your online presence and make informed decisions for digital success.",
+    "home_url": "https://rapidapi.com/salimaksoy010/api/backlinks-and-keywords-fetcher/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "URL Backlinks",
+            "url": "https://backlinks-and-keywords-fetcher.p.rapidapi.com/seolizer",
+            "description": "This endpoint provides backlinks against a specified URL.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "URL Keywords",
+            "url": "https://backlinks-and-keywords-fetcher.p.rapidapi.com/seolizer",
+            "description": "This endpoint provides keywords associated with a specified URL.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Domain Keywords",
+            "url": "https://backlinks-and-keywords-fetcher.p.rapidapi.com/seolizer",
+            "description": "This endpoint provides keywords associated with a specified domain.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Domain Backlinks",
+            "url": "https://backlinks-and-keywords-fetcher.p.rapidapi.com/seolizer",
+            "description": "This endpoint provides backlinks associated with a specified domain.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

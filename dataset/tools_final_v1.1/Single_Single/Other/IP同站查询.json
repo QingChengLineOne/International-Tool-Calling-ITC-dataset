@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP同站查询",
+    "tool_description": "查询IP所在解析的历史站点信息",
+    "home_url": "https://api.aa1.cn/doc/pearno-sameip.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP同站查询API",
+            "url": "https://api.pearktrue.cn/api/website/sameip/",
+            "description": "查询IP所在解析的历史站点信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

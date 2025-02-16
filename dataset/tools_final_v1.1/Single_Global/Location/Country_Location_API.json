@@ -1,0 +1,25 @@
+{
+    "tool_name": "Country Location API",
+    "tool_description": "The Country Location API is a RESTful API that allows developers to retrieve location data for any country in the world. It provides detailed information such as the country's name, capital city, region, subregion, population, languages, and currencies.",
+    "home_url": "https://rapidapi.com/Emiledaou/api/country-location-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Country Location API",
+            "url": "https://country-location-api.p.rapidapi.com/location",
+            "description": "This API function retrieves location data for a specified country using a GET request.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which location data is requested.",
+                    "default": "canada"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

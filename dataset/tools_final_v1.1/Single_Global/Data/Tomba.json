@@ -1,0 +1,836 @@
+{
+    "tool_name": "Tomba",
+    "tool_description": "Search or verify lists of email addresses in seconds.",
+    "home_url": "https://rapidapi.com/tomba-technology-web-service-llc-tomba-technology-web-service-llc-default/api/tomba/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "DomainStatus",
+            "url": "https://tomba.p.rapidapi.com/domain-status",
+            "description": "Returns domain status if it is webmail or disposable.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to check.",
+                    "default": ""
+                },
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain to check.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "object",
+                        "properties": {
+                            "mx_records": {
+                                "type": "boolean"
+                            },
+                            "smtp_server": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "smtp_check": {
+                                "type": "boolean"
+                            },
+                            "accept_all": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "block": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "gibberish": {
+                                "type": "boolean"
+                            },
+                            "disposable": {
+                                "type": "boolean"
+                            },
+                            "webmail": {
+                                "type": "boolean"
+                            },
+                            "regex": {
+                                "type": "boolean"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "result": {
+                                "type": "string"
+                            },
+                            "score": {
+                                "type": "integer",
+                                "format": "int32",
+                                "minimum": -2147483648,
+                                "maximum": 2147483647
+                            }
+                        }
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "uri": {
+                                    "type": "string"
+                                },
+                                "website_url": {
+                                    "type": "string"
+                                },
+                                "extracted_on": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "last_seen_on": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "still_on_page": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Enrichment",
+            "url": "https://tomba.p.rapidapi.com/enrich",
+            "description": "Look up person and company data based on an email, retrieving details like name, location, and social handles.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to enrich.",
+                    "default": "b.mohamed@tomba.io"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "DomainSearch",
+            "url": "https://tomba.p.rapidapi.com/domain-search",
+            "description": "Find email addresses associated with a specific domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "Domain name from which you want to find the email addresses.",
+                    "default": "stripe.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "department",
+                    "type": "STRING",
+                    "description": "Get only email addresses for people working in the selected department(s).",
+                    "default": "pr"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Specifies the number of email addresses to skip.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "organization": {
+                        "type": "object",
+                        "properties": {
+                            "location": {
+                                "type": "object",
+                                "properties": {
+                                    "country": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "street_address": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "social_links": {
+                                "type": "object",
+                                "properties": {
+                                    "twitter_url": {
+                                        "type": "string"
+                                    },
+                                    "facebook_url": {
+                                        "type": "string"
+                                    },
+                                    "linkedin_url": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "disposable": {
+                                "type": "boolean"
+                            },
+                            "webmail": {
+                                "type": "boolean"
+                            },
+                            "website_url": {
+                                "type": "string"
+                            },
+                            "phone_number": {
+                                "type": "string"
+                            },
+                            "industries": {
+                                "type": "string"
+                            },
+                            "postal_code": {
+                                "type": "string"
+                            },
+                            "employee_count": {
+                                "type": "integer"
+                            },
+                            "founded": {
+                                "type": "string"
+                            },
+                            "company_size": {
+                                "type": "string"
+                            },
+                            "last_updated": {
+                                "type": "string"
+                            },
+                            "revenue": {
+                                "type": "string"
+                            },
+                            "accept_all": {
+                                "type": "boolean"
+                            },
+                            "pattern": {
+                                "type": "string"
+                            },
+                            "domain_score": {
+                                "type": "integer"
+                            },
+                            "organization": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "emails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string"
+                                },
+                                "first_name": {
+                                    "type": "string"
+                                },
+                                "last_name": {
+                                    "type": "string"
+                                },
+                                "full_name": {
+                                    "type": "string"
+                                },
+                                "gender": {
+                                    "type": "string"
+                                },
+                                "phone_number": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                },
+                                "position": {
+                                    "type": "string"
+                                },
+                                "department": {
+                                    "type": "string"
+                                },
+                                "seniority": {
+                                    "type": "string"
+                                },
+                                "twitter": {
+                                    "type": "string"
+                                },
+                                "linkedin": {
+                                    "type": "string"
+                                },
+                                "accept_all": {
+                                    "type": "boolean"
+                                },
+                                "pattern": {
+                                    "type": "string"
+                                },
+                                "score": {
+                                    "type": "integer"
+                                },
+                                "verification": {
+                                    "type": "object",
+                                    "properties": {
+                                        "date": {
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "last_updated": {
+                                    "type": "string"
+                                },
+                                "sources": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "uri": {
+                                                "type": "string"
+                                            },
+                                            "website_url": {
+                                                "type": "string"
+                                            },
+                                            "extracted_on": {
+                                                "type": "string"
+                                            },
+                                            "last_seen_on": {
+                                                "type": "string"
+                                            },
+                                            "still_on_page": {
+                                                "type": "boolean"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "LinkedinFinder",
+            "url": "https://tomba.p.rapidapi.com/linkedin",
+            "description": "Generates or retrieves the most likely email address from a LinkedIn URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the LinkedIn profile.",
+                    "default": "https://www.linkedin.com/in/alex-maccaw-ab592978"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "type": "string"
+                    },
+                    "full_name": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "position": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "twitter": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "linkedin": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "phone_number": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "accept_all": {
+                        "type": "boolean"
+                    },
+                    "website_url": {
+                        "type": "string"
+                    },
+                    "company": {
+                        "type": "string"
+                    },
+                    "score": {
+                        "type": "integer",
+                        "format": "int32",
+                        "minimum": -2147483648,
+                        "maximum": 2147483647
+                    },
+                    "verification": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "status": {
+                                "type": "string",
+                                "format": "nullable"
+                            }
+                        }
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {}
+                    }
+                }
+            }
+        },
+        {
+            "name": "EmailVerifier",
+            "url": "https://tomba.p.rapidapi.com/email-verifier/{email}",
+            "description": "Verify the deliverability of an email address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address you want to verify.",
+                    "default": "b.mohamed@tomba.io"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "object",
+                        "properties": {
+                            "mx_records": {
+                                "type": "boolean"
+                            },
+                            "smtp_server": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "smtp_check": {
+                                "type": "boolean"
+                            },
+                            "accept_all": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "block": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "gibberish": {
+                                "type": "boolean"
+                            },
+                            "disposable": {
+                                "type": "boolean"
+                            },
+                            "webmail": {
+                                "type": "boolean"
+                            },
+                            "regex": {
+                                "type": "boolean"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "result": {
+                                "type": "string"
+                            },
+                            "score": {
+                                "type": "integer",
+                                "format": "int32",
+                                "minimum": -2147483648,
+                                "maximum": 2147483647
+                            }
+                        }
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "uri": {
+                                    "type": "string"
+                                },
+                                "website_url": {
+                                    "type": "string"
+                                },
+                                "extracted_on": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "last_seen_on": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "still_on_page": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "EmailFinder",
+            "url": "https://tomba.p.rapidapi.com/email-finder",
+            "description": "Generates or retrieves the most likely email address from a domain name, a first name, and a last name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "Domain name from which you want to find the email addresses.",
+                    "default": "stripe.com"
+                },
+                {
+                    "name": "first_name",
+                    "type": "STRING",
+                    "description": "The person's first name.",
+                    "default": "Moskoz"
+                },
+                {
+                    "name": "last_name",
+                    "type": "STRING",
+                    "description": "The person's last name.",
+                    "default": "Dustin"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "type": "string"
+                    },
+                    "full_name": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "position": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "twitter": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "linkedin": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "phone_number": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "accept_all": {
+                        "type": "boolean"
+                    },
+                    "website_url": {
+                        "type": "string"
+                    },
+                    "company": {
+                        "type": "string"
+                    },
+                    "score": {
+                        "type": "integer",
+                        "format": "int32",
+                        "minimum": -2147483648,
+                        "maximum": 2147483647
+                    },
+                    "verification": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "status": {
+                                "type": "string",
+                                "format": "nullable"
+                            }
+                        }
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {}
+                    }
+                }
+            }
+        },
+        {
+            "name": "AuthorFinder",
+            "url": "https://tomba.p.rapidapi.com/author-finder",
+            "description": "Generates or retrieves the most likely email address from a blog post URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the article.",
+                    "default": "https://clearbit.com/blog/company-name-to-domain-api"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "type": "string"
+                    },
+                    "full_name": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "position": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "twitter": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "linkedin": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "phone_number": {
+                        "type": "string",
+                        "format": "nullable"
+                    },
+                    "accept_all": {
+                        "type": "boolean"
+                    },
+                    "website_url": {
+                        "type": "string"
+                    },
+                    "company": {
+                        "type": "string"
+                    },
+                    "score": {
+                        "type": "integer",
+                        "format": "int32",
+                        "minimum": -2147483648,
+                        "maximum": 2147483647
+                    },
+                    "verification": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string",
+                                "format": "nullable"
+                            },
+                            "status": {
+                                "type": "string",
+                                "format": "nullable"
+                            }
+                        }
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {}
+                    }
+                }
+            }
+        },
+        {
+            "name": "EmailCount",
+            "url": "https://tomba.p.rapidapi.com/email-count",
+            "description": "Get the count of email addresses associated with a specific domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name to count email addresses for.",
+                    "default": "tomba.io"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "total": {
+                                "type": "integer",
+                                "format": "int32",
+                                "minimum": -2147483648,
+                                "maximum": 2147483647
+                            },
+                            "personal_emails": {
+                                "type": "integer",
+                                "format": "int32",
+                                "minimum": -2147483648,
+                                "maximum": 2147483647
+                            },
+                            "generic_emails": {
+                                "type": "integer",
+                                "format": "int32",
+                                "minimum": -2147483648,
+                                "maximum": 2147483647
+                            },
+                            "department": {
+                                "type": "object",
+                                "properties": {
+                                    "engineering": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "finance": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "hr": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "it": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "marketing": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "operations": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "management": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "sales": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "legal": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "support": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "communication": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    }
+                                }
+                            },
+                            "seniority": {
+                                "type": "object",
+                                "properties": {
+                                    "junior": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "senior": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    },
+                                    "executive": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "minimum": -2147483648,
+                                        "maximum": 2147483647
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

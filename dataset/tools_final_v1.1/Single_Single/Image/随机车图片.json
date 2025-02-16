@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机车图片API",
+    "tool_description": "随机返回高清车图片的API",
+    "home_url": "https://api.aa1.cn/doc/car.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机车图片接口",
+            "url": "https://api.52vmy.cn/api/img/tu/car",
+            "description": "提供随机的高清车图片",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

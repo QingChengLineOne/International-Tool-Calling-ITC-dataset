@@ -1,0 +1,773 @@
+{
+    "tool_name": "Quotient",
+    "tool_description": "Quotient is a market data API that provides intraday (1-minute) data, end-of-day data, options data, cryptocurrency, forex, live prices, fundamental data, trading signals, and more across various assets including stocks, ETFs, funds, indices, forex, and cryptocurrencies from stock exchanges worldwide (US, Canada, Australia, UK, and Europe).",
+    "home_url": "https://rapidapi.com/dubois4and/api/quotient/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/equity/dividends",
+            "url": "https://quotient.p.rapidapi.com/equity/dividends",
+            "description": "Returns the dividends history data for a specified security.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the asset to look for, e.g., `AAPL` (Apple Inc), `T` (AT&T Inc).",
+                    "default": "AAPL"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The query end date (format: YYYY-mm-dd), e.g., `2020-04-17`.",
+                    "default": "2020-04-17"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The query start date (format: YYYY-mm-dd), e.g., `2019-01-01`.",
+                    "default": "2019-01-01"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "title": "Items",
+                    "type": "object",
+                    "required": [
+                        "Date",
+                        "dividend"
+                    ],
+                    "properties": {
+                        "Date": {
+                            "title": "Date",
+                            "type": "string",
+                            "pattern": "^.*$"
+                        },
+                        "dividend": {
+                            "title": "Dividend",
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/search/symbol",
+            "url": "https://quotient.p.rapidapi.com/search/symbol",
+            "description": "Lookup for a symbol or name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Partial company name or symbol, e.g., `apple`, `qualcomm`.",
+                    "default": "apple"
+                },
+                {
+                    "name": "categories",
+                    "type": "STRING",
+                    "description": "Asset categories. Supported categories are: [`EQT, IND, ETF, FUNDS, FX, CRYPTO`].",
+                    "default": "EQT,ETF"
+                },
+                {
+                    "name": "regions",
+                    "type": "STRING",
+                    "description": "The region(s) in which to look for. Supported regions are: [`US, CA, UK, EU, AU`].",
+                    "default": "US,UK,EU"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "symbol": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "exchange": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/crypto/daily",
+            "url": "https://quotient.p.rapidapi.com/crypto/daily",
+            "description": "Returns end of day (daily) time series data (Date, Open, High, Low, Close, Volume) for the specified parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The query start date (format: YYYY-mm-dd), e.g., `2018-04-01`.",
+                    "default": "2018-04-01"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The query end date (format: YYYY-mm-dd), e.g., `2020-04-21`.",
+                    "default": "2020-04-21"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the cryptocurrency pair to look for, e.g., `BTC/USD` (Bitcoin USD).",
+                    "default": "ETH-BTC"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "title": "Items",
+                    "type": "object",
+                    "required": [
+                        "Date",
+                        "Open",
+                        "High",
+                        "Low",
+                        "Close",
+                        "Volume"
+                    ],
+                    "properties": {
+                        "Date": {
+                            "title": "Date",
+                            "type": "string",
+                            "pattern": "^.*$"
+                        },
+                        "Open": {
+                            "title": "Open",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "High": {
+                            "title": "High",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Low": {
+                            "title": "Low",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Close": {
+                            "title": "Close",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Volume": {
+                            "title": "Volume",
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/crypto/intraday",
+            "url": "https://quotient.p.rapidapi.com/crypto/intraday",
+            "description": "Returns intraday time series data (Date, Open, High, Low, Close, Volume) for the specified parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "interval",
+                    "type": "NUMBER",
+                    "description": "1-minute level time interval, e.g., `1` (1 min), `5` (5 min).",
+                    "default": "1"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The query end date (format: YYYY-mm-dd HH:MM or YYYY-mm-dd), e.g., `2020-04-21 10:30`.",
+                    "default": "2020-04-21 10:30"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the cryptocurrency pair to look for, e.g., `BTC/USD`.",
+                    "default": "BTC-USD"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The query start date (format: YYYY-mm-dd HH:MM or YYYY-mm-dd), e.g., `2020-04-21 10:00`.",
+                    "default": "2020-04-21 10:00"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "title": "Items",
+                    "type": "object",
+                    "required": [
+                        "Date",
+                        "Open",
+                        "High",
+                        "Low",
+                        "Close",
+                        "Volume"
+                    ],
+                    "properties": {
+                        "Date": {
+                            "title": "Date",
+                            "type": "string",
+                            "pattern": "^.*$"
+                        },
+                        "Open": {
+                            "title": "Open",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "High": {
+                            "title": "High",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Low": {
+                            "title": "Low",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Close": {
+                            "title": "Close",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Volume": {
+                            "title": "Volume",
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/crypto/live",
+            "url": "https://quotient.p.rapidapi.com/crypto/live",
+            "description": "Returns current market price data for the specified cryptocurrency pair.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the cryptocurrency pair to look for, e.g., `BTC/USD`.",
+                    "default": "BTC-EUR"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timezone",
+                    "type": "STRING",
+                    "description": "A valid time zone for the returned timestamp, e.g., `US/Eastern`.",
+                    "default": "UTC"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "Last",
+                    "Change",
+                    "ChangePercent",
+                    "Timestamp",
+                    "PreviousClose",
+                    "Open",
+                    "Bid",
+                    "BidSize",
+                    "Ask",
+                    "AskSize",
+                    "High",
+                    "Low",
+                    "52WeekHigh",
+                    "52WeekLow",
+                    "Volume",
+                    "AvgVolume",
+                    "Symbol",
+                    "Name"
+                ],
+                "properties": {
+                    "Last": {
+                        "title": "Last",
+                        "type": "number"
+                    },
+                    "Change": {
+                        "title": "Change",
+                        "type": "number"
+                    },
+                    "ChangePercent": {
+                        "title": "Changepercent",
+                        "type": "number"
+                    },
+                    "Timestamp": {
+                        "title": "Timestamp",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "PreviousClose": {
+                        "title": "Previousclose",
+                        "type": "number"
+                    },
+                    "Open": {
+                        "title": "Open",
+                        "type": "number"
+                    },
+                    "Bid": {
+                        "title": "Bid",
+                        "type": "number"
+                    },
+                    "BidSize": {
+                        "title": "Bidsize",
+                        "type": "integer"
+                    },
+                    "Ask": {
+                        "title": "Ask",
+                        "type": "number"
+                    },
+                    "AskSize": {
+                        "title": "Asksize",
+                        "type": "integer"
+                    },
+                    "High": {
+                        "title": "High",
+                        "type": "number"
+                    },
+                    "Low": {
+                        "title": "Low",
+                        "type": "number"
+                    },
+                    "52WeekHigh": {
+                        "title": "52weekhigh",
+                        "type": "number"
+                    },
+                    "52WeekLow": {
+                        "title": "52weeklow",
+                        "type": "number"
+                    },
+                    "Volume": {
+                        "title": "Volume",
+                        "type": "integer"
+                    },
+                    "AvgVolume": {
+                        "title": "Avgvolume",
+                        "type": "integer"
+                    },
+                    "Symbol": {
+                        "title": "Symbol",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "Name": {
+                        "title": "Name",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/crypto/signal",
+            "url": "https://quotient.p.rapidapi.com/crypto/signal",
+            "description": "Returns a trading signal based on market sentiment, reliable indicators, analyst ratings, and news.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the cryptocurrency pair to look for, e.g., `BTC/USD`.",
+                    "default": "ETH-BTC"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "Symbol",
+                    "Signal",
+                    "ConfidenceInterval"
+                ],
+                "properties": {
+                    "Symbol": {
+                        "title": "Symbol",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "Signal": {
+                        "title": "Signal",
+                        "type": "integer"
+                    },
+                    "ConfidenceInterval": {
+                        "title": "Confidenceinterval",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/forex/live",
+            "url": "https://quotient.p.rapidapi.com/forex/live",
+            "description": "Returns current market price data for the specified currency pair.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the currency pair to look for, e.g., `EUR/USD`.",
+                    "default": "EUR/USD"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timezone",
+                    "type": "STRING",
+                    "description": "A valid time zone for the returned timestamp, e.g., `US/Eastern`.",
+                    "default": "UTC"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "Last",
+                    "Change",
+                    "ChangePercent",
+                    "Timestamp",
+                    "PreviousClose",
+                    "Open",
+                    "Bid",
+                    "BidSize",
+                    "Ask",
+                    "AskSize",
+                    "High",
+                    "Low",
+                    "52WeekHigh",
+                    "52WeekLow",
+                    "Volume",
+                    "AvgVolume",
+                    "Symbol",
+                    "Name"
+                ],
+                "properties": {
+                    "Last": {
+                        "title": "Last",
+                        "type": "number"
+                    },
+                    "Change": {
+                        "title": "Change",
+                        "type": "number"
+                    },
+                    "ChangePercent": {
+                        "title": "Changepercent",
+                        "type": "number"
+                    },
+                    "Timestamp": {
+                        "title": "Timestamp",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "PreviousClose": {
+                        "title": "Previousclose",
+                        "type": "number"
+                    },
+                    "Open": {
+                        "title": "Open",
+                        "type": "number"
+                    },
+                    "Bid": {
+                        "title": "Bid",
+                        "type": "number"
+                    },
+                    "BidSize": {
+                        "title": "Bidsize",
+                        "type": "integer"
+                    },
+                    "Ask": {
+                        "title": "Ask",
+                        "type": "number"
+                    },
+                    "AskSize": {
+                        "title": "Asksize",
+                        "type": "integer"
+                    },
+                    "High": {
+                        "title": "High",
+                        "type": "number"
+                    },
+                    "Low": {
+                        "title": "Low",
+                        "type": "number"
+                    },
+                    "52WeekHigh": {
+                        "title": "52weekhigh",
+                        "type": "number"
+                    },
+                    "52WeekLow": {
+                        "title": "52weeklow",
+                        "type": "number"
+                    },
+                    "Volume": {
+                        "title": "Volume",
+                        "type": "integer"
+                    },
+                    "AvgVolume": {
+                        "title": "Avgvolume",
+                        "type": "integer"
+                    },
+                    "Symbol": {
+                        "title": "Symbol",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "Name": {
+                        "title": "Name",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/forex/daily",
+            "url": "https://quotient.p.rapidapi.com/forex/daily",
+            "description": "Returns end of day (daily) time series data (Date, Open, High, Low, Close, Volume) for the specified parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The query start date (format: YYYY-mm-dd), e.g., `2018-04-01`.",
+                    "default": "2018-04-01"
+                },
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the currency pair to look for, e.g., `EUR/USD`.",
+                    "default": "EUR-USD"
+                },
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The query end date (format: YYYY-mm-dd), e.g., `2020-04-21`.",
+                    "default": "2020-04-21"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "title": "Items",
+                    "type": "object",
+                    "required": [
+                        "Date",
+                        "Open",
+                        "High",
+                        "Low",
+                        "Close",
+                        "Volume"
+                    ],
+                    "properties": {
+                        "Date": {
+                            "title": "Date",
+                            "type": "string",
+                            "pattern": "^.*$"
+                        },
+                        "Open": {
+                            "title": "Open",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "High": {
+                            "title": "High",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Low": {
+                            "title": "Low",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Close": {
+                            "title": "Close",
+                            "type": "number",
+                            "format": "double",
+                            "minimum": -1.7976931348623157e+308,
+                            "maximum": 1.7976931348623157e+308
+                        },
+                        "Volume": {
+                            "title": "Volume",
+                            "type": "integer",
+                            "format": "int64",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/indexes/live",
+            "url": "https://quotient.p.rapidapi.com/indexes/live",
+            "description": "Returns current market price data for the specified index.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The symbol of the index to look for, e.g., `^GSPC` (S&P 500 index).",
+                    "default": "^GSPC"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timezone",
+                    "type": "STRING",
+                    "description": "A valid time zone for the returned timestamp, e.g., `US/Eastern`.",
+                    "default": "UTC"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "Last",
+                    "Change",
+                    "ChangePercent",
+                    "Timestamp",
+                    "PreviousClose",
+                    "Open",
+                    "Bid",
+                    "BidSize",
+                    "Ask",
+                    "AskSize",
+                    "High",
+                    "Low",
+                    "52WeekHigh",
+                    "52WeekLow",
+                    "Volume",
+                    "AvgVolume",
+                    "Symbol",
+                    "Name"
+                ],
+                "properties": {
+                    "Last": {
+                        "title": "Last",
+                        "type": "number"
+                    },
+                    "Change": {
+                        "title": "Change",
+                        "type": "number"
+                    },
+                    "ChangePercent": {
+                        "title": "Changepercent",
+                        "type": "number"
+                    },
+                    "Timestamp": {
+                        "title": "Timestamp",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "PreviousClose": {
+                        "title": "Previousclose",
+                        "type": "number"
+                    },
+                    "Open": {
+                        "title": "Open",
+                        "type": "number"
+                    },
+                    "Bid": {
+                        "title": "Bid",
+                        "type": "number"
+                    },
+                    "BidSize": {
+                        "title": "Bidsize",
+                        "type": "integer"
+                    },
+                    "Ask": {
+                        "title": "Ask",
+                        "type": "number"
+                    },
+                    "AskSize": {
+                        "title": "Asksize",
+                        "type": "integer"
+                    },
+                    "High": {
+                        "title": "High",
+                        "type": "number"
+                    },
+                    "Low": {
+                        "title": "Low",
+                        "type": "number"
+                    },
+                    "52WeekHigh": {
+                        "title": "52weekhigh",
+                        "type": "number"
+                    },
+                    "52WeekLow": {
+                        "title": "52weeklow",
+                        "type": "number"
+                    },
+                    "Volume": {
+                        "title": "Volume",
+                        "type": "integer"
+                    },
+                    "AvgVolume": {
+                        "title": "Avgvolume",
+                        "type": "integer"
+                    },
+                    "Symbol": {
+                        "title": "Symbol",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    },
+                    "Name": {
+                        "title": "Name",
+                        "type": "string",
+                        "pattern": "^.*$"
+                    }
+                }
+            }
+        }
+    ]
+}

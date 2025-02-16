@@ -1,0 +1,18 @@
+{
+    "tool_name": "Count Characters String",
+    "tool_description": "This API is used for counting the number of characters in a given string.",
+    "home_url": "https://rapidapi.com/situmeang92fs-QuRWkLSe4Yd/api/count-characters-string/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Counting the String",
+            "url": "https://count-characters-string.p.rapidapi.com/",
+            "description": "This API counts the number of characters in a provided string.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

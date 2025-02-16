@@ -1,0 +1,18 @@
+{
+    "tool_name": "Love Quotes by LoveMelon",
+    "tool_description": "#1 Love Quotes with images API that you can use on your app or download and share.",
+    "home_url": "https://rapidapi.com/surendragiri/api/love-quotes-by-lovemelon/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getLoveQuotes",
+            "url": "https://love-quotes-by-lovemelon.p.rapidapi.com/",
+            "description": "Retrieve a collection of love quotes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

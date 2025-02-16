@@ -1,0 +1,43 @@
+{
+    "tool_name": "表情包-搜狗版",
+    "tool_description": "指定搜索表情关键词，获取搜狗通道表情包。",
+    "home_url": "https://api.aa1.cn/doc/apihzbqbsougou.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "表情包-搜狗版API",
+            "url": "https://cn.apihz.cn/api/img/apihzbqbsougou.php",
+            "description": "调用此API可以获取搜狗表情包。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API的ID，可在接口盒子后台查看",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API的KEY，可在接口盒子后台查看",
+                    "default": "88888888"
+                },
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "请求的页码，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "搜索的表情关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

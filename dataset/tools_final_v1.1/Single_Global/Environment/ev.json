@@ -1,0 +1,25 @@
+{
+    "tool_name": "ev",
+    "tool_description": "A tool for retrieving electric vehicle data.",
+    "home_url": "https://rapidapi.com/ivanyolgin--9AX_QCYTOW/api/ev1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ev",
+            "url": "https://ev1.p.rapidapi.com/",
+            "description": "Fetches data related to electric vehicles. Use the 'page' parameter to paginate the results, with a maximum of 1000 objects per page. For example, to access the second page, append *?page=2* to the URL.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "Specifies the page number for pagination.",
+                    "default": "2"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

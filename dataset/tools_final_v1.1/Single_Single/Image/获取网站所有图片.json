@@ -1,0 +1,25 @@
+{
+    "tool_name": "网站图片获取API",
+    "tool_description": "用于获取指定网站的所有图片",
+    "home_url": "https://api.aa1.cn/doc/websitepic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取网站所有图片",
+            "url": "https://v2.api-m.com/api/websitepic",
+            "description": "获取网站所有图片的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要获取图片的网站URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

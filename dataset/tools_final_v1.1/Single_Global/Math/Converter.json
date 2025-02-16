@@ -1,0 +1,28 @@
+{
+    "tool_name": "Converter",
+    "tool_description": "Converter Project",
+    "home_url": "https://rapidapi.com/cteamapicloud123/api/converter18/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/converter/length/length_converter",
+            "url": "https://converter18.p.rapidapi.com/converter/length/length_converter",
+            "description": "Converts various units of length.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/converter/area/area_converter",
+            "url": "https://converter18.p.rapidapi.com/converter/area/area_converter",
+            "description": "Converts various units of area.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

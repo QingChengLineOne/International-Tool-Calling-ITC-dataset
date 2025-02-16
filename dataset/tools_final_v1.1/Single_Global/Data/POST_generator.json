@@ -1,0 +1,37 @@
+{
+    "tool_name": "POST generator",
+    "tool_description": "An API designed to generate mock posts for testing and development purposes.",
+    "home_url": "https://rapidapi.com/denisraygorodski/api/post-generator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "posts",
+            "url": "https://post-generator.p.rapidapi.com/posts",
+            "description": "Retrieves mock posts based on optional parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "postID",
+                    "type": "NUMBER",
+                    "description": "Specifies the ID of the post to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "ioiii",
+                    "type": "ENUM",
+                    "description": "An optional enumeration parameter for additional filtering.",
+                    "default": ""
+                },
+                {
+                    "name": "enum",
+                    "type": "ENUM",
+                    "description": "Another optional enumeration parameter for further customization.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

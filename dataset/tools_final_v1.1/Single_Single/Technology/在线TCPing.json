@@ -1,0 +1,31 @@
+{
+    "tool_name": "在线TCPing",
+    "tool_description": "在线tcping服务，服务器发起地址为广东",
+    "home_url": "https://api.aa1.cn/doc/online_tcping.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "在线TCPing API",
+            "url": "https://api.jaxing.cc/v2/Tcping",
+            "description": "用于检查TCP连接是否可达的在线服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "host",
+                    "type": "string",
+                    "description": "需要检查的主机名或IP地址",
+                    "default": "www.example.com"
+                },
+                {
+                    "name": "port",
+                    "type": "int",
+                    "description": "需要检查的端口号",
+                    "default": 80
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

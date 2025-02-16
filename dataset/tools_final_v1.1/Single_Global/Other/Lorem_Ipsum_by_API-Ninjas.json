@@ -1,0 +1,43 @@
+{
+    "tool_name": "Lorem Ipsum by API-Ninjas",
+    "tool_description": "Generate configurable lorem ipsum placeholder text for use in design and development projects.",
+    "home_url": "https://rapidapi.com/apininjas/api/lorem-ipsum-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/loremipsum",
+            "url": "https://lorem-ipsum-by-api-ninjas.p.rapidapi.com/v1/loremipsum",
+            "description": "API Ninjas Lorem Ipsum API endpoint. Returns one or more paragraphs of lorem ipsum placeholder text.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "max_length",
+                    "type": "NUMBER",
+                    "description": "Maximum character length for the generated text.",
+                    "default": ""
+                },
+                {
+                    "name": "start_with_lorem_ipsum",
+                    "type": "STRING",
+                    "description": "Whether to begin the text with the words \"Lorem ipsum\". Must be either true or false. If unset, a default value of true will be used.",
+                    "default": ""
+                },
+                {
+                    "name": "random",
+                    "type": "STRING",
+                    "description": "Whether to randomly generate paragraphs. Must be either true or false. If unset, a default value of true will be used.",
+                    "default": ""
+                },
+                {
+                    "name": "paragraphs",
+                    "type": "NUMBER",
+                    "description": "Number of paragraphs to generate. If unset, a default value of 1 will be used.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

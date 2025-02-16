@@ -1,0 +1,38 @@
+{
+    "tool_name": "菜谱查询",
+    "tool_description": "通过指定食材或菜名查询菜谱信息",
+    "home_url": "https://api.qqsuu.cn/doc/dm-caipu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "菜谱查询",
+            "url": "https://api.qqsuu.cn/api/dm-caipu",
+            "description": "查询指定食材或菜名的菜谱信息",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "String",
+                    "description": "食材或菜名",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "String",
+                    "description": "翻页",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "num",
+                    "type": "String",
+                    "description": "返回数量",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

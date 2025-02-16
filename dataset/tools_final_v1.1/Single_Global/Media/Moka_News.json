@@ -1,0 +1,105 @@
+{
+    "tool_name": "Moka News",
+    "tool_description": "A scrapper / scraper API to get the latest news every minute from more than 30 sources all over the world, with plans to increase the number of sources to hundreds over time.",
+    "home_url": "https://rapidapi.com/uchihahamada/api/moka-news/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Sources List (New)",
+            "url": "https://moka-news.p.rapidapi.com/sources.php",
+            "description": "Use this endpoint to get the list of all news sources.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter { By Category & Source } (New)",
+            "url": "https://moka-news.p.rapidapi.com/filter.php",
+            "description": "Use this endpoint to get the recent 50 news items from a specific category and a specific source.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cat",
+                    "type": "STRING",
+                    "description": "The category of news to filter by.",
+                    "default": "World"
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "The source of news to filter by.",
+                    "default": "cnn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "By Source (New)",
+            "url": "https://moka-news.p.rapidapi.com/source.php",
+            "description": "Use this endpoint to get the recent 50 news items from a specific source.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "The source of news to retrieve.",
+                    "default": "cnn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Recent 100",
+            "url": "https://moka-news.p.rapidapi.com/recent100.php",
+            "description": "Retrieve the recent 100 news items.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "by Category",
+            "url": "https://moka-news.p.rapidapi.com/category.php",
+            "description": "Get the recent 50 news items by category.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cat",
+                    "type": "STRING",
+                    "description": "The category of news to retrieve.",
+                    "default": "Sport"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "categories",
+            "url": "https://moka-news.p.rapidapi.com/categories.php",
+            "description": "Get the list of Moka News categories.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Recent 50",
+            "url": "https://moka-news.p.rapidapi.com/recent50.php",
+            "description": "Retrieve the recent 50 news items.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

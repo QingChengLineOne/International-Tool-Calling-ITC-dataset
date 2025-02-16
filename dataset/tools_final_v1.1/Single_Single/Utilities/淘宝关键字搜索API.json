@@ -1,0 +1,31 @@
+{
+    "tool_name": "淘宝关键字搜索API",
+    "tool_description": "用于淘宝搜索关键字，支持JSON格式返回",
+    "home_url": "https://www.free-api.com/doc/326",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "淘宝搜索关键字",
+            "url": "https://suggest.taobao.com/sug",
+            "description": "搜索淘宝关键字",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "string",
+                    "description": "关键字",
+                    "default": ""
+                },
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "编码",
+                    "default": "utf-8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

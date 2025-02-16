@@ -1,0 +1,38 @@
+{
+    "tool_name": "Web Search_v2",
+    "tool_description": "Web Search API. Search the web pages from billions of results. Related keywords, knowledge panel and more.",
+    "home_url": "https://rapidapi.com/herosAPI/api/web-search24/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Web Search",
+            "url": "https://web-search24.p.rapidapi.com/",
+            "description": "Get Web Search Results",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Search query. You can use web search parameters. e.g. `ronaldo site:instagram.com`, `twitter filetype:pdf`, `inurl:market`",
+                    "default": "Leo Messi"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "related_keywords",
+                    "type": "STRING",
+                    "description": "Shows related keywords. Default: `false`. Entering `true` increases API latency.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Max results number. Max recommended value is `300`.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

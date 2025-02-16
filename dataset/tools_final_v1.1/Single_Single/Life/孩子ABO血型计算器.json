@@ -1,0 +1,31 @@
+{
+    "tool_name": "孩子ABO血型计算器",
+    "tool_description": "本计算器依照血型遗传规律表血型配对，只要您输入您及您伴侣的血型，即可判断出小宝宝可能出现的血型，是已知最科学的血型测试和血型配对方法。",
+    "home_url": "https://api.aa1.cn/doc/api-xx-boy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "孩子ABO血型计算器",
+            "url": "https://www.apii.cn/api/huaiyun/xx/",
+            "description": "根据父母血型计算孩子可能出现的血型",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "father",
+                    "type": "string",
+                    "description": "父亲的血型，如A, B, AB, O",
+                    "default": ""
+                },
+                {
+                    "name": "mother",
+                    "type": "string",
+                    "description": "母亲的血型，如A, B, AB, O",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,211 @@
+{
+    "tool_name": "MetalpriceAPI",
+    "tool_description": "提供实时和历史贵金属（如黄金、白银、钯金、铂金等）及外汇价格，支持超过160种货币。",
+    "home_url": "https://rapidapi.com/metalpriceapi-org-metalpriceapi-org-default/api/metalpriceapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "historical",
+            "url": "https://metalpriceapi.p.rapidapi.com/v1/2014-10-14",
+            "description": "此端点返回历史汇率数据。使用格式YYYY-MM-DD作为基本URL。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "用于身份验证的API密钥。",
+                    "default": "REPLACE_ME"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "基础货币，默认为USD。",
+                    "default": "USD"
+                },
+                {
+                    "name": "quotes",
+                    "type": "STRING",
+                    "description": "要查询的货币，默认为BTC。",
+                    "default": "BTC"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "change",
+            "url": "https://metalpriceapi.p.rapidapi.com/v1/change",
+            "description": "此端点用于请求一个或多个货币相对于基础货币的变化（百分比），可选时间范围。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "用于身份验证的API密钥。",
+                    "default": "REPLACE_ME"
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "查询的开始日期，格式为YYYY-MM-DD。",
+                    "default": "2021-04-22"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "查询的结束日期，格式为YYYY-MM-DD。",
+                    "default": "2021-04-23"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currencies",
+                    "type": "STRING",
+                    "description": "要查询的货币，默认为EUR,XAU,XAG。",
+                    "default": "EUR,XAU,XAG"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "基础货币，默认为USD。",
+                    "default": "USD"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "live",
+            "url": "https://metalpriceapi.p.rapidapi.com/v1/latest",
+            "description": "此端点返回实时汇率数据。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "用于身份验证的API密钥。",
+                    "default": "REPLACE_ME"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currencies",
+                    "type": "STRING",
+                    "description": "要查询的货币，默认为XAU,XAG,EUR。",
+                    "default": "XAU,XAG,EUR"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "基础货币，默认为USD。",
+                    "default": "USD"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "convert",
+            "url": "https://metalpriceapi.p.rapidapi.com/v1/convert",
+            "description": "此端点用于将任意金额从一种货币转换为另一种货币。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "目标货币。",
+                    "default": "USD"
+                },
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "用于身份验证的API密钥。",
+                    "default": "REPLACE_ME"
+                },
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "要转换的金额。",
+                    "default": 1
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "源货币。",
+                    "default": "BTC"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "可选的日期，格式为YYYY-MM-DD。",
+                    "default": "2021-03-10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "timeframe",
+            "url": "https://metalpriceapi.p.rapidapi.com/v1/timeframe",
+            "description": "此端点用于获取指定时间段内的历史汇率（最大范围：365天）。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "用于身份验证的API密钥。",
+                    "default": "REPLACE_ME"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "查询的结束日期，格式为YYYY-MM-DD。",
+                    "default": "2021-04-23"
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "查询的开始日期，格式为YYYY-MM-DD。",
+                    "default": "2021-04-22"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "currencies",
+                    "type": "STRING",
+                    "description": "要查询的货币，默认为EUR,XAU,XAG。",
+                    "default": "EUR,XAU,XAG"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "基础货币，默认为USD。",
+                    "default": "USD"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "symbols",
+            "url": "https://metalpriceapi.p.rapidapi.com/v1/symbols",
+            "description": "此端点用于获取最新支持的货币符号列表。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "api_key",
+                    "type": "STRING",
+                    "description": "用于身份验证的API密钥。",
+                    "default": "REPLACE_ME"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

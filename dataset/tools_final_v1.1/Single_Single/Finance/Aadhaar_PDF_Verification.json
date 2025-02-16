@@ -1,0 +1,114 @@
+{
+    "tool_name": "Aadhaar PDF Verification",
+    "tool_description": "A tool for verifying Aadhaar PDF documents and downloading them.",
+    "home_url": "https://rapidapi.com/way2risetech/api/aadhaar-pdf-verification3/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Extract pdf data",
+            "url": "https://aadhaar-pdf-verification3.p.rapidapi.com/pdfverifywebsvcv2/pdfverify",
+            "description": "Extracts data from Aadhaar PDF documents with verification.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "3-Aadhaar-download",
+            "url": "https://aadhaar-pdf-verification3.p.rapidapi.com/Okyc/Pdf_aadhaar_download",
+            "description": "Downloads the Aadhaar PDF document.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "2-Generate-aadhaar-otp",
+            "url": "https://aadhaar-pdf-verification3.p.rapidapi.com/Okyc/Pdf_generate_aadhaar_otp",
+            "description": "Generates an OTP for Aadhaar verification.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "1-Get-captcha",
+            "url": "https://aadhaar-pdf-verification3.p.rapidapi.com/Okyc/PdfGetcaptcha",
+            "description": "Retrieves a captcha for verification purposes.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

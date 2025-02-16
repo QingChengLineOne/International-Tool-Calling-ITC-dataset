@@ -1,0 +1,18 @@
+{
+    "tool_name": "fachaApi",
+    "tool_description": "A testing API designed to retrieve client information.",
+    "home_url": "https://rapidapi.com/javiermarchetti83/api/fachaapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "clientes",
+            "url": "https://fachaapi.p.rapidapi.com/cliente",
+            "description": "Retrieve client information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

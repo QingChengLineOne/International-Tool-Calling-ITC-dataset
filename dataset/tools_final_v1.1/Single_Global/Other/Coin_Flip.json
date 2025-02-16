@@ -1,0 +1,40 @@
+{
+    "tool_name": "Coin Flip",
+    "tool_description": "API that flips a coin, providing a random outcome of either heads or tails.",
+    "home_url": "https://rapidapi.com/gkbrk/api/coin-flip1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Heads / Tails",
+            "url": "https://coin-flip1.p.rapidapi.com/headstails",
+            "description": "Returns an outcome of a coin flip, either heads or tails.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

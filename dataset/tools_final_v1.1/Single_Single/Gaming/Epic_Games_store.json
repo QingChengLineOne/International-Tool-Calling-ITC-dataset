@@ -1,0 +1,89 @@
+{
+    "tool_name": "Epic Games store",
+    "tool_description": "Search games, bundles, and editors in the Epic Games store, get the latest news from the platform, and present free games available for download.",
+    "home_url": "https://rapidapi.com/psimavel/api/epic-games-store/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Get News",
+            "url": "https://epic-games-store.p.rapidapi.com/getNews/locale/{locale}/limit/{limit}",
+            "description": "Retrieve a list of all news articles available on the Epic Games platform.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of news articles to return.",
+                    "default": "30"
+                },
+                {
+                    "name": "locale",
+                    "type": "string",
+                    "description": "The language locale for the news articles.",
+                    "default": "en"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get free games",
+            "url": "https://epic-games-store.p.rapidapi.com/getFreeGames/country/{country}/locale/{locale}",
+            "description": "List all currently available free games on the Epic Games store.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "locale",
+                    "type": "string",
+                    "description": "The language locale for the free games list.",
+                    "default": "en"
+                },
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "The country code to filter the free games available.",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://epic-games-store.p.rapidapi.com/search/{term}/page/{page}/country/{country}/locale/{locale}",
+            "description": "Search for games using a simple search API endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination of search results.",
+                    "default": "1"
+                },
+                {
+                    "name": "locale",
+                    "type": "string",
+                    "description": "The language locale for the search results.",
+                    "default": "en"
+                },
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "The country code to filter search results.",
+                    "default": "US"
+                },
+                {
+                    "name": "term",
+                    "type": "string",
+                    "description": "The search term to find specific games.",
+                    "default": "fortnite"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

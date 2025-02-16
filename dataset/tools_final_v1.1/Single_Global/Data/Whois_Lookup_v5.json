@@ -1,0 +1,25 @@
+{
+    "tool_name": "Whois Lookup_v5",
+    "tool_description": "Whois Lookup API in Json or Xml format that allows users to retrieve domain registration information.",
+    "home_url": "https://rapidapi.com/whois-lookup-whois-lookup-default/api/whois-lookup2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "NsLookup",
+            "url": "https://whois-lookup2.p.rapidapi.com/nslookup",
+            "description": "NsLookup queries the specified DNS server and retrieves the requested records associated with the provided domain name, including information like the domain name’s IP addresses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which DNS records are to be retrieved.",
+                    "default": "newz.ai"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

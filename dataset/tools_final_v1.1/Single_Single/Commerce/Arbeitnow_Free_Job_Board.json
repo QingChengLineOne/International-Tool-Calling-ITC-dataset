@@ -1,0 +1,31 @@
+{
+    "tool_name": "Arbeitnow Free Job Board",
+    "tool_description": "A Job Board API for jobs in Germany and remote with visa sponsorship, relocation support, and 4-day work week jobs.",
+    "home_url": "https://rapidapi.com/arbeitnow/api/arbeitnow-free-job-board/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "Free Job Postings API",
+            "url": "https://arbeitnow-free-job-board.p.rapidapi.com/api/job-board-api",
+            "description": "This API allows companies to post job openings that offer visa sponsorship, four-day work weeks, and remote opportunities. It aims to improve work-life balance and productivity while providing transparency regarding salary and compensation.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Content-Type",
+                    "type": "STRING",
+                    "description": "Specifies the media type of the resource.",
+                    "default": "application/json"
+                },
+                {
+                    "name": "visa_sponsorship",
+                    "type": "BOOLEAN",
+                    "description": "Indicates whether the job offers visa sponsorship.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

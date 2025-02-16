@@ -1,0 +1,109 @@
+{
+    "tool_name": "Mobile Phone Specs Database",
+    "tool_description": "Our cell phones / mobile phones specs database (GSM specs) is a comprehensive collection of specifications and features for over 10,000 mobile phone models. This database includes details such as device dimensions, images, weight, display size and type, processor, memory, storage, camera specifications, battery capacity, operating system, and connectivity options. It serves as a valuable resource for consumers to compare mobile devices effectively.",
+    "home_url": "https://rapidapi.com/makingdatameaningful/api/mobile-phone-specs-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get {Phone Image ids} by {Custom id}",
+            "url": "https://mobile-phone-specs-database.p.rapidapi.com/gsm/get-phone-images-ids-by-phone-custom-id/{phonecustomid}",
+            "description": "Retrieve up to 10 image IDs for a specific phone model using its custom ID. Note that the image IDs expire after 30 minutes.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phoneCustomId",
+                    "type": "NUMBER",
+                    "description": "The custom ID of the phone for which to retrieve image IDs.",
+                    "default": "103693"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get {Specifications} by {Brand Name} and {Model Name}",
+            "url": "https://mobile-phone-specs-database.p.rapidapi.com/gsm/get-specifications-by-brandname-modelname/{brandname}/{modelname}",
+            "description": "Fetch all specifications for a mobile phone based on its brand name and model name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "brandName",
+                    "type": "string",
+                    "description": "The brand name of the mobile phone.",
+                    "default": "Samsung"
+                },
+                {
+                    "name": "modelName",
+                    "type": "string",
+                    "description": "The model name of the mobile phone.",
+                    "default": "Galaxy S22 Ultra 5G"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get {Image} by {Phone Image id}",
+            "url": "https://mobile-phone-specs-database.p.rapidapi.com/gsm/get-image-by-id/{imageid}",
+            "description": "Retrieve the image of a mobile phone using its image ID obtained from the previous API.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "imageId",
+                    "type": "string",
+                    "description": "The ID of the image to retrieve.",
+                    "default": "Z2RjOG80Smk2WVV2R0wwR1F1RjRNZG5TR1ZqUUZuU1JhU1pNT0FjNG94UT0="
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get {Specifications} by {Custom id}",
+            "url": "https://mobile-phone-specs-database.p.rapidapi.com/gsm/get-specifications-by-phone-custom-id/{phonecustomid}",
+            "description": "Retrieve all specifications for a mobile phone using its custom ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "phoneCustomId",
+                    "type": "NUMBER",
+                    "description": "The custom ID of the phone for which to retrieve specifications.",
+                    "default": "103693"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List all {Models} by {Phone Brand}",
+            "url": "https://mobile-phone-specs-database.p.rapidapi.com/gsm/get-models-by-brandname/{brandname}",
+            "description": "List all mobile phone models available for a specific brand.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "brandName",
+                    "type": "string",
+                    "description": "The brand name for which to list models.",
+                    "default": "Samsung"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "List all {Phone Brands}",
+            "url": "https://mobile-phone-specs-database.p.rapidapi.com/gsm/all-brands",
+            "description": "Retrieve a list of all available mobile phone brands.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "全网短剧查询",
+    "tool_description": "全网7000+短剧查询，每日更新",
+    "home_url": "https://api.aa1.cn/doc/duanjuapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全网短剧查询API",
+            "url": "https://zy.6789o.com/duanjuapi/search.php",
+            "description": "通过关键词查询全网短剧信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要查询的短剧关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

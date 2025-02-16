@@ -1,0 +1,453 @@
+{
+    "tool_name": "Instagram Pro",
+    "tool_description": "Instagram API Pro Version for accessing user followings and followers data.",
+    "home_url": "https://rapidapi.com/thekirtan/api/instagram-pro/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Following by PK",
+            "url": "https://instagram-pro.p.rapidapi.com/pro/following",
+            "description": "Retrieve the Instagram following list by user ID (PK), up to 1000 records.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pk",
+                    "type": "STRING",
+                    "description": "The user ID of the Instagram account.",
+                    "default": "232192182"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "corsEnabled",
+                    "type": "STRING",
+                    "description": "Enable CORS for the request.",
+                    "default": "false"
+                },
+                {
+                    "name": "nextMaxId",
+                    "type": "STRING",
+                    "description": "Used for pagination to get the next set of results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Following by username",
+            "url": "https://instagram-pro.p.rapidapi.com/pro/following",
+            "description": "Retrieve the Instagram following list by username, up to 1000 records.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the Instagram account.",
+                    "default": "therock"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "corsEnabled",
+                    "type": "STRING",
+                    "description": "Enable CORS for the request.",
+                    "default": ""
+                },
+                {
+                    "name": "nextMaxId",
+                    "type": "STRING",
+                    "description": "Used for pagination to get the next set of results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "cursor": {
+                        "type": "object",
+                        "properties": {
+                            "moreAvailable": {
+                                "type": "boolean"
+                            },
+                            "nextMaxId": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Followers by PK",
+            "url": "https://instagram-pro.p.rapidapi.com/pro/followers",
+            "description": "Retrieve the Instagram followers list by user ID (PK), up to 1000 records.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pk",
+                    "type": "STRING",
+                    "description": "The user ID of the Instagram account.",
+                    "default": "232192182"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "nextMaxId",
+                    "type": "STRING",
+                    "description": "Used for pagination to get the next set of results.",
+                    "default": ""
+                },
+                {
+                    "name": "corsEnabled",
+                    "type": "STRING",
+                    "description": "Enable CORS for the request.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Followers by username",
+            "url": "https://instagram-pro.p.rapidapi.com/pro/followers",
+            "description": "Retrieve the Instagram followers list by username, up to 1000 records.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the Instagram account.",
+                    "default": "therock"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "nextMaxId",
+                    "type": "STRING",
+                    "description": "Used for pagination to get the next set of results.",
+                    "default": ""
+                },
+                {
+                    "name": "corsEnabled",
+                    "type": "STRING",
+                    "description": "Enable CORS for the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "cursor": {
+                        "type": "object",
+                        "properties": {
+                            "moreAvailable": {
+                                "type": "boolean"
+                            },
+                            "nextMaxId": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Advance Profile",
+            "url": "https://instagram-pro.p.rapidapi.com/advance_profile",
+            "description": "Retrieve detailed profile data including email and phone if available.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ig",
+                    "type": "STRING",
+                    "description": "The username of the Instagram account.",
+                    "default": "therock"
+                },
+                {
+                    "name": "response_type",
+                    "type": "STRING",
+                    "description": "The type of response required.",
+                    "default": "info"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "corsEnabled",
+                    "type": "STRING",
+                    "description": "Enable CORS for the request.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "account_badges": {
+                            "type": "array"
+                        },
+                        "account_type": {
+                            "type": "integer"
+                        },
+                        "address_street": {
+                            "type": "string"
+                        },
+                        "auto_expand_chaining": {
+                            "type": "boolean"
+                        },
+                        "biography": {
+                            "type": "string"
+                        },
+                        "biography_with_entities": {
+                            "type": "object",
+                            "properties": {
+                                "entities": {
+                                    "type": "array"
+                                },
+                                "raw_text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "business_contact_method": {
+                            "type": "string"
+                        },
+                        "can_be_reported_as_fraud": {
+                            "type": "boolean"
+                        },
+                        "can_hide_category": {
+                            "type": "boolean"
+                        },
+                        "can_hide_public_contacts": {
+                            "type": "boolean"
+                        },
+                        "category": {
+                            "type": "null"
+                        },
+                        "follower_count": {
+                            "type": "integer"
+                        },
+                        "following_count": {
+                            "type": "integer"
+                        },
+                        "following_tag_count": {
+                            "type": "integer"
+                        },
+                        "full_name": {
+                            "type": "string"
+                        },
+                        "geo_media_count": {
+                            "type": "integer"
+                        },
+                        "has_active_charity_business_profile_fundraiser": {
+                            "type": "boolean"
+                        },
+                        "has_anonymous_profile_picture": {
+                            "type": "boolean"
+                        },
+                        "has_chaining": {
+                            "type": "boolean"
+                        },
+                        "has_guides": {
+                            "type": "boolean"
+                        },
+                        "has_highlight_reels": {
+                            "type": "boolean"
+                        },
+                        "has_unseen_besties_media": {
+                            "type": "boolean"
+                        },
+                        "hd_profile_pic_url_info": {
+                            "type": "object",
+                            "properties": {
+                                "height": {
+                                    "type": "integer"
+                                },
+                                "url": {
+                                    "type": "string"
+                                },
+                                "width": {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "hd_profile_pic_versions": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "height": {
+                                        "type": "integer"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    },
+                                    "width": {
+                                        "type": "integer"
+                                    }
+                                }
+                            }
+                        },
+                        "highlight_reshare_disabled": {
+                            "type": "boolean"
+                        },
+                        "include_direct_blacklist_status": {
+                            "type": "boolean"
+                        },
+                        "instagram_location_id": {
+                            "type": "string"
+                        },
+                        "is_bestie": {
+                            "type": "boolean"
+                        },
+                        "is_business": {
+                            "type": "boolean"
+                        },
+                        "is_call_to_action_enabled": {
+                            "type": "boolean"
+                        },
+                        "is_eligible_for_smb_support_flow": {
+                            "type": "boolean"
+                        },
+                        "is_facebook_onboarded_charity": {
+                            "type": "boolean"
+                        },
+                        "is_favorite": {
+                            "type": "boolean"
+                        },
+                        "is_favorite_for_highlights": {
+                            "type": "boolean"
+                        },
+                        "is_favorite_for_igtv": {
+                            "type": "boolean"
+                        },
+                        "is_favorite_for_stories": {
+                            "type": "boolean"
+                        },
+                        "is_interest_account": {
+                            "type": "boolean"
+                        },
+                        "is_memorialized": {
+                            "type": "boolean"
+                        },
+                        "is_potential_business": {
+                            "type": "boolean"
+                        },
+                        "is_private": {
+                            "type": "boolean"
+                        },
+                        "is_verified": {
+                            "type": "boolean"
+                        },
+                        "latitude": {
+                            "type": "integer"
+                        },
+                        "live_subscription_status": {
+                            "type": "string"
+                        },
+                        "longitude": {
+                            "type": "integer"
+                        },
+                        "media_count": {
+                            "type": "integer"
+                        },
+                        "merchant_checkout_style": {
+                            "type": "string"
+                        },
+                        "mutual_followers_count": {
+                            "type": "integer"
+                        },
+                        "open_external_url_with_in_app_browser": {
+                            "type": "boolean"
+                        },
+                        "pk": {
+                            "type": "integer"
+                        },
+                        "professional_conversion_suggested_account_type": {
+                            "type": "integer"
+                        },
+                        "profile_pic_id": {
+                            "type": "string"
+                        },
+                        "profile_pic_url": {
+                            "type": "string"
+                        },
+                        "public_email": {
+                            "type": "string"
+                        },
+                        "public_phone_country_code": {
+                            "type": "string"
+                        },
+                        "public_phone_number": {
+                            "type": "string"
+                        },
+                        "robi_feedback_source": {
+                            "type": "null"
+                        },
+                        "seller_shoppable_feed_type": {
+                            "type": "string"
+                        },
+                        "shoppable_posts_count": {
+                            "type": "integer"
+                        },
+                        "should_show_category": {
+                            "type": "boolean"
+                        },
+                        "should_show_public_contacts": {
+                            "type": "boolean"
+                        },
+                        "show_account_transparency_details": {
+                            "type": "boolean"
+                        },
+                        "show_leave_feedback": {
+                            "type": "boolean"
+                        },
+                        "show_post_insights_entry_point": {
+                            "type": "boolean"
+                        },
+                        "show_shoppable_feed": {
+                            "type": "boolean"
+                        },
+                        "smb_support_partner": {
+                            "type": "null"
+                        },
+                        "total_ar_effects": {
+                            "type": "integer"
+                        },
+                        "total_clips_count": {
+                            "type": "integer"
+                        },
+                        "total_igtv_videos": {
+                            "type": "integer"
+                        },
+                        "username": {
+                            "type": "string"
+                        },
+                        "usertags_count": {
+                            "type": "integer"
+                        },
+                        "zip": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

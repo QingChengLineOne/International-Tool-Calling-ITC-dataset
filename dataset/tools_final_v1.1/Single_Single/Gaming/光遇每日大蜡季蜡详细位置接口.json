@@ -1,0 +1,32 @@
+{
+    "tool_name": "光遇每日大蜡季蜡详细位置接口",
+    "tool_description": "生成光遇季蜡大蜡位置",
+    "home_url": "https://api.aa1.cn/doc/ytgyscwz.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "光遇每日大蜡季蜡详细位置接口",
+            "url": "https://api.t1qq.com/api/sky/sc/lzwz",
+            "description": "查询光遇中每日大蜡季蜡的详细位置",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "9uryZiknzUtTFkaYUQxcOeMwq4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "day",
+                    "type": "int",
+                    "description": "可选参数，指定查询的日期，默认为当天",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "tool_name": "Crypto and Forex Rates",
+    "tool_description": "Get rates for forex USD base and crypto USDT base.",
+    "home_url": "https://rapidapi.com/rmr-soft-rmr-soft-default/api/crypto-and-forex-rates/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ExchangeCurrencies",
+            "url": "https://crypto-and-forex-rates.p.rapidapi.com/api/exchange/{is_from}/{to}/{amount}/{bfee}/{sfee}/{withdraw}",
+            "description": "Exchange between two currencies (USD is the base). Users can define buy and sell fees, as well as a withdrawal fee in percentage.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "string",
+                    "description": "The currency to exchange from.",
+                    "default": "iqd"
+                },
+                {
+                    "name": "to",
+                    "type": "string",
+                    "description": "The currency to exchange to.",
+                    "default": "try"
+                },
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The amount of currency to exchange.",
+                    "default": "100000"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "bfee",
+                    "type": "NUMBER",
+                    "description": "Buy fee percentage.",
+                    "default": "1"
+                },
+                {
+                    "name": "sfee",
+                    "type": "NUMBER",
+                    "description": "Sell fee percentage.",
+                    "default": "1"
+                },
+                {
+                    "name": "withdraw",
+                    "type": "NUMBER",
+                    "description": "Withdrawal fee percentage.",
+                    "default": "3"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "api/assetInfo",
+            "url": "https://crypto-and-forex-rates.p.rapidapi.com/api/assetInfo/{symbol}",
+            "description": "Retrieve information about a single asset.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "string",
+                    "description": "The symbol of the asset to retrieve information for.",
+                    "default": "eur"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getPrices",
+            "url": "https://crypto-and-forex-rates.p.rapidapi.com/api/getPrices",
+            "description": "Get a list of prices for all assets.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getAssets",
+            "url": "https://crypto-and-forex-rates.p.rapidapi.com/api/getAssets",
+            "description": "Return a list of supported assets.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

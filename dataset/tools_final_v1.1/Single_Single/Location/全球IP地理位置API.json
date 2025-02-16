@@ -1,0 +1,37 @@
+{
+    "tool_name": "全球IP地理位置API",
+    "tool_description": "用于查询单个IPv4/IPv6地址或域名相关地理位置信息",
+    "home_url": "https://www.free-api.com/doc/292",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP地理位置查询",
+            "url": "http://ip-api.com/json",
+            "description": "查询IP地址或域名相关地理位置信息",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "fields",
+                    "type": "string",
+                    "description": "字段",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "语言",
+                    "default": ""
+                },
+                {
+                    "name": "callback",
+                    "type": "string",
+                    "description": "回调函数",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

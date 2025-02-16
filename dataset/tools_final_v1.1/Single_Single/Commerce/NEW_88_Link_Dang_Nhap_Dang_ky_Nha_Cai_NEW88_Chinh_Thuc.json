@@ -1,0 +1,18 @@
+{
+    "tool_name": "NEW 88 Link Dang Nhap Dang ky Nha Cai NEW88 Chinh Thuc",
+    "tool_description": "New88 - new88vinet là nhà cái cá cược trực tuyến uy tín top đầu ở khu vực Việt Nam và Đông Nam Á. Các sản phẩm cá cược được kiểm duyệt và phân phối độc quyền bởi tập đoàn Taipei Đài Loan.",
+    "home_url": "https://rapidapi.com/new88vi/api/new-88-link-dang-nhap-dang-ky-nha-cai-new88-chinh-thuc/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "NEW 88 Link Dang Nhap Dang ky Nha Cai NEW88 Chinh Thuc",
+            "url": "https://new-88-link-dang-nhap-dang-ky-nha-cai-new88-chinh-thuc.p.rapidapi.com/",
+            "description": "This API provides access to the official New88 online betting platform, allowing users to log in and register for betting services.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "tool_name": "四柱生辰八字排盘信息接口",
+    "tool_description": "提供生辰八字排盘信息的API服务",
+    "home_url": "https://api.aa1.cn/doc/szbzpp.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "生辰八字排盘信息接口",
+            "url": "https://api.t1qq.com/api/tool/day/paipan/bz",
+            "description": "获取指定日期和时间的生辰八字排盘信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "9uryZiknzUtTFkaYUQxcOeMwq4"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "description": "年份，默认为当前年份",
+                    "default": "0"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "description": "月份，1-12",
+                    "default": "0"
+                },
+                {
+                    "name": "m",
+                    "type": "int",
+                    "description": "日期，1-31",
+                    "default": "0"
+                },
+                {
+                    "name": "d",
+                    "type": "int",
+                    "description": "时辰，1-24，默认为当前时间",
+                    "default": "0"
+                },
+                {
+                    "name": "i",
+                    "type": "int",
+                    "description": "性别，1为男，2为女",
+                    "default": "0"
+                },
+                {
+                    "name": "s",
+                    "type": "int",
+                    "description": "出生地经度，默认为0，单位为度",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

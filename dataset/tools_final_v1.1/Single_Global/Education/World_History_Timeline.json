@@ -1,0 +1,35 @@
+{
+    "tool_name": "World History Timeline",
+    "tool_description": "The World History Timeline API by Pizza API is a comprehensive resource for exploring significant historical events from 3200 BCE to the year 2000. It provides access to a vast database of information on key moments in human history, organized in an easy-to-use format for developers.",
+    "home_url": "https://rapidapi.com/raajreact/api/world-history-timeline/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Historic Event By Year",
+            "url": "https://world-history-timeline.p.rapidapi.com/History-By-Year",
+            "description": "Retrieves all available historical events for a specified year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "The year for which historical events are requested.",
+                    "default": "400"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Random Historic Event",
+            "url": "https://world-history-timeline.p.rapidapi.com/History",
+            "description": "Returns a random historical event along with the corresponding year.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

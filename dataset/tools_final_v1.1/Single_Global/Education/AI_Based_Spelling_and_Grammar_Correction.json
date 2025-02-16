@@ -1,0 +1,25 @@
+{
+    "tool_name": "AI Based Spelling and Grammar Correction",
+    "tool_description": "This API can correct grammar and spelling mistakes automatically for the specified text using AI.",
+    "home_url": "https://rapidapi.com/alreadycoded/api/ai-based-spelling-and-grammar-correction/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "text",
+            "url": "https://ai-based-spelling-and-grammar-correction.p.rapidapi.com/data",
+            "description": "This API endpoint accepts any text for grammar and spelling correction.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text that needs to be corrected for grammar and spelling errors.",
+                    "default": "Online calculators can make people life easy by helping them in everyday tasks that require calculations. This script comes with 100 built-in calculators that enables you to set-up and launch your complete online calculators website in a matter of minutes."
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

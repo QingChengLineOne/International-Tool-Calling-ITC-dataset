@@ -1,0 +1,42 @@
+{
+    "tool_name": "Apple Music",
+    "tool_description": "Fetches songs & album data from Apple Music",
+    "home_url": "https://rapidapi.com/420vijay47/api/apple-music24/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Album",
+            "url": "https://apple-music24.p.rapidapi.com/playlist1/",
+            "description": "Get entire Playlist data of any album from Apple Music.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the album on Apple Music.",
+                    "default": "https://music.apple.com/us/album/m-s-dhoni-the-untold-story-original-motion-picture/1158884319"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Single Track",
+            "url": "https://apple-music24.p.rapidapi.com/track/",
+            "description": "Get Single track data from Apple Music.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the single track on Apple Music.",
+                    "default": "https://music.apple.com/us/album/penolong-yang-setia/1546605591?i=1546605594"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": "\""
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "tool_name": "Climate Change API_v5",
+    "tool_description": "An API showing all the latest climate change news around the world.",
+    "home_url": "https://rapidapi.com/jasonlodder-0xm2VIrkO11/api/climate-change-api18/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Specific Climate Change News",
+            "url": "https://climate-change-api18.p.rapidapi.com/news/guardian",
+            "description": "This endpoint returns specific news about climate change from the Guardian newspaper.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "newspaperId",
+                    "type": "string",
+                    "description": "The identifier for the newspaper from which to fetch news.",
+                    "default": "guardian"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get All Climate Change News",
+            "url": "https://climate-change-api18.p.rapidapi.com/news",
+            "description": "This endpoint returns all news about climate change from various sources worldwide.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "tool_name": "Ebay",
+    "tool_description": "Get Products from Ebay (Unofficial)",
+    "home_url": "https://rapidapi.com/felixeschmittfes/api/ebay32/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Product Details",
+            "url": "https://ebay32.p.rapidapi.com/product/{product_id}",
+            "description": "Retrieve detailed information about a specific product using its product ID. The default country for the product details is the United States, but you can specify other countries.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "product_id",
+                    "type": "NUMBER",
+                    "description": "The unique ID of the product, which can be found in the product's URL or obtained via the /search endpoint.",
+                    "default": "195499451557"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country for which to return offers. Valid values include the countries listed in the description. Default is 'united states'.",
+                    "default": "germany"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The country code corresponding to the valid country for offers. Valid values are listed in the description. Default is 'us'.",
+                    "default": "de"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "seller": {
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "type": "string"
+                            },
+                            "user_name": {
+                                "type": "string"
+                            },
+                            "rating_amount": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "images": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "bidding": {
+                        "type": "object",
+                        "properties": {
+                            "remaining_time": {
+                                "type": "null"
+                            },
+                            "bid_amount": {
+                                "type": "null"
+                            }
+                        }
+                    },
+                    "instant_buy": {
+                        "type": "boolean"
+                    },
+                    "payment_methods": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "quantity": {
+                        "type": "integer"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "return_policy": {
+                        "type": "string"
+                    },
+                    "logistics_cost": {
+                        "type": "null"
+                    },
+                    "why2buy": {
+                        "type": "object"
+                    },
+                    "condition": {
+                        "type": "string"
+                    },
+                    "location": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "integer"
+                            },
+                            "currency": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search Products",
+            "url": "https://ebay32.p.rapidapi.com/search/{search_query}",
+            "description": "Search for products on Ebay based on a specific query. The default country for the search is the United States, but you can specify other countries.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The search term used to find products on Ebay.",
+                    "default": "iphone"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The country for which to return offers. Valid values include the countries listed in the description. Default is 'united states'.",
+                    "default": "germany"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number of the results to return. Default is '1'.",
+                    "default": "1"
+                },
+                {
+                    "name": "country_code",
+                    "type": "STRING",
+                    "description": "The country code corresponding to the valid country for offers. Valid values are listed in the description. Default is 'us'.",
+                    "default": "de"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "products": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "last_page": {
+                        "type": "integer"
+                    },
+                    "search": {
+                        "type": "object",
+                        "properties": {
+                            "search_query": {
+                                "type": "string"
+                            },
+                            "country_url": {
+                                "type": "string"
+                            },
+                            "page": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "products_amount": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

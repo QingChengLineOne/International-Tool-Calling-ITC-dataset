@@ -1,0 +1,43 @@
+{
+    "tool_name": "金山词霸",
+    "tool_description": "获取搜索字母相关单词及其含义",
+    "home_url": "https://dict-mobile.iciba.com/interface/index.php",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取搜索字母相关单词及其含义",
+            "url": "https://dict-mobile.iciba.com/interface/index.php",
+            "description": "通过输入的字母，获取相关单词及其含义",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "c",
+                    "type": "string",
+                    "description": "固定值：word",
+                    "default": "word"
+                },
+                {
+                    "name": "m",
+                    "type": "string",
+                    "description": "固定值：getsuggest",
+                    "default": "getsuggest"
+                },
+                {
+                    "name": "is_need_mean",
+                    "type": "int",
+                    "description": "是否需要词语含义，1表示需要",
+                    "default": "1"
+                },
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "搜索的单词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1（成功）, 101（验证失败）",
+            "schema": {}
+        }
+    ]
+}

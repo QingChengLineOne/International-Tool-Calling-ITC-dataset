@@ -1,0 +1,53 @@
+{
+    "tool_name": "Public Holiday",
+    "tool_description": "An API for Public Holidays & Bank Holidays, providing information about holidays in various countries.",
+    "home_url": "https://rapidapi.com/theapiguy/api/public-holiday/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Public Holidays",
+            "url": "https://public-holiday.p.rapidapi.com/{year}/{countrycode}",
+            "description": "Returns the public holidays from a given year and country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "CountryCode",
+                    "type": "STRING",
+                    "description": "The two-letter country code for the desired country.",
+                    "default": "US"
+                },
+                {
+                    "name": "Year",
+                    "type": "STRING",
+                    "description": "The year for which to retrieve public holidays.",
+                    "default": "2019"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

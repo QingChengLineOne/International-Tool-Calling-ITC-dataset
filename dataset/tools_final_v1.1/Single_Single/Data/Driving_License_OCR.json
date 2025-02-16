@@ -1,0 +1,35 @@
+{
+    "tool_name": "Driving License OCR",
+    "tool_description": "IDfy’s Driving License OCR API enables your customers to pre-fill their onboarding forms instantly by allowing them to upload or scan a Driving License. IDfy will digitize the document for you. When paired with IDfy’s DL Verification API, you can make your onboarding journey seamless and instant by onboarding customers using just their DL card image – IDfy will handle both digitization and verification.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/driving-license-ocr/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://driving-license-ocr.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch API results using the request ID received in responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request made to the API.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Driving License OCR",
+            "url": "https://driving-license-ocr.p.rapidapi.com/v3/tasks/async/extract/ind_driving_license",
+            "description": "This endpoint allows customers to upload or scan a Driving License for digitization. It is used to initiate the OCR process.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

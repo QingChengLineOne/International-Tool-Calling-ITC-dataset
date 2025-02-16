@@ -1,0 +1,187 @@
+{
+    "tool_name": "Webit QR Code",
+    "tool_description": "Generate beautiful QR Codes with custom logo, colors, gradient effects and styles with ease.",
+    "home_url": "https://rapidapi.com/webit/api/webit-qr-code/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Generate QR Code (POST)",
+            "url": "https://webit-qr-code.p.rapidapi.com/generate",
+            "description": "Generate a beautiful QR Code with custom logo, colors, gradient effects and styles. This endpoint supports larger requests by using POST method.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "The size of the QR code in pixels.",
+                    "default": "512"
+                },
+                {
+                    "name": "format",
+                    "type": "ENUM",
+                    "description": "The image format for the QR code (e.g., PNG, JPEG).",
+                    "default": ""
+                },
+                {
+                    "name": "data",
+                    "type": "STRING",
+                    "description": "The data to encode in the QR code.",
+                    "default": "https://your-qr-code.website/here"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "error_correction",
+                    "type": "ENUM",
+                    "description": "The level of error correction (L, M, Q, H).",
+                    "default": ""
+                },
+                {
+                    "name": "image_size",
+                    "type": "ENUM",
+                    "description": "Size of the logo image (if applicable).",
+                    "default": ""
+                },
+                {
+                    "name": "image_margin",
+                    "type": "NUMBER",
+                    "description": "Margin size around the QR code.",
+                    "default": "10"
+                },
+                {
+                    "name": "image_id",
+                    "type": "STRING",
+                    "description": "ID of the logo image to be included in the QR code.",
+                    "default": "f222c8be0475292b2a23a82ff93ac496"
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Color of the QR code (hex code).",
+                    "default": ""
+                },
+                {
+                    "name": "background_gradient",
+                    "type": "STRING",
+                    "description": "Gradient effect for the background.",
+                    "default": ""
+                },
+                {
+                    "name": "background_color",
+                    "type": "STRING",
+                    "description": "Background color of the QR code.",
+                    "default": "transparent"
+                },
+                {
+                    "name": "gradient",
+                    "type": "STRING",
+                    "description": "Color gradient in hex format.",
+                    "default": "024bda,8572ea"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Generate QR Code (GET)",
+            "url": "https://webit-qr-code.p.rapidapi.com/generate",
+            "description": "Generate a beautiful QR Code with custom logo, colors, gradient effects and styles using GET method.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "format",
+                    "type": "ENUM",
+                    "description": "The image format for the QR code (e.g., PNG, JPEG).",
+                    "default": ""
+                },
+                {
+                    "name": "data",
+                    "type": "STRING",
+                    "description": "The data to encode in the QR code.",
+                    "default": "https://your-qr-code.website/here"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "The size of the QR code in pixels.",
+                    "default": "512"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "error_correction",
+                    "type": "ENUM",
+                    "description": "The level of error correction (L, M, Q, H).",
+                    "default": ""
+                },
+                {
+                    "name": "image_margin",
+                    "type": "NUMBER",
+                    "description": "Margin size around the QR code.",
+                    "default": "10"
+                },
+                {
+                    "name": "image_size",
+                    "type": "ENUM",
+                    "description": "Size of the logo image (if applicable).",
+                    "default": ""
+                },
+                {
+                    "name": "image_id",
+                    "type": "STRING",
+                    "description": "ID of the logo image to be included in the QR code.",
+                    "default": "f222c8be0475292b2a23a82ff93ac496"
+                },
+                {
+                    "name": "gradient",
+                    "type": "STRING",
+                    "description": "Color gradient in hex format.",
+                    "default": "024bda,8572ea"
+                },
+                {
+                    "name": "color",
+                    "type": "STRING",
+                    "description": "Color of the QR code (hex code).",
+                    "default": ""
+                },
+                {
+                    "name": "background_gradient",
+                    "type": "STRING",
+                    "description": "Gradient effect for the background.",
+                    "default": ""
+                },
+                {
+                    "name": "background_color",
+                    "type": "STRING",
+                    "description": "Background color of the QR code.",
+                    "default": "transparent"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Store Image",
+            "url": "https://webit-qr-code.p.rapidapi.com/store-image",
+            "description": "Store an image and cache it for generating QR codes with custom logos.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "URL of the image to be stored.",
+                    "default": ""
+                },
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "Binary file data of the image.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

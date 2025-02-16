@@ -1,0 +1,38 @@
+{
+    "tool_name": "单向历",
+    "tool_description": "年轻人喜欢的文艺日历",
+    "home_url": "https://api.aa1.cn/doc/dan.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "单向历API",
+            "url": "https://xialiu.cn/api/dan/",
+            "description": "提供单向历相关数据接口",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "int",
+                    "description": "用户唯一标识符",
+                    "default": "用户未指定"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "查询的日期，格式为YYYY-MM-DD",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，支持json和xml，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

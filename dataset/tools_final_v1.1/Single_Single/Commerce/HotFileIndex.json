@@ -1,0 +1,18 @@
+{
+    "tool_name": "HotFileIndex",
+    "tool_description": "HotFileIndex is the #1 Agency Marketplace for Lifetime Deals, featuring best-selling products from JvZoo and WarriorPlus, along with their One-Time Offers (OTOs) at affordable prices.",
+    "home_url": "https://hotfileindex.com",
+    "country": "Australia",
+    "api_list": [
+        {
+            "name": "HotFileIndex",
+            "url": "https://hotfileindex.p.rapidapi.com/",
+            "description": "This API provides access to the HotFileIndex marketplace, allowing users to retrieve information about various lifetime deals and products.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

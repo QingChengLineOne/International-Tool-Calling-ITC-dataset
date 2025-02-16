@@ -1,0 +1,79 @@
+{
+    "tool_name": "Simple YouTube Search",
+    "tool_description": "A simple API to perform easy YouTube searches for free.",
+    "home_url": "https://rapidapi.com/Snowflake107/api/simple-youtube-search/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://simple-youtube-search.p.rapidapi.com/search",
+            "description": "Perform a search on YouTube based on a query string.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search term to query YouTube.",
+                    "default": "never+gonna+give+you+up"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "ENUM",
+                    "description": "The type of content to search for (e.g., video, channel).",
+                    "default": ""
+                },
+                {
+                    "name": "safesearch",
+                    "type": "BOOLEAN",
+                    "description": "Filter search results to exclude adult content.",
+                    "default": "false"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "type": "array"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Playlist",
+            "url": "https://simple-youtube-search.p.rapidapi.com/playlist",
+            "description": "Retrieve data for a specific YouTube playlist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "list",
+                    "type": "STRING",
+                    "description": "The ID of the YouTube playlist to retrieve.",
+                    "default": "PLillGF-RfqbZ2ybcoD2OaabW2P7Ws8CWu"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Video",
+            "url": "https://simple-youtube-search.p.rapidapi.com/video",
+            "description": "Get details for a specific YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The URL of the YouTube video to retrieve.",
+                    "default": "https://www.youtube.com/watch?v=fBNz5xF-Kx4"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

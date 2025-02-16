@@ -1,0 +1,25 @@
+{
+    "tool_name": "病娇女友",
+    "tool_description": "提供病娇女友相关信息的API",
+    "home_url": "https://api.aa1.cn/doc/bjny.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "病娇女友信息查询API",
+            "url": "https://api.lolimi.cn/API/AI/bj.php",
+            "description": "查询与病娇女友相关的信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "用户输入的信息内容",
+                    "default": "默认输入内容"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

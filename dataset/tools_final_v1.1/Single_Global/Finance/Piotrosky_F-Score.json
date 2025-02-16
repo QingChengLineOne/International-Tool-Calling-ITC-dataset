@@ -1,0 +1,25 @@
+{
+    "tool_name": "Piotrosky F-Score",
+    "tool_description": "The Piotrosky score is a discrete score between zero and nine that reflects nine criteria used to determine the strength of a firm's financial position. It is utilized to identify the best value stocks, with a score of nine indicating the strongest financial health and zero indicating the weakest.",
+    "home_url": "https://rapidapi.com/d4rkn3ss1/api/piotrosky-f-score/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetFScore",
+            "url": "https://piotrosky-f-score.p.rapidapi.com/PiotriskyScore",
+            "description": "Retrieves the Piotrosky F-Score for the specified stock ticker provided in the query parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ticker",
+                    "type": "STRING",
+                    "description": "The stock ticker symbol for which the F-Score is requested.",
+                    "default": "AAPL"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

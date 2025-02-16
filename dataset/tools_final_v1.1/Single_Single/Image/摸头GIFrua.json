@@ -1,0 +1,25 @@
+{
+    "tool_name": "摸头GIF(rua~)",
+    "tool_description": "上传一个头像得到一个rua头像的GIF",
+    "home_url": "https://api.aa1.cn/doc/rua.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "摸头GIF(rua~) API",
+            "url": "https://api.52vmy.cn/api/avath/rua",
+            "description": "生成rua头像的GIF",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "QQ号，用于识别头像",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

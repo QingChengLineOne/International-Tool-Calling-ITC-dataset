@@ -1,0 +1,32 @@
+{
+    "tool_name": "摸鱼人日历",
+    "tool_description": "摸鱼人日历API，提供摸鱼相关的日历数据服务",
+    "home_url": "https://api.aa1.cn/doc/moyu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取摸鱼人日历数据",
+            "url": "https://api.j4u.ink/v1/store/other/proxy/remote/moyu.json",
+            "description": "调用此接口可获取摸鱼人日历的详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "指定的日期，格式为YYYY-MM-DD",
+                    "default": "当前日期"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "timezone",
+                    "type": "string",
+                    "description": "时区，例如'Asia/Shanghai'，默认为服务器所在时区",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

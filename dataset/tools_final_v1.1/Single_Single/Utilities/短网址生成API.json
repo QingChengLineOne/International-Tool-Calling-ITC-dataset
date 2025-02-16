@@ -1,0 +1,38 @@
+{
+    "tool_name": "短网址生成API",
+    "tool_description": "将一个特别长的网址生成一个很短的网址，支持新浪的t.cn、腾讯的url.cn，百度的dwz.cn等",
+    "home_url": "https://www.free-api.com/doc/355",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "短网址生成",
+            "url": "https://v2.alapi.cn/api/url",
+            "description": "将长网址缩短为短网址",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "LwExDtUWhF3rH5ib"
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "要缩短的长网址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回格式，默认json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

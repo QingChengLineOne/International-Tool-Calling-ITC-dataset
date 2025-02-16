@@ -1,0 +1,25 @@
+{
+    "tool_name": "StarPredictAI - AI-powered Text Review Star Predictor",
+    "tool_description": "🌟 Want to know how many stars your product review deserves? Look no further than StarPredictAI! Our AI model is fine-tuned for sentiment analysis on product reviews and can predict star ratings from 0 to 5 with high accuracy. With support for over 140 languages, StarPredictAI can help you gain valuable insights into your product's customer satisfaction. 🚀",
+    "home_url": "https://rapidapi.com/IntelligenzaArtificiale/api/starpredictai-ai-powered-text-review-star-predictor/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "StarPredictAI API 🌟",
+            "url": "https://starpredictai-ai-powered-text-review-star-predictor.p.rapidapi.com/reviewStar",
+            "description": "🌟 Our API can analyze text in over 140 languages to predict star ratings based on sentiment analysis.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The product review text that you want to analyze.",
+                    "default": "Support over 140 languages, try it now :)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

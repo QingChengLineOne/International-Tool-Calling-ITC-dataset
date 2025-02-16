@@ -1,0 +1,61 @@
+{
+    "tool_name": "Geocoding by API-Ninjas",
+    "tool_description": "Convert city locations to latitude/longitude coordinates and vice versa. This tool allows users to easily find geographical coordinates based on city names or retrieve city names from given coordinates.",
+    "home_url": "https://rapidapi.com/apininjas/api/geocoding-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/geocoding",
+            "url": "https://geocoding-by-api-ninjas.p.rapidapi.com/v1/geocoding",
+            "description": "API Ninjas Geocoding API endpoint for converting city names to geographical coordinates.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city to be geocoded.",
+                    "default": "Seattle"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country, or its 2-letter or 3-letter ISO country code.",
+                    "default": ""
+                },
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "The US state for cities located in the United States.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/v1/reversegeocoding",
+            "url": "https://geocoding-by-api-ninjas.p.rapidapi.com/v1/reversegeocoding",
+            "description": "API Ninjas Reverse Geocoding API endpoint for converting latitude and longitude coordinates back to city names.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "The latitude coordinate to be reverse geocoded.",
+                    "default": "47.6062"
+                },
+                {
+                    "name": "lon",
+                    "type": "NUMBER",
+                    "description": "The longitude coordinate to be reverse geocoded.",
+                    "default": "-122.3321"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

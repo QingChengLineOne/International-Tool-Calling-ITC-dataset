@@ -1,0 +1,18 @@
+{
+    "tool_name": "Corona",
+    "tool_description": "A tool for accessing COVID-19 related data and statistics.",
+    "home_url": "https://rapidapi.com/rusvinaroor/api/corona6/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get COVID-19 Data by ID",
+            "url": "https://corona6.p.rapidapi.com/id=1",
+            "description": "Fetches COVID-19 data for a specific ID.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

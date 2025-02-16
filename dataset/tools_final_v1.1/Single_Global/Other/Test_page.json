@@ -1,0 +1,18 @@
+{
+    "tool_name": "Test page",
+    "tool_description": "A simple API for testing purposes.",
+    "home_url": "https://rapidapi.com/RArnoux13/api/test-page/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "test",
+            "url": "https://test-page.p.rapidapi.com/",
+            "description": "This API endpoint is used to perform a test request.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "爱奇艺热搜风云榜",
+    "tool_description": "爱奇艺热搜风云榜API，提供实时热搜信息",
+    "home_url": "https://api.aa1.cn/doc/wqwlkj_iqiyi_hot.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "爱奇艺热搜风云榜",
+            "url": "https://free.wqwlkj.cn/wqwlapi/iqiyi_hot.php?type=json&form=",
+            "description": "获取爱奇艺热搜风云榜的数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据格式，固定为json",
+                    "default": "json"
+                },
+                {
+                    "name": "form",
+                    "type": "string",
+                    "description": "表单格式，固定为",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

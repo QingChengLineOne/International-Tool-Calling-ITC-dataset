@@ -1,0 +1,42 @@
+{
+    "tool_name": "IP/域名&运营商&地区查询API",
+    "tool_description": "提供IP地址查询服务，可查询指定IP的地理位置和运营商，同时也能查询网址的服务器IP地址位置和运营商信息",
+    "home_url": "https://api.aa1.cn/doc/getipinfo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP地理位置和运营商查询",
+            "url": "https://suapi.net/api/ip/getipinfo",
+            "description": "查询指定IP的地理位置和运营商信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "网址服务器IP地址位置和运营商查询",
+            "url": "https://suapi.net/api/ip/getipinfo",
+            "description": "查询指定网址的服务器IP地址位置和运营商信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "需要查询的网址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "空气质量指数",
+    "tool_description": "查询指定地区的空气质量指数",
+    "home_url": "https://api.qqsuu.cn/doc/dm-aqi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "空气质量指数(AQI)",
+            "url": "https://api.qqsuu.cn/api/dm-aqi",
+            "description": "查询指定地区的空气质量指数(AQI)和相关污染物数据",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "area",
+                    "type": "String",
+                    "description": "地区名，中文",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

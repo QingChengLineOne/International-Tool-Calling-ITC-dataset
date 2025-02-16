@@ -1,0 +1,25 @@
+{
+    "tool_name": "Golubev",
+    "tool_description": "Golubev is an API tool designed to provide various functionalities through simple requests.",
+    "home_url": "https://rapidapi.com/Golubev-S/api/golubev/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "test",
+            "url": "https://golubev.p.rapidapi.com/",
+            "description": "This API endpoint allows users to perform a test operation.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ds",
+                    "type": "STRING",
+                    "description": "A string parameter used for testing purposes.",
+                    "default": "fds"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,1265 @@
+{
+    "tool_name": "Low Carb Recipes",
+    "tool_description": "Highly flexible search over thousands of low-carb/keto recipes with rich nutrients information.",
+    "home_url": "https://rapidapi.com/dfskGT/api/low-carb-recipes/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search for Recipes",
+            "url": "https://low-carb-recipes.p.rapidapi.com/search",
+            "description": "Search for recipes that match provided criteria.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "maxNetCarbs",
+                    "type": "NUMBER",
+                    "description": "Maximum net carbs (total carbs subtract fiber and sugar alcohols) of 1 serving in grams.",
+                    "default": "5"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Max number of results to return.",
+                    "default": "10"
+                },
+                {
+                    "name": "maxCalories",
+                    "type": "NUMBER",
+                    "description": "Maximum calories of 1 serving in KCal.",
+                    "default": "500"
+                },
+                {
+                    "name": "maxPrepareTime",
+                    "type": "NUMBER",
+                    "description": "Maximum preparation time in minutes.",
+                    "default": "10"
+                },
+                {
+                    "name": "excludeIngredients",
+                    "type": "STRING",
+                    "description": "Semicolon separated terms to be excluded in ingredients.",
+                    "default": "cinnamon"
+                },
+                {
+                    "name": "tags",
+                    "type": "STRING",
+                    "description": "Semicolon separated tags to filter recipes.",
+                    "default": "keto;dairy-free"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Search terms to be included in the recipe name.",
+                    "default": "cake"
+                },
+                {
+                    "name": "maxAddedSugar",
+                    "type": "NUMBER",
+                    "description": "Maximum added sugar of 1 serving in grams.",
+                    "default": "0"
+                },
+                {
+                    "name": "maxSugar",
+                    "type": "NUMBER",
+                    "description": "Maximum sugar of 1 serving in grams.",
+                    "default": "3"
+                },
+                {
+                    "name": "maxCookTime",
+                    "type": "NUMBER",
+                    "description": "Maximum cook time in minutes.",
+                    "default": "20"
+                },
+                {
+                    "name": "includeIngredients",
+                    "type": "STRING",
+                    "description": "Semicolon separated terms to be included in ingredients.",
+                    "default": "egg;butter"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "title": "Response Searchforrecipes",
+                "type": "array",
+                "items": {
+                    "title": "Recipe",
+                    "required": [
+                        "id",
+                        "name",
+                        "tags",
+                        "description",
+                        "prepareTime",
+                        "cookTime",
+                        "ingredients",
+                        "steps",
+                        "servings",
+                        "servingSizes",
+                        "nutrients"
+                    ],
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "title": "Id",
+                            "type": "string"
+                        },
+                        "name": {
+                            "title": "Name",
+                            "type": "string"
+                        },
+                        "tags": {
+                            "title": "Tags",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "description": {
+                            "title": "Description",
+                            "type": "string"
+                        },
+                        "prepareTime": {
+                            "title": "Preparetime",
+                            "type": "integer"
+                        },
+                        "cookTime": {
+                            "title": "Cooktime",
+                            "type": "integer"
+                        },
+                        "ingredients": {
+                            "title": "Ingredients",
+                            "type": "array",
+                            "items": {
+                                "title": "Ingredient",
+                                "required": [
+                                    "name",
+                                    "servingSize"
+                                ],
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "title": "Name",
+                                        "type": "string"
+                                    },
+                                    "servingSize": {
+                                        "title": "IngredientServingSize",
+                                        "required": [
+                                            "units",
+                                            "qty",
+                                            "scale"
+                                        ],
+                                        "type": "object",
+                                        "properties": {
+                                            "units": {
+                                                "title": "Units",
+                                                "type": "string"
+                                            },
+                                            "desc": {
+                                                "title": "Desc",
+                                                "type": "string"
+                                            },
+                                            "qty": {
+                                                "title": "Qty",
+                                                "type": "number"
+                                            },
+                                            "grams": {
+                                                "title": "Grams",
+                                                "type": "number"
+                                            },
+                                            "scale": {
+                                                "title": "Scale",
+                                                "type": "number"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "steps": {
+                            "title": "Steps",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "servings": {
+                            "title": "Servings",
+                            "type": "integer"
+                        },
+                        "servingSizes": {
+                            "title": "Servingsizes",
+                            "type": "array",
+                            "items": {
+                                "title": "ServingSize",
+                                "required": [
+                                    "scale",
+                                    "qty",
+                                    "grams",
+                                    "units"
+                                ],
+                                "type": "object",
+                                "properties": {
+                                    "scale": {
+                                        "title": "Scale",
+                                        "type": "number"
+                                    },
+                                    "qty": {
+                                        "title": "Qty",
+                                        "type": "number"
+                                    },
+                                    "grams": {
+                                        "title": "Grams",
+                                        "type": "number"
+                                    },
+                                    "units": {
+                                        "title": "Units",
+                                        "type": "string"
+                                    },
+                                    "originalWeight": {
+                                        "title": "Originalweight",
+                                        "type": "number"
+                                    },
+                                    "originalWeightUnits": {
+                                        "title": "Originalweightunits",
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "nutrients": {
+                            "title": "Nutrients",
+                            "type": "object",
+                            "properties": {
+                                "caloriesKCal": {
+                                    "title": "Calorieskcal",
+                                    "type": "number"
+                                },
+                                "caloriesKJ": {
+                                    "title": "Calorieskj",
+                                    "type": "number"
+                                },
+                                "totalCarbs": {
+                                    "title": "Totalcarbs",
+                                    "type": "number"
+                                },
+                                "diabetesCarbsADA": {
+                                    "title": "Diabetescarbsada",
+                                    "type": "number"
+                                },
+                                "netCarbs": {
+                                    "title": "Netcarbs",
+                                    "type": "number"
+                                },
+                                "diabetesCarbs": {
+                                    "title": "Diabetescarbs",
+                                    "type": "number"
+                                },
+                                "fiber": {
+                                    "title": "Fiber",
+                                    "type": "number"
+                                },
+                                "starch": {
+                                    "title": "Starch",
+                                    "type": "number"
+                                },
+                                "sugar": {
+                                    "title": "Sugar",
+                                    "type": "number"
+                                },
+                                "addedSugar": {
+                                    "title": "Addedsugar",
+                                    "type": "number"
+                                },
+                                "sugarAlcohols": {
+                                    "title": "Sugaralcohols",
+                                    "type": "number"
+                                },
+                                "protein": {
+                                    "title": "Protein",
+                                    "type": "number"
+                                },
+                                "fat": {
+                                    "title": "Fat",
+                                    "type": "number"
+                                },
+                                "transFat": {
+                                    "title": "Transfat",
+                                    "type": "number"
+                                },
+                                "monousatFat": {
+                                    "title": "Monousatfat",
+                                    "type": "number"
+                                },
+                                "polyunsatFat": {
+                                    "title": "Polyunsatfat",
+                                    "type": "number"
+                                },
+                                "omega3Fat": {
+                                    "title": "Omega3Fat",
+                                    "type": "number"
+                                },
+                                "omega6Fat": {
+                                    "title": "Omega6Fat",
+                                    "type": "number"
+                                },
+                                "saturatedFat": {
+                                    "title": "Saturatedfat",
+                                    "type": "number"
+                                },
+                                "cholesterol": {
+                                    "title": "Cholesterol",
+                                    "type": "number"
+                                },
+                                "vitaminA": {
+                                    "title": "Vitamina",
+                                    "type": "number"
+                                },
+                                "vitaminC": {
+                                    "title": "Vitaminc",
+                                    "type": "number"
+                                },
+                                "vitaminD": {
+                                    "title": "Vitamind",
+                                    "type": "number"
+                                },
+                                "vitaminE": {
+                                    "title": "Vitamine",
+                                    "type": "number"
+                                },
+                                "vitaminK": {
+                                    "title": "Vitamink",
+                                    "type": "number"
+                                },
+                                "vitaminB1": {
+                                    "title": "Vitaminb1",
+                                    "type": "number"
+                                },
+                                "vitaminB2": {
+                                    "title": "Vitaminb2",
+                                    "type": "number"
+                                },
+                                "vitaminB3": {
+                                    "title": "Vitaminb3",
+                                    "type": "number"
+                                },
+                                "vitaminB5": {
+                                    "title": "Vitaminb5",
+                                    "type": "number"
+                                },
+                                "vitaminB6": {
+                                    "title": "Vitaminb6",
+                                    "type": "number"
+                                },
+                                "vitaminB12": {
+                                    "title": "Vitaminb12",
+                                    "type": "number"
+                                },
+                                "potassium": {
+                                    "title": "Potassium",
+                                    "type": "number"
+                                },
+                                "magnesium": {
+                                    "title": "Magnesium",
+                                    "type": "number"
+                                },
+                                "calcium": {
+                                    "title": "Calcium",
+                                    "type": "number"
+                                },
+                                "iron": {
+                                    "title": "Iron",
+                                    "type": "number"
+                                },
+                                "zinc": {
+                                    "title": "Zinc",
+                                    "type": "number"
+                                },
+                                "copper": {
+                                    "title": "Copper",
+                                    "type": "number"
+                                },
+                                "phosphorus": {
+                                    "title": "Phosphorus",
+                                    "type": "number"
+                                },
+                                "sodium": {
+                                    "title": "Sodium",
+                                    "type": "number"
+                                },
+                                "selenium": {
+                                    "title": "Selenium",
+                                    "type": "number"
+                                },
+                                "folate": {
+                                    "title": "Folate",
+                                    "type": "number"
+                                },
+                                "choline": {
+                                    "title": "Choline",
+                                    "type": "number"
+                                },
+                                "alcohol": {
+                                    "title": "Alcohol",
+                                    "type": "number"
+                                },
+                                "caffeine": {
+                                    "title": "Caffeine",
+                                    "type": "number"
+                                },
+                                "gluten": {
+                                    "title": "Gluten",
+                                    "type": "number"
+                                },
+                                "manganese": {
+                                    "title": "Manganese",
+                                    "type": "number"
+                                },
+                                "conjugatedLinoleicAcid": {
+                                    "title": "Conjugatedlinoleicacid",
+                                    "type": "number"
+                                },
+                                "phyticAcid": {
+                                    "title": "Phyticacid",
+                                    "type": "number"
+                                },
+                                "xylitol": {
+                                    "title": "Xylitol",
+                                    "type": "number"
+                                },
+                                "isomalt": {
+                                    "title": "Isomalt",
+                                    "type": "number"
+                                },
+                                "sorbitol": {
+                                    "title": "Sorbitol",
+                                    "type": "number"
+                                },
+                                "maltitol": {
+                                    "title": "Maltitol",
+                                    "type": "number"
+                                },
+                                "lactitol": {
+                                    "title": "Lactitol",
+                                    "type": "number"
+                                },
+                                "erythritol": {
+                                    "title": "Erythritol",
+                                    "type": "number"
+                                },
+                                "pinitol": {
+                                    "title": "Pinitol",
+                                    "type": "number"
+                                },
+                                "inositol": {
+                                    "title": "Inositol",
+                                    "type": "number"
+                                },
+                                "mannitol": {
+                                    "title": "Mannitol",
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "image": {
+                            "title": "Image",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get a Random Recipe",
+            "url": "https://low-carb-recipes.p.rapidapi.com/random",
+            "description": "Get a random recipe.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "title": "Recipe",
+                "required": [
+                    "id",
+                    "name",
+                    "tags",
+                    "description",
+                    "prepareTime",
+                    "cookTime",
+                    "ingredients",
+                    "steps",
+                    "servings",
+                    "servingSizes",
+                    "nutrients"
+                ],
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id",
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "title": "Tags",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "description": {
+                        "title": "Description",
+                        "type": "string"
+                    },
+                    "prepareTime": {
+                        "title": "Preparetime",
+                        "type": "integer"
+                    },
+                    "cookTime": {
+                        "title": "Cooktime",
+                        "type": "integer"
+                    },
+                    "ingredients": {
+                        "title": "Ingredients",
+                        "type": "array",
+                        "items": {
+                            "title": "Ingredient",
+                            "required": [
+                                "name",
+                                "servingSize"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "title": "Name",
+                                    "type": "string"
+                                },
+                                "servingSize": {
+                                    "title": "IngredientServingSize",
+                                    "required": [
+                                        "units",
+                                        "qty",
+                                        "scale"
+                                    ],
+                                    "type": "object",
+                                    "properties": {
+                                        "units": {
+                                            "title": "Units",
+                                            "type": "string"
+                                        },
+                                        "desc": {
+                                            "title": "Desc",
+                                            "type": "string"
+                                        },
+                                        "qty": {
+                                            "title": "Qty",
+                                            "type": "number"
+                                        },
+                                        "grams": {
+                                            "title": "Grams",
+                                            "type": "number"
+                                        },
+                                        "scale": {
+                                            "title": "Scale",
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "steps": {
+                        "title": "Steps",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "servings": {
+                        "title": "Servings",
+                        "type": "integer"
+                    },
+                    "servingSizes": {
+                        "title": "Servingsizes",
+                        "type": "array",
+                        "items": {
+                            "title": "ServingSize",
+                            "required": [
+                                "scale",
+                                "qty",
+                                "grams",
+                                "units"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "scale": {
+                                    "title": "Scale",
+                                    "type": "number"
+                                },
+                                "qty": {
+                                    "title": "Qty",
+                                    "type": "number"
+                                },
+                                "grams": {
+                                    "title": "Grams",
+                                    "type": "number"
+                                },
+                                "units": {
+                                    "title": "Units",
+                                    "type": "string"
+                                },
+                                "originalWeight": {
+                                    "title": "Originalweight",
+                                    "type": "number"
+                                },
+                                "originalWeightUnits": {
+                                    "title": "Originalweightunits",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "nutrients": {
+                        "title": "Nutrients",
+                        "type": "object",
+                        "properties": {
+                            "caloriesKCal": {
+                                "title": "Calorieskcal",
+                                "type": "number"
+                            },
+                            "caloriesKJ": {
+                                "title": "Calorieskj",
+                                "type": "number"
+                            },
+                            "totalCarbs": {
+                                "title": "Totalcarbs",
+                                "type": "number"
+                            },
+                            "diabetesCarbsADA": {
+                                "title": "Diabetescarbsada",
+                                "type": "number"
+                            },
+                            "netCarbs": {
+                                "title": "Netcarbs",
+                                "type": "number"
+                            },
+                            "diabetesCarbs": {
+                                "title": "Diabetescarbs",
+                                "type": "number"
+                            },
+                            "fiber": {
+                                "title": "Fiber",
+                                "type": "number"
+                            },
+                            "starch": {
+                                "title": "Starch",
+                                "type": "number"
+                            },
+                            "sugar": {
+                                "title": "Sugar",
+                                "type": "number"
+                            },
+                            "addedSugar": {
+                                "title": "Addedsugar",
+                                "type": "number"
+                            },
+                            "sugarAlcohols": {
+                                "title": "Sugaralcohols",
+                                "type": "number"
+                            },
+                            "protein": {
+                                "title": "Protein",
+                                "type": "number"
+                            },
+                            "fat": {
+                                "title": "Fat",
+                                "type": "number"
+                            },
+                            "transFat": {
+                                "title": "Transfat",
+                                "type": "number"
+                            },
+                            "monousatFat": {
+                                "title": "Monousatfat",
+                                "type": "number"
+                            },
+                            "polyunsatFat": {
+                                "title": "Polyunsatfat",
+                                "type": "number"
+                            },
+                            "omega3Fat": {
+                                "title": "Omega3Fat",
+                                "type": "number"
+                            },
+                            "omega6Fat": {
+                                "title": "Omega6Fat",
+                                "type": "number"
+                            },
+                            "saturatedFat": {
+                                "title": "Saturatedfat",
+                                "type": "number"
+                            },
+                            "cholesterol": {
+                                "title": "Cholesterol",
+                                "type": "number"
+                            },
+                            "vitaminA": {
+                                "title": "Vitamina",
+                                "type": "number"
+                            },
+                            "vitaminC": {
+                                "title": "Vitaminc",
+                                "type": "number"
+                            },
+                            "vitaminD": {
+                                "title": "Vitamind",
+                                "type": "number"
+                            },
+                            "vitaminE": {
+                                "title": "Vitamine",
+                                "type": "number"
+                            },
+                            "vitaminK": {
+                                "title": "Vitamink",
+                                "type": "number"
+                            },
+                            "vitaminB1": {
+                                "title": "Vitaminb1",
+                                "type": "number"
+                            },
+                            "vitaminB2": {
+                                "title": "Vitaminb2",
+                                "type": "number"
+                            },
+                            "vitaminB3": {
+                                "title": "Vitaminb3",
+                                "type": "number"
+                            },
+                            "vitaminB5": {
+                                "title": "Vitaminb5",
+                                "type": "number"
+                            },
+                            "vitaminB6": {
+                                "title": "Vitaminb6",
+                                "type": "number"
+                            },
+                            "vitaminB12": {
+                                "title": "Vitaminb12",
+                                "type": "number"
+                            },
+                            "potassium": {
+                                "title": "Potassium",
+                                "type": "number"
+                            },
+                            "magnesium": {
+                                "title": "Magnesium",
+                                "type": "number"
+                            },
+                            "calcium": {
+                                "title": "Calcium",
+                                "type": "number"
+                            },
+                            "iron": {
+                                "title": "Iron",
+                                "type": "number"
+                            },
+                            "zinc": {
+                                "title": "Zinc",
+                                "type": "number"
+                            },
+                            "copper": {
+                                "title": "Copper",
+                                "type": "number"
+                            },
+                            "phosphorus": {
+                                "title": "Phosphorus",
+                                "type": "number"
+                            },
+                            "sodium": {
+                                "title": "Sodium",
+                                "type": "number"
+                            },
+                            "selenium": {
+                                "title": "Selenium",
+                                "type": "number"
+                            },
+                            "folate": {
+                                "title": "Folate",
+                                "type": "number"
+                            },
+                            "choline": {
+                                "title": "Choline",
+                                "type": "number"
+                            },
+                            "alcohol": {
+                                "title": "Alcohol",
+                                "type": "number"
+                            },
+                            "caffeine": {
+                                "title": "Caffeine",
+                                "type": "number"
+                            },
+                            "gluten": {
+                                "title": "Gluten",
+                                "type": "number"
+                            },
+                            "manganese": {
+                                "title": "Manganese",
+                                "type": "number"
+                            },
+                            "conjugatedLinoleicAcid": {
+                                "title": "Conjugatedlinoleicacid",
+                                "type": "number"
+                            },
+                            "phyticAcid": {
+                                "title": "Phyticacid",
+                                "type": "number"
+                            },
+                            "xylitol": {
+                                "title": "Xylitol",
+                                "type": "number"
+                            },
+                            "isomalt": {
+                                "title": "Isomalt",
+                                "type": "number"
+                            },
+                            "sorbitol": {
+                                "title": "Sorbitol",
+                                "type": "number"
+                            },
+                            "maltitol": {
+                                "title": "Maltitol",
+                                "type": "number"
+                            },
+                            "lactitol": {
+                                "title": "Lactitol",
+                                "type": "number"
+                            },
+                            "erythritol": {
+                                "title": "Erythritol",
+                                "type": "number"
+                            },
+                            "pinitol": {
+                                "title": "Pinitol",
+                                "type": "number"
+                            },
+                            "inositol": {
+                                "title": "Inositol",
+                                "type": "number"
+                            },
+                            "mannitol": {
+                                "title": "Mannitol",
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "image": {
+                        "title": "Image",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get recipe by ID",
+            "url": "https://low-carb-recipes.p.rapidapi.com/recipes/{recipeid}",
+            "description": "Get details of the specified recipe by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "recipeId",
+                    "type": "STRING",
+                    "description": "Recipe ID to fetch the specific recipe details.",
+                    "default": "2807982c-986a-4def-9e3a-153a3066af7a"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "title": "Recipe",
+                "required": [
+                    "id",
+                    "name",
+                    "tags",
+                    "description",
+                    "prepareTime",
+                    "cookTime",
+                    "ingredients",
+                    "steps",
+                    "servings",
+                    "servingSizes",
+                    "nutrients"
+                ],
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id",
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "title": "Tags",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "description": {
+                        "title": "Description",
+                        "type": "string"
+                    },
+                    "prepareTime": {
+                        "title": "Preparetime",
+                        "type": "integer"
+                    },
+                    "cookTime": {
+                        "title": "Cooktime",
+                        "type": "integer"
+                    },
+                    "ingredients": {
+                        "title": "Ingredients",
+                        "type": "array",
+                        "items": {
+                            "title": "Ingredient",
+                            "required": [
+                                "name",
+                                "servingSize"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "title": "Name",
+                                    "type": "string"
+                                },
+                                "servingSize": {
+                                    "title": "IngredientServingSize",
+                                    "required": [
+                                        "units",
+                                        "qty",
+                                        "scale"
+                                    ],
+                                    "type": "object",
+                                    "properties": {
+                                        "units": {
+                                            "title": "Units",
+                                            "type": "string"
+                                        },
+                                        "desc": {
+                                            "title": "Desc",
+                                            "type": "string"
+                                        },
+                                        "qty": {
+                                            "title": "Qty",
+                                            "type": "number"
+                                        },
+                                        "grams": {
+                                            "title": "Grams",
+                                            "type": "number"
+                                        },
+                                        "scale": {
+                                            "title": "Scale",
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "steps": {
+                        "title": "Steps",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "servings": {
+                        "title": "Servings",
+                        "type": "integer"
+                    },
+                    "servingSizes": {
+                        "title": "Servingsizes",
+                        "type": "array",
+                        "items": {
+                            "title": "ServingSize",
+                            "required": [
+                                "scale",
+                                "qty",
+                                "grams",
+                                "units"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "scale": {
+                                    "title": "Scale",
+                                    "type": "number"
+                                },
+                                "qty": {
+                                    "title": "Qty",
+                                    "type": "number"
+                                },
+                                "grams": {
+                                    "title": "Grams",
+                                    "type": "number"
+                                },
+                                "units": {
+                                    "title": "Units",
+                                    "type": "string"
+                                },
+                                "originalWeight": {
+                                    "title": "Originalweight",
+                                    "type": "number"
+                                },
+                                "originalWeightUnits": {
+                                    "title": "Originalweightunits",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "nutrients": {
+                        "title": "Nutrients",
+                        "type": "object",
+                        "properties": {
+                            "caloriesKCal": {
+                                "title": "Calorieskcal",
+                                "type": "number"
+                            },
+                            "caloriesKJ": {
+                                "title": "Calorieskj",
+                                "type": "number"
+                            },
+                            "totalCarbs": {
+                                "title": "Totalcarbs",
+                                "type": "number"
+                            },
+                            "diabetesCarbsADA": {
+                                "title": "Diabetescarbsada",
+                                "type": "number"
+                            },
+                            "netCarbs": {
+                                "title": "Netcarbs",
+                                "type": "number"
+                            },
+                            "diabetesCarbs": {
+                                "title": "Diabetescarbs",
+                                "type": "number"
+                            },
+                            "fiber": {
+                                "title": "Fiber",
+                                "type": "number"
+                            },
+                            "starch": {
+                                "title": "Starch",
+                                "type": "number"
+                            },
+                            "sugar": {
+                                "title": "Sugar",
+                                "type": "number"
+                            },
+                            "addedSugar": {
+                                "title": "Addedsugar",
+                                "type": "number"
+                            },
+                            "sugarAlcohols": {
+                                "title": "Sugaralcohols",
+                                "type": "number"
+                            },
+                            "protein": {
+                                "title": "Protein",
+                                "type": "number"
+                            },
+                            "fat": {
+                                "title": "Fat",
+                                "type": "number"
+                            },
+                            "transFat": {
+                                "title": "Transfat",
+                                "type": "number"
+                            },
+                            "monousatFat": {
+                                "title": "Monousatfat",
+                                "type": "number"
+                            },
+                            "polyunsatFat": {
+                                "title": "Polyunsatfat",
+                                "type": "number"
+                            },
+                            "omega3Fat": {
+                                "title": "Omega3Fat",
+                                "type": "number"
+                            },
+                            "omega6Fat": {
+                                "title": "Omega6Fat",
+                                "type": "number"
+                            },
+                            "saturatedFat": {
+                                "title": "Saturatedfat",
+                                "type": "number"
+                            },
+                            "cholesterol": {
+                                "title": "Cholesterol",
+                                "type": "number"
+                            },
+                            "vitaminA": {
+                                "title": "Vitamina",
+                                "type": "number"
+                            },
+                            "vitaminC": {
+                                "title": "Vitaminc",
+                                "type": "number"
+                            },
+                            "vitaminD": {
+                                "title": "Vitamind",
+                                "type": "number"
+                            },
+                            "vitaminE": {
+                                "title": "Vitamine",
+                                "type": "number"
+                            },
+                            "vitaminK": {
+                                "title": "Vitamink",
+                                "type": "number"
+                            },
+                            "vitaminB1": {
+                                "title": "Vitaminb1",
+                                "type": "number"
+                            },
+                            "vitaminB2": {
+                                "title": "Vitaminb2",
+                                "type": "number"
+                            },
+                            "vitaminB3": {
+                                "title": "Vitaminb3",
+                                "type": "number"
+                            },
+                            "vitaminB5": {
+                                "title": "Vitaminb5",
+                                "type": "number"
+                            },
+                            "vitaminB6": {
+                                "title": "Vitaminb6",
+                                "type": "number"
+                            },
+                            "vitaminB12": {
+                                "title": "Vitaminb12",
+                                "type": "number"
+                            },
+                            "potassium": {
+                                "title": "Potassium",
+                                "type": "number"
+                            },
+                            "magnesium": {
+                                "title": "Magnesium",
+                                "type": "number"
+                            },
+                            "calcium": {
+                                "title": "Calcium",
+                                "type": "number"
+                            },
+                            "iron": {
+                                "title": "Iron",
+                                "type": "number"
+                            },
+                            "zinc": {
+                                "title": "Zinc",
+                                "type": "number"
+                            },
+                            "copper": {
+                                "title": "Copper",
+                                "type": "number"
+                            },
+                            "phosphorus": {
+                                "title": "Phosphorus",
+                                "type": "number"
+                            },
+                            "sodium": {
+                                "title": "Sodium",
+                                "type": "number"
+                            },
+                            "selenium": {
+                                "title": "Selenium",
+                                "type": "number"
+                            },
+                            "folate": {
+                                "title": "Folate",
+                                "type": "number"
+                            },
+                            "choline": {
+                                "title": "Choline",
+                                "type": "number"
+                            },
+                            "alcohol": {
+                                "title": "Alcohol",
+                                "type": "number"
+                            },
+                            "caffeine": {
+                                "title": "Caffeine",
+                                "type": "number"
+                            },
+                            "gluten": {
+                                "title": "Gluten",
+                                "type": "number"
+                            },
+                            "manganese": {
+                                "title": "Manganese",
+                                "type": "number"
+                            },
+                            "conjugatedLinoleicAcid": {
+                                "title": "Conjugatedlinoleicacid",
+                                "type": "number"
+                            },
+                            "phyticAcid": {
+                                "title": "Phyticacid",
+                                "type": "number"
+                            },
+                            "xylitol": {
+                                "title": "Xylitol",
+                                "type": "number"
+                            },
+                            "isomalt": {
+                                "title": "Isomalt",
+                                "type": "number"
+                            },
+                            "sorbitol": {
+                                "title": "Sorbitol",
+                                "type": "number"
+                            },
+                            "maltitol": {
+                                "title": "Maltitol",
+                                "type": "number"
+                            },
+                            "lactitol": {
+                                "title": "Lactitol",
+                                "type": "number"
+                            },
+                            "erythritol": {
+                                "title": "Erythritol",
+                                "type": "number"
+                            },
+                            "pinitol": {
+                                "title": "Pinitol",
+                                "type": "number"
+                            },
+                            "inositol": {
+                                "title": "Inositol",
+                                "type": "number"
+                            },
+                            "mannitol": {
+                                "title": "Mannitol",
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "image": {
+                        "title": "Image",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

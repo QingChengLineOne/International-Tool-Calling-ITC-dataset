@@ -1,0 +1,56 @@
+{
+    "tool_name": "距离矩阵API",
+    "tool_description": "用于计算多个起点和终点之间的距离和预计耗时，适用于网约车派单、多目的地最优路径智能计算等场景",
+    "home_url": "https://www.free-api.com/doc/347",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "距离矩阵",
+            "url": "http://apis.map.qq.com/ws/distance/v1/matrix",
+            "description": "计算多个起点和终点之间的距离和预计耗时",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "6LDBZ-BF4HK-G2ZJA-ABCNH-3A44S-7OFZI"
+                },
+                {
+                    "name": "mode",
+                    "type": "string",
+                    "description": "计算方式：driving（驾车）、walking（步行）。默认：driving",
+                    "default": "driving"
+                },
+                {
+                    "name": "from",
+                    "type": "string",
+                    "description": "起点坐标，格式：lat，lng;lat，lng...（经度与纬度用英文逗号分隔，坐标间用英文分号分隔）",
+                    "default": "39.12,116.83;30.21,115.43"
+                },
+                {
+                    "name": "to",
+                    "type": "string",
+                    "description": "终点坐标，格式：lat，lng;lat，lng...（经度与纬度用英文逗号分隔，坐标间用英文分号分隔）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "返回格式",
+                    "default": ""
+                },
+                {
+                    "name": "callback",
+                    "type": "string",
+                    "description": "JSONP方式回调函数",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "tool_name": "获取指定网页基础信息【TDK】",
+    "tool_description": "获取标准网页格式里的网页标题，关键词，描述，图标内容。",
+    "home_url": "https://api.aa1.cn/doc/getdata.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网页基础信息获取API",
+            "url": "https://cn.apihz.cn/api/wangzhan/getdata.php",
+            "description": "提供网页标题，关键词，描述，图标内容的获取服务。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识符，用于验证调用者身份。",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥，用于验证调用者身份。",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "请求类型标识，用于指定请求的数据类型。",
+                    "default": "1"
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要获取基础信息的网页URL。",
+                    "default": "www.apihz.cn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

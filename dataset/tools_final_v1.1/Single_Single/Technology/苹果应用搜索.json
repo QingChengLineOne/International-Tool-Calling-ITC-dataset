@@ -1,0 +1,50 @@
+{
+    "tool_name": "苹果应用搜索",
+    "tool_description": "搜索苹果商店应用，输出特定数据",
+    "home_url": "https://api.aa1.cn/doc/appstore-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "苹果应用搜索API",
+            "url": "https://api.ahfi.cn/doc/sostore.html",
+            "description": "通过关键词搜索苹果商店中的应用，并返回特定数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "term",
+                    "type": "string",
+                    "description": "搜索关键词",
+                    "default": ""
+                },
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "搜索区域，如'cn'代表中国",
+                    "default": "cn"
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "返回结果的数量限制",
+                    "default": 10
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "platform",
+                    "type": "string",
+                    "description": "指定平台，如'iOS', 'macOS'等",
+                    "default": ""
+                },
+                {
+                    "name": "developer",
+                    "type": "string",
+                    "description": "指定开发者名称",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

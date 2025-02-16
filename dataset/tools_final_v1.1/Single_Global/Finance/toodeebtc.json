@@ -1,0 +1,25 @@
+{
+    "tool_name": "toodeebtc",
+    "tool_description": "A Bitcoin mining bot that automates the mining process for users.",
+    "home_url": "https://rapidapi.com/toodeebtc-toodeebtc-default/api/toodeebtc/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "btc",
+            "url": "https://toodeebtc.p.rapidapi.com/",
+            "description": "This API endpoint allows users to interact with the Bitcoin mining bot.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "toodeebtc",
+                    "type": "STRING",
+                    "description": "An optional parameter for additional configuration or settings.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

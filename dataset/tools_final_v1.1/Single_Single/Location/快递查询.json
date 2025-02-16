@@ -1,0 +1,25 @@
+{
+    "tool_name": "快递查询API",
+    "tool_description": "查询快递物流信息",
+    "home_url": "https://api.aa1.cn/doc/kuaiduchaxu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "快递查询接口",
+            "url": "https://api.oioweb.cn/api/common/delivery",
+            "description": "用于查询快递物流信息的接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "nu",
+                    "type": "string",
+                    "description": "快递单号，用于查询特定快递的物流信息",
+                    "default": "无"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

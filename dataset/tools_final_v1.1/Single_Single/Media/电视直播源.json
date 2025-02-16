@@ -1,0 +1,18 @@
+{
+    "tool_name": "电视直播源API",
+    "tool_description": "提供可用的m3u8电视直播源",
+    "home_url": "https://api.aa1.cn/doc/tv-khkj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "电视直播源查询",
+            "url": "https://service-m9yegcn9-1311248022.sh.apigw.tencentcs.com/release/tvsource",
+            "description": "查询可用的电视直播源",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

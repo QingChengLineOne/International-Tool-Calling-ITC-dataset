@@ -1,0 +1,18 @@
+{
+    "tool_name": "Indian RTO's Names Search",
+    "tool_description": "This tool allows users to search for all RTO (Regional Transport Office) names across India using various prefixes such as state codes (e.g., MH for Maharashtra, GA for Goa).",
+    "home_url": "https://rapidapi.com/rahilkhan224/api/indian-rtos-names-search/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "All RTO's",
+            "url": "https://indian-rtos-names-search.p.rapidapi.com/rtos",
+            "description": "This API endpoint enables users to search for RTO names throughout India and can be utilized for autosuggestions.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

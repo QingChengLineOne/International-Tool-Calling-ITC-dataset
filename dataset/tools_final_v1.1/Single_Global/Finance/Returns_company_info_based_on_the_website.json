@@ -1,0 +1,25 @@
+{
+    "tool_name": "Returns company info based on the website",
+    "tool_description": "This tool provides detailed information about a company based on its website, including the company's name, description, CEO information, links to social media platforms, headquarters location, and top competitors.",
+    "home_url": "https://rapidapi.com/petarraznatovic7/api/returns-company-info-based-on-the-website/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getCompanyByWebsite",
+            "url": "https://returns-company-info-based-on-the-website.p.rapidapi.com/",
+            "description": "Fetches company information by providing a valid website domain. Invalid domains will result in exceptions, and subdomains will be stripped from the input.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The main domain of the company website to retrieve information for.",
+                    "default": "microsoft.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

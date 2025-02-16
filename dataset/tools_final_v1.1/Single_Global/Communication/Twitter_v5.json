@@ -1,0 +1,395 @@
+{
+    "tool_name": "Twitter_v5",
+    "tool_description": "Introducing a powerful Twitter API with 14 endpoints to help you access valuable Twitter data. With our API, you can easily retrieve user followers and followings, post likes, comments, quoted tweets, and retweets. You can also search for top, latest, videos, photos, and people, and access user tweets, replies, media, likes, and info by username or ID. Additionally, our autocomplete function helps you complete typed values with ease.",
+    "home_url": "https://rapidapi.com/davethebeast/api/twitter241/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Users By IDs",
+            "url": "https://twitter241.p.rapidapi.com/get-users",
+            "description": "Retrieve user information based on their IDs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "users",
+                    "type": "STRING",
+                    "description": "Comma-separated list of user IDs.",
+                    "default": "2455740283,44196397"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Likes",
+            "url": "https://twitter241.p.rapidapi.com/user-likes",
+            "description": "Get the likes of a user by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of likes to retrieve.",
+                    "default": "20"
+                },
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "User ID to fetch likes for.",
+                    "default": "2455740283"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Media",
+            "url": "https://twitter241.p.rapidapi.com/user-media",
+            "description": "Retrieve media posted by a user by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of media items to retrieve.",
+                    "default": "20"
+                },
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "User ID to fetch media for.",
+                    "default": "2455740283"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Replies",
+            "url": "https://twitter241.p.rapidapi.com/user-replies",
+            "description": "Get replies made by a user by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "User ID to fetch replies for.",
+                    "default": "2455740283"
+                },
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of replies to retrieve.",
+                    "default": "20"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Tweets",
+            "url": "https://twitter241.p.rapidapi.com/user-tweets",
+            "description": "Retrieve tweets made by a user by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of tweets to retrieve.",
+                    "default": "20"
+                },
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "User ID to fetch tweets for.",
+                    "default": "2455740283"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Autocomplete",
+            "url": "https://twitter241.p.rapidapi.com/autocomplete",
+            "description": "Autocomplete Twitter search queries.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "value",
+                    "type": "STRING",
+                    "description": "The input value to autocomplete.",
+                    "default": "MrB"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search Twitter",
+            "url": "https://twitter241.p.rapidapi.com/search",
+            "description": "Search Twitter for top, latest, videos, photos, and people.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Type of search results to return.",
+                    "default": "Top"
+                },
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of results to retrieve.",
+                    "default": "20"
+                },
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Search query string.",
+                    "default": "Mr Beast"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Post Retweets",
+            "url": "https://twitter241.p.rapidapi.com/retweets",
+            "description": "Get retweets of a post by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of retweets to retrieve.",
+                    "default": "40"
+                },
+                {
+                    "name": "pid",
+                    "type": "STRING",
+                    "description": "Post ID to fetch retweets for.",
+                    "default": "1552735248026411010"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Post Quotes",
+            "url": "https://twitter241.p.rapidapi.com/quotes",
+            "description": "Get quotes of a post by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of quotes to retrieve.",
+                    "default": "40"
+                },
+                {
+                    "name": "pid",
+                    "type": "STRING",
+                    "description": "Post ID to fetch quotes for.",
+                    "default": "1552735248026411010"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Post Comments",
+            "url": "https://twitter241.p.rapidapi.com/comments",
+            "description": "Get comments on a post by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "pid",
+                    "type": "STRING",
+                    "description": "Post ID to fetch comments for.",
+                    "default": "1552735248026411010"
+                },
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of comments to retrieve.",
+                    "default": "40"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Post Likes",
+            "url": "https://twitter241.p.rapidapi.com/likes",
+            "description": "Get likes on a post by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of likes to retrieve.",
+                    "default": "40"
+                },
+                {
+                    "name": "pid",
+                    "type": "STRING",
+                    "description": "Post ID to fetch likes for.",
+                    "default": "1552735248026411010"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Followings",
+            "url": "https://twitter241.p.rapidapi.com/followings",
+            "description": "Get followings of a user by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of followings to retrieve.",
+                    "default": "20"
+                },
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "User ID to fetch followings for.",
+                    "default": "2455740283"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User Followers",
+            "url": "https://twitter241.p.rapidapi.com/followers",
+            "description": "Get followers of a user by their ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "user",
+                    "type": "STRING",
+                    "description": "User ID to fetch followers for.",
+                    "default": "2455740283"
+                },
+                {
+                    "name": "count",
+                    "type": "STRING",
+                    "description": "Number of followers to retrieve.",
+                    "default": "20"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Pagination cursor for fetching more results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get User By Username",
+            "url": "https://twitter241.p.rapidapi.com/user",
+            "description": "Retrieve user information by their username.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The username of the user to retrieve.",
+                    "default": "MrBeast"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

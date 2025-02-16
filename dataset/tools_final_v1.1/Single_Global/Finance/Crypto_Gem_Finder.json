@@ -1,0 +1,77 @@
+{
+    "tool_name": "Crypto Gem Finder",
+    "tool_description": "Find your next gem crypto! Browse popular today, trending and recently added coins.",
+    "home_url": "https://rapidapi.com/emir12/api/crypto-gem-finder/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Trending",
+            "url": "https://crypto-gem-finder.p.rapidapi.com/trending",
+            "description": "Get trending coins.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Today Best",
+            "url": "https://crypto-gem-finder.p.rapidapi.com/today-best",
+            "description": "Get today's most popular coins.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Fresh potential gems",
+            "url": "https://crypto-gem-finder.p.rapidapi.com/",
+            "description": "Get recently added coins.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

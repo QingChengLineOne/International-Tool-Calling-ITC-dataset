@@ -1,0 +1,234 @@
+{
+    "tool_name": "Keto Diet",
+    "tool_description": "A comprehensive dataset of over 450 Ketogenic diet recipes categorized from Breakfast to Dinner. Users can manage content on their mobile apps through encurate.app and can contact to feature their app on the encurate.app website.",
+    "home_url": "https://rapidapi.com/encurate/api/keto-diet/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Filter - Protein",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves keto recipes within a specified range of protein content.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "protein_in_grams__lt",
+                    "type": "NUMBER",
+                    "description": "Maximum protein content in grams.",
+                    "default": "15"
+                },
+                {
+                    "name": "protein_in_grams__gt",
+                    "type": "NUMBER",
+                    "description": "Minimum protein content in grams.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter - Carbohydrates",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves keto recipes within a specified range of carbohydrate content.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "carbohydrates_in_grams__lt",
+                    "type": "NUMBER",
+                    "description": "Maximum carbohydrate content in grams.",
+                    "default": "100"
+                },
+                {
+                    "name": "carbohydrates_in_grams__gt",
+                    "type": "NUMBER",
+                    "description": "Minimum carbohydrate content in grams.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter - Fats",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves keto recipes within a specified range of fat content.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "fat_in_grams__lt",
+                    "type": "NUMBER",
+                    "description": "Maximum fat content in grams.",
+                    "default": "25"
+                },
+                {
+                    "name": "fat_in_grams__gt",
+                    "type": "NUMBER",
+                    "description": "Minimum fat content in grams.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter - Calories",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves keto recipes within a specified range of calorie content.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "calories__lt",
+                    "type": "NUMBER",
+                    "description": "Maximum calorie content.",
+                    "default": "200"
+                },
+                {
+                    "name": "calories__gt",
+                    "type": "NUMBER",
+                    "description": "Minimum calorie content.",
+                    "default": "50"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter - Cook Time in Minutes",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves keto recipes based on cooking time.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cook_time_in_minutes__tg",
+                    "type": "NUMBER",
+                    "description": "Target cooking time in minutes.",
+                    "default": "10"
+                },
+                {
+                    "name": "cook_time_in_minutes__lt",
+                    "type": "NUMBER",
+                    "description": "Maximum cooking time in minutes.",
+                    "default": "50"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter - Prep Time in Minutes",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves keto recipes based on preparation time.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "prep_time_in_minutes__gt",
+                    "type": "NUMBER",
+                    "description": "Minimum preparation time in minutes.",
+                    "default": "10"
+                },
+                {
+                    "name": "prep_time_in_minutes__lt",
+                    "type": "NUMBER",
+                    "description": "Maximum preparation time in minutes.",
+                    "default": "30"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Keto Recipes by Difficulty",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves all keto recipes categorized by difficulty level (Easy, Medium, Difficult).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "difficulty",
+                    "type": "STRING",
+                    "description": "Difficulty level of the recipes.",
+                    "default": "Medium"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All Keto Recipes by Category",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves all keto recipes based on category ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "NUMBER",
+                    "description": "ID of the category to filter recipes.",
+                    "default": "2"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Categories",
+            "url": "https://keto-diet.p.rapidapi.com/categories/",
+            "description": "Lists all available categories of keto recipes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search Keto Recipe",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves all recipes based on a search term.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "Search term for the recipe.",
+                    "default": "beef"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Single Keto Recipe",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves a single recipe based on its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "ID of the recipe to retrieve.",
+                    "default": "87"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All Keto Recipes",
+            "url": "https://keto-diet.p.rapidapi.com/",
+            "description": "Retrieves a list of all available keto recipes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

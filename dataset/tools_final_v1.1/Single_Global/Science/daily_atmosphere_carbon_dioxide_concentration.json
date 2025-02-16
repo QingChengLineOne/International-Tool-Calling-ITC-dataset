@@ -1,0 +1,25 @@
+{
+    "tool_name": "Daily atmosphere carbon dioxide concentration",
+    "tool_description": "This API provides on a quasi-daily basis, the amount of carbon dioxide (CO2) in the atmosphere from 2010.01.01 to the present. It is expressed as a mole fraction in dry air, parts per million (ppm).",
+    "home_url": "https://rapidapi.com/rene-mdd/api/daily-atmosphere-carbon-dioxide-concentration/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Carbon dioxide endpoint",
+            "url": "https://daily-atmosphere-carbon-dioxide-concentration.p.rapidapi.com/api/co2-api",
+            "description": "The response will be an object with no CORS resources enabled.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "co2",
+                    "type": "OBJECT",
+                    "description": "Carbon dioxide data object",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

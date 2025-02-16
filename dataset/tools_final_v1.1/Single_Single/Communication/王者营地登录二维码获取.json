@@ -1,0 +1,25 @@
+{
+    "tool_name": "王者营地登录二维码获取",
+    "tool_description": "获取登录二维码实现营地登录",
+    "home_url": "https://api.aa1.cn/doc/wangzheyingdi-login_qr.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "王者营地登录二维码获取接口",
+            "url": "www.dreamling.top/API/wangzheyingdi/app/login_qr/api.php",
+            "description": "提供登录二维码生成，用于用户扫码登录王者营地",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "None",
+                    "type": "None",
+                    "description": "此接口无需额外参数",
+                    "default": "N/A"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

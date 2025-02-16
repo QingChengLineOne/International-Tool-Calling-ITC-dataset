@@ -1,0 +1,25 @@
+{
+    "tool_name": "CODIGO POSTALES MEXICO GRATIS",
+    "tool_description": "A free tool for retrieving postal codes in Mexico.",
+    "home_url": "https://rapidapi.com/gustavogow1992/api/codigo-postales-mexico-gratis/",
+    "country": "Mexico",
+    "api_list": [
+        {
+            "name": "codigo postal mexicano",
+            "url": "https://codigo-postales-mexico-gratis.p.rapidapi.com/code_postal/consulta/cp.php",
+            "description": "Retrieve information based on a Mexican postal code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cp",
+                    "type": "STRING",
+                    "description": "The postal code to query.",
+                    "default": "86220"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

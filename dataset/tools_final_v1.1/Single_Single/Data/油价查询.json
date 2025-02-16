@@ -1,0 +1,25 @@
+{
+    "tool_name": "油价查询",
+    "tool_description": "查询指定省区的油价信息",
+    "home_url": "https://api.qqsuu.cn/doc/dm-oilprice.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "油价查询",
+            "url": "https://api.qqsuu.cn/api/dm-oilprice",
+            "description": "查询指定省区的油价信息",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "prov",
+                    "type": "String",
+                    "description": "省区名，如湖北、上海（末尾不要带上省）",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

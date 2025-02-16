@@ -1,0 +1,98 @@
+{
+    "tool_name": "Cash4Life",
+    "tool_description": "Do you want to get paid for the rest of your life? This is your game! Introducing the latest winning numbers and the best statistics!",
+    "home_url": "https://rapidapi.com/avoratechnology/api/cash4life/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Drawings Between Dates",
+            "url": "https://cash4life.p.rapidapi.com/BetweenDates/{date1}/{date2}",
+            "description": "Get all Cash4Life winning number sets between two specified dates where the first number supplied is the beginning date and the second number supplied is the end date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date1",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The start date for the range of drawings.",
+                    "default": "2023-01-01"
+                },
+                {
+                    "name": "date2",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The end date for the range of drawings.",
+                    "default": "2023-01-05"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Drawing by Date",
+            "url": "https://cash4life.p.rapidapi.com/{date}",
+            "description": "Get the winning Cash4Life number set from a specific drawing date.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The specific date for which to retrieve the winning numbers.",
+                    "default": "2023-01-05"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "General Statistics",
+            "url": "https://cash4life.p.rapidapi.com/stats",
+            "description": "This endpoint pulls basic statistics of the Cash4Life numbers, including mean, median, mode, min, max, standard deviation, variance, skewness, and kurtosis for each ball.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest Drawing",
+            "url": "https://cash4life.p.rapidapi.com/latest",
+            "description": "Get the latest winning Cash4Life number set.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Random QuickPick for Play",
+            "url": "https://cash4life.p.rapidapi.com/quickpick",
+            "description": "Get a quickpick number for the Cash4Life drawing.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest 10 Drawings",
+            "url": "https://cash4life.p.rapidapi.com/latest10",
+            "description": "Retrieve the latest 10 Cash4Life drawings.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "All Drawings",
+            "url": "https://cash4life.p.rapidapi.com/",
+            "description": "Get all Cash4Life drawings.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

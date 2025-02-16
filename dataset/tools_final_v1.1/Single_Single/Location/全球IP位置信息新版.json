@@ -1,0 +1,38 @@
+{
+    "tool_name": "全球IP位置信息(新版)",
+    "tool_description": "全球IP归属地查询-支持全球IP精确查询到区",
+    "home_url": "https://api.aa1.cn/doc/api-ip-songzixian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全球IP位置信息查询",
+            "url": "https://api.songzixian.com/api/ip",
+            "description": "用于查询指定IP的全球位置信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源类型，此处为'GLOBAL_IP'表示全球IP数据源",
+                    "default": "GLOBAL_IP"
+                },
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "要查询的IP地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "返回结果的语种，如'zh-CN'表示中文",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

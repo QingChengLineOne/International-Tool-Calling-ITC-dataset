@@ -1,0 +1,18 @@
+{
+    "tool_name": "Five88",
+    "tool_description": "Five88 - https://five88.casino - Trang chủ đăng ký chính thức của nhà cái Five88. Five88 là sân chơi casino, cá cược bóng đá đẳng cấp hàng đầu Việt Nam, nơi người chơi sẽ hoàn toàn hài lòng với những trải nghiệm thú vị đang chờ đón trước mắt.",
+    "home_url": "https://rapidapi.com/five88casino/api/five88/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Five88",
+            "url": "https://five88.p.rapidapi.com/",
+            "description": "Five88 API provides access to the official platform for casino and sports betting in Vietnam, offering users a variety of gaming experiences.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

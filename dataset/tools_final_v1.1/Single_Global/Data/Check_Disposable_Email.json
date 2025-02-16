@@ -1,0 +1,140 @@
+{
+    "tool_name": "Check Disposable Email",
+    "tool_description": "This tool allows users to easily verify the validity of an email address. It checks if the email domain is valid and whether the email is a temporary or disposable address, which is often associated with spamming or trolling.",
+    "home_url": "https://rapidapi.com/peekdomainapi/api/check-disposable-email/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "checkDisposableEmail",
+            "url": "https://check-disposable-email.p.rapidapi.com/api/disposable",
+            "description": "REST API to lookup disposable email addresses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to check for disposability.",
+                    "default": "info@peekdomain.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "emailValidation",
+            "url": "https://check-disposable-email.p.rapidapi.com/api/email-validation",
+            "description": "API to clean your email list database by verifying email addresses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to be verified.",
+                    "default": "info@peekdomain.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "domain": {
+                        "type": "string"
+                    },
+                    "account": {
+                        "type": "string"
+                    },
+                    "block": {
+                        "type": "boolean"
+                    },
+                    "valid": {
+                        "type": "boolean"
+                    },
+                    "disposable": {
+                        "type": "boolean"
+                    },
+                    "dns": {
+                        "type": "boolean"
+                    },
+                    "syntaxVerified": {
+                        "type": "boolean"
+                    },
+                    "error": {
+                        "type": "string"
+                    },
+                    "mxHosts": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "mailStatus": {
+                        "type": "string"
+                    },
+                    "reason": {
+                        "type": "string"
+                    },
+                    "role": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        {
+            "name": "newlyRegisteredDomains",
+            "url": "https://check-disposable-email.p.rapidapi.com/api/newly-registered-domains",
+            "description": "REST API to lookup newly registered domains.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number of the domain search results.",
+                    "default": "1"
+                },
+                {
+                    "name": "keywords",
+                    "type": "STRING",
+                    "description": "Keywords to filter the domains being searched.",
+                    "default": ""
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The registered date of the domains to be searched.",
+                    "default": "2023-06-12"
+                },
+                {
+                    "name": "exclude",
+                    "type": "STRING",
+                    "description": "Keywords to exclude from the domain search.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "whois",
+            "url": "https://check-disposable-email.p.rapidapi.com/api/whois",
+            "description": "REST API to perform WHOIS lookups for domain information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain name for which WHOIS data is to be retrieved.",
+                    "default": "peekdomain.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        }
+    ]
+}

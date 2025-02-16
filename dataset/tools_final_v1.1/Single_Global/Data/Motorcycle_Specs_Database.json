@@ -1,0 +1,104 @@
+{
+    "tool_name": "Motorcycle Specs Database",
+    "tool_description": "A comprehensive database providing specifications for all motorcycle makes and models from the year 1900 to 2023, including full specifications and images. The database is updated in real-time and offers over 35,000 motorcycle models with more than 20 technical information fields per model.",
+    "home_url": "https://rapidapi.com/makingdatameaningful/api/motorcycle-specs-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "List of all Categories",
+            "url": "https://motorcycle-specs-database.p.rapidapi.com/category",
+            "description": "Retrieve a list of all motorcycle categories available in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Models by {Make ID} / {Year}",
+            "url": "https://motorcycle-specs-database.p.rapidapi.com/model/make-id/{make}/{year}",
+            "description": "Get motorcycle models by specifying the make ID and year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "NUMBER",
+                    "description": "The year of the motorcycle model.",
+                    "default": "2015"
+                },
+                {
+                    "name": "make",
+                    "type": "NUMBER",
+                    "description": "The ID of the motorcycle make.",
+                    "default": "100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Image by {ID} as Link",
+            "url": "https://motorcycle-specs-database.p.rapidapi.com/article/{article}/image/link",
+            "description": "Retrieve the image link for a specific motorcycle article by its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "article",
+                    "type": "NUMBER",
+                    "description": "The ID of the article for which the image is requested.",
+                    "default": "804882"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Models by {Make ID} / {Year} / {Category}",
+            "url": "https://motorcycle-specs-database.p.rapidapi.com/model/make-id/{make}/{year}/{category}",
+            "description": "Get motorcycle models by specifying the make ID, year, and category.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "NUMBER",
+                    "description": "The year of the motorcycle model.",
+                    "default": "2015"
+                },
+                {
+                    "name": "category",
+                    "type": "string",
+                    "description": "The category of the motorcycle.",
+                    "default": "Sport"
+                },
+                {
+                    "name": "make",
+                    "type": "NUMBER",
+                    "description": "The ID of the motorcycle make.",
+                    "default": "100"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Models by {Make}",
+            "url": "https://motorcycle-specs-database.p.rapidapi.com/model/make-name/{make}",
+            "description": "Retrieve all models for a specified motorcycle make.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "make",
+                    "type": "string",
+                    "description": "The name of the motorcycle make.",
+                    "default": "Yamaha"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

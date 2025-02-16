@@ -1,0 +1,37 @@
+{
+    "tool_name": "Timezone by Coordinates",
+    "tool_description": "Get the Timezone, DST offset, and UTC offset of a location based on its geographical coordinates.",
+    "home_url": "https://rapidapi.com/NovusAPI/api/timezone-by-coordinates/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Timezone",
+            "url": "https://timezone-by-coordinates.p.rapidapi.com/timezone",
+            "description": "Retrieve the timezone information for a specified coordinate location.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lng",
+                    "type": "NUMBER",
+                    "description": "Longitude of the location.",
+                    "default": "-123.045868"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "NUMBER",
+                    "description": "The desired time as seconds since midnight, January 1, 1970 UTC.",
+                    "default": "1646179205"
+                },
+                {
+                    "name": "lat",
+                    "type": "NUMBER",
+                    "description": "Latitude of the location.",
+                    "default": "49.282409"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "聚合去水印-图集/视频",
+    "tool_description": "聚合去水印-图集/视频API，用于从图集或视频中去除水印。",
+    "home_url": "https://api.aa1.cn/doc/juhesy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "聚合去水印-图集/视频API",
+            "url": "https://api.cenguigui.cn/api/video/?url=",
+            "description": "用于去除图集或视频中的水印。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要去水印的图集或视频的URL。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "output_format",
+                    "type": "string",
+                    "description": "输出格式，默认为'mp4'，可选值有'mp4', 'jpg', 'png'。",
+                    "default": "mp4"
+                },
+                {
+                    "name": "output_quality",
+                    "type": "string",
+                    "description": "输出质量，仅在输出格式为'image'时有效，可选值有'high', 'medium', 'low'。",
+                    "default": "medium"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "tool_name": "India NCVT ITI Certificate Verification",
+    "tool_description": "The NCVT Certificate is awarded for the completion of ITI courses under the National Council of Vocational Training (NCVT). This includes exams conducted under the Craftsman Training Scheme (CTS), Apprentice Training Scheme (ATS), and All India Trade Test (AITT).",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/india-ncvt-iti-cerificate-verification/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Fetch Task Result",
+            "url": "https://india-ncvt-iti-cericate-verification.p.rapidapi.com/v3/tasks",
+            "description": "This API is used to fetch the result of a task using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request to fetch the result.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Verify NCVT Certificate",
+            "url": "https://india-ncvt-iti-cericate-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/ncvt_iti",
+            "description": "This API is used to verify the NCVT Certificate. It initiates the verification process and returns a request ID for tracking.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

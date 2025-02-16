@@ -1,0 +1,18 @@
+{
+    "tool_name": "Jojonomic Face Rekognition",
+    "tool_description": "Rekognition Image lets measure the likelihood that faces in two images are of the same person. With Rekognition, you can use the similarity score to verify a user against a reference photo in near real time.",
+    "home_url": "https://rapidapi.com/jojonomic-headquarters-jojonomic-headquarters-default/api/jojonomic-face-rekognition/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Face Matches",
+            "url": "https://jojonomic-face-rekognition.p.rapidapi.com/sdk/rekognition/compare-faces",
+            "description": "This API function allows you to compare two images and measure the likelihood that the faces in those images belong to the same person.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

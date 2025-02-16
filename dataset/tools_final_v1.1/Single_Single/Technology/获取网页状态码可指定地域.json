@@ -1,0 +1,43 @@
+{
+    "tool_name": "获取网页状态码[可指定地域]",
+    "tool_description": "获取指定网址访问状态码，可指定国内，香港，美国等访问节点。【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/getcode.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取网页状态码",
+            "url": "https://cn.apihz.cn/api/wangzhan/getcode.php",
+            "description": "通过该接口获取指定网址的访问状态码，支持地域选择。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的ID",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的KEY",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "访问节点类型，1为国内，2为香港，3为美国，以此类推",
+                    "default": "1"
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要查询状态码的网址",
+                    "default": "www.apihz.cn"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

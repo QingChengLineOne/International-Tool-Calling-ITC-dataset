@@ -1,0 +1,91 @@
+{
+    "tool_name": "jobtitle",
+    "tool_description": "An API that provides job title information and related data.",
+    "home_url": "https://rapidapi.com/redlavictime/api/jobtitle/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/status/",
+            "url": "https://jobtitle.p.rapidapi.com/status/",
+            "description": "Retrieves the current status of the job title API, including success and failure metrics.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "corrected_since_start": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    },
+                    "fails_since_start": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    },
+                    "models": {
+                        "type": "object",
+                        "properties": {
+                            "job_titles": {
+                                "type": "object",
+                                "properties": {
+                                    "entries_for_validation": {
+                                        "type": "string"
+                                    },
+                                    "precision": {
+                                        "type": "string"
+                                    },
+                                    "recall": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "seniorities": {
+                                "type": "object",
+                                "properties": {
+                                    "entries_for_validation": {
+                                        "type": "string"
+                                    },
+                                    "precision": {
+                                        "type": "string"
+                                    },
+                                    "recall": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "success_since_start": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    },
+                    "total_corrected": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    },
+                    "total_fails": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    },
+                    "total_success": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": -9223372036854776000,
+                        "maximum": 9223372036854776000
+                    }
+                }
+            }
+        }
+    ]
+}

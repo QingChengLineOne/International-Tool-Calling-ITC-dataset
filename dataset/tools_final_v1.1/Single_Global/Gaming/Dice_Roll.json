@@ -1,0 +1,18 @@
+{
+    "tool_name": "Dice Roll",
+    "tool_description": "Roll multiple dice for your table top application!",
+    "home_url": "https://rapidapi.com/omgm-omgm-default/api/dice-roll2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Roll",
+            "url": "https://dice-roll2.p.rapidapi.com/roll",
+            "description": "The API usage is simple, submit an array of strings in the format of `NdD+M` where N is the number of dice that you want to throw, D is the type of dice that you want to throw, and M is the base modifier that you want to apply (the +M is optional). Some examples can be: 1d4+5, 6d6, 10d8+1.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "tool_name": "MMO Games",
+    "tool_description": "MMO Games API - By MMOBomb! Access programmatically the best Multiplayer Online Games, News and Giveaways!",
+    "home_url": "https://rapidapi.com/digiwalls/api/mmo-games/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Return details from a specific game",
+            "url": "https://mmo-games.p.rapidapi.com/game",
+            "description": "Retrieve detailed information about a specific game using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the game.",
+                    "default": "452"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest MMO News",
+            "url": "https://mmo-games.p.rapidapi.com/latestnews",
+            "description": "Fetch the latest news related to MMO games.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Live MMO Giveaways",
+            "url": "https://mmo-games.p.rapidapi.com/giveaways",
+            "description": "Get a list of current live giveaways for MMO games.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Filter Games by multiple tags",
+            "url": "https://mmo-games.p.rapidapi.com/filter?",
+            "description": "Filter games based on multiple tags for personalized results.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tag",
+                    "type": "STRING",
+                    "description": "Tags to filter games, e.g., mmorpg, shooter.",
+                    "default": "3d.mmorpg.fantasy.pvp"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "Specify the platform for filtering, e.g., pc.",
+                    "default": "pc"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games by platform & category & sorted",
+            "url": "https://mmo-games.p.rapidapi.com/games?",
+            "description": "Retrieve games sorted by platform and category.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sort-by",
+                    "type": "STRING",
+                    "description": "Criteria for sorting the games.",
+                    "default": "release-date"
+                },
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "Platform to filter games, e.g., browser.",
+                    "default": "browser"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "Category to filter games, e.g., mmorpg.",
+                    "default": "mmorpg"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Sort Games",
+            "url": "https://mmo-games.p.rapidapi.com/games?",
+            "description": "Sort games by various criteria such as release date or popularity.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sort-by",
+                    "type": "STRING",
+                    "description": "Sorting criteria for the games.",
+                    "default": "alphabetical"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games by category or tag",
+            "url": "https://mmo-games.p.rapidapi.com/games?",
+            "description": "Retrieve games based on a specific category or tag.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category or tag to filter games.",
+                    "default": "shooter"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games by Platform",
+            "url": "https://mmo-games.p.rapidapi.com/games?",
+            "description": "Retrieve games available on a specific platform.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The platform to filter games, e.g., pc or browser.",
+                    "default": "browser"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games list",
+            "url": "https://mmo-games.p.rapidapi.com/games",
+            "description": "Get a live list of all available games.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

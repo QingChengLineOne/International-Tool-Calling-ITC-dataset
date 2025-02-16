@@ -1,0 +1,59 @@
+{
+    "tool_name": "Get Companies By SIC Code API",
+    "tool_description": "The Get Companies By SIC Code API allows users to retrieve information on companies based on their Standard Industrial Classification (SIC) code. The SIC code is a numerical classification system that groups similar industries together and is used to classify businesses by the type of economic activity in which they engage.",
+    "home_url": "https://rapidapi.com/zyla-labs-zyla-labs-default/api/get-companies-by-sic-code-api/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Search Companies by Name",
+            "url": "https://get-companies-by-sic-code-api.p.rapidapi.com/company-name",
+            "description": "This endpoint allows you to search for companies by their name and provides the company slug that can be used to get additional company data, such as SIC code and NAICS code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "company_name",
+                    "type": "STRING",
+                    "description": "Company name to lookup.",
+                    "default": "google inc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Company Data by Company Slug",
+            "url": "https://get-companies-by-sic-code-api.p.rapidapi.com/company-slug",
+            "description": "Using the Company Slug provided in the 'Get Companies by SIC code' endpoint, this endpoint retrieves additional information about a company, including city, state, zip code, estimated annual revenue, years in business, and estimated company size.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "company_slug",
+                    "type": "STRING",
+                    "description": "Company Slug provided in the 'Get Companies by SIC code' endpoint.",
+                    "default": "amazon-com-inc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Companies by SIC Code",
+            "url": "https://get-companies-by-sic-code-api.p.rapidapi.com/sic-code",
+            "description": "Retrieve a list of the top 100 companies that are related to a given SIC code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sic_code",
+                    "type": "NUMBER",
+                    "description": "SIC code to lookup.",
+                    "default": "7374"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

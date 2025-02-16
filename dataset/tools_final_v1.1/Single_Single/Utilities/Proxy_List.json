@@ -1,0 +1,47 @@
+{
+    "tool_name": "Proxy List",
+    "tool_description": "Returns a list of HTTP, HTTPS, SOCKS4, and SOCKS5 proxies. The list is checked every minute and includes more than 7000 working proxies from multiple sources.",
+    "home_url": "https://rapidapi.com/almann/api/proxy-list2/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "/proxy/get",
+            "url": "https://proxy-list2.p.rapidapi.com/proxy/get",
+            "description": "Returns the list of proxies based on the given parameters. The list is updated every minute and only includes proxies that are working at the time of the check.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Specifies the type of proxy. Possible values: http, https, socks4, socks5.",
+                    "default": "http"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Use country code to filter proxies by country. Refer to https://www.nationsonline.org/oneworld/country_code_list.htm for country codes.",
+                    "default": "US"
+                },
+                {
+                    "name": "anonymity",
+                    "type": "STRING",
+                    "description": "Specifies the level of anonymity. Possible values: high, anonymous, transparent.",
+                    "default": "high"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/proxy/health",
+            "url": "https://proxy-list2.p.rapidapi.com/proxy/health",
+            "description": "Returns the health status of the API and the last time the proxies were checked. The time is provided in UTC.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

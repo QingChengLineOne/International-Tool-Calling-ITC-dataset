@@ -1,0 +1,18 @@
+{
+    "tool_name": "How to get webflow discount",
+    "tool_description": "Webflow is a web-based design and development tool primarily used for creating responsive websites. It features a versatile drag-and-drop interface that simplifies the website creation process. Webflow offers various hosting options, including AWS Cloud and Google Cloud Platform, and provides numerous discount coupons for significant savings on its hosting services.",
+    "home_url": "https://rapidapi.com/webflowcoupons/api/how-to-get-webflow-discount/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "How To Get Discount On WebFlow",
+            "url": "https://how-to-get-webflow-discount.p.rapidapi.com/",
+            "description": "This API provides information on available discount coupons for Webflow's hosting services, allowing users to access significant savings.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

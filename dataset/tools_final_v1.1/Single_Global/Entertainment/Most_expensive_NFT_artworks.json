@@ -1,0 +1,76 @@
+{
+    "tool_name": "Most expensive NFT artworks",
+    "tool_description": "Get a list of the most expensive and bestselling NFTs ever sold.",
+    "home_url": "https://rapidapi.com/emir12/api/most-expensive-nft-artworks/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Monthly volume by gallery",
+            "url": "https://most-expensive-nft-artworks.p.rapidapi.com/monthly_crypto_art_volume",
+            "description": "Retrieve the monthly volume of NFT sales categorized by gallery.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest sold",
+            "url": "https://most-expensive-nft-artworks.p.rapidapi.com/artworks",
+            "description": "Get a list of recently sold artworks. Possible filtering by gallery includes Art Blocks, Async Art, Auction Houses, Foundation, hic et nunc, KnownOrigin, MakersPlace, Nifty Gateway, and SuperRare.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Specify the page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "gallery",
+                    "type": "STRING",
+                    "description": "Filter results by specific gallery.",
+                    "default": ""
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Sort the results by the date sold.",
+                    "default": "date_sold"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Most expensive",
+            "url": "https://most-expensive-nft-artworks.p.rapidapi.com/artworks",
+            "description": "Get a list of the most expensive artworks sold. Possible filtering by gallery includes Art Blocks, Async Art, Auction Houses, Foundation, hic et nunc, KnownOrigin, MakersPlace, Nifty Gateway, and SuperRare.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Sort the results by price in USD.",
+                    "default": "usd_price"
+                },
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "Specify the page number for pagination.",
+                    "default": "1"
+                },
+                {
+                    "name": "gallery",
+                    "type": "STRING",
+                    "description": "Filter results by specific gallery.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

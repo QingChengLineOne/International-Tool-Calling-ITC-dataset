@@ -1,0 +1,110 @@
+{
+    "tool_name": "StopModReposts Blocklist",
+    "tool_description": "The StopModReposts Blocklist provides a collection of blocklists in various data formats to help users manage unwanted content in gaming environments.",
+    "home_url": "https://rapidapi.com/stopmodreposts-stopmodreposts-default/api/stopmodreposts-blocklist/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "UBLACKLIST.TXT",
+            "url": "https://stopmodreposts-blocklist.p.rapidapi.com/minecraft/ublacklist.txt",
+            "description": "Retrieves the ublacklist.txt endpoint, which contains a list of unwanted content for Minecraft.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "game",
+                    "type": "string",
+                    "description": "Specifies the game for which the blocklist is requested.",
+                    "default": "minecraft"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "HOSTS.TXT",
+            "url": "https://stopmodreposts-blocklist.p.rapidapi.com/minecraft/hosts.txt",
+            "description": "Retrieves the hosts.txt endpoint, which provides a list of hosts to block in Minecraft.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "game",
+                    "type": "string",
+                    "description": "Specifies the game for which the blocklist is requested.",
+                    "default": "minecraft"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "TXT",
+            "url": "https://stopmodreposts-blocklist.p.rapidapi.com/minecraft/sites.txt",
+            "description": "Retrieves the plain text endpoint containing a list of sites to block.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "game",
+                    "type": "string",
+                    "description": "Specifies the game for which the blocklist is requested.",
+                    "default": "minecraft"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "YAML",
+            "url": "https://stopmodreposts-blocklist.p.rapidapi.com/minecraft/sites.yaml",
+            "description": "Retrieves the YAML endpoint containing a list of sites to block in YAML format.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "game",
+                    "type": "string",
+                    "description": "Specifies the game for which the blocklist is requested.",
+                    "default": "minecraft"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "XML",
+            "url": "https://stopmodreposts-blocklist.p.rapidapi.com/minecraft/sites.xml",
+            "description": "Retrieves the XML endpoint containing a list of sites to block in XML format.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "game",
+                    "type": "string",
+                    "description": "Specifies the game for which the blocklist is requested.",
+                    "default": "minecraft"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "JSON",
+            "url": "https://stopmodreposts-blocklist.p.rapidapi.com/minecraft/sites.json",
+            "description": "Retrieves the JSON endpoint containing a list of sites to block in JSON format.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "game",
+                    "type": "string",
+                    "description": "Specifies the game for which the blocklist is requested.",
+                    "default": "minecraft"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

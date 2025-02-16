@@ -1,0 +1,32 @@
+{
+    "tool_name": "光遇今日免费魔法图片接口",
+    "tool_description": "生成光遇今日免费魔法图片",
+    "home_url": "https://api.aa1.cn/doc/ytgymf.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "光遇今日免费魔法图片API",
+            "url": "https://api.t1qq.com/api/sky/mf/mf",
+            "description": "获取光遇今日免费魔法图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口密钥，用于验证请求的有效性",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "可选，返回数据的格式，默认为json，可选值有json、xml等",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "tool_name": "ISLAMICOIN",
+    "tool_description": "An API providing information about the circulation supply of ISLAMICOIN.",
+    "home_url": "https://rapidapi.com/coinislami/api/islamicoin/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/ISLAMIBLOCKCHAIN/ISLAMICOIN/main/cs.txt",
+            "url": "https://islamicoin.p.rapidapi.com/ISLAMIBLOCKCHAIN/ISLAMICOIN/main/cs.txt",
+            "description": "Retrieves the current circulation supply of ISLAMICOIN.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

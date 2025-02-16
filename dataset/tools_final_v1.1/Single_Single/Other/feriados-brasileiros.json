@@ -1,0 +1,60 @@
+{
+    "tool_name": "feriados-brasileiros",
+    "tool_description": "API para obter feriados nacionais para uma cidade ou estado específico durante um determinado ano.",
+    "home_url": "https://rapidapi.com/davidsimonmarques/api/feriados-brasileiros1/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "Feriados dos Estados",
+            "url": "https://feriados-brasileiros1.p.rapidapi.com/read_uf",
+            "description": "Retorna os feriados de um estado específico. Os parâmetros necessários são: 1. Estado - Sigla da Unidade Federativa em letra maiúscula. 2. Ano - Ano para o qual se deseja obter os feriados.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "estado",
+                    "type": "STRING",
+                    "description": "Sigla do estado desejado.",
+                    "default": "MG"
+                },
+                {
+                    "name": "ano",
+                    "type": "STRING",
+                    "description": "Ano para o qual se deseja obter os feriados.",
+                    "default": "2023"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Feriados das Cidades",
+            "url": "https://feriados-brasileiros1.p.rapidapi.com/read",
+            "description": "Retorna os feriados de uma cidade brasileira específica. Os parâmetros necessários são: 1. Cidade - Nome da cidade sem acentos ou símbolos especiais, exceto o hífen. 2. Estado - Sigla da Unidade Federativa correspondente à cidade. 3. Ano - Ano para o qual se deseja obter os feriados.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cidade",
+                    "type": "STRING",
+                    "description": "Nome da cidade desejada.",
+                    "default": "belo_horizonte"
+                },
+                {
+                    "name": "ano",
+                    "type": "STRING",
+                    "description": "Ano para o qual se deseja obter os feriados.",
+                    "default": "2023"
+                },
+                {
+                    "name": "estado",
+                    "type": "STRING",
+                    "description": "Sigla do estado correspondente à cidade.",
+                    "default": "MG"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

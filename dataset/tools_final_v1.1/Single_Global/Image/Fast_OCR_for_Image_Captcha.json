@@ -1,0 +1,25 @@
+{
+    "tool_name": "Fast OCR for Image Captcha",
+    "tool_description": "Solves Image Captcha Using Service. Accuracy depends on the captcha type and level of difficulty. Use the Basic version and check if this suits your requirements.",
+    "home_url": "https://rapidapi.com/engagehitsmail/api/fast-ocr-for-image-captcha/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Create Image Captcha Request",
+            "url": "https://fast-ocr-for-image-captcha.p.rapidapi.com/in.php",
+            "description": "Creates a request to solve Image Captcha. Takes base64 image as input.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "base64image",
+                    "type": "STRING",
+                    "description": "The base64 encoded image of the captcha to be solved.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

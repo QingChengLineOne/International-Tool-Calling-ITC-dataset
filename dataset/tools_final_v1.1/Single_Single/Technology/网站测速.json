@@ -1,0 +1,25 @@
+{
+    "tool_name": "网站测速",
+    "tool_description": "网站测速API，返回GET请求花费的毫秒数",
+    "home_url": "https://api.aa1.cn/doc/speed-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "网站测速API",
+            "url": "https://v2.api-m.com/api/speed",
+            "description": "通过URL进行网站测速，返回测速结果",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要测速的网站URL",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

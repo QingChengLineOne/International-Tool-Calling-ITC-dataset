@@ -1,0 +1,18 @@
+{
+    "tool_name": "I am rich",
+    "tool_description": "A fun API that allows users to access a simple response indicating wealth.",
+    "home_url": "https://rapidapi.com/oriolmiro/api/i-am-rich2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "iamrich",
+            "url": "https://i-am-rich2.p.rapidapi.com/iamrich",
+            "description": "Returns a response indicating that the user is rich. Be part of the fun!",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

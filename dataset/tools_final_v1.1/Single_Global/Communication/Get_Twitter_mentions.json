@@ -1,0 +1,38 @@
+{
+    "tool_name": "Get Twitter mentions",
+    "tool_description": "A Twitter monitoring tool API that allows users to find mentions of their brand, competitors, or any other specified queries on Twitter.",
+    "home_url": "https://rapidapi.com/barvanet-barvanet-default/api/get-twitter-mentions/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetMentions",
+            "url": "https://get-twitter-mentions.p.rapidapi.com/",
+            "description": "This API function retrieves mentions of a specified query across Twitter, helping users monitor their brand presence or competitor activity.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search term or query for which mentions are to be retrieved.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "period",
+                    "type": "NUMBER",
+                    "description": "The time period for which to retrieve mentions, specified in days.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination of results.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

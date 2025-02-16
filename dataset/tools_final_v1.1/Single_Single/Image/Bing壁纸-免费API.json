@@ -1,0 +1,25 @@
+{
+    "tool_name": "Bing壁纸-免费API",
+    "tool_description": "获取Bing壁纸图片链接和标题",
+    "home_url": "https://www.free-api.com/doc/613",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Bing壁纸API",
+            "url": "https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/data/{lang}.json",
+            "description": "获取Bing壁纸图片链接和标题",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "语言代码，决定返回的壁纸语言",
+                    "default": "zh-CN_all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

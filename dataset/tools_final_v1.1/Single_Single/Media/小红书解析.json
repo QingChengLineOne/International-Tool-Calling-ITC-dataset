@@ -1,0 +1,25 @@
+{
+    "tool_name": "小红书解析",
+    "tool_description": "小红书图集/视频无水印解析",
+    "home_url": "https://api.aa1.cn/doc/xhs.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "小红书图集/视频无水印解析API",
+            "url": "https://api.mu-jie.cc/xhs",
+            "description": "解析小红书中的图集和视频，并输出无水印内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "需要解析的小红书链接",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

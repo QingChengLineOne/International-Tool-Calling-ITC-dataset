@@ -1,0 +1,138 @@
+{
+    "tool_name": "File Preview",
+    "tool_description": "API to generate an image from the first page of a file (e.g., PowerPoint, PDF, or Word) which can be used as a Preview or Thumbnail.",
+    "home_url": "https://rapidapi.com/simonludwigs-b-HC1K2jYAX/api/file-preview/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getPreview",
+            "url": "https://file-preview.p.rapidapi.com/api/v1/preview/",
+            "description": "Returns a JSON of the Preview File of a given File. This endpoint combines the functionalities of upload, convert, and download into a single endpoint.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The file to be previewed.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "convert_to",
+                    "type": "STRING",
+                    "description": "The format to convert the preview image to.",
+                    "default": "png"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "upload",
+            "url": "https://file-preview.p.rapidapi.com/api/v1/preview/upload",
+            "description": "Upload an image to convert it in the next step.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The image file to be uploaded.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "convert",
+            "url": "https://file-preview.p.rapidapi.com/api/v1/preview/convert",
+            "description": "Converts a previously uploaded file using a given unique_id.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "convert_to",
+                    "type": "STRING",
+                    "description": "The format to convert the file to.",
+                    "default": "png"
+                },
+                {
+                    "name": "unique_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the uploaded file.",
+                    "default": "d57aad18-7027-47a5-8419-eb2e45b60471"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

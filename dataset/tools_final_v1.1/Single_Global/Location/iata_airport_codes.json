@@ -1,0 +1,25 @@
+{
+    "tool_name": "iata_airport_codes",
+    "tool_description": "A list of world iata airport codes",
+    "home_url": "https://rapidapi.com/rogerkingdom10/api/iata_airport_codes/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get All iata airport codes",
+            "url": "https://iata_airport_codes.p.rapidapi.com/RRT7bH/world_iata_airport_codes",
+            "description": "Get all iata airport codes",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Code",
+                    "type": "NUMBER",
+                    "description": "",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

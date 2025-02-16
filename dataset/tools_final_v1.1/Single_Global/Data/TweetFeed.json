@@ -1,0 +1,38 @@
+{
+    "tool_name": "TweetFeed",
+    "tool_description": "Free feed with IOCs - malicious URLs, domains, IPs, and hashes. [Website: https://tweetfeed.live]",
+    "home_url": "https://rapidapi.com/danlopgom/api/tweetfeed/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "v1",
+            "url": "https://tweetfeed.p.rapidapi.com/v1/{time}/{filter1}/{filter2}",
+            "description": "Version 1 Endpoint for retrieving malicious indicators of compromise (IOCs) based on specified timeframes and filters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "time",
+                    "type": "string",
+                    "description": "Select one of these timeframes: **today** - Today starting 00:00 UTC, **week** - Last 7 days, **month** - Last 30 days, **year** - Last 365 days.",
+                    "default": "today"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "filter1",
+                    "type": "string",
+                    "description": "Can be a specific user, type, or tag. Type options include **url**, **domain**, **ip**, **sha256**, **md5**. Tag options include **phishing**, **ransomware**, **CobaltStrike**, etc. User options include **@malwrhunterteam**, **@1ZRR4H**, **@MBThreatIntel**, etc. (include the @ symbol).",
+                    "default": "phishing"
+                },
+                {
+                    "name": "filter2",
+                    "type": "string",
+                    "description": "Can be a specific user, type, or tag. Type options include **url**, **domain**, **ip**, **sha256**, **md5**. Tag options include **phishing**, **ransomware**, **CobaltStrike**, etc. User options include **@malwrhunterteam**, **@1ZRR4H**, **@MBThreatIntel**, etc. (include the @ symbol).",
+                    "default": "url"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

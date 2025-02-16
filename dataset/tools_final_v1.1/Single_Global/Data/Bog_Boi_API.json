@@ -1,0 +1,18 @@
+{
+    "tool_name": "Bog Boi API",
+    "tool_description": "A simple API designed to provide various functionalities related to data processing.",
+    "home_url": "https://rapidapi.com/tomcorp-tomcorp-default/api/bog-boi-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Lorem",
+            "url": "https://bog-boi-api.p.rapidapi.com/",
+            "description": "This endpoint retrieves data related to the Lorem functionality.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

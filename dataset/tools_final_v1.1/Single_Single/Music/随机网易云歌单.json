@@ -1,0 +1,32 @@
+{
+    "tool_name": "随机网易云歌单",
+    "tool_description": "随机读取网易云歌单中的一首歌曲",
+    "home_url": "https://api.aa1.cn/doc/rand_wymusic.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机网易云歌单API",
+            "url": "https://api.52vmy.cn/api/music/wy/rand",
+            "description": "随机获取网易云歌单中的一首歌曲",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "songlist_id",
+                    "type": "string",
+                    "description": "网易云歌单的ID",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "int",
+                    "description": "随机歌曲的偏移量，默认为0",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "tool_name": "Axesso - Instagram Data Service",
+    "tool_description": "This API returns data from Instagram including posts, comments, replies, and various account information.",
+    "home_url": "https://rapidapi.com/axesso/api/axesso-instagram-data-service1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "comments",
+            "url": "https://axesso-instagram-data-service1.p.rapidapi.com/ins/instagram-lookup-comments",
+            "description": "Fetch comments for a given post. The shortcode must be passed, which is returned in the 'node' array from the posts endpoint. If more comments exist, they can be fetched using the 'after' parameter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "shortCode",
+                    "type": "STRING",
+                    "description": "The shortcode of the Instagram post.",
+                    "default": "CTU9ltunv3X"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "after",
+                    "type": "STRING",
+                    "description": "Cursor for pagination to fetch additional comments.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "accountInfo",
+            "url": "https://axesso-instagram-data-service1.p.rapidapi.com/ins/instagram-account-info",
+            "description": "Fetch data for a given Instagram account. The response includes the account ID, which is required for further requests.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the Instagram account.",
+                    "default": "https://www.instagram.com/walmart/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "posts",
+            "url": "https://axesso-instagram-data-service1.p.rapidapi.com/ins/instagram-lookup-posts",
+            "description": "Get posts for a given user. This endpoint requires the user ID obtained from the account-info endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "userId",
+                    "type": "STRING",
+                    "description": "The user ID of the Instagram account.",
+                    "default": "391362994"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "after",
+                    "type": "STRING",
+                    "description": "Cursor for pagination to fetch additional posts.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "replies",
+            "url": "https://axesso-instagram-data-service1.p.rapidapi.com/ins/instagram-lookup-replies",
+            "description": "Fetch replies for a given comment ID. The comment ID can be obtained from the comments endpoint response.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "after",
+                    "type": "STRING",
+                    "description": "Cursor for pagination to fetch additional replies.",
+                    "default": ""
+                },
+                {
+                    "name": "commentId",
+                    "type": "STRING",
+                    "description": "The ID of the comment for which replies are to be fetched.",
+                    "default": "17898559397187730"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

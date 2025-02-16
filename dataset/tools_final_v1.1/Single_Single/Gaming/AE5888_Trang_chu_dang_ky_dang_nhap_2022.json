@@ -1,0 +1,18 @@
+{
+    "tool_name": "AE5888 Trang chu dang ky dang nhap 2022",
+    "tool_description": "AE5888- ae5888.me ⭐ Trang chủ đăng ký, đăng nhập AE888 mới nhất ⭐️ bao gồm: đá gà thomo, tài xỉu, thể thao, lô đề online ⭐️ Link vào ae388 - ae88 - ae888 chính thức.",
+    "home_url": "https://rapidapi.com/ae5888me/api/ae5888-trang-chu-dang-ky-dang-nhap-2022/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "AE5888 Trang chu dang ky dang nhap AE888 AE388",
+            "url": "https://ae5888-trang-chu-dang-ky-dang-nhap-2022.p.rapidapi.com/",
+            "description": "API for accessing the AE5888 registration and login page, including features for online betting and gaming.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

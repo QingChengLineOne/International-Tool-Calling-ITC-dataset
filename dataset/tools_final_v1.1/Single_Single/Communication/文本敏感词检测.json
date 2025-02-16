@@ -1,0 +1,25 @@
+{
+    "tool_name": "文本敏感词检测API",
+    "tool_description": "PHP开发，检测一段文本中是否有常见的敏感词、违规词汇等，不限制QPS，适用于需要审核文本类的产品或插件，免费对接，即可快速接入实现检测。",
+    "home_url": "https://api.aa1.cn/doc/wordscan.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文本敏感词检测接口",
+            "url": "api.iminbk.com/v1/wordscan/",
+            "description": "用于检测指定文本是否包含敏感词或违规词汇的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "要检测的文本内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "tool_name": "摩斯密码",
+    "tool_description": "摩斯密码转化",
+    "home_url": "https://api.aa1.cn/doc/morsecode.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "摩斯密码转化API",
+            "url": "https://api.xiaole.work/api/Morse/Morse.php",
+            "description": "将输入的文本转化为摩斯密码或将其从摩斯密码转化为文本",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "input",
+                    "type": "string",
+                    "description": "需要转换的文本或摩斯密码",
+                    "default": ""
+                },
+                {
+                    "name": "to",
+                    "type": "string",
+                    "description": "转换类型，'morse' 表示文本转摩斯密码，'text' 表示摩斯密码转文本",
+                    "default": "morse"
+                },
+                {
+                    "name": "output",
+                    "type": "string",
+                    "description": "输出格式，'json' 表示JSON格式，'text' 表示纯文本格式",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

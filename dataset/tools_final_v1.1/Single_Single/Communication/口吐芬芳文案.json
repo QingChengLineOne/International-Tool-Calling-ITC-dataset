@@ -1,0 +1,31 @@
+{
+    "tool_name": "口吐芬芳文案",
+    "tool_description": "提供多种风格的文案选择",
+    "home_url": "https://api.aa1.cn/doc/gtff.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "口吐芬芳文案接口",
+            "url": "https://api.lolimi.cn/API/kout/k.php",
+            "description": "获取不同风格的文案",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "int",
+                    "description": "文案类型标识，具体值需根据API文档确定",
+                    "default": "1"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "文案类型，如text表示文本类型",
+                    "default": "text"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

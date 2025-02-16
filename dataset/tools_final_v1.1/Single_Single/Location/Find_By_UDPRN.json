@@ -1,0 +1,25 @@
+{
+    "tool_name": "Find By UDPRN",
+    "tool_description": "“Find By UDPRN” API gets address for the specified UDPRN. UDPRN stands for ‘Unique Delivery Point Reference Number.",
+    "home_url": "https://rapidapi.com/api-tier1-apitier-team/api/find-by-udprn/",
+    "country": "UK",
+    "api_list": [
+        {
+            "name": "Find By UDPRN",
+            "url": "https://find-by-udprn.p.rapidapi.com/v1/udprn/{udprn}",
+            "description": "“Find By UDPRN” API gets address for the specified UDPRN. UDPRN stands for ‘Unique Delivery Point Reference Number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "udprn",
+                    "type": "string",
+                    "description": "Unique numeric code for any premise on the Postcode Address File.",
+                    "default": "18920084"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Valorant Checker API",
+    "tool_description": "Check your accounts with user, pass and shard",
+    "home_url": "https://rapidapi.com/cavsn/api/valorant-checker-api1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check Account",
+            "url": "https://valorant-checker-api1.p.rapidapi.com/check_account",
+            "description": "Check account with endpoint. You need to provide a shard such as EU, NA, AP, KR, BR, or LATAM.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

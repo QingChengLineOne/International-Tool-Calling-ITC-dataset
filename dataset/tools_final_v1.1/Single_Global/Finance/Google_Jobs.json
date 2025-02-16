@@ -1,0 +1,60 @@
+{
+    "tool_name": "Google Jobs",
+    "tool_description": "Google Jobs Scraper",
+    "home_url": "https://rapidapi.com/dodocr7/api/google-jobs/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SearchOffers",
+            "url": "https://google-jobs.p.rapidapi.com/",
+            "description": "Retrieve all job offers based on specified criteria.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keyword",
+                    "type": "STRING",
+                    "description": "The job title or keyword to search for.",
+                    "default": "Secretary"
+                },
+                {
+                    "name": "posted",
+                    "type": "ENUM",
+                    "description": "Filter offers based on the posting date.",
+                    "default": ""
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "The number of results to skip for pagination.",
+                    "default": "0"
+                },
+                {
+                    "name": "location",
+                    "type": "STRING",
+                    "description": "The location to search for job offers.",
+                    "default": "Frankfurt"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "OfferInfo",
+            "url": "https://google-jobs.p.rapidapi.com/",
+            "description": "Retrieve detailed information about a specific job offer.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "joburl",
+                    "type": "STRING",
+                    "description": "The URL of the job offer to retrieve information for.",
+                    "default": "https://www.google.com/search?ibp=htljobs&q=developer+newyork&hl=en-US&kgs=e473f607e23ae72f&shndl=-1&source=shximtextlistsdetail1&entrypoint=shximtextlistsdetail&mysharpfpstate=tldetail&htivrt=jobs&htiq=developer+newyork&htidocid=6ak4txGw4C4AAAAAAAAAAA"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

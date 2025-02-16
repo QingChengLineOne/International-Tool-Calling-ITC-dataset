@@ -1,0 +1,178 @@
+{
+    "tool_name": "Magical Taske",
+    "tool_description": "Fetch sceneries and getaways in Kenya.",
+    "home_url": "https://rapidapi.com/champe8900/api/magical-taske/",
+    "country": "Kenya",
+    "api_list": [
+        {
+            "name": "Fetch details of multiple records",
+            "url": "https://magical-taske.p.rapidapi.com/details",
+            "description": "This endpoint fetches details of more than 1 record. Ensure to pass valid record IDs. An invalid ID will result in an Internal Server Error 500 for the entire request. You can request details for a maximum of 10 records at once, with IDs separated by commas and no spaces.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "Record ID(s) to fetch details for.",
+                    "default": "b4180336-ef07-453d-b833-807161aedf36,7cf78e19-57d2-4bce-8999-63aad8f0e70c"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Fetch by type and region",
+            "url": "https://magical-taske.p.rapidapi.com/",
+            "description": "This endpoint allows you to refine your request by combining region and type. It returns the requested records based on the specified criteria. You must provide a limit on the number of records returned.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Type of record you want. Refer to the README for accepted types.",
+                    "default": "Hill"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of records to return.",
+                    "default": "5"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region to filter records by.",
+                    "default": "Eastern"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Fetch by region",
+            "url": "https://magical-taske.p.rapidapi.com/",
+            "description": "This endpoint fetches records based on the specified region. You need to provide the region and a limit on the number of records returned.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The region to filter records by.",
+                    "default": "Central"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of records to return.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "isKenyaMagical": {
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "region": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                },
+                                "rating": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Fetch by type",
+            "url": "https://magical-taske.p.rapidapi.com/",
+            "description": "This endpoint fetches records based on the specified type. You must provide the type and a limit on the number of records returned.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Type of record you want. Refer to the README for accepted types.",
+                    "default": "Forest"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of records to return.",
+                    "default": "5"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "isKenyaMagical": {
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "region": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                },
+                                "rating": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

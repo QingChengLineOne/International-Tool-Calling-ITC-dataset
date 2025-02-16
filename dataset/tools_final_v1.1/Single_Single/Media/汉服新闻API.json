@@ -1,0 +1,50 @@
+{
+    "tool_name": "汉服新闻API",
+    "tool_description": "获取有关汉服新闻数据",
+    "home_url": "https://www.free-api.com/doc/365",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "汉服新闻",
+            "url": "https://v2.alapi.cn/api/new/hanfu",
+            "description": "获取有关汉服新闻数据",
+            "method": "GET/POST",
+            "required_parameters": [
+                {
+                    "name": "token",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "LwExDtUWhF3rH5ib"
+                },
+                {
+                    "name": "num",
+                    "type": "int",
+                    "description": "请求条数",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "页码",
+                    "default": ""
+                },
+                {
+                    "name": "rand",
+                    "type": "int",
+                    "description": "是否随机获取",
+                    "default": "1"
+                },
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "搜索关键字",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+{
+    "tool_name": "Find any IP address or Domain Location world wide",
+    "tool_description": "Free IP Geo Location API providing accurate geo information of IP addresses or domain names, including city, latitude, longitude, zip code, state/province, country, country codes, country flag, currency, dialing code, timezone, and more in JSON format.",
+    "home_url": "https://rapidapi.com/ipfind/api/find-any-ip-address-or-domain-location-world-wide/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "IP Location of Client or IP Location of Visitor",
+            "url": "https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation",
+            "description": "Provides geo location information such as country, city, state, local currency, latitude, longitude, ISP lookup, and more from any IPv4 and IPv6 address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "apikey",
+                    "type": "STRING",
+                    "description": "Your API key for authentication.",
+                    "default": "873dbe322aea47f89dcf729dcc8f60e8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "IP Location by IPv4, IPv6 IP Address",
+            "url": "https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation",
+            "description": "Provides complete geo location information for any IPv4 or IPv6 address, including city, latitude, longitude, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "Any valid IPv4 or IPv6 address.",
+                    "default": "204.141.32.155"
+                },
+                {
+                    "name": "apikey",
+                    "type": "STRING",
+                    "description": "Your API key for authentication.",
+                    "default": "873dbe322aea47f89dcf729dcc8f60e8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "IP location by IPv6 IP Address",
+            "url": "https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation",
+            "description": "Provides geo location information for any IPv6 address, including city, latitude, longitude, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "apikey",
+                    "type": "STRING",
+                    "description": "Your API key for authentication.",
+                    "default": "873dbe322aea47f89dcf729dcc8f60e8"
+                },
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "Any valid IPv6 address.",
+                    "default": "2001:4860:0:2001:0:0:0:68"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "IP location by domain name",
+            "url": "https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation",
+            "description": "Provides geo location information for any domain name, including city, latitude, longitude, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "Any valid domain name.",
+                    "default": "godaddy.com"
+                },
+                {
+                    "name": "apikey",
+                    "type": "STRING",
+                    "description": "Your API key for authentication.",
+                    "default": "873dbe322aea47f89dcf729dcc8f60e8"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "continent": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "zipCode": {
+                        "type": "string"
+                    },
+                    "accuracyRadius": {
+                        "type": "integer"
+                    },
+                    "flag": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "number"
+                    },
+                    "countryGeoNameId": {
+                        "type": "integer"
+                    },
+                    "gmt": {
+                        "type": "string"
+                    },
+                    "network": {
+                        "type": "string"
+                    },
+                    "currencyName": {
+                        "type": "string"
+                    },
+                    "countryNativeName": {
+                        "type": "string"
+                    },
+                    "stateGeoNameId": {
+                        "type": "integer"
+                    },
+                    "phoneCode": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "continentCode": {
+                        "type": "string"
+                    },
+                    "longitude": {
+                        "type": "number"
+                    },
+                    "currencyNamePlural": {
+                        "type": "string"
+                    },
+                    "cityGeoNameId": {
+                        "type": "integer"
+                    },
+                    "languages": {
+                        "type": "string"
+                    },
+                    "numOfCities": {
+                        "type": "integer"
+                    },
+                    "org": {
+                        "type": "string"
+                    },
+                    "ip": {
+                        "type": "string"
+                    },
+                    "currencySymbol": {
+                        "type": "string"
+                    },
+                    "currencySymbolNative": {
+                        "type": "string"
+                    },
+                    "isEU": {
+                        "type": "string"
+                    },
+                    "countryTLD": {
+                        "type": "string"
+                    },
+                    "countryCapital": {
+                        "type": "string"
+                    },
+                    "metroCode": {
+                        "type": "integer"
+                    },
+                    "continentGeoNameId": {
+                        "type": "integer"
+                    },
+                    "stateCode": {
+                        "type": "string"
+                    },
+                    "countryISO2": {
+                        "type": "string"
+                    },
+                    "numOfStates": {
+                        "type": "integer"
+                    },
+                    "countryISO3": {
+                        "type": "string"
+                    },
+                    "currencyCode": {
+                        "type": "string"
+                    },
+                    "asNo": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

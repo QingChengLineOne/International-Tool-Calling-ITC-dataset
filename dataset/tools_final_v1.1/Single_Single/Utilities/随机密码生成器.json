@@ -1,0 +1,37 @@
+{
+    "tool_name": "随机密码生成器",
+    "tool_description": "一个用于生成随机密码的免费API工具",
+    "home_url": "https://www.free-api.com/doc/646",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机密码API",
+            "url": "https://api.kuleu.com/api/suijimima?ss_xx=1&ss_dx=1&ss_sz=1",
+            "description": "生成随机密码，包含数字、小写字母和大写字母",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ss_xx",
+                    "type": "boolean",
+                    "description": "是否包含数字",
+                    "default": "1"
+                },
+                {
+                    "name": "ss_dx",
+                    "type": "boolean",
+                    "description": "是否包含小写字母",
+                    "default": "1"
+                },
+                {
+                    "name": "ss_sz",
+                    "type": "boolean",
+                    "description": "是否包含大写字母",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

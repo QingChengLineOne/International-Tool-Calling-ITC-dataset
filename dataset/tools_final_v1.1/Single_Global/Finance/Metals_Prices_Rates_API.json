@@ -1,0 +1,144 @@
+{
+    "tool_name": "Metals Prices Rates API",
+    "tool_description": "The Metals Prices Rates API provides real-time and historical metal prices and exchange rates for gold, silver, platinum, and other metals. It allows developers to access and integrate the data into their own applications and systems, making it useful for financial and commodity market analysis, currency conversion, and more.",
+    "home_url": "https://rapidapi.com/zyla-labs-zyla-labs-default/api/metals-prices-rates-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Open/High/Low/Close (OHLC) Price",
+            "url": "https://metals-prices-rates-api.p.rapidapi.com/open-high-low-close/{date}",
+            "description": "Allows you to query the API to get the open, high, low, and close price for a specific metal on a given date. This endpoint has a limitation of one symbol per request.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "The symbol of the metal you want to query.",
+                    "default": "XAU"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "The base currency for the price.",
+                    "default": "USD"
+                },
+                {
+                    "name": "DATE",
+                    "type": "string",
+                    "description": "The date for which you want to retrieve the price.",
+                    "default": "2022-01-20"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Carat",
+            "url": "https://metals-prices-rates-api.p.rapidapi.com/carat",
+            "description": "Retrieve the latest information about gold rates per karat.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Time-Series",
+            "url": "https://metals-prices-rates-api.p.rapidapi.com/timeseries",
+            "description": "Query the API for daily historical rates between two dates of your choice. This endpoint has a limitation of 365 days and only one symbol per request.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or metal code of your preferred base currency.",
+                    "default": "USD"
+                },
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or metal code of your preferred base currency.",
+                    "default": "XAU"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date of your preferred timeframe in YYYY-MM-DD format.",
+                    "default": "2023-01-10"
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date of your preferred timeframe in YYYY-MM-DD format.",
+                    "default": "2022-12-20"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Supported Symbols",
+            "url": "https://metals-prices-rates-api.p.rapidapi.com/symbols",
+            "description": "Returns all available symbols that the API supports, which are constantly updated.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical Rates",
+            "url": "https://metals-prices-rates-api.p.rapidapi.com/{date}",
+            "description": "Retrieve historical rates for most symbols dating back to 2019 by appending a date (format YYYY-MM-DD) to the base URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "The specific date for which you want to retrieve historical rates.",
+                    "default": "2022-01-20"
+                },
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter a list of comma-separated currency codes or metal codes to limit output codes.",
+                    "default": "XAU"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or metal code of your preferred base currency.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest Rates",
+            "url": "https://metals-prices-rates-api.p.rapidapi.com/latest",
+            "description": "Returns real-time exchange rate data updated every 60 seconds. Note: All responses retrieved in USD need to be converted.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter a list of comma-separated currency codes or metal codes to limit output codes.",
+                    "default": "XAU"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or metal code of your preferred base currency.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "new88top",
+    "tool_description": "new88top.com - new88 Nhà cái uy tín hàng đầu Châu Á, cung cấp các game cá cược như thể thao, đá gà, casino online. Liên hệ qua SDT 0971.97.63.63 hoặc email new88top@gmail.com.",
+    "home_url": "https://rapidapi.com/new88top/api/new88top/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "new88",
+            "url": "https://new88top.p.rapidapi.com/",
+            "description": "API cho phép truy cập vào các dịch vụ cá cược của new88top, bao gồm nạp tiền, rút tiền, đăng ký và đăng nhập.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "tool_name": "Argaam Data APIs Free",
+    "tool_description": "Free APIs By Argaam for accessing various financial and economic data.",
+    "home_url": "https://rapidapi.com/argaam-dot-com-data-apis/api/argaam-data-apis-free/",
+    "country": "Saudi Arabia",
+    "api_list": [
+        {
+            "name": "Get a List of Bank Sector Groups",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/facts-statistics/get-bank-sector-reports",
+            "description": "Fetches a list of bank sector groups and their reports.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a List of Banks Sector Attributes against each group",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/facts-statistics/get-bank-sector-report/9/attributes",
+            "description": "Retrieves attributes for a specific bank sector group based on report ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "reportID",
+                    "type": "NUMBER",
+                    "description": "The ID of the report for which attributes are needed.",
+                    "default": "9"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a List of Indicator Groups and Subgroups",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/indicators/get-groups",
+            "description": "Fetches a list of indicator groups and their respective subgroups.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a List of Indicator against each Subgroup",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/indicators/get-group-fields/33",
+            "description": "Retrieves indicators associated with a specific subgroup.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "groupID",
+                    "type": "NUMBER",
+                    "description": "The ID of the group for which indicators are needed.",
+                    "default": "33"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a List of Fund Managers",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/funds/get-fund-managers",
+            "description": "Fetches a list of fund managers available in the system.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get a List of Funds against each Fund Manager",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/funds/get-fund-manager/2701/funds",
+            "description": "Retrieves funds managed by a specific fund manager.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "fundManagerID",
+                    "type": "NUMBER",
+                    "description": "The ID of the fund manager for which funds are needed.",
+                    "default": "2701"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Popular Articles by Market",
+            "url": "https://argaam-data-apis-free.p.rapidapi.com/api/v1/json/articles/get-popular-articles",
+            "description": "Fetches popular articles related to a specific market.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language of the articles. Options: 'en' and 'ar'. Default: 'ar'.",
+                    "default": "ar"
+                },
+                {
+                    "name": "marketID",
+                    "type": "NUMBER",
+                    "description": "Market ID for which popular articles are needed.",
+                    "default": 3
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "articleID": {
+                            "format": "int32",
+                            "maximum": 2147483647,
+                            "minimum": -2147483648,
+                            "type": "integer"
+                        },
+                        "isLinked": {
+                            "type": "boolean"
+                        },
+                        "language": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "languageID": {
+                            "format": "int32",
+                            "maximum": 2147483647,
+                            "minimum": -2147483648,
+                            "type": "integer"
+                        },
+                        "link": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "linkedToURL": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "title": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    },
+                    "type": "object"
+                },
+                "type": "array"
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "tool_name": "王者营地小程序登录链接获取",
+    "tool_description": "获取登录链接，在QQ中访问可直接登录，实现营地登录",
+    "home_url": "https://api.aa1.cn/doc/wangzheyingdi-applet-getloginu.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "王者营地小程序登录链接API",
+            "url": "http://www.dreamling.top/API/wangzheyingdi/qq_applet/get_login/api.php",
+            "description": "提供王者营地小程序的登录链接生成接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "code",
+                    "type": "string",
+                    "description": "授权码，由第三方平台提供",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，支持json或xml",
+                    "default": "json"
+                },
+                {
+                    "name": "flag",
+                    "type": "string",
+                    "description": "标识，用于区分请求来源，如需定制化处理可以提供",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

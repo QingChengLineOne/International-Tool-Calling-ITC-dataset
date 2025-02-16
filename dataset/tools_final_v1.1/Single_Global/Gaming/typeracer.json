@@ -1,0 +1,31 @@
+{
+    "tool_name": "typeracer",
+    "tool_description": "Type Racer API allows users to interact with the Type Racer platform for typing speed tests and competitions.",
+    "home_url": "https://rapidapi.com/sevaktahmazyan/api/typeracer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Login",
+            "url": "https://typeracer.p.rapidapi.com/login",
+            "description": "Authenticate a user to access the Type Racer application.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "The password associated with the user's account.",
+                    "default": "abc123"
+                },
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address of the user.",
+                    "default": "sevak@mailinator.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

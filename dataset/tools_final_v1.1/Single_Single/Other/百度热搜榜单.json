@@ -1,0 +1,25 @@
+{
+    "tool_name": "百度热搜榜单",
+    "tool_description": "鸽鸽分类的百度热搜榜单-前30",
+    "home_url": "https://api.aa1.cn/doc/board-khkj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "百度热搜榜单接口",
+            "url": "https://service-m9yegcn9-1311248022.sh.apigw.tencentcs.com/release/board",
+            "description": "获取百度热搜榜单的前30条数据",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "t",
+                    "type": "string",
+                    "description": "分类标签，可选值为：news、ent、game、finance、sports等",
+                    "default": "news"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Article Topic Extraction",
+    "tool_description": "This API extracts topics from texts, helping you organize large amounts of text data.",
+    "home_url": "https://rapidapi.com/oneai-oneai-default/api/article-topic-extraction/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Topics",
+            "url": "https://article-topic-extraction.p.rapidapi.com/pipeline",
+            "description": "Send a POST request to this endpoint to extract topics from an article. Enter text input as a JSON object with an `input` field of type `string`. In the response, output[0].labels contains a list of topics.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "Learn SQLite with Examples",
+    "tool_description": "SQLite can be considered as a 'lighter' version of other complex databases, making it ideal for smaller applications and learning purposes.",
+    "home_url": "https://rapidapi.com/sureshdasari/api/learn-sqlite-with-examples/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SQLite EndPoint",
+            "url": "https://learn-sqlite-with-examples.p.rapidapi.com/",
+            "description": "This endpoint provides the necessary content to learn SQLite effectively.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

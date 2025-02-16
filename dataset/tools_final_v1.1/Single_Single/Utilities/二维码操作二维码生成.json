@@ -1,0 +1,62 @@
+{
+    "tool_name": "二维码操作[二维码生成]",
+    "tool_description": "二维码生成接口，可自定义内容，颜色，大小。",
+    "home_url": "https://api.aa1.cn/doc/ewmapi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "二维码生成API",
+            "url": "https://cn.apihz.cn/api/ewm/api.php",
+            "description": "生成自定义内容的二维码",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的唯一标识符",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的密钥",
+                    "default": "88888888"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要生成二维码的内容，例如网址或文本",
+                    "default": "https://www.baidu.com/"
+                },
+                {
+                    "name": "level",
+                    "type": "int",
+                    "description": "二维码纠错等级，范围从1到10，数字越大纠错能力越强",
+                    "default": "5"
+                },
+                {
+                    "name": "size",
+                    "type": "int",
+                    "description": "二维码的大小，以像素为单位",
+                    "default": "10"
+                },
+                {
+                    "name": "bjcolour",
+                    "type": "string",
+                    "description": "背景颜色，以十六进制颜色代码表示",
+                    "default": "#ffffff"
+                },
+                {
+                    "name": "xscolour",
+                    "type": "string",
+                    "description": "前景颜色，以十六进制颜色代码表示",
+                    "default": "#000000"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

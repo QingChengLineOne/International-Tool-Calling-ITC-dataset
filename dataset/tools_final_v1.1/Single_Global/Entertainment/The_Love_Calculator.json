@@ -1,0 +1,31 @@
+{
+    "tool_name": "The Love Calculator",
+    "tool_description": "A fun API that shows the compatibility of your crush! Perfect to implement onto your website or just play around with.",
+    "home_url": "https://rapidapi.com/marchingtonoliver/api/the-love-calculator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Match",
+            "url": "https://the-love-calculator.p.rapidapi.com/love-calculator",
+            "description": "The main endpoint to get your match percentage based on the names provided.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "fname",
+                    "type": "STRING",
+                    "description": "The first name of the person you want to check compatibility for.",
+                    "default": "oliver m"
+                },
+                {
+                    "name": "sname",
+                    "type": "STRING",
+                    "description": "The second name of the person you want to check compatibility for.",
+                    "default": "chloe p"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "tool_name": "Car Data_v2",
+    "tool_description": "Use this API to pull relevant automobile data such as the car make, model, type, and year.",
+    "home_url": "https://rapidapi.com/car-data-car-data-default/api/car-data1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Cars",
+            "url": "https://car-data1.p.rapidapi.com/cars",
+            "description": "Retrieve and filter lists of cars based on various parameters.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "STRING",
+                    "description": "The page number for pagination.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The number of results to return per page.",
+                    "default": "10"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Filter results by car type (e.g., sedan, SUV).",
+                    "default": ""
+                },
+                {
+                    "name": "model",
+                    "type": "STRING",
+                    "description": "Filter results by car model.",
+                    "default": ""
+                },
+                {
+                    "name": "make",
+                    "type": "STRING",
+                    "description": "Filter results by car make (brand).",
+                    "default": ""
+                },
+                {
+                    "name": "year",
+                    "type": "STRING",
+                    "description": "Filter results by the year of manufacture.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

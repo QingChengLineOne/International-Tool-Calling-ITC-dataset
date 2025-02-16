@@ -1,0 +1,25 @@
+{
+    "tool_name": "百度联想词",
+    "tool_description": "输入关键字，自动补全内容，可以用于搜索内容、对话的补全",
+    "home_url": "https://api.aa1.cn/doc/baidu-word.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "百度联想词API",
+            "url": "https://api.52vmy.cn/api/wl/word/baidu",
+            "description": "根据输入的关键字返回联想词列表",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要联想的关键字",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "tool_name": "Text Anonymizer",
+    "tool_description": "Anonymize your textual data by removing the named entities using a powerful AI model.",
+    "home_url": "https://rapidapi.com/anonymizer/api/text-anonymizer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Anonymize with indexed entities",
+            "url": "https://text-anonymizer.p.rapidapi.com/api/anonymize/index",
+            "description": "For web extension.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "Not specified",
+            "schema": {}
+        },
+        {
+            "name": "Anonymize",
+            "url": "https://text-anonymizer.p.rapidapi.com/api/anonymize",
+            "description": "Anonymize your input text by replacing the named entities by a label.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

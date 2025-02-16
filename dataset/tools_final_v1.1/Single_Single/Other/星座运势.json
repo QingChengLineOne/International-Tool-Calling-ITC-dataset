@@ -1,0 +1,56 @@
+{
+    "tool_name": "星座运势",
+    "tool_description": "提供每天星座运势的API服务",
+    "home_url": "https://api.aa1.cn/doc/xingzuoyunshi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "每日星座运势API",
+            "url": "https://dayu.qqsuu.cn/xingzuoyunshi/apis.php",
+            "description": "获取指定星座当天的运势信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据的格式，例如json、xml等",
+                    "default": "json"
+                },
+                {
+                    "name": "sign",
+                    "type": "string",
+                    "description": "API签名字段，用于验证请求的合法性",
+                    "default": ""
+                },
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据的格式，例如json、xml等",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "指定日期的运势，格式为YYYY-MM-DD，不指定则默认为当前日期",
+                    "default": ""
+                },
+                {
+                    "name": "sign_type",
+                    "type": "string",
+                    "description": "签名算法类型，默认为MD5",
+                    "default": "MD5"
+                },
+                {
+                    "name": "sign_key",
+                    "type": "string",
+                    "description": "API密钥，用于生成签名字段",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "tool_name": "ACGO用户信息",
+    "tool_description": "acgo.cn平台的用户基本信息",
+    "home_url": "https://api.aa1.cn/doc/acgo-userinfo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "ACGO用户信息API",
+            "url": "https://gateway.acgo.cn/acgoAccount/openapi/user/detail",
+            "description": "获取ACGO平台的用户详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "uid",
+                    "type": "string",
+                    "description": "用户的唯一标识符",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "example": "https://gateway.acgo.cn/acgoAccount/openapi/user/detail?uid=36482",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "（新版）时间温语问候",
+    "tool_description": "使用spring boot开发的新版时间温语问候API，提供根据时间获取相应问候语的服务。",
+    "home_url": "https://api.aa1.cn/doc/greeting-songzixian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "时间温语问候API",
+            "url": "https://api.songzixian.com/api/greeting",
+            "description": "根据指定时间获取对应的问候语。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源类型，默认为LOCAL_TIME_GREETING",
+                    "default": "LOCAL_TIME_GREETING"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "全网爽文短剧搜索API",
+    "tool_description": "全网短剧7000+内容搜索/全部/今日接口",
+    "home_url": "https://api.aa1.cn/doc/short-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "全网爽文短剧搜索接口",
+            "url": "https://api.ahfi.cn/api/short",
+            "description": "提供全网短剧内容的搜索功能，包括全部和今日的短剧内容。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "搜索的短剧名称或关键词",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

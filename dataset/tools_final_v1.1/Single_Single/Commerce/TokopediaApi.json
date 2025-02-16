@@ -1,0 +1,200 @@
+{
+    "tool_name": "TokopediaApi",
+    "tool_description": "An API for searching products and retrieving product details from Tokopedia.",
+    "home_url": "https://rapidapi.com/kangazib/api/tokopediaapi/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "Search Product",
+            "url": "https://tokopediaapi.p.rapidapi.com/",
+            "description": "Search for products based on a query string.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search term for the product.",
+                    "default": "Celana Jeans"
+                },
+                {
+                    "name": "act",
+                    "type": "STRING",
+                    "description": "The action to perform, which is searching in this case.",
+                    "default": "search"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string"
+                    },
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "type": "string"
+                                },
+                                "image": {
+                                    "type": "string"
+                                },
+                                "price": {
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "type": "string"
+                                },
+                                "rating": {
+                                    "type": "number"
+                                },
+                                "sold": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Product Detail",
+            "url": "https://tokopediaapi.p.rapidapi.com/",
+            "description": "Retrieve detailed information about a product using its slug.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "act",
+                    "type": "STRING",
+                    "description": "The action to perform, which is to get product details.",
+                    "default": "detail"
+                },
+                {
+                    "name": "slug",
+                    "type": "STRING",
+                    "description": "The unique identifier for the product.",
+                    "default": "/8jayafurniture/rak-lemari-sepatu-lunar-huga-425-pintu-kaca-sliding-kayu-jati-tua-white-wenge-non-rakit"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "_pretty",
+                    "type": "BOOLEAN",
+                    "description": "Format the response for better readability.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "images": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "video": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "string"
+                    },
+                    "variants": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    },
+                    "specification": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "seller": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "image": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "rate": {
+                                "type": "integer"
+                            },
+                            "badge": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "otherProducts": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "type": "string"
+                                },
+                                "image": {
+                                    "type": "string"
+                                },
+                                "price": {
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "type": "string"
+                                },
+                                "rating": {
+                                    "type": "number"
+                                },
+                                "sold": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

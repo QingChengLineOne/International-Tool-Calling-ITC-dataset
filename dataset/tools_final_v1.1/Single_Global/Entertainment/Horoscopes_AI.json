@@ -1,0 +1,109 @@
+{
+    "tool_name": "Horoscopes AI",
+    "tool_description": "Horoscopes by AI in multilingual.",
+    "home_url": "https://rapidapi.com/ai-box-ai-box-default/api/horoscopes-ai/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Horoscope (Multilingual)",
+            "url": "https://horoscopes-ai.p.rapidapi.com/get_horoscope/{sign}/{period}/general/{language}",
+            "description": "Return horoscope information by sign, period, type, and languages provided.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "language",
+                    "type": "ENUM",
+                    "description": "Language for the horoscope. Options include: en (English), zh-t (Chinese Traditional), zh-s (Chinese Simplified), es (Spanish), hi (Hindu), fr (French), ja (Japanese), ko (Korean).",
+                    "default": ""
+                },
+                {
+                    "name": "period",
+                    "type": "ENUM",
+                    "description": "The time frame for the horoscope.",
+                    "default": ""
+                },
+                {
+                    "name": "sign",
+                    "type": "ENUM",
+                    "description": "The zodiac sign for which the horoscope is requested.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Type of horoscope. Use the 'Get Types' method to get available types for the selected period.",
+                    "default": "general"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Horoscope (English Only)",
+            "url": "https://horoscopes-ai.p.rapidapi.com/get_horoscope_en/{sign}/{period}/general",
+            "description": "Return horoscope information by sign, period, and type in English.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sign",
+                    "type": "ENUM",
+                    "description": "The zodiac sign for which the horoscope is requested.",
+                    "default": ""
+                },
+                {
+                    "name": "period",
+                    "type": "ENUM",
+                    "description": "The time frame for the horoscope.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "Type of horoscope. Use the 'Get Types' method to get available types for the selected period.",
+                    "default": "general"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Signs",
+            "url": "https://horoscopes-ai.p.rapidapi.com/get_signs",
+            "description": "Return the names of the 12 zodiac signs.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Period",
+            "url": "https://horoscopes-ai.p.rapidapi.com/get_periods",
+            "description": "Return available periods for horoscopes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Types",
+            "url": "https://horoscopes-ai.p.rapidapi.com/get_types/{period}",
+            "description": "Return available types for the specified period.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "period",
+                    "type": "ENUM",
+                    "description": "The time frame for which types are requested.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

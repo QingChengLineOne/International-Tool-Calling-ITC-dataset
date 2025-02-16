@@ -1,0 +1,31 @@
+{
+    "tool_name": "蔚蓝档案logo制作API",
+    "tool_description": "生成高仿蔚蓝档案风格的logo图像",
+    "home_url": "https://api.aa1.cn/doc/oiapi-BlueArchive.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "蔚蓝档案logo生成接口",
+            "url": "https://oiapi.net/API/BlueArchive",
+            "description": "用于生成蔚蓝档案风格的logo图像",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "startText",
+                    "type": "string",
+                    "description": "logo开始部分的文本",
+                    "default": "Blue"
+                },
+                {
+                    "name": "endText",
+                    "type": "string",
+                    "description": "logo结束部分的文本",
+                    "default": "Archive"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

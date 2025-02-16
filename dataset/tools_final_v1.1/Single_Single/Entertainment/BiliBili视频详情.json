@@ -1,0 +1,25 @@
+{
+    "tool_name": "BiliBili视频详情",
+    "tool_description": "通过用户输入的BV号进行查询视频的详情信息",
+    "home_url": "https://api.aa1.cn/doc/bilibilivideoinfo.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "BiliBili视频详情API",
+            "url": "https://api.pearktrue.cn/api/bilibili/info.php",
+            "description": "获取指定BV号视频的详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "bvid",
+                    "type": "string",
+                    "description": "Bilibili视频的唯一标识符",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

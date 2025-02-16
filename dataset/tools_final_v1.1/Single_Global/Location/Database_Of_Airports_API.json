@@ -1,0 +1,25 @@
+{
+    "tool_name": "Database Of Airports API",
+    "tool_description": "The Database of Airports API is a useful resource for developers looking to obtain detailed information on airports worldwide. It provides access to data such as airport location, IATA and ICAO codes, and other relevant details using the IATA code.",
+    "home_url": "https://rapidapi.com/zyla-labs-zyla-labs-default/api/database-of-airports-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Airports",
+            "url": "https://database-of-airports-api.p.rapidapi.com/airports",
+            "description": "Get data about global airports by providing the IATA code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "codeIataAirport",
+                    "type": "STRING",
+                    "description": "Use this parameter to get information about a specific airport, you can search based on IATA code.",
+                    "default": "LAX"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

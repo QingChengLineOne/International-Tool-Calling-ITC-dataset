@@ -1,0 +1,32 @@
+{
+    "tool_name": "Phone Number Validation API",
+    "tool_description": "The Phone Number Validation API is a comprehensive solution that allows developers to validate and retrieve essential information about phone numbers. It checks if a phone number is valid, determines the network carrier, identifies the country, retrieves the number type (e.g., mobile, landline, toll, etc.), retrieves the country code, retrieves the number in international format, and retrieves the currency code associated with the country.",
+    "home_url": "https://rapidapi.com/dreamwebapis/api/phone-number-validation-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "checkNumber",
+            "url": "https://phone-number-validation-api.p.rapidapi.com/checkNumber",
+            "description": "Validates a phone number and retrieves associated information such as validity, carrier, country, and number type.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "phone",
+                    "type": "STRING",
+                    "description": "The phone number you want to validate. If the number is in international format with a '+' sign and the country's international calling code (e.g., '+447222222222' for a UK number), you can provide it directly in this parameter.",
+                    "default": "+447222222222"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country-code",
+                    "type": "STRING",
+                    "description": "The country code of the phone number's associated country. This parameter is only required if the 'number' parameter is in local format without the '+' sign and the country's international calling code (e.g., '07222222222' for a UK number).",
+                    "default": "GB"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

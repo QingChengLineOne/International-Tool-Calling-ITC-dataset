@@ -1,0 +1,71 @@
+{
+    "tool_name": "Article Extractor and Summarizer",
+    "tool_description": "This API extracts the body of news articles from a given URL and utilizes GPT to summarize (and optionally translate) the content. It is particularly useful for text mining and leverages a powerful web scraping engine with high-quality rotating proxies.",
+    "home_url": "https://rapidapi.com/restyler/api/article-extractor-and-summarizer/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/summarize",
+            "url": "https://article-extractor-and-summarizer.p.rapidapi.com/summarize",
+            "description": "Summarizes the article after extracting it from the specified URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the article to be summarized.",
+                    "default": "https://time.com/6266679/musk-ai-open-letter/"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "ENUM",
+                    "description": "Target language to translate the summary into.",
+                    "default": ""
+                },
+                {
+                    "name": "html",
+                    "type": "BOOLEAN",
+                    "description": "Pass TRUE if you want to convert new line symbols in the API response text to HTML paragraph tags.",
+                    "default": ""
+                },
+                {
+                    "name": "length",
+                    "type": "NUMBER",
+                    "description": "Length of the summary in paragraphs. This parameter might be ignored for very long articles.",
+                    "default": "3"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/extract",
+            "url": "https://article-extractor-and-summarizer.p.rapidapi.com/extract",
+            "description": "Extracts the body of an article and provides a markdown version of the body.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the article to be extracted.",
+                    "default": "https://time.com/6266679/musk-ai-open-letter/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/summarize-text",
+            "url": "https://article-extractor-and-summarizer.p.rapidapi.com/summarize-text",
+            "description": "Summarizes provided text in Markdown format.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

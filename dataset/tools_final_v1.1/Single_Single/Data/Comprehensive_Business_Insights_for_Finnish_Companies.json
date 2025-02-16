@@ -1,0 +1,59 @@
+{
+    "tool_name": "Comprehensive Business Insights for Finnish Companies",
+    "tool_description": "Woorati API is an exhaustive data solution for anyone looking to obtain comprehensive business data about Finnish companies. This service empowers users to query company data using business ID, domain, or associated personnel. It provides insights into a company's tax debt, financial health, and technology stack, along with exclusive data about government purchases.",
+    "home_url": "https://rapidapi.com/woorati/api/comprehensive-business-insights-for-finnish-companies/",
+    "country": "Finland",
+    "api_list": [
+        {
+            "name": "Company search",
+            "url": "https://comprehensive-business-insights-for-finnish-companies.p.rapidapi.com/rapidapi/company/search",
+            "description": "Search for companies using various parameters such as business ID, name, personnel, or website.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "qbid",
+                    "type": "String",
+                    "description": "A unique identifier of a business.",
+                    "default": ""
+                },
+                {
+                    "name": "qname",
+                    "type": "String",
+                    "description": "A company name or part of it.",
+                    "default": ""
+                },
+                {
+                    "name": "qperson",
+                    "type": "String",
+                    "description": "A person who holds a position in a company or part of the name.",
+                    "default": ""
+                },
+                {
+                    "name": "website",
+                    "type": "String",
+                    "description": "The domain of the company.",
+                    "default": ""
+                },
+                {
+                    "name": "page",
+                    "type": "Integer",
+                    "description": "The page number of results you wish to retrieve, used for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Company detail",
+            "url": "https://comprehensive-business-insights-for-finnish-companies.p.rapidapi.com/rapidapi/company/info",
+            "description": "Retrieve detailed information about a specific company.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "电子书查询接口",
+    "tool_description": "用于查询zlibrary书籍信息和返回其链接。本接口仅供学习使用，请勿用于非法用途！",
+    "home_url": "https://api.aa1.cn/doc/Ebook.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "电子书查询接口",
+            "url": "https://1300273061-i4n6ot48hn-hk.scf.tencentcs.com",
+            "description": "查询zlibrary书籍信息的接口",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "要查询的电子书标题",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "author",
+                    "type": "string",
+                    "description": "可选，要查询的电子书作者",
+                    "default": ""
+                },
+                {
+                    "name": "genre",
+                    "type": "string",
+                    "description": "可选，要查询的电子书类型",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

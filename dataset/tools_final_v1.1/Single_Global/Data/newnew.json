@@ -1,0 +1,31 @@
+{
+    "tool_name": "newnew",
+    "tool_description": "A basic API tool for retrieving data.",
+    "home_url": "https://rapidapi.com/makore/api/newnew/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get",
+            "url": "https://newnew.p.rapidapi.com/get",
+            "description": "Retrieves data based on optional parameters.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "HeaderParam",
+                    "type": "STRING",
+                    "description": "An optional header parameter for the request.",
+                    "default": "123"
+                },
+                {
+                    "name": "QueryParam",
+                    "type": "STRING",
+                    "description": "An optional query parameter for the request.",
+                    "default": "123"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

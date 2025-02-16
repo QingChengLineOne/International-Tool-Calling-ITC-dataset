@@ -1,0 +1,25 @@
+{
+    "tool_name": "SpellCheckPro",
+    "tool_description": "The ultimate spelling checker for your text, ensuring error-free content every time. Unleash the power of multilingual spell-checking with our API.",
+    "home_url": "https://rapidapi.com/vbachani/api/spellcheckpro/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "SpellCheckProEndpoint",
+            "url": "https://spellcheckpro.p.rapidapi.com/check_spelling",
+            "description": "The /check_spelling endpoint is used to check the spelling of a given text. It takes a JSON object with a single property, text, which is a string of the text to be spell checked. The endpoint returns a JSON object with a single property, misspelled, which is an array of strings representing the misspelled words found in the input text. The endpoint supports specifying a language code (\"lang_code\") as an optional query parameter to check the spelling for specific languages.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "lang_code",
+                    "type": "string",
+                    "description": "Language code to specify the language for spell checking.",
+                    "default": "empty"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

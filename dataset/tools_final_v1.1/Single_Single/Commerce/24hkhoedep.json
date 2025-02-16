@@ -1,0 +1,18 @@
+{
+    "tool_name": "24hkhoedep",
+    "tool_description": "24hkhoedep.com 是一家在线零售网站，隶属于越南健康与美丽护理有限公司，专注于进口和独家分销来自欧洲的药妆和医疗设备。",
+    "home_url": "https://rapidapi.com/24hkhoedep/api/24hkhoedep/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "24hkhoedep",
+            "url": "https://24hkhoedep.p.rapidapi.com/",
+            "description": "提供有关健康和美容产品的信息，支持用户获取相关数据。",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

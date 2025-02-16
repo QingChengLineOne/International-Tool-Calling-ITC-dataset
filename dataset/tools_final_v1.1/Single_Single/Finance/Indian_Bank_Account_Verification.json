@@ -1,0 +1,35 @@
+{
+    "tool_name": "Indian Bank Account Verification",
+    "tool_description": "The Indian Bank Account Verification solution allows you to confidently onboard individuals or merchants by verifying that their account details are genuine and belong to them, thereby reducing the risk of fraud. This service can be seamlessly integrated with our Cheque OCR API for an instant verification process.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/indian-bank-account-verification/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://indian-bank-account-verification.p.rapidapi.com/v3/tasks",
+            "description": "Fetches the API result using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request to fetch the result.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Validate Bank Account",
+            "url": "https://indian-bank-account-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/validate_bank_account",
+            "description": "Verifies the bank account details of an individual or merchant to ensure they are genuine and belong to the correct entity. Use the GET call API to fetch the result using the request ID received in response.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

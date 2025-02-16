@@ -1,0 +1,98 @@
+{
+    "tool_name": "HexaEight SSO Platform",
+    "tool_description": "Implement Authentication as well as Encryption at Application Layer in any Desktop, Mobile and Web Assembly Apps using our Suite Of Authentication APIs.",
+    "home_url": "https://rapidapi.com/hexaeight-hexaeight-default/api/hexaeight-sso-platform/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/fetch-captcha-for-emailid",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/fetch-captcha-for-emailid",
+            "description": "Fetch captcha for email address.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get-sharedkey-forclientapp",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/fetch-dest-clientsk",
+            "description": "Fetch an asymmetric shared key for the Client App based on the Client ID for authorized users and resources.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "fetchauthtoken",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/fetchauthtoken",
+            "description": "Fetch the decrypted response that contains the details of the logged in user.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "fetchcookieuser",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/get-cookieuser",
+            "description": "Decrypt the user information contained in a Cookie JWT token.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get-new-securetoken",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/get-new-securetoken",
+            "description": "Fetch a SecureToken for your Client Application, which should be used along with the code challenge for enhanced security.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "extendauthtoken",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/extendauthtoken",
+            "description": "Extend the expiration of the Authorization token by one hour.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get-presharedkey-usingname",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/get-presharedkey-usingname",
+            "description": "Fetch a Shared Key for Destination using Resource Name or Email Address and a UnixTimeStamp.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get-sharedkey-usingname",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/get-sharedkey-usingname",
+            "description": "Fetch a Shared Key for Destination using Resource Name or Email Address.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "get-sharedkey-usingtoken",
+            "url": "https://hexaeight-sso-platform.p.rapidapi.com/get-sharedkey-usingtoken",
+            "description": "Fetch a Shared Key for Destination using Resource Identity token or Email Identity Token.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "tool_name": "Akshay edu hub",
+    "tool_description": "Akshay edu hub is an educational platform providing various resources and tools for learning. It aims to assist users in accessing educational content efficiently.",
+    "home_url": "https://rapidapi.com/akshays-XTw1jQjPD/api/akshay-edu-hub/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "First API - education",
+            "url": "https://akshay-edu-hub.p.rapidapi.com/api-education",
+            "description": "This API provides educational resources and information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "second API",
+            "url": "https://akshay-edu-hub.p.rapidapi.com/second-api",
+            "description": "This API performs a specific function related to the educational hub.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "second API_copy",
+            "url": "https://akshay-edu-hub.p.rapidapi.com/second-api-copy",
+            "description": "This API is a copy of the second API, providing similar functionality.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "queryname",
+                    "type": "STRING",
+                    "description": "An optional query parameter to customize the request.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

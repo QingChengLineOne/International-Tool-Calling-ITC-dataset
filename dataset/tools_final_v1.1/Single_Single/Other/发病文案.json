@@ -1,0 +1,25 @@
+{
+    "tool_name": "发病文案API",
+    "tool_description": "发病文案API可设置发病人名字，用于生成带有特定名字的发病文案。",
+    "home_url": "https://api.aa1.cn/doc/fbwa.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "发病文案生成接口",
+            "url": "https://api.lolimi.cn/API/fabing/fb.php",
+            "description": "用于生成带有特定名字的发病文案。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "发病人名字，用于生成文案中的称呼。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

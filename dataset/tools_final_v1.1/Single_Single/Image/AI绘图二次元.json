@@ -1,0 +1,44 @@
+{
+    "tool_name": "AI绘图二次元",
+    "tool_description": "AI绘图二次元，基于novel",
+    "home_url": "https://api.aa1.cn/doc/hty-avdgw.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI绘图二次元API",
+            "url": "https://api.avdgw.com/api/tuapi",
+            "description": "提供二次元风格的AI绘图服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "image_url",
+                    "type": "string",
+                    "description": "待转换图像的URL",
+                    "default": ""
+                },
+                {
+                    "name": "output_format",
+                    "type": "string",
+                    "description": "输出图像格式，如PNG，JPEG等",
+                    "default": "PNG"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "quality",
+                    "type": "int",
+                    "description": "输出图像质量，数值越高质量越好",
+                    "default": 90
+                },
+                {
+                    "name": "style",
+                    "type": "string",
+                    "description": "绘图风格，如'animation', 'art', 'realistic'等",
+                    "default": "animation"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

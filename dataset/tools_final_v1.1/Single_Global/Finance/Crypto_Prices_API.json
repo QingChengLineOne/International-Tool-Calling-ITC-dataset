@@ -1,0 +1,18 @@
+{
+    "tool_name": "Crypto Prices API",
+    "tool_description": "Crypto Prices API is an API that provides updates on the status of your favorite crypto coins. It is designed for developers building applications and websites that require real-time information on cryptocurrencies.",
+    "home_url": "https://rapidapi.com/rowsanonline/api/crypto-prices-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Prices and up and down",
+            "url": "https://crypto-prices-api.p.rapidapi.com/prices",
+            "description": "This endpoint allows you to fetch the current prices of various cryptocurrencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "tool_name": "AI Query",
+    "tool_description": "Looking for the most cost-effective solution to supercharge your AI-powered SQL queries? Look no further!",
+    "home_url": "https://rapidapi.com/ai-query1-ai-query-default/api/ai-query2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Suggest Indexes for a SQL Query",
+            "url": "https://ai-query2.p.rapidapi.com/index_sql/",
+            "description": "Suggests optimal indexes for a given SQL query to improve performance.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Generate a SQL Query",
+            "url": "https://ai-query2.p.rapidapi.com/generate_sql/",
+            "description": "Generates a SQL query based on user input or requirements.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Explain a SQL Query",
+            "url": "https://ai-query2.p.rapidapi.com/explain_sql/",
+            "description": "Provides an explanation of a given SQL query, detailing its components and functionality.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "Optimize a SQL Query",
+            "url": "https://ai-query2.p.rapidapi.com/optimize_sql/",
+            "description": "Optimizes a SQL query to enhance its performance and efficiency.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "vadym-rock-paper-scissors-api",
+    "tool_description": "A simple API for playing the Rock Paper Scissors game, allowing users to make their choice and receive a response.",
+    "home_url": "https://rapidapi.com/hulchenko/api/vadym-rock-paper-scissors-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Choice Endpoint",
+            "url": "https://vadym-rock-paper-scissors-api.p.rapidapi.com/",
+            "description": "Endpoint for users to submit their choice in the Rock Paper Scissors game.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "choice",
+                    "type": "STRING",
+                    "description": "The user's choice in the game, which can be 'rock', 'paper', or 'scissors'.",
+                    "default": "rock"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

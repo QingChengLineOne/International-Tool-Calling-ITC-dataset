@@ -1,0 +1,25 @@
+{
+    "tool_name": "AI-Wbot",
+    "tool_description": "AI聊天，网站客服机器人，知识问答机器人，可定制AI，可作为您网站的客服使用",
+    "home_url": "https://api.aa1.cn/doc/wbot.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI-Wbot Chat API",
+            "url": "https://api.ecylt.top/ai/wbot/",
+            "description": "发送消息至AI-Wbot，获取回复",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "description": "用户发送的消息内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

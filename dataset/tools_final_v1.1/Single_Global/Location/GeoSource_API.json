@@ -1,0 +1,154 @@
+{
+    "tool_name": "GeoSource API",
+    "tool_description": "GeoSource API is a comprehensive service that provides a wealth of geo-information on countries, states, cities, zip codes, currencies, flags, and more. It allows developers to easily access accurate and up-to-date geo-information to enhance their applications and services.",
+    "home_url": "https://rapidapi.com/uchihahamada/api/geosource-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Capital By Country",
+            "url": "https://geosource-api.p.rapidapi.com/capitalByCountry.php",
+            "description": "Retrieves the capital city of the specified country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which to retrieve the capital.",
+                    "default": "us"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Phone Code By Country",
+            "url": "https://geosource-api.p.rapidapi.com/phoneCodeByCountry.php",
+            "description": "Retrieves the phone code of the specified country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which to retrieve the phone code.",
+                    "default": "us"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Emoji Flag By Country",
+            "url": "https://geosource-api.p.rapidapi.com/emojiFlagByCountry.php",
+            "description": "Retrieves the emoji flag code of the specified country.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which to retrieve the emoji flag.",
+                    "default": "us"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Location By City",
+            "url": "https://geosource-api.p.rapidapi.com/locationByCity.php",
+            "description": "Retrieves the latitude and longitude of the specified city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city for which to retrieve the location.",
+                    "default": "cairo"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "ZipCode By City",
+            "url": "https://geosource-api.p.rapidapi.com/zipByCity.php",
+            "description": "Retrieves the zip code(s) of the specified city (must be in the supported countries list).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city for which to retrieve the zip code.",
+                    "default": "Brussels"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Cities By State",
+            "url": "https://geosource-api.p.rapidapi.com/citiesByState.php",
+            "description": "Retrieves a list of cities in the specified state.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "state",
+                    "type": "STRING",
+                    "description": "The name of the state for which to retrieve the cities.",
+                    "default": "Alabama"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "States By Country",
+            "url": "https://geosource-api.p.rapidapi.com/statesByCountry.php",
+            "description": "Retrieves a list of all states in the specified country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which to retrieve the states.",
+                    "default": "us"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Currency By Country",
+            "url": "https://geosource-api.p.rapidapi.com/currencyByCountry.php",
+            "description": "Retrieves the currency and currency symbol of the specified country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "The name of the country for which to retrieve the currency.",
+                    "default": "us"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "CountriesList",
+            "url": "https://geosource-api.p.rapidapi.com/countries.php",
+            "description": "Retrieves a list of all countries and some basic information about them.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

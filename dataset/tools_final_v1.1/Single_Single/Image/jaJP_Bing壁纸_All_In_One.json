@@ -1,0 +1,18 @@
+{
+    "tool_name": "[ja-JP] Bing壁纸 All In One",
+    "tool_description": "ja-JP Bing 壁纸 完整数据接口，每日 9:30 更新，已更新 278 天。",
+    "home_url": "https://api.aa1.cn/doc/bing-wallpaper-ja_JP.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "[ja-JP] Bing壁纸 All In One",
+            "url": "https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/data/ja-JP_all.json",
+            "description": "提供每日Bing壁纸的完整数据接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

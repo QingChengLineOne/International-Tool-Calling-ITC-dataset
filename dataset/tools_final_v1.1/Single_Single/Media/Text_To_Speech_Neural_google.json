@@ -1,0 +1,85 @@
+{
+    "tool_name": "Text To Speech Neural Google",
+    "tool_description": "Get audio from text easily, choose from our neural or Google engine and many options for different voices including Indian voice. This API is made in India.",
+    "home_url": "https://rapidapi.com/rahilkhan224/api/text-to-speech-neural-google/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Generate Audio Files",
+            "url": "https://text-to-speech-neural-google.p.rapidapi.com/generateAudioFiles",
+            "description": "Generate audio files using this API and get an audio stream to use in your website or app.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "audioStream": {
+                        "type": "string"
+                    },
+                    "format": {
+                        "type": "string"
+                    },
+                    "speechMarks": {
+                        "type": "object",
+                        "properties": {
+                            "chunks": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "start": {
+                                            "type": "integer"
+                                        },
+                                        "end": {
+                                            "type": "integer"
+                                        },
+                                        "startTime": {
+                                            "type": "integer"
+                                        },
+                                        "endTime": {
+                                            "type": "integer"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "chunks": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "type": {
+                                                        "type": "string"
+                                                    },
+                                                    "start": {
+                                                        "type": "integer"
+                                                    },
+                                                    "end": {
+                                                        "type": "integer"
+                                                    },
+                                                    "startTime": {
+                                                        "type": "number"
+                                                    },
+                                                    "endTime": {
+                                                        "type": "number"
+                                                    },
+                                                    "value": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

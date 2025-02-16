@@ -1,0 +1,86 @@
+{
+    "tool_name": "Uganda Company Data",
+    "tool_description": "Access the official Uganda Government company register, ideal for Know Your Business (KYB) purposes.",
+    "home_url": "https://rapidapi.com/appaio/api/uganda-company-data/",
+    "country": "Uganda",
+    "api_list": [
+        {
+            "name": "Search by company name",
+            "url": "https://uganda-company-data.p.rapidapi.com/namesearch/search",
+            "description": "Perform a search on the Uganda company register by company name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "The name of the company to search for.",
+                    "default": "Uganda Airlines"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "",
+                                "default": "DAALO    AIRLINES  LTD"
+                            },
+                            "createdAt": {},
+                            "updatedAt": {
+                                "type": "string",
+                                "description": "",
+                                "default": "2022-12-20 00:41"
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "",
+                                "default": "company"
+                            },
+                            "subType": {
+                                "type": "string",
+                                "description": "",
+                                "default": "Private / Company limited by shares"
+                            },
+                            "no": {
+                                "type": "string",
+                                "description": "",
+                                "default": "80010000367425"
+                            },
+                            "status": {
+                                "type": "string",
+                                "description": "",
+                                "default": "Registered"
+                            },
+                            "score": {
+                                "type": "object",
+                                "properties": {
+                                    "sound": {
+                                        "type": "integer",
+                                        "description": "",
+                                        "default": 69
+                                    },
+                                    "text": {
+                                        "type": "integer",
+                                        "description": "",
+                                        "default": 86
+                                    }
+                                }
+                            },
+                            "similarity": {
+                                "type": "integer",
+                                "description": "",
+                                "default": 227.48906
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

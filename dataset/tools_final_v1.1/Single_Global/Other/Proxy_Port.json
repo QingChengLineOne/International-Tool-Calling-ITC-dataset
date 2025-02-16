@@ -1,0 +1,18 @@
+{
+    "tool_name": "Proxy Port",
+    "tool_description": "A tool that provides access to a list of proxies for various use cases.",
+    "home_url": "https://rapidapi.com/proxyportcom/api/proxy-port/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Proxy list",
+            "url": "https://proxy-port.p.rapidapi.com/rapid-proxy",
+            "description": "Retrieves a list of available proxies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

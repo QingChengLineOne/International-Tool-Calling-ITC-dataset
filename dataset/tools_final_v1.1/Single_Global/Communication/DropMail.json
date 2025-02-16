@@ -1,0 +1,18 @@
+{
+    "tool_name": "DropMail",
+    "tool_description": "Official GraphQL API for dropmail.me temporary 10 minute email service (temp mail).",
+    "home_url": "https://rapidapi.com/seriyps/api/dropmail/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GraphQL",
+            "url": "https://dropmail.p.rapidapi.com/",
+            "description": "All the requests are executed via a single endpoint. For the quickstart, try `mutation{introduceSession{id, addresses{address}}}` mutation. It will create a new server-side email storage with `id` and a single email address attached to it. Then use `query session(id: \"..sessionId..\") {mails{text, headerSubject}}` query to read incoming mail.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

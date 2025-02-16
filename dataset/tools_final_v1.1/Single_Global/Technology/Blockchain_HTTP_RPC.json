@@ -1,0 +1,88 @@
+{
+    "tool_name": "Blockchain HTTP RPC",
+    "tool_description": "Blockchain Web3 JSON-RPC over HTTPS",
+    "home_url": "https://rapidapi.com/cryptoapis-cryptoapis-default/api/blockchain-http-rpc1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "BSC testnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/bsc/testnet",
+            "description": "BSC testnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Solana Devnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/solana/devnet",
+            "description": "Solana Devnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Solana Mainnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/solana/mainnet",
+            "description": "Solana Mainnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "BSC mainnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/bsc/mainnet",
+            "description": "BSC mainnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon mumbai testnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/polygon/mumbai",
+            "description": "Polygon mumbai testnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Polygon mainnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/polygon/mainnet",
+            "description": "Polygon mainnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Ethereum goerli",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/ethereum/goerli",
+            "description": "Ethereum goerli RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Ethereum mainnet",
+            "url": "https://blockchain-http-rpc1.p.rapidapi.com/api/ethereum/mainnet",
+            "description": "Ethereum mainnet RPC",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

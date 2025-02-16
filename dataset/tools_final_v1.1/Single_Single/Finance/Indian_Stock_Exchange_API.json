@@ -1,0 +1,25 @@
+{
+    "tool_name": "Indian Stock Exchange API",
+    "tool_description": "API for accessing live stock price updates from the Indian Stock Exchange (BSE/NSE). This API allows users to retrieve real-time stock prices by providing the stock symbol.",
+    "home_url": "https://rapidapi.com/vuesdata/api/indian-stock-exchange-api1/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "StockPrice",
+            "url": "https://indian-stock-exchange-api1.p.rapidapi.com/stock_price/",
+            "description": "Fetches live price updates for a specified stock symbol from the Indian Stock Exchange.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbol",
+                    "type": "STRING",
+                    "description": "The stock symbol for which the live price is requested.",
+                    "default": "TATAMOTORS"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "获取公网地址API",
+    "tool_description": "用于网站开发中获取访客的公网地址",
+    "home_url": "https://api.aa1.cn/doc/network_ip.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取公网地址接口",
+            "url": "https://sjbk.cloud:9635/ip/",
+            "description": "用于获取用户的公网IP地址",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

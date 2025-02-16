@@ -1,0 +1,25 @@
+{
+    "tool_name": "URL Analysis",
+    "tool_description": "Obtain information about web pages, including the platform on which they are built, the language of the texts they contain, whether it is an e-commerce site, and if it uses the Open Graph standard.",
+    "home_url": "https://rapidapi.com/clever-ads-clever-ads-default/api/url-analysis/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "url-analysis",
+            "url": "https://url-analysis.p.rapidapi.com/",
+            "description": "Analyzes a given URL to extract various details about the web page.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the web page to analyze.",
+                    "default": "cleverbikes.myshopify.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

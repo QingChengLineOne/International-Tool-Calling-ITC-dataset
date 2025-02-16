@@ -1,0 +1,87 @@
+{
+    "tool_name": "Trinidad Covid 19 Statistics",
+    "tool_description": "This API provides Covid-19 statistics by year, month, day, and the most recent day in Trinidad and Tobago.",
+    "home_url": "https://rapidapi.com/teamosmi-teamosmi-default/api/trinidad-covid-19-statistics/",
+    "country": "Trinidad and Tobago",
+    "api_list": [
+        {
+            "name": "getMostRecentDay",
+            "url": "https://trinidad-covid-19-statistics.p.rapidapi.com/latestday",
+            "description": "This endpoint fetches the most recent Trinidad & Tobago Covid 19 statistics. It returns data for that specific day alone.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getStatsbyDay",
+            "url": "https://trinidad-covid-19-statistics.p.rapidapi.com/year/2022/month/01/day/15",
+            "description": "This endpoint fetches Trinidad & Tobago Covid 19 statistics by day. The months should be input as '01' or '12' and the days in a similar format as '01' to '31'.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "yearId",
+                    "type": "string",
+                    "description": "The year for which statistics are requested.",
+                    "default": "2022"
+                },
+                {
+                    "name": "monthId",
+                    "type": "string",
+                    "description": "The month for which statistics are requested.",
+                    "default": "01"
+                },
+                {
+                    "name": "dayId",
+                    "type": "string",
+                    "description": "The day for which statistics are requested.",
+                    "default": "15"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getStatsbyYear",
+            "url": "https://trinidad-covid-19-statistics.p.rapidapi.com/year/2020",
+            "description": "This endpoint delivers Trinidad & Tobago Covid 19 statistics by year. The beginning year is 2020 and the latest year is the current year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The year for which statistics are requested.",
+                    "default": "2020"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "getStatsbyMonth",
+            "url": "https://trinidad-covid-19-statistics.p.rapidapi.com/year/2022/month/01",
+            "description": "This endpoint fetches Trinidad & Tobago Covid 19 statistics by month. The months should be input as '01' or '12'.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "yearId",
+                    "type": "string",
+                    "description": "The year for which statistics are requested.",
+                    "default": "2022"
+                },
+                {
+                    "name": "monthId",
+                    "type": "string",
+                    "description": "The month for which statistics are requested.",
+                    "default": "01"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

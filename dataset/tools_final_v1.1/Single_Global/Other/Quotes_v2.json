@@ -1,0 +1,72 @@
+{
+    "tool_name": "Quotes_v2",
+    "tool_description": "A Quotes API is an application programming interface that allows developers to access and retrieve a collection of quotes. It provides a convenient way to access a wide range of quotes from various authors, categories, or topics. Using a Quotes API, developers can integrate inspiring, motivational, or thought-provoking quotes into their applications, websites, or projects.",
+    "home_url": "https://rapidapi.com/parthbhuva97/api/quotes85/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Quotes by Keywords",
+            "url": "https://quotes85.p.rapidapi.com/keyword",
+            "description": "Returns Quotes containing specified keyword",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "The keyword to search for in quotes.",
+                    "default": "success"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Available Authors",
+            "url": "https://quotes85.p.rapidapi.com/author/getAuthors",
+            "description": "Returns list of available authors",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Quotes By Authors",
+            "url": "https://quotes85.p.rapidapi.com/author",
+            "description": "Returns the quotes by specified authors",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "author",
+                    "type": "STRING",
+                    "description": "The name of the author whose quotes you want to retrieve.",
+                    "default": "Albert-Einstein"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Quote of The Day",
+            "url": "https://quotes85.p.rapidapi.com/quoteoftheday",
+            "description": "Returns Quote of the Day",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Random Quotes",
+            "url": "https://quotes85.p.rapidapi.com/getrandomquote",
+            "description": "Get a Random Quote on Each Request",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

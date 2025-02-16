@@ -1,0 +1,25 @@
+{
+    "tool_name": "News Sentiment",
+    "tool_description": "English news sentiment API, providing sentiment analysis for news articles.",
+    "home_url": "https://rapidapi.com/textsla-textsla-default/api/news-sentiment2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "URL",
+            "url": "https://news-sentiment2.p.rapidapi.com/",
+            "description": "Analyzes the sentiment of the news article provided through its URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the news article to analyze.",
+                    "default": "https://www.goodnewsnetwork.org/cave-art-carvings-beneath-2000-years-of-sediment-in-alabama/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

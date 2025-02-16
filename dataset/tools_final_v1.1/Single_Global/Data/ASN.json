@@ -1,0 +1,390 @@
+{
+    "tool_name": "ASN",
+    "tool_description": "Get ASN information, BGP announcements, IP announcement history, block lists.",
+    "home_url": "https://rapidapi.com/CMunroe/api/asn/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "AS Details",
+            "url": "https://asn.p.rapidapi.com/json/details/{as_number}",
+            "description": "Retrieve detailed information about an Autonomous System (AS), including AS Size, Number of records, time of cache, and name. Note that data is cached and can be up to 1 day old.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-number",
+                    "type": "string",
+                    "description": "The Autonomous System number to query.",
+                    "default": "AS1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "AS Archive",
+            "url": "https://asn.p.rapidapi.com/json/archive/{as_timestamp}",
+            "description": "Get historical data of announced IPs for a specific ASN at a given timestamp using AS Snapshot.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-timestamp",
+                    "type": "string",
+                    "description": "The timestamp for which to retrieve the AS data.",
+                    "default": "1-1440541473"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "asn": {
+                        "type": "integer"
+                    },
+                    "time": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "iprec": {
+                        "type": "integer"
+                    },
+                    "v4size": {
+                        "type": "integer"
+                    },
+                    "v6size": {
+                        "type": "integer"
+                    },
+                    "dupcount": {
+                        "type": "integer"
+                    },
+                    "dupmax": {
+                        "type": "null"
+                    },
+                    "dupmin": {
+                        "type": "null"
+                    },
+                    "smaskv4": {
+                        "type": "object",
+                        "properties": {
+                            "22": {
+                                "type": "integer"
+                            },
+                            "24": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "smaskv6": {
+                        "type": "array"
+                    },
+                    "ips": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "dups": {
+                        "type": "array"
+                    }
+                }
+            }
+        },
+        {
+            "name": "AS Snapshots",
+            "url": "https://asn.p.rapidapi.com/json/snapshots/{as_number}",
+            "description": "A list of AS Details over time, providing a historical view of the AS.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-number",
+                    "type": "string",
+                    "description": "The Autonomous System number to query.",
+                    "default": "AS1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "asn": {
+                            "type": "integer"
+                        },
+                        "time": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "iprec": {
+                            "type": "integer"
+                        },
+                        "v4size": {
+                            "type": "integer"
+                        },
+                        "v6size": {
+                            "type": "integer"
+                        },
+                        "smaskv4": {
+                            "type": "object"
+                        },
+                        "smaskv6": {
+                            "type": "object"
+                        },
+                        "dups": {
+                            "type": "array"
+                        },
+                        "requestURL": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "AS Details + IP List",
+            "url": "https://asn.p.rapidapi.com/json/detailsList/{as_number}",
+            "description": "A combined lookup that includes AS Details and a list of announced IP subnets.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-number",
+                    "type": "string",
+                    "description": "The Autonomous System number to query.",
+                    "default": "AS1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "asn": {
+                        "type": "integer"
+                    },
+                    "time": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "iprec": {
+                        "type": "integer"
+                    },
+                    "v4size": {
+                        "type": "integer"
+                    },
+                    "v6size": {
+                        "type": "integer"
+                    },
+                    "smaskv4": {
+                        "type": "object",
+                        "properties": {
+                            "21": {
+                                "type": "integer"
+                            },
+                            "22": {
+                                "type": "integer"
+                            },
+                            "23": {
+                                "type": "integer"
+                            },
+                            "24": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "smaskv6": {
+                        "type": "object",
+                        "properties": {
+                            "32": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "IPs",
+            "url": "https://asn.p.rapidapi.com/json/raw/{as_number}",
+            "description": "Get a detailed list of the currently announced IPs of a subnet.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-number",
+                    "type": "string",
+                    "description": "The Autonomous System number to query.",
+                    "default": "AS1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ip": {
+                                    "type": "string"
+                                },
+                                "subnetMask": {
+                                    "type": "string"
+                                },
+                                "cidr": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "AS Details + IPs",
+            "url": "https://asn.p.rapidapi.com/json/detailsRaw/{as_number}",
+            "description": "A combination lookup that includes details on the AS and the announced IPs fully broken out.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-number",
+                    "type": "string",
+                    "description": "The Autonomous System number to query.",
+                    "default": "AS1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "asn": {
+                        "type": "integer"
+                    },
+                    "time": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "iprec": {
+                        "type": "integer"
+                    },
+                    "v4size": {
+                        "type": "integer"
+                    },
+                    "v6size": {
+                        "type": "integer"
+                    },
+                    "smaskv4": {
+                        "type": "object",
+                        "properties": {
+                            "21": {
+                                "type": "integer"
+                            },
+                            "22": {
+                                "type": "integer"
+                            },
+                            "23": {
+                                "type": "integer"
+                            },
+                            "24": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "smaskv6": {
+                        "type": "object",
+                        "properties": {
+                            "32": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ip": {
+                                    "type": "string"
+                                },
+                                "subnetMask": {
+                                    "type": "string"
+                                },
+                                "cidr": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "IP List",
+            "url": "https://asn.p.rapidapi.com/json/list/{as_number}",
+            "description": "Get a list of all IPs that an ASN announces.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "as-number",
+                    "type": "string",
+                    "description": "The Autonomous System number to query.",
+                    "default": "AS1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "list": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

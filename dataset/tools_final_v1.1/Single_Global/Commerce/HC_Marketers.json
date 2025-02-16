@@ -1,0 +1,18 @@
+{
+    "tool_name": "HC Marketers",
+    "tool_description": "Healthcare Email Database Provider",
+    "home_url": "https://rapidapi.com/sophiaethan930/api/hc-marketers1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "doctors email list",
+            "url": "https://hc-marketers1.p.rapidapi.com/",
+            "description": "This API provides access to a comprehensive Doctors Email List, enabling users to connect with top medical specialists worldwide, particularly those skilled in diagnosing and treating heart disorders. The list can be customized based on specific business needs, helping to enhance marketing efforts and improve sales and ROI through verified email contacts.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

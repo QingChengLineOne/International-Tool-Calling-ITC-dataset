@@ -1,0 +1,31 @@
+{
+    "tool_name": "Mixy Word Guess Api",
+    "tool_description": "An API designed to generate random words for guessing games, allowing users to specify the number of words and their difficulty level.",
+    "home_url": "https://rapidapi.com/elinordeniz/api/mixy-word-guess-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Produce mixy words list",
+            "url": "https://mixy-word-guess-api.p.rapidapi.com/api/v1/word",
+            "description": "Generates a list of random words based on the specified amount and difficulty level.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "The number of words to generate. Valid values are integers between 1 and 100.",
+                    "default": "10"
+                },
+                {
+                    "name": "difficulty",
+                    "type": "STRING",
+                    "description": "The difficulty level of the words. Valid values are 'easy', 'medium', and 'hard'.",
+                    "default": "easy"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

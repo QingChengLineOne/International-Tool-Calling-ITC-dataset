@@ -1,0 +1,88 @@
+{
+    "tool_name": "Whois Lookup_v3",
+    "tool_description": "This API pulls up-to-date records from the original data sources in real time, providing access to fresh data about domain registrations.",
+    "home_url": "https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/whois-lookup5/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Check Similarity",
+            "url": "https://whois-lookup5.p.rapidapi.com/checksimilarity",
+            "description": "This endpoint helps to check if two domains are similar.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain1",
+                    "type": "STRING",
+                    "description": "First domain to compare with.",
+                    "default": "google.com"
+                },
+                {
+                    "name": "domain2",
+                    "type": "STRING",
+                    "description": "Second domain to compare with.",
+                    "default": "shopify.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "DNS Lookup",
+            "url": "https://whois-lookup5.p.rapidapi.com/checkdns",
+            "description": "This endpoint pulls DNS data from a domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain to search.",
+                    "default": "google.com"
+                },
+                {
+                    "name": "rtype",
+                    "type": "STRING",
+                    "description": "The type of record to pull. Available records: A, PTR, MX, CNAME, TXT, NS.",
+                    "default": "NS"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "NS Lookup",
+            "url": "https://whois-lookup5.p.rapidapi.com/getip",
+            "description": "This endpoint returns the IP address associated with a domain (NameServer).",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The domain to search.",
+                    "default": "google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Domain Information",
+            "url": "https://whois-lookup5.p.rapidapi.com/whois",
+            "description": "This endpoint pulls the domain information, such as IP, expiration date, and much more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search",
+                    "type": "STRING",
+                    "description": "The domain to search, do not add https or http. For example: google.com.",
+                    "default": "google.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

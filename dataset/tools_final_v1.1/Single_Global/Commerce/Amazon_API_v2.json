@@ -1,0 +1,128 @@
+{
+    "tool_name": "Amazon_API_v2",
+    "tool_description": "An API that provides access to various product categories available on Amazon, allowing users to retrieve information about smartphones, laptops, BCAA supplements, and headphones.",
+    "home_url": "https://rapidapi.com/soyamchinglemba/api/amazon_api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/Smart_Phones",
+            "url": "https://amazon_api.p.rapidapi.com/Smart_Phones",
+            "description": "Retrieves information about smartphones available on Amazon.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Name_Brand",
+                    "type": "STRING",
+                    "description": "The brand name of the smartphone to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/Laptops",
+            "url": "https://amazon_api.p.rapidapi.com/Laptops",
+            "description": "Retrieves information about laptops available on Amazon.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Name_Brand",
+                    "type": "STRING",
+                    "description": "The brand name of the laptop to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/BCAA",
+            "url": "https://amazon_api.p.rapidapi.com/BCAA",
+            "description": "Retrieves information about BCAA supplements available on Amazon.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "product_name_brand",
+                    "type": "STRING",
+                    "description": "The brand name of the BCAA product to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "/Headphones",
+            "url": "https://amazon_api.p.rapidapi.com/Headphones",
+            "description": "Retrieves information about headphones available on Amazon.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Name_Brand",
+                    "type": "STRING",
+                    "description": "The brand name of the headphones to filter results.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "result": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

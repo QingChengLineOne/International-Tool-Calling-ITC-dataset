@@ -1,0 +1,25 @@
+{
+    "tool_name": "DataGen",
+    "tool_description": "Flexible, customizable and randomized mock data generator for rapid prototyping or data population/seeding.",
+    "home_url": "https://rapidapi.com/fencosoftware/api/datagen/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/api/v1/generate/1",
+            "url": "https://datagen.p.rapidapi.com/api/v1/generate/1",
+            "description": "Generates a specified quantity of mock data.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "quantity",
+                    "type": "NUMBER",
+                    "description": "The number of mock data entries to generate.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "tool_name": "二要素验证API",
+    "tool_description": "提供实名信息验证服务",
+    "home_url": "https://api.aa1.cn/doc/2ys.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "实名信息验证接口",
+            "url": "https://cqapi.site/API/2ys.php",
+            "description": "用于验证用户的实名信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "arg1",
+                    "type": "string",
+                    "description": "用户名或手机号",
+                    "default": ""
+                },
+                {
+                    "name": "arg2",
+                    "type": "string",
+                    "description": "身份证号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

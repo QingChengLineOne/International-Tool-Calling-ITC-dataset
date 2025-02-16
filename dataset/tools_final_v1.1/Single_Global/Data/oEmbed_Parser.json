@@ -1,0 +1,60 @@
+{
+    "tool_name": "oEmbed Parser",
+    "tool_description": "Extract oembed data from given URL.",
+    "home_url": "https://rapidapi.com/pwshub-pwshub-default/api/oembed-parser/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "POST /oembed/parse",
+            "url": "https://oembed-parser.p.rapidapi.com/oembed/parse",
+            "description": "Extract oEmbed data from URL.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GET /oembed/parse",
+            "url": "https://oembed-parser.p.rapidapi.com/oembed/parse",
+            "description": "Extract oEmbed data from given URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL from which to extract oEmbed data.",
+                    "default": "https://www.slideshare.net/ericschmidt/trillion-dollar-coach-book-bill-campbell"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "maxheight",
+                    "type": "STRING",
+                    "description": "Maximum height of the embedded content.",
+                    "default": "400"
+                },
+                {
+                    "name": "theme",
+                    "type": "STRING",
+                    "description": "Theme for the embedded content display.",
+                    "default": "dark"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language for the embedded content.",
+                    "default": "en"
+                },
+                {
+                    "name": "maxwidth",
+                    "type": "NUMBER",
+                    "description": "Maximum width of the embedded content.",
+                    "default": "600"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

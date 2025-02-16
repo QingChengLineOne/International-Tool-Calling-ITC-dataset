@@ -1,0 +1,68 @@
+{
+    "tool_name": "Top NFT Sales",
+    "tool_description": "Retrieve the top NFTs and collections sold today, this week, or this month.",
+    "home_url": "https://rapidapi.com/NovusAPI/api/top-nft-sales/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Top NFTs this Month",
+            "url": "https://top-nft-sales.p.rapidapi.com/sales/30d",
+            "description": "Fetch the top selling NFTs for the current month.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top NFTs this Week",
+            "url": "https://top-nft-sales.p.rapidapi.com/sales/7d",
+            "description": "Fetch the top selling NFTs for the current week.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Collections this Month",
+            "url": "https://top-nft-sales.p.rapidapi.com/collections/30d",
+            "description": "Retrieve the top trending collections for the current month.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Collections this Week",
+            "url": "https://top-nft-sales.p.rapidapi.com/collections/7d",
+            "description": "Retrieve the top trending collections for the current week.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top Collections Today",
+            "url": "https://top-nft-sales.p.rapidapi.com/collections/1d",
+            "description": "Retrieve the top trending collections for today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Top NFTs Today",
+            "url": "https://top-nft-sales.p.rapidapi.com/sales/1d",
+            "description": "Fetch the top selling NFTs for today.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

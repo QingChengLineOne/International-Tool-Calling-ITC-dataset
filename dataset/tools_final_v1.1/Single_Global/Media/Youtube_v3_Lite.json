@@ -1,0 +1,164 @@
+{
+    "tool_name": "Youtube v3 Lite",
+    "tool_description": "Lite version of Youtube Data API v3. Get Youtube data without any Youtube API key.",
+    "home_url": "https://rapidapi.com/genapi/api/youtube-v3-lite/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Channel Videos/Playlists",
+            "url": "https://youtube-v3-lite.p.rapidapi.com/search",
+            "description": "Retrieve videos or playlists from a specific YouTube channel. Quota cost is 1.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "channelId",
+                    "type": "STRING",
+                    "description": "The unique identifier for the YouTube channel.",
+                    "default": "UCAuUUnT6oDeKwE6v1NGQxug"
+                },
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "Specifies the resource parts to be included in the response.",
+                    "default": "id,snippet"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "X-CACHEBYPASS",
+                    "type": "STRING",
+                    "description": "Cache bypass, the value must be 1. Quota Cost +1.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "ENUM",
+                    "description": "Specifies the type of resource to return.",
+                    "default": ""
+                },
+                {
+                    "name": "order",
+                    "type": "ENUM",
+                    "description": "Sort parameter: - `date` (default), - `viewCount`.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Trending/Charts",
+            "url": "https://youtube-v3-lite.p.rapidapi.com/videos",
+            "description": "Get a list of trending videos or charts. Quota cost is 1.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "Specifies the resource parts to be included in the response.",
+                    "default": "id,snippet"
+                },
+                {
+                    "name": "regionCode",
+                    "type": "STRING",
+                    "description": "ISO 3166-2 country code of the region (e.g., US, UK, CA).",
+                    "default": "US"
+                },
+                {
+                    "name": "chart",
+                    "type": "STRING",
+                    "description": "The chart name to retrieve.",
+                    "default": "mostPopular"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "X-CACHEBYPASS",
+                    "type": "STRING",
+                    "description": "Cache bypass, the value must be 1. Quota Cost +1.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://youtube-v3-lite.p.rapidapi.com/search",
+            "description": "Get search results based on a query. Quota cost is 1.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "part",
+                    "type": "STRING",
+                    "description": "Specifies the resource parts to be included in the response.",
+                    "default": "id,snippet"
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query string.",
+                    "default": "cat"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "X-CACHEBYPASS",
+                    "type": "STRING",
+                    "description": "Cache bypass, the value must be 1. Quota Cost +1.",
+                    "default": ""
+                },
+                {
+                    "name": "videoDuration",
+                    "type": "ENUM",
+                    "description": "Video duration options: - `any` (default), - `short`, - `medium`, - `long`.",
+                    "default": ""
+                },
+                {
+                    "name": "videoDefinition",
+                    "type": "ENUM",
+                    "description": "Video quality definition options: - `any` (default), - `high`.",
+                    "default": ""
+                },
+                {
+                    "name": "videoCaption",
+                    "type": "ENUM",
+                    "description": "Video captions options: - `any` (default), - `closedCaption`.",
+                    "default": ""
+                },
+                {
+                    "name": "videoLicense",
+                    "type": "ENUM",
+                    "description": "Video license options: - `any` (default), - `creativeCommon`.",
+                    "default": ""
+                },
+                {
+                    "name": "eventType",
+                    "type": "ENUM",
+                    "description": "Event type options: - `any` (default), - `live`.",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "ENUM",
+                    "description": "Type of results: - `video` (default), - `playlist`, - `channel`.",
+                    "default": ""
+                },
+                {
+                    "name": "order",
+                    "type": "ENUM",
+                    "description": "Sorting order: - `relevance` (default), - `date`, - `viewCount`, - `rating`.",
+                    "default": ""
+                },
+                {
+                    "name": "videoType",
+                    "type": "ENUM",
+                    "description": "Video type options: - `any` (default), - `episode`, - `movie`.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

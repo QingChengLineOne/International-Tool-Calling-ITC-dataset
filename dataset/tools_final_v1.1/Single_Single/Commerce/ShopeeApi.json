@@ -1,0 +1,147 @@
+{
+    "tool_name": "ShopeeApi",
+    "tool_description": "Shopee product search API & product details API that allows users to retrieve product information based on seller ID, category ID, and search queries.",
+    "home_url": "https://rapidapi.com/kangazib/api/shopeeapi2/",
+    "country": "Indonesia",
+    "api_list": [
+        {
+            "name": "Get products from sellerID and categoryID",
+            "url": "https://shopeeapi2.p.rapidapi.com/{region}/seller/{sellerid}/products/{categoryid}",
+            "description": "Fetches products from a specified seller ID and category ID. If the category ID is not provided, it retrieves products from any category associated with the seller ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sellerID",
+                    "type": "string",
+                    "description": "The unique identifier for the seller.",
+                    "default": "179967476"
+                },
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "The region from which to fetch products.",
+                    "default": "id"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "The number of products to skip before starting to collect the result set.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of products to return.",
+                    "default": "30"
+                },
+                {
+                    "name": "categoryID",
+                    "type": "string",
+                    "description": "An optional category ID to filter products.",
+                    "default": "11043778"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get categories from sellerID",
+            "url": "https://shopeeapi2.p.rapidapi.com/{region}/seller/{sellerid}/categories",
+            "description": "Retrieves product categories associated with a specified seller ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "The region from which to fetch categories.",
+                    "default": "id"
+                },
+                {
+                    "name": "sellerID",
+                    "type": "string",
+                    "description": "The unique identifier for the seller.",
+                    "default": "179967476"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The maximum number of categories to return.",
+                    "default": "30"
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "The number of categories to skip before starting to collect the result set.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search products",
+            "url": "https://shopeeapi2.p.rapidapi.com/{region}/search",
+            "description": "Searches for products based on a query and supports pagination.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "The region for the search, must be one of the specified options.",
+                    "default": "id"
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The search query for products.",
+                    "default": "Keripik Kentang"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "sellerID",
+                    "type": "NUMBER",
+                    "description": "Optional filter to search products by seller/shop ID.",
+                    "default": ""
+                },
+                {
+                    "name": "p",
+                    "type": "NUMBER",
+                    "description": "The page number for pagination.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "Get Product details",
+            "url": "https://shopeeapi2.p.rapidapi.com/{region}/{path}",
+            "description": "Retrieves detailed information about a specific product on Shopee.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "string",
+                    "description": "The region for which to fetch product details, must be one of the specified options.",
+                    "default": "id"
+                },
+                {
+                    "name": "path",
+                    "type": "string",
+                    "description": "The path parameter that identifies the specific product.",
+                    "default": "Min-order-2pcs-Kentang-Mustofa-100g-Kering-Kentang-Kripik-Kentang-Kentang-Garing-i.179967476.7583210867"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "随机古诗获得",
+    "tool_description": "随机获取古诗（2700多首）",
+    "home_url": "https://api.aa1.cn/doc/gushi.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机古诗获取API",
+            "url": "https://api.mg-tool.cn/v1/get_gushi/",
+            "description": "用于获取随机古诗的接口",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

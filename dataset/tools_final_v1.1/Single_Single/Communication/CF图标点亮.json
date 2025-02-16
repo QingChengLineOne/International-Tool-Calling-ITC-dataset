@@ -1,0 +1,37 @@
+{
+    "tool_name": "CF图标点亮",
+    "tool_description": "QQ的CF图标点亮API，用于点亮CF图标",
+    "home_url": "https://api.aa1.cn/doc/cf.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "CF图标点亮API",
+            "url": "http://subway.cwwl.club/user/hw/qy/api/cf.php",
+            "description": "用于点亮CF图标的API接口",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "user_id",
+                    "type": "int",
+                    "description": "用户ID，用于识别用户身份",
+                    "default": ""
+                },
+                {
+                    "name": "action",
+                    "type": "string",
+                    "description": "操作类型，如点亮、熄灭等",
+                    "default": ""
+                },
+                {
+                    "name": "extra_data",
+                    "type": "string",
+                    "description": "额外数据，如点亮时间等",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "tool_name": "MDBList",
+    "tool_description": "Get Movies and TV Shows data with ratings from multiple providers in JSON format.",
+    "home_url": "https://rapidapi.com/linaspurinis/api/mdblist/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search by Title",
+            "url": "https://mdblist.p.rapidapi.com/",
+            "description": "Search for Movies or TV Shows by title, including options to filter by year or media type.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "s",
+                    "type": "STRING",
+                    "description": "Movie or TV Show Title to search.",
+                    "default": "jaws"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "l",
+                    "type": "NUMBER",
+                    "description": "Limit returned items. You can use numbers from 1 to 100 (default is 50).",
+                    "default": ""
+                },
+                {
+                    "name": "y",
+                    "type": "NUMBER",
+                    "description": "Year (format YYYY, for example 2020) to limit title search (would also include previous and next year movies).",
+                    "default": ""
+                },
+                {
+                    "name": "m",
+                    "type": "ENUM",
+                    "description": "Search for only movie or TV show, leave empty for both.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get by Trakt.tv ID",
+            "url": "https://mdblist.p.rapidapi.com/",
+            "description": "Returns movie or TV Show info based on a valid Trakt.tv ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "t",
+                    "type": "STRING",
+                    "description": "A valid Trakt.tv ID.",
+                    "default": "457"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "m",
+                    "type": "ENUM",
+                    "description": "Mediatype *movie* or *show* (default *movie*).",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get by IMDb ID",
+            "url": "https://mdblist.p.rapidapi.com/",
+            "description": "Returns movie or TV Show info based on a valid IMDb ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "i",
+                    "type": "STRING",
+                    "description": "A valid IMDb ID.",
+                    "default": "tt0073195"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get by TMDb ID",
+            "url": "https://mdblist.p.rapidapi.com/",
+            "description": "Returns movie or TV Show info based on a valid TMDb ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tm",
+                    "type": "NUMBER",
+                    "description": "A valid TMDb ID.",
+                    "default": "578"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "m",
+                    "type": "ENUM",
+                    "description": "Mediatype *movie* or *show* (default *movie*).",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get by TVDB ID",
+            "url": "https://mdblist.p.rapidapi.com/",
+            "description": "Returns TV Show info based on a valid TVDB ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tv",
+                    "type": "NUMBER",
+                    "description": "A valid TVDB ID.",
+                    "default": "273181"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

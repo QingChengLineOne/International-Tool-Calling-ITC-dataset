@@ -1,0 +1,32 @@
+{
+    "tool_name": "字符转换",
+    "tool_description": "将简体或繁体中文字符进行相互转换",
+    "home_url": "https://api.qqsuu.cn/doc/dm-charconvert.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "字符转换",
+            "url": "https://api.qqsuu.cn/api/dm-charconvert",
+            "description": "将简体或繁体中文字符进行相互转换",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "description": "待转换的字符",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "需要转成的类型，繁体0[默认]，简体1",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

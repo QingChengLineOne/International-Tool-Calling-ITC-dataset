@@ -1,0 +1,146 @@
+{
+    "tool_name": "German Company Data",
+    "tool_description": "Enrich your CRM / MAS / ERP system with credible data about all incorporated companies from Germany.",
+    "home_url": "https://rapidapi.com/Implisense/api/german-company-data/",
+    "country": "Germany",
+    "api_list": [
+        {
+            "name": "/companies/financials/exists",
+            "url": "https://german-company-data.p.rapidapi.com/companies/financials/exists",
+            "description": "This endpoint returns the list of years for which financial key figures (balance sheet total, revenue, profit, number of employees) for the company with the given identifier are available. It assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/companies/jobs",
+            "url": "https://german-company-data.p.rapidapi.com/companies/jobs",
+            "description": "This endpoint returns the latest job postings about the company with the given identifier since the given timestamp. It assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "since",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The date from which to retrieve job postings.",
+                    "default": "2012-01-01"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "The number of job postings to return.",
+                    "default": "100"
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/companies/people",
+            "url": "https://german-company-data.p.rapidapi.com/companies/people",
+            "description": "This endpoint returns information about people associated with the company. It assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/search",
+            "url": "https://german-company-data.p.rapidapi.com/search",
+            "description": "This endpoint lets you create a new search request, which may include one or more search strings and various filters, and returns the search result along with search facets for refining your search.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "explain",
+                    "type": "BOOLEAN",
+                    "description": "If set to true, the output contains snippets of the query matches in company websites.",
+                    "default": "false"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "The number of results to be returned.",
+                    "default": "50"
+                },
+                {
+                    "name": "from",
+                    "type": "NUMBER",
+                    "description": "The index of the first result to be returned.",
+                    "default": "0"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/lookup",
+            "url": "https://german-company-data.p.rapidapi.com/lookup",
+            "description": "This endpoint assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email, and returns basic information about the company.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "The number of results to be returned. The maximum value is 10.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/companies/financials",
+            "url": "https://german-company-data.p.rapidapi.com/companies/financials",
+            "description": "This endpoint returns the financial key figures for the company with the given identifier. It assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/companies/events",
+            "url": "https://german-company-data.p.rapidapi.com/companies/events",
+            "description": "This endpoint returns the latest events about the company with the given identifier since the given timestamp. It assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "since",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "The date from which to retrieve events.",
+                    "default": "2017-01-01"
+                },
+                {
+                    "name": "size",
+                    "type": "NUMBER",
+                    "description": "The number of events to return.",
+                    "default": "100"
+                },
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category of events to filter by.",
+                    "default": "MANAGEMENT_AND_TEAM,FINANCES_AND_CAPITAL,NEWS_AND_EVENTS"
+                }
+            ],
+            "statuscode": "1",
+            "schema": {}
+        },
+        {
+            "name": "/companies/data",
+            "url": "https://german-company-data.p.rapidapi.com/companies/data",
+            "description": "This endpoint returns the basic information of the company. It assists in finding companies and their identifiers via fixed attributes, such as company name, website, or email.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

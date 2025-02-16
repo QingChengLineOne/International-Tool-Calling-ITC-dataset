@@ -1,0 +1,32 @@
+{
+    "tool_name": "Abuse IP Check",
+    "tool_description": "Abuse IP Check is a project dedicated to helping combat the spread of hackers, spammers, and abusive activity on the internet. Our mission is to help make the web safer by providing a central blacklist for webmasters, system administrators, and other interested parties to report and find IP addresses that have been associated with malicious activity online. Users can report an IP address associated with malicious activity or check to see if an IP address has been reported.",
+    "home_url": "https://rapidapi.com/standingapi-standingapi-default/api/abuse-ip-check/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "CHECK Endpoint",
+            "url": "https://abuse-ip-check.p.rapidapi.com/api/v2/check",
+            "description": "The check endpoint accepts a single IP address (v4 or v6). Optionally, you may set the maxAgeInDays parameter to only return reports within the last x amount of days. The response includes details regarding the IP address queried, such as version, country of origin, usage type, ISP, and domain name, along with any abusive reports.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ipAddress",
+                    "type": "STRING",
+                    "description": "The IP address to check for abusive activity.",
+                    "default": "118.25.6.39"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "maxAgeInDays",
+                    "type": "STRING",
+                    "description": "Limits the reports to those within the specified number of days. Default is 30 days, minimum is 1 day, and maximum is 365 days.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

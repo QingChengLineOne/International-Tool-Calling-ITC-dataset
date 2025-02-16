@@ -1,0 +1,118 @@
+{
+    "tool_name": "vehicle database",
+    "tool_description": "Build Automotive Solutions of Tomorrow. Use our robust vehicle data APIs to create innovative applications for companies & consumers. Our Restful APIs integrate smoothly into any system software, website, application or tools.",
+    "home_url": "https://rapidapi.com/vehicle-databases-vehicle-databases-default/api/vehicle-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "VIN OCR",
+            "url": "https://vehicle-database.p.rapidapi.com/vin-ocr",
+            "description": "This API endpoint reads a VIN number from the VIN sticker, dashboard, vehicle documents or any image. It will take an image as an input and returns the VIN number.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The image file containing the VIN.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Vehicle Recall",
+            "url": "https://vehicle-database.p.rapidapi.com/recall-check",
+            "description": "Our Recalls API provides details on all the open recalls of any vehicle, including the date of issue, the identification number of the recall, the remedy to the issue, and more. Coverage: This API supports VIN from year 1952 to 2023.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "License Plate OCR",
+            "url": "https://vehicle-database.p.rapidapi.com/lp-detect",
+            "description": "For USA: This API endpoint returns the license plate number and state from the license plate image. For UK: This API endpoint returns the license plate number from the license plate image.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "file",
+                    "type": "BINARY",
+                    "description": "The image file containing the license plate.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "tool_name": "ThisisaPublicAPI_v2",
+    "tool_description": "This is a public API that provides various functionalities related to pets and orders.",
+    "home_url": "https://rapidapi.com/organizationdemo1-fridayteam/api/thisisapublicapi1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getPetById",
+            "url": "https://thisisapublicapi1.p.rapidapi.com/pet/{petId}",
+            "description": "Returns a single pet based on the provided pet ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "petId",
+                    "type": "NUMBER",
+                    "description": "ID of the pet to return.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "getOrderById",
+            "url": "https://thisisapublicapi1.p.rapidapi.com/store/order/{orderId}",
+            "description": "Fetches an order by its ID. Valid IDs are integers between 1 and 10.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "orderId",
+                    "type": "NUMBER",
+                    "description": "ID of the order that needs to be fetched.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        },
+        {
+            "name": "getInventory",
+            "url": "https://thisisapublicapi1.p.rapidapi.com/store/inventory",
+            "description": "Returns a map of status codes to quantities of items in inventory.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "additionalProperties": {
+                    "format": "int32",
+                    "maximum": 2147483647,
+                    "minimum": -2147483648,
+                    "type": "integer"
+                },
+                "type": "object"
+            }
+        },
+        {
+            "name": "logoutUser",
+            "url": "https://thisisapublicapi1.p.rapidapi.com/user/logout",
+            "description": "Logs out the current user.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "loginUser",
+            "url": "https://thisisapublicapi1.p.rapidapi.com/user/login",
+            "description": "Logs in a user with the provided username and password.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The user name for login.",
+                    "default": ""
+                },
+                {
+                    "name": "password",
+                    "type": "STRING",
+                    "description": "The password for login in clear text.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "getUserByName",
+            "url": "https://thisisapublicapi1.p.rapidapi.com/user/{username}",
+            "description": "Fetches user details by username. Use \"user1\" for testing.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "username",
+                    "type": "STRING",
+                    "description": "The name that needs to be fetched.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 1,
+            "schema": "\""
+        }
+    ]
+}

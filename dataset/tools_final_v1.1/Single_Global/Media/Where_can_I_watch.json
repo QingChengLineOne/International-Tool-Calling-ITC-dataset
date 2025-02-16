@@ -1,0 +1,60 @@
+{
+    "tool_name": "Where can I watch",
+    "tool_description": "Search or lookup streaming options for movies and TV shows across various platforms and countries.",
+    "home_url": "https://rapidapi.com/KASO/api/where-can-i-watch1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search",
+            "url": "https://where-can-i-watch1.p.rapidapi.com/search/{country}/{title}",
+            "description": "Search for streaming options for movies and series in various countries.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "The country code to search for streaming options. Examples: uk, dk, us, in.",
+                    "default": "uk"
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "The title of the movie or series you want to search for.",
+                    "default": "back to the future"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Lookup title",
+            "url": "https://where-can-i-watch1.p.rapidapi.com/{country}/{type}/{title}",
+            "description": "Lookup streaming options for a specific movie or series in various countries.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "The type of content, either 'movie' or 'series'.",
+                    "default": "movie"
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "description": "The title of the movie or series. If no results are found, try adding spaces between letters.",
+                    "default": "cars"
+                },
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "The country code to search for streaming options. Examples: uk, dk, us, in.",
+                    "default": "uk"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

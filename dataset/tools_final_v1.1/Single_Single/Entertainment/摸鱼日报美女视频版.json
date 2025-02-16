@@ -1,0 +1,25 @@
+{
+    "tool_name": "摸鱼日报美女视频版API",
+    "tool_description": "每日更新摸鱼日报美女小姐姐视频内容",
+    "home_url": "https://api.aa1.cn/doc/moyuribaoshipin.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "摸鱼日报美女视频版接口",
+            "url": "https://dayu.qqsuu.cn/moyuribaoshipin/apis.php",
+            "description": "获取摸鱼日报美女视频的内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据的格式，如JSON",
+                    "default": "json"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

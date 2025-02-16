@@ -1,0 +1,18 @@
+{
+    "tool_name": "Excel Formula",
+    "tool_description": "Utilize 260+ Microsoft Excel functions to perform calculations and logical operations directly in your program by calling this simple API.",
+    "home_url": "https://rapidapi.com/rassvet-aps-rassvet-aps-default/api/excel-formula/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getExcelFormulaResult",
+            "url": "https://excel-formula.p.rapidapi.com/execute",
+            "description": "Runs a computation of the provided Excel Formula through the formula parameter and returns the result.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

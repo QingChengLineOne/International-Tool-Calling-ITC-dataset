@@ -1,0 +1,38 @@
+{
+    "tool_name": "法币汇率查询API",
+    "tool_description": "提供实时法币汇率查询服务",
+    "home_url": "https://api.aa1.cn/doc/rate.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "法币汇率查询接口",
+            "url": "https://api.daguoli.cn/apis/1002",
+            "description": "用于查询指定货币对的实时汇率",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "base_currency",
+                    "type": "string",
+                    "description": "基准货币代码，如CNY、USD等",
+                    "default": ""
+                },
+                {
+                    "name": "quote_currency",
+                    "type": "string",
+                    "description": "报价货币代码，如CNY、USD等",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "返回数据格式，默认为JSON，可选值有JSON、XML等",
+                    "default": "JSON"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

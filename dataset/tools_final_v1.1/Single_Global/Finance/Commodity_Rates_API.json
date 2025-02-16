@@ -1,0 +1,134 @@
+{
+    "tool_name": "Commodity Rates API",
+    "tool_description": "The Commodity Rates API provides real-time and historical pricing data for various commodity markets, including metals, energy, and agricultural products. It allows users to access market data and perform advanced analytics, such as price forecasting and trend analysis.",
+    "home_url": "https://rapidapi.com/zyla-labs-zyla-labs-default/api/commodity-rates-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Open/High/Low/Close (OHLC) Price",
+            "url": "https://commodity-rates-api.p.rapidapi.com/open-high-low-close/{date}",
+            "description": "Allows you to query the API to get the open, high, low, and close price for a specific commodity on a given date. This endpoint has a limitation of one symbol per request.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code of your preferred base currency.",
+                    "default": "BRENTOIL"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date for which you want to retrieve the OHLC prices.",
+                    "default": "2022-01-10"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code of your preferred base currency.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Time-Series",
+            "url": "https://commodity-rates-api.p.rapidapi.com/timeseries",
+            "description": "Provides daily historical rates between two dates of your choice. Note: This endpoint has a limitation of 365 days per range and can only provide one symbol information per request.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code of your preferred base currency.",
+                    "default": "USD"
+                },
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code of your preferred base currency.",
+                    "default": "BRENTOIL"
+                },
+                {
+                    "name": "end_date",
+                    "type": "STRING",
+                    "description": "The end date of your preferred timeframe.",
+                    "default": "2022-01-20"
+                },
+                {
+                    "name": "start_date",
+                    "type": "STRING",
+                    "description": "The start date of your preferred timeframe.",
+                    "default": "2022-01-10"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Historical Rates",
+            "url": "https://commodity-rates-api.p.rapidapi.com/{date}",
+            "description": "Retrieve historical rates for most symbols dating back to 2021 by appending a date (format YYYY-MM-DD) to the base URL.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code of your preferred base currency.",
+                    "default": "USD"
+                },
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code for which you want historical rates.",
+                    "default": "COTTON"
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The specific date for which you want to retrieve historical rates.",
+                    "default": "2022-01-19"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Latest Rates",
+            "url": "https://commodity-rates-api.p.rapidapi.com/latest",
+            "description": "Check the real-time exchange rate data updated every 60 seconds with this endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "symbols",
+                    "type": "STRING",
+                    "description": "Enter a list of comma-separated currency codes or commodity codes to limit output codes.",
+                    "default": "BRENTOIL"
+                },
+                {
+                    "name": "base",
+                    "type": "STRING",
+                    "description": "Enter the three-letter currency code or commodity code of your preferred base currency.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Supported Symbols",
+            "url": "https://commodity-rates-api.p.rapidapi.com/symbols",
+            "description": "Retrieve all the available symbols for your queries, including supported commodities and currencies.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

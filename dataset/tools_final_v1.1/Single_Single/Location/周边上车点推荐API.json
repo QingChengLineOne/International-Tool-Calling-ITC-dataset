@@ -1,0 +1,50 @@
+{
+    "tool_name": "周边上车点推荐API",
+    "tool_description": "用于检索坐标点周围的上车点，包含名称、坐标、距离等信息",
+    "home_url": "https://www.free-api.com/doc/287",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "周边上车点推荐",
+            "url": "http://api.map.baidu.com/parking/search",
+            "description": "检索坐标点周围的上车点",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ak",
+                    "type": "string",
+                    "description": "api_key",
+                    "default": "hy8VOY8ik4LPjgHHfPFdbA9pE5rzWUwV"
+                },
+                {
+                    "name": "location",
+                    "type": "string",
+                    "description": "查询位置坐标",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "coord_type",
+                    "type": "string",
+                    "description": "坐标类型",
+                    "default": "bd09ll"
+                },
+                {
+                    "name": "sn",
+                    "type": "string",
+                    "description": "sn校验",
+                    "default": ""
+                },
+                {
+                    "name": "radius",
+                    "type": "string",
+                    "description": "检索半径",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

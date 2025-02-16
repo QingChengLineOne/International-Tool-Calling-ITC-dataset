@@ -1,0 +1,37 @@
+{
+    "tool_name": "免费短剧API",
+    "tool_description": "免费短剧API接口",
+    "home_url": "https://api.aa1.cn/doc/dj.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "免费短剧API",
+            "url": "https://api.hytys.cn/api/?path=movies",
+            "description": "获取免费短剧相关内容",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "page",
+                    "type": "int",
+                    "description": "当前页码，默认为1",
+                    "default": "1"
+                },
+                {
+                    "name": "limit",
+                    "type": "int",
+                    "description": "每页显示条数，默认为10",
+                    "default": "10"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "搜索关键词，如'总裁'，留空则不搜索",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

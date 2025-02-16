@@ -1,0 +1,18 @@
+{
+    "tool_name": "UUID生成API",
+    "tool_description": "提供UUID（通用唯一识别码）生成服务的API接口",
+    "home_url": "https://api.aa1.cn/doc/uuid-xx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "UUID生成接口",
+            "url": "https://v2.api-m.com/api/uuid",
+            "description": "生成一个随机的UUID",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

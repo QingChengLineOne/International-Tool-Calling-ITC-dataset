@@ -1,0 +1,25 @@
+{
+    "tool_name": "IP查询API",
+    "tool_description": "IP查询接口，使用ip138数据，数据缓存3天",
+    "home_url": "https://api.aa1.cn/doc/ip-api-m.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "IP查询接口",
+            "url": "https://v2.api-m.com/api/ip",
+            "description": "查询指定IP的详细信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "需要查询的IP地址",
+                    "default": "请提供有效的IP地址"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

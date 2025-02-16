@@ -1,0 +1,156 @@
+{
+    "tool_name": "HAPI Books",
+    "tool_description": "HAPI Books is an API that provides information about thousands of books from around the world. Users can search for books by name, genre, and discover the best books by year, among other features.",
+    "home_url": "https://rapidapi.com/roftcomp-laGmBwlWLm/api/hapi-books/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get the Most Popular Authors",
+            "url": "https://hapi-books.p.rapidapi.com/top_authors",
+            "description": "Retrieves a list of the most popular authors currently, along with relevant information.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Book Information by Book Id",
+            "url": "https://hapi-books.p.rapidapi.com/book/{book_id}",
+            "description": "Returns detailed information about a book given its ID, including name, published date, authors, synopsis, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "book_Id",
+                    "type": "string",
+                    "description": "The unique identifier for the book.",
+                    "default": "56597885"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Weekly Popular Books by Genre",
+            "url": "https://hapi-books.p.rapidapi.com/week/{genre}/{number_results}",
+            "description": "Returns the most popular books from the last week for a specified genre.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "genre",
+                    "type": "string",
+                    "description": "The genre of books to retrieve.",
+                    "default": "horror"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "number_results",
+                    "type": "NUMBER",
+                    "description": "The number of results to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Search Books by Name",
+            "url": "https://hapi-books.p.rapidapi.com/search/{book_name}",
+            "description": "Search for books by name. Spaces in the book name should be replaced with '+'. Returns up to 20 related books with details such as name, authors, cover image URL, and launched year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "book_name",
+                    "type": "string",
+                    "description": "The name of the book to search for.",
+                    "default": "the+walking+dead"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get the Awarded Books of a Year",
+            "url": "https://hapi-books.p.rapidapi.com/top/{year}",
+            "description": "Returns a list of the best books of a specified year by their winning category, including name, winning category, and cover image.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "year",
+                    "type": "string",
+                    "description": "The year for which to retrieve awarded books.",
+                    "default": "2021"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "List of Nominated Books for a Genre in a Year",
+            "url": "https://hapi-books.p.rapidapi.com/nominees/{genre}/{year}",
+            "description": "Retrieves a list of all nominated books for a specific genre in a given year.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "genre",
+                    "type": "string",
+                    "description": "The genre for which to retrieve nominated books.",
+                    "default": "romance"
+                },
+                {
+                    "name": "year",
+                    "type": "string",
+                    "description": "The year for which to retrieve nominated books.",
+                    "default": "2020"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Author Information by Id",
+            "url": "https://hapi-books.p.rapidapi.com/author/{author_id}",
+            "description": "Provides detailed information about an author, including name, biography, and a list of their books.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "author_Id",
+                    "type": "string",
+                    "description": "The unique identifier for the author.",
+                    "default": "239579"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get the Top 15 most popular books in a Month of a Year",
+            "url": "https://hapi-books.p.rapidapi.com/month/{year}/{month}",
+            "description": "Provides the year and month (between 1 and 12) to receive the 15 most popular books for that month.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "month",
+                    "type": "string",
+                    "description": "The month for which to retrieve popular books.",
+                    "default": "3"
+                },
+                {
+                    "name": "year",
+                    "type": "string",
+                    "description": "The year for which to retrieve popular books.",
+                    "default": "2022"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

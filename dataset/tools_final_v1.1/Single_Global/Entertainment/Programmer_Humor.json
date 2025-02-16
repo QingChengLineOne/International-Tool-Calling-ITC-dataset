@@ -1,0 +1,106 @@
+{
+    "tool_name": "Programmer Humor",
+    "tool_description": "This API fetches funny posts from various sites around the web, specifically targeting programming-related humor, and makes them available for integration on your blog or other platforms.",
+    "home_url": "https://rapidapi.com/davidanitoiu/api/programmer-humor/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Top 5 Latest Posts from Reddit",
+            "url": "https://programmer-humor.p.rapidapi.com/api/reddit",
+            "description": "This endpoint returns the top 5 posts uploaded today from Reddit, sorted by upvotes.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "after",
+                    "type": "STRING",
+                    "description": "Used for pagination to fetch posts after a specific post ID.",
+                    "default": ""
+                },
+                {
+                    "name": "sorting",
+                    "type": "ENUM",
+                    "description": "Defines the sorting criteria for the posts.",
+                    "default": ""
+                },
+                {
+                    "name": "subreddit",
+                    "type": "ENUM",
+                    "description": "Specifies the subreddit to fetch posts from.",
+                    "default": ""
+                },
+                {
+                    "name": "timeframe",
+                    "type": "ENUM",
+                    "description": "Defines the timeframe for the posts to be fetched.",
+                    "default": ""
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Limits the number of posts returned.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "url": {
+                            "type": "string"
+                        },
+                        "sourceUrl": {
+                            "type": "string"
+                        },
+                        "thumbnail": {
+                            "type": "string"
+                        },
+                        "media": {
+                            "type": "string"
+                        },
+                        "upvotes": {
+                            "type": "integer"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "permalink": {
+                            "type": "string"
+                        },
+                        "source": {
+                            "type": "string"
+                        },
+                        "posted": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get latest 10 posts from 9gag",
+            "url": "https://programmer-humor.p.rapidapi.com/api/9gag",
+            "description": "Fetches the latest 10 posts from 9gag that are tagged with programming-related keywords.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "after",
+                    "type": "NUMBER",
+                    "description": "Used for pagination to fetch posts after a specific index.",
+                    "default": "5"
+                },
+                {
+                    "name": "sorting",
+                    "type": "ENUM",
+                    "description": "Defines the sorting criteria for the posts.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

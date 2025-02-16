@@ -1,0 +1,31 @@
+{
+    "tool_name": "新闻热搜-抖音热榜",
+    "tool_description": "获取抖音热榜数据【示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。】",
+    "home_url": "https://api.aa1.cn/doc/douyinrs.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "抖音热榜数据获取API",
+            "url": "https://cn.apihz.cn/api/xinwen/douyin.php",
+            "description": "提供抖音热榜数据查询服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子分配的ID，用于验证身份",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子分配的密钥，用于验证身份",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

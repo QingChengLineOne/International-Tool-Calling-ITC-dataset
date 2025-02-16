@@ -1,0 +1,35 @@
+{
+    "tool_name": "CPF Validator",
+    "tool_description": "Validates Brazilian CPF numbers and generates random valid CPF numbers.",
+    "home_url": "https://rapidapi.com/ulisses-9zez-A6pzdm/api/cpf-validator/",
+    "country": "Brazil",
+    "api_list": [
+        {
+            "name": "Validate CPF number",
+            "url": "https://cpf-validator.p.rapidapi.com/validate/cpf",
+            "description": "Checks if a CPF number is valid.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "n",
+                    "type": "STRING",
+                    "description": "The CPF number to validate.",
+                    "default": "123.456.789-09"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Generate CPF",
+            "url": "https://cpf-validator.p.rapidapi.com/generate/cpf",
+            "description": "Generates a random valid CPF number.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

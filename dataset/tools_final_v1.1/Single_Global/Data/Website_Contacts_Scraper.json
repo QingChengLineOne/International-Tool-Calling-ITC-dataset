@@ -1,0 +1,178 @@
+{
+    "tool_name": "Website Contacts Scraper",
+    "tool_description": "Scrape emails, phone numbers, and social profiles in real-time from all major social platforms: Facebook, TikTok, Instagram, Twitter, LinkedIn, and others from a website domain.",
+    "home_url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/website-contacts-scraper/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Scrape Contacts from Website",
+            "url": "https://website-contacts-scraper.p.rapidapi.com/scrape-contacts",
+            "description": "Extract emails, phone numbers, and social profiles from the root domain of a website.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Domain from which to scrape emails and contacts (e.g., wsgr.com). Accepts any valid URL and uses its root domain as a starting point for the extraction.",
+                    "default": "wsgr.com"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "match_email_domain",
+                    "type": "BOOLEAN",
+                    "description": "Only return emails in the same domain as the one supplied with the *query* parameter.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "domain": {
+                                    "type": "string"
+                                },
+                                "query": {
+                                    "type": "string"
+                                },
+                                "emails": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "value": {
+                                                "type": "string"
+                                            },
+                                            "sources": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "phone_numbers": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "value": {
+                                                "type": "string"
+                                            },
+                                            "sources": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "facebook": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "instagram": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "tiktok": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "snapchat": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "twitter": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "linkedin": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "github": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "youtube": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "pinterest": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get Website by Keyword",
+            "url": "https://website-contacts-scraper.p.rapidapi.com/website-url-by-keyword",
+            "description": "Get company website URL by keyword or company name. Up to 20 keywords are supported in a single query.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "rapidapi": {
+                                "type": "string"
+                            },
+                            "wilson sonsini": {
+                                "type": "string"
+                            },
+                            "microsoft": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

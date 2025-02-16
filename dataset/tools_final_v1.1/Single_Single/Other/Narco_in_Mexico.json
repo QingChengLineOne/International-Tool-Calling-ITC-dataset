@@ -1,0 +1,18 @@
+{
+    "tool_name": "Narco in Mexico",
+    "tool_description": "A tool providing news related to narco activities in Mexico.",
+    "home_url": "https://rapidapi.com/betoalien/api/narco-in-mexico/",
+    "country": "Mexico",
+    "api_list": [
+        {
+            "name": "Get All Narco News",
+            "url": "https://narco-in-mexico.p.rapidapi.com/news",
+            "description": "Fetches all the latest news related to narco activities in Mexico.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

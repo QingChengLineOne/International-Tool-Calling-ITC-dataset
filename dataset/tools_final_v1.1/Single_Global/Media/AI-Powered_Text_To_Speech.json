@@ -1,0 +1,18 @@
+{
+    "tool_name": "AI-Powered Text To Speech",
+    "tool_description": "This API provides 93 voices in 39 languages using 2 speech engines, leveraging deep learning technologies to synthesize natural-sounding human speech. It allows developers to easily integrate text-to-speech (TTS) capabilities into their applications.",
+    "home_url": "https://rapidapi.com/morpehus22/api/ai-powered-text-to-speech1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Synthesize Speech",
+            "url": "https://ai-powered-text-to-speech1.p.rapidapi.com/synthesize-speech",
+            "description": "This endpoint synthesizes speech from the provided text input, allowing for the generation of audio output in various voices and languages.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "ExchangeRate-API",
+    "tool_description": "Free currency conversion API for all 160 world currencies. Tens of thousands of developers have picked ExchangeRate-API.com over the last 10 years for its reliable data & exceptional uptime - give it a try!",
+    "home_url": "https://rapidapi.com/exchangerateapi/api/exchangerate-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Latest Rates",
+            "url": "https://exchangerate-api.p.rapidapi.com/rapid/latest/{base_code}",
+            "description": "This endpoint returns the latest exchange rates for the base currency code you have supplied. You can view the list of supported currency codes here: [https://www.exchangerate-api.com/docs/supported-currencies](https://www.exchangerate-api.com/docs/supported-currencies)",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "Base_Code",
+                    "type": "string",
+                    "description": "The currency code for which you want to retrieve the latest exchange rates.",
+                    "default": "USD"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

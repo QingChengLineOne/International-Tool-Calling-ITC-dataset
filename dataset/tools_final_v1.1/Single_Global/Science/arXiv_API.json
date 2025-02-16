@@ -1,0 +1,38 @@
+{
+    "tool_name": "arXiv API",
+    "tool_description": "The arXiv API allows programmatic access to arXiv's e-print content and metadata, facilitating new and creative use of the vast body of material on arXiv by providing a low barrier to entry for application developers.",
+    "home_url": "https://arxiv.org",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "arXiv Query API",
+            "url": "http://export.arxiv.org/api/query",
+            "description": "Retrieves results that match the search query. The API returns results in the Atom 1.0 format.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The search query to match against arXiv entries.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "start",
+                    "type": "integer",
+                    "description": "The starting index for the results.",
+                    "default": "0"
+                },
+                {
+                    "name": "max_results",
+                    "type": "integer",
+                    "description": "The maximum number of results to return.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

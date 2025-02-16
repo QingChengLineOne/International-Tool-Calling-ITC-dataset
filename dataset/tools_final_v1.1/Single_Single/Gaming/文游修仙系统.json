@@ -1,0 +1,43 @@
+{
+    "tool_name": "文游·修仙系统",
+    "tool_description": "一个可以给QQbot调用的游戏接口",
+    "home_url": "https://api.aa1.cn/doc/xiuxian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文游·修仙系统接口",
+            "url": "https://papi.oxoll.cn/API/xiuxian.php",
+            "description": "用于QQbot进行游戏操作和查询的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "action",
+                    "type": "string",
+                    "description": "操作类型，如'login'、'logout'、'get_status'等",
+                    "default": ""
+                },
+                {
+                    "name": "qq",
+                    "type": "int",
+                    "description": "QQ号码，用于标识用户",
+                    "default": ""
+                },
+                {
+                    "name": "qq1",
+                    "type": "int",
+                    "description": "另一个QQ号码，用于游戏内操作，如交易等",
+                    "default": ""
+                },
+                {
+                    "name": "exp",
+                    "type": "int",
+                    "description": "经验值，用于某些需要消耗经验的操作",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "tool_name": "词云网页API",
+    "tool_description": "自定义词表，背景，词云遮罩。可使用iframe等内嵌到网页中使用",
+    "home_url": "https://api.aa1.cn/doc/wordcloud.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "词云生成API",
+            "url": "http://niningqi.com/api/wordcloud",
+            "description": "根据提供的词频和参数生成词云图像",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "keywords",
+                    "type": "string",
+                    "description": "词频数据，以JSON字符串格式提供，例如：{\"关键词1\":\"频次1\",\"关键词2\":\"频次2\",...}",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "bgColor",
+                    "type": "string",
+                    "description": "背景颜色，默认为白色，可以输入十六进制颜色代码或颜色名称",
+                    "default": "white"
+                },
+                {
+                    "name": "mask",
+                    "type": "string",
+                    "description": "词云遮罩图片的URL，用于定义词云的形状",
+                    "default": ""
+                },
+                {
+                    "name": "font",
+                    "type": "string",
+                    "description": "字体样式，默认使用系统字体",
+                    "default": ""
+                },
+                {
+                    "name": "width",
+                    "type": "int",
+                    "description": "生成的词云宽度，单位为像素",
+                    "default": ""
+                },
+                {
+                    "name": "height",
+                    "type": "int",
+                    "description": "生成的词云高度，单位为像素",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

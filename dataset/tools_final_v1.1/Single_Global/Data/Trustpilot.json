@@ -1,0 +1,31 @@
+{
+    "tool_name": "Trustpilot",
+    "tool_description": "Obtain all data from any Trustpilot website. Useful for creating carousels with reviews. This is a non-official API that retrieves information directly from their website.",
+    "home_url": "https://rapidapi.com/airaudoeduardo/api/trustpilot4/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "GetFeedbacksbyDomain",
+            "url": "https://trustpilot4.p.rapidapi.com/",
+            "description": "Obtain feedbacks by specifying a 'domain' and 'page'. This API also provides information about the business associated with the domain.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "domain",
+                    "type": "STRING",
+                    "description": "The domain of the business for which feedback is requested.",
+                    "default": "www.google.com"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number of the feedback results to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

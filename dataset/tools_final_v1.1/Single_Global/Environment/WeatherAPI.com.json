@@ -1,0 +1,225 @@
+{
+    "tool_name": "WeatherAPI.com",
+    "tool_description": "WeatherAPI.com is a powerful fully managed free weather and geolocation API provider that offers extensive APIs for current weather, forecasts, historical weather, weather alerts, air quality data, IP lookup, astronomy, sports, time zone, and geolocation.",
+    "home_url": "https://rapidapi.com/weatherapi/api/weatherapi-com/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Realtime Weather API",
+            "url": "https://weatherapi-com.p.rapidapi.com/current.json",
+            "description": "Provides up-to-date current weather information in JSON and XML formats.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": "53.1,-0.13"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Forecast Weather API",
+            "url": "https://weatherapi-com.p.rapidapi.com/forecast.json",
+            "description": "Returns up to a 14-day weather forecast and weather alerts, including astronomy data and hourly intervals.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": "London"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "days",
+                    "type": "NUMBER",
+                    "description": "Number of days of forecast required.",
+                    "default": "3"
+                },
+                {
+                    "name": "dt",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Specific date for the forecast, should be between today and the next 10 days.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language for the 'condition:text' field in the API response.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Time Zone API",
+            "url": "https://weatherapi-com.p.rapidapi.com/timezone.json",
+            "description": "Provides up-to-date time zone and local time information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Future Weather API",
+            "url": "https://weatherapi-com.p.rapidapi.com/future.json",
+            "description": "Returns weather information in 3-hour intervals for a date between 14 and 300 days in the future.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dt",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "'dt' should be between 14 and 300 days from today.",
+                    "default": "2022-12-25"
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": "London"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language for the 'condition:text' field in the API response.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Sports API",
+            "url": "https://weatherapi-com.p.rapidapi.com/sports.json",
+            "description": "Provides a listing of all upcoming sports events for football, cricket, and golf.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location.",
+                    "default": "London"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "History Weather API",
+            "url": "https://weatherapi-com.p.rapidapi.com/history.json",
+            "description": "Returns historical weather data for a date on or after January 1, 2010.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dt",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "'dt' should be on or after January 1, 2010.",
+                    "default": ""
+                },
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": "London"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "hour",
+                    "type": "NUMBER",
+                    "description": "Restrict history output to a specific hour in a given day.",
+                    "default": ""
+                },
+                {
+                    "name": "end_dt",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "'end_dt' should be on or after January 1, 2010 and equal to or greater than 'dt'.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Language for the 'condition:text' field in the API response.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "IP Lookup API",
+            "url": "https://weatherapi-com.p.rapidapi.com/ip.json",
+            "description": "Provides up-to-date information for an IP address.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for IP address, which can be 'auto:ip' or a specific IP address.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Astronomy API",
+            "url": "https://weatherapi-com.p.rapidapi.com/astronomy.json",
+            "description": "Provides information on sunrise, sunset, moonrise, moonset, moon phase, and illumination.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": "London"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "dt",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Specific date for astronomy data.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search/Autocomplete API",
+            "url": "https://weatherapi-com.p.rapidapi.com/search.json",
+            "description": "Returns matching cities and towns based on the query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Query parameter for location, which can be latitude and longitude, city name, US zip code, UK postcode, Canadian postal code, METAR, IATA code, or IP address.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

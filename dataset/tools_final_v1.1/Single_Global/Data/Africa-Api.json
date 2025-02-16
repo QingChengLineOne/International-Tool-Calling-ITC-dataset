@@ -1,0 +1,339 @@
+{
+    "tool_name": "Africa-Api",
+    "tool_description": "Africa-Api is a comprehensive project that provides a vast range of data about Africa, including countries, languages, tourism destinations, colonial history, and much more. This project offers a user-friendly interface that enables users to easily access and retrieve data about different African countries and their respective histories, languages, and cultures. The Africa-Api project is an invaluable resource for individuals or organizations looking to learn more about the African continent.",
+    "home_url": "https://rapidapi.com/arllence/api/africa-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "tourism[Per Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/tourism",
+            "description": "Returns best tourism locations and categories you can explore in a specific country in Africa.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which tourism information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "independence[All Countries]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/independence",
+            "description": "Returns information about a country's independence date and the colonizer(s) if the country name is provided.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which independence information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "languages[Per Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/languages",
+            "description": "Returns a list of all languages spoken in a specific country in Africa.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which language information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "sizes[All Countries]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/sizes",
+            "description": "Gets the sizes of all countries in Africa.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which size information is requested.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "resources[Per Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/resources",
+            "description": "Provides a list of the most important resources that an African country relies on for its economy.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which resource information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "countries[All Countries]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/countries",
+            "description": "Returns a list of all countries in Africa with details such as name, latitude, longitude, phone code, abbreviation, and capital city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "Specify 'all' to get information on all countries.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "tourism[All Countries]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/tourism",
+            "description": "Returns best tourism locations and categories you can explore in each country in Africa.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "Specify 'all' to get tourism information for all countries.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "languages[All Countries]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/languages",
+            "description": "Returns a list of all languages spoken in each country in Africa.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "Specify 'all' to get language information for all countries.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "sizes[Per Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/sizes",
+            "description": "Gets the size of a specific country.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which size information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "province/state/county[Per Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/counties",
+            "description": "Returns information about provinces, states, or counties in a specific country in Africa.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which county information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "independence[Per Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/independence",
+            "description": "Returns information about a country's independence date and the colonizer(s) if the country name is provided.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the country for which independence information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "resources[All Countries]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/resources",
+            "description": "Provides a list of the most important resources that each African country relies on for its economy.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "Specify 'all' to get resource information for all countries.",
+                    "default": "all"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "country[Specific Country]",
+            "url": "https://africa-api.p.rapidapi.com/africa/api/v1/africa/countries",
+            "description": "Returns detailed information about a specific country in Africa, such as name, latitude, longitude, phone code, abbreviation, and capital city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country_name",
+                    "type": "STRING",
+                    "description": "The name of the specific country for which information is requested.",
+                    "default": "kenya"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

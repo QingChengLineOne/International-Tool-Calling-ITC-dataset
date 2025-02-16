@@ -1,0 +1,25 @@
+{
+    "tool_name": "QQ绿钻查询API",
+    "tool_description": "查询用户QQ绿钻等级、成长值、是否为年费绿钻",
+    "home_url": "https://api.aa1.cn/doc/lvzuan-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "查询绿钻信息",
+            "url": "https://api.ahfi.cn/api/lvzuan",
+            "description": "用于查询指定QQ号的绿钻信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要查询的QQ号",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

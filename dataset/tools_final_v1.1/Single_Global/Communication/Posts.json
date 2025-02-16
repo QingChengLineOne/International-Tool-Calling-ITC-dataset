@@ -1,0 +1,18 @@
+{
+    "tool_name": "Posts",
+    "tool_description": "Posts API for testing, allowing users to retrieve posts from a specified source.",
+    "home_url": "https://rapidapi.com/thenorthface24-KSxddjKo-I/api/posts15/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "posts",
+            "url": "https://posts15.p.rapidapi.com/posts",
+            "description": "Retrieves a list of posts from the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

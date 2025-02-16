@@ -1,0 +1,38 @@
+{
+    "tool_name": "随机二次元壁纸API",
+    "tool_description": "返回二次元动漫图片的API",
+    "home_url": "https://api.aa1.cn/doc/eqy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机二次元壁纸API",
+            "url": "https://img.8845.top/ecy.php",
+            "description": "获取随机二次元动漫图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "license",
+                    "type": "string",
+                    "description": "api-key",
+                    "default": "fengyyds"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "pc",
+                    "type": "boolean",
+                    "description": "是否以PC端模式返回图片，默认为false（手机端）",
+                    "default": "false"
+                },
+                {
+                    "name": "return_link",
+                    "type": "boolean",
+                    "description": "是否返回图片链接，默认为true（返回图片链接）",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

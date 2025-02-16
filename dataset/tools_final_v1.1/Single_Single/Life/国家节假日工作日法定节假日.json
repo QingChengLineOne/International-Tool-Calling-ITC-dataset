@@ -1,0 +1,38 @@
+{
+    "tool_name": "国家节假日/工作日/法定节假日",
+    "tool_description": "提供国家法定节假日、工作日查询的API接口",
+    "home_url": "https://api.aa1.cn/doc/holiday-songzixian.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "节假日查询API",
+            "url": "https://api.songzixian.com/api/holiday",
+            "description": "查询指定日期的国家法定节假日信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "dataSource",
+                    "type": "string",
+                    "description": "数据源，可选值：LOCAL_HOLIDAY（本地节假日）、NATIONAL_HOLIDAY（国家节假日）、WORKING_DAY（工作日）",
+                    "default": "NATIONAL_HOLIDAY"
+                },
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "查询的日期，格式为YYYY-MM-DD",
+                    "default": "当前日期"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "国家代码，例如CN代表中国，可选值：CN、US、JP等",
+                    "default": "CN"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

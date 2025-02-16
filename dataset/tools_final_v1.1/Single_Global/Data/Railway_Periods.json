@@ -1,0 +1,25 @@
+{
+    "tool_name": "Railway Periods",
+    "tool_description": "An API to calculate the railway period of a UTC date in milliseconds since epoch (Unix timestamp).",
+    "home_url": "https://rapidapi.com/GavinBeattie/api/railway-periods/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Railway Period for UTC date",
+            "url": "https://railway-periods.p.rapidapi.com/millis/{millis}",
+            "description": "This endpoint returns the railway period corresponding to a given UTC date in milliseconds since epoch. The railway period is defined between the years 1969-1970 and 2243-2244.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "millis",
+                    "type": "NUMBER",
+                    "description": "The UTC date in milliseconds since epoch.",
+                    "default": "1654470000000"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

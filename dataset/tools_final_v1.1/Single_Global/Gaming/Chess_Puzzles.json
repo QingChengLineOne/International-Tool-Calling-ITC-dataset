@@ -1,0 +1,66 @@
+{
+    "tool_name": "Chess Puzzles",
+    "tool_description": "Query a database of over 2 million Chess Puzzles",
+    "home_url": "https://rapidapi.com/KeeghanM/api/chess-puzzles/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Puzzles",
+            "url": "https://chess-puzzles.p.rapidapi.com/",
+            "description": "The main access point for the API to retrieve a list of chess puzzles.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "themesType",
+                    "type": "STRING",
+                    "description": "Type of themes to filter puzzles.",
+                    "default": "ALL"
+                },
+                {
+                    "name": "rating",
+                    "type": "NUMBER",
+                    "description": "Minimum rating of the puzzles to retrieve.",
+                    "default": "1500"
+                },
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of puzzles to return.",
+                    "default": "25"
+                },
+                {
+                    "name": "themes",
+                    "type": "STRING",
+                    "description": "Specific themes to filter puzzles.",
+                    "default": "[\"middlegame\",\"advantage\"]"
+                },
+                {
+                    "name": "playerMoves",
+                    "type": "NUMBER",
+                    "description": "Number of moves the player has made in the puzzle.",
+                    "default": "4"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Puzzle by Id",
+            "url": "https://chess-puzzles.p.rapidapi.com/",
+            "description": "Gets a single puzzle by its unique ID.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier of the puzzle to retrieve.",
+                    "default": "HxxIU"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

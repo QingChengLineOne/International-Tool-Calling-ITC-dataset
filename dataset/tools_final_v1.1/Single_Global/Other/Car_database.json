@@ -1,0 +1,31 @@
+{
+    "tool_name": "Car database",
+    "tool_description": "A comprehensive database of car makes and models, providing users with detailed information about various vehicles.",
+    "home_url": "https://rapidapi.com/ashurbekovram/api/car-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Makes",
+            "url": "https://car-database.p.rapidapi.com/makes",
+            "description": "Returns a list of all car makes available in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

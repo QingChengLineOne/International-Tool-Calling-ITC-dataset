@@ -1,0 +1,32 @@
+{
+    "tool_name": "inboxes.com",
+    "tool_description": "inboxes.com provides temporary email accounts for testing and automation purposes.",
+    "home_url": "https://rapidapi.com/startfu-startfu-default/api/inboxes-com/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ActivateInbox",
+            "url": "https://inboxes-com.p.rapidapi.com/inboxes/me@getnada.com",
+            "description": "Activates a single inbox (email address) and waits for incoming messages.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "inboxId",
+                    "type": "STRING",
+                    "description": "The ID of the inbox to be activated.",
+                    "default": "me@getnada.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "ok": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    ]
+}

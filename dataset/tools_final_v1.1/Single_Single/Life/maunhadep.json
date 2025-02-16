@@ -1,0 +1,18 @@
+{
+    "tool_name": "maunhadep",
+    "tool_description": "Mẫu nhà đẹp là nhóm của Công ty TNHH Thiết kế Thi công Nhà đẹp, nhằm tạo ra một sân chơi chung để tham khảo những mẫu nhà đẹp và chia sẻ kinh nghiệm trong lĩnh vực thiết kế, thi công nhà. Với 10 năm kinh nghiệm, các chuyên gia có thể hỗ trợ và tư vấn cho bạn trong quá trình xây dựng nhà.",
+    "home_url": "https://rapidapi.com/maunhadep/api/maunhadep/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Mẫu nhà đẹp",
+            "url": "https://maunhadep.p.rapidapi.com/",
+            "description": "Cung cấp thông tin và mẫu thiết kế nhà đẹp, hỗ trợ người dùng trong việc tham khảo và thảo luận về thiết kế nhà.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

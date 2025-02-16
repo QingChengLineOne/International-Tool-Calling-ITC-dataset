@@ -1,0 +1,18 @@
+{
+    "tool_name": "Chess Move Maker",
+    "tool_description": "For either black or white, ask for the best moves given any board.",
+    "home_url": "https://rapidapi.com/exit-germany-exit-germany-default/api/chess-move-maker/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Best Moves",
+            "url": "https://chess-move-maker.p.rapidapi.com/chess",
+            "description": "A list of best moves is returned when color/positions are provided.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

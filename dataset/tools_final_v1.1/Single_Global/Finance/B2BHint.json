@@ -1,0 +1,229 @@
+{
+    "tool_name": "B2BHint",
+    "tool_description": "B2BHint is a business tool that provides access to official registry data on companies and the people associated with them. With B2BHint, users can easily search and explore information on companies, enabling informed decisions and business growth.",
+    "home_url": "https://rapidapi.com/b2bhint-b2bhint-default/api/b2bhint/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Search person by name",
+            "url": "https://b2bhint.p.rapidapi.com/api/v1/rapidapi/person/search",
+            "description": "Search for a person by name and parameters, returning a list of matching individuals.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "The name of the person to search for.",
+                    "default": "Elon Musk"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "countryCode",
+                    "type": "STRING",
+                    "description": "The ISO2 country code to narrow the search.",
+                    "default": "us"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "shortName": {
+                            "type": "null"
+                        },
+                        "brandName": {
+                            "type": "null"
+                        },
+                        "internationalNumber": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get company [Full data]",
+            "url": "https://b2bhint.p.rapidapi.com/api/v1/rapidapi/company/full",
+            "description": "Retrieve full company data, including contacts and financial reports.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "internationalNumber",
+                    "type": "STRING",
+                    "description": "The international number of the company.",
+                    "default": "0458.780.306"
+                },
+                {
+                    "name": "countryCode",
+                    "type": "STRING",
+                    "description": "The ISO2 country code of the company.",
+                    "default": "be"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "shortName": {
+                            "type": "null"
+                        },
+                        "brandName": {
+                            "type": "null"
+                        },
+                        "internationalNumber": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search company by Name",
+            "url": "https://b2bhint.p.rapidapi.com/api/v1/rapidapi/company/search",
+            "description": "Search for a company by name or other identifiers, returning a list of matching companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Company name or number or other identifiers.",
+                    "default": "Tesla"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "countryCode",
+                    "type": "STRING",
+                    "description": "The ISO2 country code to narrow the search.",
+                    "default": "be"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "shortName": {
+                            "type": "null"
+                        },
+                        "brandName": {
+                            "type": "null"
+                        },
+                        "internationalNumber": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Get company [Basic data]",
+            "url": "https://b2bhint.p.rapidapi.com/api/v1/rapidapi/company/basic",
+            "description": "Retrieve basic company data from B2BHint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "countryCode",
+                    "type": "STRING",
+                    "description": "The ISO2 country code of the company.",
+                    "default": "be"
+                },
+                {
+                    "name": "internationalNumber",
+                    "type": "STRING",
+                    "description": "The international number of the company.",
+                    "default": "0458.780.306"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "shortName": {
+                            "type": "null"
+                        },
+                        "brandName": {
+                            "type": "null"
+                        },
+                        "internationalNumber": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search company by Email",
+            "url": "https://b2bhint.p.rapidapi.com/api/v1/rapidapi/company/search-by-email",
+            "description": "Search for a company using an email address, returning a list of matching companies.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "email",
+                    "type": "STRING",
+                    "description": "The email address to search for.",
+                    "default": "rsing@tesla.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "shortName": {
+                            "type": "null"
+                        },
+                        "brandName": {
+                            "type": "null"
+                        },
+                        "internationalNumber": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

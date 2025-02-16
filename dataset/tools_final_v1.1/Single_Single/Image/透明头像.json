@@ -1,0 +1,25 @@
+{
+    "tool_name": "透明头像",
+    "tool_description": "通过QQ号生成矩形透明头像，需特殊方法上传",
+    "home_url": "https://api.aa1.cn/doc/tmtx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "透明头像生成接口",
+            "url": "http://api.tangdouz.com/wz/tmtx.php",
+            "description": "用于生成指定QQ号的矩形透明头像",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "q",
+                    "type": "string",
+                    "description": "需要生成头像的QQ号",
+                    "default": "无默认值"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

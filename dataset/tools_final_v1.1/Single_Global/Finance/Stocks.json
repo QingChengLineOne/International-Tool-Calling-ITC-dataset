@@ -1,0 +1,100 @@
+{
+    "tool_name": "Stocks",
+    "tool_description": "Get stock information using a simple and free REST API.",
+    "home_url": "https://rapidapi.com/braskam-technology-braskam-technology-default/api/stocks73/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get the stock history by exchange code and stock code",
+            "url": "https://stocks73.p.rapidapi.com/v1/stocks/{exchangecode}/{stockcode}/values",
+            "description": "Retrieve the historical stock data based on the specified exchange code and stock code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date for which to retrieve stock history.",
+                    "default": "2023-02-01"
+                },
+                {
+                    "name": "exchangeCode",
+                    "type": "string",
+                    "description": "The code of the stock exchange (e.g., NASDAQ).",
+                    "default": "NASDAQ"
+                },
+                {
+                    "name": "stockCode",
+                    "type": "string",
+                    "description": "The code of the stock (e.g., GOOG).",
+                    "default": "GOOG"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get the current stock by exchange code and stock code",
+            "url": "https://stocks73.p.rapidapi.com/v1/stocks/{exchangecode}/{stockcode}",
+            "description": "Retrieve the current stock data based on the specified exchange code and stock code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "stockCode",
+                    "type": "string",
+                    "description": "The code of the stock (e.g., GOOG).",
+                    "default": "GOOG"
+                },
+                {
+                    "name": "exchangeCode",
+                    "type": "string",
+                    "description": "The code of the stock exchange (e.g., NASDAQ).",
+                    "default": "NASDAQ"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get the stock history by code",
+            "url": "https://stocks73.p.rapidapi.com/v1/stocks/{stockcode}/values",
+            "description": "Retrieve the historical stock data based on the specified stock code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "The date for which to retrieve stock history.",
+                    "default": "2023-02-01"
+                },
+                {
+                    "name": "stockCode",
+                    "type": "string",
+                    "description": "The code of the stock (e.g., GOOG).",
+                    "default": "GOOG"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get the current stock by code",
+            "url": "https://stocks73.p.rapidapi.com/v1/stocks/{stockcode}",
+            "description": "Retrieve the current stock data based on the specified stock code.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "stockCode",
+                    "type": "string",
+                    "description": "The code of the stock (e.g., GOOG).",
+                    "default": "GOOG"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "tool_name": "Indian Bank Statement",
+    "tool_description": "The Indian Bank Statement API assists banks and lenders in making informed decisions by providing insights into salary frequency and estimation, the current financial health of individuals, and identifying any risky behaviors associated with transactions.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/indian-bank-statement/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://indian-bank-statement.p.rapidapi.com/v3/tasks",
+            "description": "Fetches the API result using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the request to fetch the result.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Verify with Source",
+            "url": "https://indian-bank-statement.p.rapidapi.com/v3/tasks/async/verify_with_source/ind_bank_statement",
+            "description": "Verifies the bank statement and provides outputs regarding salary frequency, financial health, and transaction behaviors. Use the GET call to fetch the result of the request ID received in response.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

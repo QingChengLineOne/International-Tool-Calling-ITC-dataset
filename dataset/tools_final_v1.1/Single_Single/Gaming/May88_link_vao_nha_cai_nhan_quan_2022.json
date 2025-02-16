@@ -1,0 +1,18 @@
+{
+    "tool_name": "May88 link vao nha cai nhan quan 2022",
+    "tool_description": "May88.live - May88 ⭐️ Link vào may88 mới nhất, web cá cược thể thao trực tuyến, Casino, Keno, Lô đề, Slot game đa dạng với nhiều thể loại cá cược. Cung cấp thông tin và dịch vụ cá cược trực tuyến.",
+    "home_url": "https://rapidapi.com/may88live/api/may88-link-vao-nha-cai-nhan-quan-2022/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "May88 link vao nha cai 2022",
+            "url": "https://may88-link-vao-nha-cai-nhan-quan-2022.p.rapidapi.com/",
+            "description": "API cung cấp liên kết mới nhất đến trang web cá cược May88, cho phép người dùng truy cập các dịch vụ cá cược thể thao, Casino, Keno, và nhiều trò chơi khác.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

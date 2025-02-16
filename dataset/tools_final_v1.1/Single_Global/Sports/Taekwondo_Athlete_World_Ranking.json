@@ -1,0 +1,116 @@
+{
+    "tool_name": "Taekwondo_Athlete_World_Ranking",
+    "tool_description": "This API provides the world rankings of Taekwondo athletes across different weight categories.",
+    "home_url": "https://rapidapi.com/soyamchinglemba/api/taekwondo_athlete_world_ranking1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/GET_U-58_ATHLETE_RANKING",
+            "url": "https://taekwondo_athlete_world_ranking1.p.rapidapi.com/GET_U-58_ATHLETE_RANKING",
+            "description": "Fetches the world ranking of athletes in the U-58 weight category.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Country",
+                    "type": "STRING",
+                    "description": "Specify the country to filter the rankings.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        },
+                        "athlete_Rank": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        },
+                        "athlete_name": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "athlete_GAL": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "athlete_Country": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "athlete_Points": {
+                            "type": "number",
+                            "description": ""
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "/GET_U-54_ATHLETE_RANKING",
+            "url": "https://taekwondo_athlete_world_ranking1.p.rapidapi.com/GET_U-54_ATHLETE_RANKING",
+            "description": "Fetches the world ranking of athletes in the U-54 weight category.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Country",
+                    "type": "STRING",
+                    "description": "Specify the country to filter the rankings.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        },
+                        "athlete_Rank": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "",
+                            "minimum": -9223372036854776000,
+                            "maximum": 9223372036854776000
+                        },
+                        "athlete_name": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "athlete_GAL": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "athlete_Country": {
+                            "type": "string",
+                            "description": ""
+                        },
+                        "athlete_Points": {
+                            "type": "number",
+                            "description": ""
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

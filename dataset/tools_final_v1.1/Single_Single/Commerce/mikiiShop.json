@@ -1,0 +1,18 @@
+{
+    "tool_name": "mikiiShop",
+    "tool_description": "Mikiishop specializes in ordering high-end bags, wallets, and shoes for both men and women, including hard-to-find items. With three years of experience, we confidently assist customers in selecting the finest quality fake luxury products.",
+    "home_url": "https://rapidapi.com/mikiishop/api/mikiishop/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "Mikiishop",
+            "url": "https://mikiishop.p.rapidapi.com/",
+            "description": "This API provides access to Mikiishop's services, allowing users to explore a variety of high-end fashion items and make inquiries.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

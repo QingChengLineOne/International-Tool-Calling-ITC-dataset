@@ -1,0 +1,52 @@
+{
+    "tool_name": "Get Docs",
+    "tool_description": "An API for retrieving various documents and claims data.",
+    "home_url": "https://rapidapi.com/syedsadaqath/api/get-docs/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "RetrieveClaimListByUser",
+            "url": "https://get-docs.p.rapidapi.com/api/Claim/RetrieveClaimListByUser",
+            "description": "Retrieves a list of claims associated with a specific user.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetDocumentList",
+            "url": "https://get-docs.p.rapidapi.com/api/Claim/GetDocumentList",
+            "description": "Retrieves a list of documents associated with a specific claim.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "claimId",
+                    "type": "STRING",
+                    "description": "The unique identifier for the claim.",
+                    "default": "dd61c35e-3edd-ea11-a813-000d3a795762"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "GetAuthorizedBlobUriForCourtDocument",
+            "url": "https://get-docs.p.rapidapi.com/api/FileManager/GetAuthorizedBlobUriForCourtDocument",
+            "description": "Retrieves an authorized URI for accessing a specific court document.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "documentId",
+                    "type": "STRING",
+                    "description": "The unique identifier for the document.",
+                    "default": "41aac429-40dd-ea11-a813-000d3a79365a"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "tool_name": "自定义导航页面API",
+    "tool_description": "自定义导航引导页API，无任何广告植入",
+    "home_url": "https://api.aa1.cn/doc/api-dh.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "自定义导航页面接口",
+            "url": "https://api.aa1.cn/api/api-dh/",
+            "description": "生成自定义导航引导页的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "导航页面的名称",
+                    "default": "默认导航页面"
+                },
+                {
+                    "name": "an1",
+                    "type": "string",
+                    "description": "按钮1的名称",
+                    "default": "按钮1"
+                },
+                {
+                    "name": "url1",
+                    "type": "string",
+                    "description": "按钮1点击后跳转的URL",
+                    "default": "http://www.example.com"
+                },
+                {
+                    "name": "an2",
+                    "type": "string",
+                    "description": "按钮2的名称",
+                    "default": "按钮2"
+                },
+                {
+                    "name": "url2",
+                    "type": "string",
+                    "description": "按钮2点击后跳转的URL",
+                    "default": "http://www.example.com"
+                },
+                {
+                    "name": "an3",
+                    "type": "string",
+                    "description": "按钮3的名称",
+                    "default": "按钮3"
+                },
+                {
+                    "name": "url3",
+                    "type": "string",
+                    "description": "按钮3点击后跳转的URL",
+                    "default": "http://www.example.com"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

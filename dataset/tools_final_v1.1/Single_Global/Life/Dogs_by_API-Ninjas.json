@@ -1,0 +1,97 @@
+{
+    "tool_name": "Dogs by API-Ninjas",
+    "tool_description": "Detailed, qualitative information on over 200 different breeds of dogs. This API provides insights into various dog breeds, including their characteristics and care requirements.",
+    "home_url": "https://rapidapi.com/apininjas/api/dogs-by-api-ninjas/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/v1/dogs",
+            "url": "https://dogs-by-api-ninjas.p.rapidapi.com/v1/dogs",
+            "description": "Get a list of dog breeds matching specified parameters. Returns at most 20 results. To access more than 20 results, use the offset parameter to paginate through results.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Number of results to offset for pagination.",
+                    "default": ""
+                },
+                {
+                    "name": "energy",
+                    "type": "NUMBER",
+                    "description": "How much energy the breed has. Possible values: 0 (low energy) to 5 (high energy).",
+                    "default": ""
+                },
+                {
+                    "name": "protectiveness",
+                    "type": "NUMBER",
+                    "description": "How likely the breed is to alert strangers. Possible values: 0 (minimal alerting) to 5 (maximum alerting).",
+                    "default": ""
+                },
+                {
+                    "name": "max_weight",
+                    "type": "NUMBER",
+                    "description": "Maximum weight in pounds.",
+                    "default": ""
+                },
+                {
+                    "name": "min_weight",
+                    "type": "NUMBER",
+                    "description": "Minimum weight in pounds.",
+                    "default": ""
+                },
+                {
+                    "name": "trainability",
+                    "type": "NUMBER",
+                    "description": "How easy it is to train the breed. Possible values: 0 (very difficult) to 5 (very easy).",
+                    "default": ""
+                },
+                {
+                    "name": "shedding",
+                    "type": "NUMBER",
+                    "description": "How much hair the breed sheds. Possible values: 0 (no shedding) to 5 (maximum shedding).",
+                    "default": ""
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "description": "Name of the breed.",
+                    "default": "golden retriever"
+                },
+                {
+                    "name": "min_height",
+                    "type": "NUMBER",
+                    "description": "Minimum height in inches.",
+                    "default": ""
+                },
+                {
+                    "name": "barking",
+                    "type": "NUMBER",
+                    "description": "How vocal the breed is. Possible values: 0 (minimal barking) to 5 (maximum barking).",
+                    "default": ""
+                },
+                {
+                    "name": "max_height",
+                    "type": "NUMBER",
+                    "description": "Maximum height in inches.",
+                    "default": ""
+                },
+                {
+                    "name": "max_life_expectancy",
+                    "type": "NUMBER",
+                    "description": "Maximum life expectancy in years.",
+                    "default": ""
+                },
+                {
+                    "name": "min_life_expectancy",
+                    "type": "NUMBER",
+                    "description": "Minimum life expectancy in years.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,216 @@
+{
+    "tool_name": "Instagram Statistics API",
+    "tool_description": "A universal API for social media analytics, providing insights across multiple platforms including Instagram, YouTube, TikTok, Facebook, Twitter, and more. It offers data scraping capabilities for followers, interactions, engagement rates, demographics, and historical data.",
+    "home_url": "https://rapidapi.com/artemlipko/api/instagram-statistics-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Feed",
+            "url": "https://instagram-statistics-api.p.rapidapi.com/posts",
+            "description": "Returns a list of posts with all metrics for the specified period, including effectiveness of hashtags, post types, and text length.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The end date for the data retrieval.",
+                    "default": "07.09.2022"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The start date for the data retrieval.",
+                    "default": "01.09.2022"
+                },
+                {
+                    "name": "cid",
+                    "type": "STRING",
+                    "description": "The unique identifier for the Instagram account.",
+                    "default": "INST:17841400005463628"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "force",
+                    "type": "BOOLEAN",
+                    "description": "Set to true for priority data analysis and frequent statistics updates.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Profile by URL",
+            "url": "https://instagram-statistics-api.p.rapidapi.com/community",
+            "description": "Get full profile information with statistics and audience demographics including category, interests, gender, age, location, followers, engagement rate, and more.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL of the Instagram profile.",
+                    "default": "https://www.instagram.com/therock/"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Search",
+            "url": "https://instagram-statistics-api.p.rapidapi.com/search",
+            "description": "Search in the database of brands and influencers by various parameters including keywords, demographics, and engagement metrics.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "perPage",
+                    "type": "NUMBER",
+                    "description": "Number of results per page.",
+                    "default": "10"
+                },
+                {
+                    "name": "page",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "integer"
+                            },
+                            "message": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "pagination": {
+                        "type": "object",
+                        "properties": {
+                            "total": {
+                                "type": "integer"
+                            },
+                            "hasNextPage": {
+                                "type": "boolean"
+                            },
+                            "hasPrevPage": {
+                                "type": "boolean"
+                            },
+                            "nextPage": {
+                                "type": "integer"
+                            },
+                            "page": {
+                                "type": "integer"
+                            },
+                            "perPage": {
+                                "type": "integer"
+                            },
+                            "prevPage": {
+                                "type": "integer"
+                            },
+                            "totalPages": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Activity",
+            "url": "https://instagram-statistics-api.p.rapidapi.com/statistics/activity",
+            "description": "Returns data for plotting the activity time graph of account users, helping to understand optimal posting times.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cid",
+                    "type": "STRING",
+                    "description": "The unique identifier for the Instagram account.",
+                    "default": "INST:17841400005463628"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrospective",
+            "url": "https://instagram-statistics-api.p.rapidapi.com/statistics/retrospective",
+            "description": "Returns the history of the number of subscribers, posts, interactions, likes, comments, and engagement for the selected period.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "to",
+                    "type": "STRING",
+                    "description": "The end date for the retrospective data.",
+                    "default": "03.09.2022"
+                },
+                {
+                    "name": "from",
+                    "type": "STRING",
+                    "description": "The start date for the retrospective data.",
+                    "default": "01.09.2022"
+                },
+                {
+                    "name": "cid",
+                    "type": "STRING",
+                    "description": "The unique identifier for the Instagram account.",
+                    "default": "INST:17841400005463628"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Tags",
+            "url": "https://instagram-statistics-api.p.rapidapi.com/rating/tags",
+            "description": "Returns all tags associated with accounts, allowing filtering by desired tags and nesting.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "limit",
+                    "type": "STRING",
+                    "description": "The maximum number of tags to return.",
+                    "default": "100"
+                },
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of tags to return (e.g., country, city, category).",
+                    "default": "city"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "q",
+                    "type": "STRING",
+                    "description": "Search query for filtering tags.",
+                    "default": ""
+                },
+                {
+                    "name": "parent",
+                    "type": "STRING",
+                    "description": "The parent category for filtering tags.",
+                    "default": "turkey"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

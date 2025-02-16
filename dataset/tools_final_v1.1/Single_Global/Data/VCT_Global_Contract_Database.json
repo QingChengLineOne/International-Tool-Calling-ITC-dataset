@@ -1,0 +1,38 @@
+{
+    "tool_name": "VCT Global Contract Database",
+    "tool_description": "Get the VCT contract information for all 3 regions via this API. Updated every few hours.",
+    "home_url": "https://rapidapi.com/namansubedi12/api/vct-global-contract-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "PACIFIC",
+            "url": "https://vct-global-contract-database.p.rapidapi.com/PACIFIC.json",
+            "description": "Returns a JSON of all teams inside PACIFIC.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "EMEA",
+            "url": "https://vct-global-contract-database.p.rapidapi.com/EMEA.json",
+            "description": "Returns a JSON of all teams inside EMEA.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "AMERICAS",
+            "url": "https://vct-global-contract-database.p.rapidapi.com/AMERICAS.json",
+            "description": "Returns a JSON of all teams inside AMERICAS.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

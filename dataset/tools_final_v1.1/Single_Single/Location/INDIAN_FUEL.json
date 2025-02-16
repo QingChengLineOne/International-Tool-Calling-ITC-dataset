@@ -1,0 +1,63 @@
+{
+    "tool_name": "INDIAN FUEL",
+    "tool_description": "This API provides the fuel rates for every city in India, allowing users to view the fuel prices for specific cities.",
+    "home_url": "https://rapidapi.com/karthi20012002/api/indian-fuel/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Data of all cities",
+            "url": "https://indian-fuel.p.rapidapi.com/data",
+            "description": "Retrieves the fuel prices for all cities in India.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "object",
+                        "properties": {
+                            "diesel": {
+                                "type": "string"
+                            },
+                            "petrol": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "City wise data",
+            "url": "https://indian-fuel.p.rapidapi.com/data",
+            "description": "Retrieves fuel price data for a specific city.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "city",
+                    "type": "STRING",
+                    "description": "The name of the city for which fuel prices are requested.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "diesel": {
+                        "type": "string"
+                    },
+                    "petrol": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    ]
+}

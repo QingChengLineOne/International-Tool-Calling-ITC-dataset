@@ -1,0 +1,32 @@
+{
+    "tool_name": "AI字体设计",
+    "tool_description": "通过用户传入的text文字进行AI设计文字返回",
+    "home_url": "https://api.aa1.cn/doc/pearno-aisign.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI字体设计API",
+            "url": "https://api.pearktrue.cn/api/aidesignfont/",
+            "description": "接收用户输入的文字，返回AI设计的文字样式",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "需要设计的文字内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "返回数据格式，默认为json",
+                    "default": "json"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

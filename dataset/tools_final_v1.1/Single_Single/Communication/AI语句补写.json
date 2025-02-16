@@ -1,0 +1,38 @@
+{
+    "tool_name": "AI语句补写",
+    "tool_description": "AI语句补写API，用于根据给定文本生成可能的续写内容。",
+    "home_url": "https://api.aa1.cn/doc/pearno-aistatement.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "AI语句补写API",
+            "url": "https://api.pearktrue.cn/api/aistatement/",
+            "description": "调用该API可以获取基于给定文本的AI补写语句。",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要补写的文本内容，必须提供。",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "length",
+                    "type": "int",
+                    "description": "补写语句的长度，默认为100。",
+                    "default": 100
+                },
+                {
+                    "name": "style",
+                    "type": "string",
+                    "description": "补写语句的风格，如：正式、幽默、文学等，默认为空，不指定风格。",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

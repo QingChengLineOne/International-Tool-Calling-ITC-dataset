@@ -1,0 +1,18 @@
+{
+    "tool_name": "热搜查询",
+    "tool_description": "热搜查询列表",
+    "home_url": "https://api.aa1.cn/doc/rs.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "热搜查询接口",
+            "url": "https://cnapi.ilive.cn/cool/search/topsearch",
+            "description": "获取实时热搜列表",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

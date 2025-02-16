@@ -1,0 +1,18 @@
+{
+    "tool_name": "Fear and Greed Index",
+    "tool_description": "An index calculated by CNN that measures market sentiment based on fear and greed.",
+    "home_url": "https://rapidapi.com/rpi4gx/api/fear-and-greed-index/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Fear and Greed Index",
+            "url": "https://fear-and-greed-index.p.rapidapi.com/v1/fgi",
+            "description": "Fetches the current Fear and Greed Index value along with historical data.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

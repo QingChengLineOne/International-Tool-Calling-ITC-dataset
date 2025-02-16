@@ -1,0 +1,25 @@
+{
+    "tool_name": "日历/黄历查询",
+    "tool_description": "提供黄历、农历、节日、星期等信息，支持阴历/阳历的反查服务",
+    "home_url": "https://api.aa1.cn/doc/lunar.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "日历/黄历查询API",
+            "url": "https://api.mu-jie.cc/lunar",
+            "description": "查询特定日期的黄历信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "要查询的日期，格式为YYYY-MM-DD",
+                    "default": "当前日期"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

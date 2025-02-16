@@ -1,0 +1,68 @@
+{
+    "tool_name": "Calendars",
+    "tool_description": "Get list of events from a number of venues",
+    "home_url": "https://rapidapi.com/handnf/api/calendars/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Fetch Events",
+            "url": "https://calendars.p.rapidapi.com/ical_fetch",
+            "description": "Fetches a list of events in either JSON or iCalendar format for the selected calendar.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "c",
+                    "type": "ENUM",
+                    "description": "The calendar identifier to fetch events from.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "json",
+                    "type": "BOOLEAN",
+                    "description": "Specify whether to return the response in JSON format.",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "validCalendarsRead": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "events": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "summary": {
+                                    "type": "string"
+                                },
+                                "dtend": {
+                                    "type": "string"
+                                },
+                                "dtstart": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

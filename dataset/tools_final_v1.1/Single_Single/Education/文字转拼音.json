@@ -1,0 +1,43 @@
+{
+    "tool_name": "文字转拼音API",
+    "tool_description": "将指定文字，语句转为拼音的服务接口",
+    "home_url": "https://api.aa1.cn/doc/pinyinzh.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "文字转拼音接口",
+            "url": "https://cn.apihz.cn/api/zici/pinyin.php",
+            "description": "提供文字转拼音服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "API接口的标识符，用于唯一标识API调用",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "API的密钥，用于验证API调用者",
+                    "default": "88888888"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "description": "拼音输出的格式，例如使用竖线分隔",
+                    "default": "|"
+                },
+                {
+                    "name": "words",
+                    "type": "string",
+                    "description": "需要转换成拼音的文字或语句",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

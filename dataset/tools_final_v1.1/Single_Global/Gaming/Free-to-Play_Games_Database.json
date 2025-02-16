@@ -1,0 +1,139 @@
+{
+    "tool_name": "Free-to-Play Games Database",
+    "tool_description": "A comprehensive database of free-to-play games powered by FreeToGame.com, offering users the ability to filter and search games based on various criteria.",
+    "home_url": "https://rapidapi.com/digiwalls/api/free-to-play-games-database/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Filter games by multiple tags",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/filter",
+            "description": "Allows users to filter games based on multiple tags and platform for personalized results. Users can also specify the platform and sorting options.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "tag",
+                    "type": "STRING",
+                    "description": "Tags to filter games, such as genres or features.",
+                    "default": "3d.mmorpg.fantasy.pvp"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The platform to filter games by, such as PC or browser.",
+                    "default": "pc"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games by platform",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/games?",
+            "description": "Retrieves games available on a specified platform, such as PC or browser.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The platform for which to retrieve games.",
+                    "default": "pc"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games by category or tag",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/games?",
+            "description": "Fetches games based on a specific category or tag, such as MMORPG or shooter.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category or tag to filter games.",
+                    "default": "shooter"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games by platform & category & sorted",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/games?",
+            "description": "Retrieves a list of games using multiple parameters including platform, category, and sorting options.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "category",
+                    "type": "STRING",
+                    "description": "The category to filter games.",
+                    "default": "mmorpg"
+                },
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "The platform to filter games.",
+                    "default": "browser"
+                },
+                {
+                    "name": "sort-by",
+                    "type": "STRING",
+                    "description": "The criteria to sort the games, such as by release date.",
+                    "default": "release-date"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Return details from a specific game",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/game",
+            "description": "Fetches detailed information about a specific game using its ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the game.",
+                    "default": "452"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Sort games",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/games?",
+            "description": "Retrieves games sorted by specified criteria, such as release date or alphabetical order.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "sort-by",
+                    "type": "STRING",
+                    "description": "The sorting criteria for the games.",
+                    "default": "alphabetical"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Games list",
+            "url": "https://free-to-play-games-database.p.rapidapi.com/api/games",
+            "description": "Retrieves a complete list of all available games in the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "tool_name": "English Words",
+    "tool_description": "4, 5 and 6 letter English words with meanings to create your own word-based games.",
+    "home_url": "https://rapidapi.com/it-COP8HDOx9GE/api/english-words2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getMeaning",
+            "url": "https://english-words2.p.rapidapi.com/",
+            "description": "Returns the meaning of the specified word.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "STRING",
+                    "description": "The word for which the meaning is requested.",
+                    "default": "apple"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

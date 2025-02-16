@@ -1,0 +1,56 @@
+{
+    "tool_name": "聚合表情包",
+    "tool_description": "使用QQ号进行制图，支持图片和动图，后期更新可输入图片/GIF链接",
+    "home_url": "https://api.aa1.cn/doc/jhbqb.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "表情包生成API",
+            "url": "https://api.lolimi.cn/API/preview/api.php",
+            "description": "通过QQ号和文字信息生成表情包图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "qq",
+                    "type": "string",
+                    "description": "需要制图的QQ号",
+                    "default": ""
+                },
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "表情包第一行文字",
+                    "default": ""
+                },
+                {
+                    "name": "msg2",
+                    "type": "string",
+                    "description": "表情包第二行文字",
+                    "default": ""
+                },
+                {
+                    "name": "type",
+                    "type": "int",
+                    "description": "表情包ID，选择不同的ID会有不同的表情包样式",
+                    "default": 0
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "image_url",
+                    "type": "string",
+                    "description": "自定义图片链接，用于生成图片表情包",
+                    "default": ""
+                },
+                {
+                    "name": "gif_url",
+                    "type": "string",
+                    "description": "自定义GIF链接，用于生成动图表情包",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

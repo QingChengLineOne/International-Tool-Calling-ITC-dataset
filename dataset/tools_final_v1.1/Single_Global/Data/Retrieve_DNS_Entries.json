@@ -1,0 +1,165 @@
+{
+    "tool_name": "Retrieve DNS Entries",
+    "tool_description": "The API enables you to make fast DNS and WHOIS lookups, providing essential information about domain names and their associated records.",
+    "home_url": "https://rapidapi.com/AirBorne04/api/retrieve-dns-entries/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/api/schema",
+            "url": "https://retrieve-dns-entries.p.rapidapi.com/api/schema",
+            "description": "Retrieves the schema of the API, outlining the structure of the data returned.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "/api/dns",
+            "url": "https://retrieve-dns-entries.p.rapidapi.com/api/dns",
+            "description": "Performs a DNS lookup for a specified host, returning various DNS record types.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "host",
+                    "type": "STRING",
+                    "description": "The domain name for which to retrieve DNS records.",
+                    "default": "google.com"
+                },
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL associated with the domain.",
+                    "default": "https://google.com"
+                },
+                {
+                    "name": "record",
+                    "type": "STRING",
+                    "description": "The type of DNS record to retrieve (e.g., A, CNAME, MX).",
+                    "default": "A, CNAME, MX"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "preference": {
+                        "type": "number"
+                    }
+                }
+            }
+        },
+        {
+            "name": "/api/whois",
+            "url": "https://retrieve-dns-entries.p.rapidapi.com/api/whois",
+            "description": "Retrieves WHOIS information for a specified IP address or domain name.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "ip",
+                    "type": "STRING",
+                    "description": "The IP address for which to retrieve WHOIS information.",
+                    "default": "8.8.8.8"
+                },
+                {
+                    "name": "host",
+                    "type": "STRING",
+                    "description": "The domain name for which to retrieve WHOIS information.",
+                    "default": "google.com"
+                },
+                {
+                    "name": "url",
+                    "type": "STRING",
+                    "description": "The URL associated with the domain.",
+                    "default": "http://google.com"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "required": [
+                    "startAddress",
+                    "endAddress",
+                    "ipVersion",
+                    "name",
+                    "type",
+                    "lastChanged",
+                    "registered",
+                    "registrant"
+                ],
+                "properties": {
+                    "startAddress": {
+                        "type": "string"
+                    },
+                    "endAddress": {
+                        "type": "string"
+                    },
+                    "ipVersion": {
+                        "type": "string",
+                        "enum": [
+                            "v4",
+                            "v6"
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "lastChanged": {
+                        "type": "string"
+                    },
+                    "registered": {
+                        "type": "string"
+                    },
+                    "registrant": {
+                        "type": "array",
+                        "items": {
+                            "properties": {
+                                "handle": {
+                                    "type": "string"
+                                },
+                                "vcard": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "array",
+                                        "items": {
+                                            "oneOf": [
+                                                {
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "type": "object"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "lastChanged": {
+                                    "type": "string"
+                                },
+                                "registered": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

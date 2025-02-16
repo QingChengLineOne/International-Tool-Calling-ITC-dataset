@@ -1,0 +1,31 @@
+{
+    "tool_name": "Diagnostics Code List",
+    "tool_description": "A lightweight API based on ICD-10-CM (International Classification of Diseases, Tenth Revision, Clinical Modification) that displays medical diagnoses data using diagnostic codes, diagnosis names, or symptoms.",
+    "home_url": "https://rapidapi.com/mr.point96/api/diagnostics-code-list/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "DiagnosticsCodeList",
+            "url": "https://diagnostics-code-list.p.rapidapi.com/{diagnosticscode}/{diagnosticsname}/",
+            "description": "This API allows healthcare providers to retrieve medical diagnoses data based on diagnostic codes, diagnosis names, or symptoms. It is useful for health information managers, nurses, and other healthcare professionals in clinics and hospitals.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "diagnosticscode",
+                    "type": "STRING",
+                    "description": "The diagnostic code used to search for specific medical diagnoses.",
+                    "default": "A000"
+                },
+                {
+                    "name": "diagnosticsname",
+                    "type": "STRING",
+                    "description": "The name of the diagnosis to search for.",
+                    "default": "none"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

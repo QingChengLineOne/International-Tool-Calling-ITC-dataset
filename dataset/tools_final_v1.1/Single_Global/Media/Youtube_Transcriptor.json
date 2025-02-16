@@ -1,0 +1,88 @@
+{
+    "tool_name": "Youtube Transcriptor",
+    "tool_description": "A tool designed to transcribe YouTube podcasts and videos into text format.",
+    "home_url": "https://rapidapi.com/benrhzala90/api/youtube-transcriptor/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "transcript",
+            "url": "https://youtube-transcriptor.p.rapidapi.com/transcript",
+            "description": "Retrieves the transcript of a specified YouTube video.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "video_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the YouTube video. Example: youtube.com/watch?v=`0-fD8SDEvrR`.",
+                    "default": "8aGhZQkoFbQ"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Specifies the language for the transcript. If not provided, the language will be auto-detected.",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "availableLangs": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "lengthInSeconds": {
+                            "type": "string"
+                        },
+                        "thumbnails": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "url": {
+                                        "type": "string"
+                                    },
+                                    "width": {
+                                        "type": "integer"
+                                    },
+                                    "height": {
+                                        "type": "integer"
+                                    }
+                                }
+                            }
+                        },
+                        "transcription": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "subtitle": {
+                                        "type": "string"
+                                    },
+                                    "start": {
+                                        "type": "number"
+                                    },
+                                    "dur": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

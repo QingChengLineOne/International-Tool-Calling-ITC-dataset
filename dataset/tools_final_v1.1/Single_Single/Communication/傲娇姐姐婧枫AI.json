@@ -1,0 +1,25 @@
+{
+    "tool_name": "傲娇姐姐-婧枫AI",
+    "tool_description": "一个傲娇姐姐女友，嘴上刻薄但内心关心你。",
+    "home_url": "https://api.aa1.cn/doc/jjai.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "傲娇姐姐-婧枫AI接口",
+            "url": "https://api.lolimi.cn/API/AI/jj.php",
+            "description": "与傲娇姐姐婧枫进行交互的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "用户发送的消息内容",
+                    "default": "你好"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

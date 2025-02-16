@@ -1,0 +1,25 @@
+{
+    "tool_name": "小人举牌",
+    "tool_description": "自定义小人举牌文字",
+    "home_url": "https://api.aa1.cn/doc/xrjp-yx.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "小人举牌API",
+            "url": "https://api.ahfi.cn/doc/xrjupai.html",
+            "description": "根据提供的文字生成小人物举牌的图片",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "description": "需要展示的文字内容",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

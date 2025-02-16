@@ -1,0 +1,290 @@
+{
+    "tool_name": "Real-Time News Data",
+    "tool_description": "Exceptionally Fast and Simple API to get top news globally or per topic and search for news by query and geographic area in real-time.",
+    "home_url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-news-data/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Language List",
+            "url": "https://real-time-news-data.p.rapidapi.com/language-list",
+            "description": "Get valid languages for a country code, to be used with all other APIs.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code of the country to get languages for. See [all available country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "lang": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Topic Headlines",
+            "url": "https://real-time-news-data.p.rapidapi.com/topic-headlines",
+            "description": "Get the latest news headlines for a specific topic.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "Topic for which to get news headlines. Available topics include WORLD, NATIONAL, BUSINESS, TECHNOLOGY, ENTERTAINMENT, SPORTS, SCIENCE, and HEALTH.",
+                    "default": "WORLD"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language to use for the results, specified as a 2-letter language code - see [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).",
+                    "default": "en"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code. See [all available country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).",
+                    "default": "US"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Top Headlines",
+            "url": "https://real-time-news-data.p.rapidapi.com/top-headlines",
+            "description": "Get the latest news headlines/top stories for a specific country.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code. See [all available country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).",
+                    "default": "US"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language to use for the results, specified as a 2-letter language code - see [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).",
+                    "default": "en"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search",
+            "url": "https://real-time-news-data.p.rapidapi.com/search",
+            "description": "Search news articles by query with an option to limit the results to a specific time range.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Search query for which to get news.",
+                    "default": "Elon Musk"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code. See [all available country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).",
+                    "default": "US"
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language to use for the results, specified as a 2-letter language code - see [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).",
+                    "default": "en"
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "Domain of the source from which to return news articles (e.g. cnn.com).",
+                    "default": ""
+                },
+                {
+                    "name": "time_published",
+                    "type": "ENUM",
+                    "description": "Find news articles published in a specific time range.",
+                    "default": "anytime"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Local Headlines (Geo)",
+            "url": "https://real-time-news-data.p.rapidapi.com/local-headlines",
+            "description": "Get local, geo-based headlines.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "Area, city or country to fetch news for (e.g. *London*).",
+                    "default": "New-York"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language to use for the results, specified as a 2-letter language code - see [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).",
+                    "default": "en"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code. See [all available country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).",
+                    "default": "US"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Topic News By Section",
+            "url": "https://real-time-news-data.p.rapidapi.com/topic-news-by-section",
+            "description": "Get topic news articles in a specific section.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "section",
+                    "type": "STRING",
+                    "description": "Section identifier for the news articles.",
+                    "default": "CAQiW0NCQVNQZ29JTDIwdk1EZGpNWFlTQW1WdUdnSlZVeUlQQ0FRYUN3b0pMMjB2TURKdFpqRnVLaGtLRndvVFIwRkVSMFZVWDFORlExUkpUMDVmVGtGTlJTQUJLQUEqKggAKiYICiIgQ0JBU0Vnb0lMMjB2TURkak1YWVNBbVZ1R2dKVlV5Z0FQAVAB"
+                },
+                {
+                    "name": "topic",
+                    "type": "STRING",
+                    "description": "Topic for which to get news headlines. Available topics include WORLD, NATIONAL, BUSINESS, TECHNOLOGY, ENTERTAINMENT, SPORTS, SCIENCE, and HEALTH.",
+                    "default": "TECHNOLOGY"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "The language to use for the results, specified as a 2-letter language code - see [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).",
+                    "default": "en"
+                },
+                {
+                    "name": "country",
+                    "type": "STRING",
+                    "description": "Country code. See [all available country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).",
+                    "default": "US"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "request_id": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

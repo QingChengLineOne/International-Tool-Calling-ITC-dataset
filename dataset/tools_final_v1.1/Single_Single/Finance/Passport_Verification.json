@@ -1,0 +1,35 @@
+{
+    "tool_name": "Passport Verification",
+    "tool_description": "Instant Passport Verification using government database check. IDfy’s Passport Verification API instantly verifies details of a Passport by confirming them from the Government database.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/passport-verification/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "GET Call",
+            "url": "https://passport-verification.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch API result using the request ID received in responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the verification request.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Passport Verification",
+            "url": "https://passport-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/ind_passport",
+            "description": "Instant Passport Verification using government database check. Use GET call to obtain results of the response received.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

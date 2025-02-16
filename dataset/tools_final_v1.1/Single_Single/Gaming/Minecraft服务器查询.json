@@ -1,0 +1,25 @@
+{
+    "tool_name": "Minecraft服务器查询",
+    "tool_description": "查询Minecraft JAVA服务器的版本，在线人数，MOTD",
+    "home_url": "https://api.aa1.cn/doc/MCQ.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Minecraft服务器状态查询",
+            "url": "https://api.beijing.mingpixel.site/ping.php",
+            "description": "查询指定Minecraft服务器的状态信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "server",
+                    "type": "string",
+                    "description": "Minecraft服务器的地址",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "奇葩对话API",
+    "tool_description": "随机返回一段奇葩对话",
+    "home_url": "https://api.aa1.cn/doc/qpdh.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取奇葩对话",
+            "url": "https://api.52vmy.cn/api/wl/yan/qpdh",
+            "description": "随机获取一段奇葩对话",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

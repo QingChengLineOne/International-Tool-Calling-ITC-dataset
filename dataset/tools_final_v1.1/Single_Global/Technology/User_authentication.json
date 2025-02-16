@@ -1,0 +1,38 @@
+{
+    "tool_name": "User authentication",
+    "tool_description": "IDfy’s User Authentication API helps you mitigate identity risks by performing facial recognition and comparison checks in real time.",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/user-authentication3/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Face compare(sync)",
+            "url": "https://user-authentication3.p.rapidapi.com/v3/tasks/sync/compare/face",
+            "description": "This endpoint allows you to compare two face images. It consumes two images (with a face) in the request body and produces a match score between the two faces.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Face liveness check(sync)",
+            "url": "https://user-authentication3.p.rapidapi.com/tasks/async/check_photo_liveness/face",
+            "description": "This endpoint allows you to check if the face in the image is a picture of a living person or if it is a picture of a picture/screen, etc.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Name compare(sync)",
+            "url": "https://user-authentication3.p.rapidapi.com/v3/tasks/sync/compare/ind_names",
+            "description": "This endpoint allows you to compare two names. It consumes two strings in the request body and returns a match score on a scale of 1 to 5.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

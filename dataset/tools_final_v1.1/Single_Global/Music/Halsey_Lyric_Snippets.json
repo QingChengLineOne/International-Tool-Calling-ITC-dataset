@@ -1,0 +1,206 @@
+{
+    "tool_name": "Halsey Lyric Snippets",
+    "tool_description": "An API that allows users to view short excerpts of Halsey's songs, providing access to various song and album information.",
+    "home_url": "https://rapidapi.com/JoseJaramillo04/api/halsey-lyric-snippets/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "album by {id}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/album/id/{id}",
+            "description": "Returns album information when searched by the specified album ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the album.",
+                    "default": "63b88a2bc8450e8550fa6d5c"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "song by {id}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/song/id/{id}",
+            "description": "Returns song information when searched by the specified song ID.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The unique identifier for the song.",
+                    "default": "63b7b10efac0fba0d5e1d187"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random song & song's album information out of {artist}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/song/random/info",
+            "description": "Returns album information and a random song by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random song out of {artist}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/song/random",
+            "description": "Retrieves a random song by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "specified {song}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/song/{song}",
+            "description": "Retrieves the specified song by name.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "song",
+                    "type": "string",
+                    "description": "The name of the song.",
+                    "default": "Ashley"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "all songs from {artist}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/song",
+            "description": "Retrieves all songs by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "random song from a specific {artist} and specified {album}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/album/{album}/song/random",
+            "description": "Retrieves a random song from the specified album by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                },
+                {
+                    "name": "album",
+                    "type": "string",
+                    "description": "The name of the album.",
+                    "default": "Hopeless Fountain Kingdom (Deluxe)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "all songs from a specified {artist} and specified {album}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/album/{album}/song",
+            "description": "Retrieves all songs from the specified album by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                },
+                {
+                    "name": "album",
+                    "type": "string",
+                    "description": "The name of the album.",
+                    "default": "Manic"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "specified {album} information from {artist}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/album/{album}",
+            "description": "Retrieves the specified album by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                },
+                {
+                    "name": "album",
+                    "type": "string",
+                    "description": "The name of the album.",
+                    "default": "Badlands (Deluxe Edition)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "all albums from {artist}",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/{artist}/album",
+            "description": "Retrieves all albums by the specified artist.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "artist",
+                    "type": "string",
+                    "description": "The name of the artist.",
+                    "default": "Halsey"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/",
+            "url": "https://halsey-lyric-snippets.p.rapidapi.com/",
+            "description": "Retrieves all songs from the database.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

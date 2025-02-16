@@ -1,0 +1,35 @@
+{
+    "tool_name": "Real-time Statistics",
+    "tool_description": "This API provides real-time demographic statistics, offering a viable alternative for countrymeters or worldometers. Users can access various demographic counters to obtain up-to-date information.",
+    "home_url": "https://rapidapi.com/SAdrian/api/real-time-statistics/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Counter",
+            "url": "https://real-time-statistics.p.rapidapi.com/counters/{counter}",
+            "description": "Retrieve statistics for a specific counter selected from the 'Counters' endpoint.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "counter",
+                    "type": "string",
+                    "description": "The specific counter to retrieve statistics for.",
+                    "default": "births"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Counters",
+            "url": "https://real-time-statistics.p.rapidapi.com/counters",
+            "description": "Get a list of all possible demographic counters available for retrieval.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

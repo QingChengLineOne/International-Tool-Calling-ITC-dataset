@@ -1,0 +1,25 @@
+{
+    "tool_name": "Stable Diffusion v2",
+    "tool_description": "Generate high-quality images with the latest Stable Diffusion v2.1 model.",
+    "home_url": "https://rapidapi.com/apis-world-apis-world-default/api/stable-diffusion-v2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Generate Image",
+            "url": "https://stable-diffusion-v2.p.rapidapi.com/stable-diffusion",
+            "description": "Generate an image based on a textual description using the Stable Diffusion model.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "description",
+                    "type": "STRING",
+                    "description": "A textual description of the image to be generated.",
+                    "default": "cat"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

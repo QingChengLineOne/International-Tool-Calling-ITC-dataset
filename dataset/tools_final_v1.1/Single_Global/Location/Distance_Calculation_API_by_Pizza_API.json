@@ -1,0 +1,49 @@
+{
+    "tool_name": "Distance Calculation API by Pizza API",
+    "tool_description": "The Distance Calculation API is incredibly simple to use. Simply provide the latitude and longitude coordinates of the two locations you want to measure and the metric in which you want the result (km, mi, m, feet), and the API will return the distance between them in a user-friendly format. The API uses the latest algorithms and techniques to provide fast and accurate results, making it the ideal solution for developers who need to incorporate distance calculation into their applications.",
+    "home_url": "https://rapidapi.com/raajreact/api/distance-calculation-api-by-pizza-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Calculate distance By Lat & Long",
+            "url": "https://distance-calculation-api-by-pizza-api.p.rapidapi.com/distance",
+            "description": "Calculate Distance between two places by their latitude and longitudes and the metric you want the output in.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "metric",
+                    "type": "STRING",
+                    "description": "The unit of measurement for the distance.",
+                    "default": "mi"
+                },
+                {
+                    "name": "lat2",
+                    "type": "STRING",
+                    "description": "Latitude of the second location.",
+                    "default": "40.730610"
+                },
+                {
+                    "name": "lon2",
+                    "type": "STRING",
+                    "description": "Longitude of the second location.",
+                    "default": "-73.935242"
+                },
+                {
+                    "name": "lon1",
+                    "type": "STRING",
+                    "description": "Longitude of the first location.",
+                    "default": "-87.836723"
+                },
+                {
+                    "name": "lat1",
+                    "type": "STRING",
+                    "description": "Latitude of the first location.",
+                    "default": "41.977226"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

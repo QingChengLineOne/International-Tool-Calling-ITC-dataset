@@ -1,0 +1,18 @@
+{
+    "tool_name": "Incapsula reese84 api",
+    "tool_description": "Generate/Bypass Incapsula/Imperva antibot reese84 payload",
+    "home_url": "https://rapidapi.com/valentincgd-valentincgd-default/api/incapsula-reese84-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Recover payload",
+            "url": "https://incapsula-reese84-api.p.rapidapi.com/reese84",
+            "description": "Generate imperva/incapsula reese84 payload",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

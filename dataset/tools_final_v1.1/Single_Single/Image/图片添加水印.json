@@ -1,0 +1,37 @@
+{
+    "tool_name": "图片添加水印API",
+    "tool_description": "输入图片地址，水印地址和水印位置返回一张添加水印的图片",
+    "home_url": "https://api.aa1.cn/doc/tpsy.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "图片添加水印接口",
+            "url": "https://www.zhiyanx.cn/api/watermark/index.php",
+            "description": "添加水印到指定图片的API",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "原始图片的URL地址",
+                    "default": ""
+                },
+                {
+                    "name": "img",
+                    "type": "string",
+                    "description": "水印图片的URL地址",
+                    "default": ""
+                },
+                {
+                    "name": "position",
+                    "type": "int",
+                    "description": "水印的位置，0-9代表不同位置，具体数值请参考API文档",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

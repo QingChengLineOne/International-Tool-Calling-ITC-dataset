@@ -1,0 +1,35 @@
+{
+    "tool_name": "ICAI Chartered Accountant Verification",
+    "tool_description": "This API checks the genuineness of the CA membership, ensuring that the Chartered Accountant is registered and recognized by the Institute of Chartered Accountants of India (ICAI).",
+    "home_url": "https://rapidapi.com/idfy-idfy-default/api/icai-chartered-accountant-verification/",
+    "country": "India",
+    "api_list": [
+        {
+            "name": "Fetch Verification Result",
+            "url": "https://icai-chartered-accountant-verification.p.rapidapi.com/v3/tasks",
+            "description": "Used to fetch the API result using the request ID received in previous responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "request_id",
+                    "type": "STRING",
+                    "description": "The unique identifier for the verification request.",
+                    "default": "68bbb910-da9b-4d8a-9a1d-4bd878b19846"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Verify CA Membership",
+            "url": "https://icai-chartered-accountant-verification.p.rapidapi.com/v3/tasks/async/verify_with_source/ind_icai",
+            "description": "This API checks the genuineness of the CA membership. Use the GET Call in the bundle to fetch the result of the request ID received in the response.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

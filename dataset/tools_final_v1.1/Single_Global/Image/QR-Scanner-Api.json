@@ -1,0 +1,96 @@
+{
+    "tool_name": "QR-Scanner-Api",
+    "tool_description": "Scan QR & Barcode images from files or URLs and return the equivalent QR-Text or Barcode-Number plus code format.",
+    "home_url": "https://rapidapi.com/ezzatelbadrawy/api/qr-scanner-api/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "ScanImageUrl",
+            "url": "https://qr-scanner-api.p.rapidapi.com/api/QR/scanimageurl",
+            "description": "Scan image from a URL and return the QR text or Barcode number.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "imageUrl",
+                    "type": "STRING",
+                    "description": "Image URL which you want to scan.",
+                    "default": "set-your-image-URL-here (ex: https://drive.google.com/uc?id=1Bqpyxu5gZbmzyre-bVMMpod9qItPma9w)"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Response Status : Success/Failure"
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Respons Result : Expected output with 'Success' status OR error description with 'Failure' status"
+                    },
+                    "format": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "QR/Barcode Format"
+                    }
+                },
+                "additionalProperties": false,
+                "description": "Custom Response Object"
+            }
+        },
+        {
+            "name": "ScanImageFile",
+            "url": "https://qr-scanner-api.p.rapidapi.com/api/QR/scanimagefile",
+            "description": "Scan an image file and return the QR text or Barcode number.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "imagefile",
+                    "type": "BINARY",
+                    "description": "The image file to be scanned.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Response Status : Success/Failure"
+                    },
+                    "result": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Respons Result : Expected output with 'Success' status OR error description with 'Failure' status"
+                    },
+                    "format": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "QR/Barcode Format"
+                    }
+                },
+                "additionalProperties": false,
+                "description": "Custom Response Object"
+            }
+        }
+    ]
+}

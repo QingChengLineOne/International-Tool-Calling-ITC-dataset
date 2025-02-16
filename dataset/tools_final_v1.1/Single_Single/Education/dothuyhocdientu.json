@@ -1,0 +1,18 @@
+{
+    "tool_name": "dothuyhocdientu",
+    "tool_description": "Tôi Đỗ Thủy Học Điện Tử một người đam mê cung cấp kiến thức cuộc sống và kiến thức giáo dục văn học, vật lý, điện tử đến cho mọi người. Hãy cùng tôi tiếp nhận kiến thức mới nhé!",
+    "home_url": "https://rapidapi.com/dothuyhocdientu/api/dothuyhocdientu/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "dothuyhocdientu",
+            "url": "https://dothuyhocdientu.p.rapidapi.com/",
+            "description": "Cung cấp kiến thức về văn học, vật lý và điện tử cho người dùng.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,292 @@
+{
+    "tool_name": "StreamlineWatch - Streaming Guide",
+    "tool_description": "StreamlineWatch's streaming guide APIs for Movies and Shows, providing users with access to detailed information about various streaming content.",
+    "home_url": "https://rapidapi.com/StreamlineWatch/api/streamlinewatch-streaming-guide/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/shows/{id}/episodes",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/shows/{id}/episodes",
+            "description": "List all the episodes from the specified show.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "Retrieve sources from the specified platform. Possible values: ios, android, androidtv, web.",
+                    "default": "ios"
+                },
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The id of the show.",
+                    "default": "82856"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Skips this number of records.",
+                    "default": "0"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "Filter by region. Possible values: US, FR.",
+                    "default": "US"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of records to return per request. Maximum: 100.",
+                    "default": "25"
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Sort the records in regular or reverse order.",
+                    "default": "regular"
+                },
+                {
+                    "name": "season",
+                    "type": "NUMBER",
+                    "description": "A particular season for a show. Leave empty to get episodes from all seasons.",
+                    "default": "1"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        },
+        {
+            "name": "regions",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/regions",
+            "description": "Retrieve the list of regions covered by the API.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "search",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/search",
+            "description": "Returns a list of titles that match the query.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "type",
+                    "type": "STRING",
+                    "description": "The type of content for your search. Possible values: movie, show.",
+                    "default": "movie"
+                },
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The search query itself.",
+                    "default": "turning red"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Maximum number of records to return.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "/shows/{id}",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/shows/{id}",
+            "description": "Return the metadata associated with the specified show.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "Retrieve sources from the specified platform. Possible values: ios, android, androidtv, web.",
+                    "default": "web"
+                },
+                {
+                    "name": "id",
+                    "type": "STRING",
+                    "description": "The id of the show. You can also use a tmdb id.",
+                    "default": "82856"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "Retrieve the sources' deep link from this region. Possible values: US, FR.",
+                    "default": "US"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        },
+        {
+            "name": "/movies/{id}",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/movies/{id}",
+            "description": "Return the metadata associated with the specified movie.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "platform",
+                    "type": "STRING",
+                    "description": "Retrieve sources from the specified platform. Possible values: ios, android, androidtv, web.",
+                    "default": "ios"
+                },
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The id of the movie. You can also use a tmdb id.",
+                    "default": "508947"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "Retrieve the sources' deep link from this region. Possible values: US, FR.",
+                    "default": "US"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        },
+        {
+            "name": "/movies",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/movies",
+            "description": "Returns the basic metadata for all movies available for playback in a specific region.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of records to return per request. Maximum: 100.",
+                    "default": "5"
+                },
+                {
+                    "name": "sources",
+                    "type": "STRING",
+                    "description": "Filter records by source. Possible values: free, tv_everywhere, subscription, purchase.",
+                    "default": "netflix,hulu"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "Filter by region. Possible values: US, FR.",
+                    "default": "US"
+                },
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Skips this number of records.",
+                    "default": "0"
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Method to sort the records. Possible values: alphabetical, popularity.",
+                    "default": "popularity"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        },
+        {
+            "name": "/sources",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/sources",
+            "description": "Returns a list of all sources covered in a specific region.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "Filter by region. Possible values: US, FR.",
+                    "default": "US"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        },
+        {
+            "name": "/genres",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/genres",
+            "description": "Return a list of all genres.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        },
+        {
+            "name": "/shows",
+            "url": "https://streamlinewatch-streaming-guide.p.rapidapi.com/shows",
+            "description": "Returns the basic metadata for all shows available for playback in a specific region.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "offset",
+                    "type": "NUMBER",
+                    "description": "Skips this number of records.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "Number of records to return per request. Maximum: 100.",
+                    "default": "5"
+                },
+                {
+                    "name": "sort",
+                    "type": "STRING",
+                    "description": "Method to sort the records. Possible values: alphabetical, popularity.",
+                    "default": "popularity"
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "Filter by region. Possible values: US, FR.",
+                    "default": "US"
+                },
+                {
+                    "name": "sources",
+                    "type": "STRING",
+                    "description": "Filter records by source. Possible values: free, tv_everywhere, subscription, purchase.",
+                    "default": "netflix,hulu"
+                }
+            ],
+            "statuscode": 200,
+            "schema": {
+                "title": "Empty Schema",
+                "type": "object"
+            }
+        }
+    ]
+}

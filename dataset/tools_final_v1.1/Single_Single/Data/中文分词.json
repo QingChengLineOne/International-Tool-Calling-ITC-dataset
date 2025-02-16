@@ -1,0 +1,38 @@
+{
+    "tool_name": "中文分词API",
+    "tool_description": "分词句子中的中文汉字",
+    "home_url": "https://api.aa1.cn/doc/chinatext.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "中文分词接口",
+            "url": "https://api.pearktrue.cn/api/fenci/",
+            "description": "通过该接口对中文句子进行分词处理",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "word",
+                    "type": "string",
+                    "description": "需要分词的中文句子",
+                    "default": "请输入需要分词的中文句子"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "segment_type",
+                    "type": "string",
+                    "description": "分词类型（可选：default, mct, jieba等）",
+                    "default": "default"
+                },
+                {
+                    "name": "show_token",
+                    "type": "boolean",
+                    "description": "是否显示分词后的词元",
+                    "default": "true"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

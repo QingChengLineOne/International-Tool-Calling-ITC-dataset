@@ -1,0 +1,60 @@
+{
+    "tool_name": "Text To Speech - Realistic AI Voices",
+    "tool_description": "Our state-of-the-art multilingual AI model text to speech, is able to generate life-like speech in 28 languages.",
+    "home_url": "https://rapidapi.com/voice-magic-ai-voice-magic-ai-default/api/text-to-speech-realistic-ai-voices/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Synthesize Text To Speech",
+            "url": "https://text-to-speech-realistic-ai-voices.p.rapidapi.com/text-to-speech/EXAVITQu4vr4xnSDxMaL/",
+            "description": "This API endpoint synthesizes text into speech using a specified voice.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "description": "The text that you want to convert to speech.",
+                    "default": "Hello RapidAPI!"
+                },
+                {
+                    "name": "voiceId",
+                    "type": "STRING",
+                    "description": "The ID of the voice to be used for synthesis.",
+                    "default": "EXAVITQu4vr4xnSDxMaL"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "stream",
+                    "type": "BOOLEAN",
+                    "description": "Indicates whether to stream the audio output.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "get": {
+                        "type": "string"
+                    },
+                    "parameters": {
+                        "type": "array"
+                    },
+                    "errors": {
+                        "type": "array"
+                    },
+                    "results": {
+                        "type": "integer"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

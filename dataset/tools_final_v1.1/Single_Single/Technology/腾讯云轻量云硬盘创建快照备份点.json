@@ -1,0 +1,55 @@
+{
+    "tool_name": "腾讯云轻量云硬盘创建快照[备份点]",
+    "tool_description": "用于腾讯云轻量云硬盘快照创建，无需关机，自动删除旧快照创建新快照，不占快照配额，可用于自动备份，保护数据安全。例如创建一个定时计划任务访问本接口，可自动备份云硬盘数据。",
+    "home_url": "https://api.aa1.cn/doc/txyqlyp.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "腾讯云轻量云硬盘创建快照API",
+            "url": "https://cn.apihz.cn/api/idc/txyqlyp.php",
+            "description": "创建腾讯云轻量云硬盘的快照",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子ID，用于统计调用信息",
+                    "default": "88888888"
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子密钥，用于统计调用信息",
+                    "default": "88888888"
+                },
+                {
+                    "name": "slid",
+                    "type": "string",
+                    "description": "云硬盘ID，需要替换为实际的云硬盘ID",
+                    "default": "**********"
+                },
+                {
+                    "name": "secretid",
+                    "type": "string",
+                    "description": "腾讯云SecretId，用于认证",
+                    "default": "**********"
+                },
+                {
+                    "name": "secretkey",
+                    "type": "string",
+                    "description": "腾讯云SecretKey，用于认证",
+                    "default": "**********"
+                },
+                {
+                    "name": "dy",
+                    "type": "string",
+                    "description": "地域，例如ap-shanghai",
+                    "default": "ap-shanghai"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "tool_name": "Climate News Feed",
+    "tool_description": "Climate Change news from the most trusted sources including NASA, UN, and more. It offers flexible, reliable, and fast access with low latency, including features like thumbnails, filtering, and pagination.",
+    "home_url": "https://rapidapi.com/TheTellusProject/api/climate-news-feed/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Article page",
+            "url": "https://climate-news-feed.p.rapidapi.com/page/1",
+            "description": "Retrieve articles in pages.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The page number to retrieve articles from.",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The number of articles to return per page.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get all publications",
+            "url": "https://climate-news-feed.p.rapidapi.com/publications",
+            "description": "Get the names of all publications this API delivers news from.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Articles",
+            "url": "https://climate-news-feed.p.rapidapi.com/",
+            "description": "Retrieve all articles with optional filtering by source and exclusion of specific sources.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The maximum number of articles to return.",
+                    "default": "50"
+                },
+                {
+                    "name": "exclude",
+                    "type": "STRING",
+                    "description": "Specify a source to exclude from the results.",
+                    "default": "The Guardian"
+                },
+                {
+                    "name": "source",
+                    "type": "STRING",
+                    "description": "Specify the source of articles to retrieve.",
+                    "default": "Nasa Climate"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

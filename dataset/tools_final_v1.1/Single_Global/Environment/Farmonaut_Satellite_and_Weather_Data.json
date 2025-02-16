@@ -1,0 +1,288 @@
+{
+    "tool_name": "Farmonaut Satellite and Weather Data",
+    "tool_description": "Get Your Unique ID and start using the API to access satellite and weather data.",
+    "home_url": "https://rapidapi.com/farmonaut-technologies-private-limited-farmonaut-technologies-private-limited-default/api/farmonaut-satellite-and-weather-data1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Remove Report Language",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/removeReportLanguage",
+            "description": "This API endpoint allows you to remove the language setting for the report.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Update Field Info",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/updateFieldInfo",
+            "description": "Use this API to update information related to a specific field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Delete Field",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/deleteField",
+            "description": "This API allows you to delete a specific field from your records.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Update Crop Code Of A Field",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/updateCropCode",
+            "description": "Use this API to update the crop code for a specific field to resume monitoring.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get My Usage",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getMyUsage",
+            "description": "This API retrieves the entire usage history of your API account.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Resume Field Monitoring",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/resumeFieldMonitoring",
+            "description": "Use this API to resume monitoring for a specific field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Sensed Days",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getSensedDays",
+            "description": "This API retrieves the days on which satellite data is available for your fields.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get SAR Days",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getSARDays",
+            "description": "Use this API to get the Synthetic Aperture Radar (SAR) days for your fields.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Forecast Weather Data",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getForecastWeather",
+            "description": "This API retrieves weather forecast data for your specified fields.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve A Radar Vegetation Field Image",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFieldImage",
+            "description": "Use this API to retrieve an image of the radar vegetation field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve All Farmers Data",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getAllFarmersData",
+            "description": "This API retrieves data for all farmers and their respective farms.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Define Language of the HTML Field Report",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/setReportLanguage",
+            "description": "Use this API to define the language of the field report generated.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Crop Solution Database",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getDatabase",
+            "description": "This API retrieves solutions for major crop issues from a government-approved database.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve A Field Report",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFieldReport",
+            "description": "Use this API to retrieve a detailed report for a specific field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve A Field Image",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFieldImage",
+            "description": "This API retrieves an image of a specific field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve A Field Image Linegraph",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFieldImageLinegraph",
+            "description": "Use this API to retrieve a line graph representation of a field image.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve A Field Area Index Image",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFieldIndexAreaImage",
+            "description": "This API retrieves an image of the field area index.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Weather Forecast Data from Latitude and Longitude",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getForecastWeatherFromLatLong",
+            "description": "Use this API to get weather forecast data based on latitude and longitude.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Historical Weather for A Field",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getHistoricalFieldWeather",
+            "description": "This API retrieves historical weather data for a specified field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Present Weather Data",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getPresentWeather",
+            "description": "Use this API to retrieve the current weather data for your fields.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve A Past Weather Graph",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getPastWeatherGraph",
+            "description": "This API retrieves a weather graph for a specified past day.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Request Historical Satellite Data",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/requestPreviousSatelliteData",
+            "description": "Use this API to request historical satellite data for a specific field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Retrieve Yield Estimates of a Field",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getYieldEstimates",
+            "description": "This API retrieves yield estimates for a specified field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Pause Field Monitoring",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/pauseFieldMonitoring",
+            "description": "Use this API to pause the monitoring of a specific field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Field Area By Boundary Points",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFieldAreaByBoundaryPoints",
+            "description": "This API retrieves the area of a field based on specified boundary points.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Modify Field Coordinates of Already Submitted Field",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/modifyFieldPoints",
+            "description": "Use this API to modify the coordinates of an already submitted field.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Submit New Farm/Plot",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/submitField",
+            "description": "This API allows you to submit a new farm or plot for monitoring.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Single Farm Data",
+            "url": "https://farmonaut-satellite-and-weather-data1.p.rapidapi.com/getFarmerData",
+            "description": "Use this API to retrieve information about a single farm or farmer.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

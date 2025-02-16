@@ -1,0 +1,60 @@
+{
+    "tool_name": "UseCloak",
+    "tool_description": "Ensuring data privacy with ChatGPT is nearly impossible. UseCloak provides robust PII protection, allowing developers to harness the power of AI in their products while maintaining data privacy.",
+    "home_url": "https://rapidapi.com/knkt-digital-knkt-digital-default/api/usecloak/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "unredact_unredact_post",
+            "url": "https://usecloak.p.rapidapi.com/unredact",
+            "description": "This API endpoint is used to unredact previously redacted text, restoring it to its original form.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "title": "Unredacted",
+                "type": "object",
+                "properties": {
+                    "unredacted_text": {
+                        "title": "Unredacted Text",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        {
+            "name": "redact_redact_post",
+            "url": "https://usecloak.p.rapidapi.com/redact",
+            "description": "This API endpoint is used to redact sensitive information from text, ensuring data privacy.",
+            "method": "POST",
+            "required_parameters": [
+                {
+                    "name": "redacted_entities",
+                    "type": "object",
+                    "description": "The entities that need to be redacted from the text.",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "title": "Unredact",
+                "required": [
+                    "redacted_entities"
+                ],
+                "type": "object",
+                "properties": {
+                    "redacted_text": {
+                        "title": "Redacted Text",
+                        "type": "string"
+                    },
+                    "redacted_entities": {
+                        "title": "Redacted Entities",
+                        "type": "object"
+                    }
+                }
+            }
+        }
+    ]
+}

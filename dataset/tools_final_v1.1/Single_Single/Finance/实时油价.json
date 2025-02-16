@@ -1,0 +1,38 @@
+{
+    "tool_name": "实时油价",
+    "tool_description": "查询各省份的实时油价",
+    "home_url": "https://api.aa1.cn/doc/dm-oilprice.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "实时油价查询接口",
+            "url": "https://api.qqsuu.cn/api/dm-oilprice",
+            "description": "提供各省份实时油价的查询服务",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "prov",
+                    "type": "string",
+                    "description": "省份名称，用于查询特定省份的油价",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "city",
+                    "type": "string",
+                    "description": "城市名称，可选参数，用于查询特定城市的油价，如果不传则默认为省会城市",
+                    "default": ""
+                },
+                {
+                    "name": "oil_type",
+                    "type": "string",
+                    "description": "油品类型，可选参数，如'92#', '95#'，'98#'，'柴油'等，如果不传则默认为92#",
+                    "default": "92#"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "tool_name": "当前时间API",
+    "tool_description": "返回当前日期、星期和时间戳的 JSON 数据",
+    "home_url": "https://api.aa1.cn/doc/time.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取当前时间",
+            "url": "https://api.uuni.cn/api/time",
+            "description": "获取当前日期、星期和时间戳的 JSON 数据",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

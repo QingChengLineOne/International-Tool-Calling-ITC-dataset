@@ -1,0 +1,31 @@
+{
+    "tool_name": "随机动漫壁纸(JSON)",
+    "tool_description": "返回随机动漫壁纸(JSON)",
+    "home_url": "https://api.aa1.cn/doc/json.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "随机动漫壁纸API",
+            "url": "https://img.8845.top/random.php",
+            "description": "提供随机动漫壁纸的图片链接",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "width",
+                    "type": "int",
+                    "description": "图片宽度，默认为1280",
+                    "default": "1280"
+                },
+                {
+                    "name": "height",
+                    "type": "int",
+                    "description": "图片高度，默认为720",
+                    "default": "720"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

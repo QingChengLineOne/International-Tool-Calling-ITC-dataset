@@ -1,0 +1,18 @@
+{
+    "tool_name": "BaseConverterAPI",
+    "tool_description": "An API that converts a number from one base to another.",
+    "home_url": "https://rapidapi.com/FilippoLizzi/api/baseconverterapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getAlphabets",
+            "url": "https://baseconverterapi.p.rapidapi.com/alphabets",
+            "description": "This endpoint retrieves all the alphabets used in various number systems.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

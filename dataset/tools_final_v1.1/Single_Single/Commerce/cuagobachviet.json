@@ -1,0 +1,18 @@
+{
+    "tool_name": "cuagobachviet",
+    "tool_description": "Bách Việt là đại lý cấp 1 tại Hà Nội chuyên cung cấp sản phẩm cửa gỗ công nghiệp mang thương hiệu Huge, một sản phẩm của tập đoàn Austdoor Việt Nam. Các sản phẩm cửa gỗ công nghiệp Huge có khả năng chịu nước tuyệt đối, không cong vênh, co ngót, mọt, nấm mốc, và không bắt lửa. Sản phẩm khắc phục hoàn toàn các điểm yếu của cửa gỗ tự nhiên và cửa công nghiệp hiện tại.",
+    "home_url": "https://rapidapi.com/cuagobachviet/api/cuagobachviet/",
+    "country": "Vietnam",
+    "api_list": [
+        {
+            "name": "cuagobachviet",
+            "url": "https://cuagobachviet.p.rapidapi.com/",
+            "description": "API cung cấp thông tin về sản phẩm cửa gỗ công nghiệp của Bách Việt, bao gồm các đặc điểm và thông tin liên hệ.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "tool_name": "Billboard",
+    "tool_description": "Billboard charts: Hot 100, Billboard 200, Billboard 200 Global, Artist 100 and more",
+    "home_url": "https://rapidapi.com/apimaker/api/billboard2/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Billboard Global Excl. US",
+            "url": "https://billboard2.p.rapidapi.com/billboard_global_200_excl_us",
+            "description": "Retrieve the Billboard Global Excl. US chart information. Available from September 19, 2020.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Set the date for which you want to get a chart.",
+                    "default": "2020-09-19"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Hot 100",
+            "url": "https://billboard2.p.rapidapi.com/hot_100",
+            "description": "Provide the Hot 100 chart information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Set the date for which you want to get a chart.",
+                    "default": "2020-03-18"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "Artist 100",
+            "url": "https://billboard2.p.rapidapi.com/artist_100",
+            "description": "Provide the Artist 100 chart information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Set the date for which you want to get a chart.",
+                    "default": "2020-03-18"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "Billboard 200",
+            "url": "https://billboard2.p.rapidapi.com/billboard_200",
+            "description": "Provide the Billboard 200 chart information.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Set the date for which you want to get a chart.",
+                    "default": "2020-03-18"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        },
+        {
+            "name": "Billboard Global 200",
+            "url": "https://billboard2.p.rapidapi.com/billboard_global_200",
+            "description": "Provide Billboard Global 200 chart information. Available from September 19, 2020.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "date",
+                    "type": "DATE (YYYY-MM-DD)",
+                    "description": "Set the date for which you want to get a chart.",
+                    "default": "2020-09-19"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

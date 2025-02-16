@@ -1,0 +1,319 @@
+{
+    "tool_name": "Patreon",
+    "tool_description": "Search Creators and get their details and posts from Patreon (Unofficial)",
+    "home_url": "https://rapidapi.com/felixeschmittfes/api/patreon8/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Posts",
+            "url": "https://patreon8.p.rapidapi.com/posts/{creator_id}",
+            "description": "Retrieve posts of a Creator using the `creator_id`. The response includes a cursor for pagination.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "creator_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the creator, obtainable via the `/search` endpoint.",
+                    "default": "2416483"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "cursor",
+                    "type": "STRING",
+                    "description": "Cursor for fetching the next page of results.",
+                    "default": ""
+                },
+                {
+                    "name": "amount",
+                    "type": "NUMBER",
+                    "description": "Number of posts to return. Default is `10`, maximum is `500`. Higher amounts may increase response time.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "attributes": {
+                                    "type": "object"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "relationships": {
+                                    "type": "object"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "total": {
+                        "type": "integer"
+                    },
+                    "next_page_cursor": {
+                        "type": "string"
+                    },
+                    "query": {
+                        "type": "object",
+                        "properties": {
+                            "user_id": {
+                                "type": "integer"
+                            },
+                            "amount": {
+                                "type": "integer"
+                            },
+                            "cursor": {
+                                "type": "null"
+                            }
+                        }
+                    },
+                    "amount": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Details",
+            "url": "https://patreon8.p.rapidapi.com/details/{creator_id}",
+            "description": "Fetch detailed information about a Creator using the `creator_id`.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "creator_id",
+                    "type": "NUMBER",
+                    "description": "The unique identifier for the creator, obtainable via the `/search` endpoint.",
+                    "default": "2416483"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "object",
+                        "properties": {
+                            "attributes": {
+                                "type": "object",
+                                "properties": {
+                                    "avatar_photo_image_urls": {
+                                        "type": "object",
+                                        "properties": {
+                                            "default": {
+                                                "type": "string"
+                                            },
+                                            "default_small": {
+                                                "type": "string"
+                                            },
+                                            "original": {
+                                                "type": "string"
+                                            },
+                                            "thumbnail": {
+                                                "type": "string"
+                                            },
+                                            "thumbnail_large": {
+                                                "type": "string"
+                                            },
+                                            "thumbnail_small": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "avatar_photo_url": {
+                                        "type": "string"
+                                    },
+                                    "cover_photo_url": {
+                                        "type": "string"
+                                    },
+                                    "cover_photo_url_sizes": {
+                                        "type": "object",
+                                        "properties": {
+                                            "large": {
+                                                "type": "string"
+                                            },
+                                            "medium": {
+                                                "type": "string"
+                                            },
+                                            "small": {
+                                                "type": "string"
+                                            },
+                                            "xlarge": {
+                                                "type": "string"
+                                            },
+                                            "xsmall": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "created_at": {
+                                        "type": "string"
+                                    },
+                                    "creation_count": {
+                                        "type": "integer"
+                                    },
+                                    "creation_name": {
+                                        "type": "string"
+                                    },
+                                    "currency": {
+                                        "type": "string"
+                                    },
+                                    "display_patron_goals": {
+                                        "type": "boolean"
+                                    },
+                                    "earnings_visibility": {
+                                        "type": "string"
+                                    },
+                                    "image_small_url": {
+                                        "type": "string"
+                                    },
+                                    "image_url": {
+                                        "type": "string"
+                                    },
+                                    "is_charge_upfront": {
+                                        "type": "boolean"
+                                    },
+                                    "is_charged_immediately": {
+                                        "type": "boolean"
+                                    },
+                                    "is_monthly": {
+                                        "type": "boolean"
+                                    },
+                                    "is_nsfw": {
+                                        "type": "boolean"
+                                    },
+                                    "is_plural": {
+                                        "type": "boolean"
+                                    },
+                                    "main_video_embed": {
+                                        "type": "string"
+                                    },
+                                    "main_video_url": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "one_liner": {
+                                        "type": "null"
+                                    },
+                                    "outstanding_payment_amount_cents": {
+                                        "type": "null"
+                                    },
+                                    "paid_member_count": {
+                                        "type": "integer"
+                                    },
+                                    "patron_count": {
+                                        "type": "integer"
+                                    },
+                                    "pay_per_name": {
+                                        "type": "string"
+                                    },
+                                    "pledge_sum_currency": {
+                                        "type": "string"
+                                    },
+                                    "pledge_url": {
+                                        "type": "string"
+                                    },
+                                    "published_at": {
+                                        "type": "string"
+                                    },
+                                    "summary": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "relationships": {
+                                "type": "object",
+                                "properties": {
+                                    "reward_items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "string"
+                                                        },
+                                                        "type": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "type": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "query": {
+                        "type": "object",
+                        "properties": {
+                            "user_id": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Search for Creators",
+            "url": "https://patreon8.p.rapidapi.com/search/{search_query}",
+            "description": "Search for Creators on Patreon using a specified search term.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "search_query",
+                    "type": "string",
+                    "description": "The term used to search for creators on Patreon.",
+                    "default": "adnr studios"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "amount": {
+                        "type": "integer"
+                    },
+                    "query": {
+                        "type": "object",
+                        "properties": {
+                            "search_query": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

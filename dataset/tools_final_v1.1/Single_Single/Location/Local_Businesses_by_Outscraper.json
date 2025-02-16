@@ -1,0 +1,92 @@
+{
+    "tool_name": "Local Businesses by Outscraper",
+    "tool_description": "Get Local Businesses' information with simple and reliable Maps Places API provided by Outscraper.",
+    "home_url": "https://rapidapi.com/outscraper-inc-outscraper-inc-default/api/local-businesses-by-outscraper/",
+    "country": "USA",
+    "api_list": [
+        {
+            "name": "Search Places",
+            "url": "https://local-businesses-by-outscraper.p.rapidapi.com/maps/search-v2",
+            "description": "Returns places from Places Maps based on a given search query (or many queries). The results from searches are the same as you would see by visiting a regular Maps site. It is recommended to use specific locations in queries to improve accuracy.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The parameter defines the query you want to search. You can use anything that you would use on a regular Maps site, including feature_id, place_id, or CID. Supports batching by sending arrays with up to 25 queries.",
+                    "default": "bars, NY, USA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "fields",
+                    "type": "STRING",
+                    "description": "The parameter defines which fields you want to include with each item returned in the response. By default, it returns all fields.",
+                    "default": ""
+                },
+                {
+                    "name": "region",
+                    "type": "STRING",
+                    "description": "The parameter specifies the country to use. Available countries include US, CA, GB, etc.",
+                    "default": "US"
+                },
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "The parameter specifies the language to use for the response.",
+                    "default": "en"
+                },
+                {
+                    "name": "skipPlaces",
+                    "type": "NUMBER",
+                    "description": "Skip first N places, where N should be a multiple of 20, commonly used in pagination.",
+                    "default": "0"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The parameter specifies the limit of organizations to take from one query search. There are no more than 500 places per one query search.",
+                    "default": "20"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "Get Places Reviews",
+            "url": "https://local-businesses-by-outscraper.p.rapidapi.com/maps/reviews-v3",
+            "description": "Returns Places Maps reviews from places based on search queries or from a single place using IDs or names. This endpoint is optimized for fast responses.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "STRING",
+                    "description": "The parameter defines the query you want to search. You can use anything that you would use on a regular Maps site.",
+                    "default": "The NoMad Restaurant, NY, USA"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "language",
+                    "type": "STRING",
+                    "description": "The parameter specifies the language to use for the response.",
+                    "default": "en"
+                },
+                {
+                    "name": "limit",
+                    "type": "NUMBER",
+                    "description": "The parameter specifies the limit of places to take from one query search.",
+                    "default": "1"
+                },
+                {
+                    "name": "reviewsLimit",
+                    "type": "NUMBER",
+                    "description": "The parameter specifies the limit of reviews to get from one place.",
+                    "default": "10"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tool_name": "Disposable RegData Verification",
+    "tool_description": "Our API offers the ability to check if a phone number or email is valid or disposable. Additionally, it can verify if an IP address is a VPN or proxy, which is useful during KYC procedures or lead registration.",
+    "home_url": "https://rapidapi.com/it-fintech-md-it-fintech-md-default/api/disposable-regdata-verification/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "IP Verification",
+            "url": "https://disposable-regdata-verification.p.rapidapi.com/score/ip",
+            "description": "Check IP details for supporting IPv4 and IPv6.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "Email Verification",
+            "url": "https://disposable-regdata-verification.p.rapidapi.com/score/email",
+            "description": "Verifies email against RFC standards, checks if it's from a disposable/temporary email service, and checks for MX records to ensure the client provides a correct/valid domain name.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": "\""
+        },
+        {
+            "name": "Validate Phone Number",
+            "url": "https://disposable-regdata-verification.p.rapidapi.com/score/phone",
+            "description": "Checks the provided phone number for disposable services and verifies if the phone is mentioned in public resources, which affects the reputation score.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

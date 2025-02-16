@@ -1,0 +1,42 @@
+{
+    "tool_name": "Pictionary Charades Word Generator",
+    "tool_description": "Generate words for Charades and Pictionary Games!",
+    "home_url": "https://rapidapi.com/kwik-api-kwik-api-default/api/pictionary-charades-word-generator/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "Get Charades Word",
+            "url": "https://pictionary-charades-word-generator.p.rapidapi.com/charades",
+            "description": "Retrieve a random charades word based on the specified difficulty level. If no difficulty is provided, a random difficulty will be selected.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "difficulty",
+                    "type": "ENUM",
+                    "description": "The difficulty level of the word. Options may include easy, medium, hard.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        },
+        {
+            "name": "Get Pictionary Word",
+            "url": "https://pictionary-charades-word-generator.p.rapidapi.com/pictionary",
+            "description": "Retrieve a random Pictionary word based on the specified difficulty level. If no difficulty is provided, a random difficulty will be selected.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "difficulty",
+                    "type": "ENUM",
+                    "description": "The difficulty level of the word. Options may include easy, medium, hard.",
+                    "default": ""
+                }
+            ],
+            "statuscode": 200,
+            "schema": {}
+        }
+    ]
+}

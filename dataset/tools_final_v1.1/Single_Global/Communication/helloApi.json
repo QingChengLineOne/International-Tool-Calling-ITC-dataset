@@ -1,0 +1,28 @@
+{
+    "tool_name": "helloApi",
+    "tool_description": "This is a simple API designed to provide basic greetings.",
+    "home_url": "https://rapidapi.com/jfwu2008-Xf3Ou9hFiOB/api/helloapi1/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "/hello/wrold_copy",
+            "url": "https://helloapi1.p.rapidapi.com/",
+            "description": "This endpoint returns a greeting message.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        },
+        {
+            "name": "/hello/wrold",
+            "url": "https://helloapi1.p.rapidapi.com/",
+            "description": "This endpoint returns a greeting message.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

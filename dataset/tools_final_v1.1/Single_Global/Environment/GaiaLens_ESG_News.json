@@ -1,0 +1,49 @@
+{
+    "tool_name": "GaiaLens ESG News",
+    "tool_description": "Real-time ESG news API that tracks thousands of news sources, social media, and NGOs to provide up-to-date information on Environmental, Social, and Governance (ESG) topics.",
+    "home_url": "https://rapidapi.com/gaialens-gaialens-default/api/gaialens-esg-news/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "getESGNews",
+            "url": "https://gaialens-esg-news.p.rapidapi.com/news",
+            "description": "Fetches ESG news using a state-of-the-art algorithm that monitors various sources in real-time, covering topics such as SASB, UN SDGs, Modern Slavery, and Gender Equality.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "Content-Type",
+                    "type": "STRING",
+                    "description": "Specifies the media type of the resource.",
+                    "default": ""
+                },
+                {
+                    "name": "date",
+                    "type": "STRING",
+                    "description": "Date for the news articles in DD/MM/YYYY format.",
+                    "default": ""
+                },
+                {
+                    "name": "companyname",
+                    "type": "STRING",
+                    "description": "Name of the company for which ESG news is being requested.",
+                    "default": "Apple Inc."
+                },
+                {
+                    "name": "sedol",
+                    "type": "STRING",
+                    "description": "Stock identifier for the company.",
+                    "default": ""
+                },
+                {
+                    "name": "isin",
+                    "type": "STRING",
+                    "description": "International Securities Identification Number for the company.",
+                    "default": ""
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

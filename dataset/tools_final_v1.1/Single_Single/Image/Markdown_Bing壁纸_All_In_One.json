@@ -1,0 +1,32 @@
+{
+    "tool_name": "Bing壁纸 All In One",
+    "tool_description": "整合9个国家Bing壁纸的Markdown格式数据接口",
+    "home_url": "https://api.aa1.cn/doc/bing-wallpaper-markdown.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "Bing壁纸 All In One",
+            "url": "https://raw.onmicrosoft.cn/Bing-Wallpaper-Action/main/README.md",
+            "description": "提供9个国家Bing壁纸的Markdown格式数据",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "国家代码，如CN代表中国，US代表美国等",
+                    "default": "CN"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "format",
+                    "type": "string",
+                    "description": "输出格式，默认为Markdown，可选值为Markdown或Text",
+                    "default": "Markdown"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

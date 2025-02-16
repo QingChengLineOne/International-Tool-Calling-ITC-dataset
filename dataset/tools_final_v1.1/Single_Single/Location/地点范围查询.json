@@ -1,0 +1,31 @@
+{
+    "tool_name": "地点范围查询",
+    "tool_description": "根据经纬度查询其地址相关信息",
+    "home_url": "https://www.free-api.com/doc/272",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "地点范围查询",
+            "url": "https://ditu.amap.com/service/regeo",
+            "description": "根据经纬度查询地址相关信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "longitude",
+                    "type": "string",
+                    "description": "经度",
+                    "default": ""
+                },
+                {
+                    "name": "latitude",
+                    "type": "string",
+                    "description": "维度",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "1",
+            "schema": {}
+        }
+    ]
+}

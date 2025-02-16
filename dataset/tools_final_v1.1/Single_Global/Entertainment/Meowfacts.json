@@ -1,0 +1,127 @@
+{
+    "tool_name": "Meowfacts",
+    "tool_description": "A simple API that returns interesting facts about cats.",
+    "home_url": "https://rapidapi.com/wh-iterabb-it-wh-iterabb-it-default/api/meowfacts/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "defaultRoot",
+            "url": "https://meowfacts.p.rapidapi.com/",
+            "description": "Retrieve one or more cat facts by passing in the appropriate options.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "NUMBER",
+                    "description": "Number of facts to return.",
+                    "default": ""
+                },
+                {
+                    "name": "factID",
+                    "type": "STRING",
+                    "description": "Pass an optional ID to call a specific fact.",
+                    "default": ""
+                },
+                {
+                    "name": "lang",
+                    "type": "STRING",
+                    "description": "Requested locale to retrieve the cat fact in.",
+                    "default": "eng"
+                }
+            ],
+            "statuscode": "200",
+            "schema": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "data": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "options",
+            "url": "https://meowfacts.p.rapidapi.com/options",
+            "description": "List all languages available for retrieving cat facts.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "lang": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "locale_code": {
+                                    "type": "string"
+                                },
+                                "iso_code": {
+                                    "type": "string"
+                                },
+                                "full_code": {
+                                    "type": "string"
+                                },
+                                "local_name": {
+                                    "type": "string"
+                                },
+                                "english_name": {
+                                    "type": "string"
+                                },
+                                "full_name": {
+                                    "type": "string"
+                                },
+                                "fact_count": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "minimum": -2147483648,
+                                    "maximum": 2147483647
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "healthcheck",
+            "url": "https://meowfacts.p.rapidapi.com/health",
+            "description": "Check the health status of the API, including uptime and total requests served.",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "uptime": {
+                                "type": "string"
+                            },
+                            "version": {
+                                "type": "string"
+                            },
+                            "requests": {
+                                "type": "integer",
+                                "format": "int32",
+                                "minimum": -2147483648,
+                                "maximum": 2147483647
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

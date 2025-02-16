@@ -1,0 +1,18 @@
+{
+    "tool_name": "Australian NSW Rego lookup",
+    "tool_description": "Determine the vehicle details of a vehicle registered in New South Wales (Australia)",
+    "home_url": "https://rapidapi.com/appaio/api/australian-nsw-rego-lookup/",
+    "country": "Australia",
+    "api_list": [
+        {
+            "name": "NSWLambda",
+            "url": "https://australian-nsw-rego-lookup.p.rapidapi.com/NSWLambda",
+            "description": "This API allows you to provide a vehicle registration number (rego) to retrieve details about the vehicle registered in New South Wales, Australia.",
+            "method": "POST",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

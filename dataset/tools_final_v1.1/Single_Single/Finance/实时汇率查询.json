@@ -1,0 +1,31 @@
+{
+    "tool_name": "实时汇率查询API",
+    "tool_description": "提供实时汇率查询服务",
+    "home_url": "https://api.aa1.cn/doc/huilv.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "实时汇率查询接口",
+            "url": "http://mazuyu.icu/public/rate",
+            "description": "查询指定货币对的实时汇率",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "from",
+                    "type": "string",
+                    "description": "查询起始货币代码，如USD",
+                    "default": ""
+                },
+                {
+                    "name": "to",
+                    "type": "string",
+                    "description": "查询目标货币代码，如CNH",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

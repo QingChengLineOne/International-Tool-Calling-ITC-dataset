@@ -1,0 +1,25 @@
+{
+    "tool_name": "车牌归属地查询",
+    "tool_description": "查询车牌所属地方",
+    "home_url": "https://api.aa1.cn/doc/pearapi-chepai.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "车牌归属地查询接口",
+            "url": "https://api.pearktrue.cn/api/chepaihao/",
+            "description": "提供车牌号查询服务，返回车牌归属地信息",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "cp",
+                    "type": "string",
+                    "description": "车牌号，用于查询归属地",
+                    "default": "请输入车牌号"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

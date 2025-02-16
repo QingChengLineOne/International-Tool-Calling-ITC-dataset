@@ -1,0 +1,43 @@
+{
+    "tool_name": "二维码生成API",
+    "tool_description": "快速将URL或者文字生成二维码",
+    "home_url": "https://api.aa1.cn/doc/zaqr.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "二维码生成接口",
+            "url": "http://api.lykep.com/api/qrcode",
+            "description": "用于生成二维码的API接口",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "frame",
+                    "type": "int",
+                    "description": "是否生成边框，1为是，0为否",
+                    "default": "1"
+                },
+                {
+                    "name": "e",
+                    "type": "int",
+                    "description": "二维码纠错级别，1、0、2、3分别对应L、M、Q、H",
+                    "default": "0"
+                },
+                {
+                    "name": "text",
+                    "type": "string",
+                    "description": "要生成二维码的内容，可以是URL或文字",
+                    "default": ""
+                },
+                {
+                    "name": "size",
+                    "type": "int",
+                    "description": "二维码的大小，单位为像素",
+                    "default": "200"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}

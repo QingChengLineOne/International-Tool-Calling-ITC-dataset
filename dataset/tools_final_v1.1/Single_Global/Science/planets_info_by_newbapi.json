@@ -1,0 +1,189 @@
+{
+    "tool_name": "Planets Info by NewbAPI",
+    "tool_description": "Basic Information about planet",
+    "home_url": "https://rapidapi.com/newbAPIOfficial/api/planets-info-by-newbapi/",
+    "country": "Global",
+    "api_list": [
+        {
+            "name": "All planet",
+            "url": "https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planets/",
+            "description": "Get list of all planets",
+            "method": "GET",
+            "required_parameters": [],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "title": "Response Get All Planet Api V1 Planets  Get",
+                "type": "array",
+                "items": {
+                    "title": "PlanetSchema",
+                    "required": [
+                        "planetOrder",
+                        "name",
+                        "description",
+                        "basicDetails",
+                        "source",
+                        "wikiLink",
+                        "imgSrc",
+                        "id"
+                    ],
+                    "type": "object",
+                    "properties": {
+                        "planetOrder": {
+                            "title": "Planetorder",
+                            "type": "integer"
+                        },
+                        "name": {
+                            "title": "Name",
+                            "type": "string"
+                        },
+                        "description": {
+                            "title": "Description",
+                            "type": "string"
+                        },
+                        "basicDetails": {
+                            "title": "PlanetBasicDetails",
+                            "required": [
+                                "volume",
+                                "mass"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "volume": {
+                                    "title": "Volume",
+                                    "type": "string"
+                                },
+                                "mass": {
+                                    "title": "Mass",
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "source": {
+                            "title": "Source",
+                            "type": "string"
+                        },
+                        "wikiLink": {
+                            "title": "Wikilink",
+                            "type": "string"
+                        },
+                        "imgSrc": {
+                            "title": "PlanetImgSrc",
+                            "required": [
+                                "img",
+                                "imgDescription"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "img": {
+                                    "title": "Img",
+                                    "type": "string"
+                                },
+                                "imgDescription": {
+                                    "title": "Imgdescription",
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "id": {
+                            "title": "Id",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "Single Planet",
+            "url": "https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planets/{id}",
+            "description": "Get a single planet by its ID. Example: id `1` for Mercury, id `2` for Venus.",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "NUMBER",
+                    "description": "The ID of the planet",
+                    "default": "1"
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {
+                "title": "PlanetSchema",
+                "required": [
+                    "planetOrder",
+                    "name",
+                    "description",
+                    "basicDetails",
+                    "source",
+                    "wikiLink",
+                    "imgSrc",
+                    "id"
+                ],
+                "type": "object",
+                "properties": {
+                    "planetOrder": {
+                        "title": "Planetorder",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "description": {
+                        "title": "Description",
+                        "type": "string"
+                    },
+                    "basicDetails": {
+                        "title": "PlanetBasicDetails",
+                        "required": [
+                            "volume",
+                            "mass"
+                        ],
+                        "type": "object",
+                        "properties": {
+                            "volume": {
+                                "title": "Volume",
+                                "type": "string"
+                            },
+                            "mass": {
+                                "title": "Mass",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "source": {
+                        "title": "Source",
+                        "type": "string"
+                    },
+                    "wikiLink": {
+                        "title": "Wikilink",
+                        "type": "string"
+                    },
+                    "imgSrc": {
+                        "title": "PlanetImgSrc",
+                        "required": [
+                            "img",
+                            "imgDescription"
+                        ],
+                        "type": "object",
+                        "properties": {
+                            "img": {
+                                "title": "Img",
+                                "type": "string"
+                            },
+                            "imgDescription": {
+                                "title": "Imgdescription",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "id": {
+                        "title": "Id",
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    ]
+}

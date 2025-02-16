@@ -1,0 +1,43 @@
+{
+    "tool_name": "天气预报-15日-墨迹天气",
+    "tool_description": "提供15天的天气预报服务，由墨迹天气提供数据支持。示例参数里的ID与KEY为公共ID，共享频次限制，请替换为自己的接口盒子[www.apihz.cn]ID与KEY，独立统计调用信息数据，可在接口盒子后台查看，本接口免费且无使用上限。",
+    "home_url": "https://api.aa1.cn/doc/tqybmoji.html",
+    "country": "China",
+    "api_list": [
+        {
+            "name": "获取15天天气预报",
+            "url": "https://cn.apihz.cn/api/tianqi/tqybmoji15.php",
+            "description": "查询指定地点的15天天气预报",
+            "method": "GET",
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "接口盒子提供的ID",
+                    "default": ""
+                },
+                {
+                    "name": "key",
+                    "type": "string",
+                    "description": "接口盒子提供的KEY",
+                    "default": ""
+                },
+                {
+                    "name": "sheng",
+                    "type": "string",
+                    "description": "省份名称",
+                    "default": ""
+                },
+                {
+                    "name": "place",
+                    "type": "string",
+                    "description": "城市或地点名称",
+                    "default": ""
+                }
+            ],
+            "optional_parameters": [],
+            "statuscode": "200",
+            "schema": {}
+        }
+    ]
+}
